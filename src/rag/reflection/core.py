@@ -5,19 +5,18 @@ class Reflection:
     @staticmethod
     def _concat_and_format_texts(data):
         concatenated_texts = []
-        all_texts= ''
+        all_texts = ''
         for entry in data:
             role = entry.get('role', '')
             if entry.get('parts'):
-                all_texts = ' '.join(part['text'] for part in entry['parts'] )
+                all_texts = ' '.join(part['text'] for part in entry['parts'])
             elif entry.get('content'):
-                all_texts = entry['content'] 
+                all_texts = entry['content']
             concatenated_texts.append(f"{role}: {all_texts} \n")
         return ''.join(concatenated_texts)
 
-
     def __call__(self, chat_history, last_items_considered=100):
-        
+
         if len(chat_history) >= last_items_considered:
             chat_history = chat_history[len(chat_history) - last_items_considered:]
 
@@ -32,6 +31,5 @@ class Reflection:
         print(higher_level_summaries_prompt)
 
         completion = self.llm.generate_content([higher_level_summaries_prompt])
-    
-        return completion
 
+        return completion

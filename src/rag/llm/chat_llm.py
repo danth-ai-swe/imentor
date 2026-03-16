@@ -86,3 +86,9 @@ class AzureChatClient(metaclass=_SingletonMeta):
 @lru_cache(maxsize=1)
 def get_openai_chat_client() -> AzureChatClient:
     return AzureChatClient()
+
+if __name__ == '__main__':
+    client = get_openai_chat_client()
+    prompt = "Viết một đoạn văn ngắn giới thiệu về bản thân bạn."
+    response = client.invoke(prompt)
+    print("LLM Response:", response)

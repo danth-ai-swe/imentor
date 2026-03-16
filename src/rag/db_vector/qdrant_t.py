@@ -6,74 +6,27 @@ from qdrant_client.models import Distance, VectorParams, PointStruct
 
 from src.rag.llm.embedding_llm import get_openai_embedding_client
 
-# ─────────────────────────────────────────────
-# INIT MODELS & CLIENT
-# ─────────────────────────────────────────────
-
-late_interaction_embedding_model = LateInteractionTextEmbedding("jinaai/jina-colbert-v2")
-# Sparse BM25 được xử lý server-side qua models.Document — không cần SparseTextEmbedding local
+late_interaction_embedding_model = LateInteractionTextEmbedding("colbert-ir/colbertv2.0")
 
 client = QdrantClient(url="http://localhost:6333")  # client = qdrant_client.AsyncQdrantClient("localhost")
 collection_name = "test_collection23"
 
-# ─────────────────────────────────────────────
-# LOAD 1 TÀI LIỆU CƠ BẢN
-# ─────────────────────────────────────────────
-
-# Đọc nội dung tài liệu (thay bằng đường dẫn file thực tế của bạn)
-DOCUMENT_PATH = "sample_document.txt"
-
-try:
-    with open(DOCUMENT_PATH, "r", encoding="utf-8") as f:
-        document_text = f.read()
-    print(f"✅ Loaded document: {DOCUMENT_PATH} ({len(document_text)} chars)")
-except FileNotFoundError:
-    # Dùng nội dung mẫu nếu không tìm thấy file
-    document_text = (
-        "Qdrant is a vector similarity search engine and database. "
-        "It provides a production-ready service with a convenient API to store, search, and manage vectors "
-        "with an additional payload. Qdrant supports dense, sparse, and late-interaction (ColBERT) vectors, "
-        "enabling powerful hybrid search pipelines."
-    )
-    print(f"⚠️  File not found — using sample text ({len(document_text)} chars)")
-
+document_text = (
+    "Qdrant is a vector similarity search engine and database. "
+    "It provides a production-ready service with a convenient API to store, search, and manage vectors "
+    "with an additional payload. Qdrant supports dense, sparse, and late-interaction (ColBERT) vectors, "
+    "enabling powerful hybrid search pipelines."
+)
 document_id = str(uuid.uuid4())  # ID duy nhất cho tài liệu
-
-# ─────────────────────────────────────────────
-# EMBED DOCUMENT
-# ─────────────────────────────────────────────
 
 query = "What is Qdrant?"
 
 # Dense vector (OpenAI text-embedding-3-small, dim=1536)
 openai_embeddings = get_openai_embedding_client()
-dense_vector_doc = openai_embeddings.embed_query(document_text)
-dense_vector_query = openai_embeddings.embed_query(query)
 
-# Late-interaction / ColBERT vectors (list of token vectors)
 late_vectors_doc = list(late_interaction_embedding_model.embed([document_text]))[0]  # (tokens, dim)
 late_vectors_query = list(late_interaction_embedding_model.query_embed(query))[0]  # (tokens, dim)
 late_dim = len(late_vectors_doc[0])
-
-# Sparse BM25 — dùng models.Document, Qdrant server tự embed server-side
-# Không cần tạo vector thủ công ở client
-sparse_doc = models.Document(
-    text=document_text,
-    model="Qdrant/bm25",
-    options={"language": "none", "ascii_folding": True, "tokenizer": "multilingual"},
-)
-sparse_query = models.Document(
-    text=query,
-    model="Qdrant/bm25",
-    options={"language": "none", "ascii_folding": True, "tokenizer": "multilingual"},
-)
-
-print(f"Dense dim       : {len(dense_vector_doc)}")
-print(f"Late-interaction: tokens={len(late_vectors_doc)}, dim_per_token={late_dim}")
-
-# ─────────────────────────────────────────────
-# CREATE COLLECTION (nếu chưa tồn tại)
-# ─────────────────────────────────────────────
 
 if not client.collection_exists(collection_name=collection_name):
     # client.delete_collection(collection_name=collection_name)
@@ -143,26 +96,26 @@ if not client.collection_exists(collection_name=collection_name):
     # text    - a special kind of index, available for keyword / string payloads, affects Full Text search filtering conditions.
     # uuid    - a special type of index, similar to keyword, but optimized for UUID values. (available as of v1.11.0)
 
-    # ─────────────────────────────────────────
-    # INSERT DOCUMENT (insert parallel)
-    # ─────────────────────────────────────────
-
     client.upload_points(
         collection_name=collection_name,
         points=[
             PointStruct(
                 id=1,
                 vector={
-                    "dense": dense_vector_doc,
+                    "dense": openai_embeddings.embed_query(document_text),
                     "maxsim": late_vectors_doc.tolist(),
                     # sparse dùng models.Document — Qdrant server tự tokenize & embed BM25
-                    "sparse": sparse_doc,
+                    "sparse": models.Document(
+                        text=document_text,
+                        model="Qdrant/bm42-all-minilm-l6-v2-attentions",
+                        options={"language": "none", "ascii_folding": True, "tokenizer": "multilingual"},
+                    ),
                 },
                 payload={
                     "document_id": document_id,
                     "text": document_text,
                     "city": "Berlin",
-                    "source": DOCUMENT_PATH,
+                    "source": "",
                 },
             ),
         ],
@@ -217,10 +170,6 @@ if not client.collection_exists(collection_name=collection_name):
     )
     print(f"Scroll results: {scroll_result}")
 
-    # ─────────────────────────────────────────
-    # HYBRID SEARCH
-    # ─────────────────────────────────────────
-
     search_results = client.query_points(
         collection_name=collection_name,
         query_filter=models.Filter(
@@ -252,7 +201,7 @@ if not client.collection_exists(collection_name=collection_name):
                         # sparse dùng models.Document — Qdrant server tự tokenize & embed BM25
                         query=models.Document(
                             text=query,
-                            model="Qdrant/bm25",
+                            model="Qdrant/bm42-all-minilm-l6-v2-attentions",
                             options={"language": "none", "ascii_folding": True, "tokenizer": "multilingual"},
                         ),
                         params=models.SearchParams(
@@ -266,7 +215,7 @@ if not client.collection_exists(collection_name=collection_name):
                         limit=50,
                     ),
                     models.Prefetch(
-                        query=dense_vector_query,  # <-- dense vector
+                        query=openai_embeddings.embed_query(query),  # <-- dense vector
                         using="dense",
                         params=models.SearchParams(
                             quantization=models.QuantizationSearchParams(
@@ -278,10 +227,7 @@ if not client.collection_exists(collection_name=collection_name):
                         limit=50,
                     ),
                 ],
-                query=models.FusionQuery(
-                    fusion=models.Fusion.RRF,
-                    rrf=models.Rrf(weights=[3.0, 1.0]),
-                ),
+                query=models.RrfQuery(rrf=models.Rrf(k=60)),
             )
         ],
         query=late_vectors_query.tolist(),  # ColBERT MaxSim reranking on fused results
@@ -308,13 +254,6 @@ if not client.collection_exists(collection_name=collection_name):
         ),
     )
     print(f"\nFacet result: {facet_result}")
-
-else:
-    print(f"ℹ️  Collection '{collection_name}' already exists — skipping creation & insertion.")
-
-# ─────────────────────────────────────────────
-# COLLECTION INFO
-# ─────────────────────────────────────────────
 
 print(client.get_collection(collection_name=collection_name))
 print(client.get_collection_aliases(collection_name=collection_name))
