@@ -3,6 +3,7 @@ from functools import lru_cache
 import tiktoken
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
+
 @lru_cache(maxsize=1)
 def get_recursive_token_chunk(chunk_size=256, model_name="text-embedding-3-small"):
     MARKDOWN_SEPARATORS = [
