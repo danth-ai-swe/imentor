@@ -1,0 +1,31 @@
+# Version control
+.git
+.gitignore
+
+# Python
+__pycache__
+*.py[cod]
+*.pyo
+.pytest_cache
+.mypy_cache
+.ruff_cache
+
+# Virtual envs
+.venv
+venv
+env
+
+# Secrets & config local
+.env
+.env.*
+*.local
+
+# Docs & CI
+README.md
+docs/
+.github/
+.gitlab-ci.yml
+
+# Docker
+Dockerfile*
+docker-compose*.yml
