@@ -64,10 +64,7 @@ class SemanticChunker:
             current = sentences[i]['embedding']
             next_emb = sentences[i + 1]['embedding']
 
-            similarity = cosine_similarity(
-                [current],
-                [next_emb]
-            )[0][0]
+            similarity = cosine_similarity(current, next_emb)
 
             distance = 1 - similarity
 
