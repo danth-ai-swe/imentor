@@ -2,6 +2,7 @@ import asyncio
 import json
 import os
 import re
+import sys
 import threading
 from pathlib import Path
 from typing import Dict, List, Any, Optional, Tuple
@@ -453,6 +454,9 @@ async def upload_to_qdrant(force_restart: bool = False, collection_name: str | N
             await manager.acreate_collection(recreate=force_restart)
             await manager.acreate_payload_index("category", models.PayloadSchemaType.KEYWORD)
             await manager.acreate_payload_index("file_name", models.PayloadSchemaType.KEYWORD)
+            await manager.acreate_payload_index("course", models.PayloadSchemaType.KEYWORD)
+            await manager.acreate_payload_index("module", models.PayloadSchemaType.KEYWORD)
+            await manager.acreate_payload_index("lesson", models.PayloadSchemaType.KEYWORD)
 
         for i, json_file in enumerate(pending_files, 1):
             logger.info(f"[{i}/{len(pending_files)}] 📂 {json_file.name} ...")
@@ -487,3 +491,10 @@ async def upload_to_qdrant(force_restart: bool = False, collection_name: str | N
         logger.info(f"\n🚀 Hoàn tất! Đã upload {len(uploaded_files)}/{len(all_json_files)} files.")
     finally:
         timer.summary()
+
+
+if __name__ == "__main__":
+    if sys.platform == "win32":
+        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+
+    asyncio.run(upload_to_qdrant(force_restart=False, collection_name="imt_kb_v10"))

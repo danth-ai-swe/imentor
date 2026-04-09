@@ -1,4 +1,3 @@
-
 CLASSIFIER_PROMPT_TEMPLATE = """You are an expert classifier.
 
 Choose EXACTLY ONE item from the candidate list below.

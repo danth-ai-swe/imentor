@@ -1,10 +1,12 @@
 import asyncio
+import mimetypes
 import os
 from datetime import datetime, timezone
 from typing import Any
 
 import numpy as np
 from fastapi import BackgroundTasks, Depends
+from fastapi import Query
 from fastapi.responses import FileResponse
 
 from src.apis.app_exception import BadRequestError, InvalidFilterError, NotFoundError, QdrantApiError
@@ -25,11 +27,12 @@ from src.apis.app_model import (
 from src.apis.app_router import chat_router, documents_router, search_router, file_router, quiz_router
 from src.config.app_config import get_app_config
 from src.constants.app_constant import PDFS_DIR, COLLECTION_NAME
+from src.core.quiz2.quiz_generator import generate_quiz2
 from src.rag.db_vector import get_qdrant_client
-from src.rag.ingest.pipeline import upload_to_qdrant
+from src.rag.ingest.entrypoint import upload_to_qdrant
 from src.rag.llm.embedding_llm import get_openai_embedding_client
 from src.rag.search.pipeline import async_pipeline_hyde_search
-from src.rag.semantic_router.generate_embedding import OUTPUT_PATH, ROUTES, generate
+from src.rag.semantic_router.generate_embeddings import ROUTES, OUTPUT_PATH, generate
 from src.rag.semantic_router.router import load_precomputed_embeddings, Route, SemanticRouter
 from src.utils.logger_utils import logger
 
@@ -236,8 +239,6 @@ async def chat_ask(payload: ChatRequest) -> ChatResponse:
         raise QdrantApiError(f"pipeline_search failed: {exc}") from exc
 
     seen_sources: dict[str, ChatSourceModel] = {}
-    ip = get_app_config().APP_IP
-    port = get_app_config().APP_PORT
     url = get_app_config().APP_DOMAIN
 
     answer_satisfied = result.get("answer_satisfied", True)
@@ -408,48 +409,45 @@ async def batch_search(payload: BatchSearchRequest, manager=Depends(get_qdrant_c
         raise QdrantApiError(f"batch_search failed: {exc}") from exc
 
 
-@file_router.get("/ingest.zip")
-def download_ingest_zip():
-    """Download data/ingest.zip — pre-built archive of all ingest JSON files."""
-    from src.constants.app_constant import INGEST_ZIP
-    if not os.path.isfile(INGEST_ZIP):
-        raise NotFoundError(resource="ingest.zip", id="ingest.zip")
+@file_router.get("/download")
+def download_any_file(
+        path: str = Query(..., description="Relative path from project root (e.g. data/ingest/xxx.json)")):
+    """Download any file under project root by relative path, e.g. /ingest?path=data/ingest/xxx.json"""
+    # Always set BASE_DIR to 3 levels up from this file (controller)
+    BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..'))
+    logger.warning(f"[DEBUG] BASE_DIR (3 levels up): {BASE_DIR}")
+    logger.warning(f"[DEBUG] Current working dir: {os.getcwd()}")
+    # Normalize slashes to support both / and \
+    norm_path = path.replace("\\", "/")
+    norm_path = os.path.normpath(norm_path)
+    logger.warning(f"[DEBUG] norm_path: {norm_path}")
+    # Validate path
+    if not norm_path or ".." in norm_path or os.path.isabs(norm_path) or norm_path.startswith("/"):
+        logger.warning(f"[DEBUG] Invalid path: {norm_path}")
+        raise BadRequestError("Invalid path")
+    abs_path = os.path.normpath(os.path.join(BASE_DIR, norm_path))
+    logger.warning(f"[DEBUG] abs_path: {abs_path}")
+    if not abs_path.startswith(BASE_DIR):
+        logger.warning(f"[DEBUG] Path outside project root: {abs_path}")
+        raise BadRequestError("Path outside project root is not allowed")
+    if not os.path.isfile(abs_path):
+        logger.warning(f"[DEBUG] File not found: {abs_path}")
+        # List parent directory contents for debugging
+        parent_dir = os.path.dirname(abs_path)
+        try:
+            files = os.listdir(parent_dir)
+            logger.warning(f"[DEBUG] Parent dir contents: {files}")
+        except Exception as e:
+            logger.warning(f"[DEBUG] Could not list parent dir: {e}")
+        raise NotFoundError(resource=norm_path, id=norm_path)
+    # Guess media type
+    mime, _ = mimetypes.guess_type(abs_path)
+    filename = os.path.basename(abs_path)
     return FileResponse(
-        str(INGEST_ZIP),
-        filename="ingest.zip",
-        media_type="application/zip",
+        abs_path,
+        filename=filename,
+        media_type=mime or "application/octet-stream",
     )
-
-
-@file_router.get("/source/{filename}")
-def get_source_file(filename: str):
-    """
-    Trả về nội dung file source code trong ``src/``.
-
-    Chỉ cần truyền tên file (vd: ``quiz_generator.py``, ``app_controller.py``).
-    API sẽ tự tìm trong toàn bộ thư mục ``src/``.
-    """
-    from src.constants.app_constant import SRC_DIR
-
-    if ".." in filename or "/" in filename or "\\" in filename:
-        raise BadRequestError("Invalid filename — chỉ truyền tên file, không có path")
-
-    # Tìm file trong toàn bộ src/
-    matches = list(SRC_DIR.rglob(filename))
-    if not matches:
-        raise NotFoundError(resource="source file", id=filename)
-
-    file_path = matches[0]
-
-    # Đảm bảo file nằm trong src/ (chống path traversal)
-    try:
-        file_path.resolve().relative_to(SRC_DIR.resolve())
-    except ValueError:
-        raise BadRequestError("File nằm ngoài thư mục src/")
-
-    from fastapi.responses import PlainTextResponse
-    content = file_path.read_text(encoding="utf-8")
-    return PlainTextResponse(content, media_type="text/plain; charset=utf-8")
 
 
 @file_router.get("/{filename:path}")
@@ -469,15 +467,32 @@ async def generate_quiz(payload: QuizRequest) -> dict:
     try:
         return await _generate_quiz(
             knowledge_pack=payload.knowledge_pack,
+            difficulty=payload.difficulty.value,
+            count_difficulty=payload.total,
             level=payload.level.value if payload.level else None,
             level_value=payload.level_value,
-            quiz_type=payload.type.value if payload.type else "random",
-            rate_value=payload.rate_value,
-            n=payload.total
         )
     except ValueError as exc:
         logger.exception("generate_quiz validation error")
         raise BadRequestError(str(exc)) from exc
+    except Exception as exc:
+        logger.exception("generate_quiz failed")
+        raise QdrantApiError(f"generate_quiz failed: {exc}") from exc
+
+
+@quiz_router.post("/generate2")
+def generate_quiz22(payload: QuizRequest) -> dict:
+    try:
+        return generate_quiz2(
+            knowledge_pack=payload.knowledge_pack,
+            total=payload.total,
+            difficulty=payload.difficulty.value,
+            module_value=payload.module_value,
+            lesson_value=payload.lesson_value,
+        )
+    except ValueError as exc:
+        logger.exception("generate_quiz validation error")
+        raise BadRequestError(str(exc)) from exc  # ← tự động bắt lỗi mới
     except Exception as exc:
         logger.exception("generate_quiz failed")
         raise QdrantApiError(f"generate_quiz failed: {exc}") from exc

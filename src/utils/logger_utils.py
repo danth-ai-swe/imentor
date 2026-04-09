@@ -18,14 +18,6 @@ START_TIME = datetime.now()
 BASE_DIR = Path(__file__).parent.parent.parent
 
 _TIME_FMT = "%Y-%m-%d %H:%M:%S"
-_MAX_REPR_LEN = 200
-
-
-def _truncate(text: str, max_len: int = _MAX_REPR_LEN) -> str:
-    """Truncate a string representation to keep log lines readable."""
-    if len(text) <= max_len:
-        return text
-    return text[:max_len] + "…[truncated]"
 
 
 class AlignedLocationFormatter(logging.Formatter):
@@ -74,17 +66,6 @@ def get_system_info():
 
 
 class CustomLogger:
-    """
-    Singleton wrapper around Python's logging.Logger.
-
-    Usage:
-        from src.utils.logger_utils import logger
-
-        logger.info("Hello %s", name)
-        logger.error("Something broke", exc_info=True)
-        logger.exception("Caught error")   # auto-attaches traceback
-    """
-
     _instance: "CustomLogger | None" = None
 
     def __new__(cls, app_name: str = "APP") -> "CustomLogger":
@@ -94,7 +75,6 @@ class CustomLogger:
             cls._instance = inst
         return cls._instance
 
-    # ── internal setup ────────────────────────────────────────────────────
     def _init_logger(self, app_name: str) -> None:
         self._logger = logging.getLogger(app_name)
         self._logger.setLevel(logging.DEBUG)
@@ -121,13 +101,10 @@ class CustomLogger:
             self._logger.info(f"System Info  : {system_info}")
             self._logger.info("=" * 80)
 
-    # ── public helpers ────────────────────────────────────────────────────
     @property
     def native(self) -> logging.Logger:
-        """Return the underlying stdlib Logger (for libraries that need it)."""
         return self._logger
 
-    # ── delegate standard log methods ─────────────────────────────────────
     def debug(self, msg, *args, **kwargs):
         self._logger.debug(msg, *args, stacklevel=2, **kwargs)
 
@@ -144,7 +121,6 @@ class CustomLogger:
         self._logger.critical(msg, *args, stacklevel=2, **kwargs)
 
     def exception(self, msg, *args, **kwargs):
-        """Like error() but automatically attaches the current exception info."""
         kwargs.setdefault("exc_info", True)
         self._logger.error(msg, *args, stacklevel=2, **kwargs)
 
@@ -169,15 +145,13 @@ def exception_logging(exctype, value, tb):
 
 
 def log_function_call(func):
-    """Decorator that logs start time, end time and execution duration for sync functions."""
-
     @functools.wraps(func)
     def wrapper(*args, **kwargs):
         func_name = func.__name__
         module_name = func.__module__
         qualified = f"{module_name}.{func_name}"
-        args_repr = [_truncate(repr(a)) for a in args]
-        kwargs_repr = [f"{k}={_truncate(repr(v))}" for k, v in kwargs.items()]
+        args_repr = [repr(a) for a in args]
+        kwargs_repr = [f"{k}={repr(v)}" for k, v in kwargs.items()]
         signature = ", ".join(args_repr + kwargs_repr)
 
         start_dt = datetime.now()
@@ -193,7 +167,7 @@ def log_function_call(func):
             duration = end_ts - start_ts
             logger.debug(
                 f"<<< END    {qualified} | End: {end_dt.strftime(_TIME_FMT)} | "
-                f"Duration: {duration:.4f}s | Result: {_truncate(repr(result))}"
+                f"Duration: {duration:.4f}s | Result: {repr(result)}"
             )
             return result
         except Exception as e:
@@ -210,15 +184,13 @@ def log_function_call(func):
 
 
 def alog_function_call(func):
-    """Decorator that logs start time, end time and execution duration for async functions."""
-
     @functools.wraps(func)
     async def wrapper(*args, **kwargs):
         func_name = func.__name__
         module_name = func.__module__
         qualified = f"{module_name}.{func_name}"
-        args_repr = [_truncate(repr(a)) for a in args]
-        kwargs_repr = [f"{k}={_truncate(repr(v))}" for k, v in kwargs.items()]
+        args_repr = [repr(a) for a in args]
+        kwargs_repr = [f"{k}={repr(v)}" for k, v in kwargs.items()]
         signature = ", ".join(args_repr + kwargs_repr)
 
         start_dt = datetime.now()
@@ -234,7 +206,7 @@ def alog_function_call(func):
             duration = end_ts - start_ts
             logger.debug(
                 f"<<< END    {qualified} | End: {end_dt.strftime(_TIME_FMT)} | "
-                f"Duration: {duration:.4f}s | Result: {_truncate(repr(result))}"
+                f"Duration: {duration:.4f}s | Result: {repr(result)}"
             )
             return result
         except Exception as e:
@@ -251,8 +223,6 @@ def alog_function_call(func):
 
 
 def log_method_call(func):
-    """Decorator that logs execution time for sync class methods (skips *self* in arg logging)."""
-
     @functools.wraps(func)
     def wrapper(*args, **kwargs):
         self_obj = args[0] if args else None
@@ -260,8 +230,8 @@ def log_method_call(func):
         qualified = f"{cls_name}.{func.__name__}"
 
         method_args = args[1:] if args else args
-        args_repr = [_truncate(repr(a)) for a in method_args]
-        kwargs_repr = [f"{k}={_truncate(repr(v))}" for k, v in kwargs.items()]
+        args_repr = [repr(a) for a in method_args]
+        kwargs_repr = [f"{k}={repr(v)}" for k, v in kwargs.items()]
         signature = ", ".join(args_repr + kwargs_repr)
 
         start_ts = time.perf_counter()
@@ -271,7 +241,7 @@ def log_method_call(func):
             result = func(*args, **kwargs)
             duration = time.perf_counter() - start_ts
             logger.debug(
-                f"<<< END    {qualified} | Duration: {duration:.4f}s | Result: {_truncate(repr(result))}"
+                f"<<< END    {qualified} | Duration: {duration:.4f}s | Result: {repr(result)}"
             )
             return result
         except Exception as e:
@@ -285,8 +255,6 @@ def log_method_call(func):
 
 
 def alog_method_call(func):
-    """Decorator that logs execution time for async class methods (skips *self* in arg logging)."""
-
     @functools.wraps(func)
     async def wrapper(*args, **kwargs):
         self_obj = args[0] if args else None
@@ -294,8 +262,8 @@ def alog_method_call(func):
         qualified = f"{cls_name}.{func.__name__}"
 
         method_args = args[1:] if args else args
-        args_repr = [_truncate(repr(a)) for a in method_args]
-        kwargs_repr = [f"{k}={_truncate(repr(v))}" for k, v in kwargs.items()]
+        args_repr = [repr(a) for a in method_args]
+        kwargs_repr = [f"{k}={repr(v)}" for k, v in kwargs.items()]
         signature = ", ".join(args_repr + kwargs_repr)
 
         start_ts = time.perf_counter()
@@ -305,7 +273,7 @@ def alog_method_call(func):
             result = await func(*args, **kwargs)
             duration = time.perf_counter() - start_ts
             logger.debug(
-                f"<<< END    {qualified} | Duration: {duration:.4f}s | Result: {_truncate(repr(result))}"
+                f"<<< END    {qualified} | Duration: {duration:.4f}s | Result: {repr(result)}"
             )
             return result
         except Exception as e:
@@ -319,19 +287,6 @@ def alog_method_call(func):
 
 
 class StepTimer:
-    """
-    Track and log execution time of named steps within a pipeline.
-
-    Usage::
-
-        timer = StepTimer("hyde_search")
-        async with timer.astep("init_clients"):
-            llm = get_client()
-        async with timer.astep("vector_search"):
-            results = await search(query)
-        timer.summary()          # logs a formatted table of all steps
-    """
-
     def __init__(self, pipeline_name: str):
         self.pipeline_name = pipeline_name
         self.steps: list[tuple[str, float]] = []
@@ -339,32 +294,25 @@ class StepTimer:
 
     @contextlib.asynccontextmanager
     async def astep(self, name: str):
-        """Async context-manager that times one step."""
         t0 = time.perf_counter()
         try:
             yield
         finally:
             duration = time.perf_counter() - t0
             self.steps.append((name, duration))
-            logger.info(
-                f"⏱️  [{self.pipeline_name}] {name}: {duration:.4f}s"
-            )
+            logger.info(f"⏱️  [{self.pipeline_name}] {name}: {duration:.4f}s")
 
     @contextlib.contextmanager
     def step(self, name: str):
-        """Sync context-manager that times one step."""
         t0 = time.perf_counter()
         try:
             yield
         finally:
             duration = time.perf_counter() - t0
             self.steps.append((name, duration))
-            logger.info(
-                f"⏱️  [{self.pipeline_name}] {name}: {duration:.4f}s"
-            )
+            logger.info(f"⏱️  [{self.pipeline_name}] {name}: {duration:.4f}s")
 
     def summary(self):
-        """Log a formatted summary table of all recorded steps."""
         total = time.perf_counter() - self._pipeline_start
         lines = [f"📊 Pipeline '{self.pipeline_name}' completed in {total:.4f}s"]
         for name, dur in self.steps:
@@ -378,7 +326,6 @@ class StepTimer:
 
 
 def _on_exit():
-    """Log session end time and total uptime when the process exits."""
     end_time = datetime.now()
     uptime = end_time - START_TIME
     hours, remainder = divmod(int(uptime.total_seconds()), 3600)
@@ -390,13 +337,9 @@ def _on_exit():
     logger.info("=" * 80)
 
 
-# ── Module-level singleton & global exception hook ────────────────────────────
 logger = CustomLogger(app_name=settings.PROJECT_NAME)
 sys.excepthook = exception_logging
 atexit.register(_on_exit)
-
-
-# ── Uvicorn log integration ───────────────────────────────────────────────────
 
 _CONSOLE_FMT = (
     "[%(asctime)s]"
@@ -407,11 +350,6 @@ _CONSOLE_FMT = (
 
 
 def setup_uvicorn_logging() -> None:
-    """
-    Replace the default handlers on every uvicorn logger with the same
-    ColorFormatter used by the application logger so that **all** output
-    (startup banners, access lines, etc.) shares one consistent format.
-    """
     formatter = ColorFormatter(_CONSOLE_FMT, datefmt=_TIME_FMT)
 
     handler = logging.StreamHandler()
@@ -426,11 +364,6 @@ def setup_uvicorn_logging() -> None:
 
 
 def get_uvicorn_log_config() -> dict:
-    """
-    Return a LOGGING dict-config that uvicorn.run() will apply at startup.
-    It wires every uvicorn logger through our ColorFormatter so the output
-    is identical to the application logger.
-    """
     return {
         "version": 1,
         "disable_existing_loggers": False,
@@ -449,11 +382,7 @@ def get_uvicorn_log_config() -> dict:
             },
         },
         "loggers": {
-            "uvicorn": {
-                "handlers": ["default"],
-                "level": "INFO",
-                "propagate": False,
-            },
+            "uvicorn": {"handlers": ["default"], "level": "INFO", "propagate": False},
             "uvicorn.error": {
                 "handlers": ["default"],
                 "level": "INFO",
@@ -468,14 +397,7 @@ def get_uvicorn_log_config() -> dict:
     }
 
 
-# ── FastAPI request timing middleware ─────────────────────────────────────────
-
 class RequestTimingMiddleware:
-    """
-    ASGI middleware that logs the HTTP method, path, status code and
-    wall-clock duration for every request.
-    """
-
     def __init__(self, app):
         self.app = app
 
@@ -499,6 +421,4 @@ class RequestTimingMiddleware:
             duration = time.perf_counter() - start
             method = scope.get("method", "?")
             path = scope.get("path", "?")
-            logger.info(
-                f"🌐 {method} {path} → {status_code} | {duration:.4f}s"
-            )
+            logger.info(f"🌐 {method} {path} → {status_code} | {duration:.4f}s")

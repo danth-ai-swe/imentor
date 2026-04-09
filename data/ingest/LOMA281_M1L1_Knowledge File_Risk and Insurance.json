@@ -1,0 +1,2175 @@
+[
+  {
+    "id": "97177ef1-69f1-4982-b0ca-3b6e52eaf8e6",
+    "text": "Module 1: Risk and Insurance... 2\nLesson 1...2\nLearning Objectives... 3\nRisky Business... 3\nWhat do you think...3\nType of Risk...5\nLearning Objective...5\nWhat is Life Insurance?... 5\nWhat is Risk?...5\nSpeculative Risk vs. Pure Risk...5\nExample of Speculative and Pure Risk...5\nWhat do you think...6\nRisk Management...6\nLearning Objective...6\nWhat do you think3...7\nLife Insurance Terminology...8\nLearning Objective...8\nInsurance...8\nWhat is Life Insurance?... 9\nRisk Pooling...9\nWhat is an Annuity?... 10",
+    "payload": {
+      "chunk_index": 0,
+      "total_chunks": 81,
+      "page_number": 1,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Concepts",
+      "node_name": "Risk",
+      "node_id": 1,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [],
+      "next": [
+        "eca5b9e1-1632-4f74-a086-f5551cc3e016",
+        "6596a986-f635-4faa-ad7b-6d6dcc30a941",
+        "ba6286d8-b342-419d-905d-ea6a27bb128f"
+      ]
+    }
+  },
+  {
+    "id": "eca5b9e1-1632-4f74-a086-f5551cc3e016",
+    "text": "Insurance...8\nWhat is Life Insurance?... 9\nRisk Pooling...9\nWhat is an Annuity?... 10\nAnnuities... 10",
+    "payload": {
+      "chunk_index": 1,
+      "total_chunks": 81,
+      "page_number": 1,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Basics",
+      "node_name": "Life Insurance",
+      "node_id": 12,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "97177ef1-69f1-4982-b0ca-3b6e52eaf8e6"
+      ],
+      "next": [
+        "6596a986-f635-4faa-ad7b-6d6dcc30a941",
+        "ba6286d8-b342-419d-905d-ea6a27bb128f",
+        "2169afd8-614e-4677-b141-48ae86eb53e4"
+      ]
+    }
+  },
+  {
+    "id": "6596a986-f635-4faa-ad7b-6d6dcc30a941",
+    "text": "Let’s Review...10\nBasic Insurance Terminology... 11\nLet’s review... 13\nModule 1: Risk and Insurance\nIn this module, we’ll start with some basics. What is life insurance? What\nis risk? Viewing life insurance basics through the eyes of potential\ninsurance customers, you’ll learn about:\n\nRisk and risk management\n\nRegulation of insurance\n\nLife insurance as a contract\n\nThe value exchange in an insurance transaction\nLesson 1\nHere you’ll meet Hector Garcia, a young married man and expectant",
+    "payload": {
+      "chunk_index": 2,
+      "total_chunks": 81,
+      "page_number": 2,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Basics",
+      "node_name": "Insurance",
+      "node_id": 10,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "97177ef1-69f1-4982-b0ca-3b6e52eaf8e6",
+        "eca5b9e1-1632-4f74-a086-f5551cc3e016"
+      ],
+      "next": [
+        "ba6286d8-b342-419d-905d-ea6a27bb128f",
+        "2169afd8-614e-4677-b141-48ae86eb53e4",
+        "00b0063d-1af0-47b6-a798-9a67030e63b0"
+      ]
+    }
+  },
+  {
+    "id": "ba6286d8-b342-419d-905d-ea6a27bb128f",
+    "text": "Lesson 1\nHere you’ll meet Hector Garcia, a young married man and expectant\nfather. Follow Hector as he begins his journey into the world of\ninsurance. In this lesson, Hector learns basic insurance terminology,\nhow insurance companies manage risks, who’s insurable, and how\nunderwriters determine his degree of risk (mức độrủi ro).\nSection List:\n\nLearning Objectives\n\nRisky Business\n\nTypes of Risk",
+    "payload": {
+      "chunk_index": 3,
+      "total_chunks": 81,
+      "page_number": 2,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Concepts",
+      "node_name": "Risk",
+      "node_id": "1",
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "97177ef1-69f1-4982-b0ca-3b6e52eaf8e6",
+        "eca5b9e1-1632-4f74-a086-f5551cc3e016",
+        "6596a986-f635-4faa-ad7b-6d6dcc30a941"
+      ],
+      "next": [
+        "2169afd8-614e-4677-b141-48ae86eb53e4",
+        "00b0063d-1af0-47b6-a798-9a67030e63b0",
+        "ae83c644-3c86-4f82-a67b-6a0828f05236"
+      ]
+    }
+  },
+  {
+    "id": "2169afd8-614e-4677-b141-48ae86eb53e4",
+    "text": "\nRisk Management\n\nLife Insurance Terminology\n\nInsurable Risks\n\nUnderwriters and Underwriting\n\nRisk Classes\n\nEnd of Lesson Questions\nLearning Objectives\nAfter studying this lesson, you will be able to:\n\nDistinguish between speculative risk (rủi ro đầu cơ) and pure risk (rủi\nro thuần túy).\n\nDefine basic insurance terminology (thuật ngữbảo hiểm cơ bản).\n\nDescribe the characteristics of insurable risks.\n\nExplain the role of underwriters and how they assess specific risks.\n",
+    "payload": {
+      "chunk_index": 4,
+      "total_chunks": 81,
+      "page_number": 3,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Basics",
+      "node_name": "Insurance",
+      "node_id": 10,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "eca5b9e1-1632-4f74-a086-f5551cc3e016",
+        "6596a986-f635-4faa-ad7b-6d6dcc30a941",
+        "ba6286d8-b342-419d-905d-ea6a27bb128f"
+      ],
+      "next": [
+        "00b0063d-1af0-47b6-a798-9a67030e63b0",
+        "ae83c644-3c86-4f82-a67b-6a0828f05236",
+        "85a4e3b3-b9fe-403c-9549-4ce96ce78c93"
+      ]
+    }
+  },
+  {
+    "id": "00b0063d-1af0-47b6-a798-9a67030e63b0",
+    "text": "\nExplain the role of underwriters and how they assess specific risks.\n\nDefine antiselection (lựa chọn bất lợi) and give examples of two factors\nthat can increase or decrease the likelihood that an individual will\nsuffer a loss.\n\nIdentify four risk classes (hạng mức rủi ro) for proposed insureds\n(người được đềxuất bảo hiểm).\n\nIdentify four risk management techniques (4 kỹthuật quản lý rủi ro).\nRisky Business\nWhat do you think\nAssume you're applying for a life insurance policy. During his presentation,",
+    "payload": {
+      "chunk_index": 5,
+      "total_chunks": 81,
+      "page_number": 3,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Management Techniques",
+      "node_name": "Risk Management",
+      "node_id": 5,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "6596a986-f635-4faa-ad7b-6d6dcc30a941",
+        "ba6286d8-b342-419d-905d-ea6a27bb128f",
+        "2169afd8-614e-4677-b141-48ae86eb53e4"
+      ],
+      "next": [
+        "ae83c644-3c86-4f82-a67b-6a0828f05236",
+        "85a4e3b3-b9fe-403c-9549-4ce96ce78c93",
+        "bfca507b-e5db-4a4f-85fc-b79f61193bfa"
+      ]
+    }
+  },
+  {
+    "id": "ae83c644-3c86-4f82-a67b-6a0828f05236",
+    "text": "What do you think\nAssume you're applying for a life insurance policy. During his presentation,\nthe insurance agent makes the following statements. Are they all true?\n(Select all that apply.)\nPeople buy insurance to reduce the financial risk they face, but not\nevery type of risk is insurable.\nBoth pure risks and speculative risks are insurable.\nMost life insurance policies are valued contracts (hợp đồng định giá),\nwhich state at the time of policy issue the amount of the benefit",
+    "payload": {
+      "chunk_index": 6,
+      "total_chunks": 81,
+      "page_number": 3,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Basics",
+      "node_name": "Life Insurance",
+      "node_id": 12,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "ba6286d8-b342-419d-905d-ea6a27bb128f",
+        "2169afd8-614e-4677-b141-48ae86eb53e4",
+        "00b0063d-1af0-47b6-a798-9a67030e63b0"
+      ],
+      "next": [
+        "85a4e3b3-b9fe-403c-9549-4ce96ce78c93",
+        "bfca507b-e5db-4a4f-85fc-b79f61193bfa",
+        "ff9840af-13dc-44a0-af75-f5a774d83f1d"
+      ]
+    }
+  },
+  {
+    "id": "85a4e3b3-b9fe-403c-9549-4ce96ce78c93",
+    "text": "which state at the time of policy issue the amount of the benefit\npayable when the insured person dies.\nMost life insurance policies are issued at substandard premium rates\n(phí bảo hiểm dưới chuẩn).",
+    "payload": {
+      "chunk_index": 7,
+      "total_chunks": 81,
+      "page_number": 3,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Basics",
+      "node_name": "Life Insurance",
+      "node_id": 12,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "2169afd8-614e-4677-b141-48ae86eb53e4",
+        "00b0063d-1af0-47b6-a798-9a67030e63b0",
+        "ae83c644-3c86-4f82-a67b-6a0828f05236"
+      ],
+      "next": [
+        "bfca507b-e5db-4a4f-85fc-b79f61193bfa",
+        "ff9840af-13dc-44a0-af75-f5a774d83f1d",
+        "fe404b9f-46d3-4df2-b53e-6dfde553b07b"
+      ]
+    }
+  },
+  {
+    "id": "bfca507b-e5db-4a4f-85fc-b79f61193bfa",
+    "text": "Explanation:\n1. People buy insurance to reduce the financial risk they face, but not\nevery type of risk is insurable. (Đúng)\nGiải thích:\n\nMọi người mua bảo hiểm đểgiảm bớt rủi ro tài chính.\n\nTuy nhiên không phải rủi ro nào cũng có thểbảo hiểm (ví dụ: rủi ro\nđầu cơ/speculative risk không được bảo hiểm).\n2. Both pure risks and speculative risks are insurable. (Sai)\nGiải thích:\n\nChỉrủi ro thuần túy (Pure Risk - 純粋危険- Thuần Túy Nguy Hiểm) mới\ncó thểđược bảo hiểm (ví dụ: tửvong, bệnh tật).\n",
+    "payload": {
+      "chunk_index": 8,
+      "total_chunks": 81,
+      "page_number": 4,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Concepts",
+      "node_name": "Pure Risk",
+      "node_id": 3,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "00b0063d-1af0-47b6-a798-9a67030e63b0",
+        "ae83c644-3c86-4f82-a67b-6a0828f05236",
+        "85a4e3b3-b9fe-403c-9549-4ce96ce78c93"
+      ],
+      "next": [
+        "ff9840af-13dc-44a0-af75-f5a774d83f1d",
+        "fe404b9f-46d3-4df2-b53e-6dfde553b07b",
+        "d268c1d6-f271-4b6d-835a-b95730d1cbf1"
+      ]
+    }
+  },
+  {
+    "id": "ff9840af-13dc-44a0-af75-f5a774d83f1d",
+    "text": "có thểđược bảo hiểm (ví dụ: tửvong, bệnh tật).\n\nRủi ro đầu cơ (Speculative Risk - 投機危険- Đầu Cơ Nguy Hiểm) (như\nđầu tư cổphiếu, cờbạc) không được bảo hiểm.\n3. Most life insurance policies are valued contracts, which state at the\ntime of policy issue the amount of the benefit payable when the\ninsured person dies. (Đúng)\nGiải thích:\n\nHầu hết các hợp đồng bảo hiểm nhân thọlà Valued Contracts (Hợp\nđồng định giá).\n\nSốtiền bồi thường (death benefit) được xác định rõ khi hợp đồng được",
+    "payload": {
+      "chunk_index": 9,
+      "total_chunks": 81,
+      "page_number": 4,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Basics",
+      "node_name": "Life Insurance",
+      "node_id": 12,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "ae83c644-3c86-4f82-a67b-6a0828f05236",
+        "85a4e3b3-b9fe-403c-9549-4ce96ce78c93",
+        "bfca507b-e5db-4a4f-85fc-b79f61193bfa"
+      ],
+      "next": [
+        "fe404b9f-46d3-4df2-b53e-6dfde553b07b",
+        "d268c1d6-f271-4b6d-835a-b95730d1cbf1",
+        "e073a302-7966-4069-ba59-1e6328328964"
+      ]
+    }
+  },
+  {
+    "id": "fe404b9f-46d3-4df2-b53e-6dfde553b07b",
+    "text": "đồng định giá).\n\nSốtiền bồi thường (death benefit) được xác định rõ khi hợp đồng được\nphát hành, không phụthuộc vào tổn thất thực tế.\n4. Most life insurance policies are issued at substandard premium rates.\n(Sai)\nGiải thích:",
+    "payload": {
+      "chunk_index": 10,
+      "total_chunks": 81,
+      "page_number": 4,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Basics",
+      "node_name": "Life Insurance",
+      "node_id": 12,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "85a4e3b3-b9fe-403c-9549-4ce96ce78c93",
+        "bfca507b-e5db-4a4f-85fc-b79f61193bfa",
+        "ff9840af-13dc-44a0-af75-f5a774d83f1d"
+      ],
+      "next": [
+        "d268c1d6-f271-4b6d-835a-b95730d1cbf1",
+        "e073a302-7966-4069-ba59-1e6328328964",
+        "ce077b2e-b148-458f-a187-7acef00481a1"
+      ]
+    }
+  },
+  {
+    "id": "d268c1d6-f271-4b6d-835a-b95730d1cbf1",
+    "text": "\nHầu hết các hợp đồng bảo hiểm được phát hành với mức phí chuẩn\n(Standard Premium Rate), vì đa sốkhách hàng thuộc nhóm rủi ro bình\nthường.\n\nSubstandard Premium Rate chỉáp dụng cho những người có rủi ro sức\nkhỏe cao hoặc nghềnghiệp đặc biệt nguy hiểm.\nType of Risk\nLearning Objective\nDistinguish between speculative risk and pure risk.\nWhat is Life Insurance?\nLife insurance reduces the economic impact that occurs when someone dies.\nHow does it do this? To understand how first we need to discuss risk.",
+    "payload": {
+      "chunk_index": 11,
+      "total_chunks": 81,
+      "page_number": 5,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Concepts",
+      "node_name": "Pure Risk",
+      "node_id": 3,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "bfca507b-e5db-4a4f-85fc-b79f61193bfa",
+        "ff9840af-13dc-44a0-af75-f5a774d83f1d",
+        "fe404b9f-46d3-4df2-b53e-6dfde553b07b"
+      ],
+      "next": [
+        "e073a302-7966-4069-ba59-1e6328328964",
+        "ce077b2e-b148-458f-a187-7acef00481a1",
+        "39e2dacb-f65a-4de8-b60f-9a2914b10e47"
+      ]
+    }
+  },
+  {
+    "id": "e073a302-7966-4069-ba59-1e6328328964",
+    "text": "How does it do this? To understand how first we need to discuss risk.\nWhat is Risk?\nRisk is the possibility of an unexpected result. This could be a gain or a loss.\nUsually, we worry about unexpected losses, but you’d probably like to see\nan unexpected gain, wouldn’t you?\nSpeculative Risk vs. Pure Risk\nSome risks are speculative risks that can result in a loss, gain, or no\nchange...\n…while other risks are pure risks that involve either a loss or no loss. There\nis no possibility of gain.",
+    "payload": {
+      "chunk_index": 12,
+      "total_chunks": 81,
+      "page_number": 5,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Concepts",
+      "node_name": "Speculative Risk",
+      "node_id": 2,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "ff9840af-13dc-44a0-af75-f5a774d83f1d",
+        "fe404b9f-46d3-4df2-b53e-6dfde553b07b",
+        "d268c1d6-f271-4b6d-835a-b95730d1cbf1"
+      ],
+      "next": [
+        "ce077b2e-b148-458f-a187-7acef00481a1",
+        "39e2dacb-f65a-4de8-b60f-9a2914b10e47",
+        "cc153d93-fae3-4852-a3a6-28172fd576a9"
+      ]
+    }
+  },
+  {
+    "id": "ce077b2e-b148-458f-a187-7acef00481a1",
+    "text": "is no possibility of gain.\nExample of Speculative and Pure Risk\nExample: Carol and John Wilson are both employed full time and their\nfamily needs both of their incomes to support their standard of living.\nRecently, they purchased $10,000 of stock in a growing software company.",
+    "payload": {
+      "chunk_index": 13,
+      "total_chunks": 81,
+      "page_number": 5,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Concepts",
+      "node_name": "Speculative Risk",
+      "node_id": 2,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "fe404b9f-46d3-4df2-b53e-6dfde553b07b",
+        "d268c1d6-f271-4b6d-835a-b95730d1cbf1",
+        "e073a302-7966-4069-ba59-1e6328328964"
+      ],
+      "next": [
+        "39e2dacb-f65a-4de8-b60f-9a2914b10e47",
+        "cc153d93-fae3-4852-a3a6-28172fd576a9",
+        "e7d6f625-163d-41bf-9bdb-1f4107089c79"
+      ]
+    }
+  },
+  {
+    "id": "39e2dacb-f65a-4de8-b60f-9a2914b10e47",
+    "text": "They believe that the software company will be successful and that their\ninvestment will soon be worth a lot more than $10,000.\nAnalysis: The Wilsons’ investment in a software company is an example of\nspeculative risk because the value of their investment may increase, remain\nthe same, or decrease.\nThe possibility that one or both of the Wilsons could die leaving their family\nwith a loss of income is an example of a pure risk because there is no\npossibility of a gain in that situation.\nWhat do you think",
+    "payload": {
+      "chunk_index": 14,
+      "total_chunks": 81,
+      "page_number": 6,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Concepts",
+      "node_name": "Speculative Risk",
+      "node_id": 2,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "d268c1d6-f271-4b6d-835a-b95730d1cbf1",
+        "e073a302-7966-4069-ba59-1e6328328964",
+        "ce077b2e-b148-458f-a187-7acef00481a1"
+      ],
+      "next": [
+        "cc153d93-fae3-4852-a3a6-28172fd576a9",
+        "e7d6f625-163d-41bf-9bdb-1f4107089c79",
+        "679148b9-72ee-435d-abc1-3c0d4ca1349e"
+      ]
+    }
+  },
+  {
+    "id": "cc153d93-fae3-4852-a3a6-28172fd576a9",
+    "text": "possibility of a gain in that situation.\nWhat do you think\nInsurance companies won’t insure all types of risks. Which risks do you think\nare insurable?\nOnly pure risks\nOnly speculative risks\nBoth pure risks and speculative risks\nNeither pure risks nor speculative risks\nExplanation: Only pure risks\nInsurance is designed to compensate for financial loss, not to provide an\nopportunity for financial gain. So, only pure risks can be insured. Because",
+    "payload": {
+      "chunk_index": 15,
+      "total_chunks": 81,
+      "page_number": 6,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Concepts",
+      "node_name": "Pure Risk",
+      "node_id": 3,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "e073a302-7966-4069-ba59-1e6328328964",
+        "ce077b2e-b148-458f-a187-7acef00481a1",
+        "39e2dacb-f65a-4de8-b60f-9a2914b10e47"
+      ],
+      "next": [
+        "e7d6f625-163d-41bf-9bdb-1f4107089c79",
+        "679148b9-72ee-435d-abc1-3c0d4ca1349e",
+        "46408a8a-63a0-4bf6-9c2e-38cdc8f6206f"
+      ]
+    }
+  },
+  {
+    "id": "e7d6f625-163d-41bf-9bdb-1f4107089c79",
+    "text": "opportunity for financial gain. So, only pure risks can be insured. Because\nspeculative risks involve the possibility of gain, they are not insurable.\nRisk Management\nLearning Objective\nIdentify four risk management techniques.",
+    "payload": {
+      "chunk_index": 16,
+      "total_chunks": 81,
+      "page_number": 6,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Concepts",
+      "node_name": "Pure Risk",
+      "node_id": "3",
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "ce077b2e-b148-458f-a187-7acef00481a1",
+        "39e2dacb-f65a-4de8-b60f-9a2914b10e47",
+        "cc153d93-fae3-4852-a3a6-28172fd576a9"
+      ],
+      "next": [
+        "679148b9-72ee-435d-abc1-3c0d4ca1349e",
+        "46408a8a-63a0-4bf6-9c2e-38cdc8f6206f",
+        "aaef4af3-6061-4160-8af0-f766997de17a"
+      ]
+    }
+  },
+  {
+    "id": "679148b9-72ee-435d-abc1-3c0d4ca1349e",
+    "text": "Risks are a part of life. When you travel, start a business, make a purchase,\nor cross the street, you take a risk.\nBecause risks represent uncertainties, we try to manage them to eliminate\nor minimize our potential losses and, ideally, to maximize our gains.\nOnce risks have been identified and assessed, all techniques to manage the\nrisk fall into one or more of these four major categories: avoid, control,\ntransfer or accept.\nWhat do you think3\nHow do these risk management techniques work? Select the risk",
+    "payload": {
+      "chunk_index": 17,
+      "total_chunks": 81,
+      "page_number": 7,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Management Techniques",
+      "node_name": "Risk Management",
+      "node_id": 5,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "39e2dacb-f65a-4de8-b60f-9a2914b10e47",
+        "cc153d93-fae3-4852-a3a6-28172fd576a9",
+        "e7d6f625-163d-41bf-9bdb-1f4107089c79"
+      ],
+      "next": [
+        "46408a8a-63a0-4bf6-9c2e-38cdc8f6206f",
+        "aaef4af3-6061-4160-8af0-f766997de17a",
+        "1deaaa27-ebf3-4a7a-a3b7-3a50c92dbebc"
+      ]
+    }
+  },
+  {
+    "id": "46408a8a-63a0-4bf6-9c2e-38cdc8f6206f",
+    "text": "transfer or accept.\nWhat do you think3\nHow do these risk management techniques work? Select the risk\nmanagement technique that matches the example.\n1. Steve is nervous about losing money in the stock market, so he doesn’t\ninvest in stocks.\nAvoiding Risk\nControlling Risk\nAccepting Risk\nTransferring Risk\nExplanation: Avoid Risk\nBy not investing in the stock market, Steve avoids the risk of losing money\nin the stock market. While effective, this technique isn’t always practical.",
+    "payload": {
+      "chunk_index": 18,
+      "total_chunks": 81,
+      "page_number": 7,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Management Techniques",
+      "node_name": "Risk Avoidance",
+      "node_id": 6,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "cc153d93-fae3-4852-a3a6-28172fd576a9",
+        "e7d6f625-163d-41bf-9bdb-1f4107089c79",
+        "679148b9-72ee-435d-abc1-3c0d4ca1349e"
+      ],
+      "next": [
+        "aaef4af3-6061-4160-8af0-f766997de17a",
+        "1deaaa27-ebf3-4a7a-a3b7-3a50c92dbebc",
+        "a18f414d-4188-44dd-b854-8de6be8a7fd3"
+      ]
+    }
+  },
+  {
+    "id": "aaef4af3-6061-4160-8af0-f766997de17a",
+    "text": "in the stock market. While effective, this technique isn’t always practical.\n2. Mark uses a laptop computer in his business. If he loses the laptop or\naccidentally damages it, Mark will have to purchase another laptop or pay\nto have it repaired.\nAvoiding Risk\nControlling Risk\nAccepting Risk\nTransferring Risk",
+    "payload": {
+      "chunk_index": 19,
+      "total_chunks": 81,
+      "page_number": 7,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Management Techniques",
+      "node_name": "Risk Avoidance",
+      "node_id": 6,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "e7d6f625-163d-41bf-9bdb-1f4107089c79",
+        "679148b9-72ee-435d-abc1-3c0d4ca1349e",
+        "46408a8a-63a0-4bf6-9c2e-38cdc8f6206f"
+      ],
+      "next": [
+        "1deaaa27-ebf3-4a7a-a3b7-3a50c92dbebc",
+        "a18f414d-4188-44dd-b854-8de6be8a7fd3",
+        "bb6693b7-76d6-4c1b-9993-403cad8838af"
+      ]
+    }
+  },
+  {
+    "id": "1deaaa27-ebf3-4a7a-a3b7-3a50c92dbebc",
+    "text": "Explanation: Accepting Risk\nBy assuming the financial responsibility for replacing a lost/damaged laptop,\nMark accepts the risk. If you do not manage a risk by other means—avoiding,\ncontrolling, or transferring the risk—then you accept that risk.\n3. To reduce the likelihood of fire destroying her convenience store, Rebecca\ninstalled smoke detectors and a sprinkler system.\nAvoiding Risk\nControlling Risk\nAccepting Risk\nTransferring Risk\nExplanation: Controlling Risk",
+    "payload": {
+      "chunk_index": 20,
+      "total_chunks": 81,
+      "page_number": 8,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Management Techniques",
+      "node_name": "Risk Acceptance",
+      "node_id": 9,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "679148b9-72ee-435d-abc1-3c0d4ca1349e",
+        "46408a8a-63a0-4bf6-9c2e-38cdc8f6206f",
+        "aaef4af3-6061-4160-8af0-f766997de17a"
+      ],
+      "next": [
+        "a18f414d-4188-44dd-b854-8de6be8a7fd3",
+        "bb6693b7-76d6-4c1b-9993-403cad8838af",
+        "a5b0eaf7-c8c9-497b-8abc-3abd1d856f12"
+      ]
+    }
+  },
+  {
+    "id": "a18f414d-4188-44dd-b854-8de6be8a7fd3",
+    "text": "Avoiding Risk\nControlling Risk\nAccepting Risk\nTransferring Risk\nExplanation: Controlling Risk\nInstalling smoke detectors and sprinkler systems will help Rebecca control\nher risk by preventing or reducing losses from a fire.\n4. Conrad purchased a disability income insurance policy to provide for his\nfamily in case he becomes sick or injured and can’t work.\n\nAvoiding Risk\n\nControlling Risk\n\nAccepting Risk\n\nTransferring Risk\nExplanation: Transferring Risk",
+    "payload": {
+      "chunk_index": 21,
+      "total_chunks": 81,
+      "page_number": 8,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Management Techniques",
+      "node_name": "Risk Management",
+      "node_id": 5,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "46408a8a-63a0-4bf6-9c2e-38cdc8f6206f",
+        "aaef4af3-6061-4160-8af0-f766997de17a",
+        "1deaaa27-ebf3-4a7a-a3b7-3a50c92dbebc"
+      ],
+      "next": [
+        "bb6693b7-76d6-4c1b-9993-403cad8838af",
+        "a5b0eaf7-c8c9-497b-8abc-3abd1d856f12",
+        "d1546deb-2f13-4600-8a20-55babf88e760"
+      ]
+    }
+  },
+  {
+    "id": "bb6693b7-76d6-4c1b-9993-403cad8838af",
+    "text": "Avoiding Risk\n\nControlling Risk\n\nAccepting Risk\n\nTransferring Risk\nExplanation: Transferring Risk\nBy purchasing disability insurance coverage, Conrad transfers the financial\nresponsibility for the risk to an insurance company.\nLife Insurance Terminology\nLearning Objective\nDefine basic insurance terminology.\nInsurance\nInsurance is a method for transferring risk from an individual to an insurance\ncompany.",
+    "payload": {
+      "chunk_index": 22,
+      "total_chunks": 81,
+      "page_number": 8,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Management Techniques",
+      "node_name": "Risk Transfer",
+      "node_id": 8,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "aaef4af3-6061-4160-8af0-f766997de17a",
+        "1deaaa27-ebf3-4a7a-a3b7-3a50c92dbebc",
+        "a18f414d-4188-44dd-b854-8de6be8a7fd3"
+      ],
+      "next": [
+        "a5b0eaf7-c8c9-497b-8abc-3abd1d856f12",
+        "d1546deb-2f13-4600-8a20-55babf88e760",
+        "c22f1f35-2021-49df-900d-f80cd8f94a5a"
+      ]
+    }
+  },
+  {
+    "id": "a5b0eaf7-c8c9-497b-8abc-3abd1d856f12",
+    "text": "An insurer that accepts a risk makes a promise to pay an amount of money\n(the policy benefit) if a certain loss occurs.\nIn exchange for this promise, the person buying the insurance pays an\namount of money, or premium, to the insurer.\nWhat is Life Insurance?\nSo now you can probably guess what life insurance is:\nA promise to pay money (a policy benefit) when the person named in the\npolicy dies.\nFor example, Barbara Allen bought a $500,000 insurance policy on her life",
+    "payload": {
+      "chunk_index": 23,
+      "total_chunks": 81,
+      "page_number": 9,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Basics",
+      "node_name": "Life Insurance",
+      "node_id": 12,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "1deaaa27-ebf3-4a7a-a3b7-3a50c92dbebc",
+        "a18f414d-4188-44dd-b854-8de6be8a7fd3",
+        "bb6693b7-76d6-4c1b-9993-403cad8838af"
+      ],
+      "next": [
+        "d1546deb-2f13-4600-8a20-55babf88e760",
+        "c22f1f35-2021-49df-900d-f80cd8f94a5a",
+        "68865fd3-4a51-4487-8f2c-e687775347b8"
+      ]
+    }
+  },
+  {
+    "id": "d1546deb-2f13-4600-8a20-55babf88e760",
+    "text": "policy dies.\nFor example, Barbara Allen bought a $500,000 insurance policy on her life\nfrom Best Life Insurance Company. If Barbara dies while the policy is in\nforce, Best will pay $500,000 to Barbara’s husband, Bob.\nLife insurance protects against the financial consequences of dying,\nespecially dying earlier than expected.\nFinancial consequences of death include the deceased person’s\n\nLost future income\n\nFuneral expenses\n\nFinal medical expenses\n\nUnpaid debts\nRisk Pooling",
+    "payload": {
+      "chunk_index": 24,
+      "total_chunks": 81,
+      "page_number": 9,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Basics",
+      "node_name": "Life Insurance",
+      "node_id": 12,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "a18f414d-4188-44dd-b854-8de6be8a7fd3",
+        "bb6693b7-76d6-4c1b-9993-403cad8838af",
+        "a5b0eaf7-c8c9-497b-8abc-3abd1d856f12"
+      ],
+      "next": [
+        "c22f1f35-2021-49df-900d-f80cd8f94a5a",
+        "68865fd3-4a51-4487-8f2c-e687775347b8",
+        "4f7e5963-559d-442d-a090-198f129deff0"
+      ]
+    }
+  },
+  {
+    "id": "c22f1f35-2021-49df-900d-f80cd8f94a5a",
+    "text": "\nLost future income\n\nFuneral expenses\n\nFinal medical expenses\n\nUnpaid debts\nRisk Pooling\nInsurance is based on the concept of risk pooling (gộp rủi ro).\nPeople who face the risk of a particular loss (tổn thất cụthể)—like the\nfinancial loss associated with death—transfer this risk to an insurance\ncompany.\nInsurers collect premiums from all insured people and spread the cost (phân\ntán chi phí) of the relatively few anticipated losses (sốlượng tổn thất dựkiến\ntương đối) among all insureds.",
+    "payload": {
+      "chunk_index": 25,
+      "total_chunks": 81,
+      "page_number": 9,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Basics",
+      "node_name": "Risk Pooling",
+      "node_id": 11,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "bb6693b7-76d6-4c1b-9993-403cad8838af",
+        "a5b0eaf7-c8c9-497b-8abc-3abd1d856f12",
+        "d1546deb-2f13-4600-8a20-55babf88e760"
+      ],
+      "next": [
+        "68865fd3-4a51-4487-8f2c-e687775347b8",
+        "4f7e5963-559d-442d-a090-198f129deff0",
+        "d787c2e7-5636-4624-9d43-42f0f6e60f84"
+      ]
+    }
+  },
+  {
+    "id": "68865fd3-4a51-4487-8f2c-e687775347b8",
+    "text": "What is an Annuity?\nLike dying too soon, living too long—or longer than expected—carries a\nfinancial risk.\nMost of us don’t consider living a long life to be risky, but what would you do\nif you ran out of money while you were still alive?\nAnnuities\nThis risk of outliving your assets is real. People can transfer this risk to an\ninsurer by purchasing an annuity and receiving a promise of periodic\npayments for a set period or for life. Some annuities provide income for the",
+    "payload": {
+      "chunk_index": 26,
+      "total_chunks": 81,
+      "page_number": 10,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Basics",
+      "node_name": "Annuity",
+      "node_id": 13,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "a5b0eaf7-c8c9-497b-8abc-3abd1d856f12",
+        "d1546deb-2f13-4600-8a20-55babf88e760",
+        "c22f1f35-2021-49df-900d-f80cd8f94a5a"
+      ],
+      "next": [
+        "4f7e5963-559d-442d-a090-198f129deff0",
+        "d787c2e7-5636-4624-9d43-42f0f6e60f84",
+        "28ec0aa6-d5b8-49dc-9e8e-57667ca542c0"
+      ]
+    }
+  },
+  {
+    "id": "4f7e5963-559d-442d-a090-198f129deff0",
+    "text": "payments for a set period or for life. Some annuities provide income for the\nrest of a person’s life, no matter how long that is.\nFor example, Wladimir Dobrzynski might purchase an annuity that will\nprovide monthly payments of $1,000 to him for 20 years, with the\nunderstanding that if he lives another 30 years, he will have to survive 10\nyears without that source of income. Or he might purchase an annuity that\nprovides monthly payments of $500 for the rest of his life, regardless of how\nlong he lives.",
+    "payload": {
+      "chunk_index": 27,
+      "total_chunks": 81,
+      "page_number": 10,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Basics",
+      "node_name": "Annuity",
+      "node_id": 13,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "d1546deb-2f13-4600-8a20-55babf88e760",
+        "c22f1f35-2021-49df-900d-f80cd8f94a5a",
+        "68865fd3-4a51-4487-8f2c-e687775347b8"
+      ],
+      "next": [
+        "d787c2e7-5636-4624-9d43-42f0f6e60f84",
+        "28ec0aa6-d5b8-49dc-9e8e-57667ca542c0",
+        "d8db93c4-ab9c-428b-bc36-4d20fbf1f952"
+      ]
+    }
+  },
+  {
+    "id": "d787c2e7-5636-4624-9d43-42f0f6e60f84",
+    "text": "provides monthly payments of $500 for the rest of his life, regardless of how\nlong he lives.\nLet’s Review\nIdentify the type of insurance product that each person can use to address\nhis needs.\n1. Minh wants to provide her family with a source of income that they can\nuse if she dies.\nAnnuity\nLife Insurance\nAnswer: Life Insurance\n2. Isaiah wants to make sure that he has a monthly income once he retires.\nAnnuity",
+    "payload": {
+      "chunk_index": 28,
+      "total_chunks": 81,
+      "page_number": 10,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Basics",
+      "node_name": "Life Insurance",
+      "node_id": 12,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "c22f1f35-2021-49df-900d-f80cd8f94a5a",
+        "68865fd3-4a51-4487-8f2c-e687775347b8",
+        "4f7e5963-559d-442d-a090-198f129deff0"
+      ],
+      "next": [
+        "28ec0aa6-d5b8-49dc-9e8e-57667ca542c0",
+        "d8db93c4-ab9c-428b-bc36-4d20fbf1f952",
+        "9f0213df-0192-40fb-829b-fc6119d2f642"
+      ]
+    }
+  },
+  {
+    "id": "28ec0aa6-d5b8-49dc-9e8e-57667ca542c0",
+    "text": "Life Insurance\nAnswer: Annuity\nBasic Insurance Terminology\nRead the dialogue and recap Hector and Maria’s situation:\nHector:\nSo I’m the applicant, right?\nJohn:\nYes, you’re the person applying for this policy. You actually serve a lot of\nroles. Since you’ll own the policy, you’ll be the policyowner. And, since\nwe’re insuring your life, you are also the insured.\nHector\nThe money would go to my wife Maria. That makes her the beneficiary,\nright?\nJohn\nThat’s right!\nJohn",
+    "payload": {
+      "chunk_index": 29,
+      "total_chunks": 81,
+      "page_number": 11,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Roles & Parties",
+      "node_name": "Applicant",
+      "node_id": 14,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "68865fd3-4a51-4487-8f2c-e687775347b8",
+        "4f7e5963-559d-442d-a090-198f129deff0",
+        "d787c2e7-5636-4624-9d43-42f0f6e60f84"
+      ],
+      "next": [
+        "d8db93c4-ab9c-428b-bc36-4d20fbf1f952",
+        "9f0213df-0192-40fb-829b-fc6119d2f642",
+        "159b9312-0dff-48b5-9a1c-a2644baaa67b"
+      ]
+    }
+  },
+  {
+    "id": "d8db93c4-ab9c-428b-bc36-4d20fbf1f952",
+    "text": "The money would go to my wife Maria. That makes her the beneficiary,\nright?\nJohn\nThat’s right!\nJohn\nI’m really glad you decided to take out a policy on Maria, too. You’d need\nsomething to replace her income if something happened to her.\nHector\nWho fills all of the roles for Maria’s policy?\nJohn\nYou’re still the applicant, and you’ll be the policyowner. Since you’ll own\nthe policy on Maria’s life, her policy is known as a third-party policy, and\nyou’re the third party.\nHector\nOK, I got it.\nJohn",
+    "payload": {
+      "chunk_index": 30,
+      "total_chunks": 81,
+      "page_number": 11,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Roles & Parties",
+      "node_name": "Beneficiary",
+      "node_id": 17,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "4f7e5963-559d-442d-a090-198f129deff0",
+        "d787c2e7-5636-4624-9d43-42f0f6e60f84",
+        "28ec0aa6-d5b8-49dc-9e8e-57667ca542c0"
+      ],
+      "next": [
+        "9f0213df-0192-40fb-829b-fc6119d2f642",
+        "159b9312-0dff-48b5-9a1c-a2644baaa67b",
+        "bd5893ed-345b-4243-8b1d-f709ced8515b"
+      ]
+    }
+  },
+  {
+    "id": "9f0213df-0192-40fb-829b-fc6119d2f642",
+    "text": "you’re the third party.\nHector\nOK, I got it.\nJohn\nMaria will have to sign a statement saying that it’s okay with her that you\npurchase this policy. Now, you tell me—who is the insured and who’s the\nbeneficiary?",
+    "payload": {
+      "chunk_index": 31,
+      "total_chunks": 81,
+      "page_number": 11,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Roles & Parties",
+      "node_name": "Insured",
+      "node_id": 16,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "d787c2e7-5636-4624-9d43-42f0f6e60f84",
+        "28ec0aa6-d5b8-49dc-9e8e-57667ca542c0",
+        "d8db93c4-ab9c-428b-bc36-4d20fbf1f952"
+      ],
+      "next": [
+        "159b9312-0dff-48b5-9a1c-a2644baaa67b",
+        "bd5893ed-345b-4243-8b1d-f709ced8515b",
+        "088935b9-0ae6-4426-8663-9a65ce6e5c6b"
+      ]
+    }
+  },
+  {
+    "id": "159b9312-0dff-48b5-9a1c-a2644baaa67b",
+    "text": "Insurance Policy on Hector's Life\nApplicant: Hector\nPolicyowner: Hector\nInsured: Hector\nBeneficiary: Maria\nThird-party policy? No\nInsurance Policy on Maria’s Life\nApplicant: Hector\nPolicyowner: Hector\nInsured: Maria\nBeneficiary: Hector\nThird-party policy? Yes\nThe applicant is usually the policyowner. This is true for both policies.\nThe policyowner and the insured (policyowner-insured) are often the same\nperson. This is true for the policy insuring Hector",
+    "payload": {
+      "chunk_index": 32,
+      "total_chunks": 81,
+      "page_number": 12,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Roles & Parties",
+      "node_name": "Applicant",
+      "node_id": 14,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "28ec0aa6-d5b8-49dc-9e8e-57667ca542c0",
+        "d8db93c4-ab9c-428b-bc36-4d20fbf1f952",
+        "9f0213df-0192-40fb-829b-fc6119d2f642"
+      ],
+      "next": [
+        "bd5893ed-345b-4243-8b1d-f709ced8515b",
+        "088935b9-0ae6-4426-8663-9a65ce6e5c6b",
+        "5ad257c3-e5e7-4395-a63b-bcf3defbf542"
+      ]
+    }
+  },
+  {
+    "id": "bd5893ed-345b-4243-8b1d-f709ced8515b",
+    "text": "person. This is true for the policy insuring Hector\nWhen a covered loss occurs, the beneficiary files a claim with the insurance\ncompany, requesting payment under the terms of the policy",
+    "payload": {
+      "chunk_index": 33,
+      "total_chunks": 81,
+      "page_number": 12,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Basics",
+      "node_name": "Insurance",
+      "node_id": 10,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "d8db93c4-ab9c-428b-bc36-4d20fbf1f952",
+        "9f0213df-0192-40fb-829b-fc6119d2f642",
+        "159b9312-0dff-48b5-9a1c-a2644baaa67b"
+      ],
+      "next": [
+        "088935b9-0ae6-4426-8663-9a65ce6e5c6b",
+        "5ad257c3-e5e7-4395-a63b-bcf3defbf542",
+        "ce51126d-dc57-498d-a037-96b539a12e06"
+      ]
+    }
+  },
+  {
+    "id": "088935b9-0ae6-4426-8663-9a65ce6e5c6b",
+    "text": "Let’s review\nIdentify the term that is being defined.\n1. The person or entity that applies for an insurance policy.\nApplicant\nBeneficiary\nInsured\nPolicyowner\nThird-Party Policy\nAnswer: Applicant\n2. The person or entity that owns the insurance policy.\nApplicant\nBeneficiary\nInsured\nPolicyowner\nThird-Party Policy\nAnswer: Policyowner\n3. The person whose life, health, or property is insured under the policy.\nApplicant\nBeneficiary\nInsured\nPolicyowner\nThird-Party Policy\nAnswer: Insured",
+    "payload": {
+      "chunk_index": 34,
+      "total_chunks": 81,
+      "page_number": 13,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Roles & Parties",
+      "node_name": "Applicant",
+      "node_id": 14,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "9f0213df-0192-40fb-829b-fc6119d2f642",
+        "159b9312-0dff-48b5-9a1c-a2644baaa67b",
+        "bd5893ed-345b-4243-8b1d-f709ced8515b"
+      ],
+      "next": [
+        "5ad257c3-e5e7-4395-a63b-bcf3defbf542",
+        "ce51126d-dc57-498d-a037-96b539a12e06",
+        "54d85808-25aa-475e-9697-b54485f0d046"
+      ]
+    }
+  },
+  {
+    "id": "5ad257c3-e5e7-4395-a63b-bcf3defbf542",
+    "text": "4. The person or party the policyowner names to receive the life insurance\npolicy benefit.\nApplicant\nBeneficiary\nInsured\nPolicyowner\nThird-Party Policy\nAnswer: Beneficiary\n5. A policy purchased by one person or entity on the life of another person.\nApplicant\nBeneficiary\nInsured\nPolicyowner\nThird-Party Policy\nAnswer: Third-Party Policy\n6. Brad Lischka purchases a life insurance policy covering the life of his wife\nCathy. He names their son, Nicholas, to receive the policy benefit if Cathy",
+    "payload": {
+      "chunk_index": 35,
+      "total_chunks": 81,
+      "page_number": 14,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Roles & Parties",
+      "node_name": "Applicant",
+      "node_id": 14,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "159b9312-0dff-48b5-9a1c-a2644baaa67b",
+        "bd5893ed-345b-4243-8b1d-f709ced8515b",
+        "088935b9-0ae6-4426-8663-9a65ce6e5c6b"
+      ],
+      "next": [
+        "ce51126d-dc57-498d-a037-96b539a12e06",
+        "54d85808-25aa-475e-9697-b54485f0d046",
+        "731587ed-1bcc-40bf-b37b-2d516f21bac7"
+      ]
+    }
+  },
+  {
+    "id": "ce51126d-dc57-498d-a037-96b539a12e06",
+    "text": "Cathy. He names their son, Nicholas, to receive the policy benefit if Cathy\ndies. Match the people with their roles.\nBrad purchased the policy so he would be considered the ______________.\nPolicyowner\nBeneficiary\nInsured\nAnswer: Policyowner\nCathy would be the ______________.",
+    "payload": {
+      "chunk_index": 36,
+      "total_chunks": 81,
+      "page_number": 14,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Roles & Parties",
+      "node_name": "Policyowner",
+      "node_id": 15,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "bd5893ed-345b-4243-8b1d-f709ced8515b",
+        "088935b9-0ae6-4426-8663-9a65ce6e5c6b",
+        "5ad257c3-e5e7-4395-a63b-bcf3defbf542"
+      ],
+      "next": [
+        "54d85808-25aa-475e-9697-b54485f0d046",
+        "731587ed-1bcc-40bf-b37b-2d516f21bac7",
+        "11479290-a592-4dd1-b563-0760f747838a"
+      ]
+    }
+  },
+  {
+    "id": "54d85808-25aa-475e-9697-b54485f0d046",
+    "text": "Policyowner\nBeneficiary\nInsured\nAnswer: Insured\nIf Cathy dies the policy benefit would go to their son, Nicholas, the\n______________.\nPolicyowner\nBeneficiary\nInsured\nAnswer: Beneficiary\nInsurable risks\nLearning Objective\nDescribe the characteristics of insurable risks.\nWhat do you think?\nMonica Hardwick has an old car and wants a new one, so she plans to push\nher car down a hill into a lake. Is this an insurable loss?\nYes\nNo\nCan’t tell. Need more information.\nAnswer: No",
+    "payload": {
+      "chunk_index": 37,
+      "total_chunks": 81,
+      "page_number": 15,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Roles & Parties",
+      "node_name": "Applicant",
+      "node_id": 14,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "088935b9-0ae6-4426-8663-9a65ce6e5c6b",
+        "5ad257c3-e5e7-4395-a63b-bcf3defbf542",
+        "ce51126d-dc57-498d-a037-96b539a12e06"
+      ],
+      "next": [
+        "731587ed-1bcc-40bf-b37b-2d516f21bac7",
+        "11479290-a592-4dd1-b563-0760f747838a",
+        "9c8ac685-8d08-4134-9e6a-2bba6c5d7ca0"
+      ]
+    }
+  },
+  {
+    "id": "731587ed-1bcc-40bf-b37b-2d516f21bac7",
+    "text": "Explanation: To be insurable, a loss must occur by chance, which means it is\neither caused by an unexpected event or not intentionally caused by the\ninsured person.\nWhat do you think?\nTo be insurable, a loss must be:\nIndefinite in terms of time\nand amount\nDefinite in terms of time and amount\nAnswer: Definite in terms of time and amount\nExplanation: An insurable loss must be definite in terms of time and\namount. The insurer must be able to determine when to pay policy benefits",
+    "payload": {
+      "chunk_index": 38,
+      "total_chunks": 81,
+      "page_number": 16,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Contracts & Principles",
+      "node_name": "Insurable Risk",
+      "node_id": 19,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "5ad257c3-e5e7-4395-a63b-bcf3defbf542",
+        "ce51126d-dc57-498d-a037-96b539a12e06",
+        "54d85808-25aa-475e-9697-b54485f0d046"
+      ],
+      "next": [
+        "11479290-a592-4dd1-b563-0760f747838a",
+        "9c8ac685-8d08-4134-9e6a-2bba6c5d7ca0",
+        "df4f54ab-8363-4258-b781-ddba8195cf38"
+      ]
+    }
+  },
+  {
+    "id": "11479290-a592-4dd1-b563-0760f747838a",
+    "text": "amount. The insurer must be able to determine when to pay policy benefits\nand how much those benefits should be. The policy language controls how\nthe insurer will determine the benefit amount, and whether the policy is\nconsidered a contract of indemnity (hợp đồng bồi thường) or a valued\ncontract. (hợp đồng định giá).\nContract of Indemnity vs. Valued Contract\nMost insurance policies, other than life insurance policies, are contracts of\nindemnity which base benefits on the actual amount of the financial loss",
+    "payload": {
+      "chunk_index": 39,
+      "total_chunks": 81,
+      "page_number": 16,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Contracts & Principles",
+      "node_name": "Contract of Indemnity",
+      "node_id": 20,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "ce51126d-dc57-498d-a037-96b539a12e06",
+        "54d85808-25aa-475e-9697-b54485f0d046",
+        "731587ed-1bcc-40bf-b37b-2d516f21bac7"
+      ],
+      "next": [
+        "9c8ac685-8d08-4134-9e6a-2bba6c5d7ca0",
+        "df4f54ab-8363-4258-b781-ddba8195cf38",
+        "91118999-ffe2-4b6f-a0ed-808004876151"
+      ]
+    }
+  },
+  {
+    "id": "9c8ac685-8d08-4134-9e6a-2bba6c5d7ca0",
+    "text": "indemnity which base benefits on the actual amount of the financial loss\nthat results from a covered event when it occurs, subject to maximum\nlimits.\nMost life insurance policies are valued contracts, which state the benefit\npayable at the time of policy issue.\nThis benefit amount is the policy’s face amount (face value) because it is\nlisted on the face, or first, page of a life insurance policy.",
+    "payload": {
+      "chunk_index": 40,
+      "total_chunks": 81,
+      "page_number": 16,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Contracts & Principles",
+      "node_name": "Valued Contract",
+      "node_id": 21,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "54d85808-25aa-475e-9697-b54485f0d046",
+        "731587ed-1bcc-40bf-b37b-2d516f21bac7",
+        "11479290-a592-4dd1-b563-0760f747838a"
+      ],
+      "next": [
+        "df4f54ab-8363-4258-b781-ddba8195cf38",
+        "91118999-ffe2-4b6f-a0ed-808004876151",
+        "527ca8ef-15b2-4e00-ad68-3e84075c134d"
+      ]
+    }
+  },
+  {
+    "id": "df4f54ab-8363-4258-b781-ddba8195cf38",
+    "text": "Let’s review\n1. Karen Bell has individual medical expense insurance (bảo hiểm chi phí y\ntế). When she broke her leg, her insurance company paid a benefit for\nher medical expenses. Do you think the insurer based the amount of the\nbenefit on an amount stated in her policy or on the actual cost of her\nmedical care?\nAn exact amount stated in Karen’s policy\nThe actual cost of Karen’s medical expenses\nAnswer: The actual cost of Karen’s medical expenses",
+    "payload": {
+      "chunk_index": 41,
+      "total_chunks": 81,
+      "page_number": 17,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Basics",
+      "node_name": "Insurance",
+      "node_id": 10,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "731587ed-1bcc-40bf-b37b-2d516f21bac7",
+        "11479290-a592-4dd1-b563-0760f747838a",
+        "9c8ac685-8d08-4134-9e6a-2bba6c5d7ca0"
+      ],
+      "next": [
+        "91118999-ffe2-4b6f-a0ed-808004876151",
+        "527ca8ef-15b2-4e00-ad68-3e84075c134d",
+        "cff4cdf4-a061-4cb7-8aee-b65cc9020cd0"
+      ]
+    }
+  },
+  {
+    "id": "91118999-ffe2-4b6f-a0ed-808004876151",
+    "text": "The actual cost of Karen’s medical expenses\nAnswer: The actual cost of Karen’s medical expenses\nExplanation: Most health insurance policies are contracts of indemnity and\nbase benefits on the actual amount of the financial loss for a covered event\nwhen it occurs, subject to maximum limits stated in the policies.\n2. Charlie Crittenden is the policyowner-insured of a $100,000 life\ninsurance policy. Charlie became sick and died from his illness while the",
+    "payload": {
+      "chunk_index": 42,
+      "total_chunks": 81,
+      "page_number": 17,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Contracts & Principles",
+      "node_name": "Contract of Indemnity",
+      "node_id": 20,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "11479290-a592-4dd1-b563-0760f747838a",
+        "9c8ac685-8d08-4134-9e6a-2bba6c5d7ca0",
+        "df4f54ab-8363-4258-b781-ddba8195cf38"
+      ],
+      "next": [
+        "527ca8ef-15b2-4e00-ad68-3e84075c134d",
+        "cff4cdf4-a061-4cb7-8aee-b65cc9020cd0",
+        "72b46a5c-571e-4a91-b793-1a50e7ea636a"
+      ]
+    }
+  },
+  {
+    "id": "527ca8ef-15b2-4e00-ad68-3e84075c134d",
+    "text": "insurance policy. Charlie became sick and died from his illness while the\npolicy was in force. The insurance company paid a death benefit to his\nwife. What did the insurance company use as the basis for the death\nbenefit?\nThe policy’s $100,000 face amount (sốtiền ghi trên hợp đồng)\nThe actual cost of Charlie’s final medical and funeral expenses\nAnswer: The policy’s $100,000 face amount\nExplanation: Most life insurance policies are valued contracts, which state at",
+    "payload": {
+      "chunk_index": 43,
+      "total_chunks": 81,
+      "page_number": 17,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Contracts & Principles",
+      "node_name": "Valued Contract",
+      "node_id": 21,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "9c8ac685-8d08-4134-9e6a-2bba6c5d7ca0",
+        "df4f54ab-8363-4258-b781-ddba8195cf38",
+        "91118999-ffe2-4b6f-a0ed-808004876151"
+      ],
+      "next": [
+        "cff4cdf4-a061-4cb7-8aee-b65cc9020cd0",
+        "72b46a5c-571e-4a91-b793-1a50e7ea636a",
+        "bd8916b0-f55c-41b5-831a-800da2ac32d4"
+      ]
+    }
+  },
+  {
+    "id": "cff4cdf4-a061-4cb7-8aee-b65cc9020cd0",
+    "text": "Explanation: Most life insurance policies are valued contracts, which state at\nthe time of policy issue the amount of the benefit payable when the insured\nperson dies.",
+    "payload": {
+      "chunk_index": 44,
+      "total_chunks": 81,
+      "page_number": 17,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Contracts & Principles",
+      "node_name": "Valued Contract",
+      "node_id": 21,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "df4f54ab-8363-4258-b781-ddba8195cf38",
+        "91118999-ffe2-4b6f-a0ed-808004876151",
+        "527ca8ef-15b2-4e00-ad68-3e84075c134d"
+      ],
+      "next": [
+        "72b46a5c-571e-4a91-b793-1a50e7ea636a",
+        "bd8916b0-f55c-41b5-831a-800da2ac32d4",
+        "f9e5320b-cf65-4eda-8688-fb739caec204"
+      ]
+    }
+  },
+  {
+    "id": "72b46a5c-571e-4a91-b793-1a50e7ea636a",
+    "text": "What do you think?\n1. Harold Monroe would like to buy insurance on his rake, in case he breaks\nit. Do you think his rake is insurable?\nYes\nNo\nCan’t tell. No more information\nAnswer: No\nExplanation: Insignificant losses (tổn thất nhỏ) are not normally insurable.\nThe high expense of paying benefits for very small losses would make the\ncost of insurance too expensive.\nOn the other hand, a loss that is significant (tổn thất lớn) enough to cause",
+    "payload": {
+      "chunk_index": 45,
+      "total_chunks": 81,
+      "page_number": 18,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Contracts & Principles",
+      "node_name": "Insurable Risk",
+      "node_id": 19,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "91118999-ffe2-4b6f-a0ed-808004876151",
+        "527ca8ef-15b2-4e00-ad68-3e84075c134d",
+        "cff4cdf4-a061-4cb7-8aee-b65cc9020cd0"
+      ],
+      "next": [
+        "bd8916b0-f55c-41b5-831a-800da2ac32d4",
+        "f9e5320b-cf65-4eda-8688-fb739caec204",
+        "8ffc0cd6-074f-4b80-927c-36e18f9ec867"
+      ]
+    }
+  },
+  {
+    "id": "bd8916b0-f55c-41b5-831a-800da2ac32d4",
+    "text": "On the other hand, a loss that is significant (tổn thất lớn) enough to cause\nfinancial hardship (khó khăn tài chính) usually is considered insurable.\n2. Insurers look at the loss rate—the frequency of losses—when determining\nwhether a risk is insurable. To be insurable, the loss rate must be…\nPredictable\nUnpredictable\nAnswer: Predictable\nExplanation: An insurer must be able to predict the probable rate of loss—\nthe loss rate—that a group of insureds will experience otherwise they",
+    "payload": {
+      "chunk_index": 46,
+      "total_chunks": 81,
+      "page_number": 18,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Contracts & Principles",
+      "node_name": "Insurable Risk",
+      "node_id": 19,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "527ca8ef-15b2-4e00-ad68-3e84075c134d",
+        "cff4cdf4-a061-4cb7-8aee-b65cc9020cd0",
+        "72b46a5c-571e-4a91-b793-1a50e7ea636a"
+      ],
+      "next": [
+        "f9e5320b-cf65-4eda-8688-fb739caec204",
+        "8ffc0cd6-074f-4b80-927c-36e18f9ec867",
+        "fb4a2055-1cd6-41fe-a2ab-661aa4452bdb"
+      ]
+    }
+  },
+  {
+    "id": "f9e5320b-cf65-4eda-8688-fb739caec204",
+    "text": "the loss rate—that a group of insureds will experience otherwise they\nwouldn’t know how much to charge each person for the coverage. Insurers\npredict the loss rate by predicting the number and timing of covered losses\nfor that group.\nLaw of Large Numbers\nHow does a life insurer determine the loss rate?",
+    "payload": {
+      "chunk_index": 47,
+      "total_chunks": 81,
+      "page_number": 18,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Contracts & Principles",
+      "node_name": "Loss Rate",
+      "node_id": 22,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "cff4cdf4-a061-4cb7-8aee-b65cc9020cd0",
+        "72b46a5c-571e-4a91-b793-1a50e7ea636a",
+        "bd8916b0-f55c-41b5-831a-800da2ac32d4"
+      ],
+      "next": [
+        "8ffc0cd6-074f-4b80-927c-36e18f9ec867",
+        "fb4a2055-1cd6-41fe-a2ab-661aa4452bdb",
+        "981c6dff-479a-4c3d-8037-f21a0ccb3eb2"
+      ]
+    }
+  },
+  {
+    "id": "8ffc0cd6-074f-4b80-927c-36e18f9ec867",
+    "text": "Insurers look at past events to predict the likelihood of future losses for a\ngiven group. The larger the group, the more accurate the insurer’s loss rate\npredictions are likely to be. This is true because of a concept called the law\nof large numbers.\nThe law of large numbers states that, typically, the more times you observe\na particular event, the more likely it is that the observed results will\napproximate the true probability that the event will occur.\nWhat do you think?\nTo be insurable, a loss...",
+    "payload": {
+      "chunk_index": 48,
+      "total_chunks": 81,
+      "page_number": 19,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Contracts & Principles",
+      "node_name": "Law of Large Numbers",
+      "node_id": 23,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "72b46a5c-571e-4a91-b793-1a50e7ea636a",
+        "bd8916b0-f55c-41b5-831a-800da2ac32d4",
+        "f9e5320b-cf65-4eda-8688-fb739caec204"
+      ],
+      "next": [
+        "fb4a2055-1cd6-41fe-a2ab-661aa4452bdb",
+        "981c6dff-479a-4c3d-8037-f21a0ccb3eb2",
+        "df666bfd-eff3-4166-8f53-84ef15785252"
+      ]
+    }
+  },
+  {
+    "id": "fb4a2055-1cd6-41fe-a2ab-661aa4452bdb",
+    "text": "What do you think?\nTo be insurable, a loss...\nMUST be catastrophic to insurer\nMUST NOT be catastrophic to the insurer\nAnswer: MUST NOT be catastrophic to the insurer\nExplanation: If a single event would cause catastrophic financial damage to\nthe insurer, the loss isn’t insurable.\nTo reduce the possibility of catastrophic loss, insurers transfer some risk to\nother insurers by purchasing insurance for themselves.\nReinsurance\nReinsurance (tái bảo hiểm) is insurance for insurance companies.",
+    "payload": {
+      "chunk_index": 49,
+      "total_chunks": 81,
+      "page_number": 19,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Reinsurance Concepts",
+      "node_name": "Reinsurance",
+      "node_id": 24,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "bd8916b0-f55c-41b5-831a-800da2ac32d4",
+        "f9e5320b-cf65-4eda-8688-fb739caec204",
+        "8ffc0cd6-074f-4b80-927c-36e18f9ec867"
+      ],
+      "next": [
+        "981c6dff-479a-4c3d-8037-f21a0ccb3eb2",
+        "df666bfd-eff3-4166-8f53-84ef15785252",
+        "916c9a8a-2df5-489e-be4d-83f430c91d22"
+      ]
+    }
+  },
+  {
+    "id": "981c6dff-479a-4c3d-8037-f21a0ccb3eb2",
+    "text": "Reinsurance\nReinsurance (tái bảo hiểm) is insurance for insurance companies.\nEach insurer establishes a retention limit (giới hạn giữlại)—the maximum\namount of risk the insurer is willing to carry at its own risk. For example, a\nlife insurance company may determine that it will only insure up to\n$500,000 on any one life.",
+    "payload": {
+      "chunk_index": 50,
+      "total_chunks": 81,
+      "page_number": 19,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Reinsurance Concepts",
+      "node_name": "Reinsurance",
+      "node_id": 24,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "f9e5320b-cf65-4eda-8688-fb739caec204",
+        "8ffc0cd6-074f-4b80-927c-36e18f9ec867",
+        "fb4a2055-1cd6-41fe-a2ab-661aa4452bdb"
+      ],
+      "next": [
+        "df666bfd-eff3-4166-8f53-84ef15785252",
+        "916c9a8a-2df5-489e-be4d-83f430c91d22",
+        "6e3612d6-4f92-421d-95f1-8bf6872d81db"
+      ]
+    }
+  },
+  {
+    "id": "df666bfd-eff3-4166-8f53-84ef15785252",
+    "text": "Reinsurance allows the insurer—the direct writer (công ty bảo hiểm gốc) or\nceding company (công ty chuyển nhượng)—to transfer (cede) risk above its\nretention limit to a reinsurer (công ty tái bảo hiểm) or assuming company\n(công ty nhận rủi ro). The reinsurer can accept all of the transferred risk, or\nit can cede some of the risk to a second reinsurer, known as a\nretrocessionaire (công ty tái bảo hiểm thứhai)\nLet’s review\n1. Select the statements that would describe being insurable.(Select all that\napply.)",
+    "payload": {
+      "chunk_index": 51,
+      "total_chunks": 81,
+      "page_number": 20,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Reinsurance Concepts",
+      "node_name": "Reinsurance",
+      "node_id": 24,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "8ffc0cd6-074f-4b80-927c-36e18f9ec867",
+        "fb4a2055-1cd6-41fe-a2ab-661aa4452bdb",
+        "981c6dff-479a-4c3d-8037-f21a0ccb3eb2"
+      ],
+      "next": [
+        "916c9a8a-2df5-489e-be4d-83f430c91d22",
+        "6e3612d6-4f92-421d-95f1-8bf6872d81db",
+        "f36e18a7-18e4-47dd-b17e-535938a19c22"
+      ]
+    }
+  },
+  {
+    "id": "916c9a8a-2df5-489e-be4d-83f430c91d22",
+    "text": "Let’s review\n1. Select the statements that would describe being insurable.(Select all that\napply.)\nThe risk must be a pure risk\nThe risk must be a speculative risk\nThe loss must occur by chance\nThe loss must not occur by chance\nThe loss must be indefinite in time & amount\nThe loss must be definite in time & amount\nThe loss must be insignificant\nThe loss must be significant\nThe loss rate must be predictable\nThe loss rate must be unpredictable\nThe loss cannot be catastrophic to the insurer",
+    "payload": {
+      "chunk_index": 52,
+      "total_chunks": 81,
+      "page_number": 20,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Contracts & Principles",
+      "node_name": "Insurable Risk",
+      "node_id": 19,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "fb4a2055-1cd6-41fe-a2ab-661aa4452bdb",
+        "981c6dff-479a-4c3d-8037-f21a0ccb3eb2",
+        "df666bfd-eff3-4166-8f53-84ef15785252"
+      ],
+      "next": [
+        "6e3612d6-4f92-421d-95f1-8bf6872d81db",
+        "f36e18a7-18e4-47dd-b17e-535938a19c22",
+        "a04f4fb6-360b-4df7-ad81-bdd0d94499be"
+      ]
+    }
+  },
+  {
+    "id": "6e3612d6-4f92-421d-95f1-8bf6872d81db",
+    "text": "The loss rate must be unpredictable\nThe loss cannot be catastrophic to the insurer\nThe loss must be catastrophic to the insurer\nAnswer:\n-\nThe risk must be a pure risk\n-\nThe loss must occur by chance\n-\nThe loss must be definite in time & amount",
+    "payload": {
+      "chunk_index": 53,
+      "total_chunks": 81,
+      "page_number": 20,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Concepts",
+      "node_name": "Pure Risk",
+      "node_id": "3",
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "981c6dff-479a-4c3d-8037-f21a0ccb3eb2",
+        "df666bfd-eff3-4166-8f53-84ef15785252",
+        "916c9a8a-2df5-489e-be4d-83f430c91d22"
+      ],
+      "next": [
+        "f36e18a7-18e4-47dd-b17e-535938a19c22",
+        "a04f4fb6-360b-4df7-ad81-bdd0d94499be",
+        "d18a7f1d-9ca8-45d7-a5a7-84349030216d"
+      ]
+    }
+  },
+  {
+    "id": "f36e18a7-18e4-47dd-b17e-535938a19c22",
+    "text": "-\nThe loss must be significant\n-\nThe loss rate must be predictable\n-\nThe loss cannot be catastrophic to the insurer\n2. Robert Smith owns a life insurance policy that will pay his named\nbeneficiary $250,000 when Robert dies. Is his insurance policy an\nexample of a valued contact or a contract of indemnity?\nValued contract\nContract of indemnity\nAnswer: Valued contract\nExplanation: Robert’s contract is a valued contract because it states at the",
+    "payload": {
+      "chunk_index": 54,
+      "total_chunks": 81,
+      "page_number": 21,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Contracts & Principles",
+      "node_name": "Valued Contract",
+      "node_id": 21,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "df666bfd-eff3-4166-8f53-84ef15785252",
+        "916c9a8a-2df5-489e-be4d-83f430c91d22",
+        "6e3612d6-4f92-421d-95f1-8bf6872d81db"
+      ],
+      "next": [
+        "a04f4fb6-360b-4df7-ad81-bdd0d94499be",
+        "d18a7f1d-9ca8-45d7-a5a7-84349030216d",
+        "f987a983-ed80-429e-bc57-6e96a5e447a2"
+      ]
+    }
+  },
+  {
+    "id": "a04f4fb6-360b-4df7-ad81-bdd0d94499be",
+    "text": "Answer: Valued contract\nExplanation: Robert’s contract is a valued contract because it states at the\ntime of policy issue the amount of the benefit payable when the insured dies.\nBy contrast, a contract of indemnity bases the insurance benefit on the\nactual amount of the financial loss for a covered event when it occurs.\n3. The Colonnade Insurance Company issued a $1 million life insurance\npolicy to Albert Goldin. Colonnade transferred $500,000 of the risk to",
+    "payload": {
+      "chunk_index": 55,
+      "total_chunks": 81,
+      "page_number": 21,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Contracts & Principles",
+      "node_name": "Valued Contract",
+      "node_id": 21,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "916c9a8a-2df5-489e-be4d-83f430c91d22",
+        "6e3612d6-4f92-421d-95f1-8bf6872d81db",
+        "f36e18a7-18e4-47dd-b17e-535938a19c22"
+      ],
+      "next": [
+        "d18a7f1d-9ca8-45d7-a5a7-84349030216d",
+        "f987a983-ed80-429e-bc57-6e96a5e447a2",
+        "63cc57b7-3a99-4cbb-901f-177329f7fe5d"
+      ]
+    }
+  },
+  {
+    "id": "d18a7f1d-9ca8-45d7-a5a7-84349030216d",
+    "text": "policy to Albert Goldin. Colonnade transferred $500,000 of the risk to\nthe Fairness Insurance Company. Fairness accepted the $500,000 and\nthen transferred $300,000 of the risk to the Journey Financial Services\nCompany. Match each participant with the term that best describes it.\nColonade Insurance Company is the ____________.\nDirect Writer\nReinsurer\nRetrocessionaire\nAnswer: Direct Writer",
+    "payload": {
+      "chunk_index": 56,
+      "total_chunks": 81,
+      "page_number": 21,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Reinsurance Concepts",
+      "node_name": "Direct Writer",
+      "node_id": 26,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "6e3612d6-4f92-421d-95f1-8bf6872d81db",
+        "f36e18a7-18e4-47dd-b17e-535938a19c22",
+        "a04f4fb6-360b-4df7-ad81-bdd0d94499be"
+      ],
+      "next": [
+        "f987a983-ed80-429e-bc57-6e96a5e447a2",
+        "63cc57b7-3a99-4cbb-901f-177329f7fe5d",
+        "225d2920-458f-4094-9c40-8d0fab099960"
+      ]
+    }
+  },
+  {
+    "id": "f987a983-ed80-429e-bc57-6e96a5e447a2",
+    "text": "Explanation: Colonnade is the direct writer; it issued the policy.\nFairness Insurance Company is the ____________.\nDirect Writer\nReinsurer\nRetrocessionaire\nAnswer: Reinsurer\nExplanation: Fairness is a reinsurer; it accepted risk from a direct writer.\nJourney Financial Services Company is the ____________.\nDirect Writer\nReinsurer\nRetrocessionaire\nAnswer: Retroccestionaire\nExplanation: Journey is a retrocessionaire; it accepted risk from a reinsurer.\nUnderwriters and Underwriting\nLearning Objective",
+    "payload": {
+      "chunk_index": 57,
+      "total_chunks": 81,
+      "page_number": 22,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Reinsurance Concepts",
+      "node_name": "Reinsurance",
+      "node_id": 24,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "f36e18a7-18e4-47dd-b17e-535938a19c22",
+        "a04f4fb6-360b-4df7-ad81-bdd0d94499be",
+        "d18a7f1d-9ca8-45d7-a5a7-84349030216d"
+      ],
+      "next": [
+        "63cc57b7-3a99-4cbb-901f-177329f7fe5d",
+        "225d2920-458f-4094-9c40-8d0fab099960",
+        "422f9aaf-93fc-4e77-a753-40610c60dfa9"
+      ]
+    }
+  },
+  {
+    "id": "63cc57b7-3a99-4cbb-901f-177329f7fe5d",
+    "text": "Underwriters and Underwriting\nLearning Objective\nExplain the role of underwriters and how they assess specific risks.\nAfter customer fills out the life insurance application , the application goes\nto Insurance Company’s underwriting department where its underwriters",
+    "payload": {
+      "chunk_index": 58,
+      "total_chunks": 81,
+      "page_number": 22,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Basics",
+      "node_name": "Life Insurance",
+      "node_id": 12,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "a04f4fb6-360b-4df7-ad81-bdd0d94499be",
+        "d18a7f1d-9ca8-45d7-a5a7-84349030216d",
+        "f987a983-ed80-429e-bc57-6e96a5e447a2"
+      ],
+      "next": [
+        "225d2920-458f-4094-9c40-8d0fab099960",
+        "422f9aaf-93fc-4e77-a753-40610c60dfa9",
+        "ae640379-62a4-441f-a76d-c4b9cb532908"
+      ]
+    }
+  },
+  {
+    "id": "225d2920-458f-4094-9c40-8d0fab099960",
+    "text": "perform underwriting by reviewing the application and classifying the\ndegree of risk the customer presents.\nWhat do underwriters look for? Anything that may increase the amount of\nrisk that the customer presents to the insurance company. Underwriters\nsearch for anything that makes them say \"Uh-Oh.\"\nWhat do you think?\nSuppose YOU are the underwriter at the Insurance Company.\n1. What would you think if you learned that customer’s family history (tiền",
+    "payload": {
+      "chunk_index": 59,
+      "total_chunks": 81,
+      "page_number": 23,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Concepts",
+      "node_name": "Risk",
+      "node_id": 1,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "d18a7f1d-9ca8-45d7-a5a7-84349030216d",
+        "f987a983-ed80-429e-bc57-6e96a5e447a2",
+        "63cc57b7-3a99-4cbb-901f-177329f7fe5d"
+      ],
+      "next": [
+        "422f9aaf-93fc-4e77-a753-40610c60dfa9",
+        "ae640379-62a4-441f-a76d-c4b9cb532908",
+        "1c69114a-eadf-44a0-922e-42edce969f04"
+      ]
+    }
+  },
+  {
+    "id": "422f9aaf-93fc-4e77-a753-40610c60dfa9",
+    "text": "1. What would you think if you learned that customer’s family history (tiền\nsửgia đình) showed a high incidence (tỷlệcao) of heart disease (bệnh\ntim) that led to an early death (tửvong sớm)?\nUh-Oh\nNo problem\nAnswer: Uh-Oh\nExplanation: A family history of heart disease is a medical risk factor. the\ncustomer would have a greater likelihood of dying sooner than would a\nperson of the same age and sex who does not have a family history of heart",
+    "payload": {
+      "chunk_index": 60,
+      "total_chunks": 81,
+      "page_number": 23,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Concepts",
+      "node_name": "Longevity Risk",
+      "node_id": 4,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "f987a983-ed80-429e-bc57-6e96a5e447a2",
+        "63cc57b7-3a99-4cbb-901f-177329f7fe5d",
+        "225d2920-458f-4094-9c40-8d0fab099960"
+      ],
+      "next": [
+        "ae640379-62a4-441f-a76d-c4b9cb532908",
+        "1c69114a-eadf-44a0-922e-42edce969f04",
+        "ea16c9d8-9b20-49e0-a561-39182f697627"
+      ]
+    }
+  },
+  {
+    "id": "ae640379-62a4-441f-a76d-c4b9cb532908",
+    "text": "person of the same age and sex who does not have a family history of heart\ndisease. Other risk factors may involve a person’s unstable finances,\nhazardous job, or dangerous personal activities or hobbies.\n2. What would you think if you learned that Hector was once convicted of a\nfelony (kết án trọng tội)?\nUh-Oh\nNo problem",
+    "payload": {
+      "chunk_index": 61,
+      "total_chunks": 81,
+      "page_number": 23,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Concepts",
+      "node_name": "Risk",
+      "node_id": "1",
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "63cc57b7-3a99-4cbb-901f-177329f7fe5d",
+        "225d2920-458f-4094-9c40-8d0fab099960",
+        "422f9aaf-93fc-4e77-a753-40610c60dfa9"
+      ],
+      "next": [
+        "1c69114a-eadf-44a0-922e-42edce969f04",
+        "ea16c9d8-9b20-49e0-a561-39182f697627",
+        "1ca4d948-f15e-4500-b9d7-1e43a91c3963"
+      ]
+    }
+  },
+  {
+    "id": "1c69114a-eadf-44a0-922e-42edce969f04",
+    "text": "Answer: Uh-Oh\nExplanation: Moral hazard (rủi ro đạo đức) is the possibility that a person\nmay act dishonestly in an insurance transaction. If Hector has had a history\nof illegal (bất hợp pháp) or unethical (phi đạo đức) behavior, he could\nbehave similarly when buying insurance.\nAntiselection\nUnderwriters must investigate the information on insurance applications\ncarefully because of the likelihood that people who need insurance more are",
+    "payload": {
+      "chunk_index": 62,
+      "total_chunks": 81,
+      "page_number": 24,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Contracts & Principles",
+      "node_name": "Insurable Risk",
+      "node_id": 19,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "225d2920-458f-4094-9c40-8d0fab099960",
+        "422f9aaf-93fc-4e77-a753-40610c60dfa9",
+        "ae640379-62a4-441f-a76d-c4b9cb532908"
+      ],
+      "next": [
+        "ea16c9d8-9b20-49e0-a561-39182f697627",
+        "1ca4d948-f15e-4500-b9d7-1e43a91c3963",
+        "69370985-93b9-4620-b883-41b79dc9bae1"
+      ]
+    }
+  },
+  {
+    "id": "ea16c9d8-9b20-49e0-a561-39182f697627",
+    "text": "carefully because of the likelihood that people who need insurance more are\nmore likely to apply for insurance, a tendency called antiselection (lựa chọn\nbất lợi).\nIdeally, insurers want to accept applicants who are low or average risks.\nLet’s review\nHarold Swenson’s insurance application indicates that he works on a\ncommercial fishing boat, which is generally regarded as a more dangerous\nprofession than average. Do you think an underwriter would consider",
+    "payload": {
+      "chunk_index": 63,
+      "total_chunks": 81,
+      "page_number": 24,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Contracts & Principles",
+      "node_name": "Insurable Risk",
+      "node_id": 19,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "422f9aaf-93fc-4e77-a753-40610c60dfa9",
+        "ae640379-62a4-441f-a76d-c4b9cb532908",
+        "1c69114a-eadf-44a0-922e-42edce969f04"
+      ],
+      "next": [
+        "1ca4d948-f15e-4500-b9d7-1e43a91c3963",
+        "69370985-93b9-4620-b883-41b79dc9bae1",
+        "0dd887ea-6d3a-4c42-8566-335ec08a1af8"
+      ]
+    }
+  },
+  {
+    "id": "1ca4d948-f15e-4500-b9d7-1e43a91c3963",
+    "text": "profession than average. Do you think an underwriter would consider\nHarold’s occupation as a risk factor that is likely to increase his likelihood of\nloss?\nYes\nNo\nAnswer: Yes\nExplanation: Harold’s job presents a risk factor because it might increase his\nlikelihood of loss. Other risk factors include dangerous hobbies, alcohol or\nsubstance abuse (lạm dụng rượu hoặc chất kích thích), or an adverse\nmedical history (tiền sửbệnh lý bất lợi).",
+    "payload": {
+      "chunk_index": 64,
+      "total_chunks": 81,
+      "page_number": 24,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Concepts",
+      "node_name": "Risk",
+      "node_id": "1",
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "ae640379-62a4-441f-a76d-c4b9cb532908",
+        "1c69114a-eadf-44a0-922e-42edce969f04",
+        "ea16c9d8-9b20-49e0-a561-39182f697627"
+      ],
+      "next": [
+        "69370985-93b9-4620-b883-41b79dc9bae1",
+        "0dd887ea-6d3a-4c42-8566-335ec08a1af8",
+        "30d243b1-f976-4fa9-add1-a38deea7a65d"
+      ]
+    }
+  },
+  {
+    "id": "69370985-93b9-4620-b883-41b79dc9bae1",
+    "text": "So these “Uh-Ohs” would disqualify (loại) someone for life insurance, right?\nRisk Class\nNot necessarily, but Seashore’s underwriters will carefully consider Hector’s\nsituation before assigning him to a risk class—a grouping of similar-risk\ninsureds.\nInsurers use risk classes to decide how much to charge each person for\ncoverage. People in different risk classes are charged different premiums\nbased on the degree of risk they represent to the insurer.\nClassifying Risks",
+    "payload": {
+      "chunk_index": 65,
+      "total_chunks": 81,
+      "page_number": 25,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Concepts",
+      "node_name": "Risk",
+      "node_id": 1,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "1c69114a-eadf-44a0-922e-42edce969f04",
+        "ea16c9d8-9b20-49e0-a561-39182f697627",
+        "1ca4d948-f15e-4500-b9d7-1e43a91c3963"
+      ],
+      "next": [
+        "0dd887ea-6d3a-4c42-8566-335ec08a1af8",
+        "30d243b1-f976-4fa9-add1-a38deea7a65d",
+        "25c4181c-480c-493d-bcba-c893d4a69fff"
+      ]
+    }
+  },
+  {
+    "id": "0dd887ea-6d3a-4c42-8566-335ec08a1af8",
+    "text": "based on the degree of risk they represent to the insurer.\nClassifying Risks\nIf insurers charged everyone the same amount, lower-risk people would pay\ntoo much for their coverage, and higher-risk people would pay too little.\nBy assigning proposed insureds to risk classes, the insurer charges a fair\namount for each policy.\nLet’s review\nWhat is the purpose of assigning proposed insureds to risk classes?\nTo make sure everyone pays the same amount for life insurance",
+    "payload": {
+      "chunk_index": 66,
+      "total_chunks": 81,
+      "page_number": 25,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Basics",
+      "node_name": "Life Insurance",
+      "node_id": 12,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "ea16c9d8-9b20-49e0-a561-39182f697627",
+        "1ca4d948-f15e-4500-b9d7-1e43a91c3963",
+        "69370985-93b9-4620-b883-41b79dc9bae1"
+      ],
+      "next": [
+        "30d243b1-f976-4fa9-add1-a38deea7a65d",
+        "25c4181c-480c-493d-bcba-c893d4a69fff",
+        "b8b18bc8-3970-4fac-8f63-507278211ac3"
+      ]
+    }
+  },
+  {
+    "id": "30d243b1-f976-4fa9-add1-a38deea7a65d",
+    "text": "To make sure everyone pays the same amount for life insurance\nTo make sure everyone pays a fair amount for their life insurance\nTo increase the effect of antiselection\nAnswer: To make sure everyone pays a fair amount for their life insurance\nExplanation: By assigning each proposed insured to an appropriate risk class,\nthe insurer charges a fair amount for each policy. Insurers try to avoid, not\nincrease, the effect of antiselection, which is the tendency of people who are",
+    "payload": {
+      "chunk_index": 67,
+      "total_chunks": 81,
+      "page_number": 25,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Basics",
+      "node_name": "Life Insurance",
+      "node_id": 12,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "1ca4d948-f15e-4500-b9d7-1e43a91c3963",
+        "69370985-93b9-4620-b883-41b79dc9bae1",
+        "0dd887ea-6d3a-4c42-8566-335ec08a1af8"
+      ],
+      "next": [
+        "25c4181c-480c-493d-bcba-c893d4a69fff",
+        "b8b18bc8-3970-4fac-8f63-507278211ac3",
+        "c756d319-7e8b-401b-b1ef-48266e277dd3"
+      ]
+    }
+  },
+  {
+    "id": "25c4181c-480c-493d-bcba-c893d4a69fff",
+    "text": "higher risks to seek insurance protection to a greater extent than those who\nare lower risks.\nRisk Classes\nLearning Objective\nIdentify four risk classes for proposed insureds.\nIndividual life insurers usually identify at least four risk classes for proposed\ninsureds.\nStandard (rủi ro tiêu chuẩn)\nInsurers classify proposed insureds whose likelihood of loss is not significantly\ngreater than average as standard risks. The insurance company charges its\nstandard premium rates.",
+    "payload": {
+      "chunk_index": 68,
+      "total_chunks": 81,
+      "page_number": 26,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Concepts",
+      "node_name": "Risk",
+      "node_id": "1",
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "69370985-93b9-4620-b883-41b79dc9bae1",
+        "0dd887ea-6d3a-4c42-8566-335ec08a1af8",
+        "30d243b1-f976-4fa9-add1-a38deea7a65d"
+      ],
+      "next": [
+        "b8b18bc8-3970-4fac-8f63-507278211ac3",
+        "c756d319-7e8b-401b-b1ef-48266e277dd3",
+        "6d88c3ac-2a48-49cd-9d9f-cc7fdd7561ce"
+      ]
+    }
+  },
+  {
+    "id": "b8b18bc8-3970-4fac-8f63-507278211ac3",
+    "text": "greater than average as standard risks. The insurance company charges its\nstandard premium rates.\nMost life insurance policies are issued at standard premium rates (mức phí\nbảo hiểm tiêu chuẩn).\nPreferred (rủi ro ưu đãi)\nInsurers classify proposed insureds whose likelihood of loss is significantly\nlower than average as preferred risks.\nThe insurance company charges these insureds preferred premium rates,\nwhich are lower than standard premium rates.\nSubstandard (rủi ro dưới chuẩn)",
+    "payload": {
+      "chunk_index": 69,
+      "total_chunks": 81,
+      "page_number": 26,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Basics",
+      "node_name": "Life Insurance",
+      "node_id": 12,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "0dd887ea-6d3a-4c42-8566-335ec08a1af8",
+        "30d243b1-f976-4fa9-add1-a38deea7a65d",
+        "25c4181c-480c-493d-bcba-c893d4a69fff"
+      ],
+      "next": [
+        "c756d319-7e8b-401b-b1ef-48266e277dd3",
+        "6d88c3ac-2a48-49cd-9d9f-cc7fdd7561ce",
+        "ebda1910-2faf-4c3f-8f77-ca89267aa13a"
+      ]
+    }
+  },
+  {
+    "id": "c756d319-7e8b-401b-b1ef-48266e277dd3",
+    "text": "which are lower than standard premium rates.\nSubstandard (rủi ro dưới chuẩn)\nInsurers classify proposed insureds whose likelihood of loss is significantly\ngreater than average as substandard risks.",
+    "payload": {
+      "chunk_index": 70,
+      "total_chunks": 81,
+      "page_number": 26,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Concepts",
+      "node_name": "Pure Risk",
+      "node_id": "3",
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "30d243b1-f976-4fa9-add1-a38deea7a65d",
+        "25c4181c-480c-493d-bcba-c893d4a69fff",
+        "b8b18bc8-3970-4fac-8f63-507278211ac3"
+      ],
+      "next": [
+        "6d88c3ac-2a48-49cd-9d9f-cc7fdd7561ce",
+        "ebda1910-2faf-4c3f-8f77-ca89267aa13a",
+        "488c0a52-2c4c-4add-abc9-d9fe0f680485"
+      ]
+    }
+  },
+  {
+    "id": "6d88c3ac-2a48-49cd-9d9f-cc7fdd7561ce",
+    "text": "The insurance company charges them substandard premium rates, which\nare higher than standard premium rates.\nDeclined (rủi ro bịtừchối)\nSome proposed insureds present a risk that is too great for the insurer to\ncover. This might include people with a poor health history or those who\nengage in exceptionally risky activities, such as sky diving or mountain\nclimbing.\nThese proposed insureds are known as declined risks.\nLet’s review\nThe Hillside Insurance Company recently evaluated four applicants for",
+    "payload": {
+      "chunk_index": 71,
+      "total_chunks": 81,
+      "page_number": 27,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Concepts",
+      "node_name": "Risk",
+      "node_id": "1",
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "25c4181c-480c-493d-bcba-c893d4a69fff",
+        "b8b18bc8-3970-4fac-8f63-507278211ac3",
+        "c756d319-7e8b-401b-b1ef-48266e277dd3"
+      ],
+      "next": [
+        "ebda1910-2faf-4c3f-8f77-ca89267aa13a",
+        "488c0a52-2c4c-4add-abc9-d9fe0f680485",
+        "097b46e6-bf51-499c-bc2d-c81b3f71bb08"
+      ]
+    }
+  },
+  {
+    "id": "ebda1910-2faf-4c3f-8f77-ca89267aa13a",
+    "text": "Let’s review\nThe Hillside Insurance Company recently evaluated four applicants for\ninsurance. Read each question and match the person with the term that\nbest describes an appropriate underwriting decision.\nJason is in good health and is a test pilot for the military. Some of his\nmaneuvers include flying inverted, rolling the aircraft, and putting the\naircraft in a dive.\nStandard risk class\nPreferred risk class\nSubstandard risk class\nDeclined risk class\nAnswer: Declined risk class",
+    "payload": {
+      "chunk_index": 72,
+      "total_chunks": 81,
+      "page_number": 27,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Contracts & Principles",
+      "node_name": "Insurable Risk",
+      "node_id": 19,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "b8b18bc8-3970-4fac-8f63-507278211ac3",
+        "c756d319-7e8b-401b-b1ef-48266e277dd3",
+        "6d88c3ac-2a48-49cd-9d9f-cc7fdd7561ce"
+      ],
+      "next": [
+        "488c0a52-2c4c-4add-abc9-d9fe0f680485",
+        "097b46e6-bf51-499c-bc2d-c81b3f71bb08",
+        "61ad5582-78ec-42f9-8094-d6d60d55fe16"
+      ]
+    }
+  },
+  {
+    "id": "488c0a52-2c4c-4add-abc9-d9fe0f680485",
+    "text": "Explanation: Some proposed insureds present a risk that is too great for the\ninsurer to cover--known as declined risks. This might include people who\nengage in exceptionally risky activities, including being a test pilot. Jason is\nclassified as a declined risk.\nMelinda is in good health and is a recent college graduate. She works as a\ndata analyst.\nStandard risk class\nPreferred risk class\nSubstandard risk class\nDeclined risk class\nAnswer: Standard risk class",
+    "payload": {
+      "chunk_index": 73,
+      "total_chunks": 81,
+      "page_number": 28,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Contracts & Principles",
+      "node_name": "Insurable Risk",
+      "node_id": 19,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "c756d319-7e8b-401b-b1ef-48266e277dd3",
+        "6d88c3ac-2a48-49cd-9d9f-cc7fdd7561ce",
+        "ebda1910-2faf-4c3f-8f77-ca89267aa13a"
+      ],
+      "next": [
+        "097b46e6-bf51-499c-bc2d-c81b3f71bb08",
+        "61ad5582-78ec-42f9-8094-d6d60d55fe16",
+        "784f13ca-7be9-4f5a-913a-4a7c4bbdeffc"
+      ]
+    }
+  },
+  {
+    "id": "097b46e6-bf51-499c-bc2d-c81b3f71bb08",
+    "text": "Preferred risk class\nSubstandard risk class\nDeclined risk class\nAnswer: Standard risk class\nExplanation: Insurers classify proposed insureds whose likelihood of loss is\nnot significantly greater than average as standard risks. As a person in good\nhealth and a non-dangerous occupation, Melinda is classified as a standard\nrisk.\nRoberto is in excellent health. He maintains his health through diet and\nexercise.\nStandard risk class\nPreferred risk class\nSubstandard risk class\nDeclined risk class",
+    "payload": {
+      "chunk_index": 74,
+      "total_chunks": 81,
+      "page_number": 28,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Basics",
+      "node_name": "Insurance",
+      "node_id": 10,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "6d88c3ac-2a48-49cd-9d9f-cc7fdd7561ce",
+        "ebda1910-2faf-4c3f-8f77-ca89267aa13a",
+        "488c0a52-2c4c-4add-abc9-d9fe0f680485"
+      ],
+      "next": [
+        "61ad5582-78ec-42f9-8094-d6d60d55fe16",
+        "784f13ca-7be9-4f5a-913a-4a7c4bbdeffc",
+        "43b23449-2abc-41b5-ad38-f6eb9fcaa35f"
+      ]
+    }
+  },
+  {
+    "id": "61ad5582-78ec-42f9-8094-d6d60d55fe16",
+    "text": "Answer: Preferred risk class\nExplanation: Insurers classify proposed insureds whose likelihood of loss is\nsignificantly lower than average as preferred risks. As someone who\nmaintains his excellent health, Roberto is classified as a preferred risk.\nYolanda has had asthma for 10 years. Otherwise, she is in good health.\nStandard risk class\nPreferred risk class\nSubstandard risk class\nDeclined risk class\nAnswer: Substandard risk class",
+    "payload": {
+      "chunk_index": 75,
+      "total_chunks": 81,
+      "page_number": 29,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Concepts",
+      "node_name": "Risk",
+      "node_id": "1",
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "ebda1910-2faf-4c3f-8f77-ca89267aa13a",
+        "488c0a52-2c4c-4add-abc9-d9fe0f680485",
+        "097b46e6-bf51-499c-bc2d-c81b3f71bb08"
+      ],
+      "next": [
+        "784f13ca-7be9-4f5a-913a-4a7c4bbdeffc",
+        "43b23449-2abc-41b5-ad38-f6eb9fcaa35f",
+        "d755a22e-a2e8-4123-8b2e-29e3f158345c"
+      ]
+    }
+  },
+  {
+    "id": "784f13ca-7be9-4f5a-913a-4a7c4bbdeffc",
+    "text": "Preferred risk class\nSubstandard risk class\nDeclined risk class\nAnswer: Substandard risk class\nExplanation: Insurers classify proposed insureds whose likelihood of loss is\nsignificantly greater than average as substandard risks. Because of her\nasthma, Yolanda is classified as a substandard risk.\nIf a risk has all these characteristics AND if the underwriters approve the\napplication, is the risk then insurable?\nNot quite. Underwriters have to verify that you need the coverage and can",
+    "payload": {
+      "chunk_index": 76,
+      "total_chunks": 81,
+      "page_number": 29,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Contracts & Principles",
+      "node_name": "Insurable Risk",
+      "node_id": "19",
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "488c0a52-2c4c-4add-abc9-d9fe0f680485",
+        "097b46e6-bf51-499c-bc2d-c81b3f71bb08",
+        "61ad5582-78ec-42f9-8094-d6d60d55fe16"
+      ],
+      "next": [
+        "43b23449-2abc-41b5-ad38-f6eb9fcaa35f",
+        "d755a22e-a2e8-4123-8b2e-29e3f158345c",
+        "9b477625-a548-46c4-9327-c6776c1c5fea"
+      ]
+    }
+  },
+  {
+    "id": "43b23449-2abc-41b5-ad38-f6eb9fcaa35f",
+    "text": "Not quite. Underwriters have to verify that you need the coverage and can\nafford to pay for it. They also need to verify that the policyowner will suffer\na genuine loss (tổn thất tài chính thật sự) if the insured person dies. We call\nthis having an insurable interest (quyền lợi được bảo hiểm) in the risk\ninsured.",
+    "payload": {
+      "chunk_index": 77,
+      "total_chunks": 81,
+      "page_number": 29,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Contracts & Principles",
+      "node_name": "Insurable Risk",
+      "node_id": 19,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "097b46e6-bf51-499c-bc2d-c81b3f71bb08",
+        "61ad5582-78ec-42f9-8094-d6d60d55fe16",
+        "784f13ca-7be9-4f5a-913a-4a7c4bbdeffc"
+      ],
+      "next": [
+        "d755a22e-a2e8-4123-8b2e-29e3f158345c",
+        "9b477625-a548-46c4-9327-c6776c1c5fea",
+        "023ebf83-0b50-49d9-b0f1-b180387190ce"
+      ]
+    }
+  },
+  {
+    "id": "d755a22e-a2e8-4123-8b2e-29e3f158345c",
+    "text": "Laws in most jurisdictions (khu vực pháp lý) require insurable interest to be\npresent at policy issue. This prevents people from buying insurance as a\nwager (cá cược), hoping to profit when they have no risk of financial loss.\nSo, is insurance really Risky Business?\nNot really. Insurance relieves the customer of risk.\nInsurers expertly manage risks through the techniques we discussed:\nRisk pooling\nCareful underwriting\nThe ability to predict losses\nReinsurance\nLet’s review",
+    "payload": {
+      "chunk_index": 78,
+      "total_chunks": 81,
+      "page_number": 30,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Contracts & Principles",
+      "node_name": "Insurable Risk",
+      "node_id": 19,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "61ad5582-78ec-42f9-8094-d6d60d55fe16",
+        "784f13ca-7be9-4f5a-913a-4a7c4bbdeffc",
+        "43b23449-2abc-41b5-ad38-f6eb9fcaa35f"
+      ],
+      "next": [
+        "9b477625-a548-46c4-9327-c6776c1c5fea",
+        "023ebf83-0b50-49d9-b0f1-b180387190ce"
+      ]
+    }
+  },
+  {
+    "id": "9b477625-a548-46c4-9327-c6776c1c5fea",
+    "text": "Risk pooling\nCareful underwriting\nThe ability to predict losses\nReinsurance\nLet’s review\nWhen evaluating an application, underwriters prefer the presence of\ninsurable interest between the policyowner and insured, but they don’t\nrequire insurable interest to issue the policy.\nTrue\nFalse\nAnswer: False\nExplanation: Laws in most states require insurable interest to be present at\npolicy issue to prevent people from buying insurance to wager on other\npeople’s lives.",
+    "payload": {
+      "chunk_index": 79,
+      "total_chunks": 81,
+      "page_number": 30,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Insurance Basics",
+      "node_name": "Risk Pooling",
+      "node_id": 11,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "784f13ca-7be9-4f5a-913a-4a7c4bbdeffc",
+        "43b23449-2abc-41b5-ad38-f6eb9fcaa35f",
+        "d755a22e-a2e8-4123-8b2e-29e3f158345c"
+      ],
+      "next": [
+        "023ebf83-0b50-49d9-b0f1-b180387190ce"
+      ]
+    }
+  },
+  {
+    "id": "023ebf83-0b50-49d9-b0f1-b180387190ce",
+    "text": "_Trang này không có nội dung văn bản hay ảnh dữ liệu._",
+    "payload": {
+      "chunk_index": 80,
+      "total_chunks": 81,
+      "page_number": 31,
+      "total_pages": 31,
+      "file_name": "LOMA281_M1L1_Knowledge File_Risk and Insurance",
+      "category": "Risk Concepts",
+      "node_name": "Risk",
+      "node_id": 1,
+      "module": "1",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "43b23449-2abc-41b5-ad38-f6eb9fcaa35f",
+        "d755a22e-a2e8-4123-8b2e-29e3f158345c",
+        "9b477625-a548-46c4-9327-c6776c1c5fea"
+      ],
+      "next": []
+    }
+  }
+]

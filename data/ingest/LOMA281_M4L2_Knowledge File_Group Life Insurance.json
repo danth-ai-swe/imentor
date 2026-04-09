@@ -1,0 +1,2553 @@
+[
+  {
+    "id": "9b76b4bd-d243-47fb-8e6c-af605e6a178a",
+    "text": "Module 4: Group Products\nLesson 2: Group Life Insurance\nLearning Objectives\nAfter studying this lesson, you will be able to:\n\nIdentify and describe typical eligibility requirements included in group\nlife insurance contracts.\n\nIdentify the person who is entitled to name the beneficiary of group\nlife insurance coverage.\n\nDescribe the grace period provision and the incontestability provision\ntypically included in group life insurance contracts.\n",
+    "payload": {
+      "chunk_index": 0,
+      "total_chunks": 95,
+      "page_number": 1,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Eligibility Requirements (Group Life)",
+      "node_id": 215,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [],
+      "next": [
+        "74cdf53f-b6b0-4bf8-a02d-1392db271503",
+        "038d1455-6263-41e9-9651-18f9bd242b74",
+        "fdf31f21-1623-41b8-b58f-1cc6e4961b16"
+      ]
+    }
+  },
+  {
+    "id": "74cdf53f-b6b0-4bf8-a02d-1392db271503",
+    "text": "typically included in group life insurance contracts.\n\nIdentify situations in which a group member’s group life insurance\ncoverage terminates, and describe the group insured’s conversion\nrights in these situations.\n\nDescribe the purpose and operation of benefit schedules in group life\ninsurance policies.\n\nIdentify the features of group term life insurance plans, group\naccidental death and dismemberment plans, and group cash value\nplans.\n",
+    "payload": {
+      "chunk_index": 1,
+      "total_chunks": 95,
+      "page_number": 1,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Term Life Insurance",
+      "node_id": 222,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "9b76b4bd-d243-47fb-8e6c-af605e6a178a"
+      ],
+      "next": [
+        "038d1455-6263-41e9-9651-18f9bd242b74",
+        "fdf31f21-1623-41b8-b58f-1cc6e4961b16",
+        "d1d4fdfd-89a2-4768-a2c6-5163703dd3ee"
+      ]
+    }
+  },
+  {
+    "id": "038d1455-6263-41e9-9651-18f9bd242b74",
+    "text": "accidental death and dismemberment plans, and group cash value\nplans.\n\nDescribe how group creditor life insurance policies differ from policies\nissued to other types of groups.",
+    "payload": {
+      "chunk_index": 2,
+      "total_chunks": 95,
+      "page_number": 1,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Accidental Death & Dismemberment (AD&D)",
+      "node_id": 223,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "9b76b4bd-d243-47fb-8e6c-af605e6a178a",
+        "74cdf53f-b6b0-4bf8-a02d-1392db271503"
+      ],
+      "next": [
+        "fdf31f21-1623-41b8-b58f-1cc6e4961b16",
+        "d1d4fdfd-89a2-4768-a2c6-5163703dd3ee",
+        "03aca18a-e3b5-4e7d-814d-a64953024efe"
+      ]
+    }
+  },
+  {
+    "id": "fdf31f21-1623-41b8-b58f-1cc6e4961b16",
+    "text": "Group Life Insurance\nLearning Objective\nIdentify and describe typical eligibility requirements included in group life\ninsurance contracts.\nOpen Transcript\nEligibility Provisions\nEvery group insurance policy has provisions identifying the people who are\neligible for group insurance coverage.\nA group policy for an employee group specifies the classes of employees who\nare eligible for coverage.\nEmployers can specify many different types of employee classes as eligible",
+    "payload": {
+      "chunk_index": 3,
+      "total_chunks": 95,
+      "page_number": 2,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Eligibility Requirements (Group Life)",
+      "node_id": 215,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "9b76b4bd-d243-47fb-8e6c-af605e6a178a",
+        "74cdf53f-b6b0-4bf8-a02d-1392db271503",
+        "038d1455-6263-41e9-9651-18f9bd242b74"
+      ],
+      "next": [
+        "d1d4fdfd-89a2-4768-a2c6-5163703dd3ee",
+        "03aca18a-e3b5-4e7d-814d-a64953024efe",
+        "5cf95bc2-ba52-498c-909e-84655a3996a8"
+      ]
+    }
+  },
+  {
+    "id": "d1d4fdfd-89a2-4768-a2c6-5163703dd3ee",
+    "text": "are eligible for coverage.\nEmployers can specify many different types of employee classes as eligible\nfor group insurance coverage. Of the following descriptions of employee\nclasses, which one do you think might violate United States law?\nEmployees who make at least $20,000 annually\nEmployees who have worked for a specified period, such as for at least 3 months\nEmployees in identified occupations\nEmployees who are full-time workers age 45 and younger\nEligibility",
+    "payload": {
+      "chunk_index": 4,
+      "total_chunks": 95,
+      "page_number": 2,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Eligibility Requirements (Group Life)",
+      "node_id": 215,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "74cdf53f-b6b0-4bf8-a02d-1392db271503",
+        "038d1455-6263-41e9-9651-18f9bd242b74",
+        "fdf31f21-1623-41b8-b58f-1cc6e4961b16"
+      ],
+      "next": [
+        "03aca18a-e3b5-4e7d-814d-a64953024efe",
+        "5cf95bc2-ba52-498c-909e-84655a3996a8",
+        "c3582bf0-db6c-48b8-90fc-36abef6c4f26"
+      ]
+    }
+  },
+  {
+    "id": "03aca18a-e3b5-4e7d-814d-a64953024efe",
+    "text": "Employees who are full-time workers age 45 and younger\nEligibility\nAccording to The Stetson Company’s group life insurance policy, only\nfull-time employees are eligible for coverage.",
+    "payload": {
+      "chunk_index": 5,
+      "total_chunks": 95,
+      "page_number": 2,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Eligibility Requirements (Group Life)",
+      "node_id": 215,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "038d1455-6263-41e9-9651-18f9bd242b74",
+        "fdf31f21-1623-41b8-b58f-1cc6e4961b16",
+        "d1d4fdfd-89a2-4768-a2c6-5163703dd3ee"
+      ],
+      "next": [
+        "5cf95bc2-ba52-498c-909e-84655a3996a8",
+        "c3582bf0-db6c-48b8-90fc-36abef6c4f26",
+        "361a9d52-752a-4f22-a799-aea4a38bce61"
+      ]
+    }
+  },
+  {
+    "id": "5cf95bc2-ba52-498c-909e-84655a3996a8",
+    "text": "Full-time employment is a standard eligibility requirement for policies that\ninsure employee groups. Some policies may offer benefits (or reduced\nbenefits) for part-time employees.\nOpen Transcript\nProbationary Period\nMany group policies require a group member to work full time for a\nprobationary period before becoming eligible for coverage.\nFor example, Jerome’s company, The Stetson Company, has a three\nmonth probationary period for its group life policy.",
+    "payload": {
+      "chunk_index": 6,
+      "total_chunks": 95,
+      "page_number": 3,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Eligibility Requirements (Group Life)",
+      "node_id": 215,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "fdf31f21-1623-41b8-b58f-1cc6e4961b16",
+        "d1d4fdfd-89a2-4768-a2c6-5163703dd3ee",
+        "03aca18a-e3b5-4e7d-814d-a64953024efe"
+      ],
+      "next": [
+        "c3582bf0-db6c-48b8-90fc-36abef6c4f26",
+        "361a9d52-752a-4f22-a799-aea4a38bce61",
+        "fbd59d97-a378-4032-8e3b-4b204e66aa40"
+      ]
+    }
+  },
+  {
+    "id": "c3582bf0-db6c-48b8-90fc-36abef6c4f26",
+    "text": "month probationary period for its group life policy.\nJerome must work full-time for a probationary period of three months before\nhe is entitled to enroll in the Stetson Company’s group coverage.\nOnce Jerome completes the probationary period, he will automatically be\ncovered under Stetson’s group life insurance plan. That means the group life\nplan is a\nContributory plan\nNoncontributory plan",
+    "payload": {
+      "chunk_index": 7,
+      "total_chunks": 95,
+      "page_number": 3,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Eligibility Requirements (Group Life)",
+      "node_id": 215,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "d1d4fdfd-89a2-4768-a2c6-5163703dd3ee",
+        "03aca18a-e3b5-4e7d-814d-a64953024efe",
+        "5cf95bc2-ba52-498c-909e-84655a3996a8"
+      ],
+      "next": [
+        "361a9d52-752a-4f22-a799-aea4a38bce61",
+        "fbd59d97-a378-4032-8e3b-4b204e66aa40",
+        "dd14157c-86a5-4fac-8af3-c7894948ef52"
+      ]
+    }
+  },
+  {
+    "id": "361a9d52-752a-4f22-a799-aea4a38bce61",
+    "text": "**[CHART]**\n\nCAPTION: This chart illustrates Jerome's enrollment timeline during his probationary period at work.",
+    "payload": {
+      "chunk_index": 8,
+      "total_chunks": 95,
+      "page_number": 3,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Term Life Insurance",
+      "node_id": 222,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "03aca18a-e3b5-4e7d-814d-a64953024efe",
+        "5cf95bc2-ba52-498c-909e-84655a3996a8",
+        "c3582bf0-db6c-48b8-90fc-36abef6c4f26"
+      ],
+      "next": [
+        "fbd59d97-a378-4032-8e3b-4b204e66aa40",
+        "dd14157c-86a5-4fac-8af3-c7894948ef52",
+        "2547bdf0-ef74-4798-bc98-33855cc78967"
+      ]
+    }
+  },
+  {
+    "id": "fbd59d97-a378-4032-8e3b-4b204e66aa40",
+    "text": "ANALYSIS: The chart is a timeline that visually represents Jerome's probationary period in relation to his full-time employment. The horizontal axis indicates the progression of time over three months, labeled as Month 1, Month 2, and Month 3. The probationary period is highlighted in brown, spanning from the start of full-time employment (Month 1) to the end of the probationary period (Month 3)",
+    "payload": {
+      "chunk_index": 9,
+      "total_chunks": 95,
+      "page_number": 3,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Eligibility Requirements (Group Life)",
+      "node_id": 215,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "5cf95bc2-ba52-498c-909e-84655a3996a8",
+        "c3582bf0-db6c-48b8-90fc-36abef6c4f26",
+        "361a9d52-752a-4f22-a799-aea4a38bce61"
+      ],
+      "next": [
+        "dd14157c-86a5-4fac-8af3-c7894948ef52",
+        "2547bdf0-ef74-4798-bc98-33855cc78967",
+        "9cbfd1f6-3623-4c36-98d8-e647fa147c38"
+      ]
+    }
+  },
+  {
+    "id": "dd14157c-86a5-4fac-8af3-c7894948ef52",
+    "text": ". After the probationary period concludes, Jerome is marked as enrolled, indicated by the green arrow extending beyond Month 3. This visual emphasizes the transition from probation to full enrollment, highlighting a clear timeline for Jerome's employment status.",
+    "payload": {
+      "chunk_index": 10,
+      "total_chunks": 95,
+      "page_number": 3,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Term Life Insurance",
+      "node_id": 222,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "c3582bf0-db6c-48b8-90fc-36abef6c4f26",
+        "361a9d52-752a-4f22-a799-aea4a38bce61",
+        "fbd59d97-a378-4032-8e3b-4b204e66aa40"
+      ],
+      "next": [
+        "2547bdf0-ef74-4798-bc98-33855cc78967",
+        "9cbfd1f6-3623-4c36-98d8-e647fa147c38",
+        "63b422da-5967-42da-911b-0216c24c7ea1"
+      ]
+    }
+  },
+  {
+    "id": "2547bdf0-ef74-4798-bc98-33855cc78967",
+    "text": "Eligibility Period\nSo what happens with a contributory plan?\nHere’s an example of a contributory plan with a 3-month probationary period.\nImage Description\nFollowing the probationary period is an eligibility period (enrollment\nperiod), which gives an eligible group member 31 days to enroll, without\nhaving to provide evidence of insurability.\nEnrollment\nTo enroll in a contributory plan, an eligible employee signs a form that\nauthorizes the employer to deduct premium payments from the employee’s\npay.",
+    "payload": {
+      "chunk_index": 11,
+      "total_chunks": 95,
+      "page_number": 4,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Eligibility Requirements (Group Life)",
+      "node_id": 215,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "361a9d52-752a-4f22-a799-aea4a38bce61",
+        "fbd59d97-a378-4032-8e3b-4b204e66aa40",
+        "dd14157c-86a5-4fac-8af3-c7894948ef52"
+      ],
+      "next": [
+        "9cbfd1f6-3623-4c36-98d8-e647fa147c38",
+        "63b422da-5967-42da-911b-0216c24c7ea1",
+        "b6115854-6913-47ab-bc1b-67b005d3256c"
+      ]
+    }
+  },
+  {
+    "id": "9cbfd1f6-3623-4c36-98d8-e647fa147c38",
+    "text": "authorizes the employer to deduct premium payments from the employee’s\npay.\nMaggie Bell did not sign up for her company’s contributory group life\ninsurance plan during the enrollment period. Six months after the deadline,\nMaggie decided to enroll. What requirements do you think Maggie will have\nto meet? (Choose all that apply.)",
+    "payload": {
+      "chunk_index": 12,
+      "total_chunks": 95,
+      "page_number": 4,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Eligibility Requirements (Group Life)",
+      "node_id": 215,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "fbd59d97-a378-4032-8e3b-4b204e66aa40",
+        "dd14157c-86a5-4fac-8af3-c7894948ef52",
+        "2547bdf0-ef74-4798-bc98-33855cc78967"
+      ],
+      "next": [
+        "63b422da-5967-42da-911b-0216c24c7ea1",
+        "b6115854-6913-47ab-bc1b-67b005d3256c",
+        "c6f92aca-37aa-4dcd-aca1-fc02a3a14ac2"
+      ]
+    }
+  },
+  {
+    "id": "63b422da-5967-42da-911b-0216c24c7ea1",
+    "text": "**[CHART]**\n\nCAPTION: This chart outlines the timeline for a new employee's probationary and eligibility periods for benefits enrollment.",
+    "payload": {
+      "chunk_index": 13,
+      "total_chunks": 95,
+      "page_number": 4,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Eligibility Requirements (Group Life)",
+      "node_id": 215,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "dd14157c-86a5-4fac-8af3-c7894948ef52",
+        "2547bdf0-ef74-4798-bc98-33855cc78967",
+        "9cbfd1f6-3623-4c36-98d8-e647fa147c38"
+      ],
+      "next": [
+        "b6115854-6913-47ab-bc1b-67b005d3256c",
+        "c6f92aca-37aa-4dcd-aca1-fc02a3a14ac2",
+        "d64789b2-bb3d-4489-be1e-fc2c3dfa60c9"
+      ]
+    }
+  },
+  {
+    "id": "b6115854-6913-47ab-bc1b-67b005d3256c",
+    "text": "ANALYSIS: The chart is a linear timeline illustrating the process of transitioning from a probationary period to an eligibility period for benefits enrollment. The x-axis represents the months, divided into four segments: Month 1, Month 2, Month 3, and Month 4. The probationary period spans the first three months, concluding at the end of Month 3. Following this, the eligibility period begins in Month 4",
+    "payload": {
+      "chunk_index": 14,
+      "total_chunks": 95,
+      "page_number": 4,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Eligibility Requirements (Group Life)",
+      "node_id": 215,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "2547bdf0-ef74-4798-bc98-33855cc78967",
+        "9cbfd1f6-3623-4c36-98d8-e647fa147c38",
+        "63b422da-5967-42da-911b-0216c24c7ea1"
+      ],
+      "next": [
+        "c6f92aca-37aa-4dcd-aca1-fc02a3a14ac2",
+        "d64789b2-bb3d-4489-be1e-fc2c3dfa60c9",
+        "27a6c5ec-c696-4aa8-b430-6e14ae481618"
+      ]
+    }
+  },
+  {
+    "id": "c6f92aca-37aa-4dcd-aca1-fc02a3a14ac2",
+    "text": ". Following this, the eligibility period begins in Month 4. A key highlight is that the employee has a 31-day window to enroll in the benefits plan after the probationary period ends. This visual effectively communicates the timeline and critical deadlines for new employees regarding their benefits enrollment.",
+    "payload": {
+      "chunk_index": 15,
+      "total_chunks": 95,
+      "page_number": 4,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Eligibility Requirements (Group Life)",
+      "node_id": 215,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "9cbfd1f6-3623-4c36-98d8-e647fa147c38",
+        "63b422da-5967-42da-911b-0216c24c7ea1",
+        "b6115854-6913-47ab-bc1b-67b005d3256c"
+      ],
+      "next": [
+        "d64789b2-bb3d-4489-be1e-fc2c3dfa60c9",
+        "27a6c5ec-c696-4aa8-b430-6e14ae481618",
+        "88369f35-4e0f-4f6f-97f6-a1f9066c8a64"
+      ]
+    }
+  },
+  {
+    "id": "d64789b2-bb3d-4489-be1e-fc2c3dfa60c9",
+    "text": "Provide satisfactory evidence of her insurability\nComplete an enrollment form that authorizes payroll deductions\nPay all back premiums from her eligibility date to her enrollment date\nSubmit\nMyrna Kane is starting a new job on March 1 and she’ll have group life\ninsurance coverage after she’s worked full-time for 1 month. The one-month\nwaiting period is known as the\nEligibility period\nProbationary period\nIf Myrna’s group insurance coverage is contributory, she must enroll for the",
+    "payload": {
+      "chunk_index": 16,
+      "total_chunks": 95,
+      "page_number": 5,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Eligibility Requirements (Group Life)",
+      "node_id": 215,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "63b422da-5967-42da-911b-0216c24c7ea1",
+        "b6115854-6913-47ab-bc1b-67b005d3256c",
+        "c6f92aca-37aa-4dcd-aca1-fc02a3a14ac2"
+      ],
+      "next": [
+        "27a6c5ec-c696-4aa8-b430-6e14ae481618",
+        "88369f35-4e0f-4f6f-97f6-a1f9066c8a64",
+        "4e56dc75-c62b-4288-bcff-ae004adc8144"
+      ]
+    }
+  },
+  {
+    "id": "27a6c5ec-c696-4aa8-b430-6e14ae481618",
+    "text": "Probationary period\nIf Myrna’s group insurance coverage is contributory, she must enroll for the\ncoverage within a certain period of time to avoid providing evidence of\ninsurability.\nTrue\nFalse",
+    "payload": {
+      "chunk_index": 17,
+      "total_chunks": 95,
+      "page_number": 5,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Eligibility Requirements (Group Life)",
+      "node_id": 215,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "b6115854-6913-47ab-bc1b-67b005d3256c",
+        "c6f92aca-37aa-4dcd-aca1-fc02a3a14ac2",
+        "d64789b2-bb3d-4489-be1e-fc2c3dfa60c9"
+      ],
+      "next": [
+        "88369f35-4e0f-4f6f-97f6-a1f9066c8a64",
+        "4e56dc75-c62b-4288-bcff-ae004adc8144",
+        "596e152f-f147-4eab-aa20-412a98c220c7"
+      ]
+    }
+  },
+  {
+    "id": "88369f35-4e0f-4f6f-97f6-a1f9066c8a64",
+    "text": "Actively-at-Work Provision\nAssume that Jerome has been working full-time for three months. However,\nhe broke his leg and was out on leave on the day that he was eligible for\ncoverage under Stetson’s group life insurance plan.",
+    "payload": {
+      "chunk_index": 18,
+      "total_chunks": 95,
+      "page_number": 6,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Eligibility Requirements (Group Life)",
+      "node_id": 215,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "c6f92aca-37aa-4dcd-aca1-fc02a3a14ac2",
+        "d64789b2-bb3d-4489-be1e-fc2c3dfa60c9",
+        "27a6c5ec-c696-4aa8-b430-6e14ae481618"
+      ],
+      "next": [
+        "4e56dc75-c62b-4288-bcff-ae004adc8144",
+        "596e152f-f147-4eab-aa20-412a98c220c7",
+        "9652a530-d7b1-46ac-bc60-36fb2aab1cf5"
+      ]
+    }
+  },
+  {
+    "id": "4e56dc75-c62b-4288-bcff-ae004adc8144",
+    "text": "Open Transcript\nThe Stetson Company’s group life insurance policy contains an\nactively-at-work provision that requires an eligible employee to be\nat work—not on leave or out sick—on the day coverage is to take\neffect.",
+    "payload": {
+      "chunk_index": 19,
+      "total_chunks": 95,
+      "page_number": 7,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Eligibility Requirements (Group Life)",
+      "node_id": 215,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "d64789b2-bb3d-4489-be1e-fc2c3dfa60c9",
+        "27a6c5ec-c696-4aa8-b430-6e14ae481618",
+        "88369f35-4e0f-4f6f-97f6-a1f9066c8a64"
+      ],
+      "next": [
+        "596e152f-f147-4eab-aa20-412a98c220c7",
+        "9652a530-d7b1-46ac-bc60-36fb2aab1cf5",
+        "681b0c3b-5b50-4872-9981-0d37342c25d1"
+      ]
+    }
+  },
+  {
+    "id": "596e152f-f147-4eab-aa20-412a98c220c7",
+    "text": "If the employee is not actively at work on that day, the group insurance\ncoverage takes effect the next day that the employee is actively at work.\nOn July 1, Ray Tobin became an employee of Draco International. Draco’s\ngroup life insurance policy has a 3-month probationary period. Mr. Tobin\nwould have been eligible for coverage on October 1st. However, he was ill\nand out of the office for two weeks. He returned to work full-time on October",
+    "payload": {
+      "chunk_index": 20,
+      "total_chunks": 95,
+      "page_number": 8,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Eligibility Requirements (Group Life)",
+      "node_id": 215,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "27a6c5ec-c696-4aa8-b430-6e14ae481618",
+        "88369f35-4e0f-4f6f-97f6-a1f9066c8a64",
+        "4e56dc75-c62b-4288-bcff-ae004adc8144"
+      ],
+      "next": [
+        "9652a530-d7b1-46ac-bc60-36fb2aab1cf5",
+        "681b0c3b-5b50-4872-9981-0d37342c25d1",
+        "35044546-bf8d-4eaf-a2a4-bfb2252a1ec1"
+      ]
+    }
+  },
+  {
+    "id": "9652a530-d7b1-46ac-bc60-36fb2aab1cf5",
+    "text": "and out of the office for two weeks. He returned to work full-time on October\n15th. Draco’s group life insurance policy contains an actively-at-work\nprovision.\nThe earliest date on which Mr. Tobin’s group life insurance coverage will be\neffective is",
+    "payload": {
+      "chunk_index": 21,
+      "total_chunks": 95,
+      "page_number": 8,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Term Life Insurance",
+      "node_id": 222,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "88369f35-4e0f-4f6f-97f6-a1f9066c8a64",
+        "4e56dc75-c62b-4288-bcff-ae004adc8144",
+        "596e152f-f147-4eab-aa20-412a98c220c7"
+      ],
+      "next": [
+        "681b0c3b-5b50-4872-9981-0d37342c25d1",
+        "35044546-bf8d-4eaf-a2a4-bfb2252a1ec1",
+        "096bf84c-e53b-4c19-ad34-7f94e759ef9e"
+      ]
+    }
+  },
+  {
+    "id": "681b0c3b-5b50-4872-9981-0d37342c25d1",
+    "text": "July 1\nOctober 1\nOctober 15\nDependent Coverage\nGroup life insurance policies often cover dependents (spouse and dependent\nchildren) of covered group members.\nLet’s look at Stetson’s group life insurance policy, which offers\ncoverage to Jerome’s dependents.\nGroup Contract Provisions\nLearning Objective\nIdentify the person who is entitled to name the beneficiary of group life\ninsurance coverage.\nDescribe the grace period provision and the incontestability provision",
+    "payload": {
+      "chunk_index": 22,
+      "total_chunks": 95,
+      "page_number": 9,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Eligibility Requirements (Group Life)",
+      "node_id": 215,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "4e56dc75-c62b-4288-bcff-ae004adc8144",
+        "596e152f-f147-4eab-aa20-412a98c220c7",
+        "9652a530-d7b1-46ac-bc60-36fb2aab1cf5"
+      ],
+      "next": [
+        "35044546-bf8d-4eaf-a2a4-bfb2252a1ec1",
+        "096bf84c-e53b-4c19-ad34-7f94e759ef9e",
+        "eb710f00-5e20-4703-b0be-fb06b3049b3c"
+      ]
+    }
+  },
+  {
+    "id": "35044546-bf8d-4eaf-a2a4-bfb2252a1ec1",
+    "text": "insurance coverage.\nDescribe the grace period provision and the incontestability provision\ntypically included in group life insurance contracts.\nOnce he meets the policy’s eligibility requirements, Jerome will have\n$50,000 of group life insurance and his wife will have $10,000 of insurance.\nWho do you think names the beneficiary for each of their coverages?\nJerome names the beneficiary of his coverage and is the beneficiary of his wife’s coverage.",
+    "payload": {
+      "chunk_index": 23,
+      "total_chunks": 95,
+      "page_number": 9,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Standard Provision",
+      "node_name": "Grace Period Provision (Group Life)",
+      "node_id": 217,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "596e152f-f147-4eab-aa20-412a98c220c7",
+        "9652a530-d7b1-46ac-bc60-36fb2aab1cf5",
+        "681b0c3b-5b50-4872-9981-0d37342c25d1"
+      ],
+      "next": [
+        "096bf84c-e53b-4c19-ad34-7f94e759ef9e",
+        "eb710f00-5e20-4703-b0be-fb06b3049b3c",
+        "dacb9021-562d-4566-9fa1-6288cd81860e"
+      ]
+    }
+  },
+  {
+    "id": "096bf84c-e53b-4c19-ad34-7f94e759ef9e",
+    "text": "Jerome names the beneficiary of his coverage and is the beneficiary of his wife’s coverage.\nJerome names the beneficiary of his coverage, and Jerome’s wife names the beneficiary of her coverage.",
+    "payload": {
+      "chunk_index": 24,
+      "total_chunks": 95,
+      "page_number": 9,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Feature",
+      "node_name": "Beneficiary Designation (Group Life)",
+      "node_id": 216,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "9652a530-d7b1-46ac-bc60-36fb2aab1cf5",
+        "681b0c3b-5b50-4872-9981-0d37342c25d1",
+        "35044546-bf8d-4eaf-a2a4-bfb2252a1ec1"
+      ],
+      "next": [
+        "eb710f00-5e20-4703-b0be-fb06b3049b3c",
+        "dacb9021-562d-4566-9fa1-6288cd81860e",
+        "36911b99-8d12-465c-aa95-29c09a852743"
+      ]
+    }
+  },
+  {
+    "id": "eb710f00-5e20-4703-b0be-fb06b3049b3c",
+    "text": "Grace Period Provision\nLike individual insurance policies, group policies have a grace period\nprovision to help keep policies in force.\nBecause group premiums are usually paid monthly, the grace period usually\nis 31 days.\nGrace Period\nImage Description\nIf a premium isn’t paid by its due date, coverage continues throughout the\ngrace period. The policy terminates if the premium isn’t paid by the end of\nthe grace period.\nWhen the policyholder pays a premium during the grace period, the insurer",
+    "payload": {
+      "chunk_index": 25,
+      "total_chunks": 95,
+      "page_number": 10,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Standard Provision",
+      "node_name": "Grace Period Provision (Group Life)",
+      "node_id": 217,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "681b0c3b-5b50-4872-9981-0d37342c25d1",
+        "35044546-bf8d-4eaf-a2a4-bfb2252a1ec1",
+        "096bf84c-e53b-4c19-ad34-7f94e759ef9e"
+      ],
+      "next": [
+        "dacb9021-562d-4566-9fa1-6288cd81860e",
+        "36911b99-8d12-465c-aa95-29c09a852743",
+        "6ed3fcc8-0b06-47ca-82e8-9b063b9d039b"
+      ]
+    }
+  },
+  {
+    "id": "dacb9021-562d-4566-9fa1-6288cd81860e",
+    "text": "the grace period.\nWhen the policyholder pays a premium during the grace period, the insurer\nis paid for the coverage it provided during the grace period.",
+    "payload": {
+      "chunk_index": 26,
+      "total_chunks": 95,
+      "page_number": 10,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Standard Provision",
+      "node_name": "Grace Period Provision (Group Life)",
+      "node_id": 217,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "35044546-bf8d-4eaf-a2a4-bfb2252a1ec1",
+        "096bf84c-e53b-4c19-ad34-7f94e759ef9e",
+        "eb710f00-5e20-4703-b0be-fb06b3049b3c"
+      ],
+      "next": [
+        "36911b99-8d12-465c-aa95-29c09a852743",
+        "6ed3fcc8-0b06-47ca-82e8-9b063b9d039b",
+        "7bd2f89f-f130-4e55-8288-964fa8b316bd"
+      ]
+    }
+  },
+  {
+    "id": "36911b99-8d12-465c-aa95-29c09a852743",
+    "text": "**[CHART]**\n\nCAPTION: This chart illustrates the timeline of a premium payment grace period, highlighting key dates and consequences of unpaid premiums.",
+    "payload": {
+      "chunk_index": 27,
+      "total_chunks": 95,
+      "page_number": 10,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Standard Provision",
+      "node_name": "Grace Period Provision (Group Life)",
+      "node_id": 217,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "096bf84c-e53b-4c19-ad34-7f94e759ef9e",
+        "eb710f00-5e20-4703-b0be-fb06b3049b3c",
+        "dacb9021-562d-4566-9fa1-6288cd81860e"
+      ],
+      "next": [
+        "6ed3fcc8-0b06-47ca-82e8-9b063b9d039b",
+        "7bd2f89f-f130-4e55-8288-964fa8b316bd",
+        "6e71fe54-755c-4164-a715-7352ec017e36"
+      ]
+    }
+  },
+  {
+    "id": "6ed3fcc8-0b06-47ca-82e8-9b063b9d039b",
+    "text": "ANALYSIS: The chart is a timeline that visually represents the grace period for premium payments. The x-axis indicates days, starting from the premium due date, with key markers at Day 10, Day 20, and Day 31. The grace period is highlighted in brown, spanning from Day 0 (the due date) to Day 31. A smiley face indicates the grace period, suggesting a positive outlook during this time. After Day 31, the coverage ends if the premium remains unpaid, indicated by a gray arrow and a warning message in purple",
+    "payload": {
+      "chunk_index": 28,
+      "total_chunks": 95,
+      "page_number": 10,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Standard Provision",
+      "node_name": "Grace Period Provision (Group Life)",
+      "node_id": 217,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "eb710f00-5e20-4703-b0be-fb06b3049b3c",
+        "dacb9021-562d-4566-9fa1-6288cd81860e",
+        "36911b99-8d12-465c-aa95-29c09a852743"
+      ],
+      "next": [
+        "7bd2f89f-f130-4e55-8288-964fa8b316bd",
+        "6e71fe54-755c-4164-a715-7352ec017e36",
+        "e61e8f6f-8388-4154-adcb-2d6a1c38c42f"
+      ]
+    }
+  },
+  {
+    "id": "7bd2f89f-f130-4e55-8288-964fa8b316bd",
+    "text": ". The key takeaway is that there is a 31-day grace period for premium payments, after which coverage will terminate if payment is not made.",
+    "payload": {
+      "chunk_index": 29,
+      "total_chunks": 95,
+      "page_number": 10,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Standard Provision",
+      "node_name": "Grace Period Provision (Group Life)",
+      "node_id": 217,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "dacb9021-562d-4566-9fa1-6288cd81860e",
+        "36911b99-8d12-465c-aa95-29c09a852743",
+        "6ed3fcc8-0b06-47ca-82e8-9b063b9d039b"
+      ],
+      "next": [
+        "6e71fe54-755c-4164-a715-7352ec017e36",
+        "e61e8f6f-8388-4154-adcb-2d6a1c38c42f",
+        "4ec03628-7d71-4640-bff1-5b737f1cb03f"
+      ]
+    }
+  },
+  {
+    "id": "6e71fe54-755c-4164-a715-7352ec017e36",
+    "text": "But if the policy terminates for nonpayment of premium, is the insurer owed\nthe premium for coverage provided during the grace period?\nYes. A group policyholder is legally obligated to pay for the grace period coverage.\nNo. The policyholder is not legally required to pay for the grace period coverage.\nIncontestability Provision\nLike individual insurance policies, group insurance policies contain an\nincontestability provision. The contestable period usually runs for two years\nfrom the date of policy issue.",
+    "payload": {
+      "chunk_index": 30,
+      "total_chunks": 95,
+      "page_number": 11,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Standard Provision",
+      "node_name": "Incontestability Provision (Group Life)",
+      "node_id": 218,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "36911b99-8d12-465c-aa95-29c09a852743",
+        "6ed3fcc8-0b06-47ca-82e8-9b063b9d039b",
+        "7bd2f89f-f130-4e55-8288-964fa8b316bd"
+      ],
+      "next": [
+        "e61e8f6f-8388-4154-adcb-2d6a1c38c42f",
+        "4ec03628-7d71-4640-bff1-5b737f1cb03f",
+        "448ab262-2fc7-4eec-8f7e-3e95a50b3e3e"
+      ]
+    }
+  },
+  {
+    "id": "e61e8f6f-8388-4154-adcb-2d6a1c38c42f",
+    "text": "This provision limits the time during which the insurer may use statements\nin the group insurance application to contest the validity of the contract.\nMaterial misrepresentation occurs infrequently in group insurance\napplications.\nGroup Insurance Application\nThe group incontestable provision also allows the insurer to contest an\nindividual group member’s coverage on the basis of material\nmisrepresentations made by the group member.\nEligible group members usually enroll for coverage without answering",
+    "payload": {
+      "chunk_index": 31,
+      "total_chunks": 95,
+      "page_number": 12,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Standard Provision",
+      "node_name": "Incontestability Provision (Group Life)",
+      "node_id": 218,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "6ed3fcc8-0b06-47ca-82e8-9b063b9d039b",
+        "7bd2f89f-f130-4e55-8288-964fa8b316bd",
+        "6e71fe54-755c-4164-a715-7352ec017e36"
+      ],
+      "next": [
+        "4ec03628-7d71-4640-bff1-5b737f1cb03f",
+        "448ab262-2fc7-4eec-8f7e-3e95a50b3e3e",
+        "966e2649-cd17-482e-9af0-048a5b46af08"
+      ]
+    }
+  },
+  {
+    "id": "4ec03628-7d71-4640-bff1-5b737f1cb03f",
+    "text": "Eligible group members usually enroll for coverage without answering\nquestions about their insurability.\nBut sometimes an eligible group member completes an application and\nprovides evidence of insurability.\nWho must provide evidence of insurability?\nEvidence of Insurability\nThose who must provide evidence of insurability:\n\nAll eligible group members of a very small group applying for coverage\n\nA person enrolling in a contributory plan after the eligibility period\n",
+    "payload": {
+      "chunk_index": 32,
+      "total_chunks": 95,
+      "page_number": 12,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Eligibility Requirements (Group Life)",
+      "node_id": 215,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "7bd2f89f-f130-4e55-8288-964fa8b316bd",
+        "6e71fe54-755c-4164-a715-7352ec017e36",
+        "e61e8f6f-8388-4154-adcb-2d6a1c38c42f"
+      ],
+      "next": [
+        "448ab262-2fc7-4eec-8f7e-3e95a50b3e3e",
+        "966e2649-cd17-482e-9af0-048a5b46af08",
+        "0adf35f9-8e86-4d59-9ab3-006d7dc1164d"
+      ]
+    }
+  },
+  {
+    "id": "448ab262-2fc7-4eec-8f7e-3e95a50b3e3e",
+    "text": "\nA person enrolling in a contributory plan after the eligibility period\n\nA person who applies for more insurance coverage than the standard\noffering, or who applies for available supplemental coverage",
+    "payload": {
+      "chunk_index": 33,
+      "total_chunks": 95,
+      "page_number": 12,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Eligibility Requirements (Group Life)",
+      "node_id": 215,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "6e71fe54-755c-4164-a715-7352ec017e36",
+        "e61e8f6f-8388-4154-adcb-2d6a1c38c42f",
+        "4ec03628-7d71-4640-bff1-5b737f1cb03f"
+      ],
+      "next": [
+        "966e2649-cd17-482e-9af0-048a5b46af08",
+        "0adf35f9-8e86-4d59-9ab3-006d7dc1164d",
+        "f168bf32-40e2-460a-b743-9695ce89b666"
+      ]
+    }
+  },
+  {
+    "id": "966e2649-cd17-482e-9af0-048a5b46af08",
+    "text": "Group Underwriting\nSee as this industry expert explains how group underwriting will use medical\nunderwriting in order to obtain more accurate premium rates for a given\ngroup.\nOpen Transcript\nOpen Transcript\nIncontestability Provision\nWhen a group insured has made a material misrepresentation, the insurer\ncan contest the validity of that person’s coverage within a specified period,\nusually one or two years, after the coverage goes into effect.\nThe group insurance contract remains valid and in force.",
+    "payload": {
+      "chunk_index": 34,
+      "total_chunks": 95,
+      "page_number": 13,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Standard Provision",
+      "node_name": "Incontestability Provision (Group Life)",
+      "node_id": 218,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "e61e8f6f-8388-4154-adcb-2d6a1c38c42f",
+        "4ec03628-7d71-4640-bff1-5b737f1cb03f",
+        "448ab262-2fc7-4eec-8f7e-3e95a50b3e3e"
+      ],
+      "next": [
+        "0adf35f9-8e86-4d59-9ab3-006d7dc1164d",
+        "f168bf32-40e2-460a-b743-9695ce89b666",
+        "35b906d7-39c2-4d2c-a018-7f55539c5155"
+      ]
+    }
+  },
+  {
+    "id": "0adf35f9-8e86-4d59-9ab3-006d7dc1164d",
+    "text": "Mary Price enrolled for her employer’s contributory group life insurance plan\nafter the end of the eligibility period. Was she required to provide the insurer\nwith evidence of insurability?\nYes\nNo\nCan’t tell; need more information\nIn the health questionnaire that Mary Price completed to obtain the group\nlife insurance, she misrepresented her health in a way that was material to\nthe risk. Mary died one year later and the insurer discovered the",
+    "payload": {
+      "chunk_index": 35,
+      "total_chunks": 95,
+      "page_number": 14,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Eligibility Requirements (Group Life)",
+      "node_id": 215,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "4ec03628-7d71-4640-bff1-5b737f1cb03f",
+        "448ab262-2fc7-4eec-8f7e-3e95a50b3e3e",
+        "966e2649-cd17-482e-9af0-048a5b46af08"
+      ],
+      "next": [
+        "f168bf32-40e2-460a-b743-9695ce89b666",
+        "35b906d7-39c2-4d2c-a018-7f55539c5155",
+        "5769d49d-7f1a-4827-ae5a-01d062f3d4ea"
+      ]
+    }
+  },
+  {
+    "id": "f168bf32-40e2-460a-b743-9695ce89b666",
+    "text": "the risk. Mary died one year later and the insurer discovered the\nmisrepresentation. The group policy contained a two-year contestable period.\nThe insurer can contest the validity of\nMary’s coverage, but not the group insurance contract\nBoth Mary’s coverage and the group insurance contract\nNeither the group insurance contract nor Mary’s coverage\nInsurance Termination and Conversion\nLearning Objective\nIdentify situations in which a group member’s group life insurance coverage terminates,",
+    "payload": {
+      "chunk_index": 36,
+      "total_chunks": 95,
+      "page_number": 14,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Standard Provision",
+      "node_name": "Incontestability Provision (Group Life)",
+      "node_id": 218,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "448ab262-2fc7-4eec-8f7e-3e95a50b3e3e",
+        "966e2649-cd17-482e-9af0-048a5b46af08",
+        "0adf35f9-8e86-4d59-9ab3-006d7dc1164d"
+      ],
+      "next": [
+        "35b906d7-39c2-4d2c-a018-7f55539c5155",
+        "5769d49d-7f1a-4827-ae5a-01d062f3d4ea",
+        "5930a55d-138c-4c70-becf-e91cfef79b52"
+      ]
+    }
+  },
+  {
+    "id": "35b906d7-39c2-4d2c-a018-7f55539c5155",
+    "text": "Identify situations in which a group member’s group life insurance coverage terminates,\nand describe the group insured’s conversion rights in these situations.\nLoss of Coverage\nA person insured by a group life insurance policy can lose that coverage if\n\nThe group policy terminates\n\nThe person is no longer eligible for group coverage",
+    "payload": {
+      "chunk_index": 37,
+      "total_chunks": 95,
+      "page_number": 14,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Conversion Right (Group Life)",
+      "node_id": 221,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "966e2649-cd17-482e-9af0-048a5b46af08",
+        "0adf35f9-8e86-4d59-9ab3-006d7dc1164d",
+        "f168bf32-40e2-460a-b743-9695ce89b666"
+      ],
+      "next": [
+        "5769d49d-7f1a-4827-ae5a-01d062f3d4ea",
+        "5930a55d-138c-4c70-becf-e91cfef79b52",
+        "fb0853c4-155a-4c60-a898-20829320516d"
+      ]
+    }
+  },
+  {
+    "id": "5769d49d-7f1a-4827-ae5a-01d062f3d4ea",
+    "text": "Termination of the Group Policy\nAccording to the terms of most group insurance policies, the group policyholder may\nterminate the policy at any time by notifying the insurer in writing.\nThe insurer may also have the right to terminate the group insurance policy on any\npremium due date if certain conditions exist.\nWhat kind of conditions?\nParticipation Level\nIf the group’s participation level falls below the required minimum, the insurance\ncompany has the right to terminate the policy.\n\n**[CHART]**",
+    "payload": {
+      "chunk_index": 38,
+      "total_chunks": 95,
+      "page_number": 15,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Event",
+      "node_name": "Coverage Termination",
+      "node_id": 220,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "0adf35f9-8e86-4d59-9ab3-006d7dc1164d",
+        "f168bf32-40e2-460a-b743-9695ce89b666",
+        "35b906d7-39c2-4d2c-a018-7f55539c5155"
+      ],
+      "next": [
+        "5930a55d-138c-4c70-becf-e91cfef79b52",
+        "fb0853c4-155a-4c60-a898-20829320516d",
+        "aac745b2-818f-4149-bc57-cf99c9f1220d"
+      ]
+    }
+  },
+  {
+    "id": "5930a55d-138c-4c70-becf-e91cfef79b52",
+    "text": "**[CHART]**\n\nCAPTION: The chart illustrates a decline in participation percentage over several months, indicating a risk of coverage termination due to falling below the minimum required participation.",
+    "payload": {
+      "chunk_index": 39,
+      "total_chunks": 95,
+      "page_number": 15,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Event",
+      "node_name": "Coverage Termination",
+      "node_id": 220,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "f168bf32-40e2-460a-b743-9695ce89b666",
+        "35b906d7-39c2-4d2c-a018-7f55539c5155",
+        "5769d49d-7f1a-4827-ae5a-01d062f3d4ea"
+      ],
+      "next": [
+        "fb0853c4-155a-4c60-a898-20829320516d",
+        "aac745b2-818f-4149-bc57-cf99c9f1220d",
+        "1be9532f-ede0-44b6-b0c8-128c911b83a2"
+      ]
+    }
+  },
+  {
+    "id": "fb0853c4-155a-4c60-a898-20829320516d",
+    "text": "ANALYSIS: The chart is a line graph displaying participation percentage on the y-axis, ranging from 20% to 100%, and months from January to September on the x-axis. The data series shows a steady participation rate of 90% in January and February, followed by a gradual decline starting in March, where it drops to 85%. The trend continues downward, reaching 80% in April and further decreasing to 75% by June",
+    "payload": {
+      "chunk_index": 40,
+      "total_chunks": 95,
+      "page_number": 15,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Term Life Insurance",
+      "node_id": 222,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "35b906d7-39c2-4d2c-a018-7f55539c5155",
+        "5769d49d-7f1a-4827-ae5a-01d062f3d4ea",
+        "5930a55d-138c-4c70-becf-e91cfef79b52"
+      ],
+      "next": [
+        "aac745b2-818f-4149-bc57-cf99c9f1220d",
+        "1be9532f-ede0-44b6-b0c8-128c911b83a2",
+        "a7570ece-73b2-494a-9bf7-6d8f14929f07"
+      ]
+    }
+  },
+  {
+    "id": "aac745b2-818f-4149-bc57-cf99c9f1220d",
+    "text": ". The trend continues downward, reaching 80% in April and further decreasing to 75% by June. By July, participation falls to 70%, and in August, it drops significantly to 65%, which is highlighted as a critical point where participation is below the minimum threshold, risking coverage termination by the insurer. The percentage stabilizes at 70% in September, but the overall trend indicates a concerning decline in participation",
+    "payload": {
+      "chunk_index": 41,
+      "total_chunks": 95,
+      "page_number": 15,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Event",
+      "node_name": "Coverage Termination",
+      "node_id": 220,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "5769d49d-7f1a-4827-ae5a-01d062f3d4ea",
+        "5930a55d-138c-4c70-becf-e91cfef79b52",
+        "fb0853c4-155a-4c60-a898-20829320516d"
+      ],
+      "next": [
+        "1be9532f-ede0-44b6-b0c8-128c911b83a2",
+        "a7570ece-73b2-494a-9bf7-6d8f14929f07",
+        "42896bd8-107a-410a-9e3c-70d5ff8f3df9"
+      ]
+    }
+  },
+  {
+    "id": "1be9532f-ede0-44b6-b0c8-128c911b83a2",
+    "text": ". Key takeaways include the importance of maintaining participation above the minimum level to avoid potential loss of coverage.",
+    "payload": {
+      "chunk_index": 42,
+      "total_chunks": 95,
+      "page_number": 15,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Event",
+      "node_name": "Coverage Termination",
+      "node_id": 220,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "5930a55d-138c-4c70-becf-e91cfef79b52",
+        "fb0853c4-155a-4c60-a898-20829320516d",
+        "aac745b2-818f-4149-bc57-cf99c9f1220d"
+      ],
+      "next": [
+        "a7570ece-73b2-494a-9bf7-6d8f14929f07",
+        "42896bd8-107a-410a-9e3c-70d5ff8f3df9",
+        "fcd096de-ad28-43ca-a973-334b0b63d902"
+      ]
+    }
+  },
+  {
+    "id": "a7570ece-73b2-494a-9bf7-6d8f14929f07",
+    "text": "Termination of a Group Insured’s Coverage\nMost group insurance policies provide that a group insured’s coverage terminates in the\nfollowing circumstances:\n\nIf the group insured ceases to be a member of a class of persons eligible for\ncoverage.\n• If the group insured ceases to be a member of a class of persons eligible for coverage.\nExamples\nOlive Murphy had been insured as a dependent under her father’s group insurance\npolicy. Olive just turned 21 years old and is no longer financially dependent on her",
+    "payload": {
+      "chunk_index": 43,
+      "total_chunks": 95,
+      "page_number": 16,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Event",
+      "node_name": "Coverage Termination",
+      "node_id": 220,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "fb0853c4-155a-4c60-a898-20829320516d",
+        "aac745b2-818f-4149-bc57-cf99c9f1220d",
+        "1be9532f-ede0-44b6-b0c8-128c911b83a2"
+      ],
+      "next": [
+        "42896bd8-107a-410a-9e3c-70d5ff8f3df9",
+        "fcd096de-ad28-43ca-a973-334b0b63d902",
+        "d3dfdcb2-295c-4267-a3ec-b8d3b8867086"
+      ]
+    }
+  },
+  {
+    "id": "42896bd8-107a-410a-9e3c-70d5ff8f3df9",
+    "text": "policy. Olive just turned 21 years old and is no longer financially dependent on her\nfather.\nHarry Towne had been insured under his employer’s group insurance plan. Harry’s job\nclassification changed to a part-time employee, which is not eligible for group insurance\ncoverage.\n• If the group insured terminates employment or group membership\nExamples\nKamie Ellison, who had been insured under her employer’s group insurance policy, quit\nher job.",
+    "payload": {
+      "chunk_index": 44,
+      "total_chunks": 95,
+      "page_number": 16,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Eligibility Requirements (Group Life)",
+      "node_id": 215,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "aac745b2-818f-4149-bc57-cf99c9f1220d",
+        "1be9532f-ede0-44b6-b0c8-128c911b83a2",
+        "a7570ece-73b2-494a-9bf7-6d8f14929f07"
+      ],
+      "next": [
+        "fcd096de-ad28-43ca-a973-334b0b63d902",
+        "d3dfdcb2-295c-4267-a3ec-b8d3b8867086",
+        "90071864-f9f8-4f41-999a-fdbbd9542d6e"
+      ]
+    }
+  },
+  {
+    "id": "fcd096de-ad28-43ca-a973-334b0b63d902",
+    "text": "Jeff Oslo had been insured under a group creditor insurance plan issued to the Pine\nBank. Jeff recently paid off the credit card debt he owed the bank, and he canceled the\ncredit card account.\n• If the group insured fails to make a required contribution to the premium\nExample\nCarlos Land had been insured under his employer’s contributory group insurance policy.\nCarlos withdrew his authorization for his employer to deduct premiums from his pay.\nConversion Privilege",
+    "payload": {
+      "chunk_index": 45,
+      "total_chunks": 95,
+      "page_number": 17,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Creditor Life Insurance",
+      "node_id": 225,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "1be9532f-ede0-44b6-b0c8-128c911b83a2",
+        "a7570ece-73b2-494a-9bf7-6d8f14929f07",
+        "42896bd8-107a-410a-9e3c-70d5ff8f3df9"
+      ],
+      "next": [
+        "d3dfdcb2-295c-4267-a3ec-b8d3b8867086",
+        "90071864-f9f8-4f41-999a-fdbbd9542d6e",
+        "53b01959-b555-4c90-b249-36d778469ac1"
+      ]
+    }
+  },
+  {
+    "id": "d3dfdcb2-295c-4267-a3ec-b8d3b8867086",
+    "text": "Conversion Privilege\nLaws in many jurisdictions require that group insurance contracts contain a conversion\nprivilege that allows a group insured to convert his group life coverage to individual\ncoverage in certain situations.\nNo evidence of insurability is required.",
+    "payload": {
+      "chunk_index": 46,
+      "total_chunks": 95,
+      "page_number": 17,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Conversion Right (Group Life)",
+      "node_id": 221,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "a7570ece-73b2-494a-9bf7-6d8f14929f07",
+        "42896bd8-107a-410a-9e3c-70d5ff8f3df9",
+        "fcd096de-ad28-43ca-a973-334b0b63d902"
+      ],
+      "next": [
+        "90071864-f9f8-4f41-999a-fdbbd9542d6e",
+        "53b01959-b555-4c90-b249-36d778469ac1",
+        "86c85aea-0c72-461e-bb00-3345d84619b7"
+      ]
+    }
+  },
+  {
+    "id": "90071864-f9f8-4f41-999a-fdbbd9542d6e",
+    "text": "Limitations on Conversion\nLaws in many jurisdictions limit the conversion privilege in the following ways. (Click or\ntouch each tab below.)\nWho?\nHow much?\nWhen?\nConversion Privilege\nA conversion privilege may be more favorable to group insureds than the minimum\nrequired by laws.\nExample: A group policy might state that, when a group insured’s coverage ends, he\nmay convert up to the amount of insurance he had under the group contract. This\nexample is more generous than the amount required by law.",
+    "payload": {
+      "chunk_index": 47,
+      "total_chunks": 95,
+      "page_number": 18,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Conversion Right (Group Life)",
+      "node_id": 221,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "42896bd8-107a-410a-9e3c-70d5ff8f3df9",
+        "fcd096de-ad28-43ca-a973-334b0b63d902",
+        "d3dfdcb2-295c-4267-a3ec-b8d3b8867086"
+      ],
+      "next": [
+        "53b01959-b555-4c90-b249-36d778469ac1",
+        "86c85aea-0c72-461e-bb00-3345d84619b7",
+        "bc0718f1-7169-4791-bbc3-863a0ec0e635"
+      ]
+    }
+  },
+  {
+    "id": "53b01959-b555-4c90-b249-36d778469ac1",
+    "text": "example is more generous than the amount required by law.\nPlan of Individual Insurance",
+    "payload": {
+      "chunk_index": 48,
+      "total_chunks": 95,
+      "page_number": 18,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Term Life Insurance",
+      "node_id": 222,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "fcd096de-ad28-43ca-a973-334b0b63d902",
+        "d3dfdcb2-295c-4267-a3ec-b8d3b8867086",
+        "90071864-f9f8-4f41-999a-fdbbd9542d6e"
+      ],
+      "next": [
+        "86c85aea-0c72-461e-bb00-3345d84619b7",
+        "bc0718f1-7169-4791-bbc3-863a0ec0e635",
+        "5772c590-47ad-4f02-b810-f0a335122e68"
+      ]
+    }
+  },
+  {
+    "id": "86c85aea-0c72-461e-bb00-3345d84619b7",
+    "text": "Usually, a group insured can purchase any type of individual life insurance policy that\nthe insurer issues.\nThe cost of converted coverage is the insurer’s standard premium rate for that type of\npolicy at the group insured’s sex and attained age.\nZara Chugne, age 30, left her job at the Plentiful Company. One week later,\nshe started a new job at Excel Services. She’d like to convert her Plentiful\ngroup life insurance to an individual policy. Select each true statement about",
+    "payload": {
+      "chunk_index": 49,
+      "total_chunks": 95,
+      "page_number": 19,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Conversion Right (Group Life)",
+      "node_id": 221,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "d3dfdcb2-295c-4267-a3ec-b8d3b8867086",
+        "90071864-f9f8-4f41-999a-fdbbd9542d6e",
+        "53b01959-b555-4c90-b249-36d778469ac1"
+      ],
+      "next": [
+        "bc0718f1-7169-4791-bbc3-863a0ec0e635",
+        "5772c590-47ad-4f02-b810-f0a335122e68",
+        "079e585f-8a59-4567-ba3e-874646b30042"
+      ]
+    }
+  },
+  {
+    "id": "bc0718f1-7169-4791-bbc3-863a0ec0e635",
+    "text": "group life insurance to an individual policy. Select each true statement about\nthis situation. (Choose all that apply)\nZara is still within the conversion period for Plentiful’s group life policy.\nZara will have to provide evidence of insurability to convert her Plentiful group coverage to an individual policy.",
+    "payload": {
+      "chunk_index": 50,
+      "total_chunks": 95,
+      "page_number": 19,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Conversion Right (Group Life)",
+      "node_id": 221,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "90071864-f9f8-4f41-999a-fdbbd9542d6e",
+        "53b01959-b555-4c90-b249-36d778469ac1",
+        "86c85aea-0c72-461e-bb00-3345d84619b7"
+      ],
+      "next": [
+        "5772c590-47ad-4f02-b810-f0a335122e68",
+        "079e585f-8a59-4567-ba3e-874646b30042",
+        "36eb0742-de0d-47d7-9f89-2fa40423acbd"
+      ]
+    }
+  },
+  {
+    "id": "5772c590-47ad-4f02-b810-f0a335122e68",
+    "text": "If Zara converts her Plentiful coverage, the premium rate she will pay for the individual policy will be the same\npremium rate she paid for her group coverage.\nInsurance Termination and Conversion\nLearning Objective\nIdentify situations in which a group member’s group life insurance coverage terminates,\nand describe the group insured’s conversion rights in these situations.\nLoss of Coverage\nA person insured by a group life insurance policy can lose that coverage if\n\nThe group policy terminates\n",
+    "payload": {
+      "chunk_index": 51,
+      "total_chunks": 95,
+      "page_number": 20,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Conversion Right (Group Life)",
+      "node_id": 221,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "53b01959-b555-4c90-b249-36d778469ac1",
+        "86c85aea-0c72-461e-bb00-3345d84619b7",
+        "bc0718f1-7169-4791-bbc3-863a0ec0e635"
+      ],
+      "next": [
+        "079e585f-8a59-4567-ba3e-874646b30042",
+        "36eb0742-de0d-47d7-9f89-2fa40423acbd",
+        "d38ae9ff-d913-4311-8db0-699015836a3f"
+      ]
+    }
+  },
+  {
+    "id": "079e585f-8a59-4567-ba3e-874646b30042",
+    "text": "\nThe group policy terminates\n\nThe person is no longer eligible for group coverage\nTermination of the Group Policy\nAccording to the terms of most group insurance policies, the group policyholder may\nterminate the policy at any time by notifying the insurer in writing.\nThe insurer may also have the right to terminate the group insurance policy on any\npremium due date if certain conditions exist.\nWhat kind of conditions?",
+    "payload": {
+      "chunk_index": 52,
+      "total_chunks": 95,
+      "page_number": 20,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Event",
+      "node_name": "Coverage Termination",
+      "node_id": 220,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "86c85aea-0c72-461e-bb00-3345d84619b7",
+        "bc0718f1-7169-4791-bbc3-863a0ec0e635",
+        "5772c590-47ad-4f02-b810-f0a335122e68"
+      ],
+      "next": [
+        "36eb0742-de0d-47d7-9f89-2fa40423acbd",
+        "d38ae9ff-d913-4311-8db0-699015836a3f",
+        "06ea661b-79d0-463b-86ab-f2939e101d85"
+      ]
+    }
+  },
+  {
+    "id": "36eb0742-de0d-47d7-9f89-2fa40423acbd",
+    "text": "Participation Level\nIf the group’s participation level falls below the required minimum, the insurance\ncompany has the right to terminate the policy.\n\n**[CHART]**\n\nCAPTION: The chart illustrates a decline in participation percentage over several months, indicating a risk of coverage termination due to falling below the minimum required participation.",
+    "payload": {
+      "chunk_index": 53,
+      "total_chunks": 95,
+      "page_number": 21,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Event",
+      "node_name": "Coverage Termination",
+      "node_id": 220,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "bc0718f1-7169-4791-bbc3-863a0ec0e635",
+        "5772c590-47ad-4f02-b810-f0a335122e68",
+        "079e585f-8a59-4567-ba3e-874646b30042"
+      ],
+      "next": [
+        "d38ae9ff-d913-4311-8db0-699015836a3f",
+        "06ea661b-79d0-463b-86ab-f2939e101d85",
+        "d76fb7e7-d9b3-4657-a1e6-a30f312ff59c"
+      ]
+    }
+  },
+  {
+    "id": "d38ae9ff-d913-4311-8db0-699015836a3f",
+    "text": "ANALYSIS: The chart is a line graph displaying participation percentage on the y-axis, ranging from 20% to 100%, and months from January to September on the x-axis. The data series shows a steady participation rate of 90% in January and February, followed by a gradual decline starting in March, where it drops to 85%. The trend continues downward, reaching 80% in April and further decreasing to 75% by June. By July, participation falls to 70%, and in August, it drops significantly to 65%",
+    "payload": {
+      "chunk_index": 54,
+      "total_chunks": 95,
+      "page_number": 21,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Term Life Insurance",
+      "node_id": 222,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "5772c590-47ad-4f02-b810-f0a335122e68",
+        "079e585f-8a59-4567-ba3e-874646b30042",
+        "36eb0742-de0d-47d7-9f89-2fa40423acbd"
+      ],
+      "next": [
+        "06ea661b-79d0-463b-86ab-f2939e101d85",
+        "d76fb7e7-d9b3-4657-a1e6-a30f312ff59c",
+        "99364d8a-0604-4a2d-8b54-a210f5a897b6"
+      ]
+    }
+  },
+  {
+    "id": "06ea661b-79d0-463b-86ab-f2939e101d85",
+    "text": ". By July, participation falls to 70%, and in August, it drops significantly to 65%. The graph highlights a critical point where participation falls below the minimum threshold, as indicated by the note that the insurer can terminate coverage if participation remains low. By September, the participation percentage stabilizes at 70%. The key takeaway is the concerning downward trend in participation, which poses a risk to coverage stability.",
+    "payload": {
+      "chunk_index": 55,
+      "total_chunks": 95,
+      "page_number": 21,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Event",
+      "node_name": "Coverage Termination",
+      "node_id": 220,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "079e585f-8a59-4567-ba3e-874646b30042",
+        "36eb0742-de0d-47d7-9f89-2fa40423acbd",
+        "d38ae9ff-d913-4311-8db0-699015836a3f"
+      ],
+      "next": [
+        "d76fb7e7-d9b3-4657-a1e6-a30f312ff59c",
+        "99364d8a-0604-4a2d-8b54-a210f5a897b6",
+        "ec2bbb79-2b81-4d3f-ab53-4d8f220f4af2"
+      ]
+    }
+  },
+  {
+    "id": "d76fb7e7-d9b3-4657-a1e6-a30f312ff59c",
+    "text": "Termination of a Group Insured’s Coverage\nMost group insurance policies provide that a group insured’s coverage terminates in the\nfollowing circumstances:\n\nIf the group insured ceases to be a member of a class of persons eligible for\ncoverage.\n• If the group insured ceases to be a member of a class of persons eligible for coverage.\nExamples\nOlive Murphy had been insured as a dependent under her father’s group insurance\npolicy. Olive just turned 21 years old and is no longer financially dependent on her",
+    "payload": {
+      "chunk_index": 56,
+      "total_chunks": 95,
+      "page_number": 22,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Event",
+      "node_name": "Coverage Termination",
+      "node_id": 220,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "36eb0742-de0d-47d7-9f89-2fa40423acbd",
+        "d38ae9ff-d913-4311-8db0-699015836a3f",
+        "06ea661b-79d0-463b-86ab-f2939e101d85"
+      ],
+      "next": [
+        "99364d8a-0604-4a2d-8b54-a210f5a897b6",
+        "ec2bbb79-2b81-4d3f-ab53-4d8f220f4af2",
+        "9a358549-d1a3-4ee3-9f39-42de693b31d3"
+      ]
+    }
+  },
+  {
+    "id": "99364d8a-0604-4a2d-8b54-a210f5a897b6",
+    "text": "policy. Olive just turned 21 years old and is no longer financially dependent on her\nfather.\nHarry Towne had been insured under his employer’s group insurance plan. Harry’s job\nclassification changed to a part-time employee, which is not eligible for group insurance\ncoverage.\n• If the group insured terminates employment or group membership\nExamples\nKamie Ellison, who had been insured under her employer’s group insurance policy, quit\nher job.",
+    "payload": {
+      "chunk_index": 57,
+      "total_chunks": 95,
+      "page_number": 22,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Eligibility Requirements (Group Life)",
+      "node_id": 215,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "d38ae9ff-d913-4311-8db0-699015836a3f",
+        "06ea661b-79d0-463b-86ab-f2939e101d85",
+        "d76fb7e7-d9b3-4657-a1e6-a30f312ff59c"
+      ],
+      "next": [
+        "ec2bbb79-2b81-4d3f-ab53-4d8f220f4af2",
+        "9a358549-d1a3-4ee3-9f39-42de693b31d3",
+        "4b1b913d-28ee-4204-b592-08e727c73c6c"
+      ]
+    }
+  },
+  {
+    "id": "ec2bbb79-2b81-4d3f-ab53-4d8f220f4af2",
+    "text": "Jeff Oslo had been insured under a group creditor insurance plan issued to the Pine\nBank. Jeff recently paid off the credit card debt he owed the bank, and he canceled the\ncredit card account.\n• If the group insured fails to make a required contribution to the premium\nExample\nCarlos Land had been insured under his employer’s contributory group insurance policy.\nCarlos withdrew his authorization for his employer to deduct premiums from his pay.\nConversion Privilege",
+    "payload": {
+      "chunk_index": 58,
+      "total_chunks": 95,
+      "page_number": 23,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Creditor Life Insurance",
+      "node_id": 225,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "06ea661b-79d0-463b-86ab-f2939e101d85",
+        "d76fb7e7-d9b3-4657-a1e6-a30f312ff59c",
+        "99364d8a-0604-4a2d-8b54-a210f5a897b6"
+      ],
+      "next": [
+        "9a358549-d1a3-4ee3-9f39-42de693b31d3",
+        "4b1b913d-28ee-4204-b592-08e727c73c6c",
+        "6367942c-e409-473b-9602-242786c2ad35"
+      ]
+    }
+  },
+  {
+    "id": "9a358549-d1a3-4ee3-9f39-42de693b31d3",
+    "text": "Conversion Privilege\nLaws in many jurisdictions require that group insurance contracts contain a conversion\nprivilege that allows a group insured to convert his group life coverage to individual\ncoverage in certain situations.\nNo evidence of insurability is required.",
+    "payload": {
+      "chunk_index": 59,
+      "total_chunks": 95,
+      "page_number": 23,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Conversion Right (Group Life)",
+      "node_id": 221,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "d76fb7e7-d9b3-4657-a1e6-a30f312ff59c",
+        "99364d8a-0604-4a2d-8b54-a210f5a897b6",
+        "ec2bbb79-2b81-4d3f-ab53-4d8f220f4af2"
+      ],
+      "next": [
+        "4b1b913d-28ee-4204-b592-08e727c73c6c",
+        "6367942c-e409-473b-9602-242786c2ad35",
+        "114ea087-36e7-4cef-9fe5-044a2f9ffd89"
+      ]
+    }
+  },
+  {
+    "id": "4b1b913d-28ee-4204-b592-08e727c73c6c",
+    "text": "Limitations on Conversion\nLaws in many jurisdictions limit the conversion privilege in the following ways. (Click or\ntouch each tab below.)\nWho?\nHow much?\nWhen?\nConversion Privilege\nA conversion privilege may be more favorable to group insureds than the minimum\nrequired by laws.\nExample: A group policy might state that, when a group insured’s coverage ends, he\nmay convert up to the amount of insurance he had under the group contract. This\nexample is more generous than the amount required by law.",
+    "payload": {
+      "chunk_index": 60,
+      "total_chunks": 95,
+      "page_number": 24,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Conversion Right (Group Life)",
+      "node_id": 221,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "99364d8a-0604-4a2d-8b54-a210f5a897b6",
+        "ec2bbb79-2b81-4d3f-ab53-4d8f220f4af2",
+        "9a358549-d1a3-4ee3-9f39-42de693b31d3"
+      ],
+      "next": [
+        "6367942c-e409-473b-9602-242786c2ad35",
+        "114ea087-36e7-4cef-9fe5-044a2f9ffd89",
+        "a7e3fd93-467a-41c2-b3fe-2a3d3c714321"
+      ]
+    }
+  },
+  {
+    "id": "6367942c-e409-473b-9602-242786c2ad35",
+    "text": "example is more generous than the amount required by law.\nPlan of Individual Insurance",
+    "payload": {
+      "chunk_index": 61,
+      "total_chunks": 95,
+      "page_number": 24,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Term Life Insurance",
+      "node_id": 222,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "ec2bbb79-2b81-4d3f-ab53-4d8f220f4af2",
+        "9a358549-d1a3-4ee3-9f39-42de693b31d3",
+        "4b1b913d-28ee-4204-b592-08e727c73c6c"
+      ],
+      "next": [
+        "114ea087-36e7-4cef-9fe5-044a2f9ffd89",
+        "a7e3fd93-467a-41c2-b3fe-2a3d3c714321",
+        "bacebcff-a0aa-4959-a163-1ee3030685fa"
+      ]
+    }
+  },
+  {
+    "id": "114ea087-36e7-4cef-9fe5-044a2f9ffd89",
+    "text": "Usually, a group insured can purchase any type of individual life insurance policy that\nthe insurer issues.\nThe cost of converted coverage is the insurer’s standard premium rate for that type of\npolicy at the group insured’s sex and attained age.\nZara Chugne, age 30, left her job at the Plentiful Company. One week later,\nshe started a new job at Excel Services. She’d like to convert her Plentiful\ngroup life insurance to an individual policy. Select each true statement about",
+    "payload": {
+      "chunk_index": 62,
+      "total_chunks": 95,
+      "page_number": 25,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Conversion Right (Group Life)",
+      "node_id": 221,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "9a358549-d1a3-4ee3-9f39-42de693b31d3",
+        "4b1b913d-28ee-4204-b592-08e727c73c6c",
+        "6367942c-e409-473b-9602-242786c2ad35"
+      ],
+      "next": [
+        "a7e3fd93-467a-41c2-b3fe-2a3d3c714321",
+        "bacebcff-a0aa-4959-a163-1ee3030685fa",
+        "69d9a585-e9e0-41b7-9abc-b7eb13732aba"
+      ]
+    }
+  },
+  {
+    "id": "a7e3fd93-467a-41c2-b3fe-2a3d3c714321",
+    "text": "group life insurance to an individual policy. Select each true statement about\nthis situation. (Choose all that apply)\nZara is still within the conversion period for Plentiful’s group life policy.\nZara will have to provide evidence of insurability to convert her Plentiful group coverage to an individual policy.",
+    "payload": {
+      "chunk_index": 63,
+      "total_chunks": 95,
+      "page_number": 25,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Conversion Right (Group Life)",
+      "node_id": 221,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "4b1b913d-28ee-4204-b592-08e727c73c6c",
+        "6367942c-e409-473b-9602-242786c2ad35",
+        "114ea087-36e7-4cef-9fe5-044a2f9ffd89"
+      ],
+      "next": [
+        "bacebcff-a0aa-4959-a163-1ee3030685fa",
+        "69d9a585-e9e0-41b7-9abc-b7eb13732aba",
+        "caef1708-a371-4ec0-9dbb-87bb8488d2cf"
+      ]
+    }
+  },
+  {
+    "id": "bacebcff-a0aa-4959-a163-1ee3030685fa",
+    "text": "If Zara converts her Plentiful coverage, the premium rate she will pay for the individual policy will be the same\npremium rate she paid for her group coverage.\nBenefit Amounts\nLearning Objective\nDescribe the purpose and operation of benefit schedules in group life\ninsurance policies.\nOpen Transcript\nBenefit Schedules\nA benefit schedule shows how much group life insurance coverage each\ngroup insured receives.\nThe benefit schedule states either the dollar amount of coverage or the",
+    "payload": {
+      "chunk_index": 64,
+      "total_chunks": 95,
+      "page_number": 26,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Benefit Schedules",
+      "node_id": 219,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "6367942c-e409-473b-9602-242786c2ad35",
+        "114ea087-36e7-4cef-9fe5-044a2f9ffd89",
+        "a7e3fd93-467a-41c2-b3fe-2a3d3c714321"
+      ],
+      "next": [
+        "69d9a585-e9e0-41b7-9abc-b7eb13732aba",
+        "caef1708-a371-4ec0-9dbb-87bb8488d2cf",
+        "58c29c08-a91d-4f9e-a704-92a8c9435e98"
+      ]
+    }
+  },
+  {
+    "id": "69d9a585-e9e0-41b7-9abc-b7eb13732aba",
+    "text": "group insured receives.\nThe benefit schedule states either the dollar amount of coverage or the\nmethod the insurer will use to determine that dollar amount.",
+    "payload": {
+      "chunk_index": 65,
+      "total_chunks": 95,
+      "page_number": 26,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Benefit Schedules",
+      "node_id": 219,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "114ea087-36e7-4cef-9fe5-044a2f9ffd89",
+        "a7e3fd93-467a-41c2-b3fe-2a3d3c714321",
+        "bacebcff-a0aa-4959-a163-1ee3030685fa"
+      ],
+      "next": [
+        "caef1708-a371-4ec0-9dbb-87bb8488d2cf",
+        "58c29c08-a91d-4f9e-a704-92a8c9435e98",
+        "7eb8ad81-7cf8-4f18-8da4-721338579cdb"
+      ]
+    }
+  },
+  {
+    "id": "caef1708-a371-4ec0-9dbb-87bb8488d2cf",
+    "text": "Three Common Types of Benefit Schedules for\nEmployee Groups\nBenefit formula based on annual salary\nAnnual Salary\nAmount of life insurance\nLess than $60,000\n1 x salary\n$60,000 to $100,000\n2 x salary\nOver $100,000\n3 x salary\nBenefit is a flat amount for every employee\nAnnual Salary\nAmount of life insurance\nAny\n$50,000\nBenefit amount based on job classification\nAnnual Salary\nAmount of life insurance\nNonmanagement\n$30,000\nSupervisors\n$50,000\nManagers\n$100,000\nOfficers\n$200,000\nDependent Coverage Amounts",
+    "payload": {
+      "chunk_index": 66,
+      "total_chunks": 95,
+      "page_number": 27,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Benefit Schedules",
+      "node_id": 219,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "a7e3fd93-467a-41c2-b3fe-2a3d3c714321",
+        "bacebcff-a0aa-4959-a163-1ee3030685fa",
+        "69d9a585-e9e0-41b7-9abc-b7eb13732aba"
+      ],
+      "next": [
+        "58c29c08-a91d-4f9e-a704-92a8c9435e98",
+        "7eb8ad81-7cf8-4f18-8da4-721338579cdb",
+        "9f9e69bd-aac5-4df8-9b24-d3c2322c1782"
+      ]
+    }
+  },
+  {
+    "id": "58c29c08-a91d-4f9e-a704-92a8c9435e98",
+    "text": "$30,000\nSupervisors\n$50,000\nManagers\n$100,000\nOfficers\n$200,000\nDependent Coverage Amounts\nDependent coverage amounts are listed in a separate benefit schedule.\nExamples:\n\nA flat amount of coverage for each covered dependent.",
+    "payload": {
+      "chunk_index": 67,
+      "total_chunks": 95,
+      "page_number": 27,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Benefit Schedules",
+      "node_id": 219,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "bacebcff-a0aa-4959-a163-1ee3030685fa",
+        "69d9a585-e9e0-41b7-9abc-b7eb13732aba",
+        "caef1708-a371-4ec0-9dbb-87bb8488d2cf"
+      ],
+      "next": [
+        "7eb8ad81-7cf8-4f18-8da4-721338579cdb",
+        "9f9e69bd-aac5-4df8-9b24-d3c2322c1782",
+        "8d0aff79-068f-464d-9213-91fc1b5356f3"
+      ]
+    }
+  },
+  {
+    "id": "7eb8ad81-7cf8-4f18-8da4-721338579cdb",
+    "text": "\nA flat amount of coverage for a group member’s spouse and a lower\namount for each dependent child.\nSome insurance laws—and insurer underwriting guidelines—require that\ndependent coverage be less than the covered group member’s coverage.\nThe Daisy Company offers group life insurance to its 100 employees as part\nof its employee benefit plan. The table below presents information about two\nemployee who work at Daisy:\nGroup\nLife\nInsuranc\ne\nEmployee\nJob\nTitle\nAg\ne\nSalary\nEmploye\nd\nAmount\nof Life\nInsuranc\ne",
+    "payload": {
+      "chunk_index": 68,
+      "total_chunks": 95,
+      "page_number": 28,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Term Life Insurance",
+      "node_id": 222,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "69d9a585-e9e0-41b7-9abc-b7eb13732aba",
+        "caef1708-a371-4ec0-9dbb-87bb8488d2cf",
+        "58c29c08-a91d-4f9e-a704-92a8c9435e98"
+      ],
+      "next": [
+        "9f9e69bd-aac5-4df8-9b24-d3c2322c1782",
+        "8d0aff79-068f-464d-9213-91fc1b5356f3",
+        "9ff2438f-d5cd-4179-9219-e232ccbe448a"
+      ]
+    }
+  },
+  {
+    "id": "9f9e69bd-aac5-4df8-9b24-d3c2322c1782",
+    "text": "Group\nLife\nInsuranc\ne\nEmployee\nJob\nTitle\nAg\ne\nSalary\nEmploye\nd\nAmount\nof Life\nInsuranc\ne\nDependent\ns\nJohn\nWarren\nManage\nr\n60\n$80,00\n0\n8 years\n$160,000\nSpouse\nTodd\nAddison\nWelder\n24\n$25,00\n0\n3 years\n$25,000\nNone\nThe benefit schedule in Daisy's group life insurance policy is based on\nA standard flat amount\nAn employee's annual salary\nCan’t tell; need more information",
+    "payload": {
+      "chunk_index": 69,
+      "total_chunks": 95,
+      "page_number": 28,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Benefit Schedules",
+      "node_id": 219,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "caef1708-a371-4ec0-9dbb-87bb8488d2cf",
+        "58c29c08-a91d-4f9e-a704-92a8c9435e98",
+        "7eb8ad81-7cf8-4f18-8da4-721338579cdb"
+      ],
+      "next": [
+        "8d0aff79-068f-464d-9213-91fc1b5356f3",
+        "9ff2438f-d5cd-4179-9219-e232ccbe448a",
+        "0d3c11d8-55eb-4cfc-a81d-a1af0bb829fd"
+      ]
+    }
+  },
+  {
+    "id": "8d0aff79-068f-464d-9213-91fc1b5356f3",
+    "text": "If Daisy's policy is typical, then the amount of coverage provided for John's\nwife is\nGreater than the amount of coverage provided for John\nLess than the amount of coverage provided for John\nSettlement Options\nUsually, insurers pay group life insurance policy death benefits in a lump\nsum to the named beneficiary. But some group policies allow a beneficiary to\nchoose a settlement option.\nThe settlement options are the same as those in individual policies (click or",
+    "payload": {
+      "chunk_index": 70,
+      "total_chunks": 95,
+      "page_number": 29,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Feature",
+      "node_name": "Beneficiary Designation (Group Life)",
+      "node_id": 216,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "58c29c08-a91d-4f9e-a704-92a8c9435e98",
+        "7eb8ad81-7cf8-4f18-8da4-721338579cdb",
+        "9f9e69bd-aac5-4df8-9b24-d3c2322c1782"
+      ],
+      "next": [
+        "9ff2438f-d5cd-4179-9219-e232ccbe448a",
+        "0d3c11d8-55eb-4cfc-a81d-a1af0bb829fd",
+        "8cc5db7b-1723-4583-ba57-77acd9a7f025"
+      ]
+    }
+  },
+  {
+    "id": "9ff2438f-d5cd-4179-9219-e232ccbe448a",
+    "text": "The settlement options are the same as those in individual policies (click or\ntouch each tab to review that settlement option):\nLump-sum option: The insurer pays the proceeds in a single payment.\nInterest option: The insurer invests the policy proceeds and periodically pays\ninterest on the proceeds.\nFixed-period option: The insurer pays the policy proceeds in equal\ninstallments for a specified period of time.\nFixed-amount option: The insurer pays equal installments of a stated",
+    "payload": {
+      "chunk_index": 71,
+      "total_chunks": 95,
+      "page_number": 29,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Provision",
+      "node_name": "Benefit Schedules",
+      "node_id": 219,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "7eb8ad81-7cf8-4f18-8da4-721338579cdb",
+        "9f9e69bd-aac5-4df8-9b24-d3c2322c1782",
+        "8d0aff79-068f-464d-9213-91fc1b5356f3"
+      ],
+      "next": [
+        "0d3c11d8-55eb-4cfc-a81d-a1af0bb829fd",
+        "8cc5db7b-1723-4583-ba57-77acd9a7f025",
+        "2bf6a70c-5677-4aa6-a05d-90e3492c17bc"
+      ]
+    }
+  },
+  {
+    "id": "0d3c11d8-55eb-4cfc-a81d-a1af0bb829fd",
+    "text": "Fixed-amount option: The insurer pays equal installments of a stated\namount until the policy proceeds, plus the interest earned, are exhausted.\nLife income option\nFeatures of the Group Plans\nLearning Objective\nIdentify the features of group term life insurance plans, group accidental death and\ndismemberment plans, and group cash value plans.\nDescribe how group creditor life insurance policies differ from policies issued to other\ntypes of groups.",
+    "payload": {
+      "chunk_index": 72,
+      "total_chunks": 95,
+      "page_number": 29,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Term Life Insurance",
+      "node_id": 222,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "9f9e69bd-aac5-4df8-9b24-d3c2322c1782",
+        "8d0aff79-068f-464d-9213-91fc1b5356f3",
+        "9ff2438f-d5cd-4179-9219-e232ccbe448a"
+      ],
+      "next": [
+        "8cc5db7b-1723-4583-ba57-77acd9a7f025",
+        "2bf6a70c-5677-4aa6-a05d-90e3492c17bc",
+        "a9706f5d-8ca0-40bc-b4d8-4ec728d54653"
+      ]
+    }
+  },
+  {
+    "id": "8cc5db7b-1723-4583-ba57-77acd9a7f025",
+    "text": "Yearly Renewable Term Insurance\nLike most group life policies, The Stetson Company’s policy is yearly renewable term\n(YRT) insurance. The coverage lasts for one year.\nGroup YRT policies do not build cash values.\nThe insurer can change the premium rate at the end of each policy year.\nTypically, an employee can receive up to $50,000 of noncontributory group term\ninsurance coverage tax free. An employee must pay federal income taxes on the\nemployer's cost of providing coverage over $50,000.\nOpen Transcript",
+    "payload": {
+      "chunk_index": 73,
+      "total_chunks": 95,
+      "page_number": 30,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Term Life Insurance",
+      "node_id": 222,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "8d0aff79-068f-464d-9213-91fc1b5356f3",
+        "9ff2438f-d5cd-4179-9219-e232ccbe448a",
+        "0d3c11d8-55eb-4cfc-a81d-a1af0bb829fd"
+      ],
+      "next": [
+        "2bf6a70c-5677-4aa6-a05d-90e3492c17bc",
+        "a9706f5d-8ca0-40bc-b4d8-4ec728d54653",
+        "c371c136-3870-4a38-8c56-81f4f4ef23a7"
+      ]
+    }
+  },
+  {
+    "id": "2bf6a70c-5677-4aa6-a05d-90e3492c17bc",
+    "text": "**[CHART]**\n\nCAPTION: This chart illustrates the timeline of Yearly Renewable Term (YRT) insurance coverage, highlighting renewal options for policyholders.",
+    "payload": {
+      "chunk_index": 74,
+      "total_chunks": 95,
+      "page_number": 30,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Term Life Insurance",
+      "node_id": 222,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "9ff2438f-d5cd-4179-9219-e232ccbe448a",
+        "0d3c11d8-55eb-4cfc-a81d-a1af0bb829fd",
+        "8cc5db7b-1723-4583-ba57-77acd9a7f025"
+      ],
+      "next": [
+        "a9706f5d-8ca0-40bc-b4d8-4ec728d54653",
+        "c371c136-3870-4a38-8c56-81f4f4ef23a7",
+        "1c948b3b-735c-45ab-8393-a9995bf5b34d"
+      ]
+    }
+  },
+  {
+    "id": "a9706f5d-8ca0-40bc-b4d8-4ec728d54653",
+    "text": "ANALYSIS: The chart is a linear timeline representing the duration of Yearly Renewable Term (YRT) insurance coverage. The x-axis indicates the progression of time across two years, labeled as Year 1 and Year 2. The chart shows that YRT coverage begins at the start of Year 1. At the end of Year 1, the coverage ends, but the policyholder has the option to renew for another year. This renewal process is repeated at the end of Year 2, where the policyholder can again choose to renew for an additional year",
+    "payload": {
+      "chunk_index": 75,
+      "total_chunks": 95,
+      "page_number": 30,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Term Life Insurance",
+      "node_id": 222,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "0d3c11d8-55eb-4cfc-a81d-a1af0bb829fd",
+        "8cc5db7b-1723-4583-ba57-77acd9a7f025",
+        "2bf6a70c-5677-4aa6-a05d-90e3492c17bc"
+      ],
+      "next": [
+        "c371c136-3870-4a38-8c56-81f4f4ef23a7",
+        "1c948b3b-735c-45ab-8393-a9995bf5b34d",
+        "fd519f7c-60ce-4b4a-9d5b-8de6cc9280ef"
+      ]
+    }
+  },
+  {
+    "id": "c371c136-3870-4a38-8c56-81f4f4ef23a7",
+    "text": ". The key takeaway is that YRT insurance provides flexibility for policyholders to renew their coverage annually, allowing for continued protection as needed.",
+    "payload": {
+      "chunk_index": 76,
+      "total_chunks": 95,
+      "page_number": 30,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Term Life Insurance",
+      "node_id": 222,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "8cc5db7b-1723-4583-ba57-77acd9a7f025",
+        "2bf6a70c-5677-4aa6-a05d-90e3492c17bc",
+        "a9706f5d-8ca0-40bc-b4d8-4ec728d54653"
+      ],
+      "next": [
+        "1c948b3b-735c-45ab-8393-a9995bf5b34d",
+        "fd519f7c-60ce-4b4a-9d5b-8de6cc9280ef",
+        "ee5475a8-0980-4514-a10a-4681667cf9be"
+      ]
+    }
+  },
+  {
+    "id": "1c948b3b-735c-45ab-8393-a9995bf5b34d",
+    "text": "AD&D Benefits\nA group policy may provide accidental death and dismemberment (AD&D) benefits. Or\na group policyholder may have separate group life and group AD&D policies.\nJerome’s group life coverage includes a $50,000 accidental death benefit. If he\ndies as the result of an accident, the named beneficiary will receive\n$50,000 YRT + $50,000 AD&D = $100,000\nCash Value Insurance\nSome group life policies provide cash value insurance rather than YRT coverage.",
+    "payload": {
+      "chunk_index": 77,
+      "total_chunks": 95,
+      "page_number": 31,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Accidental Death & Dismemberment (AD&D)",
+      "node_id": 223,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "2bf6a70c-5677-4aa6-a05d-90e3492c17bc",
+        "a9706f5d-8ca0-40bc-b4d8-4ec728d54653",
+        "c371c136-3870-4a38-8c56-81f4f4ef23a7"
+      ],
+      "next": [
+        "fd519f7c-60ce-4b4a-9d5b-8de6cc9280ef",
+        "ee5475a8-0980-4514-a10a-4681667cf9be",
+        "195f9831-5a20-4e11-844a-3c0bafa5c2b4"
+      ]
+    }
+  },
+  {
+    "id": "fd519f7c-60ce-4b4a-9d5b-8de6cc9280ef",
+    "text": "Cash Value Insurance\nSome group life policies provide cash value insurance rather than YRT coverage.\nUsually, cash value life insurance is supplemental coverage. Eligible group members\nhave the option to buy cash value insurance in addition to their group YRT coverage.\nCash Value Plans\nThree common types of group cash value (permanent) life insurance plans:\n\nGroup Paid-Up\n\nGroup Level-Premium Whole Life\n\nGroup Universal Life\nGroup Paid-Up Plans",
+    "payload": {
+      "chunk_index": 78,
+      "total_chunks": 95,
+      "page_number": 31,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Cash Value Life Insurance",
+      "node_id": 224,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "a9706f5d-8ca0-40bc-b4d8-4ec728d54653",
+        "c371c136-3870-4a38-8c56-81f4f4ef23a7",
+        "1c948b3b-735c-45ab-8393-a9995bf5b34d"
+      ],
+      "next": [
+        "ee5475a8-0980-4514-a10a-4681667cf9be",
+        "195f9831-5a20-4e11-844a-3c0bafa5c2b4",
+        "a2200b0f-1852-46a8-964a-611646b394ec"
+      ]
+    }
+  },
+  {
+    "id": "ee5475a8-0980-4514-a10a-4681667cf9be",
+    "text": "**[CHART]**\n\nCAPTION: This chart illustrates the distribution of insurance types over 25 years of employment, comparing paid-up whole life insurance to term insurance.\n\nANALYSIS: The chart is a bar graph with the x-axis representing the \"Year of Employment\" (ranging from 1 to 25 years) and the y-axis indicating the \"Amount of Insurance.\" There are two data series: paid-up whole life insurance (represented in green) and term insurance (represented in blue).",
+    "payload": {
+      "chunk_index": 79,
+      "total_chunks": 95,
+      "page_number": 31,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Term Life Insurance",
+      "node_id": 222,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "c371c136-3870-4a38-8c56-81f4f4ef23a7",
+        "1c948b3b-735c-45ab-8393-a9995bf5b34d",
+        "fd519f7c-60ce-4b4a-9d5b-8de6cc9280ef"
+      ],
+      "next": [
+        "195f9831-5a20-4e11-844a-3c0bafa5c2b4",
+        "a2200b0f-1852-46a8-964a-611646b394ec",
+        "f6fd22b9-05e6-4e8e-a011-35405b8a18dd"
+      ]
+    }
+  },
+  {
+    "id": "195f9831-5a20-4e11-844a-3c0bafa5c2b4",
+    "text": "The graph shows that in the first year of employment, the amount of term insurance is significantly higher than that of paid-up whole life insurance. As employment progresses to 5 years, the amount of term insurance remains consistent, while the paid-up whole life insurance begins to increase. By the 10-year mark, the amount of paid-up whole life insurance continues to grow, while term insurance remains stable.",
+    "payload": {
+      "chunk_index": 80,
+      "total_chunks": 95,
+      "page_number": 31,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Term Life Insurance",
+      "node_id": 222,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "1c948b3b-735c-45ab-8393-a9995bf5b34d",
+        "fd519f7c-60ce-4b4a-9d5b-8de6cc9280ef",
+        "ee5475a8-0980-4514-a10a-4681667cf9be"
+      ],
+      "next": [
+        "a2200b0f-1852-46a8-964a-611646b394ec",
+        "f6fd22b9-05e6-4e8e-a011-35405b8a18dd",
+        "4e08f028-5689-4b40-9419-d2fdf3d58a71"
+      ]
+    }
+  },
+  {
+    "id": "a2200b0f-1852-46a8-964a-611646b394ec",
+    "text": "From years 15 to 25, the trend indicates a gradual increase in the amount of paid-up whole life insurance, while the term insurance amount decreases significantly after year 20, suggesting a shift in insurance strategy as employees progress in their careers. The overall trend highlights a transition from term insurance to a greater emphasis on paid-up whole life insurance as employees gain tenure.",
+    "payload": {
+      "chunk_index": 81,
+      "total_chunks": 95,
+      "page_number": 31,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Cash Value Life Insurance",
+      "node_id": 224,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "fd519f7c-60ce-4b4a-9d5b-8de6cc9280ef",
+        "ee5475a8-0980-4514-a10a-4681667cf9be",
+        "195f9831-5a20-4e11-844a-3c0bafa5c2b4"
+      ],
+      "next": [
+        "f6fd22b9-05e6-4e8e-a011-35405b8a18dd",
+        "4e08f028-5689-4b40-9419-d2fdf3d58a71",
+        "6791dd1f-2d12-4a9e-8223-23a0afc34cdf"
+      ]
+    }
+  },
+  {
+    "id": "f6fd22b9-05e6-4e8e-a011-35405b8a18dd",
+    "text": "Group paid-up plans combine whole life insurance with decreasing amounts of term\nlife insurance.\nGroup Paid Up Plan Example\nBen Song has $100,000 of total life insurance coverage through a contributory group\npaid-up plan.\nBen’s premiums purchase paid-up whole life insurance. His employer’s premiums\npurchase YRT life insurance. Last year, Ben’s premiums purchased $10,000 of paid-up\nwhole life. Ben’s employer paid for $90,000 of YRT.",
+    "payload": {
+      "chunk_index": 82,
+      "total_chunks": 95,
+      "page_number": 32,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Term Life Insurance",
+      "node_id": 222,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "ee5475a8-0980-4514-a10a-4681667cf9be",
+        "195f9831-5a20-4e11-844a-3c0bafa5c2b4",
+        "a2200b0f-1852-46a8-964a-611646b394ec"
+      ],
+      "next": [
+        "4e08f028-5689-4b40-9419-d2fdf3d58a71",
+        "6791dd1f-2d12-4a9e-8223-23a0afc34cdf",
+        "9abcb8a5-8d49-43f8-927c-a160210684d7"
+      ]
+    }
+  },
+  {
+    "id": "4e08f028-5689-4b40-9419-d2fdf3d58a71",
+    "text": "whole life. Ben’s employer paid for $90,000 of YRT.\nOver time, as his paid-up whole life insurance coverage increases, the amount of his\nYRT coverage decreases. Together, Ben will always have $100,000 of coverage. Ben’s\npaid-up whole life coverage remains in force even if he leaves the company.\nGroup Level Premium Whole Life Plans\nGroup level premium whole life plans provide level premium whole life insurance.\nThe plan can be contributory or noncontributory. If the employee contributes, she has a",
+    "payload": {
+      "chunk_index": 83,
+      "total_chunks": 95,
+      "page_number": 32,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Cash Value Life Insurance",
+      "node_id": 224,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "195f9831-5a20-4e11-844a-3c0bafa5c2b4",
+        "a2200b0f-1852-46a8-964a-611646b394ec",
+        "f6fd22b9-05e6-4e8e-a011-35405b8a18dd"
+      ],
+      "next": [
+        "6791dd1f-2d12-4a9e-8223-23a0afc34cdf",
+        "9abcb8a5-8d49-43f8-927c-a160210684d7",
+        "e8b4cb7c-9c2b-4a9d-a0e3-7f3aed19f856"
+      ]
+    }
+  },
+  {
+    "id": "6791dd1f-2d12-4a9e-8223-23a0afc34cdf",
+    "text": "The plan can be contributory or noncontributory. If the employee contributes, she has a\nvested right in the amount of the cash value provided by her premium contributions.\nGroup Level Premium Whole Life Example\nViolet Young is insured by a noncontributory group level premium whole life insurance\npolicy. Her whole life coverage will be paid-up at age 65, her normal retirement age.\nAt retirement, her employer will use the cash value of her paid-up coverage to provide\nher a retirement income.",
+    "payload": {
+      "chunk_index": 84,
+      "total_chunks": 95,
+      "page_number": 32,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Cash Value Life Insurance",
+      "node_id": 224,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "a2200b0f-1852-46a8-964a-611646b394ec",
+        "f6fd22b9-05e6-4e8e-a011-35405b8a18dd",
+        "4e08f028-5689-4b40-9419-d2fdf3d58a71"
+      ],
+      "next": [
+        "9abcb8a5-8d49-43f8-927c-a160210684d7",
+        "e8b4cb7c-9c2b-4a9d-a0e3-7f3aed19f856",
+        "d248a9bb-5357-4f9f-a355-d7c1feab2b38"
+      ]
+    }
+  },
+  {
+    "id": "9abcb8a5-8d49-43f8-927c-a160210684d7",
+    "text": "her a retirement income.\nIf Violet leaves the group before her retirement, her group life insurance coverage will\nterminate and any accumulated cash value belongs to her employer.",
+    "payload": {
+      "chunk_index": 85,
+      "total_chunks": 95,
+      "page_number": 32,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Policy Event",
+      "node_name": "Coverage Termination",
+      "node_id": 220,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "f6fd22b9-05e6-4e8e-a011-35405b8a18dd",
+        "4e08f028-5689-4b40-9419-d2fdf3d58a71",
+        "6791dd1f-2d12-4a9e-8223-23a0afc34cdf"
+      ],
+      "next": [
+        "e8b4cb7c-9c2b-4a9d-a0e3-7f3aed19f856",
+        "d248a9bb-5357-4f9f-a355-d7c1feab2b38",
+        "88763682-a1df-4416-afd4-34f88c7691d5"
+      ]
+    }
+  },
+  {
+    "id": "e8b4cb7c-9c2b-4a9d-a0e3-7f3aed19f856",
+    "text": "If the policy had been contributory, and Violet had left the group before retirement, she\nwould be entitled to a portion of the accumulated value. For example, if she had paid 25\npercent of the premiums for the coverage, she would be entitled to 25 percent of the\naccumulated value.\nGroup Universal Life Plans\nGroup universal life plans provide universal life insurance and covered group\nmembers usually pay the entire premium.\nGroup Universal Life Example",
+    "payload": {
+      "chunk_index": 86,
+      "total_chunks": 95,
+      "page_number": 33,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Term Life Insurance",
+      "node_id": 222,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "4e08f028-5689-4b40-9419-d2fdf3d58a71",
+        "6791dd1f-2d12-4a9e-8223-23a0afc34cdf",
+        "9abcb8a5-8d49-43f8-927c-a160210684d7"
+      ],
+      "next": [
+        "d248a9bb-5357-4f9f-a355-d7c1feab2b38",
+        "88763682-a1df-4416-afd4-34f88c7691d5",
+        "b601e139-6d11-4464-840b-7ea596ca883f"
+      ]
+    }
+  },
+  {
+    "id": "d248a9bb-5357-4f9f-a355-d7c1feab2b38",
+    "text": "members usually pay the entire premium.\nGroup Universal Life Example\nWalt Hart’s employer provides a group universal life insurance plan that operates much\nlike an individual universal life insurance policy. Walt chooses the premium amount he\nwants to pay, which affects the amount of the policy’s cash value.\nWalt’s coverage is portable; if he leaves his job, he can continue his coverage under the\ngroup plan.",
+    "payload": {
+      "chunk_index": 87,
+      "total_chunks": 95,
+      "page_number": 33,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Term Life Insurance",
+      "node_id": 222,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "6791dd1f-2d12-4a9e-8223-23a0afc34cdf",
+        "9abcb8a5-8d49-43f8-927c-a160210684d7",
+        "e8b4cb7c-9c2b-4a9d-a0e3-7f3aed19f856"
+      ],
+      "next": [
+        "88763682-a1df-4416-afd4-34f88c7691d5",
+        "b601e139-6d11-4464-840b-7ea596ca883f",
+        "5bd2bf74-dfff-48e2-aac7-858933d5c22d"
+      ]
+    }
+  },
+  {
+    "id": "88763682-a1df-4416-afd4-34f88c7691d5",
+    "text": "Group Creditor Life\nJerome has a credit card issued by the Swift Bank. Jerome is insured under Swift’s\ngroup creditor life insurance policy.\nAt any time, the amount of insurance Jerome has on his life equals the amount he owes\non the credit card account.\nDoes Jerome get to name the beneficiary of his group creditor life insurance coverage\nthrough Swift Bank?\nYes\nNo\n\n**[CHART]**\n\nCAPTION: The chart compares the trends in credit card balance and the amount of insurance over time.",
+    "payload": {
+      "chunk_index": 88,
+      "total_chunks": 95,
+      "page_number": 34,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Creditor Life Insurance",
+      "node_id": 225,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "9abcb8a5-8d49-43f8-927c-a160210684d7",
+        "e8b4cb7c-9c2b-4a9d-a0e3-7f3aed19f856",
+        "d248a9bb-5357-4f9f-a355-d7c1feab2b38"
+      ],
+      "next": [
+        "b601e139-6d11-4464-840b-7ea596ca883f",
+        "5bd2bf74-dfff-48e2-aac7-858933d5c22d",
+        "74a7621e-a68f-4ad3-bffd-257b7dfc9823"
+      ]
+    }
+  },
+  {
+    "id": "b601e139-6d11-4464-840b-7ea596ca883f",
+    "text": "ANALYSIS: This line graph displays two data series: the credit card balance (in blue) and the amount of insurance (in orange) over a specified time period. The y-axis represents the dollar amount, while the x-axis indicates time. Both series show fluctuations, with the credit card balance experiencing more pronounced peaks and troughs compared to the relatively stable amount of insurance",
+    "payload": {
+      "chunk_index": 89,
+      "total_chunks": 95,
+      "page_number": 34,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Term Life Insurance",
+      "node_id": 222,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "e8b4cb7c-9c2b-4a9d-a0e3-7f3aed19f856",
+        "d248a9bb-5357-4f9f-a355-d7c1feab2b38",
+        "88763682-a1df-4416-afd4-34f88c7691d5"
+      ],
+      "next": [
+        "5bd2bf74-dfff-48e2-aac7-858933d5c22d",
+        "74a7621e-a68f-4ad3-bffd-257b7dfc9823",
+        "04b1e3f4-2cfc-4b5a-bdd0-1bfd645344dc"
+      ]
+    }
+  },
+  {
+    "id": "5bd2bf74-dfff-48e2-aac7-858933d5c22d",
+    "text": ". Notably, the credit card balance reaches its highest point at one interval, while the amount of insurance remains more consistent, suggesting that credit card usage may be more variable than insurance costs. Overall, the trends indicate that while both financial metrics are tracked over time, they do not move in tandem, highlighting differing financial behaviors or obligations.",
+    "payload": {
+      "chunk_index": 90,
+      "total_chunks": 95,
+      "page_number": 34,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Creditor Life Insurance",
+      "node_id": 225,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "d248a9bb-5357-4f9f-a355-d7c1feab2b38",
+        "88763682-a1df-4416-afd4-34f88c7691d5",
+        "b601e139-6d11-4464-840b-7ea596ca883f"
+      ],
+      "next": [
+        "74a7621e-a68f-4ad3-bffd-257b7dfc9823",
+        "04b1e3f4-2cfc-4b5a-bdd0-1bfd645344dc",
+        "46706cac-1150-4bd6-801b-f4808965ef76"
+      ]
+    }
+  },
+  {
+    "id": "74a7621e-a68f-4ad3-bffd-257b7dfc9823",
+    "text": "Pat McLain is covered under a noncontributory group life insurance plan offered by his\nemployer, The Chestnut Company. Chestnut's policy provides Pat with $100,000 of\ngroup term life insurance. Does Pat have to pay federal income taxes on any of\nChestnut’s cost for providing his coverage?\nNo, group life insurance benefits are never taxable.\nYes, Pat must pay federal income taxes on Chestnut’s cost of providing $50,000 of coverage.",
+    "payload": {
+      "chunk_index": 91,
+      "total_chunks": 95,
+      "page_number": 35,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Term Life Insurance",
+      "node_id": 222,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "88763682-a1df-4416-afd4-34f88c7691d5",
+        "b601e139-6d11-4464-840b-7ea596ca883f",
+        "5bd2bf74-dfff-48e2-aac7-858933d5c22d"
+      ],
+      "next": [
+        "04b1e3f4-2cfc-4b5a-bdd0-1bfd645344dc",
+        "46706cac-1150-4bd6-801b-f4808965ef76",
+        "eb4c65cb-b1d4-49fe-9ee1-f2eb2251bb2f"
+      ]
+    }
+  },
+  {
+    "id": "04b1e3f4-2cfc-4b5a-bdd0-1bfd645344dc",
+    "text": "Yes, Pat must pay federal income taxes on Chestnut’s cost of providing $50,000 of coverage.\nYes, Pat must pay federal income taxes on Chestnut’s cost of providing $100,000 of coverage.\nSean Cranston is covered under a typical group paid-up life insurance plan through his\nemployer, The Neptune Company.\nNeptune’s group plan combines paid-up whole life insurance with\nDecreasing amounts of term life insurance\nIncreasing amounts of term life insurance",
+    "payload": {
+      "chunk_index": 92,
+      "total_chunks": 95,
+      "page_number": 35,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Term Life Insurance",
+      "node_id": 222,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "b601e139-6d11-4464-840b-7ea596ca883f",
+        "5bd2bf74-dfff-48e2-aac7-858933d5c22d",
+        "74a7621e-a68f-4ad3-bffd-257b7dfc9823"
+      ],
+      "next": [
+        "46706cac-1150-4bd6-801b-f4808965ef76",
+        "eb4c65cb-b1d4-49fe-9ee1-f2eb2251bb2f"
+      ]
+    }
+  },
+  {
+    "id": "46706cac-1150-4bd6-801b-f4808965ef76",
+    "text": "Decreasing amounts of term life insurance\nIncreasing amounts of term life insurance\nIf Sean retires or leaves the group, his paid-up whole life coverage will\nTerminate\nRemain in force\nEmily Thompson signed up for the group universal life insurance plan offered by her\nemployer, the Dayshore Company.\nIf this plan is typical, who pays the premiums for Emily’s coverage?\nEmily\nDayshore\nIs Emily’s UL coverage portable?\nYes\nNo",
+    "payload": {
+      "chunk_index": 93,
+      "total_chunks": 95,
+      "page_number": 35,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Term Life Insurance",
+      "node_id": 222,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "5bd2bf74-dfff-48e2-aac7-858933d5c22d",
+        "74a7621e-a68f-4ad3-bffd-257b7dfc9823",
+        "04b1e3f4-2cfc-4b5a-bdd0-1bfd645344dc"
+      ],
+      "next": [
+        "eb4c65cb-b1d4-49fe-9ee1-f2eb2251bb2f"
+      ]
+    }
+  },
+  {
+    "id": "eb4c65cb-b1d4-49fe-9ee1-f2eb2251bb2f",
+    "text": "_Trang này không có nội dung văn bản hay ảnh dữ liệu._",
+    "payload": {
+      "chunk_index": 94,
+      "total_chunks": 95,
+      "page_number": 36,
+      "total_pages": 36,
+      "file_name": "LOMA281_M4L2_Knowledge File_Group Life Insurance",
+      "category": "Plan Type",
+      "node_name": "Group Term Life Insurance",
+      "node_id": 222,
+      "module": "4",
+      "lesson": "2",
+      "course": "LOMA281",
+      "previous": [
+        "74a7621e-a68f-4ad3-bffd-257b7dfc9823",
+        "04b1e3f4-2cfc-4b5a-bdd0-1bfd645344dc",
+        "46706cac-1150-4bd6-801b-f4808965ef76"
+      ],
+      "next": []
+    }
+  }
+]

@@ -43,141 +43,6 @@ class QdrantManager:
         sample = list(self._colbert.embed(["ping"]))[0]
         return len(sample[0])
 
-    def create_collection(self, recreate: bool = False) -> None:
-        if recreate and self.client.collection_exists(self.collection_name):
-            self.client.delete_collection(self.collection_name)
-
-        if self.client.collection_exists(self.collection_name):
-            print(f"ℹ️  Collection '{self.collection_name}' already exists – skipped.")
-            return
-
-        late_dim = self._colbert_dim()
-
-        self.client.create_collection(
-            collection_name=self.collection_name,
-            vectors_config={
-                "dense": VectorParams(
-                    size=DENSE_EMBEDDING_DIM,
-                    distance=Distance.COSINE,
-                    datatype=models.Datatype.FLOAT16,
-                ),
-                "maxsim": models.VectorParams(
-                    size=late_dim,
-                    distance=models.Distance.COSINE,
-                    multivector_config=models.MultiVectorConfig(
-                        comparator=models.MultiVectorComparator.MAX_SIM,
-                    ),
-                    hnsw_config=models.HnswConfigDiff(m=0),
-                ),
-            },
-            sparse_vectors_config={
-                "sparse": models.SparseVectorParams(
-                    modifier=models.Modifier.IDF,
-                    index=models.SparseIndexParams(datatype=models.Datatype.FLOAT16),
-                ),
-            },
-            optimizers_config=models.OptimizersConfigDiff(
-                indexing_threshold=20_000,
-                default_segment_number=5,
-                max_segment_size=5_000_000,
-            ),
-            hnsw_config=models.HnswConfigDiff(
-                m=10,
-                on_disk=False,
-            ),
-            strict_mode_config=models.StrictModeConfig(
-                enabled=True,
-                max_timeout=10,
-                upsert_max_batchsize=1_000,
-                read_rate_limit=5_000,
-                write_rate_limit=5_000,
-            ),
-            quantization_config=models.ScalarQuantization(
-                scalar=models.ScalarQuantizationConfig(
-                    type=models.ScalarType.INT8,
-                    always_ram=True,
-                    quantile=0.99,
-                ),
-            ),
-        )
-        print(f"✅ Collection '{self.collection_name}' created.")
-
-    def delete_collection(self) -> None:
-        self.client.delete_collection(self.collection_name)
-        print(f"🗑️  Collection '{self.collection_name}' deleted.")
-
-    def create_payload_index(
-            self,
-            field_name: str,
-            field_schema: models.PayloadSchemaType,
-    ) -> None:
-        self.client.create_payload_index(
-            collection_name=self.collection_name,
-            field_name=field_name,
-            field_schema=field_schema,
-        )
-        print(f"✅ Payload index created on field '{field_name}'.")
-
-    def upload_documents(
-            self,
-            documents: list[dict[str, Any]],
-            batch_size: int = 256,
-            parallel: int = 4,
-            max_retries: int = 3,
-    ) -> None:
-        points: list[PointStruct] = []
-        for doc in documents:
-            text: str = doc["text"]
-            late_vec = self._embed_colbert_doc(text)
-
-            points.append(
-                PointStruct(
-                    id=doc.get("id", str(uuid.uuid4())),
-                    vector={
-                        "dense": self.dense_embedder.embed_query(text),
-                        "maxsim": late_vec,
-                        "sparse": models.Document(
-                            text=text,
-                            model=BM25_MODEL,
-                            options=BM25_OPTIONS,
-                        ),
-                    },
-                    payload={**doc.get("payload", {}), "text": text},
-                )
-            )
-
-        self.client.upload_points(
-            collection_name=self.collection_name,
-            points=points,
-            update_mode=models.UpdateMode.INSERT_ONLY,
-            parallel=parallel,
-            max_retries=max_retries,
-            batch_size=batch_size,
-        )
-        print(f"✅ {len(points)} document(s) uploaded.")
-
-    def delete_by_filter(self, filter_conditions: list[models.Condition]) -> None:
-        self.client.delete(
-            collection_name=self.collection_name,
-            points_selector=models.FilterSelector(
-                filter=models.Filter(must=filter_conditions)
-            ),
-        )
-        print("🗑️  Deleted points matching filter.")
-
-    def get_by_ids(
-            self,
-            ids: list[int | str],
-            with_vectors: bool = False,
-            with_payload: bool = True,
-    ) -> list:
-        return self.client.retrieve(
-            collection_name=self.collection_name,
-            ids=ids,
-            with_vectors=with_vectors,
-            with_payload=with_payload,
-        )
-
     def scroll(
             self,
             filter_conditions: Optional[list[models.Condition]] = None,
@@ -391,6 +256,92 @@ class QdrantManager:
             direction=direction,
         )
         return results, next_offset
+
+    def scroll_all(
+            self,
+            scroll_filter: Optional[models.Filter] = None,
+            filter_conditions: Optional[list[models.Condition]] = None,
+            limit: int = 100,
+            with_payload: Any = True,
+            with_vectors: bool = False,
+    ) -> list:
+        """Scroll toàn bộ points khớp filter (sync), tự động phân trang qua offset."""
+        if scroll_filter is None and filter_conditions:
+            scroll_filter = models.Filter(must=filter_conditions)
+        all_points: list = []
+        offset = None
+        while True:
+            points, next_offset = self.client.scroll(
+                collection_name=self.collection_name,
+                scroll_filter=scroll_filter,
+                limit=limit,
+                with_payload=with_payload,
+                with_vectors=with_vectors,
+                **({"offset": offset} if offset is not None else {}),
+            )
+            all_points.extend(points)
+            if next_offset is None or not points:
+                break
+            offset = next_offset
+        return all_points
+
+    @alog_method_call
+    async def ascroll_all(
+            self,
+            scroll_filter: Optional[models.Filter] = None,
+            filter_conditions: Optional[list[models.Condition]] = None,
+            limit: int = 100,
+            with_payload: Any = True,
+            with_vectors: bool = False,
+    ) -> list:
+        """Scroll toàn bộ points khớp filter (async), tự động phân trang qua offset."""
+        if scroll_filter is None and filter_conditions:
+            scroll_filter = models.Filter(must=filter_conditions)
+        all_points: list = []
+        offset = None
+        while True:
+            points, next_offset = await self.async_client.scroll(
+                collection_name=self.collection_name,
+                scroll_filter=scroll_filter,
+                limit=limit,
+                with_payload=with_payload,
+                with_vectors=with_vectors,
+                **({"offset": offset} if offset is not None else {}),
+            )
+            all_points.extend(points)
+            if next_offset is None or not points:
+                break
+            offset = next_offset
+        return all_points
+
+    @alog_method_call
+    async def ascroll_all(
+            self,
+            scroll_filter: Optional[models.Filter] = None,
+            filter_conditions: Optional[list[models.Condition]] = None,
+            limit: int = 100,
+            with_payload: Any = True,
+            with_vectors: bool = False,
+    ) -> list:
+        """Scroll toàn bộ points khớp filter, tự động phân trang qua offset."""
+        if scroll_filter is None and filter_conditions:
+            scroll_filter = models.Filter(must=filter_conditions)
+        all_points: list = []
+        offset = None
+        while True:
+            points, next_offset = await self.async_client.scroll(
+                collection_name=self.collection_name,
+                scroll_filter=scroll_filter,
+                limit=limit,
+                with_payload=with_payload,
+                with_vectors=with_vectors,
+                **({"offset": offset} if offset is not None else {}),
+            )
+            all_points.extend(points)
+            if next_offset is None or not points:
+                break
+            offset = next_offset
+        return all_points
 
     @alog_method_call
     async def ahybrid_search(

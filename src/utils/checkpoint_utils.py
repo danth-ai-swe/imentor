@@ -1,16 +1,3 @@
-"""
-Checkpoint helpers
-==================
-Module dùng chung để quản lý checkpoint.json cho cả
-clean_data pipeline và ingest pipeline.
-
-Format checkpoint:
-  {
-    "completed": ["file1.pdf", "file2.md", ...],
-    "failed":    { "file3.pdf": {"error": "...", "timestamp": "..."}, ... }
-  }
-"""
-
 import json
 from datetime import datetime
 from pathlib import Path

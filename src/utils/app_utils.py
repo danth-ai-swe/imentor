@@ -1,3 +1,8 @@
+import re
+
+import unicodedata
+
+
 def cosine_similarity(vec1: list, vec2: list) -> float:
     dot_product = sum(a * b for a, b in zip(vec1, vec2))
     norm1 = sum(a * a for a in vec1) ** 0.5
@@ -5,11 +10,6 @@ def cosine_similarity(vec1: list, vec2: list) -> float:
     if norm1 == 0 or norm2 == 0:
         return 0.0
     return dot_product / (norm1 * norm2)
-
-
-import re
-
-import unicodedata
 
 
 def normalize_ellipsis(text: str, max_dots: int = 3) -> str:
@@ -52,4 +52,26 @@ def clean_text(text: str) -> str:
     lines = [line.strip() for line in text.splitlines()]
     text = '\n'.join(lines).strip()
 
+    return text
+
+
+def clean_text_to_one_line(text: str) -> str:
+    """
+    Làm sạch văn bản và chuẩn hóa toàn bộ khoảng trắng (space, tab, xuống dòng, ...) thành đúng 1 dấu cách " ".
+    Kết quả trả về là 1 dòng duy nhất.
+    """
+    # 1. Chuẩn hóa unicode (NFC)
+    text = unicodedata.normalize("NFC", text)
+    # 2. Xóa ký tự không in được (trừ newline, tab)
+    text = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]', '', text)
+    # 3. Chuẩn hóa dấu chấm lửng (...... → ...)
+    text = normalize_ellipsis(text, max_dots=3)
+    # 4. Chuẩn hóa dấu câu lặp (!!!! → !, ???? → ?)
+    text = re.sub(r'!{2,}', '!', text)
+    text = re.sub(r'\?{2,}', '?', text)
+    text = re.sub(r'-{3,}', '—', text)  # --- → em dash
+    # 5. Thay tất cả khoảng trắng (space, tab, newline, ...) thành một dấu cách
+    text = re.sub(r'\s+', ' ', text)
+    # 6. Xóa khoảng trắng đầu/cuối
+    text = text.strip()
     return text

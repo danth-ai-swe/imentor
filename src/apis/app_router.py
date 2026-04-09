@@ -7,6 +7,7 @@ filters_router = APIRouter(prefix="/vector/filters", tags=["Vector Filters"])
 chat_router = APIRouter(prefix="/chat", tags=["Chat"])
 quiz_router = APIRouter(prefix="/quiz", tags=["Quiz"])
 
+# Import controller so that @router decorators register their routes.
 from src.apis import app_controller  # noqa: E402,F401
 
 api_router = APIRouter()

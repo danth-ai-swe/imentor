@@ -204,6 +204,7 @@ async def async_pipeline_hyde_search(
                 points = await qdrant.ahybrid_search(query=standalone_query, top_k=5)
                 sorted_chunks: List[Dict[str, Any]] = [
                     {
+                        "id": str(pt.id) if hasattr(pt, "id") else "",
                         "metadata": {k: v for k, v in (pt.payload or {}).items() if k != "text"},
                         "text": (pt.payload or {}).get("text", ""),
                         "score": pt.score if hasattr(pt, "score") else 0.0,
@@ -233,14 +234,56 @@ async def async_pipeline_hyde_search(
                 detected_language=detected_language,
             )
 
+        # ── Fetch 1 nearest neighbor (previous + next) per relevant chunk ──
+        async with timer.astep("fetch_neighbor_chunks"):
+            existing_ids = {c["id"] for c in relevant_chunks if c.get("id")}
+            neighbor_ids: List[str] = []
+            for c in relevant_chunks:
+                meta = c.get("metadata", {})
+                # last element of previous = immediately preceding chunk
+                prev_list = meta.get("previous", [])
+                if prev_list:
+                    uid = prev_list[-1]
+                    if uid and uid not in existing_ids:
+                        neighbor_ids.append(uid)
+                        existing_ids.add(uid)
+                # first element of next = immediately following chunk
+                next_list = meta.get("next", [])
+                if next_list:
+                    uid = next_list[0]
+                    if uid and uid not in existing_ids:
+                        neighbor_ids.append(uid)
+                        existing_ids.add(uid)
+
+            neighbor_chunks: List[Dict[str, Any]] = []
+            if neighbor_ids:
+                try:
+                    neighbor_points = await qdrant.aget_by_ids(neighbor_ids)
+                    neighbor_chunks = [
+                        {
+                            "id": str(pt.id) if hasattr(pt, "id") else "",
+                            "metadata": {
+                                k: v for k, v in (pt.payload or {}).items() if k != "text"
+                            },
+                            "text": (pt.payload or {}).get("text", ""),
+                            "score": 0.0,
+                        }
+                        for pt in neighbor_points
+                    ]
+                except Exception:
+                    logger.exception("Fetch neighbor chunks by IDs failed")
+
+        # ── Merge: relevant chunks + nearest neighbors for richer context ──
+        enriched_chunks = relevant_chunks + neighbor_chunks
+
         async with timer.astep("load_node_data"):
-            node_data_list = _load_node_data(relevant_chunks)
+            node_data_list = _load_node_data(enriched_chunks)
 
         async with timer.astep("generate_answer"):
             system_prompt, messages = build_final_prompt(
                 user_input=user_input,
                 detected_language=detected_language,
-                relevant_chunks=relevant_chunks,
+                relevant_chunks=enriched_chunks,
                 node_data_list=node_data_list,
                 chat_history=chat_history,
             )

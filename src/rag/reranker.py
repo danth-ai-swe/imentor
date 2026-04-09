@@ -5,8 +5,6 @@ from typing import Sequence, Optional, List
 import numpy as np
 from fastembed.rerank.cross_encoder import TextCrossEncoder
 
-from src.config.app_config import _SingletonMeta
-
 
 @dataclass
 class RerankResult:
@@ -15,7 +13,7 @@ class RerankResult:
     index: int
 
 
-class Reranker(metaclass=_SingletonMeta):
+class Reranker:
     def __init__(self, model_name: str = "Xenova/ms-marco-MiniLM-L-12-v2"):
         self._reranker = TextCrossEncoder(model_name=model_name)
 
@@ -60,3 +58,16 @@ class Reranker(metaclass=_SingletonMeta):
 @lru_cache(maxsize=1)
 def get_reranker() -> Reranker:
     return Reranker()
+
+
+if __name__ == '__main__':
+    reranker = get_reranker()
+    query = "What is the capital of France?"
+    documents = [
+        "Paris is the capital of France.",
+        "Berlin is the capital of Germany.",
+        "Madrid is the capital of Spain."
+    ]
+    results = reranker.rerank(query, documents, top_k=2)
+    for r in results:
+        print(f"Document: {r.document}, Score: {r.score:.4f}, Index: {r.index}")

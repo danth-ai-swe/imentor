@@ -23,7 +23,6 @@ TS = TypeVar("TS", bound="TextSplitter")
 
 
 class TextSplitter(BaseChunker, ABC):
-    """Interface for splitting text into chunks."""
 
     def __init__(
             self,
@@ -34,17 +33,6 @@ class TextSplitter(BaseChunker, ABC):
             add_start_index: bool = False,
             strip_whitespace: bool = True,
     ) -> None:
-        """Create a new TextSplitter.
-
-        Args:
-            chunk_size: Maximum size of chunks to return
-            chunk_overlap: Overlap in characters between chunks
-            length_function: Function that measures the length of given chunks
-            keep_separator: Whether to keep the separator in the chunks
-            add_start_index: If `True`, includes chunk's start index in metadata
-            strip_whitespace: If `True`, strips whitespace from the start and end of
-                              every document
-        """
         if chunk_overlap > chunk_size:
             raise ValueError(
                 f"Got a larger chunk overlap ({chunk_overlap}) than chunk size "
@@ -71,8 +59,6 @@ class TextSplitter(BaseChunker, ABC):
             return text
 
     def _merge_splits(self, splits: Iterable[str], separator: str) -> List[str]:
-        # We now want to combine these smaller pieces into medium size
-        # chunks to send to the LLM.
         separator_len = self._length_function(separator)
 
         docs = []
@@ -93,9 +79,6 @@ class TextSplitter(BaseChunker, ABC):
                     doc = self._join_docs(current_doc, separator)
                     if doc is not None:
                         docs.append(doc)
-                    # Keep on popping if:
-                    # - we have a larger chunk than in the chunk overlap
-                    # - or if we still have any chunks and the length is long
                     while total > self._chunk_overlap or (
                             total + _len + (separator_len if len(current_doc) > 0 else 0)
                             > self._chunk_size
@@ -121,7 +104,6 @@ class TextSplitter(BaseChunker, ABC):
             disallowed_special: Union[Literal["all"], Collection[str]] = "all",
             **kwargs: Any,
     ) -> TS:
-        """Text splitter that uses tiktoken encoder to count length."""
         try:
             import tiktoken
         except ImportError:
@@ -158,7 +140,6 @@ class TextSplitter(BaseChunker, ABC):
 
 
 class FixedTokenChunker(TextSplitter):
-    """Splitting text to tokens using model tokenizer."""
 
     def __init__(
             self,
@@ -170,7 +151,6 @@ class FixedTokenChunker(TextSplitter):
             disallowed_special: Union[Literal["all"], Collection[str]] = "all",
             **kwargs: Any,
     ) -> None:
-        """Create a new TextSplitter."""
         super().__init__(chunk_size=chunk_size, chunk_overlap=chunk_overlap, **kwargs)
         try:
             import tiktoken
@@ -209,8 +189,6 @@ class FixedTokenChunker(TextSplitter):
 
 @dataclass(frozen=True)
 class Tokenizer:
-    """Tokenizer data class."""
-
     chunk_overlap: int
     """Overlap in tokens between chunks"""
     tokens_per_chunk: int
@@ -222,7 +200,6 @@ class Tokenizer:
 
 
 def split_text_on_tokens(*, text: str, tokenizer: Tokenizer) -> List[str]:
-    """Split incoming text and return chunks using tokenizer."""
     splits: List[str] = []
     input_ids = tokenizer.encode(text)
     start_idx = 0

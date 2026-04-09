@@ -68,6 +68,7 @@ class ChatSourceModel(BaseModel):
     page_number: int
     total_pages: int
 
+
 class ChatDataModel(BaseModel):
     role: str = "assistant"
     intent: str | None = None
@@ -101,7 +102,6 @@ class UploadDocumentsRequest(BaseModel):
     max_retries: int = 3
 
 
-
 class FacetRequest(BaseModel):
     key: str
     filter_conditions: list[FilterConditionModel] | None = None
@@ -113,7 +113,6 @@ class BatchSearchRequest(BaseModel):
     queries: list[str]
     top_k: int = 5
     prefetch_limit: int = 50
-
 
 
 class CreatePayloadIndexRequest(BaseModel):
@@ -133,41 +132,21 @@ class QuizLevel(str, Enum):
     COURSE = "course"
 
 
-class QuizType(str, Enum):
-    RANDOM = "random"
-    RATE = "rate"
-
+class QuizDifficulty(str, Enum):
+    BEGINNER = "Beginner"
+    INTERMEDIATE = "Intermediate"
+    ADVANCED = "Advanced"
 
 class QuizRequest(BaseModel):
     knowledge_pack: str = Field(..., min_length=1, description="Always compared with metadata 'course'")
-    total: int = Field(..., ge=1, le=200, description="Number of questions to generate")
-    level: QuizLevel | None = Field(None, description="Additional metadata field to filter on: module, lesson, or course")
-    level_value: str | None = Field(None, description="Value to match against metadata[level]")
-    type: QuizType | None = Field(None, description="'random' = random difficulty ratio; 'rate' = use rate_value to set ratio. Default: random")
-    rate_value: str | None = Field(None, description="Difficulty ratio as 'B|I|A' e.g. '2|5|3' → Beginner 20%, Intermediate 50%, Advanced 30%. Required when type='rate'.")
+    module_value: str | None = Field(None, description="Value to match against metadata 'Module' column")
+    lesson_value: str | None = Field(None, description="Value to match against metadata 'Lesson' column")
+    difficulty: QuizDifficulty | None = Field(None,
+                                              description="Difficulty level: Beginner, Intermediate, or Advanced. Default: Beginner")
+    total: int = Field(..., ge=1, le=200, description="Number of questions to generate at the specified difficulty")
 
     @model_validator(mode="after")
     def _validate_fields(self):
-        # level & level_value must come together
-        has_level = self.level is not None
-        has_value = self.level_value is not None and self.level_value.strip() != ""
-        if has_level != has_value:
-            raise ValueError("'level' and 'level_value' must be provided together or both omitted")
-
-        # default type to RANDOM when not provided
-        if self.type is None:
-            self.type = QuizType.RANDOM
-
-        # rate_value is required when type='rate'
-        if self.type == QuizType.RATE:
-            if not self.rate_value or not self.rate_value.strip():
-                raise ValueError("'rate_value' is required when type is 'rate'")
-            parts = self.rate_value.strip().split("|")
-            if len(parts) != 3:
-                raise ValueError("'rate_value' must have exactly 3 parts separated by '|', e.g. '2|5|3'")
-            for p in parts:
-                if not p.strip().isdigit() or int(p.strip()) < 0:
-                    raise ValueError(f"Each part of 'rate_value' must be a non-negative integer, got '{p}'")
-            if sum(int(p.strip()) for p in parts) == 0:
-                raise ValueError("'rate_value' parts must not all be zero")
+        if self.difficulty is None:
+            self.difficulty = QuizDifficulty.BEGINNER
         return self

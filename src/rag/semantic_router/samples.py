@@ -16,6 +16,7 @@ coreKnowledgeSamples = [
     "What topics are covered in LOMA 291?",
 ]
 
+
 offTopicSamples = [
     # Greetings
     "hello",

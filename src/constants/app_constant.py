@@ -1,6 +1,7 @@
 from pathlib import Path
 
-COLLECTION_NAME = "imt_kb_v3"
+
+COLLECTION_NAME = "imt_kb_v10"
 DENSE_EMBEDDING_DIM = 1536
 BM25_MODEL = "Qdrant/bm42-all-minilm-l6-v2-attentions"
 BM25_OPTIONS = {"language": "none", "ascii_folding": True, "tokenizer": "multilingual"}
@@ -23,7 +24,7 @@ INGEST_DIR = DATA_DIR / "ingest"
 INGEST_ZIP = DATA_DIR / "ingest.zip"
 PREPARES_DIR = DATA_DIR / "prepares"
 PDFS_DIR = DATA_DIR / "output" / "pdfs"
-METADATA_NODE_XLSX = DATA_DIR / "metadata_node.xlsx"
+METADATA_NODE_XLSX = r"D:\Deverlopment\huudan.com\PythonProject\src\output.xlsx"
 
 DEFAULT_CLEANED_DIR = (PROJECT_ROOT / "data" / "imt-data-process-v2" / "cleaned")
 DOCKER_CLEANED_DIR = Path("/data/imt-data-process-v2/cleaned")
@@ -31,9 +32,5 @@ DOCKER_CLEANED_DIR = Path("/data/imt-data-process-v2/cleaned")
 CLASSIFY_WORKERS = 4
 
 QUIZ_KEYWORDS: set[str] = {
-    "quiz", "quiz me", "test me", "mock exam", "practice questions",
-    "practice test", "flashcard", "flashcards", "test my knowledge",
-    "kiểm tra", "làm quiz", "làm bài quiz", "trắc nghiệm",
-    "câu hỏi ôn tập", "thi thử", "ôn tập", "làm bài kiểm tra",
-    "cho tôi làm quiz", "bài tập", "câu hỏi trắc nghiệm"
+    "quiz"
 }

@@ -49,3 +49,12 @@ def batch_convert(input_dir: str, output_dir: str):
                 except:
                     pass
             time.sleep(0.5)  # Tránh Word bị quá tải
+
+
+if __name__ == "__main__":
+    from src.constants.app_constant import PDFS_DIR
+
+    batch_convert(
+        r"/data/raw",
+        str(PDFS_DIR)
+    )

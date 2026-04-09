@@ -1,0 +1,1743 @@
+[
+  {
+    "id": "2849ae7d-f132-49d0-842a-6cd324384174",
+    "text": "Module 4: Group Products\nLesson 1: Group Insurance\nLearning Objectives\nAfter studying this lesson, you will be able to:\n\nIdentify the parties to a group insurance contract.\n\nIdentify the requirements the parties must meet to form a valid\ngroup insurance contract.\n\nDescribe the purpose of a certificate of insurance.\n\nDistinguish between contributory and noncontributory group\ninsurance plans.\n\nContrast insurer-administered plans with self-administered plans.\n",
+    "payload": {
+      "chunk_index": 0,
+      "total_chunks": 65,
+      "page_number": 1,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Group Insurance Contract",
+      "node_name": "Group Insurance Contract",
+      "node_id": 209,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [],
+      "next": [
+        "07ac4290-2df5-43db-a23f-37abfc35b1b8",
+        "6535468e-dfe2-42fb-be04-790533a55ad9",
+        "5c3cd603-b09c-4f3d-a6e4-85a28b473e97"
+      ]
+    }
+  },
+  {
+    "id": "07ac4290-2df5-43db-a23f-37abfc35b1b8",
+    "text": "insurance plans.\n\nContrast insurer-administered plans with self-administered plans.\n\nIdentify the factors used to underwrite group insurance contracts.\nThe Group Insurance Contract\nLearning Objective\nIdentify the parties to a group insurance contract.\nIdentify the requirements the parties must meet to form a valid group insurance contract.",
+    "payload": {
+      "chunk_index": 1,
+      "total_chunks": 65,
+      "page_number": 1,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Group Insurance Contract",
+      "node_name": "Parties to a Group Insurance Contract",
+      "node_id": 210,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "2849ae7d-f132-49d0-842a-6cd324384174"
+      ],
+      "next": [
+        "6535468e-dfe2-42fb-be04-790533a55ad9",
+        "5c3cd603-b09c-4f3d-a6e4-85a28b473e97",
+        "12e05634-f128-4968-ba8e-18feae6cf285"
+      ]
+    }
+  },
+  {
+    "id": "6535468e-dfe2-42fb-be04-790533a55ad9",
+    "text": "Open Transcript\n\n**[TEXT DATA]**\n\n“So…Jerome Tate got a new job AND he got group insurance coverage as an employee benefit.”",
+    "payload": {
+      "chunk_index": 2,
+      "total_chunks": 65,
+      "page_number": 2,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Insurance Type",
+      "node_name": "Group Insurance",
+      "node_id": 208,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "2849ae7d-f132-49d0-842a-6cd324384174",
+        "07ac4290-2df5-43db-a23f-37abfc35b1b8"
+      ],
+      "next": [
+        "5c3cd603-b09c-4f3d-a6e4-85a28b473e97",
+        "12e05634-f128-4968-ba8e-18feae6cf285",
+        "1700919f-acea-4150-a0b2-15dc18fa8d19"
+      ]
+    }
+  },
+  {
+    "id": "5c3cd603-b09c-4f3d-a6e4-85a28b473e97",
+    "text": "Group Insurance Basics\nIndividual insurance products insure one person or a single family. Group insurance\ninsures the members of a group (such as the employees of The Stetson Company)\nunder one contract—the master group insurance contract.\nMany different types of insurance can be issued as group insurance.\nFor example, The Stetson Company provides its employees with group life insurance,\nmedical expense insurance, disability insurance, and dental insurance coverage.",
+    "payload": {
+      "chunk_index": 3,
+      "total_chunks": 65,
+      "page_number": 3,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Insurance Type",
+      "node_name": "Group Insurance",
+      "node_id": 208,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "2849ae7d-f132-49d0-842a-6cd324384174",
+        "07ac4290-2df5-43db-a23f-37abfc35b1b8",
+        "6535468e-dfe2-42fb-be04-790533a55ad9"
+      ],
+      "next": [
+        "12e05634-f128-4968-ba8e-18feae6cf285",
+        "1700919f-acea-4150-a0b2-15dc18fa8d19",
+        "c5481ba6-a473-4bce-814a-c7a94c126e61"
+      ]
+    }
+  },
+  {
+    "id": "12e05634-f128-4968-ba8e-18feae6cf285",
+    "text": "medical expense insurance, disability insurance, and dental insurance coverage.\nFor now, we’ll use Stetson’s group life insurance policy to show how group insurance\nworks. Many of the principles are similar for other group insurance products. We’ll start\nwith some basic terms.",
+    "payload": {
+      "chunk_index": 4,
+      "total_chunks": 65,
+      "page_number": 3,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Insurance Type",
+      "node_name": "Group Insurance",
+      "node_id": 208,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "07ac4290-2df5-43db-a23f-37abfc35b1b8",
+        "6535468e-dfe2-42fb-be04-790533a55ad9",
+        "5c3cd603-b09c-4f3d-a6e4-85a28b473e97"
+      ],
+      "next": [
+        "1700919f-acea-4150-a0b2-15dc18fa8d19",
+        "c5481ba6-a473-4bce-814a-c7a94c126e61",
+        "d7bf51e0-70ef-4817-99bf-f8b8fc8b4f9e"
+      ]
+    }
+  },
+  {
+    "id": "1700919f-acea-4150-a0b2-15dc18fa8d19",
+    "text": "Jerome Tate is insured by the Stetson Company's group policy and is known as a\ngroup insured.",
+    "payload": {
+      "chunk_index": 5,
+      "total_chunks": 65,
+      "page_number": 4,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Insurance Type",
+      "node_name": "Group Insurance",
+      "node_id": 208,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "6535468e-dfe2-42fb-be04-790533a55ad9",
+        "5c3cd603-b09c-4f3d-a6e4-85a28b473e97",
+        "12e05634-f128-4968-ba8e-18feae6cf285"
+      ],
+      "next": [
+        "c5481ba6-a473-4bce-814a-c7a94c126e61",
+        "d7bf51e0-70ef-4817-99bf-f8b8fc8b4f9e",
+        "217cf3c3-0367-4e9c-9b1a-07fb69525a3c"
+      ]
+    }
+  },
+  {
+    "id": "c5481ba6-a473-4bce-814a-c7a94c126e61",
+    "text": "Able Life Insurance Company issued the group policy to the Stetson Company and will\npay a benefit following the death of any group insured.",
+    "payload": {
+      "chunk_index": 6,
+      "total_chunks": 65,
+      "page_number": 5,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Insurance Type",
+      "node_name": "Group Insurance",
+      "node_id": 208,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "5c3cd603-b09c-4f3d-a6e4-85a28b473e97",
+        "12e05634-f128-4968-ba8e-18feae6cf285",
+        "1700919f-acea-4150-a0b2-15dc18fa8d19"
+      ],
+      "next": [
+        "d7bf51e0-70ef-4817-99bf-f8b8fc8b4f9e",
+        "217cf3c3-0367-4e9c-9b1a-07fb69525a3c",
+        "cd9caf99-2896-42d6-a8f3-39c2301bbce8"
+      ]
+    }
+  },
+  {
+    "id": "d7bf51e0-70ef-4817-99bf-f8b8fc8b4f9e",
+    "text": "The Stetson Company is known as the group policyholder.\nWhich of these people or companies is a party to the group insurance contract?\n(Choose all that apply.)\nJerome Tate\nAble Life Insurance",
+    "payload": {
+      "chunk_index": 7,
+      "total_chunks": 65,
+      "page_number": 6,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Group Insurance Contract",
+      "node_name": "Parties to a Group Insurance Contract",
+      "node_id": 210,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "12e05634-f128-4968-ba8e-18feae6cf285",
+        "1700919f-acea-4150-a0b2-15dc18fa8d19",
+        "c5481ba6-a473-4bce-814a-c7a94c126e61"
+      ],
+      "next": [
+        "217cf3c3-0367-4e9c-9b1a-07fb69525a3c",
+        "cd9caf99-2896-42d6-a8f3-39c2301bbce8",
+        "dbe2326c-568b-456c-b1b3-2c8ac8477dba"
+      ]
+    }
+  },
+  {
+    "id": "217cf3c3-0367-4e9c-9b1a-07fb69525a3c",
+    "text": "The Stetson Company\nSubmit\nRequirements for a Valid Contract\nRemember the requirements for a valid contract?\n\nThe parties to the contract must mutually agree to the contract’s terms\n\nThe parties must have contractual capacity\n\nThe parties must exchange legally adequate consideration\n\nThe parties must enter into the contract for a lawful purpose\nDo you think Able Life and The Stetson Company (the parties to the group insurance\ncontract) have to meet these same four basic requirements?",
+    "payload": {
+      "chunk_index": 8,
+      "total_chunks": 65,
+      "page_number": 7,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Group Insurance Contract",
+      "node_name": "Parties to a Group Insurance Contract",
+      "node_id": 210,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "1700919f-acea-4150-a0b2-15dc18fa8d19",
+        "c5481ba6-a473-4bce-814a-c7a94c126e61",
+        "d7bf51e0-70ef-4817-99bf-f8b8fc8b4f9e"
+      ],
+      "next": [
+        "cd9caf99-2896-42d6-a8f3-39c2301bbce8",
+        "dbe2326c-568b-456c-b1b3-2c8ac8477dba",
+        "5844f36b-f047-4595-8792-ca6e29297df5"
+      ]
+    }
+  },
+  {
+    "id": "cd9caf99-2896-42d6-a8f3-39c2301bbce8",
+    "text": "contract) have to meet these same four basic requirements?\nYes, the requirements generally are the same.\nNo, the requirements are different.",
+    "payload": {
+      "chunk_index": 9,
+      "total_chunks": 65,
+      "page_number": 7,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Group Insurance Contract",
+      "node_name": "Parties to a Group Insurance Contract",
+      "node_id": 210,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "c5481ba6-a473-4bce-814a-c7a94c126e61",
+        "d7bf51e0-70ef-4817-99bf-f8b8fc8b4f9e",
+        "217cf3c3-0367-4e9c-9b1a-07fb69525a3c"
+      ],
+      "next": [
+        "dbe2326c-568b-456c-b1b3-2c8ac8477dba",
+        "5844f36b-f047-4595-8792-ca6e29297df5",
+        "98c7ed40-296c-4aea-b6c0-6ab3bda8ccbe"
+      ]
+    }
+  },
+  {
+    "id": "dbe2326c-568b-456c-b1b3-2c8ac8477dba",
+    "text": "Lawful Purpose\nIndividual insurance contracts meet the lawful purpose requirement when insurable\ninterest is present. In other words, if the policyowner or beneficiary will suffer a genuine\nloss if the insured dies, the contract isn’t a wagering agreement and is lawful.\nGroup insurance contracts have no insurable interest requirement.\nInstead, a group contract meets the lawful purpose requirement because the\npolicyholder buys the coverage for others and is unlikely to benefit from the death of the",
+    "payload": {
+      "chunk_index": 10,
+      "total_chunks": 65,
+      "page_number": 8,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Group Insurance Contract",
+      "node_name": "Group Insurance Contract",
+      "node_id": 209,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "d7bf51e0-70ef-4817-99bf-f8b8fc8b4f9e",
+        "217cf3c3-0367-4e9c-9b1a-07fb69525a3c",
+        "cd9caf99-2896-42d6-a8f3-39c2301bbce8"
+      ],
+      "next": [
+        "5844f36b-f047-4595-8792-ca6e29297df5",
+        "98c7ed40-296c-4aea-b6c0-6ab3bda8ccbe",
+        "5542b153-01e6-4b27-853a-853ee4970d2f"
+      ]
+    }
+  },
+  {
+    "id": "5844f36b-f047-4595-8792-ca6e29297df5",
+    "text": "policyholder buys the coverage for others and is unlikely to benefit from the death of the\ninsureds. As a result, the group policyholder’s interest in the contract doesn’t present\nthe same risk of creating a wagering agreement.\nJerome is covered by the group life insurance plan issued by Able Life. This means that\nJerome is a group",
+    "payload": {
+      "chunk_index": 11,
+      "total_chunks": 65,
+      "page_number": 8,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Insurance Type",
+      "node_name": "Group Insurance",
+      "node_id": 208,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "217cf3c3-0367-4e9c-9b1a-07fb69525a3c",
+        "cd9caf99-2896-42d6-a8f3-39c2301bbce8",
+        "dbe2326c-568b-456c-b1b3-2c8ac8477dba"
+      ],
+      "next": [
+        "98c7ed40-296c-4aea-b6c0-6ab3bda8ccbe",
+        "5542b153-01e6-4b27-853a-853ee4970d2f",
+        "273b7acd-cc4b-433a-b55e-93bd002d890b"
+      ]
+    }
+  },
+  {
+    "id": "98c7ed40-296c-4aea-b6c0-6ab3bda8ccbe",
+    "text": "Policyholder\nInsured\nIs Jerome a party to the group insurance contract?\nYes\nNo\nWas The Stetson Company required to have an insurable interest in the lives\nof participating employees?\nYes\nNo\nOwnership and Group Insurance Plans\nLearning Objective\nDescribe the purpose of a certificate of insurance.\nDistinguish between contributory and noncontributory group insurance plans.\nOwnership Rights\nAs the policyholder, The Stetson Company has some ownership rights in the policy. But",
+    "payload": {
+      "chunk_index": 12,
+      "total_chunks": 65,
+      "page_number": 9,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Group Insurance Document",
+      "node_name": "Certificate of Insurance",
+      "node_id": 211,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "cd9caf99-2896-42d6-a8f3-39c2301bbce8",
+        "dbe2326c-568b-456c-b1b3-2c8ac8477dba",
+        "5844f36b-f047-4595-8792-ca6e29297df5"
+      ],
+      "next": [
+        "5542b153-01e6-4b27-853a-853ee4970d2f",
+        "273b7acd-cc4b-433a-b55e-93bd002d890b",
+        "cc44440c-7705-44a3-a0f0-575ca8c9a0db"
+      ]
+    }
+  },
+  {
+    "id": "5542b153-01e6-4b27-853a-853ee4970d2f",
+    "text": "As the policyholder, The Stetson Company has some ownership rights in the policy. But\nit doesn’t have as many rights as the owner of an individual insurance policy.\nSome ownership rights belong to the group insureds. For example, they each have the\nright to name the beneficiary of their coverage.\nOpen Transcript",
+    "payload": {
+      "chunk_index": 13,
+      "total_chunks": 65,
+      "page_number": 9,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Insurance Type",
+      "node_name": "Group Insurance",
+      "node_id": 208,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "dbe2326c-568b-456c-b1b3-2c8ac8477dba",
+        "5844f36b-f047-4595-8792-ca6e29297df5",
+        "98c7ed40-296c-4aea-b6c0-6ab3bda8ccbe"
+      ],
+      "next": [
+        "273b7acd-cc4b-433a-b55e-93bd002d890b",
+        "cc44440c-7705-44a3-a0f0-575ca8c9a0db",
+        "d5d07a25-328e-49ca-a8d6-fcee1c11231a"
+      ]
+    }
+  },
+  {
+    "id": "273b7acd-cc4b-433a-b55e-93bd002d890b",
+    "text": "Certificate of Insurance\nA group insured doesn’t get a copy of the master group insurance contract. Instead, the\ngroup insured gets a certificate of insurance.\nJerome can find out all about his Able life insurance coverage by reading the certificate\nof insurance that The Stetson Company will give him once he is officially covered.\nPremium Payments\nTo keep the group coverage in force, a policyholder is responsible for sending premium",
+    "payload": {
+      "chunk_index": 14,
+      "total_chunks": 65,
+      "page_number": 10,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Group Insurance Document",
+      "node_name": "Certificate of Insurance",
+      "node_id": 211,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "5844f36b-f047-4595-8792-ca6e29297df5",
+        "98c7ed40-296c-4aea-b6c0-6ab3bda8ccbe",
+        "5542b153-01e6-4b27-853a-853ee4970d2f"
+      ],
+      "next": [
+        "cc44440c-7705-44a3-a0f0-575ca8c9a0db",
+        "d5d07a25-328e-49ca-a8d6-fcee1c11231a",
+        "f3d41d12-90c2-4a7b-950e-f985d0f924fa"
+      ]
+    }
+  },
+  {
+    "id": "cc44440c-7705-44a3-a0f0-575ca8c9a0db",
+    "text": "To keep the group coverage in force, a policyholder is responsible for sending premium\npayments to the insurer. But group insureds may be required to pay part of the\npremiums.\nThe Stetson Company’s plan is a noncontributory plan. What does this mean?\nJerome must pay some or all of the premium for his coverage.",
+    "payload": {
+      "chunk_index": 15,
+      "total_chunks": 65,
+      "page_number": 10,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Plan Administration",
+      "node_name": "Contributory vs. Noncontributory Plans",
+      "node_id": 212,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "98c7ed40-296c-4aea-b6c0-6ab3bda8ccbe",
+        "5542b153-01e6-4b27-853a-853ee4970d2f",
+        "273b7acd-cc4b-433a-b55e-93bd002d890b"
+      ],
+      "next": [
+        "d5d07a25-328e-49ca-a8d6-fcee1c11231a",
+        "f3d41d12-90c2-4a7b-950e-f985d0f924fa",
+        "977b6e06-0172-4c0b-9bef-546dbc0410f1"
+      ]
+    }
+  },
+  {
+    "id": "d5d07a25-328e-49ca-a8d6-fcee1c11231a",
+    "text": "Stetson pays the entire premium for Jerome’s coverage.\nJerome and Stetson equally split the premium for Jerome’s coverage.\nCan you guess the name of a plan that does require insured group members to\npay some part of the premiums?\nContributory Plan\nUnlike its group life insurance plan, Stetson’s group medical expense plan is a\ncontributory plan.\nStetson pays a portion of the premium, and the group insureds pay the rest.\nThe Accent Company, an employer, has a group life insurance plan that",
+    "payload": {
+      "chunk_index": 16,
+      "total_chunks": 65,
+      "page_number": 11,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Plan Administration",
+      "node_name": "Contributory vs. Noncontributory Plans",
+      "node_id": 212,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "5542b153-01e6-4b27-853a-853ee4970d2f",
+        "273b7acd-cc4b-433a-b55e-93bd002d890b",
+        "cc44440c-7705-44a3-a0f0-575ca8c9a0db"
+      ],
+      "next": [
+        "f3d41d12-90c2-4a7b-950e-f985d0f924fa",
+        "977b6e06-0172-4c0b-9bef-546dbc0410f1",
+        "465ba89e-3259-42b2-a48e-68d2bb7da46a"
+      ]
+    }
+  },
+  {
+    "id": "f3d41d12-90c2-4a7b-950e-f985d0f924fa",
+    "text": "The Accent Company, an employer, has a group life insurance plan that\ninsures the lives of eligible employees. Accent pays the entire premium for\nthe coverage. Check all the statements that are true for this situation.",
+    "payload": {
+      "chunk_index": 17,
+      "total_chunks": 65,
+      "page_number": 11,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Plan Administration",
+      "node_name": "Contributory vs. Noncontributory Plans",
+      "node_id": 212,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "273b7acd-cc4b-433a-b55e-93bd002d890b",
+        "cc44440c-7705-44a3-a0f0-575ca8c9a0db",
+        "d5d07a25-328e-49ca-a8d6-fcee1c11231a"
+      ],
+      "next": [
+        "977b6e06-0172-4c0b-9bef-546dbc0410f1",
+        "465ba89e-3259-42b2-a48e-68d2bb7da46a",
+        "48c4fc55-0381-4a77-9933-485bfd07b3e9"
+      ]
+    }
+  },
+  {
+    "id": "977b6e06-0172-4c0b-9bef-546dbc0410f1",
+    "text": "Accent’s group life insurance plan is a noncontributory plan\nAccent must provide employees with a copy of the master contract\nAccent must name the beneficiary of the coverage\nOwnership and Group Insurance Plans\nLearning Objective\nDescribe the purpose of a certificate of insurance.\nDistinguish between contributory and noncontributory group insurance plans.\nOwnership Rights\nAs the policyholder, The Stetson Company has some ownership rights in the policy. But",
+    "payload": {
+      "chunk_index": 18,
+      "total_chunks": 65,
+      "page_number": 12,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Plan Administration",
+      "node_name": "Contributory vs. Noncontributory Plans",
+      "node_id": 212,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "cc44440c-7705-44a3-a0f0-575ca8c9a0db",
+        "d5d07a25-328e-49ca-a8d6-fcee1c11231a",
+        "f3d41d12-90c2-4a7b-950e-f985d0f924fa"
+      ],
+      "next": [
+        "465ba89e-3259-42b2-a48e-68d2bb7da46a",
+        "48c4fc55-0381-4a77-9933-485bfd07b3e9",
+        "fe30048c-5927-4064-9434-73abd5cccec7"
+      ]
+    }
+  },
+  {
+    "id": "465ba89e-3259-42b2-a48e-68d2bb7da46a",
+    "text": "As the policyholder, The Stetson Company has some ownership rights in the policy. But\nit doesn’t have as many rights as the owner of an individual insurance policy.\nSome ownership rights belong to the group insureds. For example, they each have the\nright to name the beneficiary of their coverage.\nOpen Transcript\nCertificate of Insurance\nA group insured doesn’t get a copy of the master group insurance contract. Instead, the\ngroup insured gets a certificate of insurance.",
+    "payload": {
+      "chunk_index": 19,
+      "total_chunks": 65,
+      "page_number": 12,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Group Insurance Document",
+      "node_name": "Certificate of Insurance",
+      "node_id": 211,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "d5d07a25-328e-49ca-a8d6-fcee1c11231a",
+        "f3d41d12-90c2-4a7b-950e-f985d0f924fa",
+        "977b6e06-0172-4c0b-9bef-546dbc0410f1"
+      ],
+      "next": [
+        "48c4fc55-0381-4a77-9933-485bfd07b3e9",
+        "fe30048c-5927-4064-9434-73abd5cccec7",
+        "3a248921-14af-4458-b52e-da4fd023b2c2"
+      ]
+    }
+  },
+  {
+    "id": "48c4fc55-0381-4a77-9933-485bfd07b3e9",
+    "text": "group insured gets a certificate of insurance.\nJerome can find out all about his Able life insurance coverage by reading the certificate\nof insurance that The Stetson Company will give him once he is officially covered.",
+    "payload": {
+      "chunk_index": 20,
+      "total_chunks": 65,
+      "page_number": 12,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Group Insurance Document",
+      "node_name": "Certificate of Insurance",
+      "node_id": 211,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "f3d41d12-90c2-4a7b-950e-f985d0f924fa",
+        "977b6e06-0172-4c0b-9bef-546dbc0410f1",
+        "465ba89e-3259-42b2-a48e-68d2bb7da46a"
+      ],
+      "next": [
+        "fe30048c-5927-4064-9434-73abd5cccec7",
+        "3a248921-14af-4458-b52e-da4fd023b2c2",
+        "046ed837-2d1f-4236-a15c-f1bcf9dc3a99"
+      ]
+    }
+  },
+  {
+    "id": "fe30048c-5927-4064-9434-73abd5cccec7",
+    "text": "Premium Payments\nTo keep the group coverage in force, a policyholder is responsible for sending premium\npayments to the insurer. But group insureds may be required to pay part of the\npremiums.\nThe Stetson Company’s plan is a noncontributory plan. What does this mean?\nJerome must pay some or all of the premium for his coverage.\nStetson pays the entire premium for Jerome’s coverage.\nJerome and Stetson equally split the premium for Jerome’s coverage.",
+    "payload": {
+      "chunk_index": 21,
+      "total_chunks": 65,
+      "page_number": 13,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Plan Administration",
+      "node_name": "Contributory vs. Noncontributory Plans",
+      "node_id": 212,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "977b6e06-0172-4c0b-9bef-546dbc0410f1",
+        "465ba89e-3259-42b2-a48e-68d2bb7da46a",
+        "48c4fc55-0381-4a77-9933-485bfd07b3e9"
+      ],
+      "next": [
+        "3a248921-14af-4458-b52e-da4fd023b2c2",
+        "046ed837-2d1f-4236-a15c-f1bcf9dc3a99",
+        "e261c843-103e-4d32-b17e-7700a24b3ffa"
+      ]
+    }
+  },
+  {
+    "id": "3a248921-14af-4458-b52e-da4fd023b2c2",
+    "text": "Jerome and Stetson equally split the premium for Jerome’s coverage.\nCan you guess the name of a plan that does require insured group members to\npay some part of the premiums?\nContributory Plan\nUnlike its group life insurance plan, Stetson’s group medical expense plan is a\ncontributory plan.\nStetson pays a portion of the premium, and the group insureds pay the rest.",
+    "payload": {
+      "chunk_index": 22,
+      "total_chunks": 65,
+      "page_number": 13,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Plan Administration",
+      "node_name": "Contributory vs. Noncontributory Plans",
+      "node_id": 212,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "465ba89e-3259-42b2-a48e-68d2bb7da46a",
+        "48c4fc55-0381-4a77-9933-485bfd07b3e9",
+        "fe30048c-5927-4064-9434-73abd5cccec7"
+      ],
+      "next": [
+        "046ed837-2d1f-4236-a15c-f1bcf9dc3a99",
+        "e261c843-103e-4d32-b17e-7700a24b3ffa",
+        "3f35b97f-e398-42a7-8cad-569f0fbc6b82"
+      ]
+    }
+  },
+  {
+    "id": "046ed837-2d1f-4236-a15c-f1bcf9dc3a99",
+    "text": "The Accent Company, an employer, has a group life insurance plan that\ninsures the lives of eligible employees. Accent pays the entire premium for\nthe coverage. Check all the statements that are true for this situation.\nAccent’s group life insurance plan is a noncontributory plan\nAccent must provide employees with a copy of the master contract\nAccent must name the beneficiary of the coverage",
+    "payload": {
+      "chunk_index": 23,
+      "total_chunks": 65,
+      "page_number": 14,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Plan Administration",
+      "node_name": "Contributory vs. Noncontributory Plans",
+      "node_id": 212,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "48c4fc55-0381-4a77-9933-485bfd07b3e9",
+        "fe30048c-5927-4064-9434-73abd5cccec7",
+        "3a248921-14af-4458-b52e-da4fd023b2c2"
+      ],
+      "next": [
+        "e261c843-103e-4d32-b17e-7700a24b3ffa",
+        "3f35b97f-e398-42a7-8cad-569f0fbc6b82",
+        "44f49e60-843d-4407-a1cb-fa9a1ff7aa57"
+      ]
+    }
+  },
+  {
+    "id": "e261c843-103e-4d32-b17e-7700a24b3ffa",
+    "text": "Group Insurance Characteristics\nLearning Objective\nContrast insurer-administered plans with self-administered plans.\nGroup insurance can insure a number of people at a relatively low cost compared to the\ncost of insuring the same number of people with individual policies. The lower cost is\npossible because group insurance provides expense savings in the following three\nareas:\n\nSales\n\nUnderwriting and policy issue\n\nPolicy administration\nSales",
+    "payload": {
+      "chunk_index": 24,
+      "total_chunks": 65,
+      "page_number": 15,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Plan Administration",
+      "node_name": "Insurer-Administered vs. Self-Administered Plans",
+      "node_id": 213,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "fe30048c-5927-4064-9434-73abd5cccec7",
+        "3a248921-14af-4458-b52e-da4fd023b2c2",
+        "046ed837-2d1f-4236-a15c-f1bcf9dc3a99"
+      ],
+      "next": [
+        "3f35b97f-e398-42a7-8cad-569f0fbc6b82",
+        "44f49e60-843d-4407-a1cb-fa9a1ff7aa57",
+        "65dfc846-d00f-4b93-b865-28881b0b634c"
+      ]
+    }
+  },
+  {
+    "id": "3f35b97f-e398-42a7-8cad-569f0fbc6b82",
+    "text": "areas:\n\nSales\n\nUnderwriting and policy issue\n\nPolicy administration\nSales\nAn insurer pays a sales commission for each individual life policy it issues.\nA single group insurance policy covers many people, so its sales costs per $1,000 of life\ninsurance are less than for individual policies.",
+    "payload": {
+      "chunk_index": 25,
+      "total_chunks": 65,
+      "page_number": 15,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Insurance Type",
+      "node_name": "Group Insurance",
+      "node_id": 208,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "3a248921-14af-4458-b52e-da4fd023b2c2",
+        "046ed837-2d1f-4236-a15c-f1bcf9dc3a99",
+        "e261c843-103e-4d32-b17e-7700a24b3ffa"
+      ],
+      "next": [
+        "44f49e60-843d-4407-a1cb-fa9a1ff7aa57",
+        "65dfc846-d00f-4b93-b865-28881b0b634c",
+        "38657b84-eece-4d5b-88e9-5c750c2e44c4"
+      ]
+    }
+  },
+  {
+    "id": "44f49e60-843d-4407-a1cb-fa9a1ff7aa57",
+    "text": "**[CHART]**\n\nCAPTION: This bar chart compares the sales cost per $1,000 of insurance for Group Life and Individual Life insurance.",
+    "payload": {
+      "chunk_index": 26,
+      "total_chunks": 65,
+      "page_number": 15,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Insurance Type",
+      "node_name": "Group Insurance",
+      "node_id": 208,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "046ed837-2d1f-4236-a15c-f1bcf9dc3a99",
+        "e261c843-103e-4d32-b17e-7700a24b3ffa",
+        "3f35b97f-e398-42a7-8cad-569f0fbc6b82"
+      ],
+      "next": [
+        "65dfc846-d00f-4b93-b865-28881b0b634c",
+        "38657b84-eece-4d5b-88e9-5c750c2e44c4",
+        "9054a1ed-e98b-42e7-9c78-8c300d827919"
+      ]
+    }
+  },
+  {
+    "id": "65dfc846-d00f-4b93-b865-28881b0b634c",
+    "text": "ANALYSIS: The chart is a vertical bar graph with the y-axis representing the sales cost per $1,000 of insurance and the x-axis categorizing the types of insurance: Group Life and Individual Life. The bar for Group Life is significantly shorter, indicating a lower sales cost compared to Individual Life, which has a much taller bar, suggesting a higher sales cost",
+    "payload": {
+      "chunk_index": 27,
+      "total_chunks": 65,
+      "page_number": 15,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Insurance Type",
+      "node_name": "Group Insurance",
+      "node_id": 208,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "e261c843-103e-4d32-b17e-7700a24b3ffa",
+        "3f35b97f-e398-42a7-8cad-569f0fbc6b82",
+        "44f49e60-843d-4407-a1cb-fa9a1ff7aa57"
+      ],
+      "next": [
+        "38657b84-eece-4d5b-88e9-5c750c2e44c4",
+        "9054a1ed-e98b-42e7-9c78-8c300d827919",
+        "f7002b02-cb2e-4349-9cd2-901a12bb0b5b"
+      ]
+    }
+  },
+  {
+    "id": "38657b84-eece-4d5b-88e9-5c750c2e44c4",
+    "text": ". This visual representation highlights the cost disparity between the two types of insurance, with Individual Life being more expensive to sell than Group Life. The key takeaway is that consumers may face higher costs when opting for Individual Life insurance compared to Group Life insurance.",
+    "payload": {
+      "chunk_index": 28,
+      "total_chunks": 65,
+      "page_number": 15,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Insurance Type",
+      "node_name": "Group Insurance",
+      "node_id": 208,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "3f35b97f-e398-42a7-8cad-569f0fbc6b82",
+        "44f49e60-843d-4407-a1cb-fa9a1ff7aa57",
+        "65dfc846-d00f-4b93-b865-28881b0b634c"
+      ],
+      "next": [
+        "9054a1ed-e98b-42e7-9c78-8c300d827919",
+        "f7002b02-cb2e-4349-9cd2-901a12bb0b5b",
+        "7ae0d70c-e99f-45f4-bdad-ff37df0eb0f0"
+      ]
+    }
+  },
+  {
+    "id": "9054a1ed-e98b-42e7-9c78-8c300d827919",
+    "text": "Underwriting and Policy Issue\nGroup underwriting costs are lower because the insurer evaluates the risk\ncharacteristics of the group as a whole—not the risk presented by each group member.\nOne exception is for very small groups. For these, underwriters will evaluate group\nmembers individually.\nPolicy issue costs are lower because the insurer issues one master policy rather than\nmany individual policies.\nGroup Policy Administration",
+    "payload": {
+      "chunk_index": 29,
+      "total_chunks": 65,
+      "page_number": 16,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Underwriting",
+      "node_name": "Group Underwriting",
+      "node_id": 214,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "44f49e60-843d-4407-a1cb-fa9a1ff7aa57",
+        "65dfc846-d00f-4b93-b865-28881b0b634c",
+        "38657b84-eece-4d5b-88e9-5c750c2e44c4"
+      ],
+      "next": [
+        "f7002b02-cb2e-4349-9cd2-901a12bb0b5b",
+        "7ae0d70c-e99f-45f4-bdad-ff37df0eb0f0",
+        "18530ce4-f579-44be-b49d-4f13e582f7a2"
+      ]
+    }
+  },
+  {
+    "id": "f7002b02-cb2e-4349-9cd2-901a12bb0b5b",
+    "text": "many individual policies.\nGroup Policy Administration\nGroup plan administration is mostly recordkeeping. Group life insurance requires\ncurrent information about\n\nThe name of each group insured\n\nThe amount of coverage for each group insured\n\nThe name of each group insured’s beneficiary\nThe group policyholder often collects and manages this information for the insurer;\nwhereas the insurer has to perform such tasks for individual insurance policies.",
+    "payload": {
+      "chunk_index": 30,
+      "total_chunks": 65,
+      "page_number": 16,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Plan Administration",
+      "node_name": "Contributory vs. Noncontributory Plans",
+      "node_id": 212,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "65dfc846-d00f-4b93-b865-28881b0b634c",
+        "38657b84-eece-4d5b-88e9-5c750c2e44c4",
+        "9054a1ed-e98b-42e7-9c78-8c300d827919"
+      ],
+      "next": [
+        "7ae0d70c-e99f-45f4-bdad-ff37df0eb0f0",
+        "18530ce4-f579-44be-b49d-4f13e582f7a2",
+        "a9e4d965-9931-4e33-ab44-40b8b4d89807"
+      ]
+    }
+  },
+  {
+    "id": "7ae0d70c-e99f-45f4-bdad-ff37df0eb0f0",
+    "text": "whereas the insurer has to perform such tasks for individual insurance policies.\nThe more administrative duties the group policyholder handles, the lower the group\ninsurer’s administrative expenses.\nWe can categorize group insurance plans according to whether the insurer or the group\nplan handles administrative and recordkeeping activities. The Stetson Company keeps\nthe records of each group insured and handles other administrative duties. This means\nthat Stetson’s group life plan is",
+    "payload": {
+      "chunk_index": 31,
+      "total_chunks": 65,
+      "page_number": 16,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Plan Administration",
+      "node_name": "Contributory vs. Noncontributory Plans",
+      "node_id": 212,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "38657b84-eece-4d5b-88e9-5c750c2e44c4",
+        "9054a1ed-e98b-42e7-9c78-8c300d827919",
+        "f7002b02-cb2e-4349-9cd2-901a12bb0b5b"
+      ],
+      "next": [
+        "18530ce4-f579-44be-b49d-4f13e582f7a2",
+        "a9e4d965-9931-4e33-ab44-40b8b4d89807",
+        "c1cea853-be53-4ef2-b921-886a12bbb591"
+      ]
+    }
+  },
+  {
+    "id": "18530ce4-f579-44be-b49d-4f13e582f7a2",
+    "text": "that Stetson’s group life plan is\nAn insurer-administered plan",
+    "payload": {
+      "chunk_index": 32,
+      "total_chunks": 65,
+      "page_number": 16,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Plan Administration",
+      "node_name": "Insurer-Administered vs. Self-Administered Plans",
+      "node_id": 213,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "9054a1ed-e98b-42e7-9c78-8c300d827919",
+        "f7002b02-cb2e-4349-9cd2-901a12bb0b5b",
+        "7ae0d70c-e99f-45f4-bdad-ff37df0eb0f0"
+      ],
+      "next": [
+        "a9e4d965-9931-4e33-ab44-40b8b4d89807",
+        "c1cea853-be53-4ef2-b921-886a12bbb591",
+        "9d67a006-9630-4319-9d32-067f7c908fed"
+      ]
+    }
+  },
+  {
+    "id": "a9e4d965-9931-4e33-ab44-40b8b4d89807",
+    "text": "A self-administered plan\nWhen The Stetson Company applied for the group life insurance policy, Able\nLife’s group underwriters evaluated the application before issuing the policy.\nDid Able Life require each Stetson employee to provide evidence of\ninsurability?\nDefinitely yes\nProbably not\nGroup Insurance Underwriting\nLearning Objective\nIdentify the factors used to underwrite group insurance contracts.\nIndividual underwriters and group underwriters ask the same basic questions:\n",
+    "payload": {
+      "chunk_index": 33,
+      "total_chunks": 65,
+      "page_number": 17,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Underwriting",
+      "node_name": "Group Underwriting",
+      "node_id": 214,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "f7002b02-cb2e-4349-9cd2-901a12bb0b5b",
+        "7ae0d70c-e99f-45f4-bdad-ff37df0eb0f0",
+        "18530ce4-f579-44be-b49d-4f13e582f7a2"
+      ],
+      "next": [
+        "c1cea853-be53-4ef2-b921-886a12bbb591",
+        "9d67a006-9630-4319-9d32-067f7c908fed",
+        "44a51542-a092-4cc6-b6ca-33974c9a75e2"
+      ]
+    }
+  },
+  {
+    "id": "c1cea853-be53-4ef2-b921-886a12bbb591",
+    "text": "Individual underwriters and group underwriters ask the same basic questions:\n\nDoes the proposed insured—whether an individual or a group—present an\naverage risk? A greater-than-average risk? A less-than-average risk?\n\nCan the insurer estimate the future loss experience?\n\nIs that potential loss experience acceptable to the insurer?\nWhich underwriting objectives are common to both group and individual underwriting?\nChoose all that apply.\nPrevent antiselection",
+    "payload": {
+      "chunk_index": 34,
+      "total_chunks": 65,
+      "page_number": 17,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Underwriting",
+      "node_name": "Group Underwriting",
+      "node_id": 214,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "7ae0d70c-e99f-45f4-bdad-ff37df0eb0f0",
+        "18530ce4-f579-44be-b49d-4f13e582f7a2",
+        "a9e4d965-9931-4e33-ab44-40b8b4d89807"
+      ],
+      "next": [
+        "9d67a006-9630-4319-9d32-067f7c908fed",
+        "44a51542-a092-4cc6-b6ca-33974c9a75e2",
+        "b92061d4-334b-4d25-ad78-5b14a20989cb"
+      ]
+    }
+  },
+  {
+    "id": "9d67a006-9630-4319-9d32-067f7c908fed",
+    "text": "Choose all that apply.\nPrevent antiselection\nKeep administrative costs for the coverage as low as possible",
+    "payload": {
+      "chunk_index": 35,
+      "total_chunks": 65,
+      "page_number": 17,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Plan Administration",
+      "node_name": "Contributory vs. Noncontributory Plans",
+      "node_id": 212,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "18530ce4-f579-44be-b49d-4f13e582f7a2",
+        "a9e4d965-9931-4e33-ab44-40b8b4d89807",
+        "c1cea853-be53-4ef2-b921-886a12bbb591"
+      ],
+      "next": [
+        "44a51542-a092-4cc6-b6ca-33974c9a75e2",
+        "b92061d4-334b-4d25-ad78-5b14a20989cb",
+        "f88663b8-ae76-463c-886c-ca6b4a0dd776"
+      ]
+    }
+  },
+  {
+    "id": "44a51542-a092-4cc6-b6ca-33974c9a75e2",
+    "text": "Assign a risk classification to the proposed insured individual or group\nCharge the appropriate premium rate(s)\nSubmit\nGroup Underwriting Guidelines\nEach group insurer establishes its own underwriting guidelines. Following those\nguidelines, the group underwriter evaluates specific characteristics of the group to see if\nit is an acceptable risk.\nIn the following sections, you’re going to help Dale, a new group underwriter at Able Life,\nunderstand group underwriting characteristics.\n\n**[CHART]**",
+    "payload": {
+      "chunk_index": 36,
+      "total_chunks": 65,
+      "page_number": 18,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Underwriting",
+      "node_name": "Group Underwriting",
+      "node_id": 214,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "a9e4d965-9931-4e33-ab44-40b8b4d89807",
+        "c1cea853-be53-4ef2-b921-886a12bbb591",
+        "9d67a006-9630-4319-9d32-067f7c908fed"
+      ],
+      "next": [
+        "b92061d4-334b-4d25-ad78-5b14a20989cb",
+        "f88663b8-ae76-463c-886c-ca6b4a0dd776",
+        "519b9e7a-de64-4c33-9373-dadd0a500ccf"
+      ]
+    }
+  },
+  {
+    "id": "b92061d4-334b-4d25-ad78-5b14a20989cb",
+    "text": "**[CHART]**\n\nCAPTION: This chart illustrates the foundational elements that contribute to the structure and function of a group, highlighting key factors such as size, stability, and participation requirements.",
+    "payload": {
+      "chunk_index": 37,
+      "total_chunks": 65,
+      "page_number": 18,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Insurance Type",
+      "node_name": "Group Insurance",
+      "node_id": 208,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "c1cea853-be53-4ef2-b921-886a12bbb591",
+        "9d67a006-9630-4319-9d32-067f7c908fed",
+        "44a51542-a092-4cc6-b6ca-33974c9a75e2"
+      ],
+      "next": [
+        "f88663b8-ae76-463c-886c-ca6b4a0dd776",
+        "519b9e7a-de64-4c33-9373-dadd0a500ccf",
+        "65b3612d-7b51-44d7-a0ea-cc9eae3557ec"
+      ]
+    }
+  },
+  {
+    "id": "f88663b8-ae76-463c-886c-ca6b4a0dd776",
+    "text": "ANALYSIS: The chart is a stacked block diagram that visually represents various components essential for understanding group dynamics. The x-axis is not explicitly labeled, but it appears to categorize elements from foundational aspects (on the left) to more complex attributes (on the right)",
+    "payload": {
+      "chunk_index": 38,
+      "total_chunks": 65,
+      "page_number": 18,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Group Insurance Contract",
+      "node_name": "Group Insurance Contract",
+      "node_id": 209,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "9d67a006-9630-4319-9d32-067f7c908fed",
+        "44a51542-a092-4cc6-b6ca-33974c9a75e2",
+        "b92061d4-334b-4d25-ad78-5b14a20989cb"
+      ],
+      "next": [
+        "519b9e7a-de64-4c33-9373-dadd0a500ccf",
+        "65b3612d-7b51-44d7-a0ea-cc9eae3557ec",
+        "063b2d08-19b1-4089-9e19-421eb61387ef"
+      ]
+    }
+  },
+  {
+    "id": "519b9e7a-de64-4c33-9373-dadd0a500ccf",
+    "text": ". The blocks are arranged in ascending order of complexity, starting with the \"Reason for group's existence,\" followed by \"Size of group,\" \"Stability of group,\" and \"Flow of new members.\" The rightmost blocks delve into more intricate aspects, including \"Activities of group,\" \"How benefit levels are determined,\" and \"Participation requirement.\" Each block signifies a critical factor that influences the overall effectiveness and sustainability of a group",
+    "payload": {
+      "chunk_index": 39,
+      "total_chunks": 65,
+      "page_number": 18,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Insurance Type",
+      "node_name": "Group Insurance",
+      "node_id": 208,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "44a51542-a092-4cc6-b6ca-33974c9a75e2",
+        "b92061d4-334b-4d25-ad78-5b14a20989cb",
+        "f88663b8-ae76-463c-886c-ca6b4a0dd776"
+      ],
+      "next": [
+        "65b3612d-7b51-44d7-a0ea-cc9eae3557ec",
+        "063b2d08-19b1-4089-9e19-421eb61387ef",
+        "6a6219fb-da23-4d39-9ec4-684382cf511f"
+      ]
+    }
+  },
+  {
+    "id": "65b3612d-7b51-44d7-a0ea-cc9eae3557ec",
+    "text": ". The progression from basic to advanced elements suggests that a clear understanding of the group's purpose and structure is vital for fostering engagement and ensuring long-term success.",
+    "payload": {
+      "chunk_index": 40,
+      "total_chunks": 65,
+      "page_number": 18,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Insurance Type",
+      "node_name": "Group Insurance",
+      "node_id": 208,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "b92061d4-334b-4d25-ad78-5b14a20989cb",
+        "f88663b8-ae76-463c-886c-ca6b4a0dd776",
+        "519b9e7a-de64-4c33-9373-dadd0a500ccf"
+      ],
+      "next": [
+        "063b2d08-19b1-4089-9e19-421eb61387ef",
+        "6a6219fb-da23-4d39-9ec4-684382cf511f",
+        "4b12d978-0cd2-47ba-89d3-abc34823ed09"
+      ]
+    }
+  },
+  {
+    "id": "063b2d08-19b1-4089-9e19-421eb61387ef",
+    "text": "Reason for a group's existence\nNot every type of group is insurable. The reason for a group’s existence helps group\nunderwriters determine whether or not a group is eligible for insurance.\nLet’s Help Dale\nHelp Dale evaluate several different groups for group insurance coverage. Select each\neligible group based on the reason for the group’s existence. Choose all that apply.\nThe full-time employees of the Carlyle Corporation\nWorkers who are members of the Woodworkers Union of America",
+    "payload": {
+      "chunk_index": 41,
+      "total_chunks": 65,
+      "page_number": 19,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Underwriting",
+      "node_name": "Group Underwriting",
+      "node_id": 214,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "f88663b8-ae76-463c-886c-ca6b4a0dd776",
+        "519b9e7a-de64-4c33-9373-dadd0a500ccf",
+        "65b3612d-7b51-44d7-a0ea-cc9eae3557ec"
+      ],
+      "next": [
+        "6a6219fb-da23-4d39-9ec4-684382cf511f",
+        "4b12d978-0cd2-47ba-89d3-abc34823ed09",
+        "5ef69903-8c2b-46ad-8095-a172226ad5d2"
+      ]
+    }
+  },
+  {
+    "id": "6a6219fb-da23-4d39-9ec4-684382cf511f",
+    "text": "Workers who are members of the Woodworkers Union of America\nWorkers who are members of either the Woodworkers Union of America or the Electrical Workers Union\nTen friends who formed their own club to get a group insurance policy\nPeople who are members of a national association of engineers\nPeople who have borrowed money from the Blue Street Bank\nThe members of the Cooperative Credit Union",
+    "payload": {
+      "chunk_index": 42,
+      "total_chunks": 65,
+      "page_number": 19,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Insurance Type",
+      "node_name": "Group Insurance",
+      "node_id": 208,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "519b9e7a-de64-4c33-9373-dadd0a500ccf",
+        "65b3612d-7b51-44d7-a0ea-cc9eae3557ec",
+        "063b2d08-19b1-4089-9e19-421eb61387ef"
+      ],
+      "next": [
+        "4b12d978-0cd2-47ba-89d3-abc34823ed09",
+        "5ef69903-8c2b-46ad-8095-a172226ad5d2",
+        "b7d2d4a0-1526-410f-af93-48a28925be50"
+      ]
+    }
+  },
+  {
+    "id": "4b12d978-0cd2-47ba-89d3-abc34823ed09",
+    "text": "Submit\nGroup Underwriting Guideline\nWhy do you think insurers won’t insure groups that were formed solely to buy insurance\ncoverage? (Click or touch the tab below.)\nAnswer\nGroups Typically Eligible for Group Insurance\nThe following groups are typically eligible based on their reasons for existence:\n\nA single-employer group that includes employees of a single employer. This is\nthe most common type of insured group.\n\nA group that consists of the members of a labor union.\n",
+    "payload": {
+      "chunk_index": 43,
+      "total_chunks": 65,
+      "page_number": 20,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Underwriting",
+      "node_name": "Group Underwriting",
+      "node_id": 214,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "65b3612d-7b51-44d7-a0ea-cc9eae3557ec",
+        "063b2d08-19b1-4089-9e19-421eb61387ef",
+        "6a6219fb-da23-4d39-9ec4-684382cf511f"
+      ],
+      "next": [
+        "5ef69903-8c2b-46ad-8095-a172226ad5d2",
+        "b7d2d4a0-1526-410f-af93-48a28925be50",
+        "dc45ef66-704f-4fd2-a1e2-e2ef33316bb0"
+      ]
+    }
+  },
+  {
+    "id": "5ef69903-8c2b-46ad-8095-a172226ad5d2",
+    "text": "the most common type of insured group.\n\nA group that consists of the members of a labor union.\n\nA multiple employer group that consists of employees of two or more employers\nor labor unions.\n\nAn association group that consists of people who share a common bond, such as\nbeing in the same profession or being alumni of the same university.\n\nA debtor-creditor group that consists of people who have borrowed from a\nlending institution.\n",
+    "payload": {
+      "chunk_index": 44,
+      "total_chunks": 65,
+      "page_number": 20,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Insurance Type",
+      "node_name": "Group Insurance",
+      "node_id": 208,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "063b2d08-19b1-4089-9e19-421eb61387ef",
+        "6a6219fb-da23-4d39-9ec4-684382cf511f",
+        "4b12d978-0cd2-47ba-89d3-abc34823ed09"
+      ],
+      "next": [
+        "b7d2d4a0-1526-410f-af93-48a28925be50",
+        "dc45ef66-704f-4fd2-a1e2-e2ef33316bb0",
+        "ab8a6f42-fd66-4676-b575-4b4dca65fbde"
+      ]
+    }
+  },
+  {
+    "id": "b7d2d4a0-1526-410f-af93-48a28925be50",
+    "text": "\nA debtor-creditor group that consists of people who have borrowed from a\nlending institution.\n\nA credit union group that consists of the members of one or more credit unions.\nSize of the Group\nThe size of the group affects the underwriting process.",
+    "payload": {
+      "chunk_index": 45,
+      "total_chunks": 65,
+      "page_number": 20,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Underwriting",
+      "node_name": "Group Underwriting",
+      "node_id": 214,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "6a6219fb-da23-4d39-9ec4-684382cf511f",
+        "4b12d978-0cd2-47ba-89d3-abc34823ed09",
+        "5ef69903-8c2b-46ad-8095-a172226ad5d2"
+      ],
+      "next": [
+        "dc45ef66-704f-4fd2-a1e2-e2ef33316bb0",
+        "ab8a6f42-fd66-4676-b575-4b4dca65fbde",
+        "66a6ec12-1eb2-41a4-9a53-efdd7ad7c655"
+      ]
+    }
+  },
+  {
+    "id": "dc45ef66-704f-4fd2-a1e2-e2ef33316bb0",
+    "text": "Let’s Help Dale\nSo, if Dale is evaluating two groups:\nGroup A, a small business that has 25 employees\nGroup B, a large business that has 500 employees\nWhich group is likely to have the better loss rate?\nGroup A\nGroup B\nCannot tell from this information\nI’ve forgotten what a loss rate is\nBefore we go any further, do you recall what a loss rate is?\nThe loss rate is the probable rate of loss that a group of insured people will experience.",
+    "payload": {
+      "chunk_index": 46,
+      "total_chunks": 65,
+      "page_number": 21,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Underwriting",
+      "node_name": "Group Underwriting",
+      "node_id": 214,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "4b12d978-0cd2-47ba-89d3-abc34823ed09",
+        "5ef69903-8c2b-46ad-8095-a172226ad5d2",
+        "b7d2d4a0-1526-410f-af93-48a28925be50"
+      ],
+      "next": [
+        "ab8a6f42-fd66-4676-b575-4b4dca65fbde",
+        "66a6ec12-1eb2-41a4-9a53-efdd7ad7c655",
+        "69475750-356b-4f92-9cfe-c088805512e0"
+      ]
+    }
+  },
+  {
+    "id": "ab8a6f42-fd66-4676-b575-4b4dca65fbde",
+    "text": "The loss rate is the probable rate of loss that a group of insured people will experience.\nTo calculate the loss rate for a group, an insurer estimates the number and timing of\ncovered losses that will occur.\nThe insurer uses the estimated loss rates to set premium rates that will be adequate to\npay claims for covered losses.\nFor which group will Dale be able to more accurately predict the loss rate?\nGroup A—the small business with 25 employees\nGroup B—the large company with 500 employees",
+    "payload": {
+      "chunk_index": 47,
+      "total_chunks": 65,
+      "page_number": 21,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Insurance Type",
+      "node_name": "Group Insurance",
+      "node_id": 208,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "5ef69903-8c2b-46ad-8095-a172226ad5d2",
+        "b7d2d4a0-1526-410f-af93-48a28925be50",
+        "dc45ef66-704f-4fd2-a1e2-e2ef33316bb0"
+      ],
+      "next": [
+        "66a6ec12-1eb2-41a4-9a53-efdd7ad7c655",
+        "69475750-356b-4f92-9cfe-c088805512e0",
+        "f41427e6-ea99-44f8-b7ba-1632c80cdd48"
+      ]
+    }
+  },
+  {
+    "id": "66a6ec12-1eb2-41a4-9a53-efdd7ad7c655",
+    "text": "Group A—the small business with 25 employees\nGroup B—the large company with 500 employees\nHe can predict both with equal accuracy\nUnderwriting Small Groups\nSome insurers set a minimum group size—for example, the group must have at least 50\nmembers to qualify for coverage.\nInsurers issuing coverage to very small groups may modify their underwriting processes\nas follows:",
+    "payload": {
+      "chunk_index": 48,
+      "total_chunks": 65,
+      "page_number": 21,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Underwriting",
+      "node_name": "Group Underwriting",
+      "node_id": 214,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "b7d2d4a0-1526-410f-af93-48a28925be50",
+        "dc45ef66-704f-4fd2-a1e2-e2ef33316bb0",
+        "ab8a6f42-fd66-4676-b575-4b4dca65fbde"
+      ],
+      "next": [
+        "69475750-356b-4f92-9cfe-c088805512e0",
+        "f41427e6-ea99-44f8-b7ba-1632c80cdd48",
+        "d6055699-1596-4e59-832a-ef778b9b6814"
+      ]
+    }
+  },
+  {
+    "id": "69475750-356b-4f92-9cfe-c088805512e0",
+    "text": "Examples:\nGroup Size\nUnderwriting Approach\nFewer than 15\nmembers\nEach member provides evidence of insurability\n15 to 50\nmembers\nInsurer pools together several small groups with\nsimilar job duties to estimate the loss rate\nFlow of New Members\nDoes the flow of new members into a group affect the group's risk characteristics? You\nbet.\nLet’s Help Dale\nDale is now evaluating an application from a group of retired people. Membership in the",
+    "payload": {
+      "chunk_index": 49,
+      "total_chunks": 65,
+      "page_number": 22,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Underwriting",
+      "node_name": "Group Underwriting",
+      "node_id": 214,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "dc45ef66-704f-4fd2-a1e2-e2ef33316bb0",
+        "ab8a6f42-fd66-4676-b575-4b4dca65fbde",
+        "66a6ec12-1eb2-41a4-9a53-efdd7ad7c655"
+      ],
+      "next": [
+        "f41427e6-ea99-44f8-b7ba-1632c80cdd48",
+        "d6055699-1596-4e59-832a-ef778b9b6814",
+        "1270d872-c745-4524-a565-479f7cda6688"
+      ]
+    }
+  },
+  {
+    "id": "f41427e6-ea99-44f8-b7ba-1632c80cdd48",
+    "text": "Dale is now evaluating an application from a group of retired people. Membership in the\ngroup is closed and no new people will be joining the group. Is the group insurable?\nYes\nNo\nImagine a group with no inflow of new members.\n(click or touch the arrows to the right)",
+    "payload": {
+      "chunk_index": 50,
+      "total_chunks": 65,
+      "page_number": 22,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Insurance Type",
+      "node_name": "Group Insurance",
+      "node_id": 208,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "ab8a6f42-fd66-4676-b575-4b4dca65fbde",
+        "66a6ec12-1eb2-41a4-9a53-efdd7ad7c655",
+        "69475750-356b-4f92-9cfe-c088805512e0"
+      ],
+      "next": [
+        "d6055699-1596-4e59-832a-ef778b9b6814",
+        "1270d872-c745-4524-a565-479f7cda6688",
+        "66dd437c-e5da-44ce-b7aa-89bcffa2c5df"
+      ]
+    }
+  },
+  {
+    "id": "d6055699-1596-4e59-832a-ef778b9b6814",
+    "text": "Stability of the Group\nA steady flow of new members is necessary, but the stability of the group also is\nimportant.\nLet’s Help Dale\nDale is evaluating three more groups. Help him determine which ones are likely to be\ninsurable. Choose all that apply.\nA group that will exist for only 18 months\nA group of seasonal workers\nA group of temporary workers\nNone of these\nSubmit\nParticipation Requirement\nGroup insurance underwriting guidelines require plans to cover at least a minimum",
+    "payload": {
+      "chunk_index": 51,
+      "total_chunks": 65,
+      "page_number": 23,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Underwriting",
+      "node_name": "Group Underwriting",
+      "node_id": 214,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "66a6ec12-1eb2-41a4-9a53-efdd7ad7c655",
+        "69475750-356b-4f92-9cfe-c088805512e0",
+        "f41427e6-ea99-44f8-b7ba-1632c80cdd48"
+      ],
+      "next": [
+        "1270d872-c745-4524-a565-479f7cda6688",
+        "66dd437c-e5da-44ce-b7aa-89bcffa2c5df",
+        "68cb6624-1ac5-426d-9522-31746b276dcf"
+      ]
+    }
+  },
+  {
+    "id": "1270d872-c745-4524-a565-479f7cda6688",
+    "text": "Group insurance underwriting guidelines require plans to cover at least a minimum\npercentage of eligible group members.\nThe specific participation requirement depends on whether the plan is contributory or\nnoncontributory. When a plan is noncontributory (the policyholder pays 100% of\npremium), 100% of eligible group members MUST BE covered. If all eligible group\nmembers aren’t covered, the plan would be unfair to the group members who aren’t\ncovered.",
+    "payload": {
+      "chunk_index": 52,
+      "total_chunks": 65,
+      "page_number": 23,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Plan Administration",
+      "node_name": "Contributory vs. Noncontributory Plans",
+      "node_id": 212,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "69475750-356b-4f92-9cfe-c088805512e0",
+        "f41427e6-ea99-44f8-b7ba-1632c80cdd48",
+        "d6055699-1596-4e59-832a-ef778b9b6814"
+      ],
+      "next": [
+        "66dd437c-e5da-44ce-b7aa-89bcffa2c5df",
+        "68cb6624-1ac5-426d-9522-31746b276dcf",
+        "0ca39c53-415c-48eb-afb3-01b10057d50e"
+      ]
+    }
+  },
+  {
+    "id": "66dd437c-e5da-44ce-b7aa-89bcffa2c5df",
+    "text": "Let’s Help Dale\nDale is evaluating an application from an employer that wants to provide a contributory\ngroup insurance plan for its employees.\nHelp Dale determine what percentage of eligible employees this plan must cover.\nAll eligible employees\nAt least 75% of eligible employees\nAt least 30% of eligible employees",
+    "payload": {
+      "chunk_index": 53,
+      "total_chunks": 65,
+      "page_number": 24,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Plan Administration",
+      "node_name": "Contributory vs. Noncontributory Plans",
+      "node_id": 212,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "f41427e6-ea99-44f8-b7ba-1632c80cdd48",
+        "d6055699-1596-4e59-832a-ef778b9b6814",
+        "1270d872-c745-4524-a565-479f7cda6688"
+      ],
+      "next": [
+        "68cb6624-1ac5-426d-9522-31746b276dcf",
+        "0ca39c53-415c-48eb-afb3-01b10057d50e",
+        "c5fcc4bf-d4b8-4fd5-b4f6-b405b41d4c08"
+      ]
+    }
+  },
+  {
+    "id": "68cb6624-1ac5-426d-9522-31746b276dcf",
+    "text": "Employees who believe themselves to be in good health sometimes choose not to\nparticipate in a group insurance plan. Having too few participating employees means\nthat those who DID sign up are more likely to be in poor health. That’s antiselection.\nIf more employees sign up, there are more likely to be enough good risks (and enough\nin premiums!) to balance things out.",
+    "payload": {
+      "chunk_index": 54,
+      "total_chunks": 65,
+      "page_number": 25,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Insurance Type",
+      "node_name": "Group Insurance",
+      "node_id": 208,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "d6055699-1596-4e59-832a-ef778b9b6814",
+        "1270d872-c745-4524-a565-479f7cda6688",
+        "66dd437c-e5da-44ce-b7aa-89bcffa2c5df"
+      ],
+      "next": [
+        "0ca39c53-415c-48eb-afb3-01b10057d50e",
+        "c5fcc4bf-d4b8-4fd5-b4f6-b405b41d4c08",
+        "6cd2a980-d002-42c5-84ad-1f13c72b98a8"
+      ]
+    }
+  },
+  {
+    "id": "0ca39c53-415c-48eb-afb3-01b10057d50e",
+    "text": "How Benefits Are Determined\nImage Description\nLet’s Help Dale\nWhy won’t insurers allow group insureds to choose the amount of their group coverage?\nPeople in poor health are likely to select larger benefit amounts than people in good health.\nPeople in good health are likely to select larger benefit amounts than people in poor health.\nLaws require the policyholder to set benefit amounts.\nLaws require the insurer to set benefit amounts.\n\n**[TEXT DATA]**",
+    "payload": {
+      "chunk_index": 55,
+      "total_chunks": 65,
+      "page_number": 26,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Insurance Type",
+      "node_name": "Group Insurance",
+      "node_id": 208,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "1270d872-c745-4524-a565-479f7cda6688",
+        "66dd437c-e5da-44ce-b7aa-89bcffa2c5df",
+        "68cb6624-1ac5-426d-9522-31746b276dcf"
+      ],
+      "next": [
+        "c5fcc4bf-d4b8-4fd5-b4f6-b405b41d4c08",
+        "6cd2a980-d002-42c5-84ad-1f13c72b98a8",
+        "21dcba1e-bf30-4dc5-bf1c-69b46fef4210"
+      ]
+    }
+  },
+  {
+    "id": "c5fcc4bf-d4b8-4fd5-b4f6-b405b41d4c08",
+    "text": "**[TEXT DATA]**\n\nRemember I told Jerome that he could not choose the amount of his group life insurance coverage? Let’s see why.",
+    "payload": {
+      "chunk_index": 56,
+      "total_chunks": 65,
+      "page_number": 26,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Insurance Type",
+      "node_name": "Group Insurance",
+      "node_id": 208,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "66dd437c-e5da-44ce-b7aa-89bcffa2c5df",
+        "68cb6624-1ac5-426d-9522-31746b276dcf",
+        "0ca39c53-415c-48eb-afb3-01b10057d50e"
+      ],
+      "next": [
+        "6cd2a980-d002-42c5-84ad-1f13c72b98a8",
+        "21dcba1e-bf30-4dc5-bf1c-69b46fef4210",
+        "20779e23-3963-4b25-9d35-aee63f470ffa"
+      ]
+    }
+  },
+  {
+    "id": "6cd2a980-d002-42c5-84ad-1f13c72b98a8",
+    "text": "To prevent such antiselection, the insurer and the group policyholder work together to\nset a fair method of determining the benefit levels that group members will be eligible for.\nOften benefit amounts vary according to salary, job classification, or length of\nemployment. For example, a benefit schedule may provide a life insurance benefit equal\nto one year of an employee’s salary.\nThe master group insurance contract describes those benefit levels.\nActivities of the Group\nLet’s Help Dale",
+    "payload": {
+      "chunk_index": 57,
+      "total_chunks": 65,
+      "page_number": 27,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Group Insurance Contract",
+      "node_name": "Master Group Insurance Contract",
+      "node_id": 209,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "68cb6624-1ac5-426d-9522-31746b276dcf",
+        "0ca39c53-415c-48eb-afb3-01b10057d50e",
+        "c5fcc4bf-d4b8-4fd5-b4f6-b405b41d4c08"
+      ],
+      "next": [
+        "21dcba1e-bf30-4dc5-bf1c-69b46fef4210",
+        "20779e23-3963-4b25-9d35-aee63f470ffa",
+        "cf2aefea-5a32-4098-a8bd-3bdb79b79c39"
+      ]
+    }
+  },
+  {
+    "id": "21dcba1e-bf30-4dc5-bf1c-69b46fef4210",
+    "text": "Activities of the Group\nLet’s Help Dale\nDale’s evaluating these group life applicants:\nHe must assign each group to a risk classification (standard, substandard, or declined).\nIs Dale likely to assign the three groups to the same risk classification?",
+    "payload": {
+      "chunk_index": 58,
+      "total_chunks": 65,
+      "page_number": 27,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Underwriting",
+      "node_name": "Group Underwriting",
+      "node_id": 214,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "0ca39c53-415c-48eb-afb3-01b10057d50e",
+        "c5fcc4bf-d4b8-4fd5-b4f6-b405b41d4c08",
+        "6cd2a980-d002-42c5-84ad-1f13c72b98a8"
+      ],
+      "next": [
+        "20779e23-3963-4b25-9d35-aee63f470ffa",
+        "cf2aefea-5a32-4098-a8bd-3bdb79b79c39",
+        "d460d943-c422-438b-9559-69a54abb9e0d"
+      ]
+    }
+  },
+  {
+    "id": "20779e23-3963-4b25-9d35-aee63f470ffa",
+    "text": "\nA group of architects\n\nA group of teachers\n\nA group of coal miners\nYes\nNo\nGood job helping Dale underwrite this group. Now let’s review what you’ve learned.\nLet’s compare individual to group life insurance. Select the response that applies to\nindividual policies only, group policies only, or both individual and group policies.\nThe insured person is a party to the contract.",
+    "payload": {
+      "chunk_index": 59,
+      "total_chunks": 65,
+      "page_number": 28,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Group Insurance Contract",
+      "node_name": "Group Insurance Contract",
+      "node_id": 209,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "c5fcc4bf-d4b8-4fd5-b4f6-b405b41d4c08",
+        "6cd2a980-d002-42c5-84ad-1f13c72b98a8",
+        "21dcba1e-bf30-4dc5-bf1c-69b46fef4210"
+      ],
+      "next": [
+        "cf2aefea-5a32-4098-a8bd-3bdb79b79c39",
+        "d460d943-c422-438b-9559-69a54abb9e0d",
+        "e43fe76e-627c-4df5-9dc2-f6887a85bd67"
+      ]
+    }
+  },
+  {
+    "id": "cf2aefea-5a32-4098-a8bd-3bdb79b79c39",
+    "text": "Individual\nGroup\nBoth\nThe parties to the contract must have contractual capacity.\nIndividual\nGroup\nBoth\nThe parties to the contract must mutually agree to the contract.\nIndividual\nGroup\nBoth\nThe policyowner must have an insurable interest in the life of the insured.\nIndividual\nGroup\nBoth\nUnderwriting focuses on the characteristics of individuals.\nIndividual\nGroup\nBoth\nA primary underwriting objective is to prevent antiselection.\nIndividual\nGroup\nBoth",
+    "payload": {
+      "chunk_index": 60,
+      "total_chunks": 65,
+      "page_number": 29,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Group Insurance Contract",
+      "node_name": "Parties to a Group Insurance Contract",
+      "node_id": 210,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "6cd2a980-d002-42c5-84ad-1f13c72b98a8",
+        "21dcba1e-bf30-4dc5-bf1c-69b46fef4210",
+        "20779e23-3963-4b25-9d35-aee63f470ffa"
+      ],
+      "next": [
+        "d460d943-c422-438b-9559-69a54abb9e0d",
+        "e43fe76e-627c-4df5-9dc2-f6887a85bd67",
+        "d399f2bc-af55-498a-a4df-48a95e1d66eb"
+      ]
+    }
+  },
+  {
+    "id": "d460d943-c422-438b-9559-69a54abb9e0d",
+    "text": "Group\nBoth\nA primary underwriting objective is to prevent antiselection.\nIndividual\nGroup\nBoth\nThe insured, rather than the policyholder, names the beneficiary.",
+    "payload": {
+      "chunk_index": 61,
+      "total_chunks": 65,
+      "page_number": 29,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Underwriting",
+      "node_name": "Group Underwriting",
+      "node_id": 214,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "21dcba1e-bf30-4dc5-bf1c-69b46fef4210",
+        "20779e23-3963-4b25-9d35-aee63f470ffa",
+        "cf2aefea-5a32-4098-a8bd-3bdb79b79c39"
+      ],
+      "next": [
+        "e43fe76e-627c-4df5-9dc2-f6887a85bd67",
+        "d399f2bc-af55-498a-a4df-48a95e1d66eb",
+        "2ccd8272-e1eb-42dc-b94a-e6baedf4233b"
+      ]
+    }
+  },
+  {
+    "id": "e43fe76e-627c-4df5-9dc2-f6887a85bd67",
+    "text": "Individual\nGroup\nBoth\nUnderwriting looks at potential administrative costs associated with the contract.\nIndividual\nGroup\nBoth\nUnderwriting assigns a risk class and sets an appropriate premium rate.\nIndividual\nGroup\nBoth\nAble Life received group life insurance applications from the following groups. Select the\ngroup(s) that Able would consider insurable.\nThe Oaktree Company seeks to cover its 100 employees\nThe Wigwam Company seeks to cover its 1,000 employees",
+    "payload": {
+      "chunk_index": 62,
+      "total_chunks": 65,
+      "page_number": 30,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Underwriting",
+      "node_name": "Group Underwriting",
+      "node_id": 214,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "20779e23-3963-4b25-9d35-aee63f470ffa",
+        "cf2aefea-5a32-4098-a8bd-3bdb79b79c39",
+        "d460d943-c422-438b-9559-69a54abb9e0d"
+      ],
+      "next": [
+        "d399f2bc-af55-498a-a4df-48a95e1d66eb",
+        "2ccd8272-e1eb-42dc-b94a-e6baedf4233b"
+      ]
+    }
+  },
+  {
+    "id": "d399f2bc-af55-498a-a4df-48a95e1d66eb",
+    "text": "The Wigwam Company seeks to cover its 1,000 employees\nThe Dahlia Club, a group formed for the purpose of obtaining insurance, seeks to cover its 150 members\nSubmit\nThe group for which Able can most accurately estimate the loss rate is\nOaktree (100 members)\nWigwam (1,000 members)\nDahlia (150 members)\nAssume that, under Wigwam’s plan, Wigwam will pay the entire premium for the\ncoverage provided. This means that Wigwam’s plan would be\nContributory\nNoncontributory",
+    "payload": {
+      "chunk_index": 63,
+      "total_chunks": 65,
+      "page_number": 30,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Plan Administration",
+      "node_name": "Contributory vs. Noncontributory Plans",
+      "node_id": 212,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "cf2aefea-5a32-4098-a8bd-3bdb79b79c39",
+        "d460d943-c422-438b-9559-69a54abb9e0d",
+        "e43fe76e-627c-4df5-9dc2-f6887a85bd67"
+      ],
+      "next": [
+        "2ccd8272-e1eb-42dc-b94a-e6baedf4233b"
+      ]
+    }
+  },
+  {
+    "id": "2ccd8272-e1eb-42dc-b94a-e6baedf4233b",
+    "text": "Able will require a minimum participation for Wigwam’s noncontributory plan of\n50%\n75%\n100%\nIf Able issues a group life insurance policy to Wigwam, then each group\ninsured will have the right to (choose all that apply)\nSelect the beneficiary of the coverage\nSelect the benefit amount",
+    "payload": {
+      "chunk_index": 64,
+      "total_chunks": 65,
+      "page_number": 31,
+      "total_pages": 31,
+      "file_name": "LOMA281_M4L1_Knowledge File_Group Insurance",
+      "category": "Plan Administration",
+      "node_name": "Contributory vs. Noncontributory Plans",
+      "node_id": 212,
+      "module": "4",
+      "lesson": "1",
+      "course": "LOMA281",
+      "previous": [
+        "d460d943-c422-438b-9559-69a54abb9e0d",
+        "e43fe76e-627c-4df5-9dc2-f6887a85bd67",
+        "d399f2bc-af55-498a-a4df-48a95e1d66eb"
+      ],
+      "next": []
+    }
+  }
+]

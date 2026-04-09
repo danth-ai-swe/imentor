@@ -40,7 +40,6 @@ async def afetch_chat_history(
 ) -> List[Dict[str, Any]]:
     if not conversation_id or not conversation_id.strip():
         return []
-
     config = get_app_config()
     url = f"{config.CHAT_HISTORY_API_BASE}/api/chats/history-for-ai"
     headers = {"X-Api-Key": "9gzILl3s3DxYGbqGC6xPed2wqa2uWUFRASqkmpoSuv0="}

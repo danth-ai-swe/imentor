@@ -9,7 +9,6 @@ Tự động tính batch_size để tối ưu wall time:
 import asyncio
 import json
 import math
-import random
 from functools import lru_cache
 from typing import Any
 
@@ -55,39 +54,7 @@ def _load_category_node_metadata() -> dict[str, list[dict[str, str]]]:
     return result
 
 
-# ── Difficulty distribution ───────────────────────────────────────────────────
-
-def _distribute_into_counts(weights: list[float], n: int) -> list[int]:
-    """Chia n thành 3 phần theo weights, đảm bảo tổng đúng bằng n."""
-    total_w = sum(weights)
-    raw = [w / total_w * n for w in weights]
-    counts = [int(r) for r in raw]
-    remainder = n - sum(counts)
-    # Phân phối phần dư cho các level có fractional part lớn nhất
-    for _, idx in sorted(enumerate(raw), key=lambda x: x[1] - int(x[1]), reverse=True)[:remainder]:
-        counts[idx] += 1
-    return counts
-
-
-def _compute_difficulty_distribution(
-        n: int,
-        quiz_type: str = "random",
-        rate_value: str | None = None,
-) -> dict[str, Any]:
-    """Trả về {counts: {level: int}, rate: {level: float}}."""
-    if quiz_type == "rate" and rate_value:
-        weights = [float(p.strip()) for p in rate_value.split("|")]
-    else:
-        weights = [random.randint(1, 10) for _ in range(3)]
-
-    counts = _distribute_into_counts(weights, n)
-    return {
-        "counts": {DIFFICULTY_LEVELS[i]: counts[i] for i in range(3)},
-        "rate": {
-            DIFFICULTY_LEVELS[i]: round(counts[i] / n * 100, 1) if n else 0
-            for i in range(3)
-        },
-    }
+# ── Difficulty ─────────────────────────────────────────────────────────────────
 
 
 def _build_difficulty_instruction(counts: dict[str, int]) -> str:
@@ -169,14 +136,6 @@ async def _agenerate_batch(
         return questions
 
 
-# ── Source enrichment ─────────────────────────────────────────────────────────
-
-@lru_cache(maxsize=1)
-def _get_base_url() -> str:
-    config = get_app_config()
-    return config.APP_DOMAIN if config.PROFILE_NAME == "prod" \
-        else f"http://{config.APP_IP}:{config.APP_PORT}"
-
 
 def _build_chunk_meta_index(chunks: list[dict[str, Any]]) -> dict[str, dict]:
     """file_name → {module, lesson, course, file_name}"""
@@ -198,7 +157,7 @@ def _match_file(source_name: str, chunk_meta: dict[str, dict]) -> str | None:
 
 def _enrich_sources(question: dict[str, Any], chunks: list[dict[str, Any]]) -> None:
     """Gán module, lesson, course, url cho từng source trong question."""
-    base_url = _get_base_url()
+    base_url = get_app_config().APP_DOMAIN
     chunk_meta = _build_chunk_meta_index(chunks)
 
     for source in question.get("sources", []):
@@ -240,17 +199,12 @@ def _compute_batch_size(n: int, max_concurrent: int) -> int:
 
 def _assign_difficulties(
         sampled_items: list[SampledItem],
-        distribution: dict[str, Any],
+        difficulty: str,
 ) -> list[tuple[str, list[dict], str]]:
-    """Gán difficulty ngẫu nhiên cho từng sampled item theo distribution."""
-    diff_sequence: list[str] = []
-    for diff, cnt in distribution["counts"].items():
-        diff_sequence.extend([diff] * cnt)
-    random.shuffle(diff_sequence)
-
+    """Gán cùng một difficulty cho tất cả sampled items."""
     return [
-        (cat, chunks, diff_sequence[i] if i < len(diff_sequence) else random.choice(DIFFICULTY_LEVELS))
-        for i, (cat, chunks) in enumerate(sampled_items)
+        (cat, chunks, difficulty)
+        for cat, chunks in sampled_items
     ]
 
 
@@ -310,12 +264,11 @@ def _assemble_questions(
 
 
 async def generate_quiz(
-        knowledge_pack: str = "LOMA281",
+        knowledge_pack: str,
+        difficulty: str,
+        count_difficulty: int,
         level: str | None = None,
         level_value: str | None = None,
-        quiz_type: str = "random",
-        rate_value: str | None = None,
-        n: int = 10,
         window: int = 2,
         max_concurrent: int = MAX_CONCURRENT_LLM,
 ) -> dict[str, Any]:
@@ -331,7 +284,7 @@ async def generate_quiz(
                 knowledge_pack=knowledge_pack,
                 level=level,
                 value=level_value,
-                n=n,
+                n=count_difficulty,
                 window=window,
             )
 
@@ -341,11 +294,10 @@ async def generate_quiz(
 
         # Step 2: Difficulty + metadata
         actual_n = len(sampled_items)
-        distribution = _compute_difficulty_distribution(actual_n, quiz_type, rate_value)
-        logger.info(f"  🎯 Difficulty: {distribution['counts']}")
+        logger.info(f"  🎯 Difficulty: {difficulty}, count: {count_difficulty}")
 
         category_node_meta = _load_category_node_metadata()
-        items_with_diff = _assign_difficulties(sampled_items, distribution)
+        items_with_diff = _assign_difficulties(sampled_items, difficulty)
 
         # Step 3: Batch + LLM calls
         batch_size = _compute_batch_size(actual_n, max_concurrent)
@@ -380,8 +332,8 @@ async def generate_quiz(
                 "knowledge_pack": knowledge_pack,
                 "level": level,
                 "level_value": level_value,
-                "type": quiz_type,
-                "difficulty_distribution": distribution,
+                "difficulty": difficulty,
+                "count_difficulty": count_difficulty,
                 "questions": questions,
             },
         }

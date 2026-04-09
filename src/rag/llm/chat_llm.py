@@ -216,6 +216,34 @@ class AzureChatClient:
         )
         return response.choices[0].message.content
 
+    @log_method_call
+    @_retry_policy()
+    def create_json_message(
+            self,
+            system_prompt: str,
+            messages: List[Dict[str, str]],
+            max_tokens: int | None = None,
+    ) -> str:
+        """
+        Sync JSON mode — ``response_format=json_object``.
+        Đối xứng với acreate_json_message.
+        """
+        chat_messages = [{"role": "system", "content": system_prompt}]
+        for msg in messages:
+            chat_messages.append({
+                "role": msg.get("role", "user"),
+                "content": msg.get("content", ""),
+            })
+        response = get_sync_client().chat.completions.create(
+            model=config.OPENAI_CHAT_MODEL,
+            messages=chat_messages,
+            temperature=config.GPT_TEMPERATURE,
+            top_p=config.GPT_TOP_P,
+            max_tokens=max_tokens or config.GPT_MAX_TOKENS,
+            response_format={"type": "json_object"},
+        )
+        return response.choices[0].message.content
+
 
 _chat_client_instance: AzureChatClient | None = None
 

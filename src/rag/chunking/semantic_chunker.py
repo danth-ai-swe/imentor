@@ -1,10 +1,9 @@
 import re
-from functools import lru_cache
 
 import numpy as np
-from sklearn.metrics.pairwise import cosine_similarity
 
 from src.rag.llm.embedding_llm import get_openai_embedding_client
+from src.utils.app_utils import cosine_similarity
 
 
 class SemanticChunker:
@@ -117,6 +116,5 @@ class SemanticChunker:
         return chunks
 
 
-@lru_cache(maxsize=1)
 def get_semantic_chunker() -> SemanticChunker:
     return SemanticChunker()

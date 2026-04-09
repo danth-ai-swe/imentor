@@ -1,0 +1,3930 @@
+[
+  {
+    "id": "bef1eda6-da98-4dc5-884b-ee7508d62a5d",
+    "text": "Module 2: Serving the Customer throughout the Policy Lifecycle... 1\nLesson 4: Claim Administration... 2\nLearning Objectives... 3\nClaim Administration Purpose and Staff...3\nThe Claim Process...7\nWhom to Pay, How Much, and How... 16\nClaim Investigations and Claim Fraud...32\nUnfair Claim Practices... 43\nClaim Processing Efficiency... 48\nModule 2: Serving the Customer throughout the\nPolicy Lifecycle\nA customer's contact with an insurer most likely begins when they are",
+    "payload": {
+      "chunk_index": 0,
+      "total_chunks": 146,
+      "page_number": 1,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Process",
+      "node_name": "The Claim Process",
+      "node_id": 286,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [],
+      "next": [
+        "a15f097a-e8ba-45cd-9437-1e1843bd85d9",
+        "0b7d6846-44fe-44d9-bf38-2711df358097",
+        "621fda3c-5834-45f2-ad61-2a5224e12ae5"
+      ]
+    }
+  },
+  {
+    "id": "a15f097a-e8ba-45cd-9437-1e1843bd85d9",
+    "text": "Policy Lifecycle\nA customer's contact with an insurer most likely begins when they are\nthinking about purchasing a policy, and can last until the policyowner\ndies and the insurer pays the policy proceeds to the beneficiary. In\nbetween, the insurer underwrites and issues the policy, and meets the\ncustomer’s service needs while the policy is in force. In this module, you’ll\nlearn about the tasks an insurer performs at each stage of the policy",
+    "payload": {
+      "chunk_index": 1,
+      "total_chunks": 146,
+      "page_number": 1,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Process",
+      "node_name": "The Claim Process",
+      "node_id": 286,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "bef1eda6-da98-4dc5-884b-ee7508d62a5d"
+      ],
+      "next": [
+        "0b7d6846-44fe-44d9-bf38-2711df358097",
+        "621fda3c-5834-45f2-ad61-2a5224e12ae5",
+        "2358ade3-767a-4725-bfed-7df82f3497d2"
+      ]
+    }
+  },
+  {
+    "id": "0b7d6846-44fe-44d9-bf38-2711df358097",
+    "text": "lifecycle.\nIn this module, you’ll learn about\n\nHow insurers engage with potential customers and distribute products\nto meet customer needs\n\nHow insurers process insurance applications, evaluate the risk they\nrepresent, and determine the appropriate premium to charge\n\nHow insurers try to optimize the experience of their customers\n\nHow insurers balance paying legitimate claims promptly and\naccurately with avoiding paying illegitimate claims\nLesson 4: Claim Administration",
+    "payload": {
+      "chunk_index": 2,
+      "total_chunks": 146,
+      "page_number": 2,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Function",
+      "node_name": "Claim Administration",
+      "node_id": 285,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "bef1eda6-da98-4dc5-884b-ee7508d62a5d",
+        "a15f097a-e8ba-45cd-9437-1e1843bd85d9"
+      ],
+      "next": [
+        "621fda3c-5834-45f2-ad61-2a5224e12ae5",
+        "2358ade3-767a-4725-bfed-7df82f3497d2",
+        "e900b4be-6559-4c3d-9cce-4c21f9a5ccbf"
+      ]
+    }
+  },
+  {
+    "id": "621fda3c-5834-45f2-ad61-2a5224e12ae5",
+    "text": "accurately with avoiding paying illegitimate claims\nLesson 4: Claim Administration\nIf a policy stays in force until the death of the insured, the insurer has an\nobligation to pay the policy proceeds promptly and accurately. However, the\ninsurer also has an obligation NOT to pay illegitimate claims. See how\ninsurers balance these two obligations.",
+    "payload": {
+      "chunk_index": 3,
+      "total_chunks": 146,
+      "page_number": 2,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Function",
+      "node_name": "Claim Administration",
+      "node_id": 285,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "bef1eda6-da98-4dc5-884b-ee7508d62a5d",
+        "a15f097a-e8ba-45cd-9437-1e1843bd85d9",
+        "0b7d6846-44fe-44d9-bf38-2711df358097"
+      ],
+      "next": [
+        "2358ade3-767a-4725-bfed-7df82f3497d2",
+        "e900b4be-6559-4c3d-9cce-4c21f9a5ccbf",
+        "cccbd572-fc25-4433-a5a3-d1b19f0ae84d"
+      ]
+    }
+  },
+  {
+    "id": "2358ade3-767a-4725-bfed-7df82f3497d2",
+    "text": "Learning Objectives\n\nExplain the purpose of effective claim administration, and describe the\nstaff involved in processing claims.\n\nIdentify the steps in the claim process, and explain how to determine\nwhether death benefits are payable.\n\nDetermine the correct amount and correct recipient of a death\nbenefit, and describe how the benefit can be paid.\n\nIdentify the factors that are likely to trigger a claim investigation,\nand describe different types of claim fraud and measures insurers can",
+    "payload": {
+      "chunk_index": 4,
+      "total_chunks": 146,
+      "page_number": 3,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Process",
+      "node_name": "The Claim Process",
+      "node_id": 286,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "a15f097a-e8ba-45cd-9437-1e1843bd85d9",
+        "0b7d6846-44fe-44d9-bf38-2711df358097",
+        "621fda3c-5834-45f2-ad61-2a5224e12ae5"
+      ],
+      "next": [
+        "e900b4be-6559-4c3d-9cce-4c21f9a5ccbf",
+        "cccbd572-fc25-4433-a5a3-d1b19f0ae84d",
+        "3131e564-4ad5-426b-88d0-aae6d847e459"
+      ]
+    }
+  },
+  {
+    "id": "e900b4be-6559-4c3d-9cce-4c21f9a5ccbf",
+    "text": "and describe different types of claim fraud and measures insurers can\ntake to prevent them.\n\nDescribe the Model Unfair Claims Settlement Practices Act, and give\nexamples of unfair claim practices that would result in a violation of\nthis act.\n\nExplain various ways that insurers improve and evaluate claim\nprocessing efficiency.\nClaim Administration Purpose and Staff\nLearning Objective\nExplain the purpose of effective claim administration and describe the staff involved in\nprocessing claims.",
+    "payload": {
+      "chunk_index": 5,
+      "total_chunks": 146,
+      "page_number": 3,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Compliance",
+      "node_name": "Unfair Claim Practices",
+      "node_id": 294,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "0b7d6846-44fe-44d9-bf38-2711df358097",
+        "621fda3c-5834-45f2-ad61-2a5224e12ae5",
+        "2358ade3-767a-4725-bfed-7df82f3497d2"
+      ],
+      "next": [
+        "cccbd572-fc25-4433-a5a3-d1b19f0ae84d",
+        "3131e564-4ad5-426b-88d0-aae6d847e459",
+        "f74a7481-b1a3-4772-bdd1-3e8c4fc23932"
+      ]
+    }
+  },
+  {
+    "id": "cccbd572-fc25-4433-a5a3-d1b19f0ae84d",
+    "text": "Through claims, a company fulfills its promise to policyowners and beneficiaries—\nprompt payment of policy benefits when an insured event occurs.\nEffective claim administration requires satisfying two somewhat contradictory\nobjectives.\n1. Claims should be processed as rapidly as possible to meet the needs of\nbeneficiaries and comply with claims processing regulations.\n2. Companies must ensure that they are paying only valid claims. A small number",
+    "payload": {
+      "chunk_index": 6,
+      "total_chunks": 146,
+      "page_number": 4,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Function",
+      "node_name": "Claim Administration",
+      "node_id": 285,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "621fda3c-5834-45f2-ad61-2a5224e12ae5",
+        "2358ade3-767a-4725-bfed-7df82f3497d2",
+        "e900b4be-6559-4c3d-9cce-4c21f9a5ccbf"
+      ],
+      "next": [
+        "3131e564-4ad5-426b-88d0-aae6d847e459",
+        "f74a7481-b1a3-4772-bdd1-3e8c4fc23932",
+        "ff180309-c19c-44cf-8f09-41b5e6733459"
+      ]
+    }
+  },
+  {
+    "id": "3131e564-4ad5-426b-88d0-aae6d847e459",
+    "text": "2. Companies must ensure that they are paying only valid claims. A small number\nof life insurance claims are submitted under erroneous interpretations of policy\nprovisions. An even smaller number of claims are submitted fraudulently.\nInaccurate or ineffective claims practices can cost an insurer financially and in\nreputation. That's why companies establish standard procedures to ensure effective\nclaims processing. In this lesson, we discuss how a company reviews claim information",
+    "payload": {
+      "chunk_index": 7,
+      "total_chunks": 146,
+      "page_number": 4,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Fraud",
+      "node_id": 293,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "2358ade3-767a-4725-bfed-7df82f3497d2",
+        "e900b4be-6559-4c3d-9cce-4c21f9a5ccbf",
+        "cccbd572-fc25-4433-a5a3-d1b19f0ae84d"
+      ],
+      "next": [
+        "f74a7481-b1a3-4772-bdd1-3e8c4fc23932",
+        "ff180309-c19c-44cf-8f09-41b5e6733459",
+        "af648840-45e2-4070-b2cb-aa177c20ec42"
+      ]
+    }
+  },
+  {
+    "id": "f74a7481-b1a3-4772-bdd1-3e8c4fc23932",
+    "text": "claims processing. In this lesson, we discuss how a company reviews claim information\nand determines whether benefits are payable.\nClaim Philosophy and Authority Levels",
+    "payload": {
+      "chunk_index": 8,
+      "total_chunks": 146,
+      "page_number": 4,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Process",
+      "node_name": "The Claim Process",
+      "node_id": 286,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "e900b4be-6559-4c3d-9cce-4c21f9a5ccbf",
+        "cccbd572-fc25-4433-a5a3-d1b19f0ae84d",
+        "3131e564-4ad5-426b-88d0-aae6d847e459"
+      ],
+      "next": [
+        "ff180309-c19c-44cf-8f09-41b5e6733459",
+        "af648840-45e2-4070-b2cb-aa177c20ec42",
+        "512320d5-846e-4677-a887-bfecf6530e88"
+      ]
+    }
+  },
+  {
+    "id": "ff180309-c19c-44cf-8f09-41b5e6733459",
+    "text": "Effective claim processing begins with a claim philosophy and established claim\npractices that guide the claim department's operations.\nForthright's Claim Philosophy\nTo act promptly, fairly, and courteously in paying all eligible claims and denying all\nineligible claims.\nCan all claim analysts process all kinds of claims?\nYes\nNo\nIt depends\nClaim paying authority is tiered. A claim analyst's authority gradually increases based",
+    "payload": {
+      "chunk_index": 9,
+      "total_chunks": 146,
+      "page_number": 5,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Process",
+      "node_name": "The Claim Process",
+      "node_id": 286,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "cccbd572-fc25-4433-a5a3-d1b19f0ae84d",
+        "3131e564-4ad5-426b-88d0-aae6d847e459",
+        "f74a7481-b1a3-4772-bdd1-3e8c4fc23932"
+      ],
+      "next": [
+        "af648840-45e2-4070-b2cb-aa177c20ec42",
+        "512320d5-846e-4677-a887-bfecf6530e88",
+        "73d5db69-b897-4e82-b8f6-bf84d5bf756b"
+      ]
+    }
+  },
+  {
+    "id": "af648840-45e2-4070-b2cb-aa177c20ec42",
+    "text": "It depends\nClaim paying authority is tiered. A claim analyst's authority gradually increases based\non his experience and training. The following is an example of how tiered authority\nworks. Of course, the specific amounts may vary from company to company.\nAmount of Claim Approval Authority\nEmployee\nRoutine Claims\nHigher-Risk Claims\nAnalyst Trainee\n$25,000 claim amount\nNo authority",
+    "payload": {
+      "chunk_index": 10,
+      "total_chunks": 146,
+      "page_number": 5,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Process",
+      "node_name": "The Claim Process",
+      "node_id": 286,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "3131e564-4ad5-426b-88d0-aae6d847e459",
+        "f74a7481-b1a3-4772-bdd1-3e8c4fc23932",
+        "ff180309-c19c-44cf-8f09-41b5e6733459"
+      ],
+      "next": [
+        "512320d5-846e-4677-a887-bfecf6530e88",
+        "73d5db69-b897-4e82-b8f6-bf84d5bf756b",
+        "4d5f8aba-2632-4434-9fab-c7c047e2ac0a"
+      ]
+    }
+  },
+  {
+    "id": "512320d5-846e-4677-a887-bfecf6530e88",
+    "text": "Analyst\n$200,000 claim amount\nNo authority\nSenior Claim Analyst\n$600,000 claim amount\n$600,000 claim amount\nClaim Supervisor\n$700,000 claim amount\n$700,000 claim amount\nClaim Manager\n$1,000,000 claim amount\n$1,000,000 claim amount\nNote that claim analysts are authorized to approve higher claim amounts for routine\nclaims that are not within the contestable period than they can approve for higher risk\nclaims. Higher risk claims involve the accidental death benefit provision, the",
+    "payload": {
+      "chunk_index": 11,
+      "total_chunks": 146,
+      "page_number": 6,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Process",
+      "node_name": "The Claim Process",
+      "node_id": 286,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "f74a7481-b1a3-4772-bdd1-3e8c4fc23932",
+        "ff180309-c19c-44cf-8f09-41b5e6733459",
+        "af648840-45e2-4070-b2cb-aa177c20ec42"
+      ],
+      "next": [
+        "73d5db69-b897-4e82-b8f6-bf84d5bf756b",
+        "4d5f8aba-2632-4434-9fab-c7c047e2ac0a",
+        "feeeacc2-778e-4756-aca4-cd68e202b57d"
+      ]
+    }
+  },
+  {
+    "id": "73d5db69-b897-4e82-b8f6-bf84d5bf756b",
+    "text": "claims. Higher risk claims involve the accidental death benefit provision, the\nincontestability provision, or suspicion of fraud or unusual legal complications, which\nusually must be handled by more senior claims staff.\nTrue or False?\nThe goal of claim administration departments is to pay all claims immediately.\nTrue\nFalse",
+    "payload": {
+      "chunk_index": 12,
+      "total_chunks": 146,
+      "page_number": 6,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Fraud",
+      "node_id": 293,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "ff180309-c19c-44cf-8f09-41b5e6733459",
+        "af648840-45e2-4070-b2cb-aa177c20ec42",
+        "512320d5-846e-4677-a887-bfecf6530e88"
+      ],
+      "next": [
+        "4d5f8aba-2632-4434-9fab-c7c047e2ac0a",
+        "feeeacc2-778e-4756-aca4-cd68e202b57d",
+        "4c33591b-8841-416d-a07f-b8ae7d40e031"
+      ]
+    }
+  },
+  {
+    "id": "4d5f8aba-2632-4434-9fab-c7c047e2ac0a",
+    "text": "The Claim Process\nLearning Objective\nIdentify the steps in the claim process and explain how to determine\nwhether death benefits are payable.\nThe process begins when the claimant—usually the beneficiary or\npolicyowner—notifies the insurer of a loss.\nThe insurer then asks the claimant to complete a claim form, or claimant's\nstatement, that provides information about the claim and authorizes\nmedical caregivers, government agencies, employers, and others to provide",
+    "payload": {
+      "chunk_index": 13,
+      "total_chunks": 146,
+      "page_number": 7,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Process",
+      "node_name": "The Claim Process",
+      "node_id": 286,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "af648840-45e2-4070-b2cb-aa177c20ec42",
+        "512320d5-846e-4677-a887-bfecf6530e88",
+        "73d5db69-b897-4e82-b8f6-bf84d5bf756b"
+      ],
+      "next": [
+        "feeeacc2-778e-4756-aca4-cd68e202b57d",
+        "4c33591b-8841-416d-a07f-b8ae7d40e031",
+        "65f2cd1d-71c1-4d5b-8532-98afc8bc58ad"
+      ]
+    }
+  },
+  {
+    "id": "feeeacc2-778e-4756-aca4-cd68e202b57d",
+    "text": "medical caregivers, government agencies, employers, and others to provide\nthe insurer with information relevant to the claim.",
+    "payload": {
+      "chunk_index": 14,
+      "total_chunks": 146,
+      "page_number": 7,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Process",
+      "node_name": "The Claim Process",
+      "node_id": 286,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "512320d5-846e-4677-a887-bfecf6530e88",
+        "73d5db69-b897-4e82-b8f6-bf84d5bf756b",
+        "4d5f8aba-2632-4434-9fab-c7c047e2ac0a"
+      ],
+      "next": [
+        "4c33591b-8841-416d-a07f-b8ae7d40e031",
+        "65f2cd1d-71c1-4d5b-8532-98afc8bc58ad",
+        "8eaa408a-5c1d-47e8-9bd4-59afcf9c0443"
+      ]
+    }
+  },
+  {
+    "id": "4c33591b-8841-416d-a07f-b8ae7d40e031",
+    "text": "**[TEXT DATA]**\n\nTrue or False?\n\nThe goal of claim administration departments is to pay all claims immediately.\n\nTrue\nFalse\n\nThat's correct!\nWhile paying claims quickly is a priority for claim departments, they must balance speed with paying only valid claims.",
+    "payload": {
+      "chunk_index": 15,
+      "total_chunks": 146,
+      "page_number": 7,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Function",
+      "node_name": "Claim Administration",
+      "node_id": 285,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "73d5db69-b897-4e82-b8f6-bf84d5bf756b",
+        "4d5f8aba-2632-4434-9fab-c7c047e2ac0a",
+        "feeeacc2-778e-4756-aca4-cd68e202b57d"
+      ],
+      "next": [
+        "65f2cd1d-71c1-4d5b-8532-98afc8bc58ad",
+        "8eaa408a-5c1d-47e8-9bd4-59afcf9c0443",
+        "f99ac8ba-166b-4ded-8335-51c69435fbba"
+      ]
+    }
+  },
+  {
+    "id": "65f2cd1d-71c1-4d5b-8532-98afc8bc58ad",
+    "text": "The basic claim form requires that the claimant provide the date, place,\ncause, and circumstance of the insured's death. If the death occurred within\na specified period after policy issue, typically two years, or if the death was\naccidental or unusual in any way, the insurer may require that the claimant\ncomplete more details on the claim form or complete a specialized\nquestionnaire.\nOnce the claims department receives the claim form, it begins the claim",
+    "payload": {
+      "chunk_index": 16,
+      "total_chunks": 146,
+      "page_number": 8,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Process",
+      "node_name": "The Claim Process",
+      "node_id": 286,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "4d5f8aba-2632-4434-9fab-c7c047e2ac0a",
+        "feeeacc2-778e-4756-aca4-cd68e202b57d",
+        "4c33591b-8841-416d-a07f-b8ae7d40e031"
+      ],
+      "next": [
+        "8eaa408a-5c1d-47e8-9bd4-59afcf9c0443",
+        "f99ac8ba-166b-4ded-8335-51c69435fbba",
+        "3228d7ae-5550-435c-bb2c-20a8ecaa61c0"
+      ]
+    }
+  },
+  {
+    "id": "8eaa408a-5c1d-47e8-9bd4-59afcf9c0443",
+    "text": "questionnaire.\nOnce the claims department receives the claim form, it begins the claim\nprocess. We will discuss the following steps in the process.",
+    "payload": {
+      "chunk_index": 17,
+      "total_chunks": 146,
+      "page_number": 8,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Process",
+      "node_name": "The Claim Process",
+      "node_id": 286,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "feeeacc2-778e-4756-aca4-cd68e202b57d",
+        "4c33591b-8841-416d-a07f-b8ae7d40e031",
+        "65f2cd1d-71c1-4d5b-8532-98afc8bc58ad"
+      ],
+      "next": [
+        "f99ac8ba-166b-4ded-8335-51c69435fbba",
+        "3228d7ae-5550-435c-bb2c-20a8ecaa61c0",
+        "c10e826e-85a6-4616-87a7-c85d030d2f0d"
+      ]
+    }
+  },
+  {
+    "id": "f99ac8ba-166b-4ded-8335-51c69435fbba",
+    "text": "Determining if Benefits Are Payable\nHere's what a claim analyst must verify to determine whether death\nbenefits are payable:\n\nThe policy was in force when the loss occurred.\n\nThe deceased is the insured.\n\nThe loss occurred.\n\nThe policy covers the loss.\nThe analyst also examines whether the policy is contestable and, if so,\nwhether the application for insurance contains any material\nmisrepresentations.\nPolicy Status, Deceased's Identity, and Proof of Loss",
+    "payload": {
+      "chunk_index": 18,
+      "total_chunks": 146,
+      "page_number": 9,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Concept",
+      "node_name": "Proof of Loss",
+      "node_id": 287,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "4c33591b-8841-416d-a07f-b8ae7d40e031",
+        "65f2cd1d-71c1-4d5b-8532-98afc8bc58ad",
+        "8eaa408a-5c1d-47e8-9bd4-59afcf9c0443"
+      ],
+      "next": [
+        "3228d7ae-5550-435c-bb2c-20a8ecaa61c0",
+        "c10e826e-85a6-4616-87a7-c85d030d2f0d",
+        "2e52d599-78e1-4297-a836-98b4a347584c"
+      ]
+    }
+  },
+  {
+    "id": "3228d7ae-5550-435c-bb2c-20a8ecaa61c0",
+    "text": "misrepresentations.\nPolicy Status, Deceased's Identity, and Proof of Loss\nDetermining whether the policy was in force when the insured died—had\npremiums been paid?—and whether the deceased was the insured are\ntypically straightforward.\nDetermining whether the loss occurred may be trickier. The claimant must\nsupply proof of loss. In the United States, an official death certificate is the\naccepted proof of loss. But, a death certificate can't be issued if there's no\nbody.",
+    "payload": {
+      "chunk_index": 19,
+      "total_chunks": 146,
+      "page_number": 9,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Concept",
+      "node_name": "Proof of Loss",
+      "node_id": 287,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "65f2cd1d-71c1-4d5b-8532-98afc8bc58ad",
+        "8eaa408a-5c1d-47e8-9bd4-59afcf9c0443",
+        "f99ac8ba-166b-4ded-8335-51c69435fbba"
+      ],
+      "next": [
+        "c10e826e-85a6-4616-87a7-c85d030d2f0d",
+        "2e52d599-78e1-4297-a836-98b4a347584c",
+        "8fc17495-6dbe-40a4-989b-fad0b3a42284"
+      ]
+    }
+  },
+  {
+    "id": "c10e826e-85a6-4616-87a7-c85d030d2f0d",
+    "text": "accepted proof of loss. But, a death certificate can't be issued if there's no\nbody.\nSo what happens if the body's missing?\nWhen an insured disappears, the claimant is unable to present proof of the\ninsured's death. Whether or not the disappearance can be explained\ngenerally determines how the claim analyst proceeds. Click or touch each\nheading below to learn more.",
+    "payload": {
+      "chunk_index": 20,
+      "total_chunks": 146,
+      "page_number": 9,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Concept",
+      "node_name": "Proof of Loss",
+      "node_id": 287,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "8eaa408a-5c1d-47e8-9bd4-59afcf9c0443",
+        "f99ac8ba-166b-4ded-8335-51c69435fbba",
+        "3228d7ae-5550-435c-bb2c-20a8ecaa61c0"
+      ],
+      "next": [
+        "2e52d599-78e1-4297-a836-98b4a347584c",
+        "8fc17495-6dbe-40a4-989b-fad0b3a42284",
+        "1bcc00de-50f8-422c-be76-74fd096ecdb2"
+      ]
+    }
+  },
+  {
+    "id": "2e52d599-78e1-4297-a836-98b4a347584c",
+    "text": "Explainable Disappearance\nThe claim analyst may presume the insured to be dead if a specific peril can\nreasonably explain the disappearance, such as a plane crash in the ocean\nwith no bodies found.\nHe probably would accept the claimant's statement and accident reports as\nproof of death and would continue with the claim evaluation.\nUnexplainable Disappearance\nIf no specific peril can reasonably explain the disappearance, the claim\nanalyst usually denies a life claim that is filed immediately after the",
+    "payload": {
+      "chunk_index": 21,
+      "total_chunks": 146,
+      "page_number": 10,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Claim Evaluation",
+      "node_id": 288,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "f99ac8ba-166b-4ded-8335-51c69435fbba",
+        "3228d7ae-5550-435c-bb2c-20a8ecaa61c0",
+        "c10e826e-85a6-4616-87a7-c85d030d2f0d"
+      ],
+      "next": [
+        "8fc17495-6dbe-40a4-989b-fad0b3a42284",
+        "1bcc00de-50f8-422c-be76-74fd096ecdb2",
+        "d30e925a-3b5e-4428-928c-9ad7bfc16eec"
+      ]
+    }
+  },
+  {
+    "id": "8fc17495-6dbe-40a4-989b-fad0b3a42284",
+    "text": "analyst usually denies a life claim that is filed immediately after the\ndisappearance.\nAn insurer cannot approve a claim until it receives sufficient proof of the\ninsured's death.\nIn the United States, if the insured hasn't reappeared after a certain period\n(five or seven years, depending on the jurisdiction), the claimant can\npetition the court for an order presuming the insured's death.\nA court order stating that the insured is presumed dead establishes proof of",
+    "payload": {
+      "chunk_index": 22,
+      "total_chunks": 146,
+      "page_number": 10,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Concept",
+      "node_name": "Proof of Loss",
+      "node_id": 287,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "3228d7ae-5550-435c-bb2c-20a8ecaa61c0",
+        "c10e826e-85a6-4616-87a7-c85d030d2f0d",
+        "2e52d599-78e1-4297-a836-98b4a347584c"
+      ],
+      "next": [
+        "1bcc00de-50f8-422c-be76-74fd096ecdb2",
+        "d30e925a-3b5e-4428-928c-9ad7bfc16eec",
+        "0cdffac8-a609-4574-8c58-24636e668644"
+      ]
+    }
+  },
+  {
+    "id": "1bcc00de-50f8-422c-be76-74fd096ecdb2",
+    "text": "A court order stating that the insured is presumed dead establishes proof of\nthe insured's death. If the policy has been kept in force during the\ndisappearance, the claim analyst usually will accept the court order as proof\nof loss and will continue the claim evaluation.\nPolicy Exclusions",
+    "payload": {
+      "chunk_index": 23,
+      "total_chunks": 146,
+      "page_number": 10,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Concept",
+      "node_name": "Proof of Loss",
+      "node_id": 287,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "c10e826e-85a6-4616-87a7-c85d030d2f0d",
+        "2e52d599-78e1-4297-a836-98b4a347584c",
+        "8fc17495-6dbe-40a4-989b-fad0b3a42284"
+      ],
+      "next": [
+        "d30e925a-3b5e-4428-928c-9ad7bfc16eec",
+        "0cdffac8-a609-4574-8c58-24636e668644",
+        "9901f2b3-ebd8-4680-909e-39a282e6821b"
+      ]
+    }
+  },
+  {
+    "id": "d30e925a-3b5e-4428-928c-9ad7bfc16eec",
+    "text": "A claim analyst next determines whether the policy covers the loss. One\nreason it may not is a policy exclusion, such as the suicide exclusion.\nWhen an insured person dies during the suicide exclusion period, the claim\nanalyst determines whether the cause of death was suicide. If the insurer\ncan prove it was, it refunds the premiums paid, less any outstanding policy\nloans.\nSometimes when completing an application for insurance, the applicant",
+    "payload": {
+      "chunk_index": 24,
+      "total_chunks": 146,
+      "page_number": 11,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Beneficiary Determination",
+      "node_id": 289,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "2e52d599-78e1-4297-a836-98b4a347584c",
+        "8fc17495-6dbe-40a4-989b-fad0b3a42284",
+        "1bcc00de-50f8-422c-be76-74fd096ecdb2"
+      ],
+      "next": [
+        "0cdffac8-a609-4574-8c58-24636e668644",
+        "9901f2b3-ebd8-4680-909e-39a282e6821b",
+        "468e37c6-595c-404a-ab0c-36d2cd22a02f"
+      ]
+    }
+  },
+  {
+    "id": "0cdffac8-a609-4574-8c58-24636e668644",
+    "text": "loans.\nSometimes when completing an application for insurance, the applicant\ngives false information or leaves out important information. If such a\nmisrepresentation is important to the insurer's evaluation of the risk, it's\ncalled a material misrepresentation.\nMost misrepresentations are minor—the applicant states that the insured\nbroke his left arm, when actually it was the right arm. Here are some\nexamples of material misrepresentation.\nType of\nInformation\nExample of Material Misrepresentation\nHealth",
+    "payload": {
+      "chunk_index": 25,
+      "total_chunks": 146,
+      "page_number": 11,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Fraud",
+      "node_id": 293,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "8fc17495-6dbe-40a4-989b-fad0b3a42284",
+        "1bcc00de-50f8-422c-be76-74fd096ecdb2",
+        "d30e925a-3b5e-4428-928c-9ad7bfc16eec"
+      ],
+      "next": [
+        "9901f2b3-ebd8-4680-909e-39a282e6821b",
+        "468e37c6-595c-404a-ab0c-36d2cd22a02f",
+        "aced6ca6-ac8a-43fc-aabd-f0dfa1affda9"
+      ]
+    }
+  },
+  {
+    "id": "9901f2b3-ebd8-4680-909e-39a282e6821b",
+    "text": "Type of\nInformation\nExample of Material Misrepresentation\nHealth\nFailure to disclose a known medical impairment that\nadversely affects life expectancy\nOccupation or\navocation\nFailure to disclose a dangerous job or hobby\nHabits\nFailure to disclose past abuse of alcohol or controlled\nsubstances",
+    "payload": {
+      "chunk_index": 26,
+      "total_chunks": 146,
+      "page_number": 11,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Fraud",
+      "node_id": 293,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "1bcc00de-50f8-422c-be76-74fd096ecdb2",
+        "d30e925a-3b5e-4428-928c-9ad7bfc16eec",
+        "0cdffac8-a609-4574-8c58-24636e668644"
+      ],
+      "next": [
+        "468e37c6-595c-404a-ab0c-36d2cd22a02f",
+        "aced6ca6-ac8a-43fc-aabd-f0dfa1affda9",
+        "327052c1-769f-45d9-8b8b-1c302817c686"
+      ]
+    }
+  },
+  {
+    "id": "468e37c6-595c-404a-ab0c-36d2cd22a02f",
+    "text": "Number of traffic\nviolations\nMisstatements of the number or severity of moving\nviolations or collisions\nOther insurance\napplications\ndenied or rated\nConcealing information about insurance applications\nthat have been denied, assigned to a high-risk class,\nor charged an additional premium\nNormally, if an insured dies during a life insurance policy's contestable\nperiod and if the claim analyst finds out that the application contains a\nmaterial misrepresentation, the insurer may rescind (void) the policy. The",
+    "payload": {
+      "chunk_index": 27,
+      "total_chunks": 146,
+      "page_number": 12,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Fraud",
+      "node_id": 293,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "d30e925a-3b5e-4428-928c-9ad7bfc16eec",
+        "0cdffac8-a609-4574-8c58-24636e668644",
+        "9901f2b3-ebd8-4680-909e-39a282e6821b"
+      ],
+      "next": [
+        "aced6ca6-ac8a-43fc-aabd-f0dfa1affda9",
+        "327052c1-769f-45d9-8b8b-1c302817c686",
+        "dd6349d0-899e-43d8-a1c9-44d850e533b3"
+      ]
+    }
+  },
+  {
+    "id": "aced6ca6-ac8a-43fc-aabd-f0dfa1affda9",
+    "text": "material misrepresentation, the insurer may rescind (void) the policy. The\nlegal process of voiding an insurance contract because of material\nmisrepresentation is known as rescission. The insurer refunds the premiums\npaid minus any policy loan outstanding. In the United States, life insurance\npolicies typically provide a contestable period of two years. The contestable\nperiod may vary by state.\nIn many jurisdictions, the cause of the insured's death does not have to be",
+    "payload": {
+      "chunk_index": 28,
+      "total_chunks": 146,
+      "page_number": 12,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Compliance",
+      "node_name": "Unfair Claim Practices",
+      "node_id": 294,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "0cdffac8-a609-4574-8c58-24636e668644",
+        "9901f2b3-ebd8-4680-909e-39a282e6821b",
+        "468e37c6-595c-404a-ab0c-36d2cd22a02f"
+      ],
+      "next": [
+        "327052c1-769f-45d9-8b8b-1c302817c686",
+        "dd6349d0-899e-43d8-a1c9-44d850e533b3",
+        "6e4235dc-3dfb-4634-8b82-0f5479814e1e"
+      ]
+    }
+  },
+  {
+    "id": "327052c1-769f-45d9-8b8b-1c302817c686",
+    "text": "period may vary by state.\nIn many jurisdictions, the cause of the insured's death does not have to be\nrelated to the misrepresented information for the policy to be rescinded.\nThink you can be a claim analyst? Analyze a few claims and decide which\nones are payable.",
+    "payload": {
+      "chunk_index": 29,
+      "total_chunks": 146,
+      "page_number": 12,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Process",
+      "node_name": "The Claim Process",
+      "node_id": 286,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "9901f2b3-ebd8-4680-909e-39a282e6821b",
+        "468e37c6-595c-404a-ab0c-36d2cd22a02f",
+        "aced6ca6-ac8a-43fc-aabd-f0dfa1affda9"
+      ],
+      "next": [
+        "dd6349d0-899e-43d8-a1c9-44d850e533b3",
+        "6e4235dc-3dfb-4634-8b82-0f5479814e1e",
+        "331e4998-4949-4d9a-8f36-524efc689814"
+      ]
+    }
+  },
+  {
+    "id": "dd6349d0-899e-43d8-a1c9-44d850e533b3",
+    "text": "November 17, 2013, Sarah Lawson, the policyowner-insured of an\nindividual life policy, disappeared under unexplainable circumstances. Seven\nyears later, on December 1, 2020, there was still no evidence of Ms.\nLawson's reappearance, and a court issued an order presuming her death.\nOn December 15, 2020, the beneficiary of Ms. Lawson's policy submitted a\nclaim for the policy proceeds. The insurer most likely will accept the court\norder as proof of loss and continue with the claim evaluation process,",
+    "payload": {
+      "chunk_index": 30,
+      "total_chunks": 146,
+      "page_number": 13,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Concept",
+      "node_name": "Proof of Loss",
+      "node_id": 287,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "468e37c6-595c-404a-ab0c-36d2cd22a02f",
+        "aced6ca6-ac8a-43fc-aabd-f0dfa1affda9",
+        "327052c1-769f-45d9-8b8b-1c302817c686"
+      ],
+      "next": [
+        "6e4235dc-3dfb-4634-8b82-0f5479814e1e",
+        "331e4998-4949-4d9a-8f36-524efc689814",
+        "4e233d21-76a9-4aa3-a4a8-a2286ea67b66"
+      ]
+    }
+  },
+  {
+    "id": "6e4235dc-3dfb-4634-8b82-0f5479814e1e",
+    "text": "order as proof of loss and continue with the claim evaluation process,\nregardless of whether premiums for the policy were paid during the entire\nperiod of disappearance.\nTrue\nFalse",
+    "payload": {
+      "chunk_index": 31,
+      "total_chunks": 146,
+      "page_number": 13,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Claim Evaluation",
+      "node_id": 288,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "aced6ca6-ac8a-43fc-aabd-f0dfa1affda9",
+        "327052c1-769f-45d9-8b8b-1c302817c686",
+        "dd6349d0-899e-43d8-a1c9-44d850e533b3"
+      ],
+      "next": [
+        "331e4998-4949-4d9a-8f36-524efc689814",
+        "4e233d21-76a9-4aa3-a4a8-a2286ea67b66",
+        "10119d74-e6e7-4aae-a0c0-537b71a81160"
+      ]
+    }
+  },
+  {
+    "id": "331e4998-4949-4d9a-8f36-524efc689814",
+    "text": "Antoine Blake purchased a whole life policy from the Barnard Insurance\nCompany on June 12, 2017. The policy contained a typical two-year\nsuicide exclusion period. On August 23, 2020, Mr. Blake committed suicide.\nAt the time of his death, no policy loans were outstanding.\nIn this situation, the beneficiary of Mr. Blake's policy was entitled to receive\nNo payment of any kind\n\n**[TEXT DATA]**\n\nThink you can be a claim analyst? Analyze a few claims and decide which ones are payable.",
+    "payload": {
+      "chunk_index": 32,
+      "total_chunks": 146,
+      "page_number": 14,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Beneficiary Determination",
+      "node_id": 289,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "327052c1-769f-45d9-8b8b-1c302817c686",
+        "dd6349d0-899e-43d8-a1c9-44d850e533b3",
+        "6e4235dc-3dfb-4634-8b82-0f5479814e1e"
+      ],
+      "next": [
+        "4e233d21-76a9-4aa3-a4a8-a2286ea67b66",
+        "10119d74-e6e7-4aae-a0c0-537b71a81160",
+        "3347f316-3e6d-4d2f-bae3-c4ae4e5bc3a9"
+      ]
+    }
+  },
+  {
+    "id": "4e233d21-76a9-4aa3-a4a8-a2286ea67b66",
+    "text": "Think you can be a claim analyst? Analyze a few claims and decide which ones are payable.\n\nNovember 17, 2013, Sarah Lawson, the policyowner-insured of an individual life policy, disappeared under unexplainable circumstances. Seven years later, on December 1, 2020, there was still no evidence of Ms. Lawson's reappearance, and a court issued an order presuming her death.",
+    "payload": {
+      "chunk_index": 33,
+      "total_chunks": 146,
+      "page_number": 14,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Beneficiary Determination",
+      "node_id": 289,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "dd6349d0-899e-43d8-a1c9-44d850e533b3",
+        "6e4235dc-3dfb-4634-8b82-0f5479814e1e",
+        "331e4998-4949-4d9a-8f36-524efc689814"
+      ],
+      "next": [
+        "10119d74-e6e7-4aae-a0c0-537b71a81160",
+        "3347f316-3e6d-4d2f-bae3-c4ae4e5bc3a9",
+        "4e35b23d-4ca9-45c8-8789-561d4da81d83"
+      ]
+    }
+  },
+  {
+    "id": "10119d74-e6e7-4aae-a0c0-537b71a81160",
+    "text": "On December 15, 2020, the beneficiary of Ms. Lawson's policy submitted a claim for the policy proceeds. The insurer most likely will accept the court order as proof of loss and continue with the claim evaluation process, regardless of whether premiums for the policy were paid during the entire period of disappearance.\n\nFalse",
+    "payload": {
+      "chunk_index": 34,
+      "total_chunks": 146,
+      "page_number": 14,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Claim Evaluation",
+      "node_id": 288,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "6e4235dc-3dfb-4634-8b82-0f5479814e1e",
+        "331e4998-4949-4d9a-8f36-524efc689814",
+        "4e233d21-76a9-4aa3-a4a8-a2286ea67b66"
+      ],
+      "next": [
+        "3347f316-3e6d-4d2f-bae3-c4ae4e5bc3a9",
+        "4e35b23d-4ca9-45c8-8789-561d4da81d83",
+        "84de0898-35a6-4c9c-985d-f4eefd536217"
+      ]
+    }
+  },
+  {
+    "id": "3347f316-3e6d-4d2f-bae3-c4ae4e5bc3a9",
+    "text": "False\n\nThat's correct!\nIf the premiums weren't paid, the policy would have lapsed and the insurer isn't responsible for accepting the court order or continuing the process. If the premiums were paid, the insurer would accept the court order and continue with the process.",
+    "payload": {
+      "chunk_index": 35,
+      "total_chunks": 146,
+      "page_number": 14,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Process",
+      "node_name": "The Claim Process",
+      "node_id": 286,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "331e4998-4949-4d9a-8f36-524efc689814",
+        "4e233d21-76a9-4aa3-a4a8-a2286ea67b66",
+        "10119d74-e6e7-4aae-a0c0-537b71a81160"
+      ],
+      "next": [
+        "4e35b23d-4ca9-45c8-8789-561d4da81d83",
+        "84de0898-35a6-4c9c-985d-f4eefd536217",
+        "d607c2b6-6305-4750-a91c-f8809f87079c"
+      ]
+    }
+  },
+  {
+    "id": "4e35b23d-4ca9-45c8-8789-561d4da81d83",
+    "text": "A refund of all premiums paid only\nThe policy's net cash surrender value only\nThe policy's full death benefit\nToby Barnard was analyzing a claim submitted during the policy's contestable period.\nHe found out that the insured had not reported that he'd had a heart attack 18\nmonths prior to policy issue. Had this information been known, the insurer wouldn't\nhave issued the policy. The cause of death was cancer.\n\n**[TEXT DATA]**",
+    "payload": {
+      "chunk_index": 36,
+      "total_chunks": 146,
+      "page_number": 15,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Process",
+      "node_name": "The Claim Process",
+      "node_id": 286,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "4e233d21-76a9-4aa3-a4a8-a2286ea67b66",
+        "10119d74-e6e7-4aae-a0c0-537b71a81160",
+        "3347f316-3e6d-4d2f-bae3-c4ae4e5bc3a9"
+      ],
+      "next": [
+        "84de0898-35a6-4c9c-985d-f4eefd536217",
+        "d607c2b6-6305-4750-a91c-f8809f87079c",
+        "eb7cfd9f-dac2-4931-963e-a4f4344b8b4d"
+      ]
+    }
+  },
+  {
+    "id": "84de0898-35a6-4c9c-985d-f4eefd536217",
+    "text": "**[TEXT DATA]**\n\nAntoine Blake purchased a whole life policy from the Barnard Insurance Company on June 12, 2017. The policy contained a typical two-year suicide exclusion period. On August 23, 2020, Mr. Blake committed suicide. At the time of his death, no policy loans were outstanding.\n\nIn this situation, the beneficiary of Mr. Blake's policy was entitled to receive",
+    "payload": {
+      "chunk_index": 37,
+      "total_chunks": 146,
+      "page_number": 15,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Beneficiary Determination",
+      "node_id": 289,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "10119d74-e6e7-4aae-a0c0-537b71a81160",
+        "3347f316-3e6d-4d2f-bae3-c4ae4e5bc3a9",
+        "4e35b23d-4ca9-45c8-8789-561d4da81d83"
+      ],
+      "next": [
+        "d607c2b6-6305-4750-a91c-f8809f87079c",
+        "eb7cfd9f-dac2-4931-963e-a4f4344b8b4d",
+        "0dff4db3-9670-4059-ba95-233d65bbc4f0"
+      ]
+    }
+  },
+  {
+    "id": "d607c2b6-6305-4750-a91c-f8809f87079c",
+    "text": "In this situation, the beneficiary of Mr. Blake's policy was entitled to receive\n\n- No payment of any kind\n- A refund of all premiums paid only\n- The policy's net cash surrender value only\n- The policy's full death benefit",
+    "payload": {
+      "chunk_index": 38,
+      "total_chunks": 146,
+      "page_number": 15,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Beneficiary Determination",
+      "node_id": 289,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "3347f316-3e6d-4d2f-bae3-c4ae4e5bc3a9",
+        "4e35b23d-4ca9-45c8-8789-561d4da81d83",
+        "84de0898-35a6-4c9c-985d-f4eefd536217"
+      ],
+      "next": [
+        "eb7cfd9f-dac2-4931-963e-a4f4344b8b4d",
+        "0dff4db3-9670-4059-ba95-233d65bbc4f0",
+        "a52b1075-3852-44cc-9e5d-a4107b8898ca"
+      ]
+    }
+  },
+  {
+    "id": "eb7cfd9f-dac2-4931-963e-a4f4344b8b4d",
+    "text": "That's correct!\nIf an insured dies by suicide during the policy's suicide exclusion period (usually two years from policy issue), the insurer's payment is limited to a refund of premiums paid, less any outstanding loans. However, Mr. Blake's death occurred more than two years after the policy was issued, after the suicide exclusion period expired. The beneficiary is entitled to the full death benefit.",
+    "payload": {
+      "chunk_index": 39,
+      "total_chunks": 146,
+      "page_number": 15,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Beneficiary Determination",
+      "node_id": 289,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "4e35b23d-4ca9-45c8-8789-561d4da81d83",
+        "84de0898-35a6-4c9c-985d-f4eefd536217",
+        "d607c2b6-6305-4750-a91c-f8809f87079c"
+      ],
+      "next": [
+        "0dff4db3-9670-4059-ba95-233d65bbc4f0",
+        "a52b1075-3852-44cc-9e5d-a4107b8898ca",
+        "df1541ee-e039-4add-87ef-b242250c2256"
+      ]
+    }
+  },
+  {
+    "id": "0dff4db3-9670-4059-ba95-233d65bbc4f0",
+    "text": "Toby was most likely able to deny the claim and rescind the policy due to material\nmisrepresentation in the application.\nTrue\nFalse\nWhom to Pay, How Much, and How\nLearning Objective\n\n**[TEXT DATA]**\n\nToby Barnard was analyzing a claim submitted during the policy's contestable period. He found out that the insured had not reported that he'd had a heart attack 18 months prior to policy issue. Had this information been known, the insurer wouldn't have issued the policy. The cause of death was cancer.",
+    "payload": {
+      "chunk_index": 40,
+      "total_chunks": 146,
+      "page_number": 16,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Compliance",
+      "node_name": "Unfair Claim Practices",
+      "node_id": 294,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "84de0898-35a6-4c9c-985d-f4eefd536217",
+        "d607c2b6-6305-4750-a91c-f8809f87079c",
+        "eb7cfd9f-dac2-4931-963e-a4f4344b8b4d"
+      ],
+      "next": [
+        "a52b1075-3852-44cc-9e5d-a4107b8898ca",
+        "df1541ee-e039-4add-87ef-b242250c2256",
+        "d2a1410a-4b42-422c-9f35-41e83c3e8472"
+      ]
+    }
+  },
+  {
+    "id": "a52b1075-3852-44cc-9e5d-a4107b8898ca",
+    "text": "Toby was most likely able to deny the claim and rescind the policy due to material misrepresentation in the application.\n\nTrue\n\nFalse",
+    "payload": {
+      "chunk_index": 41,
+      "total_chunks": 146,
+      "page_number": 16,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Compliance",
+      "node_name": "Unfair Claim Practices",
+      "node_id": 294,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "d607c2b6-6305-4750-a91c-f8809f87079c",
+        "eb7cfd9f-dac2-4931-963e-a4f4344b8b4d",
+        "0dff4db3-9670-4059-ba95-233d65bbc4f0"
+      ],
+      "next": [
+        "df1541ee-e039-4add-87ef-b242250c2256",
+        "d2a1410a-4b42-422c-9f35-41e83c3e8472",
+        "78ea4a57-69b5-4526-9321-9d6786af3d53"
+      ]
+    }
+  },
+  {
+    "id": "df1541ee-e039-4add-87ef-b242250c2256",
+    "text": "That's correct!",
+    "payload": {
+      "chunk_index": 42,
+      "total_chunks": 146,
+      "page_number": 16,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Function",
+      "node_name": "Claim Administration",
+      "node_id": 285,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "eb7cfd9f-dac2-4931-963e-a4f4344b8b4d",
+        "0dff4db3-9670-4059-ba95-233d65bbc4f0",
+        "a52b1075-3852-44cc-9e5d-a4107b8898ca"
+      ],
+      "next": [
+        "d2a1410a-4b42-422c-9f35-41e83c3e8472",
+        "78ea4a57-69b5-4526-9321-9d6786af3d53",
+        "65189a01-6ce1-4a80-a464-52fbe0d83ac6"
+      ]
+    }
+  },
+  {
+    "id": "d2a1410a-4b42-422c-9f35-41e83c3e8472",
+    "text": "A material misrepresentation is untrue information or a fact that is not disclosed that induces the other party to enter into a contract that it would not have entered into as written had it known the truth. In many jurisdictions, an insurer can rescind a policy even if the cause of the insured's death isn't related to the misrepresented information. Because the insurer wouldn't have issued the policy if Toby had disclosed his heart attack, the misrepresentation is a material misrepresentation",
+    "payload": {
+      "chunk_index": 43,
+      "total_chunks": 146,
+      "page_number": 16,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Compliance",
+      "node_name": "Unfair Claim Practices",
+      "node_id": 294,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "0dff4db3-9670-4059-ba95-233d65bbc4f0",
+        "a52b1075-3852-44cc-9e5d-a4107b8898ca",
+        "df1541ee-e039-4add-87ef-b242250c2256"
+      ],
+      "next": [
+        "78ea4a57-69b5-4526-9321-9d6786af3d53",
+        "65189a01-6ce1-4a80-a464-52fbe0d83ac6",
+        "6e7cae75-804b-4e25-ac72-8d7473ff4b4c"
+      ]
+    }
+  },
+  {
+    "id": "78ea4a57-69b5-4526-9321-9d6786af3d53",
+    "text": ". The insurer can rescind the policy.",
+    "payload": {
+      "chunk_index": 44,
+      "total_chunks": 146,
+      "page_number": 16,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Compliance",
+      "node_name": "Unfair Claim Practices",
+      "node_id": 294,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "a52b1075-3852-44cc-9e5d-a4107b8898ca",
+        "df1541ee-e039-4add-87ef-b242250c2256",
+        "d2a1410a-4b42-422c-9f35-41e83c3e8472"
+      ],
+      "next": [
+        "65189a01-6ce1-4a80-a464-52fbe0d83ac6",
+        "6e7cae75-804b-4e25-ac72-8d7473ff4b4c",
+        "b80eb934-029e-4ab6-996b-367b01825ab0"
+      ]
+    }
+  },
+  {
+    "id": "65189a01-6ce1-4a80-a464-52fbe0d83ac6",
+    "text": "Determine the correct amount and correct recipient of a death benefit and describe\nhow the benefit can be paid.\nDetermining the Policy Proceeds\nAfter the claim analyst verifies a valid claim, the next step is to calculate the benefit\npayable. Most people think this is equal to the face amount of the policy, but that's not\nalways true.\nThe face amount is the basic death benefit, but several different amounts could be\nadded to or subtracted from it to get the final proceeds payable to the beneficiary. For",
+    "payload": {
+      "chunk_index": 45,
+      "total_chunks": 146,
+      "page_number": 17,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Claim Benefit Calculation",
+      "node_id": 290,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "df1541ee-e039-4add-87ef-b242250c2256",
+        "d2a1410a-4b42-422c-9f35-41e83c3e8472",
+        "78ea4a57-69b5-4526-9321-9d6786af3d53"
+      ],
+      "next": [
+        "6e7cae75-804b-4e25-ac72-8d7473ff4b4c",
+        "b80eb934-029e-4ab6-996b-367b01825ab0",
+        "4c20e048-a64d-4087-a3f6-ddd4be7673b1"
+      ]
+    }
+  },
+  {
+    "id": "6e7cae75-804b-4e25-ac72-8d7473ff4b4c",
+    "text": "added to or subtracted from it to get the final proceeds payable to the beneficiary. For\nexample, the basic death benefit of some universal life insurance policies is equal to the\npolicy's face amount plus the accumulated cash value plus applicable interest. The\ndeath benefit available under a variable universal life insurance policy fluctuates\naccording to the performance of a separate account fund. Other factors may increase\nor decrease the amount of the proceeds payable.\nAdditions\nSubtractions",
+    "payload": {
+      "chunk_index": 46,
+      "total_chunks": 146,
+      "page_number": 17,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Claim Benefit Calculation",
+      "node_id": 290,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "d2a1410a-4b42-422c-9f35-41e83c3e8472",
+        "78ea4a57-69b5-4526-9321-9d6786af3d53",
+        "65189a01-6ce1-4a80-a464-52fbe0d83ac6"
+      ],
+      "next": [
+        "b80eb934-029e-4ab6-996b-367b01825ab0",
+        "4c20e048-a64d-4087-a3f6-ddd4be7673b1",
+        "24667548-4527-4170-8900-2e05269cb85b"
+      ]
+    }
+  },
+  {
+    "id": "b80eb934-029e-4ab6-996b-367b01825ab0",
+    "text": "or decrease the amount of the proceeds payable.\nAdditions\nSubtractions\nPremiums that the policyowner paid in\nadvance\nOutstanding policy loans\nAccumulated policy dividends\nAccrued policy loan interest\nPolicy dividends that the insurer declared\nbut that remain unpaid\nPremiums due and unpaid\nPaid-up additional coverage that the\npolicyowner purchased\nAccelerated death benefits the\ninsurer has paid\nAccidental death benefits that may be",
+    "payload": {
+      "chunk_index": 47,
+      "total_chunks": 146,
+      "page_number": 17,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Claim Benefit Calculation",
+      "node_id": 290,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "78ea4a57-69b5-4526-9321-9d6786af3d53",
+        "65189a01-6ce1-4a80-a464-52fbe0d83ac6",
+        "6e7cae75-804b-4e25-ac72-8d7473ff4b4c"
+      ],
+      "next": [
+        "4c20e048-a64d-4087-a3f6-ddd4be7673b1",
+        "24667548-4527-4170-8900-2e05269cb85b",
+        "c0a7f3bb-e8ef-4d73-9554-11c2ae7d2d49"
+      ]
+    }
+  },
+  {
+    "id": "4c20e048-a64d-4087-a3f6-ddd4be7673b1",
+    "text": "payable\nThe determination of whether accidental death benefits are payable can be challenging.\nAn accidental death benefit is a supplementary benefit under which the insurer pays\nan amount of money in addition to the basic death benefit if the insured dies as a\nresult of an accident.\nExample\nThe life insurance policy insuring Vinny Acworth's life included an accidental death\nbenefit. Mr. Acworth was hiking in the mountains along a high ledge and fell to his",
+    "payload": {
+      "chunk_index": 48,
+      "total_chunks": 146,
+      "page_number": 18,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Process",
+      "node_name": "The Claim Process",
+      "node_id": 286,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "65189a01-6ce1-4a80-a464-52fbe0d83ac6",
+        "6e7cae75-804b-4e25-ac72-8d7473ff4b4c",
+        "b80eb934-029e-4ab6-996b-367b01825ab0"
+      ],
+      "next": [
+        "24667548-4527-4170-8900-2e05269cb85b",
+        "c0a7f3bb-e8ef-4d73-9554-11c2ae7d2d49",
+        "af4085ec-97a2-4abc-b797-85f941380280"
+      ]
+    }
+  },
+  {
+    "id": "24667548-4527-4170-8900-2e05269cb85b",
+    "text": "benefit. Mr. Acworth was hiking in the mountains along a high ledge and fell to his\ndeath. If Mr. Acworth slipped and fell, his death would be accidental, and policy\nproceeds would include the accidental death benefit. However, if Mr. Acworth's death\nwas the result of a suicide (he jumped), no accidental death benefit is payable.\nWhen evaluating a claim involving an accidental death benefit, all facts of the case are\ntaken into consideration. The claim analyst may order autopsy reports, medical",
+    "payload": {
+      "chunk_index": 49,
+      "total_chunks": 146,
+      "page_number": 18,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Claim Evaluation",
+      "node_id": 288,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "6e7cae75-804b-4e25-ac72-8d7473ff4b4c",
+        "b80eb934-029e-4ab6-996b-367b01825ab0",
+        "4c20e048-a64d-4087-a3f6-ddd4be7673b1"
+      ],
+      "next": [
+        "c0a7f3bb-e8ef-4d73-9554-11c2ae7d2d49",
+        "af4085ec-97a2-4abc-b797-85f941380280",
+        "38799705-2faa-4f4d-8fe4-c180aa5ed63a"
+      ]
+    }
+  },
+  {
+    "id": "c0a7f3bb-e8ef-4d73-9554-11c2ae7d2d49",
+    "text": "taken into consideration. The claim analyst may order autopsy reports, medical\nrecords, and police reports to gather enough information to determine whether the\ninsurer is liable to pay accidental death benefits. If the benefits are payable, the insurer\nadds that amount to the policy's face amount.\nExample",
+    "payload": {
+      "chunk_index": 50,
+      "total_chunks": 146,
+      "page_number": 18,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Claim Evaluation",
+      "node_id": 288,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "b80eb934-029e-4ab6-996b-367b01825ab0",
+        "4c20e048-a64d-4087-a3f6-ddd4be7673b1",
+        "24667548-4527-4170-8900-2e05269cb85b"
+      ],
+      "next": [
+        "af4085ec-97a2-4abc-b797-85f941380280",
+        "38799705-2faa-4f4d-8fe4-c180aa5ed63a",
+        "c4a830ca-af43-443d-94bb-f19aa2b4c674"
+      ]
+    }
+  },
+  {
+    "id": "af4085ec-97a2-4abc-b797-85f941380280",
+    "text": "Assume that Mr. Acworth's death was ruled accidental and that the following\ninformation applies in his situation:\n$100,000 face amount of policy\n$50,000 accidental death benefit\n$1,000 policy loan outstanding\n$50 accrued policy loan interest\n$500 accumulated policy dividends\nThe correct benefit amount payable for this policy would be $149,450.\n$100,000 + $50,000 + $500 – $1,000 – $50 = $149,450\nAdjusting for Misstatement of Age or Sex",
+    "payload": {
+      "chunk_index": 51,
+      "total_chunks": 146,
+      "page_number": 19,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Claim Benefit Calculation",
+      "node_id": 290,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "4c20e048-a64d-4087-a3f6-ddd4be7673b1",
+        "24667548-4527-4170-8900-2e05269cb85b",
+        "c0a7f3bb-e8ef-4d73-9554-11c2ae7d2d49"
+      ],
+      "next": [
+        "38799705-2faa-4f4d-8fe4-c180aa5ed63a",
+        "c4a830ca-af43-443d-94bb-f19aa2b4c674",
+        "0a026101-8b9c-44ca-96c6-7c89dae4e552"
+      ]
+    }
+  },
+  {
+    "id": "38799705-2faa-4f4d-8fe4-c180aa5ed63a",
+    "text": "$100,000 + $50,000 + $500 – $1,000 – $50 = $149,450\nAdjusting for Misstatement of Age or Sex\nSometimes the insured's age or sex is misstated on the application. As a result, the\ninsurer charges the incorrect premium for the policy. How does the insurer handle this\nerror? The answer lies in the misstatement of age or sex provision found in most life\npolicies. Let's look at an example.",
+    "payload": {
+      "chunk_index": 52,
+      "total_chunks": 146,
+      "page_number": 19,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Concept",
+      "node_name": "Proof of Loss",
+      "node_id": 287,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "24667548-4527-4170-8900-2e05269cb85b",
+        "c0a7f3bb-e8ef-4d73-9554-11c2ae7d2d49",
+        "af4085ec-97a2-4abc-b797-85f941380280"
+      ],
+      "next": [
+        "c4a830ca-af43-443d-94bb-f19aa2b4c674",
+        "0a026101-8b9c-44ca-96c6-7c89dae4e552",
+        "35758e28-c827-4600-b41a-898414b208ab"
+      ]
+    }
+  },
+  {
+    "id": "c4a830ca-af43-443d-94bb-f19aa2b4c674",
+    "text": "When Allison Veasey applied for an insurance policy on her life from the Diamond\nInsurance Company, she mistakenly stated on her application that her age was 47,\nwhen her true age was 49. As a result, the insurer charged a lower premium than it\nwould have charged if it had known her true age. A year after the policy went into\neffect, Ms. Veasey died. The policy beneficiary submitted a claim, and a claim analyst\nat Diamond discovered the misstatement of age on the policy application. What will\nDiamond do?",
+    "payload": {
+      "chunk_index": 53,
+      "total_chunks": 146,
+      "page_number": 20,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Compliance",
+      "node_name": "Unfair Claim Practices",
+      "node_id": 294,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "c0a7f3bb-e8ef-4d73-9554-11c2ae7d2d49",
+        "af4085ec-97a2-4abc-b797-85f941380280",
+        "38799705-2faa-4f4d-8fe4-c180aa5ed63a"
+      ],
+      "next": [
+        "0a026101-8b9c-44ca-96c6-7c89dae4e552",
+        "35758e28-c827-4600-b41a-898414b208ab",
+        "840f0aa7-00d5-4947-8f76-1dc2bde02d9d"
+      ]
+    }
+  },
+  {
+    "id": "0a026101-8b9c-44ca-96c6-7c89dae4e552",
+    "text": "at Diamond discovered the misstatement of age on the policy application. What will\nDiamond do?\nRescind the policy on the basis of a material misrepresentation in the\napplication and retain all premiums paid\nRescind the policy on the basis of a material misrepresentation in the\napplication and refund all premiums paid\nReduce the amount of the proceeds to the amount that the premiums would\nhave purchased for a 49-year-old insured",
+    "payload": {
+      "chunk_index": 54,
+      "total_chunks": 146,
+      "page_number": 20,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Compliance",
+      "node_name": "Unfair Claim Practices",
+      "node_id": 294,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "af4085ec-97a2-4abc-b797-85f941380280",
+        "38799705-2faa-4f4d-8fe4-c180aa5ed63a",
+        "c4a830ca-af43-443d-94bb-f19aa2b4c674"
+      ],
+      "next": [
+        "35758e28-c827-4600-b41a-898414b208ab",
+        "840f0aa7-00d5-4947-8f76-1dc2bde02d9d",
+        "85029001-82f7-45b1-a85d-7e472396a69d"
+      ]
+    }
+  },
+  {
+    "id": "35758e28-c827-4600-b41a-898414b208ab",
+    "text": "Note that if an insurer discovers a misstatement of age or sex while the insured is still\nalive, it will often offer the policyowner the option of adjusting the face amount or of\nmaintaining the same face amount and adjusting the premiums payable for the policy.\nDetermining the Proper Payee\nAfter figuring out the amount of policy proceeds, the claim analyst decides who is\nentitled to the proceeds. Sometimes claim analysts receive conflicting information",
+    "payload": {
+      "chunk_index": 55,
+      "total_chunks": 146,
+      "page_number": 21,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Beneficiary Determination",
+      "node_id": 289,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "38799705-2faa-4f4d-8fe4-c180aa5ed63a",
+        "c4a830ca-af43-443d-94bb-f19aa2b4c674",
+        "0a026101-8b9c-44ca-96c6-7c89dae4e552"
+      ],
+      "next": [
+        "840f0aa7-00d5-4947-8f76-1dc2bde02d9d",
+        "85029001-82f7-45b1-a85d-7e472396a69d",
+        "39650243-9bb2-4fbb-ace6-401988ef0318"
+      ]
+    }
+  },
+  {
+    "id": "840f0aa7-00d5-4947-8f76-1dc2bde02d9d",
+    "text": "entitled to the proceeds. Sometimes claim analysts receive conflicting information\nabout who is entitled to death benefits. At other times, they must decide how a claim\nshould be paid.",
+    "payload": {
+      "chunk_index": 56,
+      "total_chunks": 146,
+      "page_number": 21,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Beneficiary Determination",
+      "node_id": 289,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "c4a830ca-af43-443d-94bb-f19aa2b4c674",
+        "0a026101-8b9c-44ca-96c6-7c89dae4e552",
+        "35758e28-c827-4600-b41a-898414b208ab"
+      ],
+      "next": [
+        "85029001-82f7-45b1-a85d-7e472396a69d",
+        "39650243-9bb2-4fbb-ace6-401988ef0318",
+        "da15d9ed-ba74-4122-b62f-96bef0b9b7a5"
+      ]
+    }
+  },
+  {
+    "id": "85029001-82f7-45b1-a85d-7e472396a69d",
+    "text": "**[TEXT DATA]**",
+    "payload": {
+      "chunk_index": 57,
+      "total_chunks": 146,
+      "page_number": 21,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Process",
+      "node_name": "The Claim Process",
+      "node_id": 286,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "0a026101-8b9c-44ca-96c6-7c89dae4e552",
+        "35758e28-c827-4600-b41a-898414b208ab",
+        "840f0aa7-00d5-4947-8f76-1dc2bde02d9d"
+      ],
+      "next": [
+        "39650243-9bb2-4fbb-ace6-401988ef0318",
+        "da15d9ed-ba74-4122-b62f-96bef0b9b7a5",
+        "bcf10f5a-e5d5-4a4d-9875-514e54271bb7"
+      ]
+    }
+  },
+  {
+    "id": "39650243-9bb2-4fbb-ace6-401988ef0318",
+    "text": "When Allison Veasey applied for an insurance policy on her life from the Diamond Insurance Company, she mistakenly stated on her application that her age was 47, when her true age was 49. As a result, the insurer charged a lower premium than it would have charged if it had known her true age. A year after the policy went into effect, Ms. Veasey died. The policy beneficiary submitted a claim, and a claim analyst at Diamond discovered the misstatement of age on the policy application. What will Diamond do?",
+    "payload": {
+      "chunk_index": 58,
+      "total_chunks": 146,
+      "page_number": 21,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Compliance",
+      "node_name": "Unfair Claim Practices",
+      "node_id": 294,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "35758e28-c827-4600-b41a-898414b208ab",
+        "840f0aa7-00d5-4947-8f76-1dc2bde02d9d",
+        "85029001-82f7-45b1-a85d-7e472396a69d"
+      ],
+      "next": [
+        "da15d9ed-ba74-4122-b62f-96bef0b9b7a5",
+        "bcf10f5a-e5d5-4a4d-9875-514e54271bb7",
+        "a62466d3-ac84-4276-b214-926f7ce5b33b"
+      ]
+    }
+  },
+  {
+    "id": "da15d9ed-ba74-4122-b62f-96bef0b9b7a5",
+    "text": "- Rescind the policy on the basis of a material misrepresentation in the application and retain all premiums paid\n- Rescind the policy on the basis of a material misrepresentation in the application and refund all premiums paid\n- Reduce the amount of the proceeds to the amount that the premiums would have purchased for a 49-year-old insured",
+    "payload": {
+      "chunk_index": 59,
+      "total_chunks": 146,
+      "page_number": 21,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Compliance",
+      "node_name": "Unfair Claim Practices",
+      "node_id": 294,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "840f0aa7-00d5-4947-8f76-1dc2bde02d9d",
+        "85029001-82f7-45b1-a85d-7e472396a69d",
+        "39650243-9bb2-4fbb-ace6-401988ef0318"
+      ],
+      "next": [
+        "bcf10f5a-e5d5-4a4d-9875-514e54271bb7",
+        "a62466d3-ac84-4276-b214-926f7ce5b33b",
+        "d3819d43-62c8-4203-9cea-648682e4207a"
+      ]
+    }
+  },
+  {
+    "id": "bcf10f5a-e5d5-4a4d-9875-514e54271bb7",
+    "text": "That's correct!\nWhen a claim analyst discovers a misstatement of age while processing a claim, he adjusts the benefit payable to the amount the premiums paid would have purchased at the correct age.",
+    "payload": {
+      "chunk_index": 60,
+      "total_chunks": 146,
+      "page_number": 21,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Claim Benefit Calculation",
+      "node_id": 290,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "85029001-82f7-45b1-a85d-7e472396a69d",
+        "39650243-9bb2-4fbb-ace6-401988ef0318",
+        "da15d9ed-ba74-4122-b62f-96bef0b9b7a5"
+      ],
+      "next": [
+        "a62466d3-ac84-4276-b214-926f7ce5b33b",
+        "d3819d43-62c8-4203-9cea-648682e4207a",
+        "4b60de56-6357-44bc-9848-3752c0b033f0"
+      ]
+    }
+  },
+  {
+    "id": "a62466d3-ac84-4276-b214-926f7ce5b33b",
+    "text": "In most cases, the insurer pays the death benefits to the primary beneficiary or\nbeneficiaries named by the policyowner. If no primary beneficiary is alive at the time of\nthe insured's death, the insurer will pay the benefits to the contingent beneficiary, or\nsecond contingent beneficiary if the contingent beneficiary is deceased. If a contingent\nor second contingent beneficiary cannot be paid, the proceeds will be payable to the",
+    "payload": {
+      "chunk_index": 61,
+      "total_chunks": 146,
+      "page_number": 22,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Beneficiary Determination",
+      "node_id": 289,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "39650243-9bb2-4fbb-ace6-401988ef0318",
+        "da15d9ed-ba74-4122-b62f-96bef0b9b7a5",
+        "bcf10f5a-e5d5-4a4d-9875-514e54271bb7"
+      ],
+      "next": [
+        "d3819d43-62c8-4203-9cea-648682e4207a",
+        "4b60de56-6357-44bc-9848-3752c0b033f0",
+        "e46f7ab6-884a-4d23-adea-5c183c076575"
+      ]
+    }
+  },
+  {
+    "id": "d3819d43-62c8-4203-9cea-648682e4207a",
+    "text": "or second contingent beneficiary cannot be paid, the proceeds will be payable to the\npolicyowner. If the policyowner is deceased, then the proceeds will be payable to the\npolicyowner's estate.",
+    "payload": {
+      "chunk_index": 62,
+      "total_chunks": 146,
+      "page_number": 22,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Beneficiary Determination",
+      "node_id": 289,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "da15d9ed-ba74-4122-b62f-96bef0b9b7a5",
+        "bcf10f5a-e5d5-4a4d-9875-514e54271bb7",
+        "a62466d3-ac84-4276-b214-926f7ce5b33b"
+      ],
+      "next": [
+        "4b60de56-6357-44bc-9848-3752c0b033f0",
+        "e46f7ab6-884a-4d23-adea-5c183c076575",
+        "27615f69-bcde-4554-88f7-87307515e3b5"
+      ]
+    }
+  },
+  {
+    "id": "4b60de56-6357-44bc-9848-3752c0b033f0",
+    "text": "**[CHART]**\n\nCAPTION: This flowchart outlines the hierarchy of beneficiaries for insurance payouts, detailing the order of payment based on the living status of the primary and contingent beneficiaries.",
+    "payload": {
+      "chunk_index": 63,
+      "total_chunks": 146,
+      "page_number": 22,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Beneficiary Determination",
+      "node_id": 289,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "bcf10f5a-e5d5-4a4d-9875-514e54271bb7",
+        "a62466d3-ac84-4276-b214-926f7ce5b33b",
+        "d3819d43-62c8-4203-9cea-648682e4207a"
+      ],
+      "next": [
+        "e46f7ab6-884a-4d23-adea-5c183c076575",
+        "27615f69-bcde-4554-88f7-87307515e3b5",
+        "9303f508-fbd5-4d0e-946f-fa89e97c3cce"
+      ]
+    }
+  },
+  {
+    "id": "e46f7ab6-884a-4d23-adea-5c183c076575",
+    "text": "ANALYSIS: The chart is a flowchart that visually represents the decision-making process for insurance payouts. It begins with the primary beneficiary, indicating that they should be paid first if they are living. If there is no living primary beneficiary, the next step is to check for a contingent beneficiary, who will be paid if they are also living. If neither beneficiary is alive, the policyowner is next in line for payment, provided they are living",
+    "payload": {
+      "chunk_index": 64,
+      "total_chunks": 146,
+      "page_number": 22,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Beneficiary Determination",
+      "node_id": 289,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "a62466d3-ac84-4276-b214-926f7ce5b33b",
+        "d3819d43-62c8-4203-9cea-648682e4207a",
+        "4b60de56-6357-44bc-9848-3752c0b033f0"
+      ],
+      "next": [
+        "27615f69-bcde-4554-88f7-87307515e3b5",
+        "9303f508-fbd5-4d0e-946f-fa89e97c3cce",
+        "00e9c3b5-6984-4302-b0e6-773504f7fa74"
+      ]
+    }
+  },
+  {
+    "id": "27615f69-bcde-4554-88f7-87307515e3b5",
+    "text": ". Finally, if the policyowner is deceased, the payout goes to the policyowner's estate. The flowchart effectively illustrates the sequential nature of beneficiary payments, emphasizing the importance of having named beneficiaries and the implications of their living status on the distribution of funds.",
+    "payload": {
+      "chunk_index": 65,
+      "total_chunks": 146,
+      "page_number": 22,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Beneficiary Determination",
+      "node_id": 289,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "d3819d43-62c8-4203-9cea-648682e4207a",
+        "4b60de56-6357-44bc-9848-3752c0b033f0",
+        "e46f7ab6-884a-4d23-adea-5c183c076575"
+      ],
+      "next": [
+        "9303f508-fbd5-4d0e-946f-fa89e97c3cce",
+        "00e9c3b5-6984-4302-b0e6-773504f7fa74",
+        "2093039e-6368-46d8-a66c-09f004ca0bb9"
+      ]
+    }
+  },
+  {
+    "id": "9303f508-fbd5-4d0e-946f-fa89e97c3cce",
+    "text": "The claim analyst will do whatever he can to ensure that he identifies the proper\npayee, but there are instances when the beneficiary designation is ambiguous or two\npayees seem to have rights to the proceeds. The insurer will encourage the parties\ninvolved to resolve the issue, but occasionally, when the parties cannot agree, the\ninsurer will take legal action through a process known as interpleader. The insurer goes\nto court, tells the court that it can't determine the proper recipient of the proceeds",
+    "payload": {
+      "chunk_index": 66,
+      "total_chunks": 146,
+      "page_number": 23,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Beneficiary Determination",
+      "node_id": 289,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "4b60de56-6357-44bc-9848-3752c0b033f0",
+        "e46f7ab6-884a-4d23-adea-5c183c076575",
+        "27615f69-bcde-4554-88f7-87307515e3b5"
+      ],
+      "next": [
+        "00e9c3b5-6984-4302-b0e6-773504f7fa74",
+        "2093039e-6368-46d8-a66c-09f004ca0bb9",
+        "2503b086-6da5-456e-be29-d663ddcc10f7"
+      ]
+    }
+  },
+  {
+    "id": "00e9c3b5-6984-4302-b0e6-773504f7fa74",
+    "text": "to court, tells the court that it can't determine the proper recipient of the proceeds\nthrough no fault of its own, and asks the court to determine who has rights to the\nproceeds. Interpleader eliminates the risk that the insurer may have to pay proceeds\nmore than once.\nDetermining the Proper Payment Method\nA beneficiary can receive policy proceeds in a lump sum or under one of several\nsettlement options.\nLet's see what you already know about settlement options. Identify each settlement",
+    "payload": {
+      "chunk_index": 67,
+      "total_chunks": 146,
+      "page_number": 23,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Payment Method",
+      "node_name": "Settlement Options",
+      "node_id": 291,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "e46f7ab6-884a-4d23-adea-5c183c076575",
+        "27615f69-bcde-4554-88f7-87307515e3b5",
+        "9303f508-fbd5-4d0e-946f-fa89e97c3cce"
+      ],
+      "next": [
+        "2093039e-6368-46d8-a66c-09f004ca0bb9",
+        "2503b086-6da5-456e-be29-d663ddcc10f7",
+        "3af7646c-d120-4fd0-9b00-e28292024c79"
+      ]
+    }
+  },
+  {
+    "id": "2093039e-6368-46d8-a66c-09f004ca0bb9",
+    "text": "Let's see what you already know about settlement options. Identify each settlement\noption described below.\nPolicy proceeds and interest are paid in equal installments for a specified period of\ntime.\nLife Income Option\nRetained Asset Account (RAA) Option\nFixed-Period Option\nInterest Option\nFixed-Amount Option",
+    "payload": {
+      "chunk_index": 68,
+      "total_chunks": 146,
+      "page_number": 23,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Payment Method",
+      "node_name": "Settlement Options",
+      "node_id": 291,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "27615f69-bcde-4554-88f7-87307515e3b5",
+        "9303f508-fbd5-4d0e-946f-fa89e97c3cce",
+        "00e9c3b5-6984-4302-b0e6-773504f7fa74"
+      ],
+      "next": [
+        "2503b086-6da5-456e-be29-d663ddcc10f7",
+        "3af7646c-d120-4fd0-9b00-e28292024c79",
+        "75095087-8e98-4e10-99c6-8c91626c658d"
+      ]
+    }
+  },
+  {
+    "id": "2503b086-6da5-456e-be29-d663ddcc10f7",
+    "text": "Policy proceeds and interest are paid in a series of equal payments for as long as the\nproceeds last.\nLife Income Option\nRetained Asset Account (RAA) Option\nFixed-Period Option\nInterest Option\nFixed-Amount Option\n\n**[TEXT DATA]**\n\nLet's see what you already know about settlement options. Identify each settlement option described below.\n\nPolicy proceeds and interest are paid in equal installments for a specified period of time.",
+    "payload": {
+      "chunk_index": 69,
+      "total_chunks": 146,
+      "page_number": 24,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Payment Method",
+      "node_name": "Settlement Options",
+      "node_id": 291,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "9303f508-fbd5-4d0e-946f-fa89e97c3cce",
+        "00e9c3b5-6984-4302-b0e6-773504f7fa74",
+        "2093039e-6368-46d8-a66c-09f004ca0bb9"
+      ],
+      "next": [
+        "3af7646c-d120-4fd0-9b00-e28292024c79",
+        "75095087-8e98-4e10-99c6-8c91626c658d",
+        "5ea88eb0-80ce-4063-b72e-ddb073cc2f6d"
+      ]
+    }
+  },
+  {
+    "id": "3af7646c-d120-4fd0-9b00-e28292024c79",
+    "text": "Policy proceeds and interest are paid in equal installments for a specified period of time.\n\n- Life Income Option\n- Retained Asset Account (RAA) Option\n- Fixed-Period Option\n- Interest Option\n- Fixed-Amount Option\n\nThat's correct!\nThis option is known as the fixed-period option. For example, the beneficiary might request to receive monthly payments for ten years.",
+    "payload": {
+      "chunk_index": 70,
+      "total_chunks": 146,
+      "page_number": 24,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Claim Benefit Calculation",
+      "node_id": 290,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "00e9c3b5-6984-4302-b0e6-773504f7fa74",
+        "2093039e-6368-46d8-a66c-09f004ca0bb9",
+        "2503b086-6da5-456e-be29-d663ddcc10f7"
+      ],
+      "next": [
+        "75095087-8e98-4e10-99c6-8c91626c658d",
+        "5ea88eb0-80ce-4063-b72e-ddb073cc2f6d",
+        "6f0732b5-597e-40ba-b13c-6a904188b4ec"
+      ]
+    }
+  },
+  {
+    "id": "75095087-8e98-4e10-99c6-8c91626c658d",
+    "text": "Policy proceeds and interest are paid in a series of payments over the payee's lifetime.\nLife Income Option\nRetained Asset Account (RAA) Option\nFixed-Period Option\nInterest Option\nFixed-Amount Option\n\n**[TEXT DATA]**\n\nPolicy proceeds and interest are paid in a series of equal payments for as long as the proceeds last.\n\n- Life Income Option\n- Retained Asset Account (RAA) Option\n- Fixed-Period Option\n- Interest Option\n- Fixed-Amount Option",
+    "payload": {
+      "chunk_index": 71,
+      "total_chunks": 146,
+      "page_number": 25,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Payment Method",
+      "node_name": "Settlement Options",
+      "node_id": 291,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "2093039e-6368-46d8-a66c-09f004ca0bb9",
+        "2503b086-6da5-456e-be29-d663ddcc10f7",
+        "3af7646c-d120-4fd0-9b00-e28292024c79"
+      ],
+      "next": [
+        "5ea88eb0-80ce-4063-b72e-ddb073cc2f6d",
+        "6f0732b5-597e-40ba-b13c-6a904188b4ec",
+        "e2652756-c2d3-4c11-9d7a-13f1f39754c5"
+      ]
+    }
+  },
+  {
+    "id": "5ea88eb0-80ce-4063-b72e-ddb073cc2f6d",
+    "text": "That's correct!\nThis option is known as the fixed-amount option. For example, the beneficiary might request to receive monthly payments of $500.",
+    "payload": {
+      "chunk_index": 72,
+      "total_chunks": 146,
+      "page_number": 25,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Payment Method",
+      "node_name": "Settlement Options",
+      "node_id": 291,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "2503b086-6da5-456e-be29-d663ddcc10f7",
+        "3af7646c-d120-4fd0-9b00-e28292024c79",
+        "75095087-8e98-4e10-99c6-8c91626c658d"
+      ],
+      "next": [
+        "6f0732b5-597e-40ba-b13c-6a904188b4ec",
+        "e2652756-c2d3-4c11-9d7a-13f1f39754c5",
+        "37791f3f-4553-4389-9f33-21d013a4ac63"
+      ]
+    }
+  },
+  {
+    "id": "6f0732b5-597e-40ba-b13c-6a904188b4ec",
+    "text": "Policy proceeds are deposited into an interest-bearing checking account in the payee's\nname.\nLife Income Option\nRetained Asset Account (RAA) Option\nFixed-Period Option\nInterest Option\nFixed-Amount Option\n\n**[TEXT DATA]**\n\nPolicy proceeds and interest are paid in a series of payments over the payee's lifetime.\n\n- Life Income Option\n- Retained Asset Account (RAA) Option\n- Fixed-Period Option\n- Interest Option\n- Fixed-Amount Option",
+    "payload": {
+      "chunk_index": 73,
+      "total_chunks": 146,
+      "page_number": 26,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Payment Method",
+      "node_name": "Settlement Options",
+      "node_id": 291,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "3af7646c-d120-4fd0-9b00-e28292024c79",
+        "75095087-8e98-4e10-99c6-8c91626c658d",
+        "5ea88eb0-80ce-4063-b72e-ddb073cc2f6d"
+      ],
+      "next": [
+        "e2652756-c2d3-4c11-9d7a-13f1f39754c5",
+        "37791f3f-4553-4389-9f33-21d013a4ac63",
+        "d3891e85-c577-498b-beaa-4a401a4e66c1"
+      ]
+    }
+  },
+  {
+    "id": "e2652756-c2d3-4c11-9d7a-13f1f39754c5",
+    "text": "That's correct!\nThis option is known as the life income option. The insurer would calculate the amount of each payment using actuarial assumptions about various factors, including how long the average person of the beneficiary's age and sex is likely to live.",
+    "payload": {
+      "chunk_index": 74,
+      "total_chunks": 146,
+      "page_number": 26,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Payment Method",
+      "node_name": "Settlement Options",
+      "node_id": 291,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "75095087-8e98-4e10-99c6-8c91626c658d",
+        "5ea88eb0-80ce-4063-b72e-ddb073cc2f6d",
+        "6f0732b5-597e-40ba-b13c-6a904188b4ec"
+      ],
+      "next": [
+        "37791f3f-4553-4389-9f33-21d013a4ac63",
+        "d3891e85-c577-498b-beaa-4a401a4e66c1",
+        "a87316f3-3de0-4523-878f-38d2d617d075"
+      ]
+    }
+  },
+  {
+    "id": "37791f3f-4553-4389-9f33-21d013a4ac63",
+    "text": "The insurer invests the policy proceeds and periodically pays interest on these proceeds\nto the payee.\nLife Income Option\nRetained Asset Account (RAA) Option\nFixed-Period Option\nInterest Option\nFixed-Amount Option\n\n**[TEXT DATA]**\n\nPolicy proceeds are deposited into an interest-bearing checking account in the payee's name.\n\n- Life Income Option\n- Retained Asset Account (RAA) Option\n- Fixed-Period Option\n- Interest Option\n- Fixed-Amount Option",
+    "payload": {
+      "chunk_index": 75,
+      "total_chunks": 146,
+      "page_number": 27,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Payment Method",
+      "node_name": "Settlement Options",
+      "node_id": 291,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "5ea88eb0-80ce-4063-b72e-ddb073cc2f6d",
+        "6f0732b5-597e-40ba-b13c-6a904188b4ec",
+        "e2652756-c2d3-4c11-9d7a-13f1f39754c5"
+      ],
+      "next": [
+        "d3891e85-c577-498b-beaa-4a401a4e66c1",
+        "a87316f3-3de0-4523-878f-38d2d617d075",
+        "8610e1d1-2fe1-42ed-8819-156b40ee8094"
+      ]
+    }
+  },
+  {
+    "id": "d3891e85-c577-498b-beaa-4a401a4e66c1",
+    "text": "That's correct!\nThis option is known as the retained asset account (RAA) option. The payee can withdraw some or all of the proceeds from the account at any time.",
+    "payload": {
+      "chunk_index": 76,
+      "total_chunks": 146,
+      "page_number": 27,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Payment Method",
+      "node_name": "Settlement Options",
+      "node_id": 291,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "6f0732b5-597e-40ba-b13c-6a904188b4ec",
+        "e2652756-c2d3-4c11-9d7a-13f1f39754c5",
+        "37791f3f-4553-4389-9f33-21d013a4ac63"
+      ],
+      "next": [
+        "a87316f3-3de0-4523-878f-38d2d617d075",
+        "8610e1d1-2fe1-42ed-8819-156b40ee8094",
+        "70d21662-f511-4cdb-b9e1-c490d0fd3689"
+      ]
+    }
+  },
+  {
+    "id": "a87316f3-3de0-4523-878f-38d2d617d075",
+    "text": "Annuity Death Benefit Process\nProcessing annuity death benefit claims is very similar to processing life insurance\ndeath benefit claims but differs in some ways. Use the right arrows below to look at\nthe steps in this process.\n1. Authenticating and Documenting the Claim\n\n**[TEXT DATA]**\n\nThe insurer invests the policy proceeds and periodically pays interest on these proceeds to the payee.",
+    "payload": {
+      "chunk_index": 77,
+      "total_chunks": 146,
+      "page_number": 28,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Process",
+      "node_name": "The Claim Process",
+      "node_id": 286,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "e2652756-c2d3-4c11-9d7a-13f1f39754c5",
+        "37791f3f-4553-4389-9f33-21d013a4ac63",
+        "d3891e85-c577-498b-beaa-4a401a4e66c1"
+      ],
+      "next": [
+        "8610e1d1-2fe1-42ed-8819-156b40ee8094",
+        "70d21662-f511-4cdb-b9e1-c490d0fd3689",
+        "f7dab968-e999-4624-a167-503d9365be46"
+      ]
+    }
+  },
+  {
+    "id": "8610e1d1-2fe1-42ed-8819-156b40ee8094",
+    "text": "- Life Income Option\n- Retained Asset Account (RAA) Option\n- Fixed-Period Option\n- Interest Option\n- Fixed-Amount Option\n\nThat's correct!\nThis option is known as the interest option.",
+    "payload": {
+      "chunk_index": 78,
+      "total_chunks": 146,
+      "page_number": 28,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Payment Method",
+      "node_name": "Settlement Options",
+      "node_id": 291,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "37791f3f-4553-4389-9f33-21d013a4ac63",
+        "d3891e85-c577-498b-beaa-4a401a4e66c1",
+        "a87316f3-3de0-4523-878f-38d2d617d075"
+      ],
+      "next": [
+        "70d21662-f511-4cdb-b9e1-c490d0fd3689",
+        "f7dab968-e999-4624-a167-503d9365be46",
+        "fefc13af-fa7e-4c20-b044-2da18e9f1221"
+      ]
+    }
+  },
+  {
+    "id": "70d21662-f511-4cdb-b9e1-c490d0fd3689",
+    "text": "As with life insurance claims, annuity death benefit claims start with a\nclaimant's statement and official death certificate.\n2. Determining the Amount of the Death Benefit\nThe death benefit amount is usually the annuity's accumulated value on the\nday the insurer receives required documentation.\n3. Addressing Applicable Tax Issues\nUnlike life insurance death benefits, annuity death benefits typically result\nin taxable income to the beneficiary.",
+    "payload": {
+      "chunk_index": 79,
+      "total_chunks": 146,
+      "page_number": 29,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Process",
+      "node_name": "The Claim Process",
+      "node_id": 286,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "d3891e85-c577-498b-beaa-4a401a4e66c1",
+        "a87316f3-3de0-4523-878f-38d2d617d075",
+        "8610e1d1-2fe1-42ed-8819-156b40ee8094"
+      ],
+      "next": [
+        "f7dab968-e999-4624-a167-503d9365be46",
+        "fefc13af-fa7e-4c20-b044-2da18e9f1221",
+        "f3756c0c-ab7f-4a79-87bd-56dba71c61b6"
+      ]
+    }
+  },
+  {
+    "id": "f7dab968-e999-4624-a167-503d9365be46",
+    "text": "in taxable income to the beneficiary.\nThe insurer reports the total payment, the taxable portion of the payment,\nand any taxes withheld to the beneficiary and to tax authorities.",
+    "payload": {
+      "chunk_index": 80,
+      "total_chunks": 146,
+      "page_number": 29,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Beneficiary Determination",
+      "node_id": 289,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "a87316f3-3de0-4523-878f-38d2d617d075",
+        "8610e1d1-2fe1-42ed-8819-156b40ee8094",
+        "70d21662-f511-4cdb-b9e1-c490d0fd3689"
+      ],
+      "next": [
+        "fefc13af-fa7e-4c20-b044-2da18e9f1221",
+        "f3756c0c-ab7f-4a79-87bd-56dba71c61b6",
+        "94db6371-0b42-4352-9e43-a0ad73e68bd6"
+      ]
+    }
+  },
+  {
+    "id": "fefc13af-fa7e-4c20-b044-2da18e9f1221",
+    "text": "4. Paying the Death Benefit\nThe insurer pays the annuity death benefit as a lump sum or according to a\nsettlement option chosen by the contract owner or beneficiary.\nYunel Mendoza was the insured under a $100,000 life insurance policy that included\nan accidental death benefit. After Mr. Mendoza died in an accident, a claim analyst\napproved the claim and determined the following amounts pertaining to the policy:\n\n$300 in premiums paid in advance\n\nA $3,000 outstanding policy loan\n",
+    "payload": {
+      "chunk_index": 81,
+      "total_chunks": 146,
+      "page_number": 30,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Payment Method",
+      "node_name": "Settlement Options",
+      "node_id": 291,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "8610e1d1-2fe1-42ed-8819-156b40ee8094",
+        "70d21662-f511-4cdb-b9e1-c490d0fd3689",
+        "f7dab968-e999-4624-a167-503d9365be46"
+      ],
+      "next": [
+        "f3756c0c-ab7f-4a79-87bd-56dba71c61b6",
+        "94db6371-0b42-4352-9e43-a0ad73e68bd6",
+        "c2af6dd3-2d5e-4f52-a8a7-ffa816505bf4"
+      ]
+    }
+  },
+  {
+    "id": "f3756c0c-ab7f-4a79-87bd-56dba71c61b6",
+    "text": "\n$300 in premiums paid in advance\n\nA $3,000 outstanding policy loan\n\n$200 in accrued policy loan interest\n\n$5,000 paid up additional coverage\n\n$400 in declared but unpaid policy dividends\n\n$100,000 accidental death benefits\nWhat are the total proceeds payable to the beneficiary?\n$201,700",
+    "payload": {
+      "chunk_index": 82,
+      "total_chunks": 146,
+      "page_number": 30,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Beneficiary Determination",
+      "node_id": 289,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "70d21662-f511-4cdb-b9e1-c490d0fd3689",
+        "f7dab968-e999-4624-a167-503d9365be46",
+        "fefc13af-fa7e-4c20-b044-2da18e9f1221"
+      ],
+      "next": [
+        "94db6371-0b42-4352-9e43-a0ad73e68bd6",
+        "c2af6dd3-2d5e-4f52-a8a7-ffa816505bf4",
+        "07f129ff-a210-4dea-8541-58bc94cc4658"
+      ]
+    }
+  },
+  {
+    "id": "94db6371-0b42-4352-9e43-a0ad73e68bd6",
+    "text": "$202,500\n$205,700\nWhen Mickey Evans dies, his life insurance policy proceeds can't go to his named\nbeneficiary, his wife Carla, because she is also dead. He named their adult son Alex as\nthe contingent beneficiary, and his adult daughter Abigail as the second contingent\nbeneficiary. Both children are still alive. In this case, who will receive the proceeds of\nhis policy?\n\n**[TEXT DATA]**\n\nWhat are the total proceeds payable to the beneficiary?\n\n$201,700\n$202,500\n$205,700",
+    "payload": {
+      "chunk_index": 83,
+      "total_chunks": 146,
+      "page_number": 31,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Beneficiary Determination",
+      "node_id": 289,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "f7dab968-e999-4624-a167-503d9365be46",
+        "fefc13af-fa7e-4c20-b044-2da18e9f1221",
+        "f3756c0c-ab7f-4a79-87bd-56dba71c61b6"
+      ],
+      "next": [
+        "c2af6dd3-2d5e-4f52-a8a7-ffa816505bf4",
+        "07f129ff-a210-4dea-8541-58bc94cc4658",
+        "fd9a9189-ea59-4c07-9688-8c0ae759e9bf"
+      ]
+    }
+  },
+  {
+    "id": "c2af6dd3-2d5e-4f52-a8a7-ffa816505bf4",
+    "text": "**[TEXT DATA]**\n\nWhat are the total proceeds payable to the beneficiary?\n\n$201,700\n$202,500\n$205,700\n\nThat's correct!\nThe correct amount is $202,500.\n$100,000 basic death benefit\n+ 300 premium paid in advance\n+ 5,000 paid-up additional coverage\n+ 400 declared but unpaid policy dividend\n+ 100,000 accidental death benefit\n$205,700 subtotal\n- 3,000 outstanding policy loan\n- 200 policy loan interest\n$202,500 proceeds payable",
+    "payload": {
+      "chunk_index": 84,
+      "total_chunks": 146,
+      "page_number": 31,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Claim Benefit Calculation",
+      "node_id": 290,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "fefc13af-fa7e-4c20-b044-2da18e9f1221",
+        "f3756c0c-ab7f-4a79-87bd-56dba71c61b6",
+        "94db6371-0b42-4352-9e43-a0ad73e68bd6"
+      ],
+      "next": [
+        "07f129ff-a210-4dea-8541-58bc94cc4658",
+        "fd9a9189-ea59-4c07-9688-8c0ae759e9bf",
+        "fa3963df-7a90-494f-b010-11e00fcb1295"
+      ]
+    }
+  },
+  {
+    "id": "07f129ff-a210-4dea-8541-58bc94cc4658",
+    "text": "Alex\nAbigail\nAlex and Abigail will each receive half of the proceeds\nClaim Investigations and Claim Fraud\nLearning Objective\nIdentify the factors that are likely to trigger a claim investigation, and describe\ndifferent types of claim fraud and measures insurers can take to prevent them.\n\n**[TEXT DATA]**",
+    "payload": {
+      "chunk_index": 85,
+      "total_chunks": 146,
+      "page_number": 32,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Fraud",
+      "node_id": 293,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "f3756c0c-ab7f-4a79-87bd-56dba71c61b6",
+        "94db6371-0b42-4352-9e43-a0ad73e68bd6",
+        "c2af6dd3-2d5e-4f52-a8a7-ffa816505bf4"
+      ],
+      "next": [
+        "fd9a9189-ea59-4c07-9688-8c0ae759e9bf",
+        "fa3963df-7a90-494f-b010-11e00fcb1295",
+        "9cd1a9c0-821d-4cc6-b033-0c3f32af1a7d"
+      ]
+    }
+  },
+  {
+    "id": "fd9a9189-ea59-4c07-9688-8c0ae759e9bf",
+    "text": "**[TEXT DATA]**\n\nWhen Mickey Evans dies, his life insurance policy proceeds can't go to his named beneficiary, his wife Carla, because she is also dead. He named his adult son Alex as the contingent beneficiary, and his adult daughter Abigail as the second contingent beneficiary. Both children are still alive. In this case, who will receive the proceeds of his policy?\n\n- Alex\n- Abigail\n- Alex and Abigail will each receive half of the proceeds",
+    "payload": {
+      "chunk_index": 86,
+      "total_chunks": 146,
+      "page_number": 32,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Beneficiary Determination",
+      "node_id": 289,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "94db6371-0b42-4352-9e43-a0ad73e68bd6",
+        "c2af6dd3-2d5e-4f52-a8a7-ffa816505bf4",
+        "07f129ff-a210-4dea-8541-58bc94cc4658"
+      ],
+      "next": [
+        "fa3963df-7a90-494f-b010-11e00fcb1295",
+        "9cd1a9c0-821d-4cc6-b033-0c3f32af1a7d",
+        "19da0049-2093-4a88-8e11-fb1f1669dcde"
+      ]
+    }
+  },
+  {
+    "id": "fa3963df-7a90-494f-b010-11e00fcb1295",
+    "text": "- Alex\n- Abigail\n- Alex and Abigail will each receive half of the proceeds\n\nThat's correct!\nIf no primary beneficiary is alive at the time of the insured's death, the insurer will pay the benefits to the contingent beneficiary, or second contingent beneficiary if the contingent beneficiary is deceased. Since Alex is the contingent beneficiary and he is still alive, the insurer will pay the proceeds to him.",
+    "payload": {
+      "chunk_index": 87,
+      "total_chunks": 146,
+      "page_number": 32,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Beneficiary Determination",
+      "node_id": 289,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "c2af6dd3-2d5e-4f52-a8a7-ffa816505bf4",
+        "07f129ff-a210-4dea-8541-58bc94cc4658",
+        "fd9a9189-ea59-4c07-9688-8c0ae759e9bf"
+      ],
+      "next": [
+        "9cd1a9c0-821d-4cc6-b033-0c3f32af1a7d",
+        "19da0049-2093-4a88-8e11-fb1f1669dcde",
+        "bdf32e23-dd17-47e5-a633-2998f02426f2"
+      ]
+    }
+  },
+  {
+    "id": "9cd1a9c0-821d-4cc6-b033-0c3f32af1a7d",
+    "text": "Now that you've learned about the claim process, let's discuss claim investigations.\nWhat if a claim analyst can't determine Forthright's liability because\n\nThe claimant's statement and proof of loss document don't provide enough\ninformation or\n\nThe correct payee isn't apparent…or maybe…\n\nSomething just seems wrong\nAny of these situations could trigger an investigation. Let's find out why.\nClaim Investigations\nIf a claim analyst suspects material misrepresentation or fraud, the claim analyst",
+    "payload": {
+      "chunk_index": 88,
+      "total_chunks": 146,
+      "page_number": 33,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Investigation",
+      "node_id": 292,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "07f129ff-a210-4dea-8541-58bc94cc4658",
+        "fd9a9189-ea59-4c07-9688-8c0ae759e9bf",
+        "fa3963df-7a90-494f-b010-11e00fcb1295"
+      ],
+      "next": [
+        "19da0049-2093-4a88-8e11-fb1f1669dcde",
+        "bdf32e23-dd17-47e5-a633-2998f02426f2",
+        "d0b5d80f-5803-4293-9194-b26b6b421f83"
+      ]
+    }
+  },
+  {
+    "id": "19da0049-2093-4a88-8e11-fb1f1669dcde",
+    "text": "If a claim analyst suspects material misrepresentation or fraud, the claim analyst\nlaunches a claim investigation, which is the process of obtaining the additional\ninformation necessary to make an appropriate claim decision. Although most claim\ninvestigations involve short, simple searches such as checking a medical record, a few\ncan be quite extensive. For example, in more complicated cases, a claim analyst might\ncall upon the special investigative unit (SIU), which is composed of representatives of",
+    "payload": {
+      "chunk_index": 89,
+      "total_chunks": 146,
+      "page_number": 33,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Investigation",
+      "node_id": 292,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "fd9a9189-ea59-4c07-9688-8c0ae759e9bf",
+        "fa3963df-7a90-494f-b010-11e00fcb1295",
+        "9cd1a9c0-821d-4cc6-b033-0c3f32af1a7d"
+      ],
+      "next": [
+        "bdf32e23-dd17-47e5-a633-2998f02426f2",
+        "d0b5d80f-5803-4293-9194-b26b6b421f83",
+        "0060a3d0-c2c4-4a7f-92bf-d8c2d65e82a1"
+      ]
+    }
+  },
+  {
+    "id": "bdf32e23-dd17-47e5-a633-2998f02426f2",
+    "text": "call upon the special investigative unit (SIU), which is composed of representatives of\nthe claim, legal, and internal audit departments, as well as independent investigators.\nSources of additional information for a claim investigation can include:\n\nMedical records\n\nMotor vehicle records\n\nCriminal court records\n\nAutopsy Reports\n\nInvestigative consumer reports\n\nAny other source that might help",
+    "payload": {
+      "chunk_index": 90,
+      "total_chunks": 146,
+      "page_number": 33,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Investigation",
+      "node_id": 292,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "fa3963df-7a90-494f-b010-11e00fcb1295",
+        "9cd1a9c0-821d-4cc6-b033-0c3f32af1a7d",
+        "19da0049-2093-4a88-8e11-fb1f1669dcde"
+      ],
+      "next": [
+        "d0b5d80f-5803-4293-9194-b26b6b421f83",
+        "0060a3d0-c2c4-4a7f-92bf-d8c2d65e82a1",
+        "a1bb0970-6816-444b-a2c4-cf41180d70c9"
+      ]
+    }
+  },
+  {
+    "id": "d0b5d80f-5803-4293-9194-b26b6b421f83",
+    "text": "Some investigations are quick and simple. Others are extensive. Select all factors that\nmight make the claim investigation extensive.\nDeath is unusual given the insured's age\nMysterious death\nDeath occurred during suicide exclusion period or contestable period\nPolicy has an exclusion rider\nDeath is from natural causes\nPolicy has a relatively high face amount\nDeath happened abroad\nWhen investigating claims, Forthright must\n\nFollow all privacy laws\n",
+    "payload": {
+      "chunk_index": 91,
+      "total_chunks": 146,
+      "page_number": 34,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Investigation",
+      "node_id": 292,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "9cd1a9c0-821d-4cc6-b033-0c3f32af1a7d",
+        "19da0049-2093-4a88-8e11-fb1f1669dcde",
+        "bdf32e23-dd17-47e5-a633-2998f02426f2"
+      ],
+      "next": [
+        "0060a3d0-c2c4-4a7f-92bf-d8c2d65e82a1",
+        "a1bb0970-6816-444b-a2c4-cf41180d70c9",
+        "b579e86f-f212-41d1-9f68-31a9d8e086f7"
+      ]
+    }
+  },
+  {
+    "id": "0060a3d0-c2c4-4a7f-92bf-d8c2d65e82a1",
+    "text": "Death happened abroad\nWhen investigating claims, Forthright must\n\nFollow all privacy laws\n\nObtain information by only lawful, reasonable, and ethical means\n\nProtect the confidentiality of information",
+    "payload": {
+      "chunk_index": 92,
+      "total_chunks": 146,
+      "page_number": 34,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Investigation",
+      "node_id": 292,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "19da0049-2093-4a88-8e11-fb1f1669dcde",
+        "bdf32e23-dd17-47e5-a633-2998f02426f2",
+        "d0b5d80f-5803-4293-9194-b26b6b421f83"
+      ],
+      "next": [
+        "a1bb0970-6816-444b-a2c4-cf41180d70c9",
+        "b579e86f-f212-41d1-9f68-31a9d8e086f7",
+        "30d0b64a-e9dd-47c7-8b19-ec7948e31ba0"
+      ]
+    }
+  },
+  {
+    "id": "a1bb0970-6816-444b-a2c4-cf41180d70c9",
+    "text": "In many jurisdictions, conducting an investigation under a false pretext is prohibited.\nIn addition to complying with legal requirements, insurers like Forthright must also\ncarefully weigh the potential benefits from a claim investigation against the costs. The\ncosts of a claim investigation—staff salaries and the costs related to independent\ninvestigators—can be quite expensive. Generally, the more complex the investigation,\nthe higher the cost involved.\nClaim Fraud\n\n**[TEXT DATA]**",
+    "payload": {
+      "chunk_index": 93,
+      "total_chunks": 146,
+      "page_number": 35,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Fraud",
+      "node_id": 293,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "bdf32e23-dd17-47e5-a633-2998f02426f2",
+        "d0b5d80f-5803-4293-9194-b26b6b421f83",
+        "0060a3d0-c2c4-4a7f-92bf-d8c2d65e82a1"
+      ],
+      "next": [
+        "b579e86f-f212-41d1-9f68-31a9d8e086f7",
+        "30d0b64a-e9dd-47c7-8b19-ec7948e31ba0",
+        "bb6336f7-3c41-44f5-a8b0-2aa7620f76fa"
+      ]
+    }
+  },
+  {
+    "id": "b579e86f-f212-41d1-9f68-31a9d8e086f7",
+    "text": "**[TEXT DATA]**\n\nSome investigations are quick and simple. Others are extensive. Select all factors that might make the claim investigation extensive.\n\n- Death is unusual given the insured's age\n- Mysterious death\n- Death occurred during suicide exclusion period or contestable period\n- Policy has an exclusion rider\n- Death is from natural causes\n- Policy has a relatively high face amount\n- Death happened abroad",
+    "payload": {
+      "chunk_index": 94,
+      "total_chunks": 146,
+      "page_number": 35,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Investigation",
+      "node_id": 292,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "d0b5d80f-5803-4293-9194-b26b6b421f83",
+        "0060a3d0-c2c4-4a7f-92bf-d8c2d65e82a1",
+        "a1bb0970-6816-444b-a2c4-cf41180d70c9"
+      ],
+      "next": [
+        "30d0b64a-e9dd-47c7-8b19-ec7948e31ba0",
+        "bb6336f7-3c41-44f5-a8b0-2aa7620f76fa",
+        "39f09bd8-7c83-47f1-bb78-fb2960d46e90"
+      ]
+    }
+  },
+  {
+    "id": "30d0b64a-e9dd-47c7-8b19-ec7948e31ba0",
+    "text": "That's correct!\nA claim investigation might be extensive if the death is mysterious or unusual given the insured's age; if it occurred during the suicide exclusion or contestable periods; or if it happened while the insured was traveling in a foreign country. The investigation also might be extensive if the policy has an exclusion rider or a relatively high face amount.",
+    "payload": {
+      "chunk_index": 95,
+      "total_chunks": 146,
+      "page_number": 35,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Investigation",
+      "node_id": 292,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "0060a3d0-c2c4-4a7f-92bf-d8c2d65e82a1",
+        "a1bb0970-6816-444b-a2c4-cf41180d70c9",
+        "b579e86f-f212-41d1-9f68-31a9d8e086f7"
+      ],
+      "next": [
+        "bb6336f7-3c41-44f5-a8b0-2aa7620f76fa",
+        "39f09bd8-7c83-47f1-bb78-fb2960d46e90",
+        "bdeae64f-8dae-4b71-abc2-5fc480eaac6b"
+      ]
+    }
+  },
+  {
+    "id": "bb6336f7-3c41-44f5-a8b0-2aa7620f76fa",
+    "text": "Only an insured or a beneficiary can commit claim fraud.\nTrue\nFalse\nThere are also numerous types of fraud for insurers to address.\nExamples of Claim Fraud\n\nA man purchases life insurance on several homeless men, names himself as\nbeneficiary, and then receives the policy proceeds after the insureds die.\n\n**[TEXT DATA]**\n\nOnly an insured or a beneficiary can commit claim fraud.\n\nTrue\nFalse",
+    "payload": {
+      "chunk_index": 96,
+      "total_chunks": 146,
+      "page_number": 36,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Fraud",
+      "node_id": 293,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "a1bb0970-6816-444b-a2c4-cf41180d70c9",
+        "b579e86f-f212-41d1-9f68-31a9d8e086f7",
+        "30d0b64a-e9dd-47c7-8b19-ec7948e31ba0"
+      ],
+      "next": [
+        "39f09bd8-7c83-47f1-bb78-fb2960d46e90",
+        "bdeae64f-8dae-4b71-abc2-5fc480eaac6b",
+        "4f003799-7700-42e1-b94a-b6d01b3a1235"
+      ]
+    }
+  },
+  {
+    "id": "39f09bd8-7c83-47f1-bb78-fb2960d46e90",
+    "text": "**[TEXT DATA]**\n\nOnly an insured or a beneficiary can commit claim fraud.\n\nTrue\nFalse\n\nThat's correct!\nAnyone who can influence a claim decision or benefit from an approved claim can commit claim fraud. Such a person can be an insured, a beneficiary, a medical provider, financial professional, or an employee of the insurance company.",
+    "payload": {
+      "chunk_index": 97,
+      "total_chunks": 146,
+      "page_number": 36,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Fraud",
+      "node_id": 293,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "b579e86f-f212-41d1-9f68-31a9d8e086f7",
+        "30d0b64a-e9dd-47c7-8b19-ec7948e31ba0",
+        "bb6336f7-3c41-44f5-a8b0-2aa7620f76fa"
+      ],
+      "next": [
+        "bdeae64f-8dae-4b71-abc2-5fc480eaac6b",
+        "4f003799-7700-42e1-b94a-b6d01b3a1235",
+        "78eddf25-68ae-422d-b63c-a441be5e3782"
+      ]
+    }
+  },
+  {
+    "id": "bdeae64f-8dae-4b71-abc2-5fc480eaac6b",
+    "text": "\nA claim analyst issues claim checks for the death benefits on life policies covering\ntwo nonexistent children. She invents police reports, doctors' reports, and even\nautopsy reports supporting the claims.\n\nA life insurance applicant pays a healthier person to take his medical\nexamination so the applicant will be accepted by the insurer.\n\nA claim analyst approves a claim for life insurance benefits on a friend's mother,\neven though he knows the mother is still alive.\n",
+    "payload": {
+      "chunk_index": 98,
+      "total_chunks": 146,
+      "page_number": 37,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Fraud",
+      "node_id": 293,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "30d0b64a-e9dd-47c7-8b19-ec7948e31ba0",
+        "bb6336f7-3c41-44f5-a8b0-2aa7620f76fa",
+        "39f09bd8-7c83-47f1-bb78-fb2960d46e90"
+      ],
+      "next": [
+        "4f003799-7700-42e1-b94a-b6d01b3a1235",
+        "78eddf25-68ae-422d-b63c-a441be5e3782",
+        "8e0407fb-be97-485e-89fc-9614ffcd15bf"
+      ]
+    }
+  },
+  {
+    "id": "4f003799-7700-42e1-b94a-b6d01b3a1235",
+    "text": "even though he knows the mother is still alive.\n\nA beneficiary claims that the insured died as a result of an accident in an\nattempt to receive the policy's accidental death benefit, even though the insured\ndied of natural causes.\nPreventing Claim Fraud\nSome jurisdictions require insurers to take certain measures to prevent, detect,\ninvestigate, and prosecute claim fraud, and some states require insurers to form SIUs\nto investigate suspected cases of fraud. Claim analysts and SIU staff members receive",
+    "payload": {
+      "chunk_index": 99,
+      "total_chunks": 146,
+      "page_number": 37,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Fraud",
+      "node_id": 293,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "bb6336f7-3c41-44f5-a8b0-2aa7620f76fa",
+        "39f09bd8-7c83-47f1-bb78-fb2960d46e90",
+        "bdeae64f-8dae-4b71-abc2-5fc480eaac6b"
+      ],
+      "next": [
+        "78eddf25-68ae-422d-b63c-a441be5e3782",
+        "8e0407fb-be97-485e-89fc-9614ffcd15bf",
+        "40f8c7be-745a-4af1-a1aa-9a7bd7daa422"
+      ]
+    }
+  },
+  {
+    "id": "78eddf25-68ae-422d-b63c-a441be5e3782",
+    "text": "to investigate suspected cases of fraud. Claim analysts and SIU staff members receive\ntraining in detecting and investigating insurance claim fraud and in applying the\nprovisions of unfair claim practices statutes. In addition, many state insurance\ndepartments have established their own fraud investigation units. Insurers also establish\ncontinuous education programs so employees can maintain awareness of existing and\nnew fraudulent activities to minimize their impact on insurance operations.",
+    "payload": {
+      "chunk_index": 100,
+      "total_chunks": 146,
+      "page_number": 37,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Fraud",
+      "node_id": 293,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "39f09bd8-7c83-47f1-bb78-fb2960d46e90",
+        "bdeae64f-8dae-4b71-abc2-5fc480eaac6b",
+        "4f003799-7700-42e1-b94a-b6d01b3a1235"
+      ],
+      "next": [
+        "8e0407fb-be97-485e-89fc-9614ffcd15bf",
+        "40f8c7be-745a-4af1-a1aa-9a7bd7daa422",
+        "a96961f2-728a-4e59-875b-91749a13d3bd"
+      ]
+    }
+  },
+  {
+    "id": "8e0407fb-be97-485e-89fc-9614ffcd15bf",
+    "text": "Many insurers use data analytics to help them detect claim fraud. By analyzing the\nlarge amount of data they own relating to past claims, insurers can identify situations\nthat indicate a heightened risk of fraud. For example, an insurer might discover that\nclaimants who act in a certain way are more likely to be committing claim fraud. Such\ninsights can help insurers identify which claims to investigate further. Insurers can also",
+    "payload": {
+      "chunk_index": 101,
+      "total_chunks": 146,
+      "page_number": 38,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Fraud",
+      "node_id": 293,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "bdeae64f-8dae-4b71-abc2-5fc480eaac6b",
+        "4f003799-7700-42e1-b94a-b6d01b3a1235",
+        "78eddf25-68ae-422d-b63c-a441be5e3782"
+      ],
+      "next": [
+        "40f8c7be-745a-4af1-a1aa-9a7bd7daa422",
+        "a96961f2-728a-4e59-875b-91749a13d3bd",
+        "ecd3988b-deb8-44dc-a90d-6b8aeddf62a1"
+      ]
+    }
+  },
+  {
+    "id": "40f8c7be-745a-4af1-a1aa-9a7bd7daa422",
+    "text": "insights can help insurers identify which claims to investigate further. Insurers can also\ndeploy software that automatically flags cases that exhibit any warning signs of claim\nfraud that the insurer has previously identified. As in many other areas, computers can\ngenerally perform this kind of task more accurately and consistently than humans.\nAnother way insurers can prevent claim fraud is through cross-departmental\ncollaboration. Here, an expert explains how the claims and underwriting departments",
+    "payload": {
+      "chunk_index": 102,
+      "total_chunks": 146,
+      "page_number": 38,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Fraud",
+      "node_id": 293,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "4f003799-7700-42e1-b94a-b6d01b3a1235",
+        "78eddf25-68ae-422d-b63c-a441be5e3782",
+        "8e0407fb-be97-485e-89fc-9614ffcd15bf"
+      ],
+      "next": [
+        "a96961f2-728a-4e59-875b-91749a13d3bd",
+        "ecd3988b-deb8-44dc-a90d-6b8aeddf62a1",
+        "71c58950-7aa7-4620-aa0a-772e70c08557"
+      ]
+    }
+  },
+  {
+    "id": "a96961f2-728a-4e59-875b-91749a13d3bd",
+    "text": "collaboration. Here, an expert explains how the claims and underwriting departments\ncollaborate to prevent claim fraud.",
+    "payload": {
+      "chunk_index": 103,
+      "total_chunks": 146,
+      "page_number": 38,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Fraud",
+      "node_id": 293,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "78eddf25-68ae-422d-b63c-a441be5e3782",
+        "8e0407fb-be97-485e-89fc-9614ffcd15bf",
+        "40f8c7be-745a-4af1-a1aa-9a7bd7daa422"
+      ],
+      "next": [
+        "ecd3988b-deb8-44dc-a90d-6b8aeddf62a1",
+        "71c58950-7aa7-4620-aa0a-772e70c08557",
+        "e9ea78a8-deda-4248-b8c8-cb2dcfb59b45"
+      ]
+    }
+  },
+  {
+    "id": "ecd3988b-deb8-44dc-a90d-6b8aeddf62a1",
+    "text": "Although verifying proof of loss is routine in most cases, a claim analyst would typically\nconduct further investigation in some situations. Identify whether the analyst would\ninvestigate further in each situation described below.\nThe insured was the only one aboard a boat that sank in calm waters 100 feet from\nshore, and the insured's body was not recovered.\nInvestigate further\n\nApprove the claim\nThe insured disappeared under unverifiable circumstances but the claimant submitted",
+    "payload": {
+      "chunk_index": 104,
+      "total_chunks": 146,
+      "page_number": 39,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Concept",
+      "node_name": "Proof of Loss",
+      "node_id": 287,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "8e0407fb-be97-485e-89fc-9614ffcd15bf",
+        "40f8c7be-745a-4af1-a1aa-9a7bd7daa422",
+        "a96961f2-728a-4e59-875b-91749a13d3bd"
+      ],
+      "next": [
+        "71c58950-7aa7-4620-aa0a-772e70c08557",
+        "e9ea78a8-deda-4248-b8c8-cb2dcfb59b45",
+        "369e344c-883f-4e11-a506-44714ab9dc3c"
+      ]
+    }
+  },
+  {
+    "id": "71c58950-7aa7-4620-aa0a-772e70c08557",
+    "text": "Approve the claim\nThe insured disappeared under unverifiable circumstances but the claimant submitted\na court order stating that the insured is presumed dead.",
+    "payload": {
+      "chunk_index": 105,
+      "total_chunks": 146,
+      "page_number": 39,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Beneficiary Determination",
+      "node_id": 289,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "40f8c7be-745a-4af1-a1aa-9a7bd7daa422",
+        "a96961f2-728a-4e59-875b-91749a13d3bd",
+        "ecd3988b-deb8-44dc-a90d-6b8aeddf62a1"
+      ],
+      "next": [
+        "e9ea78a8-deda-4248-b8c8-cb2dcfb59b45",
+        "369e344c-883f-4e11-a506-44714ab9dc3c",
+        "01af320a-cac1-4071-8f6c-b7c47c7a3210"
+      ]
+    }
+  },
+  {
+    "id": "e9ea78a8-deda-4248-b8c8-cb2dcfb59b45",
+    "text": "**[TEXT DATA]**\n\nAlthough verifying proof of loss is routine in most cases, a claim analyst would typically conduct further investigation in some situations. Identify whether the analyst would investigate further in each situation described below.\n\nThe insured was the only one aboard a boat that sank in calm waters 100 feet from shore, and the insured's body was not recovered.\n\n- Investigate further\n- Approve the claim",
+    "payload": {
+      "chunk_index": 106,
+      "total_chunks": 146,
+      "page_number": 39,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Concept",
+      "node_name": "Proof of Loss",
+      "node_id": 287,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "a96961f2-728a-4e59-875b-91749a13d3bd",
+        "ecd3988b-deb8-44dc-a90d-6b8aeddf62a1",
+        "71c58950-7aa7-4620-aa0a-772e70c08557"
+      ],
+      "next": [
+        "369e344c-883f-4e11-a506-44714ab9dc3c",
+        "01af320a-cac1-4071-8f6c-b7c47c7a3210",
+        "a7070935-ca51-411f-80b5-bf326b72ba4d"
+      ]
+    }
+  },
+  {
+    "id": "369e344c-883f-4e11-a506-44714ab9dc3c",
+    "text": "- Investigate further\n- Approve the claim\n\nThat's correct!\nThe boat sinking under these circumstances cannot reasonably account for the disappearance of the insured.",
+    "payload": {
+      "chunk_index": 107,
+      "total_chunks": 146,
+      "page_number": 39,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Claim Process Step",
+      "node_name": "Claim Evaluation",
+      "node_id": 288,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "ecd3988b-deb8-44dc-a90d-6b8aeddf62a1",
+        "71c58950-7aa7-4620-aa0a-772e70c08557",
+        "e9ea78a8-deda-4248-b8c8-cb2dcfb59b45"
+      ],
+      "next": [
+        "01af320a-cac1-4071-8f6c-b7c47c7a3210",
+        "a7070935-ca51-411f-80b5-bf326b72ba4d",
+        "9c07047e-c181-45ec-8e59-26375e28baa5"
+      ]
+    }
+  },
+  {
+    "id": "01af320a-cac1-4071-8f6c-b7c47c7a3210",
+    "text": "Investigate further\nApprove the claim\nThe insured died outside of the country in which the policy was issued.\nInvestigate further\nApprove the claim\n\n**[TEXT DATA]**\n\nThe insured disappeared under unverifiable circumstances but the claimant submitted a court order stating that the insured is presumed dead.\n\n- Investigate further\n- Approve the claim\n\nThat's correct!\nA court order stating that the insured is presumed dead establishes proof of the insured's death.\n\n**[TEXT DATA]**",
+    "payload": {
+      "chunk_index": 108,
+      "total_chunks": 146,
+      "page_number": 40,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Concept",
+      "node_name": "Proof of Loss",
+      "node_id": 287,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "71c58950-7aa7-4620-aa0a-772e70c08557",
+        "e9ea78a8-deda-4248-b8c8-cb2dcfb59b45",
+        "369e344c-883f-4e11-a506-44714ab9dc3c"
+      ],
+      "next": [
+        "a7070935-ca51-411f-80b5-bf326b72ba4d",
+        "9c07047e-c181-45ec-8e59-26375e28baa5",
+        "f1bcc073-948b-40cf-9af8-470db0761c9b"
+      ]
+    }
+  },
+  {
+    "id": "a7070935-ca51-411f-80b5-bf326b72ba4d",
+    "text": "**[TEXT DATA]**\n\nThe insured died outside of the country in which the policy was issued.\nInvestigate further\nApprove the claim\nThat's correct!\nBecause the procedures for registration of death vary by country, situations in which the insured dies abroad may increase the likelihood of fraud.",
+    "payload": {
+      "chunk_index": 109,
+      "total_chunks": 146,
+      "page_number": 40,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Fraud",
+      "node_id": 293,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "e9ea78a8-deda-4248-b8c8-cb2dcfb59b45",
+        "369e344c-883f-4e11-a506-44714ab9dc3c",
+        "01af320a-cac1-4071-8f6c-b7c47c7a3210"
+      ],
+      "next": [
+        "9c07047e-c181-45ec-8e59-26375e28baa5",
+        "f1bcc073-948b-40cf-9af8-470db0761c9b",
+        "d63e65dc-cac9-40dc-8016-474801e98fef"
+      ]
+    }
+  },
+  {
+    "id": "9c07047e-c181-45ec-8e59-26375e28baa5",
+    "text": "The insured died by suicide after the policy's suicide exclusion period expired.\nInvestigate further\nApprove the claim\nUse the following information to answer the questions below.\nFred Kingsley, a claim analyst, received a claim for the proceeds of a $500,000 life\ninsurance policy. Although the claim included a claimant's statement and death\ncertificate as proof of loss, Mr. Kingsley suspected claim fraud and initiated a claim\ninvestigation.",
+    "payload": {
+      "chunk_index": 110,
+      "total_chunks": 146,
+      "page_number": 41,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Investigation",
+      "node_id": 292,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "369e344c-883f-4e11-a506-44714ab9dc3c",
+        "01af320a-cac1-4071-8f6c-b7c47c7a3210",
+        "a7070935-ca51-411f-80b5-bf326b72ba4d"
+      ],
+      "next": [
+        "f1bcc073-948b-40cf-9af8-470db0761c9b",
+        "d63e65dc-cac9-40dc-8016-474801e98fef",
+        "7f4ea5a3-42ca-4218-bf75-73a53a71a2c6"
+      ]
+    }
+  },
+  {
+    "id": "f1bcc073-948b-40cf-9af8-470db0761c9b",
+    "text": "certificate as proof of loss, Mr. Kingsley suspected claim fraud and initiated a claim\ninvestigation.\nIn this situation, claim fraud could have been committed by (choose all that apply)\nThe policy beneficiary\n☐The medical provider who signed the death certificate\n☐The financial professional who sold the policy",
+    "payload": {
+      "chunk_index": 111,
+      "total_chunks": 146,
+      "page_number": 41,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Fraud",
+      "node_id": 293,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "01af320a-cac1-4071-8f6c-b7c47c7a3210",
+        "a7070935-ca51-411f-80b5-bf326b72ba4d",
+        "9c07047e-c181-45ec-8e59-26375e28baa5"
+      ],
+      "next": [
+        "d63e65dc-cac9-40dc-8016-474801e98fef",
+        "7f4ea5a3-42ca-4218-bf75-73a53a71a2c6",
+        "54a30763-33dc-41ef-b450-ae16df300410"
+      ]
+    }
+  },
+  {
+    "id": "d63e65dc-cac9-40dc-8016-474801e98fef",
+    "text": "**[TEXT DATA]**\n\nThe insured died by suicide after the policy's suicide exclusion period expired.\n\nInvestigate further\nApprove the claim\n\nThat's correct!\nIf death occurs by suicide after the exclusion period expires, the insurer is liable for the proceeds.",
+    "payload": {
+      "chunk_index": 112,
+      "total_chunks": 146,
+      "page_number": 41,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Process",
+      "node_name": "The Claim Process",
+      "node_id": 286,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "a7070935-ca51-411f-80b5-bf326b72ba4d",
+        "9c07047e-c181-45ec-8e59-26375e28baa5",
+        "f1bcc073-948b-40cf-9af8-470db0761c9b"
+      ],
+      "next": [
+        "7f4ea5a3-42ca-4218-bf75-73a53a71a2c6",
+        "54a30763-33dc-41ef-b450-ae16df300410",
+        "5668e9ff-ac55-4892-b5cb-fdfec917a0b5"
+      ]
+    }
+  },
+  {
+    "id": "7f4ea5a3-42ca-4218-bf75-73a53a71a2c6",
+    "text": "Mr. Kingsley from our previous question can protect the privacy of the insurer, the\npolicy beneficiary, and other people involved in the claim investigation by concealing\nthe actual purpose of the investigation from people he speaks to as part of the\ninvestigation.\nTrue\nFalse\n\n**[TEXT DATA]**\n\nUse the following information to answer the questions below.",
+    "payload": {
+      "chunk_index": 113,
+      "total_chunks": 146,
+      "page_number": 42,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Investigation",
+      "node_id": 292,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "9c07047e-c181-45ec-8e59-26375e28baa5",
+        "f1bcc073-948b-40cf-9af8-470db0761c9b",
+        "d63e65dc-cac9-40dc-8016-474801e98fef"
+      ],
+      "next": [
+        "54a30763-33dc-41ef-b450-ae16df300410",
+        "5668e9ff-ac55-4892-b5cb-fdfec917a0b5",
+        "9ae4d181-5c59-4b42-82d4-e52023f83bc4"
+      ]
+    }
+  },
+  {
+    "id": "54a30763-33dc-41ef-b450-ae16df300410",
+    "text": "**[TEXT DATA]**\n\nUse the following information to answer the questions below.\n\nFred Kingsley, a claim analyst, received a claim for the proceeds of a $500,000 life insurance policy. Although the claim included a claimant's statement and death certificate as proof of loss, Mr. Kingsley suspected claim fraud and initiated a claim investigation.\n\nIn this situation, claim fraud could have been committed by (choose all that apply)",
+    "payload": {
+      "chunk_index": 114,
+      "total_chunks": 146,
+      "page_number": 42,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Fraud",
+      "node_id": 293,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "f1bcc073-948b-40cf-9af8-470db0761c9b",
+        "d63e65dc-cac9-40dc-8016-474801e98fef",
+        "7f4ea5a3-42ca-4218-bf75-73a53a71a2c6"
+      ],
+      "next": [
+        "5668e9ff-ac55-4892-b5cb-fdfec917a0b5",
+        "9ae4d181-5c59-4b42-82d4-e52023f83bc4",
+        "6c94a8dc-40a9-48fc-83c4-c990a8e17988"
+      ]
+    }
+  },
+  {
+    "id": "5668e9ff-ac55-4892-b5cb-fdfec917a0b5",
+    "text": "In this situation, claim fraud could have been committed by (choose all that apply)\n\n- The policy beneficiary\n- The medical provider who signed the death certificate\n- The financial professional who sold the policy\n\nThat's correct!\nAny person who is in a position to influence a claim decision or benefit from an approved claim can commit claim fraud. Such a person can be an insured, a beneficiary, a medical provider, a financial professional, or an insurance company employee.",
+    "payload": {
+      "chunk_index": 115,
+      "total_chunks": 146,
+      "page_number": 42,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Fraud",
+      "node_id": 293,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "d63e65dc-cac9-40dc-8016-474801e98fef",
+        "7f4ea5a3-42ca-4218-bf75-73a53a71a2c6",
+        "54a30763-33dc-41ef-b450-ae16df300410"
+      ],
+      "next": [
+        "9ae4d181-5c59-4b42-82d4-e52023f83bc4",
+        "6c94a8dc-40a9-48fc-83c4-c990a8e17988",
+        "c3ce61fa-1743-401a-941f-72867059183f"
+      ]
+    }
+  },
+  {
+    "id": "9ae4d181-5c59-4b42-82d4-e52023f83bc4",
+    "text": "Unfair Claim Practices\nLearning Objective\nDescribe the Model Unfair Claims Settlement Practices Act and give\nexamples of unfair claim practices that would result in a violation of this act.\n\nFailing to promptly acknowledge receipt of claim-related\ncommunications\nIndicating the coverage under which each payment is being made\nInsisting on a reasonable claim investigation before affirming or\ndenying a claim\nAttempting to settle claims based on an application that was",
+    "payload": {
+      "chunk_index": 116,
+      "total_chunks": 146,
+      "page_number": 43,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Compliance",
+      "node_name": "Unfair Claim Practices",
+      "node_id": 294,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "7f4ea5a3-42ca-4218-bf75-73a53a71a2c6",
+        "54a30763-33dc-41ef-b450-ae16df300410",
+        "5668e9ff-ac55-4892-b5cb-fdfec917a0b5"
+      ],
+      "next": [
+        "6c94a8dc-40a9-48fc-83c4-c990a8e17988",
+        "c3ce61fa-1743-401a-941f-72867059183f",
+        "4a76bc57-4ebc-4b10-91de-3f2220c80573"
+      ]
+    }
+  },
+  {
+    "id": "6c94a8dc-40a9-48fc-83c4-c990a8e17988",
+    "text": "denying a claim\nAttempting to settle claims based on an application that was\nmaterially altered without the policyowners' knowledge",
+    "payload": {
+      "chunk_index": 117,
+      "total_chunks": 146,
+      "page_number": 43,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Compliance",
+      "node_name": "Unfair Claim Practices",
+      "node_id": 294,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "54a30763-33dc-41ef-b450-ae16df300410",
+        "5668e9ff-ac55-4892-b5cb-fdfec917a0b5",
+        "9ae4d181-5c59-4b42-82d4-e52023f83bc4"
+      ],
+      "next": [
+        "c3ce61fa-1743-401a-941f-72867059183f",
+        "4a76bc57-4ebc-4b10-91de-3f2220c80573",
+        "f4800bd0-96ef-4b02-adfc-eb0dfcc523d5"
+      ]
+    }
+  },
+  {
+    "id": "c3ce61fa-1743-401a-941f-72867059183f",
+    "text": "**[TEXT DATA]**\n\nMr. Kingsley from our previous question can protect the privacy of the insurer, the policy beneficiary, and other people involved in the claim investigation by concealing the actual purpose of the investigation from people he speaks to as part of the investigation.\n\nTrue\nFalse\n\nThat's correct!\nInsurers may use only lawful, reasonable, and ethical means of obtaining information when investigating claims. Many jurisdictions prohibit conducting an investigation under a false pretext.",
+    "payload": {
+      "chunk_index": 118,
+      "total_chunks": 146,
+      "page_number": 43,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Investigation",
+      "node_id": 292,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "5668e9ff-ac55-4892-b5cb-fdfec917a0b5",
+        "9ae4d181-5c59-4b42-82d4-e52023f83bc4",
+        "6c94a8dc-40a9-48fc-83c4-c990a8e17988"
+      ],
+      "next": [
+        "4a76bc57-4ebc-4b10-91de-3f2220c80573",
+        "f4800bd0-96ef-4b02-adfc-eb0dfcc523d5",
+        "2efcfce8-9794-477a-9ac6-53c9498fcd84"
+      ]
+    }
+  },
+  {
+    "id": "4a76bc57-4ebc-4b10-91de-3f2220c80573",
+    "text": "Requiring a proof of loss form as well as subsequent verification that\nduplicates the original proof of loss\nCan you recognize the examples of unfair claim practices? Choose all that\napply.\nExamples of Unfair Claim Practices\nMost states have laws based on the Model Unfair Claims Settlement\nPractices Act from the National Association of Insurance Commissioners\n(NAIC).\nThese laws describe specific actions that are considered unfair claim",
+    "payload": {
+      "chunk_index": 119,
+      "total_chunks": 146,
+      "page_number": 44,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Compliance",
+      "node_name": "Unfair Claim Practices",
+      "node_id": 294,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "9ae4d181-5c59-4b42-82d4-e52023f83bc4",
+        "6c94a8dc-40a9-48fc-83c4-c990a8e17988",
+        "c3ce61fa-1743-401a-941f-72867059183f"
+      ],
+      "next": [
+        "f4800bd0-96ef-4b02-adfc-eb0dfcc523d5",
+        "2efcfce8-9794-477a-9ac6-53c9498fcd84",
+        "c12a2186-a1bf-4a9c-ba48-a27d23389ef4"
+      ]
+    }
+  },
+  {
+    "id": "f4800bd0-96ef-4b02-adfc-eb0dfcc523d5",
+    "text": "(NAIC).\nThese laws describe specific actions that are considered unfair claim\npractices if done (1) in conscious disregard of the law or (2) so frequently as\nto indicate a general business practice.",
+    "payload": {
+      "chunk_index": 120,
+      "total_chunks": 146,
+      "page_number": 44,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Compliance",
+      "node_name": "Unfair Claim Practices",
+      "node_id": 294,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "6c94a8dc-40a9-48fc-83c4-c990a8e17988",
+        "c3ce61fa-1743-401a-941f-72867059183f",
+        "4a76bc57-4ebc-4b10-91de-3f2220c80573"
+      ],
+      "next": [
+        "2efcfce8-9794-477a-9ac6-53c9498fcd84",
+        "c12a2186-a1bf-4a9c-ba48-a27d23389ef4",
+        "229e0453-7293-4780-a78c-387d7caf3ddf"
+      ]
+    }
+  },
+  {
+    "id": "2efcfce8-9794-477a-9ac6-53c9498fcd84",
+    "text": "**[TEXT DATA]**\n\nCan you recognize the examples of unfair claim practices? Choose all that apply.",
+    "payload": {
+      "chunk_index": 121,
+      "total_chunks": 146,
+      "page_number": 44,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Compliance",
+      "node_name": "Unfair Claim Practices",
+      "node_id": 294,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "c3ce61fa-1743-401a-941f-72867059183f",
+        "4a76bc57-4ebc-4b10-91de-3f2220c80573",
+        "f4800bd0-96ef-4b02-adfc-eb0dfcc523d5"
+      ],
+      "next": [
+        "c12a2186-a1bf-4a9c-ba48-a27d23389ef4",
+        "229e0453-7293-4780-a78c-387d7caf3ddf",
+        "fa79a26e-fba0-46f7-a7f2-634e1849b6ba"
+      ]
+    }
+  },
+  {
+    "id": "c12a2186-a1bf-4a9c-ba48-a27d23389ef4",
+    "text": "- Failing to promptly acknowledge receipt of claim-related communications\n- Indicating the coverage under which each payment is being made\n- Insisting on a reasonable claim investigation before affirming or denying a claim\n- Attempting to settle claims based on an application that was materially altered without the policyowners' knowledge\n- Requiring a proof of loss form as well as subsequent verification that duplicates the original proof of loss\n\nThat's correct!\nNo fines for you.",
+    "payload": {
+      "chunk_index": 122,
+      "total_chunks": 146,
+      "page_number": 44,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Compliance",
+      "node_name": "Unfair Claim Practices",
+      "node_id": 294,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "4a76bc57-4ebc-4b10-91de-3f2220c80573",
+        "f4800bd0-96ef-4b02-adfc-eb0dfcc523d5",
+        "2efcfce8-9794-477a-9ac6-53c9498fcd84"
+      ],
+      "next": [
+        "229e0453-7293-4780-a78c-387d7caf3ddf",
+        "fa79a26e-fba0-46f7-a7f2-634e1849b6ba",
+        "29075fb1-6321-49f6-81a1-58bae8f020a7"
+      ]
+    }
+  },
+  {
+    "id": "229e0453-7293-4780-a78c-387d7caf3ddf",
+    "text": "Prohibited practices include\n\nFailing to promptly acknowledge receipt of claim-related\ncommunications\n\nFailing to affirm or deny coverage of claims within a reasonable time\nafter the claim investigation is completed\n\nAttempting to settle claims based on an application that was\nmaterially altered without the policyowners' knowledge\n\nRequiring a proof of loss form as well as subsequent verification that\nduplicates the original proof of loss\n",
+    "payload": {
+      "chunk_index": 123,
+      "total_chunks": 146,
+      "page_number": 45,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Compliance",
+      "node_name": "Unfair Claim Practices",
+      "node_id": 294,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "f4800bd0-96ef-4b02-adfc-eb0dfcc523d5",
+        "2efcfce8-9794-477a-9ac6-53c9498fcd84",
+        "c12a2186-a1bf-4a9c-ba48-a27d23389ef4"
+      ],
+      "next": [
+        "fa79a26e-fba0-46f7-a7f2-634e1849b6ba",
+        "29075fb1-6321-49f6-81a1-58bae8f020a7",
+        "e4de50b4-690c-42e7-8dac-ce434b5e397a"
+      ]
+    }
+  },
+  {
+    "id": "fa79a26e-fba0-46f7-a7f2-634e1849b6ba",
+    "text": "duplicates the original proof of loss\n\nCompelling claimants to initiate lawsuits to recover death benefits by\noffering substantially less than the amounts due\n\nKnowingly misrepresenting to claimants and insureds relevant facts or\npolicy provisions relating to coverages at issue\n\nRefusing to pay claims without conducting a reasonable investigation\n\nFailing to provide forms necessary to present claims within fifteen (15)\ncalendar days of a request with reasonable explanations regarding\ntheir use",
+    "payload": {
+      "chunk_index": 124,
+      "total_chunks": 146,
+      "page_number": 45,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Compliance",
+      "node_name": "Unfair Claim Practices",
+      "node_id": 294,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "2efcfce8-9794-477a-9ac6-53c9498fcd84",
+        "c12a2186-a1bf-4a9c-ba48-a27d23389ef4",
+        "229e0453-7293-4780-a78c-387d7caf3ddf"
+      ],
+      "next": [
+        "29075fb1-6321-49f6-81a1-58bae8f020a7",
+        "e4de50b4-690c-42e7-8dac-ce434b5e397a",
+        "9c0a91da-e337-499f-b134-9d20d5399c3c"
+      ]
+    }
+  },
+  {
+    "id": "29075fb1-6321-49f6-81a1-58bae8f020a7",
+    "text": "calendar days of a request with reasonable explanations regarding\ntheir use\nMaking Ethical Claim Decisions\nClick or touch the right arrows below for an example of ethical decision\nmaking.",
+    "payload": {
+      "chunk_index": 125,
+      "total_chunks": 146,
+      "page_number": 45,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Compliance",
+      "node_name": "Unfair Claim Practices",
+      "node_id": 294,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "c12a2186-a1bf-4a9c-ba48-a27d23389ef4",
+        "229e0453-7293-4780-a78c-387d7caf3ddf",
+        "fa79a26e-fba0-46f7-a7f2-634e1849b6ba"
+      ],
+      "next": [
+        "e4de50b4-690c-42e7-8dac-ce434b5e397a",
+        "9c0a91da-e337-499f-b134-9d20d5399c3c",
+        "d542af0a-4651-4eea-928c-eed38034fbf4"
+      ]
+    }
+  },
+  {
+    "id": "e4de50b4-690c-42e7-8dac-ce434b5e397a",
+    "text": "\"Hey, John. I need to improve our department's results. I'll just keep\nthis claimant's statement in a drawer. If another claim comes in on the\nsame case, I'll create a file and pass it to you. Then I'll need you to\ndeny the claim. If we get a third claimant's statement, then we'll open\nan investigation. No need to mention this to anyone else.\"\nIt seems that John has an ethical dilemma. Deep down John knows that his\nmanager's order isn't the right thing to do. Potential consequences that",
+    "payload": {
+      "chunk_index": 126,
+      "total_chunks": 146,
+      "page_number": 46,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Fraud",
+      "node_id": 293,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "229e0453-7293-4780-a78c-387d7caf3ddf",
+        "fa79a26e-fba0-46f7-a7f2-634e1849b6ba",
+        "29075fb1-6321-49f6-81a1-58bae8f020a7"
+      ],
+      "next": [
+        "9c0a91da-e337-499f-b134-9d20d5399c3c",
+        "d542af0a-4651-4eea-928c-eed38034fbf4",
+        "0140599f-a935-499e-b136-e2ceb180cb63"
+      ]
+    }
+  },
+  {
+    "id": "9c0a91da-e337-499f-b134-9d20d5399c3c",
+    "text": "manager's order isn't the right thing to do. Potential consequences that\ncould arise from this unethical action include\n\nRegulatory fines\n\nFinancial professionals placing business elsewhere\n\nDisciplinary action for the employee\n\nLegal action against the company",
+    "payload": {
+      "chunk_index": 127,
+      "total_chunks": 146,
+      "page_number": 46,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Compliance",
+      "node_name": "Unfair Claim Practices",
+      "node_id": 294,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "fa79a26e-fba0-46f7-a7f2-634e1849b6ba",
+        "29075fb1-6321-49f6-81a1-58bae8f020a7",
+        "e4de50b4-690c-42e7-8dac-ce434b5e397a"
+      ],
+      "next": [
+        "d542af0a-4651-4eea-928c-eed38034fbf4",
+        "0140599f-a935-499e-b136-e2ceb180cb63",
+        "9db5925b-d843-490c-a084-a48b688db499"
+      ]
+    }
+  },
+  {
+    "id": "d542af0a-4651-4eea-928c-eed38034fbf4",
+    "text": "\nRating downgrade\nSelect the interaction between a claim department and a customer that would be\nconsidered an unfair claim settlement practice under the (NAIC) Model Unfair Claims\nSettlement Practices Act.\nClaim analyst Marie Kensington hired an outside investigator to verify\ninformation related to a claim.\nClaim analyst Garth Giske frequently authorizes claim settlements\nthat are substantially less than the actual amount due.\nAfter reviewing a claim for accidental death benefits, claim analyst",
+    "payload": {
+      "chunk_index": 128,
+      "total_chunks": 146,
+      "page_number": 47,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Compliance",
+      "node_name": "Unfair Claim Practices",
+      "node_id": 294,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "29075fb1-6321-49f6-81a1-58bae8f020a7",
+        "e4de50b4-690c-42e7-8dac-ce434b5e397a",
+        "9c0a91da-e337-499f-b134-9d20d5399c3c"
+      ],
+      "next": [
+        "0140599f-a935-499e-b136-e2ceb180cb63",
+        "9db5925b-d843-490c-a084-a48b688db499",
+        "921a67a4-d855-4d0d-99c8-974e10f969cc"
+      ]
+    }
+  },
+  {
+    "id": "0140599f-a935-499e-b136-e2ceb180cb63",
+    "text": "After reviewing a claim for accidental death benefits, claim analyst\nMaxine Harmon determined that the claimant had misinterpreted the\npolicy's accidental death benefit provision and denied the claim.\nTrent Jeffers, an analyst trainee, unknowingly failed to complete his\nfirst claim investigation within the required amount of time after\nreceiving proof of loss.",
+    "payload": {
+      "chunk_index": 129,
+      "total_chunks": 146,
+      "page_number": 47,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Concept",
+      "node_name": "Proof of Loss",
+      "node_id": 287,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "e4de50b4-690c-42e7-8dac-ce434b5e397a",
+        "9c0a91da-e337-499f-b134-9d20d5399c3c",
+        "d542af0a-4651-4eea-928c-eed38034fbf4"
+      ],
+      "next": [
+        "9db5925b-d843-490c-a084-a48b688db499",
+        "921a67a4-d855-4d0d-99c8-974e10f969cc",
+        "4317e6eb-0d34-4489-a861-1eaf91eaa1af"
+      ]
+    }
+  },
+  {
+    "id": "9db5925b-d843-490c-a084-a48b688db499",
+    "text": "Claim Processing Efficiency\nLearning Objective\nExplain various ways that insurers improve and evaluate claim processing\nefficiency.\nAn insurer expects its claim staff to process claims quickly and thoroughly.\nUsually, insurers set goals for a certain number of claims to be processed\nwithin a certain time frame. However, meeting that time frame cannot be\ndone at the expense of accuracy or quality.\n\n**[TEXT DATA]**",
+    "payload": {
+      "chunk_index": 130,
+      "total_chunks": 146,
+      "page_number": 48,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Process Improvement",
+      "node_name": "Claim Processing Efficiency",
+      "node_id": 295,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "9c0a91da-e337-499f-b134-9d20d5399c3c",
+        "d542af0a-4651-4eea-928c-eed38034fbf4",
+        "0140599f-a935-499e-b136-e2ceb180cb63"
+      ],
+      "next": [
+        "921a67a4-d855-4d0d-99c8-974e10f969cc",
+        "4317e6eb-0d34-4489-a861-1eaf91eaa1af",
+        "229e522d-f3f1-424a-bf14-0cf82f718033"
+      ]
+    }
+  },
+  {
+    "id": "921a67a4-d855-4d0d-99c8-974e10f969cc",
+    "text": "**[TEXT DATA]**\n\nSelect the interaction between a claim department and a customer that would be considered an unfair claim settlement practice under the (NAIC) Model Unfair Claims Settlement Practices Act.\n\nClaim analyst Marie Kensington hired an outside investigator to verify information related to a claim.\n\nConsulting with an outside investigator to verify information related to a claim is not considered an unfair claim practice.",
+    "payload": {
+      "chunk_index": 131,
+      "total_chunks": 146,
+      "page_number": 48,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Compliance",
+      "node_name": "Unfair Claim Practices",
+      "node_id": 294,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "d542af0a-4651-4eea-928c-eed38034fbf4",
+        "0140599f-a935-499e-b136-e2ceb180cb63",
+        "9db5925b-d843-490c-a084-a48b688db499"
+      ],
+      "next": [
+        "4317e6eb-0d34-4489-a861-1eaf91eaa1af",
+        "229e522d-f3f1-424a-bf14-0cf82f718033",
+        "942dceb3-f4b5-4906-b56a-f7184c3a9576"
+      ]
+    }
+  },
+  {
+    "id": "4317e6eb-0d34-4489-a861-1eaf91eaa1af",
+    "text": "Claim analyst Garth Giske frequently authorizes claim settlements that are substantially less than the actual amount due.\n\nAfter reviewing a claim for accidental death benefits, claim analyst Maxine Harmon determined that the claimant had misinterpreted the policy's accidental death benefit provision and denied the claim.\n\nTrent Jeffers, an analyst trainee, unknowingly failed to complete his first claim investigation within the required amount of time after receiving proof of loss.\n\nThat's correct!",
+    "payload": {
+      "chunk_index": 132,
+      "total_chunks": 146,
+      "page_number": 48,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Process",
+      "node_name": "The Claim Process",
+      "node_id": 286,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "0140599f-a935-499e-b136-e2ceb180cb63",
+        "9db5925b-d843-490c-a084-a48b688db499",
+        "921a67a4-d855-4d0d-99c8-974e10f969cc"
+      ],
+      "next": [
+        "229e522d-f3f1-424a-bf14-0cf82f718033",
+        "942dceb3-f4b5-4906-b56a-f7184c3a9576",
+        "8074078a-c3b8-4867-9ccc-b3f16a280470"
+      ]
+    }
+  },
+  {
+    "id": "229e522d-f3f1-424a-bf14-0cf82f718033",
+    "text": "That's correct!\n\nCompelling claimants to initiate lawsuits to recover death benefits by offering substantially less than the amounts due is an unfair claims settlement practice.",
+    "payload": {
+      "chunk_index": 133,
+      "total_chunks": 146,
+      "page_number": 48,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Compliance",
+      "node_name": "Unfair Claim Practices",
+      "node_id": 294,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "9db5925b-d843-490c-a084-a48b688db499",
+        "921a67a4-d855-4d0d-99c8-974e10f969cc",
+        "4317e6eb-0d34-4489-a861-1eaf91eaa1af"
+      ],
+      "next": [
+        "942dceb3-f4b5-4906-b56a-f7184c3a9576",
+        "8074078a-c3b8-4867-9ccc-b3f16a280470",
+        "1deb96ca-a55f-42d7-8130-f88c2f92d79a"
+      ]
+    }
+  },
+  {
+    "id": "942dceb3-f4b5-4906-b56a-f7184c3a9576",
+    "text": "The Role of Automation\nCompanies can use technology to automate existing tasks. Computers can\nperform many tasks quickly, cheaply, and with consistent quality. The best\ncandidates are generally highly repetitive tasks with well-defined rules, such\nas routine, uncomplicated life insurance claims.\nWhen computers automatically pay claims that meet certain requirements\nand are below a specified dollar amount, claim department staff are freed\nup to concentrate on investigating less routine claims for fraud or",
+    "payload": {
+      "chunk_index": 134,
+      "total_chunks": 146,
+      "page_number": 49,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Process",
+      "node_name": "The Claim Process",
+      "node_id": 286,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "921a67a4-d855-4d0d-99c8-974e10f969cc",
+        "4317e6eb-0d34-4489-a861-1eaf91eaa1af",
+        "229e522d-f3f1-424a-bf14-0cf82f718033"
+      ],
+      "next": [
+        "8074078a-c3b8-4867-9ccc-b3f16a280470",
+        "1deb96ca-a55f-42d7-8130-f88c2f92d79a",
+        "b7379601-a0c3-4228-a871-a2623c9e83eb"
+      ]
+    }
+  },
+  {
+    "id": "8074078a-c3b8-4867-9ccc-b3f16a280470",
+    "text": "up to concentrate on investigating less routine claims for fraud or\nunintentional mistakes.\nClaim Audits\nInsurers conduct internal audits of approved and denied claims, and are\nalso subject to external audits of claim practices.",
+    "payload": {
+      "chunk_index": 135,
+      "total_chunks": 146,
+      "page_number": 49,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Risk Management",
+      "node_name": "Claim Fraud",
+      "node_id": 293,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "4317e6eb-0d34-4489-a861-1eaf91eaa1af",
+        "229e522d-f3f1-424a-bf14-0cf82f718033",
+        "942dceb3-f4b5-4906-b56a-f7184c3a9576"
+      ],
+      "next": [
+        "1deb96ca-a55f-42d7-8130-f88c2f92d79a",
+        "b7379601-a0c3-4228-a871-a2623c9e83eb",
+        "0e027df0-ee31-49bf-884c-4e3c5baddd50"
+      ]
+    }
+  },
+  {
+    "id": "1deb96ca-a55f-42d7-8130-f88c2f92d79a",
+    "text": "\"One way we know the claim department is running efficiently is when\nreinsurers audit its procedures, and its quantitative and qualitative\nmeasurements are right on target, particularly when it comes to balancing\naccuracy with speed.\"\nAs this graphic illustrates, an insurer can face consequences if it pays a\nclaim too slowly or too quickly.",
+    "payload": {
+      "chunk_index": 136,
+      "total_chunks": 146,
+      "page_number": 50,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Process Improvement",
+      "node_name": "Claim Processing Efficiency",
+      "node_id": 295,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "229e522d-f3f1-424a-bf14-0cf82f718033",
+        "942dceb3-f4b5-4906-b56a-f7184c3a9576",
+        "8074078a-c3b8-4867-9ccc-b3f16a280470"
+      ],
+      "next": [
+        "b7379601-a0c3-4228-a871-a2623c9e83eb",
+        "0e027df0-ee31-49bf-884c-4e3c5baddd50",
+        "73d26246-c5c3-45e8-9208-7a45e15aaf57"
+      ]
+    }
+  },
+  {
+    "id": "b7379601-a0c3-4228-a871-a2623c9e83eb",
+    "text": "Companies can also evaluate claim processing efficiency by reviewing market\nconduct exam results. For example, imagine that our fictional company,\nForthright Financial, underwent a market conduct exam. Here are some\nfactors that states generally verify during a market conduct exam.\nForthright's Claim Practice Market Conduct Exam Results\nThe company:\n\nAdheres to policies and procedures\n\nProcesses claims according to policy terms\n\nInvestigates and settles claims on time\n",
+    "payload": {
+      "chunk_index": 137,
+      "total_chunks": 146,
+      "page_number": 51,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Process Improvement",
+      "node_name": "Claim Processing Efficiency",
+      "node_id": 295,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "942dceb3-f4b5-4906-b56a-f7184c3a9576",
+        "8074078a-c3b8-4867-9ccc-b3f16a280470",
+        "1deb96ca-a55f-42d7-8130-f88c2f92d79a"
+      ],
+      "next": [
+        "0e027df0-ee31-49bf-884c-4e3c5baddd50",
+        "73d26246-c5c3-45e8-9208-7a45e15aaf57",
+        "ae2f548c-0195-4a83-aa26-158ee69a213e"
+      ]
+    }
+  },
+  {
+    "id": "0e027df0-ee31-49bf-884c-4e3c5baddd50",
+    "text": "\nProcesses claims according to policy terms\n\nInvestigates and settles claims on time\n\nAdequately and accurately documents files\n\nAccurately calculates claim payments\n\nPays claims to the correct payees\n\nDoesn't violate the Model Unfair Claims Settlement Practices Act",
+    "payload": {
+      "chunk_index": 138,
+      "total_chunks": 146,
+      "page_number": 51,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Process",
+      "node_name": "The Claim Process",
+      "node_id": 286,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "8074078a-c3b8-4867-9ccc-b3f16a280470",
+        "1deb96ca-a55f-42d7-8130-f88c2f92d79a",
+        "b7379601-a0c3-4228-a871-a2623c9e83eb"
+      ],
+      "next": [
+        "73d26246-c5c3-45e8-9208-7a45e15aaf57",
+        "ae2f548c-0195-4a83-aa26-158ee69a213e",
+        "0106aca5-93e7-44c8-bd27-1842a64d7dad"
+      ]
+    }
+  },
+  {
+    "id": "73d26246-c5c3-45e8-9208-7a45e15aaf57",
+    "text": "**[CHART]**\n\nCAPTION: This chart illustrates the balance between speed and accuracy in payment processes, highlighting the risks of both delays and hasty payments.",
+    "payload": {
+      "chunk_index": 139,
+      "total_chunks": 146,
+      "page_number": 51,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Payment Method",
+      "node_name": "Settlement Options",
+      "node_id": 291,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "1deb96ca-a55f-42d7-8130-f88c2f92d79a",
+        "b7379601-a0c3-4228-a871-a2623c9e83eb",
+        "0e027df0-ee31-49bf-884c-4e3c5baddd50"
+      ],
+      "next": [
+        "ae2f548c-0195-4a83-aa26-158ee69a213e",
+        "0106aca5-93e7-44c8-bd27-1842a64d7dad",
+        "324d92ba-fbd5-40ca-9799-2cfefe2dfc6d"
+      ]
+    }
+  },
+  {
+    "id": "ae2f548c-0195-4a83-aa26-158ee69a213e",
+    "text": "ANALYSIS: The chart is a balance scale, visually representing the trade-off between two extremes: \"Not paying quickly enough\" on the left and \"Too much haste\" on the right. The central focus is on achieving a \"Balance of speed and accuracy.\" On the left side, the consequence of slow payments is indicated as \"Add interest to proceeds payable,\" suggesting that delays can incur additional costs",
+    "payload": {
+      "chunk_index": 140,
+      "total_chunks": 146,
+      "page_number": 51,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Process Improvement",
+      "node_name": "Claim Processing Efficiency",
+      "node_id": 295,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "b7379601-a0c3-4228-a871-a2623c9e83eb",
+        "0e027df0-ee31-49bf-884c-4e3c5baddd50",
+        "73d26246-c5c3-45e8-9208-7a45e15aaf57"
+      ],
+      "next": [
+        "0106aca5-93e7-44c8-bd27-1842a64d7dad",
+        "324d92ba-fbd5-40ca-9799-2cfefe2dfc6d",
+        "bcb8c7dd-ff19-41a8-8c67-b6abea1a1eb2"
+      ]
+    }
+  },
+  {
+    "id": "0106aca5-93e7-44c8-bd27-1842a64d7dad",
+    "text": ". Conversely, the right side warns against \"Payment of invalid claim,\" emphasizing the risks associated with rushing payments. The chart effectively communicates the need for a careful approach to payment processes, balancing timely execution with the necessity of accuracy to avoid financial pitfalls.",
+    "payload": {
+      "chunk_index": 141,
+      "total_chunks": 146,
+      "page_number": 51,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Payment Method",
+      "node_name": "Settlement Options",
+      "node_id": 291,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "0e027df0-ee31-49bf-884c-4e3c5baddd50",
+        "73d26246-c5c3-45e8-9208-7a45e15aaf57",
+        "ae2f548c-0195-4a83-aa26-158ee69a213e"
+      ],
+      "next": [
+        "324d92ba-fbd5-40ca-9799-2cfefe2dfc6d",
+        "bcb8c7dd-ff19-41a8-8c67-b6abea1a1eb2",
+        "b400dcac-27c7-43e6-a605-878e49d149f9"
+      ]
+    }
+  },
+  {
+    "id": "324d92ba-fbd5-40ca-9799-2cfefe2dfc6d",
+    "text": "One benefit of automated claims processing is that companies can rely on\ncomputers to process complex claims.\nTrue\nFalse\nMarket conduct exams evaluate how well an insurer's claim department handles\nvarious aspects of claim processing, including (choose all that apply)\nProcessing claims according to policy terms\nInvestigating and settling claims on time\nAccurately calculating claim payments\nPaying claims to the correct payee\n\n**[TEXT DATA]**",
+    "payload": {
+      "chunk_index": 142,
+      "total_chunks": 146,
+      "page_number": 52,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Process",
+      "node_name": "The Claim Process",
+      "node_id": 286,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "73d26246-c5c3-45e8-9208-7a45e15aaf57",
+        "ae2f548c-0195-4a83-aa26-158ee69a213e",
+        "0106aca5-93e7-44c8-bd27-1842a64d7dad"
+      ],
+      "next": [
+        "bcb8c7dd-ff19-41a8-8c67-b6abea1a1eb2",
+        "b400dcac-27c7-43e6-a605-878e49d149f9",
+        "2798e6e2-7cfd-4bc4-a9b7-21364a4aca45"
+      ]
+    }
+  },
+  {
+    "id": "bcb8c7dd-ff19-41a8-8c67-b6abea1a1eb2",
+    "text": "**[TEXT DATA]**\n\nOne benefit of automated claims processing is that companies can rely on computers to process complex claims.\n\nTrue\nFalse\n\nThat's correct!\nGenerally speaking, insurers use computers to automatically process simpler claims that meet certain criteria and are below a specified dollar amount. This frees up claim analysts to process more complex claims.",
+    "payload": {
+      "chunk_index": 143,
+      "total_chunks": 146,
+      "page_number": 52,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Process",
+      "node_name": "The Claim Process",
+      "node_id": 286,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "ae2f548c-0195-4a83-aa26-158ee69a213e",
+        "0106aca5-93e7-44c8-bd27-1842a64d7dad",
+        "324d92ba-fbd5-40ca-9799-2cfefe2dfc6d"
+      ],
+      "next": [
+        "b400dcac-27c7-43e6-a605-878e49d149f9",
+        "2798e6e2-7cfd-4bc4-a9b7-21364a4aca45"
+      ]
+    }
+  },
+  {
+    "id": "b400dcac-27c7-43e6-a605-878e49d149f9",
+    "text": "Ensuring that staff comply with the Model Unfair Claims Settlement Practices\nAct\n\n**[TEXT DATA]**\n\nMarket conduct exams evaluate how well an insurer's claim department handles various aspects of claim processing, including (choose all that apply)\n\n- Processing claims according to policy terms\n- Investigating and settling claims on time\n- Accurately calculating claim payments\n- Paying claims to the correct payee\n- Ensuring that staff comply with the Model Unfair Claims Settlement Practices Act",
+    "payload": {
+      "chunk_index": 144,
+      "total_chunks": 146,
+      "page_number": 53,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Compliance",
+      "node_name": "Unfair Claim Practices",
+      "node_id": 294,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "0106aca5-93e7-44c8-bd27-1842a64d7dad",
+        "324d92ba-fbd5-40ca-9799-2cfefe2dfc6d",
+        "bcb8c7dd-ff19-41a8-8c67-b6abea1a1eb2"
+      ],
+      "next": [
+        "2798e6e2-7cfd-4bc4-a9b7-21364a4aca45"
+      ]
+    }
+  },
+  {
+    "id": "2798e6e2-7cfd-4bc4-a9b7-21364a4aca45",
+    "text": "That's correct!\nMarket conduct exams evaluate all of the above aspects of claim processing.",
+    "payload": {
+      "chunk_index": 145,
+      "total_chunks": 146,
+      "page_number": 53,
+      "total_pages": 53,
+      "file_name": "LOMA291_M2L4_Knowledge File_Claim Administration",
+      "category": "Core Process",
+      "node_name": "The Claim Process",
+      "node_id": 286,
+      "module": "2",
+      "lesson": "4",
+      "course": "LOMA291",
+      "previous": [
+        "324d92ba-fbd5-40ca-9799-2cfefe2dfc6d",
+        "bcb8c7dd-ff19-41a8-8c67-b6abea1a1eb2",
+        "b400dcac-27c7-43e6-a605-878e49d149f9"
+      ],
+      "next": []
+    }
+  }
+]

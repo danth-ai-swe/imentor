@@ -18,7 +18,7 @@ _CODE_TO_NAME = {
     "ms": "Malay",
     "ar": "Arabic",
     "hi": "Hindi",
-    "ru": "Russian",
+    "ru": "Russian"
 }
 
 
