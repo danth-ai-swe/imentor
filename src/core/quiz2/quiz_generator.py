@@ -346,7 +346,7 @@ def _process_row(row: dict, n_q: int, difficulty: str) -> tuple[list[dict], int,
 # ══════════════════════════════════════════════════════════════════════════════
 # PUBLIC API
 # ══════════════════════════════════════════════════════════════════════════════
-def generate_quiz2(
+def generate_quiz(
         knowledge_pack: str,
         total: int,
         difficulty: str = "Beginner",

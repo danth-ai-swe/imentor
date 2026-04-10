@@ -27,7 +27,7 @@ from src.apis.app_model import (
 from src.apis.app_router import chat_router, documents_router, search_router, file_router, quiz_router
 from src.config.app_config import get_app_config
 from src.constants.app_constant import PDFS_DIR, COLLECTION_NAME
-from src.core.quiz2.quiz_generator import generate_quiz2
+from src.core.quiz2.quiz_generator import generate_quiz
 from src.rag.db_vector import get_qdrant_client
 from src.rag.ingest.entrypoint import upload_to_qdrant
 from src.rag.llm.embedding_llm import get_openai_embedding_client
@@ -461,29 +461,11 @@ def get_pdf_file(filename: str):
     return FileResponse(file_path, filename=pdf_file, media_type="application/pdf")
 
 
+
 @quiz_router.post("/generate")
-async def generate_quiz(payload: QuizRequest) -> dict:
-    from src.core.quiz.quiz_generator import generate_quiz as _generate_quiz
+def generate(payload: QuizRequest) -> dict:
     try:
-        return await _generate_quiz(
-            knowledge_pack=payload.knowledge_pack,
-            difficulty=payload.difficulty.value,
-            count_difficulty=payload.total,
-            level=payload.level.value if payload.level else None,
-            level_value=payload.level_value,
-        )
-    except ValueError as exc:
-        logger.exception("generate_quiz validation error")
-        raise BadRequestError(str(exc)) from exc
-    except Exception as exc:
-        logger.exception("generate_quiz failed")
-        raise QdrantApiError(f"generate_quiz failed: {exc}") from exc
-
-
-@quiz_router.post("/generate2")
-def generate_quiz22(payload: QuizRequest) -> dict:
-    try:
-        return generate_quiz2(
+        return generate_quiz(
             knowledge_pack=payload.knowledge_pack,
             total=payload.total,
             difficulty=payload.difficulty.value,
