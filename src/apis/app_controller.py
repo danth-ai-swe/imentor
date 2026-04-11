@@ -1,12 +1,10 @@
 import asyncio
-import mimetypes
 import os
 from datetime import datetime, timezone
 from typing import Any
 
 import numpy as np
 from fastapi import BackgroundTasks, Depends
-from fastapi import Query
 from fastapi.responses import FileResponse
 
 from src.apis.app_exception import BadRequestError, InvalidFilterError, NotFoundError, QdrantApiError
@@ -14,20 +12,15 @@ from src.apis.app_model import (
     ChatRequest,
     ChatResponse,
     ChatDataModel,
-    ChatSourceModel,
-    DeleteByFilterRequest,
     FilterConditionModel,
     GetByIdsRequest,
     HybridSearchRequest,
-    QueryPointsGroupsRequest,
-    ScrollRequest, GenerateEmbeddingsResponse, IntentRouteResponse, IntentRouteRequest, UploadDocumentsRequest,
-    FacetRequest, BatchSearchRequest, CreatePayloadIndexRequest,
-    QuizRequest,
+    GenerateEmbeddingsResponse, IntentRouteResponse, IntentRouteRequest, UploadDocumentsRequest,
+    BatchSearchRequest, CreatePayloadIndexRequest, QuizRequest
 )
 from src.apis.app_router import chat_router, documents_router, search_router, file_router, quiz_router
-from src.config.app_config import get_app_config
-from src.constants.app_constant import PDFS_DIR, COLLECTION_NAME
-from src.core.quiz2.quiz_generator import generate_quiz
+from src.constants.app_constant import PDFS_DIR, COLLECTION_NAME, DATA_ZIP, SRC_ZIP
+from src.core.quiz.quiz_generator import generate_quiz
 from src.rag.db_vector import get_qdrant_client
 from src.rag.ingest.entrypoint import upload_to_qdrant
 from src.rag.llm.embedding_llm import get_openai_embedding_client
@@ -154,39 +147,6 @@ async def get_by_ids(payload: GetByIdsRequest, manager=Depends(get_qdrant_client
         raise QdrantApiError(f"get_by_ids failed: {exc}") from exc
 
 
-@documents_router.post("/scroll")
-async def scroll(payload: ScrollRequest, manager=Depends(get_qdrant_client)) -> dict[str, Any]:
-    try:
-        results, next_offset = await manager.ascroll(
-            filter_conditions=_to_qdrant_conditions(payload.filter_conditions),
-            limit=payload.limit,
-            order_by=payload.order_by,
-            with_payload=payload.with_payload,
-            with_vectors=payload.with_vectors,
-        )
-        return {
-            "items": _to_plain(results),
-            "count": len(results),
-            "next_offset": _to_plain(next_offset),
-        }
-    except Exception as exc:
-        logger.exception("scroll failed")
-        raise QdrantApiError(f"scroll failed: {exc}") from exc
-
-
-@documents_router.post("/delete/by-filter")
-async def delete_by_filter(
-        payload: DeleteByFilterRequest,
-        manager=Depends(get_qdrant_client),
-) -> dict[str, Any]:
-    try:
-        await manager.adelete_by_filter(_to_qdrant_conditions(payload.filter_conditions) or [])
-        return {"deleted_by_filter": True}
-    except Exception as exc:
-        logger.exception("delete_by_filter failed")
-        raise QdrantApiError(f"delete_by_filter failed: {exc}") from exc
-
-
 @search_router.post("/hybrid")
 async def hybrid_search(payload: HybridSearchRequest, manager=Depends(get_qdrant_client)) -> dict[str, Any]:
     try:
@@ -203,29 +163,6 @@ async def hybrid_search(payload: HybridSearchRequest, manager=Depends(get_qdrant
         raise QdrantApiError(f"hybrid_search failed: {exc}") from exc
 
 
-@search_router.post("/groups")
-async def query_points_groups(
-        payload: QueryPointsGroupsRequest,
-        manager=Depends(get_qdrant_client),
-) -> dict[str, Any]:
-    try:
-        query_vector = await manager.dense_embedder.aembed_query(payload.query_text)
-        groups = await manager.aquery_points_groups(
-            query=query_vector,
-            group_by=payload.group_by,
-            limit=payload.limit,
-            group_size=payload.group_size,
-            filter_conditions=_to_qdrant_conditions(payload.filter_conditions),
-            using=payload.using,
-            with_payload=payload.with_payload,
-            with_vectors=payload.with_vectors,
-        )
-        return _to_plain(groups)
-    except Exception as exc:
-        logger.exception("query_points_groups failed")
-        raise QdrantApiError(f"query_points_groups failed: {exc}") from exc
-
-
 @chat_router.post("/ask", response_model=ChatResponse)
 async def chat_ask(payload: ChatRequest) -> ChatResponse:
     logger.info("chat_ask called | user_name=%s | conversation_id=%s", payload.user_name, payload.conversation_id)
@@ -238,34 +175,20 @@ async def chat_ask(payload: ChatRequest) -> ChatResponse:
         logger.exception("pipeline_search failed")
         raise QdrantApiError(f"pipeline_search failed: {exc}") from exc
 
-    seen_sources: dict[str, ChatSourceModel] = {}
-    url = get_app_config().APP_DOMAIN
-
     answer_satisfied = result.get("answer_satisfied", True)
-    if answer_satisfied:
-        for r in result.get("results", []):
-            meta = r.get("metadata", {})
-            source_file = meta.get("file_name", "")
-            if source_file and source_file not in seen_sources:
-                seen_sources[source_file] = ChatSourceModel(
-                    name=source_file,
-                    url=f"{url}/api/v1/file/{source_file}.pdf",
-                    page_number=meta.get("page_number", 1),
-                    total_pages=meta.get("total_pages", 1),
-                )
-
     content = result.get("response", "") or ""
     intent = result.get("intent")
-
+    sources = result.get("sources")
+    if not answer_satisfied:
+        sources = []
     return ChatResponse(
         success=True,
         data=ChatDataModel(
             role="assistant",
             intent=intent,
             content=content,
-            sources=list(seen_sources.values()),
+            sources=sources,
             timestamp=datetime.now(timezone.utc).isoformat(),
-
         ),
     )
 
@@ -316,26 +239,6 @@ async def delete_collection(manager=Depends(get_qdrant_client)) -> dict:
         raise QdrantApiError(f"delete_collection failed: {exc}") from exc
 
 
-@documents_router.get("/collections")
-async def get_all_collections(manager=Depends(get_qdrant_client)) -> dict:
-    try:
-        result = await manager.aget_all_collections()
-        return _to_plain(result)
-    except Exception as exc:
-        logger.exception("get_all_collections failed")
-        raise QdrantApiError(f"get_all_collections failed: {exc}") from exc
-
-
-@documents_router.get("/collections/info")
-async def get_collection_info(manager=Depends(get_qdrant_client)) -> dict:
-    try:
-        result = await manager.aget_collection_info()
-        return _to_plain(result)
-    except Exception as exc:
-        logger.exception("get_collection_info failed")
-        raise QdrantApiError(f"get_collection_info failed: {exc}") from exc
-
-
 @documents_router.post("/upload")
 async def upload_documents(payload: UploadDocumentsRequest, manager=Depends(get_qdrant_client)) -> dict:
     try:
@@ -374,21 +277,6 @@ async def create_payload_index(payload: CreatePayloadIndexRequest, manager=Depen
         raise QdrantApiError(f"create_payload_index failed: {exc}") from exc
 
 
-@search_router.post("/facet")
-async def facet(payload: FacetRequest, manager=Depends(get_qdrant_client)) -> dict:
-    try:
-        result = await manager.afacet(
-            key=payload.key,
-            filter_conditions=_to_qdrant_conditions(payload.filter_conditions),
-            exact=payload.exact,
-            limit=payload.limit,
-        )
-        return _to_plain(result)
-    except Exception as exc:
-        logger.exception("facet failed")
-        raise QdrantApiError(f"facet failed: {exc}") from exc
-
-
 @search_router.post("/batch")
 async def batch_search(payload: BatchSearchRequest, manager=Depends(get_qdrant_client)) -> dict:
     try:
@@ -409,57 +297,38 @@ async def batch_search(payload: BatchSearchRequest, manager=Depends(get_qdrant_c
         raise QdrantApiError(f"batch_search failed: {exc}") from exc
 
 
-@file_router.get("/download")
-def download_any_file(
-        path: str = Query(..., description="Relative path from project root (e.g. data/ingest/xxx.json)")):
-    """Download any file under project root by relative path, e.g. /ingest?path=data/ingest/xxx.json"""
-    # Always set BASE_DIR to 3 levels up from this file (controller)
-    BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..'))
-    logger.warning(f"[DEBUG] BASE_DIR (3 levels up): {BASE_DIR}")
-    logger.warning(f"[DEBUG] Current working dir: {os.getcwd()}")
-    # Normalize slashes to support both / and \
-    norm_path = path.replace("\\", "/")
-    norm_path = os.path.normpath(norm_path)
-    logger.warning(f"[DEBUG] norm_path: {norm_path}")
-    # Validate path
-    if not norm_path or ".." in norm_path or os.path.isabs(norm_path) or norm_path.startswith("/"):
-        logger.warning(f"[DEBUG] Invalid path: {norm_path}")
-        raise BadRequestError("Invalid path")
-    abs_path = os.path.normpath(os.path.join(BASE_DIR, norm_path))
-    logger.warning(f"[DEBUG] abs_path: {abs_path}")
-    if not abs_path.startswith(BASE_DIR):
-        logger.warning(f"[DEBUG] Path outside project root: {abs_path}")
-        raise BadRequestError("Path outside project root is not allowed")
-    if not os.path.isfile(abs_path):
-        logger.warning(f"[DEBUG] File not found: {abs_path}")
-        # List parent directory contents for debugging
-        parent_dir = os.path.dirname(abs_path)
-        try:
-            files = os.listdir(parent_dir)
-            logger.warning(f"[DEBUG] Parent dir contents: {files}")
-        except Exception as e:
-            logger.warning(f"[DEBUG] Could not list parent dir: {e}")
-        raise NotFoundError(resource=norm_path, id=norm_path)
-    # Guess media type
-    mime, _ = mimetypes.guess_type(abs_path)
-    filename = os.path.basename(abs_path)
-    return FileResponse(
-        abs_path,
-        filename=filename,
-        media_type=mime or "application/octet-stream",
-    )
+@file_router.get("/data")
+def get_ingest_zip_file():
+    if not os.path.isfile(DATA_ZIP):
+        raise NotFoundError(resource="DATA_ZIP file not found", id=DATA_ZIP)
+    return FileResponse(DATA_ZIP, filename=os.path.basename(DATA_ZIP), media_type="application/zip")
+
+
+@file_router.get("/src")
+def get_ingest_zip_file():
+    if not os.path.isfile(SRC_ZIP):
+        raise NotFoundError(resource="SRC_ZIP file not found", id=SRC_ZIP)
+    return FileResponse(SRC_ZIP, filename=os.path.basename(SRC_ZIP), media_type="application/zip")
 
 
 @file_router.get("/{filename:path}")
 def get_pdf_file(filename: str):
     if ".." in filename or filename.startswith("/") or filename.startswith("\\"):
         raise BadRequestError("Invalid file_name path")
+
     pdf_file = filename if filename.lower().endswith(".pdf") else filename + ".pdf"
     file_path = os.path.join(PDFS_DIR, pdf_file)
+
     if not os.path.isfile(file_path):
         raise NotFoundError(resource="file name not found", id=filename)
-    return FileResponse(file_path, filename=pdf_file, media_type="application/pdf")
 
+    response = FileResponse(
+        file_path,
+        media_type="application/pdf",
+        filename=pdf_file
+    )
+    response.headers["Content-Disposition"] = f'inline; filename="{pdf_file}"'
+    return response
 
 
 @quiz_router.post("/generate")
@@ -468,13 +337,13 @@ def generate(payload: QuizRequest) -> dict:
         return generate_quiz(
             knowledge_pack=payload.knowledge_pack,
             total=payload.total,
-            difficulty=payload.difficulty.value,
+            difficulty=payload.difficulty.value if payload.difficulty else None,
             module_value=payload.module_value,
             lesson_value=payload.lesson_value,
         )
     except ValueError as exc:
         logger.exception("generate_quiz validation error")
-        raise BadRequestError(str(exc)) from exc  # ← tự động bắt lỗi mới
+        raise BadRequestError(str(exc)) from exc
     except Exception as exc:
         logger.exception("generate_quiz failed")
         raise QdrantApiError(f"generate_quiz failed: {exc}") from exc

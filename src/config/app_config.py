@@ -22,6 +22,35 @@ class AppConfig(BaseSettings):
     PROFILE_NAME: str = "default"
     DEBUG: bool = False
 
+    REDIS_HOST: str = "localhost"
+    REDIS_PORT: int = 6379
+    REDIS_DB: int = 0
+    REDIS_PASSWORD: Optional[str] = None
+    REDIS_MAX_CONNECTIONS: int = 20
+    REDIS_DEFAULT_TTL: int = 3600
+
+    RABBITMQ_HOST: str = "localhost"
+    RABBITMQ_PORT: int = 5672
+    RABBITMQ_USER: str = "guest"
+    RABBITMQ_PASS: str = "guest"
+
+    MQ_ORDERS_EXCHANGE: str = "publish.exchange"
+    MQ_ORDERS_QUEUE: str = "publish.queue"
+    MQ_ORDERS_KEY: str = "publish.routing_key"
+
+    MQ_NOTIF_EXCHANGE: str = "notifications.exchange"
+    MQ_NOTIF_QUEUE: str = "notifications.queue"
+    MQ_NOTIF_KEY: str = "notif.send"
+
+    MQ_DLX_NAME: str = "dlx"
+    MQ_DLQ_NAME: str = "dlq"
+
+    MQ_MESSAGE_TTL_MS: int = 3_600_000
+    MQ_MAX_QUEUE_LENGTH: int = 10_000
+
+    MQ_PUBLISH_CONN_NAME: str = "app.publisher"
+    MQ_CONSUME_CONN_NAME: str = "app.consumer"
+
     OPENAI_CHAT_MODEL: str = "gpt-4o-mini"
     OPENAI_API_VERSION: Optional[str] = None
     OPENAI_API_BASE: Optional[str] = None
@@ -37,6 +66,8 @@ class AppConfig(BaseSettings):
     IP_ADDRESS: str = "10.98.36.83"
 
     CHAT_HISTORY_API_BASE: str = "http://10.98.36.75:8081"
+    APP_IP: str = "127.0.0.1"
+    APP_PORT: int = 8080
     APP_DOMAIN: str = "https://api.fpt-apps.com/imt-ai-brain"
     QDRANT_URL: str = "http://localhost:6333"
     QDRANT_APIKEY: str
@@ -45,6 +76,13 @@ class AppConfig(BaseSettings):
         env_file_encoding="utf-8",
         case_sensitive=False,
     )
+
+    @property
+    def RABBITMQ_URL(self) -> str:
+        return (
+            f"amqp://{self.RABBITMQ_USER}:{self.RABBITMQ_PASS}"
+            f"@{self.RABBITMQ_HOST}:{self.RABBITMQ_PORT}/"
+        )
 
 
 @lru_cache()

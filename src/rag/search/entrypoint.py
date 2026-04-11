@@ -1,64 +1,18 @@
-from dataclasses import dataclass, asdict
 from typing import Any, Dict, List, Tuple
 
-import httpx
-
-from src.config.app_config import get_app_config
 from src.constants.app_constant import (
-    CHARS_PER_TOKEN,
-    CHAT_HISTORY_TOKEN_BUDGET,
-    CHAT_HISTORY_TIMEOUT,
-    MAX_ASSISTANT_RESPONSE_CHARS,
-    TRUNCATION_SUFFIX,
+    MAX_RECENT_HISTORY_ENTRIES,
 )
-from src.rag.search.prompt import SYSTEM_PROMPT_TEMPLATE
-from src.utils.language_utils import detect_language as detect_lang_code, language_name
+from src.external.fetch_history import fetch_raw_chat_history
+from src.rag.llm.chat_llm import get_openai_chat_client
+from src.rag.search.prompt import SYSTEM_PROMPT_TEMPLATE, SUMMARIZE_PROMPT_TEMPLATE
 from src.utils.logger_utils import alog_function_call
 
 
-@dataclass
-class SearchResult:
-    metadata: Dict[str, Any]
-    text: str
-    score: float
-
-    def to_dict(self) -> Dict[str, Any]:
-        return asdict(self)
-
-
-def truncate_assistant_content(
-        text: str, max_chars: int = MAX_ASSISTANT_RESPONSE_CHARS
-) -> str:
-    if len(text) <= max_chars:
-        return text
-    return text[:max_chars] + TRUNCATION_SUFFIX
-
-
-@alog_function_call
-async def afetch_chat_history(
-        conversation_id: str | None = None,
-) -> List[Dict[str, Any]]:
-    if not conversation_id or not conversation_id.strip():
-        return []
-    config = get_app_config()
-    url = f"{config.CHAT_HISTORY_API_BASE}/api/chats/history-for-ai"
-    headers = {"X-Api-Key": "9gzILl3s3DxYGbqGC6xPed2wqa2uWUFRASqkmpoSuv0="}
-
-    try:
-        async with httpx.AsyncClient(timeout=CHAT_HISTORY_TIMEOUT) as client:
-            resp = await client.get(
-                url, params={"conversation_id": conversation_id}, headers=headers
-            )
-            resp.raise_for_status()
-            body = resp.json()
-    except httpx.HTTPError:
-        return []
-
-    if not body.get("success"):
-        return []
-
-    messages = body.get("data", {}).get("messages", [])
-    history: List[Dict[str, Any]] = []
+def _filter_core_knowledge_pairs(
+        messages: list[dict],
+) -> list[dict]:
+    history: list[dict] = []
     i = 0
 
     while i < len(messages) - 1:
@@ -74,10 +28,7 @@ async def afetch_chat_history(
                 "role": "user",
                 "content": user_msg.get("content", {}).get("text", ""),
             })
-            assistant_text = truncate_assistant_content(
-                ai_msg.get("content", {}).get("text", "")
-            )
-            history.append({"role": "assistant", "content": assistant_text})
+            history.append({"role": "assistant", "content": ai_msg.get("content", {}).get("text", "")})
             i += 2
         else:
             i += 1
@@ -85,31 +36,58 @@ async def afetch_chat_history(
     return history
 
 
-def get_detected_language(text: str) -> str:
-    return language_name(detect_lang_code(text))
+def _format_history(history: list[dict]) -> str:
+    lines: list[str] = []
+    for entry in history[-MAX_RECENT_HISTORY_ENTRIES:]:
+        role = entry.get("role", "user").capitalize()
+        if entry.get("parts"):
+            text = " ".join(p["text"] for p in entry["parts"])
+        else:
+            text = entry.get("content", "")
+        lines.append(f"{role}: {text}")
+    return "\n".join(lines)
 
 
-def trim_chat_history_by_tokens(
-        chat_history: List[Dict[str, Any]],
-        token_budget: int = CHAT_HISTORY_TOKEN_BUDGET,
-        chars_per_token: int = CHARS_PER_TOKEN,
-) -> List[Dict[str, Any]]:
-    char_budget = token_budget * chars_per_token
-    selected: List[Dict[str, Any]] = []
-    used = 0
+async def _summarize_history(history_string: str) -> str:
+    """Gọi Azure OpenAI để tóm tắt history string, trả về summary string."""
+    prompt = SUMMARIZE_PROMPT_TEMPLATE.format(
+        conversation_history=history_string
+    )
 
-    for entry in reversed(chat_history):
-        content = entry.get("content", "")
-        if used + len(content) > char_budget:
-            break
-        selected.insert(0, entry)
-        used += len(content)
+    raw = await get_openai_chat_client().ainvoke(prompt)
 
-    return selected
+    start = raw.find("<result>")
+    end = raw.find("</result>")
+    if start != -1 and end != -1:
+        return raw[start + len("<result>"):end].strip()
+
+    return raw.strip()
 
 
-def _build_system_prompt(detected_language: str) -> str:
-    return SYSTEM_PROMPT_TEMPLATE.format(detected_language=detected_language)
+@alog_function_call
+async def afetch_chat_history(
+        conversation_id: str | None = None,
+) -> str:
+    if not conversation_id or not conversation_id.strip():
+        return ""
+
+    # Bước 1: Call API
+    messages = await fetch_raw_chat_history(conversation_id)
+    if not messages:
+        return ""
+
+    # Bước 2: Lọc intent
+    filtered = _filter_core_knowledge_pairs(messages)
+    if not filtered:
+        return ""
+
+    # Bước 3: Lấy 6 phần tử cuối → build string
+    history_string = _format_history(filtered)
+
+    # Bước 4: Tóm tắt bằng Claude → summary string
+    summary = await _summarize_history(history_string)
+
+    return summary
 
 
 def build_final_prompt(
@@ -117,35 +95,42 @@ def build_final_prompt(
         detected_language: str,
         relevant_chunks: List[Dict[str, Any]],
         node_data_list: List[Dict[str, Any]],
-        chat_history: List[Dict[str, Any]],
+        chat_history_summary: str,  # <-- đổi sang string
 ) -> Tuple[str, List[Dict[str, str]]]:
-    system_prompt = _build_system_prompt(detected_language)
+    system_prompt = SYSTEM_PROMPT_TEMPLATE.format(
+        detected_language=detected_language
+    )
 
+    # Context từ retrieval
     context_blocks = [
         f"[{chunk.get('metadata', {}).get('file_name', 'unknown')}]:\n{chunk['text']}"
         for chunk in relevant_chunks
     ]
     context_str = "\n\n---\n\n".join(context_blocks)
 
+    # Node reference
     node_ref = ""
     if node_data_list:
         lines = [
-            f"- **{nd.get('node_name', 'N/A')}**: {nd.get('definition', 'N/A')}  \n"
-            f"  Category: {nd.get('category', 'N/A')} | Tags: {nd.get('domain_tags', 'N/A')}"
+            f"- **{nd.get('Node Name', 'N/A')}**: {nd.get('Definition', 'N/A')}  \n"
+            f"  Category: {nd.get('Category', 'N/A')} | Tags: {nd.get('Domain Tags', 'N/A')}\n"
+            f"  Overall Summary: {nd.get('Summary', 'N/A')}"
             for nd in node_data_list
         ]
         node_ref = "\n\n## Knowledge Node Reference\n" + "\n".join(lines)
 
-    trimmed_history = trim_chat_history_by_tokens(chat_history)
-    messages: List[Dict[str, str]] = [
-        {"role": entry["role"], "content": entry["content"]}
-        for entry in trimmed_history
-        if entry.get("role") in ("user", "assistant")
-    ]
+    # 👉 Messages chỉ còn system + 1 user message (có history summary)
+    messages: List[Dict[str, str]] = []
+
+    # Inject history dạng summary
+    history_block = ""
+    if chat_history_summary:
+        history_block = f"## Conversation Summary\n{chat_history_summary}\n\n"
 
     messages.append({
         "role": "user",
         "content": (
+            f"{history_block}"
             f"## Retrieved Context\n{context_str}\n\n"
             f"{node_ref}\n\n"
             f"## User Question\n{user_input}"

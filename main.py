@@ -10,7 +10,7 @@ from src.config.app_config import get_app_config
 config = get_app_config()
 from src.rag.db_vector import get_qdrant_client
 from src.rag.llm.chat_llm import get_openai_chat_client
-from src.rag.llm.embedding_llm import get_openai_embedding_client
+from src.rag.llm.embedding_llm import get_openai_embedding_client, get_sync_client, get_async_client
 from src.utils.logger_utils import setup_uvicorn_logging, get_uvicorn_log_config, RequestTimingMiddleware
 
 
@@ -22,7 +22,8 @@ async def lifespan(application: FastAPI):
         qdrant.client.get_collections()
     except Exception:
         pass
-
+    get_sync_client()
+    get_async_client()
     get_openai_chat_client()
     get_openai_embedding_client()
 

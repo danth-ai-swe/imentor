@@ -1,120 +1,213 @@
+import asyncio
+import base64
+import threading
+import time
+from functools import lru_cache
 from typing import List, Dict, Any
 
 import numpy as np
 import openai
 from openai import AsyncAzureOpenAI
 
-from src.config.app_config import get_app_config, _retry_policy
-from src.utils.logger_utils import alog_method_call, log_method_call
+from src.config.app_config import _retry_policy, get_app_config
+from src.utils.logger_utils import alog_method_call
 
 config = get_app_config()
 
+# ── Thread-safe singletons ────────────────────────────────────────────────────
 _sync_client: openai.AzureOpenAI | None = None
 _async_client: AsyncAzureOpenAI | None = None
+
+_sync_lock = threading.Lock()
+_async_lock = threading.Lock()
+_embed_lock = threading.Lock()
+
+
+def _client_kwargs() -> dict:
+    return dict(
+        azure_endpoint=config.OPENAI_API_BASE,
+        api_key=config.OPENAI_API_KEY,
+        api_version=config.OPENAI_API_VERSION,
+        timeout=config.GPT_TIMEOUT,
+        max_retries=config.GPT_MAX_RETRIES,
+    )
 
 
 def get_sync_client() -> openai.AzureOpenAI:
     global _sync_client
     if _sync_client is None:
-        _sync_client = openai.AzureOpenAI(
-            azure_endpoint=config.OPENAI_API_BASE,
-            api_key=config.OPENAI_API_KEY,
-            api_version=config.OPENAI_API_VERSION,
-            timeout=config.GPT_TIMEOUT,
-            max_retries=config.GPT_MAX_RETRIES,
-        )
+        with _sync_lock:
+            if _sync_client is None:
+                _sync_client = openai.AzureOpenAI(**_client_kwargs())
     return _sync_client
 
 
-def _get_async_client() -> AsyncAzureOpenAI:
+def get_async_client() -> AsyncAzureOpenAI:
     global _async_client
     if _async_client is None:
-        _async_client = AsyncAzureOpenAI(
-            azure_endpoint=config.OPENAI_API_BASE,
-            api_key=config.OPENAI_API_KEY,
-            api_version=config.OPENAI_API_VERSION,
-            timeout=config.GPT_TIMEOUT,
-            max_retries=config.GPT_MAX_RETRIES,
-        )
+        with _async_lock:
+            if _async_client is None:
+                _async_client = AsyncAzureOpenAI(**_client_kwargs())
     return _async_client
 
 
-class AzureEmbeddingClient:
-    @log_method_call
-    @_retry_policy()
-    def embed_query(self, text: str) -> List[float]:
-        response = get_sync_client().embeddings.create(
-            input=text,
-            model=config.OPENAI_EMBEDDING_MODEL,
-            encoding_format="float",
-        )
-        return response.data[0].embedding
+# ── Normalize ─────────────────────────────────────────────────────────────────
+def _normalize(text: str) -> str:
+    return text.strip()
 
-    @log_method_call
-    @_retry_policy()
-    def embed_query_full(self, text: str) -> Dict[str, Any]:
-        response = get_sync_client().embeddings.create(
-            input=[text],
-            model=config.OPENAI_EMBEDDING_MODEL,
-            encoding_format="float",
-        )
-        return response.model_dump()
+
+# ── Base64 decode ─────────────────────────────────────────────────────────────
+def _decode_base64(b64: str) -> List[float]:
+    arr = np.frombuffer(base64.b64decode(b64), dtype=np.float32)
+    return arr.tolist()
+
+
+# ── Cache ─────────────────────────────────────────────────────────────────────
+_CACHE_SIZE = 10_000
+
+
+@lru_cache(maxsize=_CACHE_SIZE)
+def _cached_embed_single(text: str) -> tuple[float, ...]:
+    text = _normalize(text)
+
+    raw = get_sync_client().embeddings.create(
+        input=[text],
+        model=config.OPENAI_EMBEDDING_MODEL,
+        encoding_format="base64",
+    )
+    return tuple(_decode_base64(raw.data[0].embedding))
+
+
+# ── Async cache (optional nâng cao) ────────────────────────────────────────────
+_async_cache: Dict[str, List[float]] = {}
+_async_cache_lock = asyncio.Lock()
+
+
+async def _aget_from_cache(text: str):
+    async with _async_cache_lock:
+        return _async_cache.get(text)
+
+
+async def _aset_cache(text: str, value: List[float]):
+    async with _async_cache_lock:
+        if len(_async_cache) < _CACHE_SIZE:
+            _async_cache[text] = value
+
+
+# ── Batch config ──────────────────────────────────────────────────────────────
+_BATCH_SIZE: int = getattr(config, "OPENAI_EMBEDDING_BATCH_SIZE", 512)
+_CONCURRENCY_LIMIT: int = getattr(config, "OPENAI_EMBEDDING_CONCURRENCY", 5)
+
+_semaphore = asyncio.Semaphore(_CONCURRENCY_LIMIT)
+
+# ── Metrics ───────────────────────────────────────────────────────────────────
+_metrics = {
+    "cache_hits": 0,
+    "cache_misses": 0,
+    "total_calls": 0,
+    "total_latency": 0.0,
+    "batch_sizes": [],
+}
+
+
+def get_metrics():
+    return {
+        **_metrics,
+        "avg_latency": (
+            _metrics["total_latency"] / _metrics["total_calls"]
+            if _metrics["total_calls"]
+            else 0
+        ),
+    }
+
+
+# ── Client ────────────────────────────────────────────────────────────────────
+class AzureEmbeddingClient:
 
     @staticmethod
     def embed_documents(texts: List[str]) -> List[List[float]]:
         if not texts:
             return []
-        response = get_sync_client().embeddings.create(
-            input=texts,
-            model=config.OPENAI_EMBEDDING_MODEL,
-            encoding_format="float",
-        )
-        return [d.embedding for d in sorted(response.data, key=lambda x: x.index)]
+
+        return [list(_cached_embed_single(_normalize(t))) for t in texts]
 
     @alog_method_call
-    @_retry_policy()
     async def aembed_query(self, text: str) -> List[float]:
-        response = await _get_async_client().embeddings.create(
-            input=text,
-            model=config.OPENAI_EMBEDDING_MODEL,
-            encoding_format="float",
-        )
-        return response.data[0].embedding
+        results = await self.aembed_documents([text])
+        return results[0]
 
-    @alog_method_call
     @_retry_policy()
-    async def aembed_query_full(self, text: str) -> Dict[str, Any]:
-        response = await _get_async_client().embeddings.create(
-            input=[text],
-            model=config.OPENAI_EMBEDDING_MODEL,
-            encoding_format="float",
-        )
-        return response.model_dump()
-
     @alog_method_call
-    @_retry_policy()
-    async def aembed_documents(self, texts: List[str]) -> List[List[float]]:
+    async def aembed_documents(self, texts: List[str]) -> list[Any] | list[None]:
         if not texts:
             return []
-        response = await _get_async_client().embeddings.create(
-            input=texts,
-            model=config.OPENAI_EMBEDDING_MODEL,
-            encoding_format="float",
-        )
-        return [d.embedding for d in sorted(response.data, key=lambda x: x.index)]
 
-    @alog_method_call
-    @_retry_policy()
-    async def aembed_query_byte(self, text: str) -> List[int]:
-        floats = await self.aembed_query(text)
-        vec = np.array(floats, dtype=np.float32)
+        start_time = time.perf_counter()
+        _metrics["total_calls"] += 1
 
-        scale = np.quantile(np.abs(vec), 0.99)
-        if scale == 0:
-            scale = 1.0
+        texts = [_normalize(t) for t in texts]
 
-        quantized = np.clip(np.round(vec / scale * 127), -128, 127).astype(np.int8)
-        return quantized.tolist()
+        # ── check async cache ────────────────────────────────────────────────
+        cached_results = []
+        uncached_texts = []
+        index_map = {}
+
+        for i, t in enumerate(texts):
+            cached = await _aget_from_cache(t)
+            if cached is not None:
+                _metrics["cache_hits"] += 1
+                cached_results.append((i, cached))
+            else:
+                _metrics["cache_misses"] += 1
+                index_map[len(uncached_texts)] = i
+                uncached_texts.append(t)
+
+        # ── batching ────────────────────────────────────────────────────────
+        batches = [
+            uncached_texts[i: i + _BATCH_SIZE]
+            for i in range(0, len(uncached_texts), _BATCH_SIZE)
+        ]
+
+        _metrics["batch_sizes"].extend([len(b) for b in batches])
+
+        async def _fetch(batch: List[str]) -> List[List[float]]:
+            @_retry_policy()
+            async def _call():
+                async with _semaphore:
+                    resp = await get_async_client().embeddings.create(
+                        input=batch,
+                        model=config.OPENAI_EMBEDDING_MODEL,
+                        encoding_format="base64",
+                    )
+                    ordered = sorted(resp.data, key=lambda x: x.index)
+                    return [_decode_base64(d.embedding) for d in ordered]
+
+            return await _call()
+
+        # ── fetch uncached ──────────────────────────────────────────────────
+        fetched = []
+        if batches:
+            batch_results = await asyncio.gather(*[_fetch(b) for b in batches])
+            fetched = [emb for batch in batch_results for emb in batch]
+
+        # ── merge results ────────────────────────────────────────────────────
+        results = [None] * len(texts)
+
+        # cached
+        for i, val in cached_results:
+            results[i] = val
+
+        # fetched
+        for j, val in enumerate(fetched):
+            original_idx = index_map[j]
+            results[original_idx] = val
+            await _aset_cache(texts[original_idx], val)
+
+        # ── metrics ─────────────────────────────────────────────────────────
+        latency = time.perf_counter() - start_time
+        _metrics["total_latency"] += latency
+
+        return results
 
 
 _embedding_client_instance: AzureEmbeddingClient | None = None
@@ -123,5 +216,7 @@ _embedding_client_instance: AzureEmbeddingClient | None = None
 def get_openai_embedding_client() -> AzureEmbeddingClient:
     global _embedding_client_instance
     if _embedding_client_instance is None:
-        _embedding_client_instance = AzureEmbeddingClient()
+        with _embed_lock:
+            if _embedding_client_instance is None:
+                _embedding_client_instance = AzureEmbeddingClient()
     return _embedding_client_instance

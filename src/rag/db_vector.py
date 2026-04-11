@@ -43,47 +43,6 @@ class QdrantManager:
         sample = list(self._colbert.embed(["ping"]))[0]
         return len(sample[0])
 
-    def scroll(
-            self,
-            filter_conditions: Optional[list[models.Condition]] = None,
-            limit: int = 15,
-            order_by: Optional[str] = None,
-            direction: models.Direction = models.Direction.DESC,
-            with_payload: bool = True,
-            with_vectors: bool = False,
-    ) -> tuple[list, Any]:
-        scroll_filter = (
-            models.Filter(must=filter_conditions) if filter_conditions else None
-        )
-        results, next_offset = self.client.scroll(
-            collection_name=self.collection_name,
-            scroll_filter=scroll_filter,
-            limit=limit,
-            with_payload=with_payload,
-            with_vectors=with_vectors,
-            order_by=order_by,
-            direction=direction,
-        )
-        return results, next_offset
-
-    @staticmethod
-    def build_filter(
-            must: Optional[list[models.Condition]] = None,
-            should: Optional[list[models.Condition]] = None,
-            must_not: Optional[list[models.Condition]] = None,
-            min_should: Optional[Any] = None,
-    ) -> models.Filter:
-        return models.Filter(
-            must=must,
-            should=should,
-            must_not=must_not,
-            min_should=min_should,
-        )
-
-    # ══════════════════════════════════════════════════════════════════════════
-    # Async methods
-    # ══════════════════════════════════════════════════════════════════════════
-
     async def _aembed_colbert_doc(self, text: str) -> list[list[float]]:
         return await asyncio.to_thread(self._embed_colbert_doc, text)
 
@@ -234,87 +193,6 @@ class QdrantManager:
         )
 
     @alog_method_call
-    async def ascroll(
-            self,
-            filter_conditions: Optional[list[models.Condition]] = None,
-            limit: int = 15,
-            order_by: Optional[str] = None,
-            direction: models.Direction = models.Direction.DESC,
-            with_payload: bool = True,
-            with_vectors: bool = False,
-    ) -> tuple[list, Any]:
-        scroll_filter = (
-            models.Filter(must=filter_conditions) if filter_conditions else None
-        )
-        results, next_offset = await self.async_client.scroll(
-            collection_name=self.collection_name,
-            scroll_filter=scroll_filter,
-            limit=limit,
-            with_payload=with_payload,
-            with_vectors=with_vectors,
-            order_by=order_by,
-            direction=direction,
-        )
-        return results, next_offset
-
-    def scroll_all(
-            self,
-            scroll_filter: Optional[models.Filter] = None,
-            filter_conditions: Optional[list[models.Condition]] = None,
-            limit: int = 100,
-            with_payload: Any = True,
-            with_vectors: bool = False,
-    ) -> list:
-        """Scroll toàn bộ points khớp filter (sync), tự động phân trang qua offset."""
-        if scroll_filter is None and filter_conditions:
-            scroll_filter = models.Filter(must=filter_conditions)
-        all_points: list = []
-        offset = None
-        while True:
-            points, next_offset = self.client.scroll(
-                collection_name=self.collection_name,
-                scroll_filter=scroll_filter,
-                limit=limit,
-                with_payload=with_payload,
-                with_vectors=with_vectors,
-                **({"offset": offset} if offset is not None else {}),
-            )
-            all_points.extend(points)
-            if next_offset is None or not points:
-                break
-            offset = next_offset
-        return all_points
-
-    @alog_method_call
-    async def ascroll_all(
-            self,
-            scroll_filter: Optional[models.Filter] = None,
-            filter_conditions: Optional[list[models.Condition]] = None,
-            limit: int = 100,
-            with_payload: Any = True,
-            with_vectors: bool = False,
-    ) -> list:
-        """Scroll toàn bộ points khớp filter (async), tự động phân trang qua offset."""
-        if scroll_filter is None and filter_conditions:
-            scroll_filter = models.Filter(must=filter_conditions)
-        all_points: list = []
-        offset = None
-        while True:
-            points, next_offset = await self.async_client.scroll(
-                collection_name=self.collection_name,
-                scroll_filter=scroll_filter,
-                limit=limit,
-                with_payload=with_payload,
-                with_vectors=with_vectors,
-                **({"offset": offset} if offset is not None else {}),
-            )
-            all_points.extend(points)
-            if next_offset is None or not points:
-                break
-            offset = next_offset
-        return all_points
-
-    @alog_method_call
     async def ascroll_all(
             self,
             scroll_filter: Optional[models.Filter] = None,
@@ -347,9 +225,8 @@ class QdrantManager:
     async def ahybrid_search(
             self,
             query: str,
-            top_k: int = 5,
+            top_k: int = 3,
             prefetch_limit: int = 10,
-            rrf_k: int = 60,
             filter_conditions: Optional[list[models.Condition]] = None,
             with_payload: bool = True,
     ) -> list:
@@ -398,39 +275,12 @@ class QdrantManager:
                             limit=prefetch_limit,
                         ),
                     ],
-                    query=models.RrfQuery(rrf=models.Rrf(k=rrf_k)),
+                    query=models.FusionQuery(fusion=models.Fusion.DBSF),
                 )
             ],
             query=colbert_query_vec,
         )
         return results.points
-
-    @alog_method_call
-    async def afacet(
-            self,
-            key: str,
-            filter_conditions: Optional[list[models.Condition]] = None,
-            exact: bool = True,
-            limit: int = 10,
-    ):
-        facet_filter = (
-            models.Filter(must=filter_conditions) if filter_conditions else None
-        )
-        return await self.async_client.facet(
-            collection_name=self.collection_name,
-            key=key,
-            exact=exact,
-            limit=limit,
-            facet_filter=facet_filter,
-        )
-
-    @alog_method_call
-    async def aget_collection_info(self):
-        return await self.async_client.get_collection(self.collection_name)
-
-    @alog_method_call
-    async def aget_all_collections(self):
-        return await self.async_client.get_collections()
 
     @alog_method_call
     async def aquery_points_groups(
@@ -459,20 +309,6 @@ class QdrantManager:
             with_payload=with_payload,
             with_vectors=with_vectors,
             with_lookup=with_lookup,
-        )
-
-    @alog_method_call
-    async def aquery_batch_points(
-            self,
-            requests: list[models.QueryRequest],
-            consistency: Optional[Any] = None,
-            timeout: Optional[int] = None,
-    ):
-        return await self.async_client.query_batch_points(
-            collection_name=self.collection_name,
-            requests=requests,
-            consistency=consistency,
-            timeout=timeout,
         )
 
 

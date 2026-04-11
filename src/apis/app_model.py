@@ -137,16 +137,13 @@ class QuizDifficulty(str, Enum):
     INTERMEDIATE = "Intermediate"
     ADVANCED = "Advanced"
 
+
 class QuizRequest(BaseModel):
     knowledge_pack: str = Field(..., min_length=1, description="Always compared with metadata 'course'")
     module_value: str | None = Field(None, description="Value to match against metadata 'Module' column")
     lesson_value: str | None = Field(None, description="Value to match against metadata 'Lesson' column")
-    difficulty: QuizDifficulty | None = Field(None,
-                                              description="Difficulty level: Beginner, Intermediate, or Advanced. Default: Beginner")
-    total: int = Field(..., ge=1, le=200, description="Number of questions to generate at the specified difficulty")
-
-    @model_validator(mode="after")
-    def _validate_fields(self):
-        if self.difficulty is None:
-            self.difficulty = QuizDifficulty.BEGINNER
-        return self
+    difficulty: QuizDifficulty | None = Field(
+        None,
+        description="Difficulty level: Beginner, Intermediate, or Advanced. If null, will be randomized."
+    )
+    total: int = Field(..., ge=1, le=200, description="Number of questions to generate")

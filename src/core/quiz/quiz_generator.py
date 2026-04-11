@@ -1,341 +1,463 @@
-"""
-Quiz Generator — Dynamic Batch Mode
-=====================================
-Tự động tính batch_size để tối ưu wall time:
-  n ≤ max_concurrent  →  batch_size=1  (all parallel, ~6s)
-  n >  max_concurrent →  batch_size tăng, capped MAX_BATCH_SIZE
-"""
-
-import asyncio
-import json
 import math
-from functools import lru_cache
+import random
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from pathlib import Path
 from typing import Any
 
 import pandas as pd
+from qdrant_client import models
 
 from src.config.app_config import get_app_config
 from src.constants.app_constant import METADATA_NODE_XLSX
-from src.core.quiz.node_sampler import NodeSampler
 from src.core.quiz.prompt import QUIZ_SYSTEM_PROMPT
-from src.rag.llm.chat_llm import AzureChatClient, get_openai_chat_client
+from src.rag.db_vector import get_qdrant_client
+from src.rag.llm.chat_llm import get_openai_chat_client
+from src.utils.app_utils import _parse_llm_json
 from src.utils.logger_utils import logger, StepTimer
 
-# ── Constants ─────────────────────────────────────────────────────────────────
-MAX_CONCURRENT_LLM = 10
-MAX_BATCH_SIZE = 5
+MAX_QUESTIONS_PER_PROMPT = 10
+# ── Constants ──────────────────────────────────────────────────────────────────
 TOKENS_PER_QUESTION = 600
 MAX_TOKENS_PER_CALL = 3_500
+MAX_WORKERS = 5
+
 DIFFICULTY_LEVELS = ("Beginner", "Intermediate", "Advanced")
 
-# Type aliases
-CategoryChunks = dict[str, list[dict[str, Any]]]
-SampledItem = tuple[str, list[dict[str, Any]]]
-BatchItem = tuple[str, list[dict[str, Any]], list[dict[str, str]]]
+_META_COLS = ["Course", "Module", "Lesson", "Category", "Node Name", "Source", "Definition", "Related Nodes",
+              "Summary"]
+
+_XLSX_DIFFICULTY_COL = "Dificulty Level"
+
+QUIZ_XLSX_DIR = Path(r"D:\Deverlopment\huudan.com\PythonProject\data\quiz")
 
 
-# ── Node metadata ─────────────────────────────────────────────────────────────
+def _pick_random_module(knowledge_pack: str, df: pd.DataFrame) -> str:
+    modules = (
+        df[df["Course"].astype(str).str.strip() == knowledge_pack]["Module"]
+        .astype(str).str.strip()
+        .unique()
+        .tolist()
+    )
+    if not modules:
+        raise ValueError(f"Không tìm thấy module nào cho course='{knowledge_pack}'")
+    chosen = random.choice(modules)
+    logger.info(f"  🎲 Random module → '{chosen}'")
+    return chosen
 
-@lru_cache(maxsize=1)
-def _load_category_node_metadata() -> dict[str, list[dict[str, str]]]:
-    """Load metadata_node.xlsx → {category: [node_info, ...]}. Cached per process."""
+
+def _pick_random_lesson(knowledge_pack: str, module_value: str, df: pd.DataFrame) -> str:
+    lessons = (
+        df[
+            (df["Course"].astype(str).str.strip() == knowledge_pack) &
+            (df["Module"].astype(str).str.strip() == module_value)
+            ]["Lesson"]
+        .astype(str).str.strip()
+        .unique()
+        .tolist()
+    )
+    if not lessons:
+        raise ValueError(
+            f"Không tìm thấy lesson nào cho course='{knowledge_pack}', module='{module_value}'"
+        )
+    chosen = random.choice(lessons)
+    logger.info(f"  🎲 Random lesson → '{chosen}'")
+    return chosen
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# STEP 1 — Load & filter metadata_node.xlsx
+# ══════════════════════════════════════════════════════════════════════════════
+
+def _load_metadata_rows(
+        knowledge_pack: str,
+        module_value: str | None = None,
+        lesson_value: str | None = None,
+) -> list[dict]:
     df = pd.read_excel(METADATA_NODE_XLSX, engine="openpyxl")
-    result: dict[str, list[dict[str, str]]] = {}
-    for _, row in df.iterrows():
-        cat = str(row.get("Category", "")).strip()
-        if not cat:
-            continue
-        result.setdefault(cat, []).append({
-            "node_name": str(row.get("Node Name", "")).strip(),
-            "definition": str(row.get("Definition", "")).strip(),
-            "category": cat,
-            "related_nodes": str(row.get("Related Nodes", "")).strip(),
-        })
-    return result
+    df.columns = [c.strip() for c in df.columns]
+
+    mask = df["Course"].astype(str).str.strip() == knowledge_pack
+
+    if module_value:
+        mask &= df["Module"].astype(str).str.strip() == module_value
+
+    if lesson_value:
+        mask &= df["Lesson"].astype(str).str.strip() == lesson_value
+
+    filtered = df[mask].copy()
+    if filtered.empty:
+        detail = f"course='{knowledge_pack}'"
+        if module_value:
+            detail += f", module='{module_value}'"
+        if lesson_value:
+            detail += f", lesson='{lesson_value}'"
+        raise ValueError(f"Không tìm thấy row nào với {detail}")
+
+    logger.info(f"  📄 metadata rows matched: {len(filtered)}")
+    return filtered.to_dict(orient="records")
 
 
-# ── Difficulty ─────────────────────────────────────────────────────────────────
+# ══════════════════════════════════════════════════════════════════════════════
+# STEP 2 — Tính phân phối số câu hỏi cho mỗi row
+# ══════════════════════════════════════════════════════════════════════════════
+
+def _distribute_counts(total: int, n_rows: int) -> list[int]:
+    if total <= n_rows:
+        actual_rows = total
+        counts = [1] * actual_rows
+    else:
+        actual_rows = n_rows
+        per_row = math.ceil(total / n_rows)
+        counts = [per_row] * n_rows
+
+    logger.info(
+        f"  🔢 {total} câu / {n_rows} rows → "
+        f"dùng {actual_rows} row(s), mỗi row sinh {counts[0]} câu"
+    )
+    return counts
 
 
-def _build_difficulty_instruction(counts: dict[str, int]) -> str:
-    lines = [f"   - {diff}: exactly {cnt} question(s)" for diff, cnt in counts.items() if cnt > 0]
-    return "DIFFICULTY DISTRIBUTION (you MUST follow this exactly):\n" + "\n".join(lines)
+# ══════════════════════════════════════════════════════════════════════════════
+# STEP 3 — Fetch chunks từ vector DB theo 5 trường của row
+# ══════════════════════════════════════════════════════════════════════════════
+
+def _fetch_chunks_for_row(row: dict) -> list[dict]:
+    qdrant = get_qdrant_client()
+
+    def _val(key: str) -> str:
+        return str(row.get(key, "")).strip()
+
+    conditions = [
+        models.FieldCondition(key="course", match=models.MatchValue(value=_val("Course"))),
+        models.FieldCondition(key="module", match=models.MatchValue(value=_val("Module"))),
+        models.FieldCondition(key="lesson", match=models.MatchValue(value=_val("Lesson"))),
+        models.FieldCondition(key="category", match=models.MatchValue(value=_val("Category"))),
+        models.FieldCondition(key="node_name", match=models.MatchValue(value=_val("Node Name"))),
+    ]
+    scroll_filter = models.Filter(must=conditions)
+    import asyncio
+    points = asyncio.run(qdrant.ascroll_all(scroll_filter=scroll_filter))
+
+    chunks = [
+        {
+            "text": pt.payload.get("text", ""),
+            "chunk_index": pt.payload.get("chunk_index"),
+            "total_chunks": pt.payload.get("total_chunks"),
+            "page_number": pt.payload.get("page_number"),
+            "total_pages": pt.payload.get("total_pages"),
+            "file_name": pt.payload.get("file_name", ""),
+            "category": pt.payload.get("category", ""),
+            "node_name": pt.payload.get("node_name", ""),
+            "node_id": pt.payload.get("node_id"),
+            "module": pt.payload.get("module", ""),
+            "lesson": pt.payload.get("lesson", ""),
+            "course": pt.payload.get("course", ""),
+        }
+        for pt in points
+    ]
+    chunks.sort(key=lambda c: c.get("chunk_index") or 0)
+
+    logger.info(f"  🔍 [{_val('Node Name')}] → {len(chunks)} chunk(s) từ vector DB")
+    return chunks
 
 
-# ── Prompt building ───────────────────────────────────────────────────────────
+# ══════════════════════════════════════════════════════════════════════════════
+# STEP 4 — Load file xlsx ví dụ + filter theo difficulty
+# ══════════════════════════════════════════════════════════════════════════════
 
-def _build_batch_user_prompt(batch: list[BatchItem]) -> str:
+def _build_xlsx_path(source: str) -> Path:
+    name = str(source).strip()
+    if not name.lower().endswith(".xlsx"):
+        name = name + ".xlsx"
+    return Path(QUIZ_XLSX_DIR) / name
+
+
+def _load_example_questions(source: str, difficulty: str) -> list[dict]:
+    path = _build_xlsx_path(source)
+    if not path.exists():
+        logger.warning(f"  ⚠️  Không tìm thấy file ví dụ: {path}")
+        return []
+
+    df = pd.read_excel(path, engine="openpyxl", header=0, skiprows=[1])
+    df.columns = [str(c).strip() for c in df.columns]
+
+    diff_col = next(
+        (c for c in df.columns if "dif" in c.lower() and "level" in c.lower()),
+        None,
+    )
+    if diff_col is None:
+        logger.warning(f"  ⚠️  Không có cột 'Dificulty Level' trong {path.name}")
+        return []
+
+    filtered = df[df[diff_col].astype(str).str.strip() == difficulty]
+    logger.info(f"  📖 [{path.name}] ví dụ difficulty='{difficulty}': {len(filtered)} câu")
+    return filtered.to_dict(orient="records")
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# STEP 5 — Build prompt và gọi LLM
+# ══════════════════════════════════════════════════════════════════════════════
+
+def _build_user_prompt(
+        row: dict,
+        chunks: list[dict],
+        n_questions: int,
+        difficulty: str,
+        examples: list[dict],
+) -> str:
     parts: list[str] = []
-    for idx, (category, chunks, node_meta_list) in enumerate(batch, 1):
-        parts.append(f"═══ Category Group {idx}: {category} ═══")
 
-        if node_meta_list:
-            parts.append(f"[Knowledge Graph Nodes for '{category}']")
-            for nm in node_meta_list:
-                parts.append(
-                    f"  • Node Name: {nm['node_name']}\n"
-                    f"    Definition: {nm['definition']}\n"
-                    f"    Category: {nm['category']}\n"
-                    f"    Related Nodes: {nm['related_nodes']}"
-                )
+    parts.append("═" * 60)
+    parts.append("KNOWLEDGE NODE (from metadata)")
+    parts.append("═" * 60)
+    parts.append(f"Course        : {row.get('Course', '')}")
+    parts.append(f"Module        : {row.get('Module', '')}")
+    parts.append(f"Lesson        : {row.get('Lesson', '')}")
+    parts.append(f"Category      : {row.get('Category', '')}")
+    parts.append(f"Node Name     : {row.get('Node Name', '')}")
+    parts.append(f"Definition    : {row.get('Definition', '')}")
+    parts.append(f"Summary       : {row.get('Summary', '')}")
+    parts.append(f"Related Nodes : {row.get('Related Nodes', '')}")
+    parts.append("")
+
+    parts.append("═" * 60)
+    parts.append(f"CONTENT CHUNKS ({len(chunks)} chunk(s))")
+    parts.append("═" * 60)
+    for chunk in chunks:
+        parts.append(
+            f"┌─ Chunk {chunk.get('chunk_index')} / {chunk.get('total_chunks')}  "
+            f"│  Page {chunk.get('page_number')} / {chunk.get('total_pages')}  "
+            f"│  File: {chunk.get('file_name')}"
+        )
+        parts.append(
+            f"│  Course: {chunk.get('course')}  "
+            f"Module: {chunk.get('module')}  "
+            f"Lesson: {chunk.get('lesson')}  "
+            f"Category: {chunk.get('category')}  "
+            f"Node: {chunk.get('node_name')}"
+        )
+        parts.append("│")
+        parts.append(f"│  {chunk.get('text', '').strip()}")
+        parts.append("└" + "─" * 59)
+    parts.append("")
+
+    if examples:
+        parts.append("═" * 60)
+        parts.append(f"EXAMPLE QUESTIONS (difficulty='{difficulty}')")
+        parts.append("═" * 60)
+        for ex in examples:
+            parts.append(f"Q : {ex.get('Question', '')}")
+            parts.append(f"  A0: {ex.get('1', '')}")
+            parts.append(f"  A1: {ex.get('2', '')}")
+            parts.append(f"  A2: {ex.get('3', '')}")
+            parts.append(f"  A3: {ex.get('4', '')}")
+            parts.append(f"  ✓ Correct index: {ex.get('Correct Answer', '')}")
             parts.append("")
-
-        for i, chunk in enumerate(chunks, 1):
-            parts.append(
-                f"--- Chunk {i} ---\n"
-                + "\n".join(f"{k}: {chunk.get(k, '')}" for k in (
-                    "file_name", "node_name", "category",
-                    "page_number", "total_pages", "module", "lesson",
-                ))
-                + f"\ntext:\n{chunk.get('text', '')}"
-            )
+    else:
+        parts.append("(No example questions available for this difficulty level.)")
         parts.append("")
 
+    parts.append("═" * 60)
+    parts.append("GENERATION REQUEST")
+    parts.append("═" * 60)
     parts.append(
-        f"Generate exactly {len(batch)} multiple-choice question(s), "
-        "one per category group above."
+        f"Generate exactly {n_questions} multiple-choice question(s) "
+        f"at difficulty='{difficulty}' "
+        f"for the node '{row.get('Node Name', '')}' above.\n"
+        f"Base ALL questions strictly on the chunks provided."
     )
+
     return "\n".join(parts)
 
 
-# ── LLM call ──────────────────────────────────────────────────────────────────
+def _call_llm_for_row(
+        row: dict,
+        chunks: list[dict],
+        n_questions: int,
+        difficulty: str,
+        examples: list[dict],
+) -> list[dict]:
+    llm = get_openai_chat_client()
 
-def _parse_llm_json(raw: str) -> list[dict]:
-    """Parse LLM response (JSON mode hoặc markdown-fenced JSON) → list[dict]."""
-    cleaned = raw.strip().removeprefix("```json").removeprefix("```").removesuffix("```").strip()
-    data = json.loads(cleaned)
-    if isinstance(data, dict) and "questions" in data:
-        return data["questions"]
-    return data if isinstance(data, list) else [data]
+    system_prompt = QUIZ_SYSTEM_PROMPT.format(
+        n_questions=n_questions,
+        difficulty_instruction=(
+            f"DIFFICULTY DISTRIBUTION:\n"
+            f"   - {difficulty}: exactly {n_questions} question(s)"
+        ),
+    )
+    user_prompt = _build_user_prompt(row, chunks, n_questions, difficulty, examples)
 
-
-async def _agenerate_batch(
-        llm: AzureChatClient,
-        batch: list[BatchItem],
-        semaphore: asyncio.Semaphore,
-        batch_idx: int,
-        difficulty_instruction: str = "",
-) -> list[dict[str, Any]]:
-    n_questions = len(batch)
-    async with semaphore:
-        logger.info(
-            f"  🚀 Batch {batch_idx}: {n_questions} question(s) for "
-            f"{[cat for cat, _, _ in batch]}"
-        )
-        system_prompt = QUIZ_SYSTEM_PROMPT.format(
-            n_questions=n_questions,
-            difficulty_instruction=difficulty_instruction,
-        )
-        raw = await llm.acreate_json_message(
-            system_prompt=system_prompt,
-            messages=[{"role": "user", "content": _build_batch_user_prompt(batch)}],
-            max_tokens=min(n_questions * TOKENS_PER_QUESTION, MAX_TOKENS_PER_CALL),
-        )
-        questions = _parse_llm_json(raw)
-        logger.info(f"  ✅ Batch {batch_idx}: got {len(questions)} question(s)")
-        return questions
+    raw = llm.create_agentic_chunker_message(
+        system_prompt=system_prompt,
+        messages=[{"role": "user", "content": user_prompt}],
+        max_tokens=min(n_questions * TOKENS_PER_QUESTION, MAX_TOKENS_PER_CALL),
+    )
+    return _parse_llm_json(raw)
 
 
-
-def _build_chunk_meta_index(chunks: list[dict[str, Any]]) -> dict[str, dict]:
-    """file_name → {module, lesson, course, file_name}"""
-    index: dict[str, dict] = {}
-    for c in chunks:
-        fn = c.get("file_name", "")
-        if fn and fn not in index:
-            index[fn] = {k: c.get(k) for k in ("module", "lesson", "course", "file_name")}
-    return index
-
-
-def _match_file(source_name: str, chunk_meta: dict[str, dict]) -> str | None:
-    """Tìm file_name khớp với source_name (substring match)."""
-    for fn in chunk_meta:
-        if fn in source_name or source_name in fn:
-            return fn
-    return next(iter(chunk_meta), None)  # fallback to first
-
-
-def _enrich_sources(question: dict[str, Any], chunks: list[dict[str, Any]]) -> None:
-    """Gán module, lesson, course, url cho từng source trong question."""
+def _enrich_question_metadata(question: dict, row: dict, chunks: list[dict]) -> None:
     base_url = get_app_config().APP_DOMAIN
-    chunk_meta = _build_chunk_meta_index(chunks)
 
-    for source in question.get("sources", []):
-        matched = _match_file(source.get("name", ""), chunk_meta)
-        if matched:
-            meta = chunk_meta[matched]
-            source.update({
-                "name": matched,
-                "module": meta["module"],
-                "lesson": meta["lesson"],
-                "course": meta["course"],
-                "url": f"{base_url}/api/v1/file/{matched}.pdf",
-            })
-        else:
-            source.setdefault("module", None)
-            source.setdefault("lesson", None)
-            source.setdefault("course", None)
+    question["category"] = str(row.get("Category", "")).strip()
+    question["node_name"] = str(row.get("Node Name", "")).strip()
 
+    seen: dict[str, dict] = {}
+    for chunk in chunks:
+        fn = str(chunk.get("file_name", "")).strip()
+        if fn and fn not in seen:
+            seen[fn] = chunk
 
-def _enrich_question_sources(
-        question: dict[str, Any],
-        category_chunks: CategoryChunks,
-) -> None:
-    cat = question.get("category", "")
-    chunks = category_chunks.get(cat) or [c for cc in category_chunks.values() for c in cc]
-    _enrich_sources(question, chunks)
+    sources: list[dict] = []
+    for fn, chunk in seen.items():
+        sources.append({
+            "name": fn,
+            "url": f"{base_url}/api/v1/file/{fn}.pdf",
+            "page": chunk.get("page_number"),
+            "total_pages": chunk.get("total_pages"),
+            "module": chunk.get("module") or str(row.get("Module", "")).strip() or None,
+            "lesson": chunk.get("lesson") or str(row.get("Lesson", "")).strip() or None,
+            "course": chunk.get("course") or str(row.get("Course", "")).strip() or None,
+        })
+
+    question["sources"] = sources
 
 
-# ── Batch sizing ──────────────────────────────────────────────────────────────
+# ══════════════════════════════════════════════════════════════════════════════
+# PARALLEL WORKER — xử lý một row độc lập
+# ══════════════════════════════════════════════════════════════════════════════
 
-def _compute_batch_size(n: int, max_concurrent: int) -> int:
-    """Tính batch_size tối ưu để minimize số LLM rounds."""
-    if n <= max_concurrent:
-        return 1
-    return min(math.ceil(n / max_concurrent), MAX_BATCH_SIZE)
+def _process_row(row: dict, n_q: int, difficulty: str) -> tuple[list[dict], int, int]:
+    node_name = str(row.get("Node Name", "")).strip()
+    source = str(row.get("Source", "")).strip()
 
-
-# ── Pipeline ──────────────────────────────────────────────────────────────────
-
-def _assign_difficulties(
-        sampled_items: list[SampledItem],
-        difficulty: str,
-) -> list[tuple[str, list[dict], str]]:
-    """Gán cùng một difficulty cho tất cả sampled items."""
-    return [
-        (cat, chunks, difficulty)
-        for cat, chunks in sampled_items
-    ]
-
-
-def _build_batch_tasks(
-        items_with_diff: list[tuple[str, list[dict], str]],
-        batch_size: int,
-        llm: AzureChatClient,
-        semaphore: asyncio.Semaphore,
-        category_node_meta: dict[str, list[dict[str, str]]],
-) -> list:
-    """Chia items thành batches và tạo LLM tasks."""
-    batches = [
-        items_with_diff[i: i + batch_size]
-        for i in range(0, len(items_with_diff), batch_size)
-    ]
-    tasks = []
-    for idx, batch_items in enumerate(batches, 1):
-        batch_counts: dict[str, int] = {}
-        for _, _, diff in batch_items:
-            batch_counts[diff] = batch_counts.get(diff, 0) + 1
-
-        batch_tuples: list[BatchItem] = [
-            (cat, chunks, category_node_meta.get(cat, []))
-            for cat, chunks, _ in batch_items
-        ]
-        tasks.append((
-            batch_items,
-            _agenerate_batch(
-                llm=llm,
-                batch=batch_tuples,
-                semaphore=semaphore,
-                batch_idx=idx,
-                difficulty_instruction=_build_difficulty_instruction(batch_counts),
-            )
-        ))
-    return tasks
-
-
-def _assemble_questions(
-        batch_tasks: list,
-        category_chunks: CategoryChunks,
-) -> tuple[list[dict], int, int]:
-    """Gom kết quả từ batches, enrich sources, trả về (questions, success, fail)."""
-    questions: list[dict] = []
-    success = fail = 0
-    for batch_items, result in batch_tasks:
-        if isinstance(result, Exception):
-            fail += len(batch_items)
-            logger.warning(f"  ❌ Batch failed: {result}")
-            continue
-        for q in result:
-            q["id"] = len(questions) + 1
-            _enrich_question_sources(q, category_chunks)
-            questions.append(q)
-            success += 1
-    return questions, success, fail
-
-
-async def generate_quiz(
-        knowledge_pack: str,
-        difficulty: str,
-        count_difficulty: int,
-        level: str | None = None,
-        level_value: str | None = None,
-        window: int = 2,
-        max_concurrent: int = MAX_CONCURRENT_LLM,
-) -> dict[str, Any]:
-    """End-to-end quiz generation pipeline."""
-    timer = StepTimer("generate_quiz")
-    semaphore = asyncio.Semaphore(max_concurrent)
+    logger.info(f"\n  ▶ Row: [{node_name}] — sinh {n_q} câu")
 
     try:
-        # Step 1: Sample chunks
-        async with timer.astep("sample_and_fetch_chunks"):
-            sampler = NodeSampler()
-            sampled_items = await sampler.asample_and_fetch(
-                knowledge_pack=knowledge_pack,
-                level=level,
-                value=level_value,
-                n=count_difficulty,
-                window=window,
+        chunks = _fetch_chunks_for_row(row)
+    except Exception as e:
+        logger.warning(f"  ❌ Fetch chunks thất bại [{node_name}]: {e}")
+        return [], 0, n_q
+
+    if not chunks:
+        logger.warning(f"  ⚠️  Không có chunk nào cho node '{node_name}', bỏ qua.")
+        return [], 0, n_q
+
+    examples = _load_example_questions(source, difficulty) if source else []
+
+    try:
+        raw_questions = _call_llm_for_row(row, chunks, n_q, difficulty, examples)
+    except Exception as e:
+        logger.warning(f"  ❌ LLM thất bại cho node '{node_name}': {e}")
+        return [], 0, n_q
+
+    result: list[dict] = []
+    for q in raw_questions:
+        _enrich_question_metadata(q, row, chunks)
+        result.append(q)
+
+    return result, len(result), 0
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# PUBLIC API
+# ══════════════════════════════════════════════════════════════════════════════
+
+def generate_quiz(
+        knowledge_pack: str,
+        total: int,
+        difficulty: str | None = None,
+        module_value: str | None = None,
+        lesson_value: str | None = None,
+) -> dict[str, Any]:
+    timer = StepTimer("generate_quiz")
+
+    try:
+        # ── Pre-load df một lần để dùng cho random ────────────────────────
+        df_all = pd.read_excel(METADATA_NODE_XLSX, engine="openpyxl")
+        df_all.columns = [c.strip() for c in df_all.columns]
+
+        # Step 0a: Random difficulty nếu không truyền vào
+        if not difficulty:
+            difficulty = random.choice(DIFFICULTY_LEVELS)
+            logger.info(f"  🎲 Random difficulty → '{difficulty}'")
+
+        # Step 0b: Random module nếu không truyền vào
+        if not module_value:
+            module_value = _pick_random_module(knowledge_pack, df_all)
+            # lesson giữ nguyên null — không random khi module chưa được user chỉ định
+
+        # Step 0c: Chỉ random lesson khi module do USER truyền vào nhưng lesson null
+        else:
+            if not lesson_value:
+                lesson_value = _pick_random_lesson(knowledge_pack, module_value, df_all)
+
+        # Step 1: load metadata rows (module + lesson đã được xác định)
+        with timer.step("load_metadata"):
+            rows = _load_metadata_rows(knowledge_pack, module_value, lesson_value)
+
+        # Step 2: phân phối số câu
+        counts = _distribute_counts(total, len(rows))
+        rows = rows[:len(counts)]
+
+        max_per_prompt = max(counts) if counts else 0
+        if max_per_prompt > MAX_QUESTIONS_PER_PROMPT:
+            n_rows = len(rows)
+            max_allowed_total = MAX_QUESTIONS_PER_PROMPT * n_rows
+            raise ValueError(
+                f"Mỗi prompt chỉ được sinh tối đa {MAX_QUESTIONS_PER_PROMPT} câu, "
+                f"nhưng hiện tại mỗi prompt cần sinh {max_per_prompt} câu "
+                f"({total} câu / {n_rows} node(s)). "
+                f"Vui lòng giảm tổng số câu xuống còn tối đa {max_allowed_total} câu."
             )
 
-        category_chunks: CategoryChunks = {}
-        for cat, chunks in sampled_items:
-            category_chunks.setdefault(cat, []).extend(chunks)
+        questions: list[dict] = []
+        success = fail = 0
 
-        # Step 2: Difficulty + metadata
-        actual_n = len(sampled_items)
-        logger.info(f"  🎯 Difficulty: {difficulty}, count: {count_difficulty}")
+        # Step 3: gọi LLM song song theo từng row
+        with timer.step("generate_per_row"):
+            with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+                futures = {
+                    executor.submit(_process_row, row, n_q, difficulty): idx
+                    for idx, (row, n_q) in enumerate(zip(rows, counts))
+                }
 
-        category_node_meta = _load_category_node_metadata()
-        items_with_diff = _assign_difficulties(sampled_items, difficulty)
+                results: dict[int, tuple[list[dict], int, int]] = {}
+                for future in as_completed(futures):
+                    idx = futures[future]
+                    try:
+                        results[idx] = future.result()
+                    except Exception as e:
+                        logger.warning(f"  ❌ Unhandled error trong future (idx={idx}): {e}")
+                        results[idx] = ([], 0, counts[idx])
 
-        # Step 3: Batch + LLM calls
-        batch_size = _compute_batch_size(actual_n, max_concurrent)
+                for idx in range(len(rows)):
+                    partial_questions, s, f = results[idx]
+                    for q in partial_questions:
+                        q["id"] = len(questions) + 1
+                        questions.append(q)
+                    success += s
+                    fail += f
+
+        # Cắt đúng total câu
+        questions = questions[:total]
+
         logger.info(
-            f"  📋 {actual_n} items → batch_size={batch_size}, "
-            f"max_concurrent={max_concurrent}"
+            f"\n  📊 Kết quả: {success} sinh được, {fail} thất bại "
+            f"→ trả về {len(questions)}/{total} câu"
         )
-
-        async with timer.astep("generate_questions_batched"):
-            llm = get_openai_chat_client()
-            raw_tasks = _build_batch_tasks(
-                items_with_diff, batch_size, llm, semaphore, category_node_meta
-            )
-            # Tách coroutines để gather
-            batch_items_list = [b for b, _ in raw_tasks]
-            coros = [coro for _, coro in raw_tasks]
-            batch_results = await asyncio.gather(*coros, return_exceptions=True)
-
-        # Step 4: Assemble
-        async with timer.astep("assemble_and_enrich"):
-            paired = list(zip(batch_items_list, batch_results))
-            questions, success_count, fail_count = _assemble_questions(paired, category_chunks)
-            logger.info(
-                f"  📊 {success_count} succeeded, {fail_count} failed → "
-                f"{len(questions)} questions total"
-            )
 
         return {
             "success": True,
             "data": {
                 "total": len(questions),
                 "knowledge_pack": knowledge_pack,
-                "level": level,
-                "level_value": level_value,
+                "module_value": module_value,
+                "lesson_value": lesson_value,
                 "difficulty": difficulty,
-                "count_difficulty": count_difficulty,
                 "questions": questions,
             },
         }
+
     finally:
         timer.summary()

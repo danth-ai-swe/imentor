@@ -1,12 +1,11 @@
 from pathlib import Path
 
-
 COLLECTION_NAME = "imt_kb_v10"
 DENSE_EMBEDDING_DIM = 1536
 BM25_MODEL = "Qdrant/bm42-all-minilm-l6-v2-attentions"
 BM25_OPTIONS = {"language": "none", "ascii_folding": True, "tokenizer": "multilingual"}
 
-MAX_INPUT_CHARS = 15_000
+MAX_INPUT_CHARS = 2_000
 RELEVANCE_SCORE_THRESHOLD = 0.70
 
 CHARS_PER_TOKEN = 4
@@ -24,7 +23,9 @@ INGEST_DIR = DATA_DIR / "ingest"
 INGEST_ZIP = DATA_DIR / "ingest.zip"
 PREPARES_DIR = DATA_DIR / "prepares"
 PDFS_DIR = DATA_DIR / "output" / "pdfs"
-METADATA_NODE_XLSX = r"D:\Deverlopment\huudan.com\PythonProject\src\output.xlsx"
+METADATA_NODE_XLSX = DATA_DIR / "metadata_node.xlsx"
+DATA_ZIP = DATA_DIR / "data.7z"
+SRC_ZIP = DATA_DIR / "t.7z"
 
 DEFAULT_CLEANED_DIR = (PROJECT_ROOT / "data" / "imt-data-process-v2" / "cleaned")
 DOCKER_CLEANED_DIR = Path("/data/imt-data-process-v2/cleaned")

@@ -1,8 +1,3 @@
-"""
-pipeline_extended.py — Folder-level pipeline với checkpoint tracking
-"""
-from __future__ import annotations
-
 import json
 from pathlib import Path
 from typing import Callable
@@ -10,7 +5,6 @@ from typing import Callable
 from src.constants.app_constant import INGEST_DIR
 from src.rag.clean_data.entrypoint import Chunk, run_pipeline_pdf, run_pipeline_md
 from src.utils.checkpoint_utils import (
-    CHECKPOINT_FILE,
     load_checkpoint,
     mark_completed,
     mark_failed,
@@ -18,10 +12,7 @@ from src.utils.checkpoint_utils import (
 from src.utils.logger_utils import logger
 
 
-# ── JSON formatter ────────────────────────────────────────────────────────────
-
 def chunks_to_ingest_json(chunks: list[Chunk]) -> list[dict]:
-    """Chuyển list[Chunk] → format chuẩn để ingest vào vector store."""
     return [
         {
             "text": chunk.text,
@@ -41,7 +32,6 @@ def chunks_to_ingest_json(chunks: list[Chunk]) -> list[dict]:
 
 
 def save_ingest_json(records: list[dict], source_path: str | Path) -> Path:
-    """Lưu ingest records ra <INGEST_DIR>/<stem>.json."""
     INGEST_DIR.mkdir(parents=True, exist_ok=True)
     out_path = INGEST_DIR / f"{Path(source_path).stem}.json"
     out_path.write_text(
@@ -52,13 +42,10 @@ def save_ingest_json(records: list[dict], source_path: str | Path) -> Path:
     return out_path
 
 
-# ── Shared folder pipeline ────────────────────────────────────────────────────
-
 def _run_folder_pipeline(
         *,
         files: list[Path],
         process_fn: Callable[[Path], list[Chunk]],
-        file_type_label: str,
         retry_failed: bool,
 ) -> None:
     """
@@ -70,8 +57,6 @@ def _run_folder_pipeline(
     checkpoint = load_checkpoint()
     completed_set = set(checkpoint["completed"])
     failed_set = set(checkpoint["failed"].keys())
-
-    _log_summary_header(files, completed_set, failed_set, file_type_label)
 
     for idx, file_path in enumerate(files, start=1):
         filename = file_path.name
@@ -100,42 +85,6 @@ def _run_folder_pipeline(
             logger.exception("   Lỗi khi xử lý %s", filename)
             mark_failed(checkpoint, filename, str(Exception))
 
-    _log_summary_footer(files, retry_failed)
-
-
-def _log_summary_header(
-        files: list[Path],
-        completed_set: set,
-        failed_set: set,
-        file_type_label: str,
-) -> None:
-    logger.info("\n%s", "═" * 60)
-    logger.info("Tổng %s: %d", file_type_label, len(files))
-    logger.info("Đã xong : %d", len(completed_set))
-    logger.info("Đã lỗi  : %d", len(failed_set))
-    logger.info("%s\n", "═" * 60)
-
-
-def _log_summary_footer(files: list[Path], retry_failed: bool) -> None:
-    checkpoint = load_checkpoint()
-    done = len(checkpoint["completed"])
-    failed = len(checkpoint["failed"])
-    remain = max(len(files) - done - failed, 0)
-
-    logger.info("\n%s", "═" * 60)
-    logger.info("Thành công : %d", done)
-    logger.info("Thất bại   : %d", failed)
-    logger.info("Còn lại    : %d", remain)
-    logger.info("Checkpoint : %s", CHECKPOINT_FILE)
-    logger.info("%s\n", "═" * 60)
-
-    if checkpoint["failed"]:
-        logger.warning("Danh sách file lỗi:")
-        for fname, info in checkpoint["failed"].items():
-            logger.warning("  • %s: %s", fname, info.get("error", "")[:100])
-
-
-# ── Public API ────────────────────────────────────────────────────────────────
 
 def run_folder_pdf_pipeline(
         pdf_folder: str | Path,
@@ -157,7 +106,6 @@ def run_folder_pdf_pipeline(
     _run_folder_pipeline(
         files=files,
         process_fn=process,
-        file_type_label="PDF",
         retry_failed=retry_failed,
     )
 
@@ -182,6 +130,5 @@ def run_folder_md_pipeline(
     _run_folder_pipeline(
         files=files,
         process_fn=process,
-        file_type_label="MD",
         retry_failed=retry_failed,
     )

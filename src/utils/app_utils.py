@@ -1,6 +1,9 @@
+import json
 import re
 
 import unicodedata
+
+from src.constants.app_constant import QUIZ_KEYWORDS
 
 
 def cosine_similarity(vec1: list, vec2: list) -> float:
@@ -12,10 +15,34 @@ def cosine_similarity(vec1: list, vec2: list) -> float:
     return dot_product / (norm1 * norm2)
 
 
+def _strip_json_fence(text: str) -> str:
+    return text.strip().removeprefix("```json").removeprefix("```").removesuffix("```").strip()
+
+
+def _parse_llm_json(raw: str) -> list[dict]:
+    cleaned = raw.strip().removeprefix("```json").removeprefix("```").removesuffix("```").strip()
+    data = json.loads(cleaned)
+    if isinstance(data, dict) and "questions" in data:
+        return data["questions"]
+    return data if isinstance(data, list) else [data]
+
+
 def normalize_ellipsis(text: str, max_dots: int = 3) -> str:
     """Chuẩn hóa dấu chấm lửng thừa"""
     pattern = r'\.{' + str(max_dots + 1) + r',}'
     return re.sub(pattern, '.' * max_dots, text)
+
+
+def is_quiz_intent(text: str) -> bool:
+    normalised = text.lower().strip()
+    return normalised in QUIZ_KEYWORDS or any(kw in normalised for kw in QUIZ_KEYWORDS)
+
+
+def parse_json_response(raw: str) -> dict:
+    match = re.search(r"\{.*?}", raw, re.DOTALL)
+    if not match:
+        raise ValueError("No JSON object found in response")
+    return json.loads(match.group(0))
 
 
 def clean_text(text: str) -> str:

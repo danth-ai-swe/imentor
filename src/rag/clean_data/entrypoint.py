@@ -1,8 +1,3 @@
-"""
-entrypoint.py — PDF / MD → chunk → classify pipeline
-"""
-from __future__ import annotations
-
 import base64
 import json
 import logging
@@ -24,7 +19,7 @@ from src.rag.clean_data.prompt import (
     EXTRACT_TEXT_PROMPT,
 )
 from src.rag.llm.chat_llm import get_openai_chat_client
-from src.utils.app_utils import clean_text
+from src.utils.app_utils import clean_text, _strip_json_fence
 
 logger = logging.getLogger(__name__)
 
@@ -81,7 +76,8 @@ class ImageProcessor:
     def __init__(self, client) -> None:
         self.client = client
 
-    def pixmap_to_base64(self, pix: fitz.Pixmap) -> str:
+    @staticmethod
+    def pixmap_to_base64(pix: fitz.Pixmap) -> str:
         return base64.b64encode(pix.tobytes("png")).decode("utf-8")
 
     def classify(self, b64: str) -> dict:
@@ -187,7 +183,7 @@ def chunk_md_file(md_path: str, chunk_size: int = 800) -> list[Chunk]:
     file_name = md_path_obj.name
     raw = md_path_obj.read_text(encoding="utf-8")
 
-    pages = _split_md_into_pages(raw, md_path)
+    pages = _split_md_into_pages(raw)
     if not pages:
         raise ValueError(f"Không tìm thấy separator trang trong file: {md_path}")
 
@@ -219,7 +215,7 @@ def chunk_md_file(md_path: str, chunk_size: int = 800) -> list[Chunk]:
     ]
 
 
-def _split_md_into_pages(raw: str, md_path: str) -> list[tuple[int, int, str]]:
+def _split_md_into_pages(raw: str) -> list[tuple[int, int, str]]:
     parts = re.split(r"(={5} Trang \d+ / \d+ ={5})", raw)
     pages: list[tuple[int, int, str]] = []
     i = 1
@@ -334,9 +330,3 @@ def _chunk_and_classify(
     logger.info("      Classification complete")
 
     return chunks
-
-
-# ── Utility ───────────────────────────────────────────────────────────────────
-
-def _strip_json_fence(text: str) -> str:
-    return text.strip().removeprefix("```json").removeprefix("```").removesuffix("```").strip()

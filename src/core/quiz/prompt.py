@@ -103,12 +103,12 @@ EXAMPLES
 
 [BEGINNER — Type 1]
 Q: Which of the following best describes a joint and survivor annuity?
-  0: A policy that pays benefits only upon the death of the primary insured.
-  1: An annuity that continues payments to a surviving beneficiary after
+  A: A policy that pays benefits only upon the death of the primary insured.
+  B: An annuity that continues payments to a surviving beneficiary after
      the annuitant's death.
-  2: A savings vehicle with a fixed maturity date and lump-sum payout.
-  3: A group insurance contract covering multiple employees simultaneously.
-✓ Correct: 1
+  C: A savings vehicle with a fixed maturity date and lump-sum payout.
+  D: A group insurance contract covering multiple employees simultaneously.
+✓ Correct: B
 Hint example: "Think about how LOMA defines 'survivor' in the context of
 annuity payouts — what is the primary obligation of this contract type?"
 
@@ -117,11 +117,11 @@ Contract A — payments cease when the sole annuitant dies.
 Contract B — payments continue to the surviving spouse at 50 % of the
              original amount after the first annuitant dies.
 Which response correctly identifies these annuity types?
-  0: A = Joint and Survivor / B = Life Annuity
-  1: A = Life Annuity        / B = Joint and Survivor
-  2: A = Period Certain       / B = Joint and Survivor
-  3: A = Joint and Survivor  / B = Period Certain
-✓ Correct: 1
+  A: Contract A = Joint and Survivor / Contract B = Life Annuity
+  B: Contract A = Life Annuity        / Contract B = Joint and Survivor
+  C: Contract A = Period Certain       / Contract B = Joint and Survivor
+  D: Contract A = Joint and Survivor  / Contract B = Period Certain
+✓ Correct: B
 Hint example: "Focus on what distinguishes a Life Annuity from a Joint and
 Survivor — consider what happens to payments when the first person dies."
 
@@ -133,11 +133,11 @@ Maya Torres, age 55, purchases a deferred annuity with a $200,000 premium.
 Statement A: At end of accumulation, account value exceeds $290,000.
 Statement B: If Ms. Torres dies one year into payout, spouse receives
              75 % of the original joint payment.
-  0: Both A and B are correct.
-  1: A only is correct.
-  2: B only is correct.
-  3: Neither A nor B is correct.
-✓ Correct: 0
+  A: Both A and B are correct.
+  B: A only is correct.
+  C: B only is correct.
+  D: Neither A nor B is correct.
+✓ Correct: A
 Hint example: "Start by recalling the compound interest formula, then ask:
 does the joint-and-survivor definition specify what percentage continues —
 and under what condition does it activate?"
@@ -184,6 +184,9 @@ Before writing each question, work through ALL of these steps in order:
     b. difficulty_reason: cite the specific criteria (e.g., "satisfies [A]
        and [E]" or "single concept recall").
     c. hint: draft AFTER answer is finalized; point to concept, not answer.
+    d. correct_reason: 1–3 sentences citing the exact rule, definition,    
+       or calculation step from the chunks that makes the correct answer    
+       right. This must be chunk-grounded and self-contained.              
 
 ─────────────────────────────────────────────────────────────
 EXPLANATION WRITING GUIDE
@@ -192,30 +195,44 @@ Write as a supportive mentor speaking directly to the learner.
 Tone  : friendly, empathetic, encouraging — never condescending.
 Format: Markdown inside the JSON string (use \\n for newlines).
 
-Must include all four blocks:
+Structure: exactly THREE blocks in this order:
 
-  ✅ **Why the correct answer is right**
-     Clear reasoning tied to chunk content.
-     For calculations: show full working step by step.
+  ── BLOCK 1 ── ✅ Confirm & explain the correct answer  (2–3 sentences)
+     - State clearly which option is correct.
+     - Explain WHY it is correct, linking directly to the definition or
+       rule from the source chunks — do NOT merely restate the option text.
+     - For calculations: show every arithmetic step explicitly.
 
-  ❌ **Why the other options are wrong**
-     One sentence per wrong option explaining the misconception.
+  ── BLOCK 2 ── ❌ Analyse each wrong option  (1 sentence per option)
+     - For EACH incorrect option, name the OTHER concept or product it
+       actually describes, and explain in one sentence why that makes it
+       wrong for this question.
+     - This is the most important block for insurance exams: learners
+       confuse closely related products constantly.
 
-  💡 **Tip / Pattern to remember**
-     A memorable rule, mnemonic, or pattern for this topic or question type.
+  ── BLOCK 3 ── 💡 Key takeaway  (1–2 sentences)
+     - One memorable rule, mnemonic, or pattern the learner can carry
+       forward to similar questions.
+     - Optionally connect to a related node or broader exam theme.
 
-  🎯 **How to approach this type of question**
-     One or two sentences of exam strategy specific to this question type.
+Tone phrases to use naturally (vary; do not use all in one explanation):
+  "Great news — ...", "Here's the key insight:",
+  "Don't worry if this tripped you up — ...", "You've got this! 💪"
 
-Tone phrases: "Great news — ...", "Here's the key insight:",
-"Don't worry if this tripped you up — ...", "You've got this! 💪"
-Emoji: 1–3 per explanation, purposeful (✅ ❌ 💡 🎯 💪 📌 🔑).
+Emoji: use ONLY the block markers (✅ ❌ 💡) plus one optional extra
+       (💪 📌 🔑) — maximum 4 emoji total per explanation.
+Length: 80–150 words total. Concise but complete.
 
 JSON ENCODING RULES (critical):
-  • This field is a JSON string — use \\n for newlines, never literal line breaks.
-  • Markdown bold: **text** is valid inside JSON strings — do NOT escape the asterisks.
-  • Example of a correctly encoded value:
-    "✅ **Why correct:** ...\\n\\n❌ **Why wrong:**\\n- Option 0: ...\\n- Option 1: ...\\n\\n💡 **Tip:** ...\\n\\n🎯 **Strategy:** ..."
+  • This field is a JSON string — use \\n for newlines, never literal
+    line breaks inside the string value.
+  • Markdown bold (**text**) is valid inside JSON strings —
+    do NOT escape the asterisks.
+  • Correct encoded structure:
+    "✅ **[Correct answer]:** ...\\n\\n❌ **[Wrong options]:**\\n- Option A: ...\\n- Option B: ...\\n- Option C: ...\\n\\n💡 **[Key takeaway]:** ..."
+
+EXAMPLE (Definition/Concept — Term Life Insurance):
+  "✅ **Option B is correct:** Term life insurance pays a death benefit ONLY if the insured dies within the specified policy period. If the insured survives the term, coverage simply expires with no payout — the time-bound condition is the defining feature.\\n\\n❌ **Why the other options are wrong:**\\n- Option A describes *whole life insurance*, which covers the insured for their entire lifetime, not a fixed term.\\n- Option C describes *permanent life insurance* products that build cash value over time — a feature term policies do not have.\\n- Option D describes *accidental death insurance*, a narrower product that pays only for accidental deaths, not all causes within a term.\\n\\n💡 **Key takeaway:** The word *'term'* is your anchor — coverage is temporary and strictly tied to the policy period. When you see options mentioning cash value or lifetime coverage, those belong to a different product family entirely."
 
 ─────────────────────────────────────────────────────────────
 HINT WRITING GUIDE
@@ -253,6 +270,27 @@ For calculation questions additionally:
 Tone: calm, encouraging, Socratic — mentor pointing at the map, not giving directions.
 
 ─────────────────────────────────────────────────────────────
+CORRECT_REASON WRITING GUIDE                                            
+─────────────────────────────────────────────────────────────          
+Goal: Provide a concise, chunk-grounded justification for why           
+the correct answer is right — distinct from the full explanation.       
+
+MUST follow all of these:                                               
+  ✔ 1–3 sentences only.                                                 
+  ✔ Directly cite the rule, definition, or calculation from the chunks  
+    that makes this answer correct.                                     
+  ✔ Stand alone — readable without the full explanation.                
+  ✔ Written in plain, factual language (no mentor tone needed here).    
+  ✔ Must be a valid JSON string (use \\n if multi-sentence formatting    
+    is needed; no literal line breaks).                                 
+
+MUST NOT do any of these:                                               
+  ✘ Repeat or summarise the full explanation block.                     
+  ✘ Reference wrong options or distractors.                             
+  ✘ Exceed 3 sentences.                                                 
+  ✘ Introduce concepts not found in the supplied chunks.                
+
+─────────────────────────────────────────────────────────────
 CONSTRAINTS
 ─────────────────────────────────────────────────────────────
   • NEVER use knowledge outside the provided chunks.
@@ -261,10 +299,14 @@ CONSTRAINTS
   • NEVER assign a type other than the four defined types.
   • ALWAYS mirror the stem and options structure of the example questions.
   • ALWAYS verify any calculation before finalising.
-  • explanation MUST follow the four-block Markdown guide above.
+  • explanation MUST follow the three-block structure above:
+    Block 1 ✅ (2–3 sentences) → Block 2 ❌ (1 sentence per wrong option)
+    → Block 3 💡 (1–2 sentences). No other structure is accepted.
   • explanation and hint MUST be valid JSON strings: use \\n for newlines,
     no literal line breaks inside string values.
   • hint MUST follow the hint guide above.
+  • correct_reason MUST cite chunk evidence; MUST NOT exceed 3 sentences; 
+    MUST be a valid JSON string.                                         
   • Return ONLY valid JSON — no markdown fences, no commentary outside JSON.
   • Validate mentally: paste the output into a JSON parser — it must parse
     without errors before you finalise.
@@ -279,10 +321,11 @@ OUTPUT VALID JSON FORMAT
 "difficulty": "<Beginner | Intermediate | Advanced>",
 "difficulty_reason": "<1–2 sentences: for Advanced cite which two of [A]–[E] are satisfied; for others cite the single-concept or dual-concept load>",
 "question": "<full question text>",
-"options": [{{"index": 0, "text": "<option>"}},{{"index": 1, "text": "<option>"}},{{"index": 2, "text": "<option>"}},{{"index": 3, "text": "<option>"}}],
-"correct_answer": <0|1|2|3>,
+"options": [{{"index": "A", "text": "<option>"}},{{"index": "B", "text": "<option>"}},{{"index": "C", "text": "<option>"}},{{"index": "D", "text": "<option>"}}],
+"correct_answer": "<A|B|C|D>",
+"correct_reason": "<1–3 sentences: cite the exact rule, definition, or calculation from the chunks that makes option [A/B/C/D] correct. JSON-encoded string.>",
 "hint": "<concept-first, Socratic, ≤300 chars, no answer revealed, JSON-encoded>",
-"explanation": "<JSON-encoded Markdown string. Four blocks required: ✅ Why correct → ❌ Why wrong → 💡 Tip → 🎯 Strategy.>"
+"explanation": "<JSON-encoded Markdown string. Three blocks required: ✅ Correct answer (2–3 sentences) → ❌ Each wrong option (1 sentence each) → 💡 Key takeaway (1–2 sentences).>"
 }}]}}
 ```
 """

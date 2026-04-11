@@ -3,8 +3,6 @@ from typing import Any, Dict, List
 
 import pandas as pd
 
-from src.apis.app_model import ChatSourceModel
-from src.config.app_config import get_app_config
 from src.constants.app_constant import (
     COLLECTION_NAME,
     MAX_INPUT_CHARS,
@@ -25,11 +23,7 @@ from src.rag.search.prompt import (
     INPUT_TOO_LONG_RESPONSE,
     NO_RESULT_RESPONSE,
     OFF_TOPIC_FALLBACK_RESPONSE,
-    OFF_TOPIC_PROMPT,
-)
-from src.rag.search.web_search import (
-    asearch_and_extract,
-    agenerate_web_answer,
+    OFF_TOPIC_PROMPT
 )
 from src.rag.semantic_router.router import SemanticRouter, Route, load_precomputed_embeddings
 from src.rag.semantic_router.samples import coreKnowledgeSamples, offTopicSamples
@@ -101,75 +95,24 @@ async def _agenerate_off_topic_response(
         return OFF_TOPIC_FALLBACK_RESPONSE
 
 
-def extract_sources(results, url):
-    seen_sources: dict[str, ChatSourceModel] = {}
-    for r in results:
-        meta = r.get("metadata", {})
-        source_file = meta.get("file_name", "")
-
-        if source_file and source_file not in seen_sources:
-            seen_sources[source_file] = ChatSourceModel(
-                name=source_file,
-                url=f"{url}/api/v1/file/{source_file}.pdf",
-                page_number=meta.get("page_number", 1),
-                total_pages=meta.get("total_pages", 1),
-            )
-
-    return list(seen_sources.values())
-
-
 def _build_pipeline_result(
         intent: str | None,
         response: str | None,
+        *,
+        results: list | None = None,
         detected_language: str | None = None,
+        node_data: list | None = None,
         answer_satisfied: bool = False,
-        web_search_used: bool = False,
-        sources: list | None = None,  # ← structured web source items
 ) -> Dict[str, Any]:
     return {
         "intent": intent,
         "response": response,
+        "results": results or [],
+        "suggested_questions": None,
         "detected_language": detected_language,
+        "node_data": node_data,
         "answer_satisfied": answer_satisfied,
-        "web_search_used": web_search_used,
-        "sources": sources or [],
     }
-
-
-async def _afallback_web_search(
-        llm: AzureChatClient,
-        user_input: str,
-        standalone_query: str,
-        detected_language: str,
-) -> tuple[str, list]:
-    """
-    Fallback: build optimised query → Tavily search+extract → generate answer.
-
-    Returns:
-        answer       : clean answer string (no inline source text)
-        source_items : structured list for the `sources` API field
-    """
-    # Step A: rewrite standalone_query into a better search query
-    # Step B: search + extract (now returns search_meta instead of raw URL list)
-    extracted_results, search_meta = await asearch_and_extract(standalone_query)
-
-    if not extracted_results:
-        logger.warning("Web search fallback: no extracted results")
-        return NO_RESULT_RESPONSE, []
-
-    # Step C: generate answer + structured source items
-    answer, source_items = await agenerate_web_answer(
-        llm=llm,
-        user_input=user_input,
-        detected_language=detected_language,
-        extracted_results=extracted_results,
-        search_meta=search_meta,
-    )
-
-    if not answer:
-        return NO_RESULT_RESPONSE, []
-
-    return answer, source_items
 
 
 async def async_pipeline_hyde_search(
@@ -182,9 +125,6 @@ async def async_pipeline_hyde_search(
         return _build_pipeline_result(
             intent="off_topic",
             response=INPUT_TOO_LONG_RESPONSE.format(max_chars=MAX_INPUT_CHARS),
-            web_search_used=False,
-            answer_satisfied=False,
-            sources=[]
         )
 
     try:
@@ -194,9 +134,6 @@ async def async_pipeline_hyde_search(
                 return _build_pipeline_result(
                     intent="off_topic",
                     response="Ngôn ngữ này hiện không được hỗ trợ. / This language is not currently supported.",
-                    web_search_used=False,
-                    answer_satisfied=False,
-                    sources=[]
                 )
 
         async with timer.astep("init_clients"):
@@ -216,9 +153,6 @@ async def async_pipeline_hyde_search(
                 return _build_pipeline_result(
                     intent="quiz",
                     response=None,
-                    web_search_used=False,
-                    answer_satisfied=False,
-                    sources=[]
                 )
 
         async with timer.astep("intent_routing"):
@@ -244,11 +178,7 @@ async def async_pipeline_hyde_search(
                     intent="off_topic",
                     response=response,
                     detected_language=detected_language,
-                    web_search_used=False,
-                    answer_satisfied=False,
-                    sources=[]
                 )
-
         # Step 2: HYDE analysis
         async with timer.astep("hyde_analysis"):
             hyde_result = await _ahyde_analyse_query(
@@ -260,9 +190,6 @@ async def async_pipeline_hyde_search(
                 intent="core_knowledge",
                 response=hyde_result["response"],
                 detected_language=detected_language,
-                web_search_used=False,
-                answer_satisfied=False,
-                sources=[]
             )
 
         async with timer.astep("vector_search"):
@@ -280,35 +207,36 @@ async def async_pipeline_hyde_search(
             except Exception:
                 logger.exception("Vector search failed")
                 sorted_chunks = []
-        sorted_chunks = []
-        # ── Fallback A: no vector chunks found ────────────────────────────────
+
         if not sorted_chunks:
-            logger.info("No vector results — triggering web search fallback")
-            async with timer.astep("web_search_fallback_no_chunks"):
-                answer, source_items = await _afallback_web_search(
-                    llm, user_input, standalone_query, detected_language
-                )
             return _build_pipeline_result(
                 intent="core_knowledge",
-                response=answer,
+                response=NO_RESULT_RESPONSE,
+                results=[
+                    SearchResult(
+                        metadata=c.get("metadata", {}),
+                        text=c.get("text", ""),
+                        score=c.get("score", 0.0),
+                    ).to_dict()
+                    for c in sorted_chunks[:5]
+                ],
                 detected_language=detected_language,
-                web_search_used=True,
-                sources=source_items,
-                answer_satisfied=True
             )
 
-        # ── Fetch neighbor chunks ─────────────────────────────────────────────
+        # ── Fetch 1 nearest neighbor (previous + next) per relevant chunk ──
         async with timer.astep("fetch_neighbor_chunks"):
             existing_ids = {c["id"] for c in sorted_chunks if c.get("id")}
             neighbor_ids: List[str] = []
             for c in sorted_chunks:
                 meta = c.get("metadata", {})
+                # last element of previous = immediately preceding chunk
                 prev_list = meta.get("previous", [])
                 if prev_list:
                     uid = prev_list[-1]
                     if uid and uid not in existing_ids:
                         neighbor_ids.append(uid)
                         existing_ids.add(uid)
+                # first element of next = immediately following chunk
                 next_list = meta.get("next", [])
                 if next_list:
                     uid = next_list[0]
@@ -335,7 +263,7 @@ async def async_pipeline_hyde_search(
                     logger.exception("Fetch neighbor chunks by IDs failed")
 
         merged_chunks = sorted_chunks + neighbor_chunks
-        seen_ids: set = set()
+        seen_ids = set()
         enriched_chunks = []
         for chunk in merged_chunks:
             cid = chunk.get("id", None)
@@ -343,6 +271,7 @@ async def async_pipeline_hyde_search(
                 enriched_chunks.append(chunk)
                 seen_ids.add(cid)
             elif not cid:
+                # If no id, include anyway (rare, fallback)
                 enriched_chunks.append(chunk)
 
         async with timer.astep("load_node_data"):
@@ -354,7 +283,7 @@ async def async_pipeline_hyde_search(
                 detected_language=detected_language,
                 relevant_chunks=enriched_chunks,
                 node_data_list=node_data_list,
-                chat_history_summary=chat_history,
+                chat_history_summary=chat_history
             )
             try:
                 answer: str = await llm.acreate_agentic_chunker_message(
@@ -368,37 +297,20 @@ async def async_pipeline_hyde_search(
         async with timer.astep("evaluate_answer"):
             answer_satisfied = await _aevaluate_answer_satisfied(llm, user_input, answer)
 
-        # ── Fallback B: answer unsatisfied ────────────────────────────────────
-        if not answer_satisfied:
-            logger.info("Answer not satisfied — triggering web search fallback")
-            async with timer.astep("web_search_fallback_unsatisfied"):
-                answer, source_items = await _afallback_web_search(
-                    llm, user_input, standalone_query, detected_language
-                )
-            return _build_pipeline_result(
-                intent="core_knowledge",
-                response=answer,
-                detected_language=detected_language,
-                answer_satisfied=True,
-                web_search_used=True,
-                sources=source_items,
-            )
-
-        # ── Normal RAG response ───────────────────────────────────────────────
         return _build_pipeline_result(
             intent="core_knowledge",
             response=answer,
-            sources=extract_sources([
+            results=[
                 SearchResult(
                     metadata=c.get("metadata", {}),
                     text=c.get("text", ""),
                     score=c.get("score", 0.0),
                 ).to_dict()
                 for c in sorted_chunks
-            ], get_app_config().APP_DOMAIN),
+            ],
             detected_language=detected_language,
+            node_data=node_data_list,
             answer_satisfied=answer_satisfied,
-            web_search_used=False,
         )
 
     finally:

@@ -1,25 +1,55 @@
-REFLECTION_SYSTEM_PROMPT = """\
-You are a query-rewrite assistant. Given a conversation and the user's latest message, produce a single, self-contained English query using these rules:
+REFLECTION_SYSTEM_PROMPT = """
+You are a query-rewrite assistant with expertise in conversational context resolution and multilingual query normalization. Your tone should be precise and technical. Your audience is a retrieval-augmented generation pipeline.
 
-1. CONFIRMATION — If the assistant's last turn was a clarification/suggestion (e.g. "Did you mean …?") and the user replies with a short affirmative ("yes", "yeah", "correct", "right", "that's it"), extract the **original user topic from the earlier user message** verbatim. Do NOT rephrase it as a question.
+I need you to rewrite the user's latest message into a single, self-contained English query so that a downstream search or QA system can process it without any prior conversation context. Be direct. No preamble. No fluff.
 
-2. FOLLOW-UP — If the latest message relies on prior context (pronouns, ellipsis, short answers like "red" or "that one"), merge the relevant context into a complete, self-contained English query.
+Rules you must follow:
+- Never include answers, explanations, or added information beyond the query itself.
+- Never output more than one sentence.
+- Always output only the rewritten English query — no labels, no preamble.
+- If you are about to include conversational filler or meta-commentary, stop and omit it.
 
-3. STANDALONE — If the latest message is already self-contained (full question, greeting, or off-topic), translate it to English as-is.
+Here are examples of what good output looks like:
+<examples>
+Example 1 — CONFIRMATION:
+  Conversation:
+    User: tôi muốn tìm laptop gaming tầm 20 triệu
+    Assistant: Did you mean you're looking for a gaming laptop around 20 million VND?
+    User: yes
+  Rewritten query: laptop gaming tầm 20 triệu
 
-Output ONLY the rewritten English query — one sentence, no preamble, no answer, no added information.\
+Example 2 — FOLLOW-UP:
+  Conversation:
+    User: What are the best noise-cancelling headphones?
+    Assistant: Sony WH-1000XM5 and Bose QC45 are top picks.
+    User: How about for under $100?
+  Rewritten query: best noise-cancelling headphones under $100
+
+Example 3 — STANDALONE:
+  Conversation:
+    User: xin chào
+  Rewritten query: hello
+</examples>
+
+Before answering, think through which of the three cases applies (CONFIRMATION / FOLLOW-UP / STANDALONE), then apply the matching rule. Put only your final rewritten query in the output — no wrapping tags.
+
+Return your response as plain text. One sentence. No structure template needed.
+
+Start your response with the rewritten query directly — no lead-in phrase like "Rewritten query:".
 """
 
-REFLECTION_USER_TEMPLATE = """\
+REFLECTION_USER_TEMPLATE = """
+Here is the background information you need:
+<context>
 Conversation:
 {history}
+</context>
 
 Latest user message: {query}
 
-Rewritten English query:\
+Rewritten English query:
 """
 
-from src.constants.app_constant import MAX_RECENT_HISTORY_ENTRIES
 from src.utils.language_utils import translate_to_english
 from src.utils.logger_utils import alog_method_call
 
@@ -29,22 +59,10 @@ class Reflection:
     def __init__(self, llm):
         self.llm = llm
 
-    @staticmethod
-    def _format_history(history: list[dict]) -> str:
-        lines: list[str] = []
-        for entry in history[-MAX_RECENT_HISTORY_ENTRIES:]:
-            role = entry.get("role", "user").capitalize()
-            if entry.get("parts"):
-                text = " ".join(p["text"] for p in entry["parts"])
-            else:
-                text = entry.get("content", "")
-            lines.append(f"{role}: {text}")
-        return "\n".join(lines)
-
     @alog_method_call
     async def areflect(
             self,
-            chat_history: list[dict],
+            chat_history: str,
             user_query: str | None = None,
             **_kwargs,
     ) -> str:
@@ -54,22 +72,11 @@ class Reflection:
             return translate_to_english(latest_question)
 
         user_content = REFLECTION_USER_TEMPLATE.format(
-            history=self._format_history(chat_history),
+            history=chat_history,
             query=latest_question,
         )
 
-        try:
-            if hasattr(self.llm, "acreate_agentic_chunker_message"):
-                return await self.llm.acreate_agentic_chunker_message(
-                    system_prompt=REFLECTION_SYSTEM_PROMPT,
-                    messages=[{"role": "user", "content": user_content}],
-                )
-
-            if hasattr(self.llm, "ainvoke"):
-                return await self.llm.ainvoke(
-                    f"{REFLECTION_SYSTEM_PROMPT}\n\n{user_content}"
-                )
-        except Exception:
-            pass
-
-        return translate_to_english(latest_question)
+        return await self.llm.acreate_agentic_chunker_message(
+            system_prompt=REFLECTION_SYSTEM_PROMPT,
+            messages=[{"role": "user", "content": user_content}],
+        )

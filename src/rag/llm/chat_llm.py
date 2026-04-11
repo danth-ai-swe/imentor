@@ -1,68 +1,68 @@
-from typing import List, Dict, Any
+from __future__ import annotations
 
-import openai
-from openai import AsyncAzureOpenAI
+import threading
+from typing import Dict, List
 
-from src.config.app_config import get_app_config, _retry_policy
+from src.config.app_config import _retry_policy, get_app_config
+from src.rag.llm.embedding_llm import get_async_client, get_sync_client
 from src.utils.logger_utils import alog_method_call, log_method_call
 
 config = get_app_config()
 
-_sync_client: openai.AzureOpenAI | None = None
-_async_client: AsyncAzureOpenAI | None = None
+# ── Thread-safe singletons ────────────────────────────────────────────────────
+_chat_client_instance: AzureChatClient | None = None
+
+_sync_lock = threading.Lock()
+_async_lock = threading.Lock()
+_chat_lock = threading.Lock()
 
 
-def get_sync_client() -> openai.AzureOpenAI:
-    global _sync_client
-    if _sync_client is None:
-        _sync_client = openai.AzureOpenAI(
-            azure_endpoint=config.OPENAI_API_BASE,
-            api_key=config.OPENAI_API_KEY,
-            api_version=config.OPENAI_API_VERSION,
-            timeout=config.GPT_TIMEOUT,
-            max_retries=config.GPT_MAX_RETRIES,
-        )
-    return _sync_client
+def _client_kwargs() -> dict:
+    return dict(
+        azure_endpoint=config.OPENAI_API_BASE,
+        api_key=config.OPENAI_API_KEY,
+        api_version=config.OPENAI_API_VERSION,
+        timeout=config.GPT_TIMEOUT,
+        max_retries=config.GPT_MAX_RETRIES,
+    )
 
 
-def _get_async_client() -> AsyncAzureOpenAI:
-    global _async_client
-    if _async_client is None:
-        _async_client = AsyncAzureOpenAI(
-            azure_endpoint=config.OPENAI_API_BASE,
-            api_key=config.OPENAI_API_KEY,
-            api_version=config.OPENAI_API_VERSION,
-            timeout=config.GPT_TIMEOUT,
-        )
-    return _async_client
-
-
+# ── AzureChatClient ───────────────────────────────────────────────────────────
 class AzureChatClient:
+
+    # ── Shared helpers ────────────────────────────────────────────────────────
+    @staticmethod
+    def _build_messages(
+            system_prompt: str,
+            messages: List[Dict[str, str]],
+    ) -> List[Dict[str, str]]:
+        return [
+            {"role": "system", "content": system_prompt},
+            *[
+                {"role": m.get("role", "user"), "content": m.get("content", "")}
+                for m in messages
+            ],
+        ]
+
+    @staticmethod
+    def _chat_params(messages: List[Dict], max_tokens: int | None = None) -> dict:
+        return dict(
+            model=config.OPENAI_CHAT_MODEL,
+            messages=messages,
+            temperature=config.GPT_TEMPERATURE,
+            top_p=config.GPT_TOP_P,
+            max_tokens=max_tokens or config.GPT_MAX_TOKENS,
+        )
+
+    # ── Sync ──────────────────────────────────────────────────────────────────
     @log_method_call
     @_retry_policy()
     def invoke(self, prompt: str) -> str:
-        """Simple single-turn text completion."""
+        """Single-turn text completion."""
         response = get_sync_client().chat.completions.create(
-            model=config.OPENAI_CHAT_MODEL,
-            messages=[{"role": "user", "content": prompt}],
-            temperature=config.GPT_TEMPERATURE,
-            top_p=config.GPT_TOP_P,
-            max_tokens=config.GPT_MAX_TOKENS,
+            **self._chat_params([{"role": "user", "content": prompt}])
         )
-        return response.choices[0].message.content
-
-    @log_method_call
-    @_retry_policy()
-    def invoke_full(self, prompt: str) -> Dict[str, Any]:
-        """Single-turn completion — returns full response dict."""
-        response = get_sync_client().chat.completions.create(
-            model=config.OPENAI_CHAT_MODEL,
-            messages=[{"role": "user", "content": prompt}],
-            temperature=config.GPT_TEMPERATURE,
-            top_p=config.GPT_TOP_P,
-            max_tokens=config.GPT_MAX_TOKENS,
-        )
-        return response.model_dump()
+        return response.choices[0].message.content or ""
 
     @log_method_call
     @_retry_policy()
@@ -70,22 +70,15 @@ class AzureChatClient:
             self,
             system_prompt: str,
             messages: List[Dict[str, str]],
+            max_tokens: int | None = None,
     ) -> str:
-        """Multi-turn conversation with an explicit system prompt."""
-        chat_messages = [{"role": "system", "content": system_prompt}]
-        for msg in messages:
-            chat_messages.append({
-                "role": msg.get("role", "user"),
-                "content": msg.get("content", ""),
-            })
         response = get_sync_client().chat.completions.create(
-            model=config.OPENAI_CHAT_MODEL,
-            messages=chat_messages,
-            temperature=config.GPT_TEMPERATURE,
-            top_p=config.GPT_TOP_P,
-            max_tokens=config.GPT_MAX_TOKENS,
+            **self._chat_params(
+                self._build_messages(system_prompt, messages),
+                max_tokens=max_tokens
+            )
         )
-        return response.choices[0].message.content
+        return response.choices[0].message.content or ""
 
     @log_method_call
     @_retry_policy()
@@ -97,21 +90,29 @@ class AzureChatClient:
     ) -> str:
         """Vision API — sync."""
         response = get_sync_client().chat.completions.create(
-            model=config.OPENAI_CHAT_MODEL,
-            messages=[{
+            **self._chat_params([{
                 "role": "user",
                 "content": [
                     {"type": "image_url", "image_url": {"url": f"data:{media_type};base64,{image_base64}"}},
                     {"type": "text", "text": prompt},
                 ],
-            }],
-            temperature=config.GPT_TEMPERATURE,
-            top_p=config.GPT_TOP_P,
-            max_tokens=config.GPT_MAX_TOKENS,
+            }])
         )
         return response.choices[0].message.content
 
-    # ── Async ────────────────────────────────────────────────────────────────
+    # ── Async core ────────────────────────────────────────────────────────────
+    async def _achat(self, messages: List[Dict], max_tokens: int | None = None) -> str:
+        response = await get_async_client().chat.completions.create(
+            **self._chat_params(messages, max_tokens=max_tokens)
+        )
+        return response.choices[0].message.content
+
+    # ── Async public ──────────────────────────────────────────────────────────
+    @alog_method_call
+    @_retry_policy()
+    async def ainvoke(self, prompt: str) -> str:
+        """Async single-turn text completion."""
+        return await self._achat([{"role": "user", "content": prompt}])
 
     @alog_method_call
     @_retry_policy()
@@ -119,137 +120,19 @@ class AzureChatClient:
             self,
             system_prompt: str,
             messages: List[Dict[str, str]],
-    ) -> str:
-        """Async multi-turn conversation with an explicit system prompt."""
-        chat_messages = [{"role": "system", "content": system_prompt}]
-        for msg in messages:
-            chat_messages.append({
-                "role": msg.get("role", "user"),
-                "content": msg.get("content", ""),
-            })
-        response = await _get_async_client().chat.completions.create(
-            model=config.OPENAI_CHAT_MODEL,
-            messages=chat_messages,
-            temperature=config.GPT_TEMPERATURE,
-            top_p=config.GPT_TOP_P,
-            max_tokens=config.GPT_MAX_TOKENS,
-        )
-        return response.choices[0].message.content
-
-    @alog_method_call
-    @_retry_policy()
-    async def acreate_json_message(
-            self,
-            system_prompt: str,
-            messages: List[Dict[str, str]],
             max_tokens: int | None = None,
     ) -> str:
-        """
-        Async JSON mode — ``response_format=json_object``.
-
-        Đảm bảo output là valid JSON, không cần strip markdown fences.
-        Hỗ trợ tuỳ chỉnh ``max_tokens`` cho từng use-case (vd: quiz batch).
-        """
-        chat_messages = [{"role": "system", "content": system_prompt}]
-        for msg in messages:
-            chat_messages.append({
-                "role": msg.get("role", "user"),
-                "content": msg.get("content", ""),
-            })
-        response = await _get_async_client().chat.completions.create(
-            model=config.OPENAI_CHAT_MODEL,
-            messages=chat_messages,
-            temperature=config.GPT_TEMPERATURE,
-            top_p=config.GPT_TOP_P,
-            max_tokens=max_tokens or config.GPT_MAX_TOKENS,
-            response_format={"type": "json_object"},
+        return await self._achat(
+            self._build_messages(system_prompt, messages),
+            max_tokens=max_tokens
         )
-        return response.choices[0].message.content
-
-    @alog_method_call
-    @_retry_policy()
-    async def ainvoke(self, prompt: str) -> str:
-        """Async single-turn text completion."""
-        response = await _get_async_client().chat.completions.create(
-            model=config.OPENAI_CHAT_MODEL,
-            messages=[{"role": "user", "content": prompt}],
-            temperature=config.GPT_TEMPERATURE,
-            top_p=config.GPT_TOP_P,
-            max_tokens=config.GPT_MAX_TOKENS,
-        )
-        return response.choices[0].message.content
-
-    @alog_method_call
-    @_retry_policy()
-    async def ainvoke_full(self, prompt: str) -> Dict[str, Any]:
-        """Async single-turn completion — returns full response dict."""
-        response = await _get_async_client().chat.completions.create(
-            model=config.OPENAI_CHAT_MODEL,
-            messages=[{"role": "user", "content": prompt}],
-            temperature=config.GPT_TEMPERATURE,
-            top_p=config.GPT_TOP_P,
-            max_tokens=config.GPT_MAX_TOKENS,
-        )
-        return response.model_dump()
-
-    @alog_method_call
-    @_retry_policy()
-    async def ainvoke_with_image(
-            self,
-            prompt: str,
-            image_base64: str,
-            media_type: str = "image/jpeg",
-    ) -> str:
-        """Vision API — async."""
-        response = await _get_async_client().chat.completions.create(
-            model=config.OPENAI_CHAT_MODEL,
-            messages=[{
-                "role": "user",
-                "content": [
-                    {"type": "image_url", "image_url": {"url": f"data:{media_type};base64,{image_base64}"}},
-                    {"type": "text", "text": prompt},
-                ],
-            }],
-            temperature=config.GPT_TEMPERATURE,
-            top_p=config.GPT_TOP_P,
-            max_tokens=config.GPT_MAX_TOKENS,
-        )
-        return response.choices[0].message.content
-
-    @log_method_call
-    @_retry_policy()
-    def create_json_message(
-            self,
-            system_prompt: str,
-            messages: List[Dict[str, str]],
-            max_tokens: int | None = None,
-    ) -> str:
-        """
-        Sync JSON mode — ``response_format=json_object``.
-        Đối xứng với acreate_json_message.
-        """
-        chat_messages = [{"role": "system", "content": system_prompt}]
-        for msg in messages:
-            chat_messages.append({
-                "role": msg.get("role", "user"),
-                "content": msg.get("content", ""),
-            })
-        response = get_sync_client().chat.completions.create(
-            model=config.OPENAI_CHAT_MODEL,
-            messages=chat_messages,
-            temperature=config.GPT_TEMPERATURE,
-            top_p=config.GPT_TOP_P,
-            max_tokens=max_tokens or config.GPT_MAX_TOKENS,
-            response_format={"type": "json_object"},
-        )
-        return response.choices[0].message.content
 
 
-_chat_client_instance: AzureChatClient | None = None
-
-
+# ── Singleton factory ─────────────────────────────────────────────────────────
 def get_openai_chat_client() -> AzureChatClient:
     global _chat_client_instance
     if _chat_client_instance is None:
-        _chat_client_instance = AzureChatClient()
+        with _chat_lock:
+            if _chat_client_instance is None:
+                _chat_client_instance = AzureChatClient()
     return _chat_client_instance
