@@ -6,6 +6,11 @@ from fastapi import FastAPI
 
 from src.apis.app_router import api_router
 from src.config.app_config import get_app_config
+from src.rag.search.pipeline import INTENT_CORE_KNOWLEDGE, INTENT_OFF_TOPIC
+from src.rag.semantic_router.intent_router_registry import set_intent_router
+from src.rag.semantic_router.precomputed import build_and_save_embeddings, load_precomputed_embeddings
+from src.rag.semantic_router.router import Route, SemanticRouter
+from src.rag.semantic_router.samples import offTopicSamples, coreKnowledgeSamples
 
 config = get_app_config()
 from src.rag.db_vector import get_qdrant_client
@@ -22,11 +27,25 @@ async def lifespan(application: FastAPI):
         qdrant.client.get_collections()
     except Exception:
         pass
+
     get_sync_client()
     get_async_client()
     get_openai_chat_client()
-    get_openai_embedding_client()
+    embedder = get_openai_embedding_client()
 
+    precomputed = load_precomputed_embeddings()
+    if precomputed is None:
+        precomputed = await build_and_save_embeddings(embedder)
+
+    router = await SemanticRouter.abuild(
+        routes=[
+            Route(name=INTENT_CORE_KNOWLEDGE, samples=coreKnowledgeSamples),
+            Route(name=INTENT_OFF_TOPIC, samples=offTopicSamples),
+        ],
+        embedder=embedder,
+        precomputed_embeddings=precomputed,
+    )
+    set_intent_router(router)
     yield
 
 

@@ -15,7 +15,7 @@ def cosine_similarity(vec1: list, vec2: list) -> float:
     return dot_product / (norm1 * norm2)
 
 
-def _strip_json_fence(text: str) -> str:
+def strip_json_fence(text: str) -> str:
     return text.strip().removeprefix("```json").removeprefix("```").removesuffix("```").strip()
 
 

@@ -19,7 +19,7 @@ from src.rag.clean_data.prompt import (
     EXTRACT_TEXT_PROMPT,
 )
 from src.rag.llm.chat_llm import get_openai_chat_client
-from src.utils.app_utils import clean_text, _strip_json_fence
+from src.utils.app_utils import clean_text, strip_json_fence
 
 logger = logging.getLogger(__name__)
 
@@ -86,7 +86,7 @@ class ImageProcessor:
             image_base64=b64,
             media_type="image/png",
         )
-        raw = _strip_json_fence(raw)
+        raw = strip_json_fence(raw)
         try:
             return json.loads(raw)
         except json.JSONDecodeError:
@@ -268,7 +268,7 @@ class NodeClassifier:
             candidates=candidates_str,
             chunk_text=chunk.text[:2000],
         )
-        raw = _strip_json_fence(self.client.invoke(prompt))
+        raw = strip_json_fence(self.client.invoke(prompt))
         try:
             result = json.loads(raw)
             chunk.node_id = result.get("node_id")

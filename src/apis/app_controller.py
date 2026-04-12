@@ -15,7 +15,7 @@ from src.apis.app_model import (
     FilterConditionModel,
     GetByIdsRequest,
     HybridSearchRequest,
-    GenerateEmbeddingsResponse, IntentRouteResponse, IntentRouteRequest, UploadDocumentsRequest,
+    GenerateEmbeddingsResponse, UploadDocumentsRequest,
     BatchSearchRequest, CreatePayloadIndexRequest, QuizRequest
 )
 from src.apis.app_router import chat_router, documents_router, search_router, file_router, quiz_router
@@ -23,10 +23,7 @@ from src.constants.app_constant import PDFS_DIR, COLLECTION_NAME, DATA_ZIP, SRC_
 from src.core.quiz.quiz_generator import generate_quiz
 from src.rag.db_vector import get_qdrant_client
 from src.rag.ingest.entrypoint import upload_to_qdrant
-from src.rag.llm.embedding_llm import get_openai_embedding_client
 from src.rag.search.pipeline import async_pipeline_hyde_search
-from src.rag.semantic_router.generate_embeddings import ROUTES, OUTPUT_PATH, generate
-from src.rag.semantic_router.router import load_precomputed_embeddings, Route, SemanticRouter
 from src.utils.logger_utils import logger
 
 
@@ -67,45 +64,6 @@ def _to_plain(data: Any) -> Any:
     if hasattr(data, "__dict__"):
         return _to_plain(vars(data))
     return str(data)
-
-
-@chat_router.post("/intent-route", response_model=IntentRouteResponse)
-async def intent_route(payload: IntentRouteRequest) -> IntentRouteResponse:
-    texts = [payload.texts] if isinstance(payload.texts, str) else payload.texts
-    if not texts:
-        raise BadRequestError("texts must not be empty")
-
-    try:
-        embedder = get_openai_embedding_client()
-
-        precomputed = load_precomputed_embeddings()
-        if precomputed is None:
-            raise NotFoundError(resource="route_embeddings.npz", id="route_embeddings.npz")
-
-        routes = [Route(name=k) for k in precomputed.keys()]
-
-        router = SemanticRouter(
-            embedding=embedder,
-            routes=routes,
-            precomputed_embeddings=precomputed,
-        )
-
-        results = []
-        for text in texts:
-            score, intent = await router.aguide(text)
-            results.append({
-                "text": text,
-                "intent": intent,
-                "score": float(round(score, 6)),
-            })
-
-        return IntentRouteResponse(results=results)
-
-    except NotFoundError:
-        raise
-    except Exception as exc:
-        logger.exception("intent_route failed")
-        raise QdrantApiError(f"intent_route failed: {exc}") from exc
 
 
 @documents_router.get("/ingest")

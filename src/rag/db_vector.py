@@ -36,7 +36,7 @@ class QdrantManager:
     def _embed_colbert_doc(self, text: str) -> list[list[float]]:
         return list(self._colbert.embed([text]))[0].tolist()
 
-    def _embed_colbert_query(self, query: str) -> list[list[float]]:
+    def embed_colbert_query(self, query: str) -> list[list[float]]:
         return list(self._colbert.query_embed(query))[0].tolist()
 
     def _colbert_dim(self) -> int:
@@ -45,9 +45,6 @@ class QdrantManager:
 
     async def _aembed_colbert_doc(self, text: str) -> list[list[float]]:
         return await asyncio.to_thread(self._embed_colbert_doc, text)
-
-    async def _aembed_colbert_query(self, query: str) -> list[list[float]]:
-        return await asyncio.to_thread(self._embed_colbert_query, query)
 
     @alog_method_call
     async def acreate_collection(self, recreate: bool = False) -> None:
@@ -221,19 +218,16 @@ class QdrantManager:
             offset = next_offset
         return all_points
 
-    @alog_method_call
     async def ahybrid_search(
             self,
-            query: str,
+            dense_query_vec: list[float],  # ← pre-computed mean dense vector
+            colbert_query_vec: list[list[float]],  # ← pre-computed mean colbert vector
             top_k: int = 3,
             prefetch_limit: int = 10,
+            bm25_query: str = "",  # ← original query string for BM25
             filter_conditions: Optional[list[models.Condition]] = None,
             with_payload: bool = True,
     ) -> list:
-        dense_query_vec, colbert_query_vec = await asyncio.gather(
-            self.dense_embedder.aembed_query(query),
-            self._aembed_colbert_query(query),
-        )
         query_filter = (
             models.Filter(must=filter_conditions) if filter_conditions else None
         )
@@ -256,7 +250,7 @@ class QdrantManager:
                     prefetch=[
                         models.Prefetch(
                             query=models.Document(
-                                text=query,
+                                text=bm25_query,
                                 model=BM25_MODEL,
                                 options=BM25_OPTIONS,
                             ),

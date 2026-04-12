@@ -103,6 +103,7 @@ def language_name(code: str) -> str:
 def main():
     test_cases = [
         # (text, description)
+        ("policiholder","English"),
         ("Xin chào, bạn có khỏe không?", "Vietnamese"),
         ("Hello, how are you?", "English"),
         ("こんにちは、お元気ですか？", "Japanese"),

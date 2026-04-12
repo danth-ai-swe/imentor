@@ -5,6 +5,7 @@ from src.constants.app_constant import (
 )
 from src.external.fetch_history import fetch_raw_chat_history
 from src.rag.llm.chat_llm import get_openai_chat_client
+from src.rag.search.pipeline import ChunkDict
 from src.rag.search.prompt import SYSTEM_PROMPT_TEMPLATE, SUMMARIZE_PROMPT_TEMPLATE
 from src.utils.logger_utils import alog_function_call
 
@@ -93,7 +94,7 @@ async def afetch_chat_history(
 def build_final_prompt(
         user_input: str,
         detected_language: str,
-        relevant_chunks: List[Dict[str, Any]],
+        relevant_chunks:  List[ChunkDict],
         node_data_list: List[Dict[str, Any]],
         chat_history_summary: str,  # <-- đổi sang string
 ) -> Tuple[str, List[Dict[str, str]]]:
