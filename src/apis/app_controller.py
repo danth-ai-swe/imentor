@@ -1,9 +1,7 @@
-import asyncio
 import os
 from datetime import datetime, timezone
 from typing import Any
 
-import numpy as np
 from fastapi import BackgroundTasks, Depends
 from fastapi.responses import FileResponse
 
@@ -15,12 +13,12 @@ from src.apis.app_model import (
     FilterConditionModel,
     GetByIdsRequest,
     HybridSearchRequest,
-    GenerateEmbeddingsResponse, UploadDocumentsRequest,
+    UploadDocumentsRequest,
     BatchSearchRequest, CreatePayloadIndexRequest, QuizRequest
 )
 from src.apis.app_router import chat_router, documents_router, search_router, file_router, quiz_router
 from src.constants.app_constant import PDFS_DIR, COLLECTION_NAME, DATA_ZIP, SRC_ZIP
-from src.core.quiz.quiz_generator import generate_quiz
+from src.core.quiz.quiz_generator import generate_quiz, generate_quiz_full_background, read_quiz_result
 from src.rag.db_vector import get_qdrant_client
 from src.rag.ingest.entrypoint import upload_to_qdrant
 from src.rag.search.pipeline import async_pipeline_hyde_search
@@ -151,32 +149,6 @@ async def chat_ask(payload: ChatRequest) -> ChatResponse:
     )
 
 
-@chat_router.post("/generate-embeddings", response_model=GenerateEmbeddingsResponse)
-async def generate_route_embeddings() -> GenerateEmbeddingsResponse:
-    try:
-
-        await asyncio.to_thread(generate)
-
-        data = np.load(OUTPUT_PATH)
-        routes_info = [
-            {
-                "route": k,
-                "samples": ROUTES[k].__len__() if hasattr(ROUTES[k], "__len__") else -1,
-                "shape": list(data[k].shape),
-            }
-            for k in data.files
-        ]
-
-        return GenerateEmbeddingsResponse(
-            routes=routes_info,
-            output_path=str(OUTPUT_PATH),
-        )
-
-    except Exception as exc:
-        logger.exception("generate_embeddings failed")
-        raise QdrantApiError(f"generate_embeddings failed: {exc}") from exc
-
-
 @documents_router.post("/collections/create")
 async def create_collection(recreate: bool = False, manager=Depends(get_qdrant_client)) -> dict:
     try:
@@ -290,9 +262,9 @@ def get_pdf_file(filename: str):
 
 
 @quiz_router.post("/generate")
-def generate(payload: QuizRequest) -> dict:
+async def generate(payload: QuizRequest) -> dict:
     try:
-        return generate_quiz(
+        return await generate_quiz(
             knowledge_pack=payload.knowledge_pack,
             total=payload.total,
             difficulty=payload.difficulty.value if payload.difficulty else None,
@@ -305,3 +277,29 @@ def generate(payload: QuizRequest) -> dict:
     except Exception as exc:
         logger.exception("generate_quiz failed")
         raise QdrantApiError(f"generate_quiz failed: {exc}") from exc
+
+
+@quiz_router.post("/generate-full")
+async def generate_full(payload: QuizRequest, background_tasks: BackgroundTasks) -> dict:
+    try:
+        background_tasks.add_task(
+            generate_quiz_full_background,
+            knowledge_pack=payload.knowledge_pack,
+        )
+        return {
+            "success": True,
+            "message": f"Đang sinh câu hỏi cho '{payload.knowledge_pack}' ở background. "
+                       f"Kết quả sẽ được ghi vào file quiz_{payload.knowledge_pack}.json",
+        }
+    except Exception as exc:
+        logger.exception("generate_quiz_full failed")
+        raise QdrantApiError(f"generate_quiz_full failed: {exc}") from exc
+
+
+@quiz_router.get("/generate-full/result")
+async def get_generate_full_result(knowledge_pack: str) -> dict:
+    try:
+        return read_quiz_result(knowledge_pack)
+    except Exception as exc:
+        logger.exception("read_quiz_result failed")
+        raise QdrantApiError(f"read_quiz_result failed: {exc}") from exc

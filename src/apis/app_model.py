@@ -1,3 +1,4 @@
+from enum import Enum
 from typing import Any, List
 
 from pydantic import BaseModel, Field
@@ -120,12 +121,6 @@ class CreatePayloadIndexRequest(BaseModel):
     field_schema: str
 
 
-# ── Quiz models ──────────────────────────────────────────────────────────────
-
-from enum import Enum
-from pydantic import model_validator
-
-
 class QuizLevel(str, Enum):
     MODULE = "module"
     LESSON = "lesson"
@@ -146,4 +141,4 @@ class QuizRequest(BaseModel):
         None,
         description="Difficulty level: Beginner, Intermediate, or Advanced. If null, will be randomized."
     )
-    total: int = Field(..., ge=1, le=200, description="Number of questions to generate")
+    total: int | None = Field(None, ge=1, le=1000, description="Number of questions to generate")
