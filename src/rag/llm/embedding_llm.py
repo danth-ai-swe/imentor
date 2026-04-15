@@ -9,7 +9,7 @@ import numpy as np
 import openai
 from openai import AsyncAzureOpenAI
 
-from src.config.app_config import _retry_policy, get_app_config
+from src.config.app_config import retry_policy, get_app_config
 from src.utils.logger_utils import alog_method_call
 
 config = get_app_config()
@@ -136,7 +136,7 @@ class AzureEmbeddingClient:
         results = await self.aembed_documents([text])
         return results[0]
 
-    @_retry_policy()
+    @retry_policy()
     @alog_method_call
     async def aembed_documents(self, texts: List[str]) -> list[Any] | list[None]:
         if not texts:
@@ -171,7 +171,7 @@ class AzureEmbeddingClient:
         _metrics["batch_sizes"].extend([len(b) for b in batches])
 
         async def _fetch(batch: List[str]) -> List[List[float]]:
-            @_retry_policy()
+            @retry_policy()
             async def _call():
                 async with _semaphore:
                     resp = await get_async_client().embeddings.create(

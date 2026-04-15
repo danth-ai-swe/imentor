@@ -20,8 +20,7 @@ from src.rag.clean_data.prompt import (
 )
 from src.rag.llm.chat_llm import get_openai_chat_client
 from src.utils.app_utils import clean_text, strip_json_fence
-
-logger = logging.getLogger(__name__)
+from utils.logger_utils import logger
 
 MIN_IMAGE_PIXELS = 5_000
 _PAGE_SEP_RE = re.compile(r"={5} Trang (\d+) / (\d+) ={5}")

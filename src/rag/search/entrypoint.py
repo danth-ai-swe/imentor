@@ -93,9 +93,8 @@ async def afetch_chat_history(
 def build_final_prompt(
         user_input: str,
         detected_language: str,
-        relevant_chunks: List[Dict[str, Any]],
+        relevant_chunks,
         node_data_list: List[Dict[str, Any]],
-        chat_history_summary: str,  # <-- đổi sang string
 ) -> Tuple[str, List[Dict[str, str]]]:
     system_prompt = SYSTEM_PROMPT_TEMPLATE.format(
         detected_language=detected_language
@@ -119,22 +118,13 @@ def build_final_prompt(
         ]
         node_ref = "\n\n## Knowledge Node Reference\n" + "\n".join(lines)
 
-    # 👉 Messages chỉ còn system + 1 user message (có history summary)
-    messages: List[Dict[str, str]] = []
-
-    # Inject history dạng summary
-    history_block = ""
-    if chat_history_summary:
-        history_block = f"## Conversation Summary\n{chat_history_summary}\n\n"
-
-    messages.append({
+    messages: List[Dict[str, str]] = [{
         "role": "user",
         "content": (
-            f"{history_block}"
             f"## Retrieved Context\n{context_str}\n\n"
             f"{node_ref}\n\n"
             f"## User Question\n{user_input}"
         ),
-    })
+    }]
 
     return system_prompt, messages

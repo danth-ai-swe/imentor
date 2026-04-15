@@ -1,6 +1,5 @@
 import hashlib
 import json
-import logging
 from pathlib import Path
 from typing import Dict, Optional
 
@@ -8,8 +7,7 @@ import numpy as np
 
 from src.rag.search.pipeline import INTENT_CORE_KNOWLEDGE, INTENT_OFF_TOPIC
 from src.rag.semantic_router.samples import offTopicSamples, coreKnowledgeSamples
-
-logger = logging.getLogger(__name__)
+from src.utils.logger_utils import logger
 
 CACHE_DIR = Path("cache/embeddings")
 CACHE_FILE = CACHE_DIR / "intent_routes.npz"
@@ -49,6 +47,7 @@ def load_precomputed_embeddings() -> Optional[Dict[str, np.ndarray]]:
     logger.info(f"Loaded precomputed embeddings: {list(embeddings.keys())}")
     return embeddings
 
+
 async def build_and_save_embeddings(embedder) -> Dict[str, np.ndarray]:
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
     embeddings: Dict[str, np.ndarray] = {}
@@ -56,7 +55,7 @@ async def build_and_save_embeddings(embedder) -> Dict[str, np.ndarray]:
     for route_name, samples in ROUTE_SAMPLES.items():
         logger.info(f"Encoding {len(samples)} samples cho route '{route_name}'...")
         vecs = await embedder.aembed_documents(samples)  # List[List[float]]
-        embeddings[route_name] = np.array(vecs)          # → shape: (N, dim)
+        embeddings[route_name] = np.array(vecs)  # → shape: (N, dim)
 
     np.savez_compressed(CACHE_FILE, **embeddings)
     CHECKSUM_FILE.write_text(_compute_checksum())

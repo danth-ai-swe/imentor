@@ -1,12 +1,3 @@
-"""
-RAG Pipeline — Hyde Search
-Refactored + 5W1H clarification update:
-  - response từ HyDE luôn là list[str] (cả search=True lẫn False)
-  - _make_clarification_result nhận list[str], nối thành string với prefix cố định
-  - _get_clarification_prefix tra dict theo detected_language
-  - _ahyde_analyse_query tách rõ "variants" vs "questions"
-"""
-
 import asyncio
 from typing import Any, Dict, List, Optional, TypedDict
 
@@ -24,15 +15,14 @@ from src.rag.db_vector import get_qdrant_client, QdrantManager
 from src.rag.llm.chat_llm import AzureChatClient, get_openai_chat_client
 from src.rag.llm.embedding_llm import AzureEmbeddingClient, get_openai_embedding_client
 from src.rag.reflector import Reflection
-from src.rag.search.entrypoint import afetch_chat_history, build_final_prompt
+from src.rag.search.entrypoint import build_final_prompt, afetch_chat_history
 from src.rag.search.prompt import (
     ANSWER_ERROR_RESPONSE,
-    EVALUATE_ANSWER_PROMPT,
     HYDE_PROMPT,
     INPUT_TOO_LONG_RESPONSE,
     NO_RESULT_RESPONSE,
     OFF_TOPIC_FALLBACK_RESPONSE,
-    OFF_TOPIC_PROMPT,
+    OFF_TOPIC_PROMPT, EVALUATE_CHUNK_PROMPT, EVALUATE_ANSWER_PROMPT,
 )
 from src.rag.search.web_search import asearch_and_extract, agenerate_web_answer
 from src.rag.semantic_router.intent_router_registry import get_intent_router
@@ -44,7 +34,7 @@ from src.utils.logger_utils import logger, StepTimer
 # Constants
 # =============================================================================
 
-VECTOR_SEARCH_TOP_K: int = 3
+VECTOR_SEARCH_TOP_K: int = 2
 NEIGHBOR_PREV_INDEX: int = -1  # phần tử cuối của list "previous" = chunk liền trước
 NEIGHBOR_NEXT_INDEX: int = 0  # phần tử đầu của list "next"     = chunk liền sau
 INTENT_CORE_KNOWLEDGE: str = "core_knowledge"
@@ -118,6 +108,26 @@ def _make_off_topic_result(
     return PipelineResult(
         intent=INTENT_OFF_TOPIC,
         response=response,
+        detected_language=detected_language,
+        answer_satisfied=False,
+        web_search_used=False,
+        sources=[],
+    )
+
+
+def _make_spell_check_result(
+        spell_check: str,
+        response: List[str],
+        detected_language: Optional[str],
+) -> PipelineResult:
+    """
+    Xử lý spell_check: 'confirm' hoặc 'unclear' từ HYDE_PROMPT.
+    - confirm: response có 4 items [intro, topic1, topic2, topic3]
+    - unclear: response có 1 item [polite message]
+    """
+    return PipelineResult(
+        intent=INTENT_CORE_KNOWLEDGE,
+        response="\n".join(r.strip() for r in response if r and r.strip()),
         detected_language=detected_language,
         answer_satisfied=False,
         web_search_used=False,
@@ -304,71 +314,36 @@ async def _ahyde_analyse_query(
         llm: AzureChatClient,
         standalone_query: str,
         response_language: str,
-) -> Dict[str, Any]:
-    """
-    Gọi LLM để phân tích query theo HyDE.
-
-    Prompt mới luôn trả `response` là list[str].
-    Hàm tách rõ output thành 2 key riêng biệt:
-
-    Khi search=True:
-        { "search": True,  "variants": ["v1","v2","v3"], "questions": [] }
-
-    Khi search=False:
-        { "search": False, "variants": [],               "questions": ["q1","q2","q3"] }
-
-    Backward-compat: nếu LLM cũ trả string, wrap thành list trước khi xử lý.
-    """
+) -> dict | None:
     prompt = HYDE_PROMPT.format(
         response_language=response_language,
         standalone_query=standalone_query,
     )
-    default_search = {"search": True, "variants": [standalone_query], "questions": []}
-    default_clarify = {"search": False, "variants": [], "questions": [standalone_query]}
 
     try:
         raw = (await llm.ainvoke(prompt)).strip()
-        parsed = parse_json_response(raw)
-        should_search = bool(parsed.get("search", True))
-        raw_response = parsed.get("response", [])
-
-        # Chuẩn hoá raw_response → list[str]
-        if isinstance(raw_response, str):
-            string_list = [raw_response] if raw_response.strip() else []
-        elif isinstance(raw_response, list):
-            string_list = [str(item).strip() for item in raw_response if str(item).strip()]
-        else:
-            string_list = [str(raw_response).strip()]
-
-        if should_search:
-            if not string_list:
-                logger.warning("HyDE search=True but empty variants — fallback to standalone_query")
-                return default_search
-            return {"search": True, "variants": string_list, "questions": []}
-        else:
-            if not string_list:
-                logger.warning("HyDE search=False but empty questions — fallback")
-                return default_clarify
-            return {"search": False, "variants": [], "questions": string_list}
+        return parse_json_response(raw)
 
     except Exception:
         logger.exception("HyDE analyse: unexpected error")
-        return default_search
 
 
-async def _aevaluate_answer_satisfied(
+async def _aevaluate_chunks_sufficient(
         llm: AzureChatClient,
         user_input: str,
-        answer: str,
+        chunks: List[ChunkDict],
 ) -> bool:
-    prompt = EVALUATE_ANSWER_PROMPT.format(user_input=user_input, answer=answer)
+    chunks_text = "\n\n---\n\n".join(
+        f"[Chunk {i + 1}]\n{c['text']}" for i, c in enumerate(chunks)
+    )
+    prompt = EVALUATE_CHUNK_PROMPT.format(user_input=user_input, chunks=chunks_text)
     try:
         raw = (await llm.ainvoke(prompt)).strip()
         parsed = parse_json_response(raw)
-        return bool(parsed.get("satisfied", True))
+        return bool(parsed.get("sufficient", True))
     except Exception:
-        logger.exception("Evaluate answer satisfied: unexpected error")
-    return True
+        logger.exception("Evaluate chunks sufficient: unexpected error")
+        return True
 
 
 async def _agenerate_off_topic_response(
@@ -423,10 +398,6 @@ async def _avalidate_and_prepare(
         conversation_id: Optional[str],
         llm: AzureChatClient,
 ) -> tuple[Optional[str], Optional[str], Optional[str]]:
-    """
-    Returns: (detected_language, standalone_query, error_response)
-        Nếu error_response không None → caller return ngay.
-    """
     if len(user_input) > MAX_INPUT_CHARS:
         return None, None, INPUT_TOO_LONG_RESPONSE.format(max_chars=MAX_INPUT_CHARS)
 
@@ -563,14 +534,12 @@ async def _agenerate_answer(
         detected_language: str,
         enriched_chunks: List[ChunkDict],
         node_data_list: List[Dict[str, Any]],
-        chat_history: Any,
 ) -> str:
     system_prompt, messages = build_final_prompt(
         user_input=user_input,
         detected_language=detected_language,
         relevant_chunks=enriched_chunks,
         node_data_list=node_data_list,
-        chat_history_summary=chat_history,
     )
     try:
         return await llm.acreate_agentic_chunker_message(
@@ -580,6 +549,32 @@ async def _agenerate_answer(
     except Exception:
         logger.exception("Failed to generate answer from LLM")
         return ANSWER_ERROR_RESPONSE
+
+
+async def _aenrich_chunks(
+        qdrant: QdrantManager,
+        sorted_chunks: List[ChunkDict],
+) -> tuple[List[ChunkDict], List[Dict[str, Any]]]:
+    neighbor_chunks, node_data_list = await asyncio.gather(
+        _afetch_neighbor_chunks(qdrant, sorted_chunks),
+        _aload_node_data(sorted_chunks),
+    )
+    return _merge_chunks(sorted_chunks, neighbor_chunks), node_data_list
+
+
+async def _aevaluate_answer_satisfied(
+        llm: AzureChatClient,
+        user_input: str,
+        answer: str,
+) -> bool:
+    prompt = EVALUATE_ANSWER_PROMPT.format(user_input=user_input, answer=answer)
+    try:
+        raw = (await llm.ainvoke(prompt)).strip()
+        parsed = parse_json_response(raw)
+        return bool(parsed.get("satisfied", True))
+    except Exception:
+        logger.exception("Evaluate answer satisfied: unexpected error")
+    return True
 
 
 # =============================================================================
@@ -605,13 +600,11 @@ async def async_pipeline_hyde_search(
 
         # ── 2. Validate + detect language + reflect ──────────────────────────
         async with timer.astep("validate_and_prepare"):
-            chat_history = await afetch_chat_history(conversation_id)
             detected_language, standalone_query, error_response = (
                 await _avalidate_and_prepare(user_input, conversation_id, llm)
             )
             if error_response:
                 return _make_off_topic_result(error_response)
-
         # ── 3. Quiz intent check ─────────────────────────────────────────────
         async with timer.astep("quiz_keyword_check"):
             if is_quiz_intent(user_input) or is_quiz_intent(standalone_query):
@@ -632,71 +625,91 @@ async def async_pipeline_hyde_search(
         async with timer.astep("hyde_analysis"):
             hyde_result = await _ahyde_analyse_query(llm, standalone_query, detected_language)
 
-        # search=False → trả 3 câu hỏi 5W1H về cho user, dừng pipeline
+        # search=False → kiểm tra spell_check hoặc clarification
         if not hyde_result["search"]:
-            return _make_clarification_result(hyde_result["questions"], detected_language)
+            spell_check = hyde_result.get("spell_check")
 
-        variants: List[str] = hyde_result["variants"] or [standalone_query]
+            if spell_check in ("confirm", "unclear"):
+                return _make_spell_check_result(
+                    spell_check=spell_check,
+                    response=hyde_result.get("response", []),
+                    detected_language=detected_language,
+                )
+
+            # CASE B / CASE C: 3 câu hỏi 5W1H
+            return _make_clarification_result(hyde_result["response"], detected_language)
+
+        # CASE A: dùng corrected_query thay original nếu có
+        corrected_query = hyde_result.get("corrected_query")
+        embed_query = corrected_query if corrected_query else standalone_query
+
+        variants: List[str] = hyde_result["response"] or [embed_query]
 
         # ── 6. HyDE embedding ────────────────────────────────────────────────
         async with timer.astep("hyde_embedding"):
             mean_dense, mean_colbert = await _aembed_hyde_variants(embedder, qdrant, variants)
 
-        # ── 7. Hybrid vector search ──────────────────────────────────────────
         async with timer.astep("vector_search"):
             sorted_chunks = await _avector_search(
-                qdrant, mean_dense, mean_colbert, standalone_query
+                qdrant, mean_dense, mean_colbert, embed_query
             )
 
-        # ── Fallback A: không có chunk ───────────────────────────────────────
+        # ── Fallback A: không có chunk ─────────────────────────────────────────
         if not sorted_chunks:
             logger.info("No vector results — triggering web search fallback")
             async with timer.astep("web_search_fallback_no_chunks"):
                 answer, source_items = await _afallback_web_search(
-                    llm, user_input, standalone_query, detected_language
+                    llm, standalone_query, standalone_query, detected_language
                 )
             return _make_web_search_result(answer, source_items, detected_language)
 
-        # ── 8. Fetch neighbor chunks ─────────────────────────────────────────
-        async with timer.astep("fetch_neighbor_chunks"):
-            neighbor_chunks = await _afetch_neighbor_chunks(qdrant, sorted_chunks)
+        # ── 8. Evaluate chunks ─────────────────────────────────────────────────
+        # async with timer.astep("evaluate_chunks"):
+        #     chunks_sufficient = await _aevaluate_chunks_sufficient(
+        #         llm, user_input, sorted_chunks
+        #     )
 
-        enriched_chunks = _merge_chunks(sorted_chunks, neighbor_chunks)
+        # ── Fallback B: chunk không đủ liên quan ──────────────────────────────
+        # if not chunks_sufficient:
+        #     logger.info("Chunks not sufficient — triggering web search fallback")
+        #     async with timer.astep("web_search_fallback_insufficient_chunks"):
+        #         answer, source_items = await _afallback_web_search(
+        #             llm, user_input, standalone_query, detected_language
+        #         )
+        #     return _make_web_search_result(answer, source_items, detected_language)
 
-        # ── 9. Load node metadata ────────────────────────────────────────────
-        async with timer.astep("load_node_data"):
-            node_data_list = await _aload_node_data(sorted_chunks)
+        # ── 9+10. Fetch neighbors + node metadata (parallel) ──────────────────
+        async with timer.astep("enrich_chunks"):
+            enriched_chunks, node_data_list = await _aenrich_chunks(qdrant, sorted_chunks)
 
-        # ── 10. Generate answer ──────────────────────────────────────────────
+        # ── 11. Generate answer ────────────────────────────────────────────────
         async with timer.astep("generate_answer"):
             answer = await _agenerate_answer(
                 llm,
-                user_input,
+                standalone_query,
                 detected_language,
                 enriched_chunks,
-                node_data_list,
-                chat_history,
+                node_data_list
             )
+            # ── 11. Evaluate answer ──────────────────────────────────────────────
+            async with timer.astep("evaluate_answer"):
+                answer_satisfied = await _aevaluate_answer_satisfied(llm, standalone_query, answer)
 
-        # ── 11. Evaluate answer ──────────────────────────────────────────────
-        async with timer.astep("evaluate_answer"):
-            answer_satisfied = await _aevaluate_answer_satisfied(llm, user_input, answer)
+            # ── Fallback B: answer không thoả mãn ───────────────────────────────
+            if not answer_satisfied:
+                logger.info("Answer not satisfied — triggering web search fallback")
+                async with timer.astep("web_search_fallback_unsatisfied"):
+                    answer, source_items = await _afallback_web_search(
+                        llm, standalone_query, standalone_query, detected_language
+                    )
+                return _make_web_search_result(answer, source_items, detected_language)
 
-        # ── Fallback B: answer không thoả mãn ───────────────────────────────
-        if not answer_satisfied:
-            logger.info("Answer not satisfied — triggering web search fallback")
-            async with timer.astep("web_search_fallback_unsatisfied"):
-                answer, source_items = await _afallback_web_search(
-                    llm, user_input, standalone_query, detected_language
-                )
-            return _make_web_search_result(answer, source_items, detected_language)
-
-        # ── Normal RAG response ──────────────────────────────────────────────
+        # ── Normal RAG response ────────────────────────────────────────────────
         return _make_rag_result(
             response=answer,
             sources=extract_sources(sorted_chunks, config.APP_DOMAIN),
             detected_language=detected_language,
-            answer_satisfied=answer_satisfied,
+            answer_satisfied=True,
         )
 
     finally:

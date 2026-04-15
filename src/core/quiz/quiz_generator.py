@@ -2,6 +2,7 @@ import asyncio
 import json
 import math
 import random
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any
 
@@ -9,11 +10,11 @@ import pandas as pd
 from qdrant_client import models
 
 from src.config.app_config import get_app_config
-from src.constants.app_constant import METADATA_NODE_XLSX
+from src.constants.app_constant import METADATA_NODE_XLSX, QUIZ_DIR, DATA_DIR
 from src.core.quiz.prompt import QUIZ_SYSTEM_PROMPT
 from src.rag.db_vector import get_qdrant_client
 from src.rag.llm.chat_llm import get_openai_chat_client
-from src.utils.app_utils import _parse_llm_json
+from src.utils.app_utils import parse_llm_json
 from src.utils.logger_utils import logger, StepTimer
 
 MAX_QUESTIONS_PER_PROMPT = 10
@@ -22,8 +23,26 @@ MAX_TOKENS_PER_CALL = 3_500
 MAX_WORKERS = 5
 
 DIFFICULTY_LEVELS = ("Beginner", "Intermediate", "Advanced")
-QUIZ_XLSX_DIR = Path(r"D:\Deverlopment\huudan.com\PythonProject\data\quiz")
-QUIZ_OUTPUT_DIR = Path(r"D:\Deverlopment\huudan.com\PythonProject\data")
+QUIZ_XLSX_DIR = Path(QUIZ_DIR)
+QUIZ_OUTPUT_DIR = Path(DATA_DIR)
+
+
+def convert_questions(questions: list[dict]) -> list[dict]:
+    """
+    Chuyển đổi các trường 'index' trong options và 'correct_answer' từ ký tự ('A'-'D') sang số (0-3).
+    """
+    letter_to_num = {'A': 0, 'B': 1, 'C': 2, 'D': 3}
+    for q in questions:
+        # Chuyển index trong options
+        for opt in q.get('options', []):
+            idx = opt.get('index')
+            if isinstance(idx, str) and idx.strip().upper() in letter_to_num:
+                opt['index'] = letter_to_num[idx.strip().upper()]
+        # Chuyển correct_answer
+        ca = q.get('correct_answer')
+        if isinstance(ca, str) and ca.strip().upper() in letter_to_num:
+            q['correct_answer'] = letter_to_num[ca.strip().upper()]
+    return questions
 
 
 def _get_output_path(knowledge_pack: str) -> Path:
@@ -307,7 +326,7 @@ def _call_llm_for_row(
         messages=[{"role": "user", "content": user_prompt}],
         max_tokens=min(n_questions * TOKENS_PER_QUESTION, MAX_TOKENS_PER_CALL),
     )
-    return _parse_llm_json(raw)
+    return parse_llm_json(raw)
 
 
 def _enrich_question_metadata(question: dict, row: dict, chunks: list[dict]) -> None:
@@ -391,96 +410,11 @@ async def _process_row(
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# PUBLIC API — generate_quiz (async, có filter module/lesson)
-# ══════════════════════════════════════════════════════════════════════════════
-
-async def generate_quiz(
-        knowledge_pack: str,
-        total: int,
-        difficulty: str | None = None,
-        module_value: str | None = None,
-        lesson_value: str | None = None,
-) -> dict[str, Any]:
-    timer = StepTimer("generate_quiz")
-
-    df_all = pd.read_excel(METADATA_NODE_XLSX, engine="openpyxl")
-    df_all.columns = [c.strip() for c in df_all.columns]
-
-    if not difficulty:
-        difficulty = random.choice(DIFFICULTY_LEVELS)
-        logger.info(f"  🎲 Random difficulty → '{difficulty}'")
-
-    if not module_value:
-        module_value = _pick_random_module(knowledge_pack, df_all)
-    else:
-        if not lesson_value:
-            lesson_value = _pick_random_lesson(knowledge_pack, module_value, df_all)
-
-    with timer.step("load_metadata"):
-        rows = _load_metadata_rows(knowledge_pack, module_value, lesson_value)
-
-    counts = _distribute_counts(total, len(rows))
-    rows = rows[:len(counts)]
-
-    max_per_prompt = max(counts) if counts else 0
-    if max_per_prompt > MAX_QUESTIONS_PER_PROMPT:
-        n_rows = len(rows)
-        raise ValueError(
-            f"Mỗi prompt chỉ được sinh tối đa {MAX_QUESTIONS_PER_PROMPT} câu, "
-            f"nhưng hiện tại mỗi prompt cần sinh {max_per_prompt} câu "
-            f"({total} câu / {n_rows} node(s)). "
-            f"Vui lòng giảm tổng số câu xuống còn tối đa {MAX_QUESTIONS_PER_PROMPT * n_rows} câu."
-        )
-
-    semaphore = asyncio.Semaphore(MAX_WORKERS)
-    # generate_quiz không ghi file — trả về trực tiếp
-    file_lock = asyncio.Lock()
-
-    async def _bounded(row, n_q):
-        async with semaphore:
-            return await _process_row(row, n_q, difficulty, knowledge_pack, file_lock)
-
-    with timer.step("generate_per_row"):
-        all_results = await asyncio.gather(
-            *[_bounded(row, n_q) for row, n_q in zip(rows, counts)],
-        )
-
-    questions: list[dict] = []
-    success = fail = 0
-    for partial_questions, s, f in all_results:
-        for q in partial_questions:
-            q["id"] = len(questions) + 1
-            questions.append(q)
-        success += s
-        fail += f
-
-    questions = questions[:total]
-    logger.info(
-        f"\n  📊 Kết quả: {success} sinh được, {fail} thất bại "
-        f"→ trả về {len(questions)}/{total} câu"
-    )
-    timer.summary()
-
-    return {
-        "success": True,
-        "data": {
-            "total": len(questions),
-            "knowledge_pack": knowledge_pack,
-            "module_value": module_value,
-            "lesson_value": lesson_value,
-            "difficulty": difficulty,
-            "questions": questions,
-        },
-    }
-
-
-# ══════════════════════════════════════════════════════════════════════════════
 # BACKGROUND TASK — generate_quiz_full chạy nền, ghi file từng row
 # ══════════════════════════════════════════════════════════════════════════════
 
 async def generate_quiz_full_background(
-        knowledge_pack: str,
-        total: int = 800,
+        knowledge_pack: str
 ) -> None:
     """
     Chạy nền: sinh câu hỏi toàn bộ course, append từng batch vào file JSON ngay khi xong.
@@ -541,8 +475,112 @@ async def generate_quiz_full_background(
 
 
 # ══════════════════════════════════════════════════════════════════════════════
+# PUBLIC API — generate_quiz (async, có filter module/lesson)
+# ══════════════════════════════════════════════════════════════════════════════
+
+
+def generate_quiz(
+        knowledge_pack: str,
+        total: int,
+        difficulty: str | None = None,
+        module_value: str | None = None,
+        lesson_value: str | None = None,
+) -> dict[str, Any]:
+    timer = StepTimer("generate_quiz")
+
+    try:
+        # ── Pre-load df một lần để dùng cho random ────────────────────────
+        df_all = pd.read_excel(METADATA_NODE_XLSX, engine="openpyxl")
+        df_all.columns = [c.strip() for c in df_all.columns]
+
+        # Step 0a: Random difficulty nếu không truyền vào
+        if not difficulty:
+            difficulty = random.choice(DIFFICULTY_LEVELS)
+            logger.info(f"  🎲 Random difficulty → '{difficulty}'")
+
+        # Step 0b: Random module nếu không truyền vào
+        if not module_value:
+            module_value = _pick_random_module(knowledge_pack, df_all)
+            # lesson giữ nguyên null — không random khi module chưa được user chỉ định
+
+        # Step 0c: Chỉ random lesson khi module do USER truyền vào nhưng lesson null
+        else:
+            if not lesson_value:
+                lesson_value = _pick_random_lesson(knowledge_pack, module_value, df_all)
+
+        # Step 1: load metadata rows (module + lesson đã được xác định)
+        with timer.step("load_metadata"):
+            rows = _load_metadata_rows(knowledge_pack, module_value, lesson_value)
+
+        # Step 2: phân phối số câu
+        counts = _distribute_counts(total, len(rows))
+        rows = rows[:len(counts)]
+
+        max_per_prompt = max(counts) if counts else 0
+        if max_per_prompt > MAX_QUESTIONS_PER_PROMPT:
+            n_rows = len(rows)
+            max_allowed_total = MAX_QUESTIONS_PER_PROMPT * n_rows
+            raise ValueError(
+                f"Mỗi prompt chỉ được sinh tối đa {MAX_QUESTIONS_PER_PROMPT} câu, "
+                f"nhưng hiện tại mỗi prompt cần sinh {max_per_prompt} câu "
+                f"({total} câu / {n_rows} node(s)). "
+                f"Vui lòng giảm tổng số câu xuống còn tối đa {max_allowed_total} câu."
+            )
+
+        questions: list[dict] = []
+        success = fail = 0
+
+        # Step 3: gọi LLM song song theo từng row
+        with timer.step("generate_per_row"):
+            with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+                futures = {
+                    executor.submit(_process_row, row, n_q, difficulty): idx
+                    for idx, (row, n_q) in enumerate(zip(rows, counts))
+                }
+
+                results: dict[int, tuple[list[dict], int, int]] = {}
+                for future in as_completed(futures):
+                    idx = futures[future]
+                    try:
+                        results[idx] = future.result()
+                    except Exception as e:
+                        logger.warning(f"  ❌ Unhandled error trong future (idx={idx}): {e}")
+                        results[idx] = ([], 0, counts[idx])
+
+                for idx in range(len(rows)):
+                    partial_questions, s, f = results[idx]
+                    for q in partial_questions:
+                        q["id"] = len(questions) + 1
+                        questions.append(q)
+                    success += s
+                    fail += f
+
+        # Cắt đúng total câu
+        questions = questions[:total]
+        logger.info(
+            f"\n  📊 Kết quả: {success} sinh được, {fail} thất bại "
+            f"→ trả về {len(questions)}/{total} câu"
+        )
+
+        return {
+            "success": True,
+            "data": {
+                "total": len(questions),
+                "knowledge_pack": knowledge_pack,
+                "module_value": module_value,
+                "lesson_value": lesson_value,
+                "difficulty": difficulty,
+                "questions": questions,
+            },
+        }
+    finally:
+        timer.summary()
+
+
+# ══════════════════════════════════════════════════════════════════════════════
 # READ RESULT — đọc file JSON kết quả
 # ══════════════════════════════════════════════════════════════════════════════
+
 
 def read_quiz_result(knowledge_pack: str) -> dict[str, Any]:
     path = _get_output_path(knowledge_pack)
@@ -563,13 +601,10 @@ def read_quiz_result(knowledge_pack: str) -> dict[str, Any]:
             "message": f"Lỗi đọc file: {e}",
             "data": None,
         }
-
     return {
         "success": True,
         "data": {
             "knowledge_pack": knowledge_pack,
-            "total": len(questions),
-            "file_path": str(path),
             "questions": questions,
         },
     }

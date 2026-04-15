@@ -38,9 +38,9 @@ Answer the question thoroughly based on the provided web content.
 async def asearch_and_extract(
         search_query: str,
         *,
-        max_results: int = 3,
+        max_results: int = 2,
         relevance_threshold: float = 0.85,
-        chunks_per_source: int = 5,
+        chunks_per_source: int = 3,
 ) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
     """
     Run Tavily search then extract full content from high-relevance URLs.
@@ -70,7 +70,7 @@ async def asearch_and_extract(
 
     # Fallback: if nothing passes threshold, take top-3 by score
     if not relevant:
-        relevant = sorted(results, key=lambda r: r.get("score", 0), reverse=True)[:3]
+        relevant = sorted(results, key=lambda r: r.get("score", 0), reverse=True)[:2]
         relevant = [r for r in relevant if r.get("url")]
 
     if not relevant:

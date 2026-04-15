@@ -1,17 +1,13 @@
-from __future__ import annotations
-
 import threading
 from typing import Dict, List
 
-from src.config.app_config import _retry_policy, get_app_config
+from src.config.app_config import retry_policy, get_app_config
 from src.rag.llm.embedding_llm import get_async_client, get_sync_client
 from src.utils.logger_utils import alog_method_call, log_method_call
 
 config = get_app_config()
 
 # ── Thread-safe singletons ────────────────────────────────────────────────────
-_chat_client_instance: AzureChatClient | None = None
-
 _sync_lock = threading.Lock()
 _async_lock = threading.Lock()
 _chat_lock = threading.Lock()
@@ -56,7 +52,7 @@ class AzureChatClient:
 
     # ── Sync ──────────────────────────────────────────────────────────────────
     @log_method_call
-    @_retry_policy()
+    @retry_policy()
     def invoke(self, prompt: str) -> str:
         """Single-turn text completion."""
         response = get_sync_client().chat.completions.create(
@@ -65,7 +61,7 @@ class AzureChatClient:
         return response.choices[0].message.content or ""
 
     @log_method_call
-    @_retry_policy()
+    @retry_policy()
     def create_agentic_chunker_message(
             self,
             system_prompt: str,
@@ -81,7 +77,7 @@ class AzureChatClient:
         return response.choices[0].message.content or ""
 
     @log_method_call
-    @_retry_policy()
+    @retry_policy()
     def invoke_with_image(
             self,
             prompt: str,
@@ -109,13 +105,13 @@ class AzureChatClient:
 
     # ── Async public ──────────────────────────────────────────────────────────
     @alog_method_call
-    @_retry_policy()
+    @retry_policy()
     async def ainvoke(self, prompt: str) -> str:
         """Async single-turn text completion."""
         return await self._achat([{"role": "user", "content": prompt}])
 
     @alog_method_call
-    @_retry_policy()
+    @retry_policy()
     async def acreate_agentic_chunker_message(
             self,
             system_prompt: str,
@@ -126,6 +122,9 @@ class AzureChatClient:
             self._build_messages(system_prompt, messages),
             max_tokens=max_tokens
         )
+
+
+_chat_client_instance: AzureChatClient | None = None
 
 
 # ── Singleton factory ─────────────────────────────────────────────────────────

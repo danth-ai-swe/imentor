@@ -1,12 +1,8 @@
 import sys
 from pathlib import Path
 
-sys.path.append(str(Path(__file__).resolve().parent.parent))
-
-import pymupdf  # imports the pymupdf library
-
+import pymupdf
 from src.utils.logger_utils import logger
-from src.utils.app_utils import clean_text_to_one_line
 
 
 def pdf_to_markdown(pdf_path: Path) -> str:
@@ -25,10 +21,3 @@ def pdf_to_markdown(pdf_path: Path) -> str:
     except Exception as e:
         logger.error(f"❌ Failed to extract PDF {pdf_path}: {e}")
         return ""
-
-
-if __name__ == '__main__':
-    # Example usage
-    pdf_path = Path(r"C:\imt-ai-brain\data\summary\LOMA291_M2L2_Summary.pdf")
-    markdown = pdf_to_markdown(pdf_path)
-    print(clean_text_to_one_line(markdown))

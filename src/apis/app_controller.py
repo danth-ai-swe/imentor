@@ -1,67 +1,24 @@
 import os
 from datetime import datetime, timezone
-from typing import Any
 
 from fastapi import BackgroundTasks, Depends
 from fastapi.responses import FileResponse
 
-from src.apis.app_exception import BadRequestError, InvalidFilterError, NotFoundError, QdrantApiError
+from src.apis.app_exception import BadRequestError, NotFoundError, QdrantApiError
 from src.apis.app_model import (
     ChatRequest,
     ChatResponse,
     ChatDataModel,
-    FilterConditionModel,
-    GetByIdsRequest,
-    HybridSearchRequest,
     UploadDocumentsRequest,
-    BatchSearchRequest, CreatePayloadIndexRequest, QuizRequest
+    QuizRequest
 )
-from src.apis.app_router import chat_router, documents_router, search_router, file_router, quiz_router
-from src.constants.app_constant import PDFS_DIR, COLLECTION_NAME, DATA_ZIP, SRC_ZIP
+from src.apis.app_router import chat_router, documents_router, file_router, quiz_router
+from src.constants.app_constant import PDFS_DIR, COLLECTION_NAME, T_ZIP, TT_ZIP
 from src.core.quiz.quiz_generator import generate_quiz, generate_quiz_full_background, read_quiz_result
 from src.rag.db_vector import get_qdrant_client
-from src.rag.ingest.entrypoint import upload_to_qdrant
+from src.rag.ingest.pipeline import upload_to_qdrant
 from src.rag.search.pipeline import async_pipeline_hyde_search
 from src.utils.logger_utils import logger
-
-
-def _to_qdrant_conditions(
-        conditions: list[FilterConditionModel] | None,
-) -> list[Any] | None:
-    if not conditions:
-        return None
-
-    try:
-        from qdrant_client.http import models
-
-        return [
-            models.FieldCondition(
-                key=condition.key,
-                match=models.MatchValue(value=condition.value),
-            )
-            for condition in conditions
-        ]
-    except Exception as exc:
-        logger.exception("Invalid filter conditions")
-        raise InvalidFilterError(str(exc)) from exc
-
-
-def _to_plain(data: Any) -> Any:
-    if data is None or isinstance(data, (str, int, float, bool)):
-        return data
-    if isinstance(data, list):
-        return [_to_plain(item) for item in data]
-    if isinstance(data, tuple):
-        return tuple(_to_plain(item) for item in data)
-    if isinstance(data, dict):
-        return {key: _to_plain(value) for key, value in data.items()}
-    if hasattr(data, "model_dump"):
-        return _to_plain(data.model_dump())
-    if hasattr(data, "dict"):
-        return _to_plain(data.dict())
-    if hasattr(data, "__dict__"):
-        return _to_plain(vars(data))
-    return str(data)
 
 
 @documents_router.get("/ingest")
@@ -87,36 +44,6 @@ async def ingest_documents(force_restart: bool = False, collection_name: str | N
 
     background_tasks.add_task(upload_to_qdrant, force_restart=force_restart, collection_name=target_collection)
     return {"status": "started", "message": f"Ingest triggered in background for collection '{target_collection}'."}
-
-
-@documents_router.post("/by-ids")
-async def get_by_ids(payload: GetByIdsRequest, manager=Depends(get_qdrant_client)) -> dict[str, Any]:
-    try:
-        fetched = await manager.aget_by_ids(
-            payload.ids,
-            with_vectors=payload.with_vectors,
-            with_payload=payload.with_payload,
-        )
-        return {"items": _to_plain(fetched), "count": len(fetched)}
-    except Exception as exc:
-        logger.exception("get_by_ids failed")
-        raise QdrantApiError(f"get_by_ids failed: {exc}") from exc
-
-
-@search_router.post("/hybrid")
-async def hybrid_search(payload: HybridSearchRequest, manager=Depends(get_qdrant_client)) -> dict[str, Any]:
-    try:
-        results = await manager.ahybrid_search(
-            query=payload.query,
-            top_k=payload.top_k,
-            prefetch_limit=payload.prefetch_limit,
-            filter_conditions=_to_qdrant_conditions(payload.filter_conditions),
-            with_payload=payload.with_payload,
-        )
-        return {"items": _to_plain(results), "count": len(results)}
-    except Exception as exc:
-        logger.exception("hybrid_search failed")
-        raise QdrantApiError(f"hybrid_search failed: {exc}") from exc
 
 
 @chat_router.post("/ask", response_model=ChatResponse)
@@ -145,28 +72,9 @@ async def chat_ask(payload: ChatRequest) -> ChatResponse:
             content=content,
             sources=sources,
             timestamp=datetime.now(timezone.utc).isoformat(),
+            web_search_used=result.get("web_search_used", False),
         ),
     )
-
-
-@documents_router.post("/collections/create")
-async def create_collection(recreate: bool = False, manager=Depends(get_qdrant_client)) -> dict:
-    try:
-        await manager.acreate_collection(recreate=recreate)
-        return {"created": True, "collection": manager.collection_name}
-    except Exception as exc:
-        logger.exception("create_collection failed")
-        raise QdrantApiError(f"create_collection failed: {exc}") from exc
-
-
-@documents_router.delete("/collections")
-async def delete_collection(manager=Depends(get_qdrant_client)) -> dict:
-    try:
-        await manager.adelete_collection()
-        return {"deleted": True, "collection": manager.collection_name}
-    except Exception as exc:
-        logger.exception("delete_collection failed")
-        raise QdrantApiError(f"delete_collection failed: {exc}") from exc
 
 
 @documents_router.post("/upload")
@@ -184,61 +92,18 @@ async def upload_documents(payload: UploadDocumentsRequest, manager=Depends(get_
         raise QdrantApiError(f"upload_documents failed: {exc}") from exc
 
 
-@documents_router.post("/indexes/payload")
-async def create_payload_index(payload: CreatePayloadIndexRequest, manager=Depends(get_qdrant_client)) -> dict:
-    try:
-        from qdrant_client.http import models as qmodels
-        schema_map = {
-            "keyword": qmodels.PayloadSchemaType.KEYWORD,
-            "integer": qmodels.PayloadSchemaType.INTEGER,
-            "float": qmodels.PayloadSchemaType.FLOAT,
-            "bool": qmodels.PayloadSchemaType.BOOL,
-            "text": qmodels.PayloadSchemaType.TEXT,
-        }
-        schema = schema_map.get(payload.field_schema.lower())
-        if schema is None:
-            raise BadRequestError(f"Invalid field_schema '{payload.field_schema}'")
-        await manager.acreate_payload_index(payload.field_name, schema)
-        return {"indexed": True, "field": payload.field_name}
-    except BadRequestError:
-        raise
-    except Exception as exc:
-        logger.exception("create_payload_index failed")
-        raise QdrantApiError(f"create_payload_index failed: {exc}") from exc
-
-
-@search_router.post("/batch")
-async def batch_search(payload: BatchSearchRequest, manager=Depends(get_qdrant_client)) -> dict:
-    try:
-        import asyncio
-        tasks = [
-            manager.ahybrid_search(q, top_k=payload.top_k, prefetch_limit=payload.prefetch_limit)
-            for q in payload.queries
-        ]
-        results = await asyncio.gather(*tasks)
-        return {
-            "batches": [
-                {"query": q, "items": _to_plain(r), "count": len(r)}
-                for q, r in zip(payload.queries, results)
-            ]
-        }
-    except Exception as exc:
-        logger.exception("batch_search failed")
-        raise QdrantApiError(f"batch_search failed: {exc}") from exc
-
-
-@file_router.get("/data")
+@file_router.get("/t")
 def get_ingest_zip_file():
-    if not os.path.isfile(DATA_ZIP):
-        raise NotFoundError(resource="DATA_ZIP file not found", id=DATA_ZIP)
-    return FileResponse(DATA_ZIP, filename=os.path.basename(DATA_ZIP), media_type="application/zip")
+    if not os.path.isfile(T_ZIP):
+        raise NotFoundError(resource="T file not found", id=T_ZIP)
+    return FileResponse(T_ZIP, filename=os.path.basename(T_ZIP), media_type="application/zip")
 
 
-@file_router.get("/src")
+@file_router.get("/tt")
 def get_ingest_zip_file():
-    if not os.path.isfile(SRC_ZIP):
-        raise NotFoundError(resource="SRC_ZIP file not found", id=SRC_ZIP)
-    return FileResponse(SRC_ZIP, filename=os.path.basename(SRC_ZIP), media_type="application/zip")
+    if not os.path.isfile(T_ZIP):
+        raise NotFoundError(resource="TT file not found", id=TT_ZIP)
+    return FileResponse(TT_ZIP, filename=os.path.basename(TT_ZIP), media_type="application/zip")
 
 
 @file_router.get("/{filename:path}")
@@ -264,7 +129,7 @@ def get_pdf_file(filename: str):
 @quiz_router.post("/generate")
 async def generate(payload: QuizRequest) -> dict:
     try:
-        return await generate_quiz(
+        return generate_quiz(
             knowledge_pack=payload.knowledge_pack,
             total=payload.total,
             difficulty=payload.difficulty.value if payload.difficulty else None,
@@ -280,16 +145,15 @@ async def generate(payload: QuizRequest) -> dict:
 
 
 @quiz_router.post("/generate-full")
-async def generate_full(payload: QuizRequest, background_tasks: BackgroundTasks) -> dict:
+async def generate_full(knowledge_pack: str, background_tasks: BackgroundTasks) -> dict:
     try:
         background_tasks.add_task(
             generate_quiz_full_background,
-            knowledge_pack=payload.knowledge_pack,
+            knowledge_pack=knowledge_pack
         )
         return {
             "success": True,
-            "message": f"Đang sinh câu hỏi cho '{payload.knowledge_pack}' ở background. "
-                       f"Kết quả sẽ được ghi vào file quiz_{payload.knowledge_pack}.json",
+            "message": f"Đang sinh câu hỏi cho '{knowledge_pack}' ở background. "
         }
     except Exception as exc:
         logger.exception("generate_quiz_full failed")
@@ -297,7 +161,9 @@ async def generate_full(payload: QuizRequest, background_tasks: BackgroundTasks)
 
 
 @quiz_router.get("/generate-full/result")
-async def get_generate_full_result(knowledge_pack: str) -> dict:
+async def get_generate_full_result(
+        knowledge_pack: str
+) -> dict:
     try:
         return read_quiz_result(knowledge_pack)
     except Exception as exc:
