@@ -2,9 +2,9 @@ from contextlib import asynccontextmanager
 from datetime import datetime
 
 import uvicorn
-from fastapi import APIRouter
 from fastapi import FastAPI
 
+from src.apis.app_router import api_router
 from src.config.app_config import get_app_config
 from src.rag.db_vector import get_qdrant_client
 from src.rag.llm.chat_llm import get_openai_chat_client
@@ -14,23 +14,8 @@ from src.rag.semantic_router.intent_router_registry import set_intent_router
 from src.rag.semantic_router.precomputed import build_and_save_embeddings, load_precomputed_embeddings
 from src.rag.semantic_router.router import Route, SemanticRouter
 from src.rag.semantic_router.samples import offTopicSamples, coreKnowledgeSamples
-from src.utils.logger_utils import setup_uvicorn_logging, get_uvicorn_log_config, RequestTimingMiddleware
 
 config = get_app_config()
-documents_router = APIRouter(prefix="/vector/documents", tags=["Vector Documents"])
-search_router = APIRouter(prefix="/vector/search", tags=["Vector Search"])
-file_router = APIRouter(prefix="/file", tags=["File Search"])
-filters_router = APIRouter(prefix="/vector/filters", tags=["Vector Filters"])
-chat_router = APIRouter(prefix="/chat", tags=["Chat"])
-quiz_router = APIRouter(prefix="/quiz", tags=["Quiz"])
-
-api_router = APIRouter()
-api_router.include_router(documents_router)
-api_router.include_router(search_router)
-api_router.include_router(filters_router)
-api_router.include_router(chat_router)
-api_router.include_router(file_router)
-api_router.include_router(quiz_router)
 
 
 @asynccontextmanager
@@ -83,6 +68,6 @@ if __name__ == '__main__':
     uvicorn.run(
         "main:app",
         host="0.0.0.0",
-        port=8080,
+        port=8081,
         timeout_keep_alive=1800,
     )

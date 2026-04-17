@@ -61,10 +61,9 @@ class LLMAgenticChunkerv2(BaseChunker):
             current_chunk: int,
             max_chunk: int
     ) -> List[int]:
-        messages = self._build_messages(chunked_input, current_chunk, max_chunk)
         try:
-            result = self.client.create_agentic_chunker_message(
-                messages[0]["content"], messages[1:]
+            result = self.client.chat(
+                self._build_messages(chunked_input, current_chunk, max_chunk)
             )
         except Exception as e:
             logger.warning(f"LLM call failed: {e}")

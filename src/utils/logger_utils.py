@@ -422,3 +422,101 @@ _CONSOLE_FMT = (
     "[%(location)-50s]"
     " %(message)s"
 )
+
+
+def setup_uvicorn_logging() -> None:
+    """
+    Replace the default handlers on every uvicorn logger with the same
+    ColorFormatter used by the application logger so that **all** output
+    (startup banners, access lines, etc.) shares one consistent format.
+    """
+    formatter = ColorFormatter(_CONSOLE_FMT, datefmt=_TIME_FMT)
+
+    handler = logging.StreamHandler()
+    handler.setLevel(logging.DEBUG)
+    handler.setFormatter(formatter)
+
+    for name in ("uvicorn", "uvicorn.error", "uvicorn.access"):
+        uv_logger = logging.getLogger(name)
+        uv_logger.handlers.clear()
+        uv_logger.addHandler(handler)
+        uv_logger.propagate = False
+
+
+def get_uvicorn_log_config() -> dict:
+    """
+    Return a LOGGING dict-config that uvicorn.run() will apply at startup.
+    It wires every uvicorn logger through our ColorFormatter so the output
+    is identical to the application logger.
+    """
+    return {
+        "version": 1,
+        "disable_existing_loggers": False,
+        "formatters": {
+            "app": {
+                "()": "src.utils.logger_utils.ColorFormatter",
+                "fmt": _CONSOLE_FMT,
+                "datefmt": _TIME_FMT,
+            },
+        },
+        "handlers": {
+            "default": {
+                "class": "logging.StreamHandler",
+                "formatter": "app",
+                "stream": "ext://sys.stderr",
+            },
+        },
+        "loggers": {
+            "uvicorn": {
+                "handlers": ["default"],
+                "level": "INFO",
+                "propagate": False,
+            },
+            "uvicorn.error": {
+                "handlers": ["default"],
+                "level": "INFO",
+                "propagate": False,
+            },
+            "uvicorn.access": {
+                "handlers": ["default"],
+                "level": "INFO",
+                "propagate": False,
+            },
+        },
+    }
+
+
+# ── FastAPI request timing middleware ─────────────────────────────────────────
+
+class RequestTimingMiddleware:
+    """
+    ASGI middleware that logs the HTTP method, path, status code and
+    wall-clock duration for every request.
+    """
+
+    def __init__(self, app):
+        self.app = app
+
+    async def __call__(self, scope, receive, send):
+        if scope["type"] != "http":
+            await self.app(scope, receive, send)
+            return
+
+        start = time.perf_counter()
+        status_code = 500
+
+        async def send_wrapper(message):
+            nonlocal status_code
+            if message["type"] == "http.response.start":
+                status_code = message["status"]
+            await send(message)
+
+        try:
+            await self.app(scope, receive, send_wrapper)
+        finally:
+            duration = time.perf_counter() - start
+            method = scope.get("method", "?")
+            path = scope.get("path", "?")
+            logger.info(
+                f"🌐 {method} {path} → {status_code} | {duration:.4f}s"
+            )

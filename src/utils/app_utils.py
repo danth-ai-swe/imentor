@@ -1,6 +1,8 @@
 import json
 import re
+from typing import List
 
+import numpy as np
 import unicodedata
 
 from src.constants.app_constant import QUIZ_KEYWORDS
@@ -80,3 +82,25 @@ def clean_text(text: str) -> str:
     text = '\n'.join(lines).strip()
 
     return text
+
+
+def _normalize_mean(arr: np.ndarray) -> np.ndarray:
+    """Tính mean theo axis=0 rồi L2-normalize."""
+    mean_vec = np.mean(arr, axis=0)
+    norm = float(np.linalg.norm(mean_vec))
+    if norm > 0:
+        mean_vec = mean_vec / norm
+    return mean_vec
+
+
+def mean_pool_dense(embeddings: List[List[float]]) -> List[float]:
+    arr = np.array(embeddings, dtype=np.float32)
+    return _normalize_mean(arr).tolist()
+
+
+def mean_pool_colbert(embeddings: List[List[List[float]]]) -> List[List[float]]:
+    all_tokens: List[List[float]] = [
+        token for token_matrix in embeddings for token in token_matrix
+    ]
+    arr = np.array(all_tokens, dtype=np.float32)
+    return [_normalize_mean(arr).tolist()]

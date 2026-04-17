@@ -39,8 +39,8 @@ async def asearch_and_extract(
         search_query: str,
         *,
         max_results: int = 2,
-        relevance_threshold: float = 0.85,
-        chunks_per_source: int = 3,
+        relevance_threshold: float = 0.8,
+        chunks_per_source: int = 2
 ) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
     """
     Run Tavily search then extract full content from high-relevance URLs.
@@ -56,7 +56,7 @@ async def asearch_and_extract(
     try:
         search_response = await client.search(
             query=search_query,
-            search_depth="advanced",
+            search_depth="basic",
             max_results=max_results,
         )
     except Exception:
@@ -91,7 +91,7 @@ async def asearch_and_extract(
             urls=relevant_urls,
             query=search_query,
             chunks_per_source=chunks_per_source,
-            extract_depth="advanced",
+            extract_depth="basic",
         )
         extracted_results: List[Dict[str, Any]] = extracted.get("results", [])
     except Exception:

@@ -1,27 +1,45 @@
+# language_utils.py
+# Toàn bộ logic detect/translate qua Google Translate API bị xoá.
+# Language detection giờ được xử lý bởi LLM trong pipeline.
+# File này chỉ giữ lại constants dùng chung.
 import requests
 
-_DETECT_URL = "https://translate.googleapis.com/translate_a/single"
-
-_CODE_TO_NAME = {
-    "en": "English",
-    "vi": "Vietnamese",
-    "ja": "Japanese",
-    "ko": "Korean",
-    "zh-CN": "Chinese",
-    "zh-TW": "Chinese",
-    "fr": "French",
-    "de": "German",
-    "es": "Spanish",
-    "pt": "Portuguese",
-    "th": "Thai",
-    "id": "Indonesian",
-    "ms": "Malay",
-    "ar": "Arabic",
-    "hi": "Hindi",
-    "ru": "Russian",
+SUPPORTED_LANGUAGES = {"English", "Vietnamese", "Japanese"}
+lang_map = {
+    "English": "en",
+    "Vietnamese": "vi",
+    "Japanese": "ja"
 }
 
-UNSUPPORTED_LANGUAGE_MSG = "Ngôn ngữ này hiện không được hỗ trợ. / This language is not currently supported."
+_TRANSLATE_URL = "https://translate.googleapis.com/translate_a/single"
+
+
+def _translate(text: str, target_lang: str) -> str:
+    try:
+        resp = requests.get(
+            _TRANSLATE_URL,
+            params={
+                "client": "gtx",
+                "sl": "auto",
+                "tl": target_lang,
+                "dt": "t",
+                "q": text,
+            },
+            timeout=5,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+
+        translated_parts = [
+            part[0] for part in data[0] if part and part[0]
+        ]
+        return "".join(translated_parts)
+    except Exception:
+        return text
+
+
+def is_english(text: str) -> bool:
+    return detect_language(text) == "en"
 
 
 def detect_language(text: str) -> str:
@@ -29,7 +47,7 @@ def detect_language(text: str) -> str:
         return "en"
     try:
         resp = requests.get(
-            _DETECT_URL,
+            _TRANSLATE_URL,
             params={
                 "client": "gtx",
                 "sl": "auto",
@@ -47,51 +65,3 @@ def detect_language(text: str) -> str:
         return "en"
     except Exception:
         return "en"
-
-
-def get_detected_language(text: str) -> str | None:
-    """
-    Returns the human-readable language name if supported, None if not in supported list.
-    Caller should handle None as an unsupported language signal.
-    """
-    code = detect_language(text)
-    return _CODE_TO_NAME.get(code)  # Returns None if unsupported
-
-
-def is_english(text: str) -> bool:
-    return detect_language(text) == "en"
-
-
-def translate_to_english(text: str) -> str:
-    if not text or not text.strip():
-        return text
-    try:
-        resp = requests.get(
-            _DETECT_URL,
-            params={
-                "client": "gtx",
-                "sl": "auto",
-                "tl": "en",
-                "dt": "t",
-                "q": text,
-            },
-            timeout=5,
-        )
-        resp.raise_for_status()
-        data = resp.json()
-        detected = data[2] if len(data) > 2 else "en"
-
-        if detected == "en":
-            return text
-
-        translated_parts = [
-            part[0] for part in data[0] if part and part[0]
-        ]
-        translated = "".join(translated_parts)
-        return translated if translated else text
-    except Exception:
-        return text
-
-
-def language_name(code: str) -> str:
-    return _CODE_TO_NAME.get(code, code.capitalize())

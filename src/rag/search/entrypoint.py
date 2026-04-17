@@ -1,12 +1,13 @@
-from typing import Any, Dict, List, Tuple
+from typing import Any, Dict, List
 
 from src.constants.app_constant import (
     MAX_RECENT_HISTORY_ENTRIES,
 )
 from src.external.fetch_history import fetch_raw_chat_history
-from src.rag.llm.chat_llm import get_openai_chat_client
+from src.rag.llm.chat_llm import AzureChatClient
 from src.rag.search.prompt import SYSTEM_PROMPT_TEMPLATE, SUMMARIZE_PROMPT_TEMPLATE
-from src.utils.logger_utils import alog_function_call
+from src.utils.logger_utils import alog_function_call, logger
+from src.utils.app_utils import parse_json_response
 
 
 def _filter_core_knowledge_pairs(
@@ -48,26 +49,25 @@ def _format_history(history: list[dict]) -> str:
     return "\n".join(lines)
 
 
-async def _summarize_history(history_string: str) -> str:
-    """Gọi Azure OpenAI để tóm tắt history string, trả về summary string."""
+async def _summarize_history(llm: AzureChatClient, history_string: str) -> str:
+    """Gọi Azure OpenAI để tóm tắt history string, trả về summary string dạng JSON."""
     prompt = SUMMARIZE_PROMPT_TEMPLATE.format(
         conversation_history=history_string
     )
 
-    raw = await get_openai_chat_client().ainvoke(prompt)
+    raw = (await llm.ainvoke(prompt)).strip()
 
-    start = raw.find("<result>")
-    end = raw.find("</result>")
-    if start != -1 and end != -1:
-        return raw[start + len("<result>"):end].strip()
-
-    return raw.strip()
+    try:
+        return parse_json_response(raw).get("summary", "")
+    except Exception:
+        logger.warning("Failed to parse summary response as JSON, returning raw text. Response: %s", raw)
+    return raw
 
 
 @alog_function_call
-async def afetch_chat_history(
-        conversation_id: str | None = None,
-) -> str:
+async def afetch_chat_history(llm: AzureChatClient,
+                              conversation_id: str | None = None,
+                              ) -> str:
     if not conversation_id or not conversation_id.strip():
         return ""
 
@@ -85,7 +85,7 @@ async def afetch_chat_history(
     history_string = _format_history(filtered)
 
     # Bước 4: Tóm tắt bằng Claude → summary string
-    summary = await _summarize_history(history_string)
+    summary = await _summarize_history(llm, history_string)
 
     return summary
 
@@ -93,13 +93,9 @@ async def afetch_chat_history(
 def build_final_prompt(
         user_input: str,
         detected_language: str,
-        relevant_chunks,
+        relevant_chunks: list,
         node_data_list: List[Dict[str, Any]],
-) -> Tuple[str, List[Dict[str, str]]]:
-    system_prompt = SYSTEM_PROMPT_TEMPLATE.format(
-        detected_language=detected_language
-    )
-
+):
     # Context từ retrieval
     context_blocks = [
         f"[{chunk.get('metadata', {}).get('file_name', 'unknown')}]:\n{chunk['text']}"
@@ -112,19 +108,17 @@ def build_final_prompt(
     if node_data_list:
         lines = [
             f"- **{nd.get('Node Name', 'N/A')}**: {nd.get('Definition', 'N/A')}  \n"
-            f"  Category: {nd.get('Category', 'N/A')} | Tags: {nd.get('Domain Tags', 'N/A')}\n"
+            f"  Category: {nd.get('Category', 'N/A')}\n"
             f"  Overall Summary: {nd.get('Summary', 'N/A')}"
             for nd in node_data_list
         ]
-        node_ref = "\n\n## Knowledge Node Reference\n" + "\n".join(lines)
+        node_ref = "## Knowledge Node Reference\n" + "\n".join(lines)
 
-    messages: List[Dict[str, str]] = [{
-        "role": "user",
-        "content": (
-            f"## Retrieved Context\n{context_str}\n\n"
-            f"{node_ref}\n\n"
-            f"## User Question\n{user_input}"
-        ),
-    }]
+    final_prompt = SYSTEM_PROMPT_TEMPLATE.format(
+        detected_language=detected_language,
+        context_str=context_str,
+        node_ref=node_ref,
+        user_input=user_input,
+    )
 
-    return system_prompt, messages
+    return final_prompt

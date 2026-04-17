@@ -62,22 +62,6 @@ class AzureChatClient:
 
     @log_method_call
     @retry_policy()
-    def create_agentic_chunker_message(
-            self,
-            system_prompt: str,
-            messages: List[Dict[str, str]],
-            max_tokens: int | None = None,
-    ) -> str:
-        response = get_sync_client().chat.completions.create(
-            **self._chat_params(
-                self._build_messages(system_prompt, messages),
-                max_tokens=max_tokens
-            )
-        )
-        return response.choices[0].message.content or ""
-
-    @log_method_call
-    @retry_policy()
     def invoke_with_image(
             self,
             prompt: str,
@@ -97,8 +81,14 @@ class AzureChatClient:
         return response.choices[0].message.content
 
     # ── Async core ────────────────────────────────────────────────────────────
-    async def _achat(self, messages: List[Dict], max_tokens: int | None = None) -> str:
+    async def achat(self, messages: List[Dict], max_tokens: int | None = None) -> str:
         response = await get_async_client().chat.completions.create(
+            **self._chat_params(messages, max_tokens=max_tokens)
+        )
+        return response.choices[0].message.content
+
+    def chat(self, messages: List[Dict], max_tokens: int | None = None) -> str:
+        response = get_sync_client().chat.completions.create(
             **self._chat_params(messages, max_tokens=max_tokens)
         )
         return response.choices[0].message.content
@@ -108,20 +98,7 @@ class AzureChatClient:
     @retry_policy()
     async def ainvoke(self, prompt: str) -> str:
         """Async single-turn text completion."""
-        return await self._achat([{"role": "user", "content": prompt}])
-
-    @alog_method_call
-    @retry_policy()
-    async def acreate_agentic_chunker_message(
-            self,
-            system_prompt: str,
-            messages: List[Dict[str, str]],
-            max_tokens: int | None = None,
-    ) -> str:
-        return await self._achat(
-            self._build_messages(system_prompt, messages),
-            max_tokens=max_tokens
-        )
+        return await self.achat([{"role": "user", "content": prompt}])
 
 
 _chat_client_instance: AzureChatClient | None = None

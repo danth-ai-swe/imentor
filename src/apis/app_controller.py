@@ -12,7 +12,7 @@ from src.apis.app_model import (
     UploadDocumentsRequest,
     QuizRequest
 )
-from src.apis.app_router import chat_router, documents_router, file_router, quiz_router
+from src.apis.app_router import documents_router, chat_router, file_router, quiz_router
 from src.constants.app_constant import PDFS_DIR, COLLECTION_NAME, T_ZIP, TT_ZIP
 from src.core.quiz.quiz_generator import generate_quiz, generate_quiz_full_background, read_quiz_result
 from src.rag.db_vector import get_qdrant_client
@@ -93,16 +93,16 @@ async def upload_documents(payload: UploadDocumentsRequest, manager=Depends(get_
 
 
 @file_router.get("/t")
-def get_ingest_zip_file():
+def get_t_zip_file():
     if not os.path.isfile(T_ZIP):
         raise NotFoundError(resource="T file not found", id=T_ZIP)
     return FileResponse(T_ZIP, filename=os.path.basename(T_ZIP), media_type="application/zip")
 
 
 @file_router.get("/tt")
-def get_ingest_zip_file():
-    if not os.path.isfile(T_ZIP):
-        raise NotFoundError(resource="TT file not found", id=TT_ZIP)
+def get_tt_zip_file():
+    if not os.path.isfile(TT_ZIP):
+        raise NotFoundError(resource="TT file not found", id=T_ZIP)
     return FileResponse(TT_ZIP, filename=os.path.basename(TT_ZIP), media_type="application/zip")
 
 

@@ -16,3 +16,8 @@ httpx
 fastembed
 openpyxl
 pandas
+
+langchain_community
+
+trafilatura
+faiss-cpu

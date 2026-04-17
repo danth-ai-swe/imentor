@@ -27,24 +27,6 @@ QUIZ_XLSX_DIR = Path(QUIZ_DIR)
 QUIZ_OUTPUT_DIR = Path(DATA_DIR)
 
 
-def convert_questions(questions: list[dict]) -> list[dict]:
-    """
-    Chuyển đổi các trường 'index' trong options và 'correct_answer' từ ký tự ('A'-'D') sang số (0-3).
-    """
-    letter_to_num = {'A': 0, 'B': 1, 'C': 2, 'D': 3}
-    for q in questions:
-        # Chuyển index trong options
-        for opt in q.get('options', []):
-            idx = opt.get('index')
-            if isinstance(idx, str) and idx.strip().upper() in letter_to_num:
-                opt['index'] = letter_to_num[idx.strip().upper()]
-        # Chuyển correct_answer
-        ca = q.get('correct_answer')
-        if isinstance(ca, str) and ca.strip().upper() in letter_to_num:
-            q['correct_answer'] = letter_to_num[ca.strip().upper()]
-    return questions
-
-
 def _get_output_path(knowledge_pack: str) -> Path:
     """Trả về path file JSON output cho từng knowledge_pack."""
     return QUIZ_OUTPUT_DIR / f"quiz_{knowledge_pack}.json"
@@ -321,9 +303,8 @@ def _call_llm_for_row(
         ),
     )
     user_prompt = _build_user_prompt(row, chunks, n_questions, difficulty, examples)
-    raw = llm.create_agentic_chunker_message(
-        system_prompt=system_prompt,
-        messages=[{"role": "user", "content": user_prompt}],
+    raw = llm.chat(
+        messages=[{"role": "system", "content": system_prompt}, {"role": "user", "content": user_prompt}],
         max_tokens=min(n_questions * TOKENS_PER_QUESTION, MAX_TOKENS_PER_CALL),
     )
     return parse_llm_json(raw)
@@ -575,11 +556,6 @@ def generate_quiz(
         }
     finally:
         timer.summary()
-
-
-# ══════════════════════════════════════════════════════════════════════════════
-# READ RESULT — đọc file JSON kết quả
-# ══════════════════════════════════════════════════════════════════════════════
 
 
 def read_quiz_result(knowledge_pack: str) -> dict[str, Any]:
