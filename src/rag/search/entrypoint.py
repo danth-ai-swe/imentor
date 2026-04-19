@@ -6,8 +6,8 @@ from src.constants.app_constant import (
 from src.external.fetch_history import fetch_raw_chat_history
 from src.rag.llm.chat_llm import AzureChatClient
 from src.rag.search.prompt import SYSTEM_PROMPT_TEMPLATE, SUMMARIZE_PROMPT_TEMPLATE
-from src.utils.logger_utils import alog_function_call, logger
 from src.utils.app_utils import parse_json_response
+from src.utils.logger_utils import alog_function_call, logger
 
 
 def _filter_core_knowledge_pairs(

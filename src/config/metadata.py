@@ -10,7 +10,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 1 Term Life Insurance Summary of Key Points Term life insurance provides coverage for a specified period of time, called the policy term. The policy benefit will be payable ONLY if • The insured dies during the specified policy term, and • The policy is in force when the insured dies. Four types of term life insurance: • Level term life insurance─The policy benefit—and usually the premium—remains the same over the term. • Decreasing term life insurance─The policy benefit decreases over the policy term, but the premium amount usually remains the same. Examples are mortgage insurance, credit life insurance, and family income coverage. • Increasing term life insurance─The policy benefit increases at stated intervals over the policy term. Premiums increase as the benefit increases. • Return of premium (ROP) term life insurance─The policy pays a death benefit if the insured dies within the policy term or a return of premiums if the insured lives until the end of the policy term. Two options to continue life insurance coverage at end of term: • Policy renewal o Extends existing coverage for another term, usually the same length as original term, but sometimes shorter o Renewed coverage is usually for same face amount, but it can be for a lesser amount o Premiums for renewed coverage are based on the insured’s attained age at time of renewal o Subject to maximum number of renewals or maximum age limit o Does not require evidence of insurability • Policy Conversion o Allows policyowner to convert term policy to permanent (cash value) coverage during a specified time, known as the conversion period. o Does not require evidence of insurability o Converted coverage amount can be the same as or less than the original policy’s face amount o Premiums for converted coverage can be based on the insured’s attained age or original age Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 2,
@@ -23,7 +23,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 1 Term Life Insurance Summary of Key Points Term life insurance provides coverage for a specified period of time, called the policy term. The policy benefit will be payable ONLY if • The insured dies during the specified policy term, and • The policy is in force when the insured dies. Four types of term life insurance: • Level term life insurance─The policy benefit—and usually the premium—remains the same over the term. • Decreasing term life insurance─The policy benefit decreases over the policy term, but the premium amount usually remains the same. Examples are mortgage insurance, credit life insurance, and family income coverage. • Increasing term life insurance─The policy benefit increases at stated intervals over the policy term. Premiums increase as the benefit increases. • Return of premium (ROP) term life insurance─The policy pays a death benefit if the insured dies within the policy term or a return of premiums if the insured lives until the end of the policy term. Two options to continue life insurance coverage at end of term: • Policy renewal o Extends existing coverage for another term, usually the same length as original term, but sometimes shorter o Renewed coverage is usually for same face amount, but it can be for a lesser amount o Premiums for renewed coverage are based on the insured’s attained age at time of renewal o Subject to maximum number of renewals or maximum age limit o Does not require evidence of insurability • Policy Conversion o Allows policyowner to convert term policy to permanent (cash value) coverage during a specified time, known as the conversion period. o Does not require evidence of insurability o Converted coverage amount can be the same as or less than the original policy’s face amount o Premiums for converted coverage can be based on the insured’s attained age or original age Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 3,
@@ -36,7 +36,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 1 Term Life Insurance Summary of Key Points Term life insurance provides coverage for a specified period of time, called the policy term. The policy benefit will be payable ONLY if • The insured dies during the specified policy term, and • The policy is in force when the insured dies. Four types of term life insurance: • Level term life insurance─The policy benefit—and usually the premium—remains the same over the term. • Decreasing term life insurance─The policy benefit decreases over the policy term, but the premium amount usually remains the same. Examples are mortgage insurance, credit life insurance, and family income coverage. • Increasing term life insurance─The policy benefit increases at stated intervals over the policy term. Premiums increase as the benefit increases. • Return of premium (ROP) term life insurance─The policy pays a death benefit if the insured dies within the policy term or a return of premiums if the insured lives until the end of the policy term. Two options to continue life insurance coverage at end of term: • Policy renewal o Extends existing coverage for another term, usually the same length as original term, but sometimes shorter o Renewed coverage is usually for same face amount, but it can be for a lesser amount o Premiums for renewed coverage are based on the insured’s attained age at time of renewal o Subject to maximum number of renewals or maximum age limit o Does not require evidence of insurability • Policy Conversion o Allows policyowner to convert term policy to permanent (cash value) coverage during a specified time, known as the conversion period. o Does not require evidence of insurability o Converted coverage amount can be the same as or less than the original policy’s face amount o Premiums for converted coverage can be based on the insured’s attained age or original age Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 4,
@@ -49,7 +49,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 1 Term Life Insurance Summary of Key Points Term life insurance provides coverage for a specified period of time, called the policy term. The policy benefit will be payable ONLY if • The insured dies during the specified policy term, and • The policy is in force when the insured dies. Four types of term life insurance: • Level term life insurance─The policy benefit—and usually the premium—remains the same over the term. • Decreasing term life insurance─The policy benefit decreases over the policy term, but the premium amount usually remains the same. Examples are mortgage insurance, credit life insurance, and family income coverage. • Increasing term life insurance─The policy benefit increases at stated intervals over the policy term. Premiums increase as the benefit increases. • Return of premium (ROP) term life insurance─The policy pays a death benefit if the insured dies within the policy term or a return of premiums if the insured lives until the end of the policy term. Two options to continue life insurance coverage at end of term: • Policy renewal o Extends existing coverage for another term, usually the same length as original term, but sometimes shorter o Renewed coverage is usually for same face amount, but it can be for a lesser amount o Premiums for renewed coverage are based on the insured’s attained age at time of renewal o Subject to maximum number of renewals or maximum age limit o Does not require evidence of insurability • Policy Conversion o Allows policyowner to convert term policy to permanent (cash value) coverage during a specified time, known as the conversion period. o Does not require evidence of insurability o Converted coverage amount can be the same as or less than the original policy’s face amount o Premiums for converted coverage can be based on the insured’s attained age or original age Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 5,
@@ -62,7 +62,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 1 Term Life Insurance Summary of Key Points Term life insurance provides coverage for a specified period of time, called the policy term. The policy benefit will be payable ONLY if • The insured dies during the specified policy term, and • The policy is in force when the insured dies. Four types of term life insurance: • Level term life insurance─The policy benefit—and usually the premium—remains the same over the term. • Decreasing term life insurance─The policy benefit decreases over the policy term, but the premium amount usually remains the same. Examples are mortgage insurance, credit life insurance, and family income coverage. • Increasing term life insurance─The policy benefit increases at stated intervals over the policy term. Premiums increase as the benefit increases. • Return of premium (ROP) term life insurance─The policy pays a death benefit if the insured dies within the policy term or a return of premiums if the insured lives until the end of the policy term. Two options to continue life insurance coverage at end of term: • Policy renewal o Extends existing coverage for another term, usually the same length as original term, but sometimes shorter o Renewed coverage is usually for same face amount, but it can be for a lesser amount o Premiums for renewed coverage are based on the insured’s attained age at time of renewal o Subject to maximum number of renewals or maximum age limit o Does not require evidence of insurability • Policy Conversion o Allows policyowner to convert term policy to permanent (cash value) coverage during a specified time, known as the conversion period. o Does not require evidence of insurability o Converted coverage amount can be the same as or less than the original policy’s face amount o Premiums for converted coverage can be based on the insured’s attained age or original age Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 6,
@@ -75,7 +75,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 1 Risky Business Summary of Key Points Risk is the possibility of an unexpected result. Speculative risk can result in a gain, a loss, or no change; pure risk involves either a loss or no loss. Four risk management techniques: • Avoid the risk • Control the risk • Accept the risk • Transfer the risk Two basic types of life insurance product: • Life insurance: The insurer promises to pay a death benefit when a named person dies. • Annuity. In return for receiving a premium, an insurer promises to make periodic payments. Insurance is based on risk pooling—spreading the cost of the relatively few anticipated losses among all insureds. Parties involved in an insurance transaction: • Applicant: The person or entity that applies for an insurance policy. • Policyowner: The person or entity that owns the issued policy. • Insured: The person whose life or health the policy insures. • Beneficiary: The person named to receive the policy benefit. The characteristics of an insurable risk: • The risk must be a pure risk • The loss must occur by chance • The loss must be definite in time and amount • The loss must be significant • The loss rate must be predictable • The loss cannot be catastrophic to the insurer Life insurance policies are valued contracts. Other types of insurance policies are contracts of indemnity. Insurers predict losses based on the law of large numbers. Insurers minimize catastrophic losses by purchasing reinsurance—insurance for insurance companies. Underwriters evaluate proposed risks and assign them to risk classes. • Underwriters evaluate applications for physical hazards and moral hazards. • Underwriters try to avoid antiselection. Insurers won’t issue a policy without the presence of insurable interest—the interest that an insurance policyowner has in the risk that is insured. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 7,
@@ -88,7 +88,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 1 Risky Business Summary of Key Points Risk is the possibility of an unexpected result. Speculative risk can result in a gain, a loss, or no change; pure risk involves either a loss or no loss. Four risk management techniques: • Avoid the risk • Control the risk • Accept the risk • Transfer the risk Two basic types of life insurance product: • Life insurance: The insurer promises to pay a death benefit when a named person dies. • Annuity. In return for receiving a premium, an insurer promises to make periodic payments. Insurance is based on risk pooling—spreading the cost of the relatively few anticipated losses among all insureds. Parties involved in an insurance transaction: • Applicant: The person or entity that applies for an insurance policy. • Policyowner: The person or entity that owns the issued policy. • Insured: The person whose life or health the policy insures. • Beneficiary: The person named to receive the policy benefit. The characteristics of an insurable risk: • The risk must be a pure risk • The loss must occur by chance • The loss must be definite in time and amount • The loss must be significant • The loss rate must be predictable • The loss cannot be catastrophic to the insurer Life insurance policies are valued contracts. Other types of insurance policies are contracts of indemnity. Insurers predict losses based on the law of large numbers. Insurers minimize catastrophic losses by purchasing reinsurance—insurance for insurance companies. Underwriters evaluate proposed risks and assign them to risk classes. • Underwriters evaluate applications for physical hazards and moral hazards. • Underwriters try to avoid antiselection. Insurers won’t issue a policy without the presence of insurable interest—the interest that an insurance policyowner has in the risk that is insured. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 8,
@@ -101,7 +101,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 1 Risky Business Summary of Key Points Risk is the possibility of an unexpected result. Speculative risk can result in a gain, a loss, or no change; pure risk involves either a loss or no loss. Four risk management techniques: • Avoid the risk • Control the risk • Accept the risk • Transfer the risk Two basic types of life insurance product: • Life insurance: The insurer promises to pay a death benefit when a named person dies. • Annuity. In return for receiving a premium, an insurer promises to make periodic payments. Insurance is based on risk pooling—spreading the cost of the relatively few anticipated losses among all insureds. Parties involved in an insurance transaction: • Applicant: The person or entity that applies for an insurance policy. • Policyowner: The person or entity that owns the issued policy. • Insured: The person whose life or health the policy insures. • Beneficiary: The person named to receive the policy benefit. The characteristics of an insurable risk: • The risk must be a pure risk • The loss must occur by chance • The loss must be definite in time and amount • The loss must be significant • The loss rate must be predictable • The loss cannot be catastrophic to the insurer Life insurance policies are valued contracts. Other types of insurance policies are contracts of indemnity. Insurers predict losses based on the law of large numbers. Insurers minimize catastrophic losses by purchasing reinsurance—insurance for insurance companies. Underwriters evaluate proposed risks and assign them to risk classes. • Underwriters evaluate applications for physical hazards and moral hazards. • Underwriters try to avoid antiselection. Insurers won’t issue a policy without the presence of insurable interest—the interest that an insurance policyowner has in the risk that is insured. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 9,
@@ -114,7 +114,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 1 Risky Business Summary of Key Points Risk is the possibility of an unexpected result. Speculative risk can result in a gain, a loss, or no change; pure risk involves either a loss or no loss. Four risk management techniques: • Avoid the risk • Control the risk • Accept the risk • Transfer the risk Two basic types of life insurance product: • Life insurance: The insurer promises to pay a death benefit when a named person dies. • Annuity. In return for receiving a premium, an insurer promises to make periodic payments. Insurance is based on risk pooling—spreading the cost of the relatively few anticipated losses among all insureds. Parties involved in an insurance transaction: • Applicant: The person or entity that applies for an insurance policy. • Policyowner: The person or entity that owns the issued policy. • Insured: The person whose life or health the policy insures. • Beneficiary: The person named to receive the policy benefit. The characteristics of an insurable risk: • The risk must be a pure risk • The loss must occur by chance • The loss must be definite in time and amount • The loss must be significant • The loss rate must be predictable • The loss cannot be catastrophic to the insurer Life insurance policies are valued contracts. Other types of insurance policies are contracts of indemnity. Insurers predict losses based on the law of large numbers. Insurers minimize catastrophic losses by purchasing reinsurance—insurance for insurance companies. Underwriters evaluate proposed risks and assign them to risk classes. • Underwriters evaluate applications for physical hazards and moral hazards. • Underwriters try to avoid antiselection. Insurers won’t issue a policy without the presence of insurable interest—the interest that an insurance policyowner has in the risk that is insured. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 10,
@@ -127,7 +127,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 1 Risky Business Summary of Key Points Risk is the possibility of an unexpected result. Speculative risk can result in a gain, a loss, or no change; pure risk involves either a loss or no loss. Four risk management techniques: • Avoid the risk • Control the risk • Accept the risk • Transfer the risk Two basic types of life insurance product: • Life insurance: The insurer promises to pay a death benefit when a named person dies. • Annuity. In return for receiving a premium, an insurer promises to make periodic payments. Insurance is based on risk pooling—spreading the cost of the relatively few anticipated losses among all insureds. Parties involved in an insurance transaction: • Applicant: The person or entity that applies for an insurance policy. • Policyowner: The person or entity that owns the issued policy. • Insured: The person whose life or health the policy insures. • Beneficiary: The person named to receive the policy benefit. The characteristics of an insurable risk: • The risk must be a pure risk • The loss must occur by chance • The loss must be definite in time and amount • The loss must be significant • The loss rate must be predictable • The loss cannot be catastrophic to the insurer Life insurance policies are valued contracts. Other types of insurance policies are contracts of indemnity. Insurers predict losses based on the law of large numbers. Insurers minimize catastrophic losses by purchasing reinsurance—insurance for insurance companies. Underwriters evaluate proposed risks and assign them to risk classes. • Underwriters evaluate applications for physical hazards and moral hazards. • Underwriters try to avoid antiselection. Insurers won’t issue a policy without the presence of insurable interest—the interest that an insurance policyowner has in the risk that is insured. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 11,
@@ -140,7 +140,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 1 Risky Business Summary of Key Points Risk is the possibility of an unexpected result. Speculative risk can result in a gain, a loss, or no change; pure risk involves either a loss or no loss. Four risk management techniques: • Avoid the risk • Control the risk • Accept the risk • Transfer the risk Two basic types of life insurance product: • Life insurance: The insurer promises to pay a death benefit when a named person dies. • Annuity. In return for receiving a premium, an insurer promises to make periodic payments. Insurance is based on risk pooling—spreading the cost of the relatively few anticipated losses among all insureds. Parties involved in an insurance transaction: • Applicant: The person or entity that applies for an insurance policy. • Policyowner: The person or entity that owns the issued policy. • Insured: The person whose life or health the policy insures. • Beneficiary: The person named to receive the policy benefit. The characteristics of an insurable risk: • The risk must be a pure risk • The loss must occur by chance • The loss must be definite in time and amount • The loss must be significant • The loss rate must be predictable • The loss cannot be catastrophic to the insurer Life insurance policies are valued contracts. Other types of insurance policies are contracts of indemnity. Insurers predict losses based on the law of large numbers. Insurers minimize catastrophic losses by purchasing reinsurance—insurance for insurance companies. Underwriters evaluate proposed risks and assign them to risk classes. • Underwriters evaluate applications for physical hazards and moral hazards. • Underwriters try to avoid antiselection. Insurers won’t issue a policy without the presence of insurable interest—the interest that an insurance policyowner has in the risk that is insured. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 12,
@@ -153,7 +153,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 1 Risky Business Summary of Key Points Risk is the possibility of an unexpected result. Speculative risk can result in a gain, a loss, or no change; pure risk involves either a loss or no loss. Four risk management techniques: • Avoid the risk • Control the risk • Accept the risk • Transfer the risk Two basic types of life insurance product: • Life insurance: The insurer promises to pay a death benefit when a named person dies. • Annuity. In return for receiving a premium, an insurer promises to make periodic payments. Insurance is based on risk pooling—spreading the cost of the relatively few anticipated losses among all insureds. Parties involved in an insurance transaction: • Applicant: The person or entity that applies for an insurance policy. • Policyowner: The person or entity that owns the issued policy. • Insured: The person whose life or health the policy insures. • Beneficiary: The person named to receive the policy benefit. The characteristics of an insurable risk: • The risk must be a pure risk • The loss must occur by chance • The loss must be definite in time and amount • The loss must be significant • The loss rate must be predictable • The loss cannot be catastrophic to the insurer Life insurance policies are valued contracts. Other types of insurance policies are contracts of indemnity. Insurers predict losses based on the law of large numbers. Insurers minimize catastrophic losses by purchasing reinsurance—insurance for insurance companies. Underwriters evaluate proposed risks and assign them to risk classes. • Underwriters evaluate applications for physical hazards and moral hazards. • Underwriters try to avoid antiselection. Insurers won’t issue a policy without the presence of insurable interest—the interest that an insurance policyowner has in the risk that is insured. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 13,
@@ -166,7 +166,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 1 Risky Business Summary of Key Points Risk is the possibility of an unexpected result. Speculative risk can result in a gain, a loss, or no change; pure risk involves either a loss or no loss. Four risk management techniques: • Avoid the risk • Control the risk • Accept the risk • Transfer the risk Two basic types of life insurance product: • Life insurance: The insurer promises to pay a death benefit when a named person dies. • Annuity. In return for receiving a premium, an insurer promises to make periodic payments. Insurance is based on risk pooling—spreading the cost of the relatively few anticipated losses among all insureds. Parties involved in an insurance transaction: • Applicant: The person or entity that applies for an insurance policy. • Policyowner: The person or entity that owns the issued policy. • Insured: The person whose life or health the policy insures. • Beneficiary: The person named to receive the policy benefit. The characteristics of an insurable risk: • The risk must be a pure risk • The loss must occur by chance • The loss must be definite in time and amount • The loss must be significant • The loss rate must be predictable • The loss cannot be catastrophic to the insurer Life insurance policies are valued contracts. Other types of insurance policies are contracts of indemnity. Insurers predict losses based on the law of large numbers. Insurers minimize catastrophic losses by purchasing reinsurance—insurance for insurance companies. Underwriters evaluate proposed risks and assign them to risk classes. • Underwriters evaluate applications for physical hazards and moral hazards. • Underwriters try to avoid antiselection. Insurers won’t issue a policy without the presence of insurable interest—the interest that an insurance policyowner has in the risk that is insured. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 14,
@@ -179,7 +179,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 1 Risky Business Summary of Key Points Risk is the possibility of an unexpected result. Speculative risk can result in a gain, a loss, or no change; pure risk involves either a loss or no loss. Four risk management techniques: • Avoid the risk • Control the risk • Accept the risk • Transfer the risk Two basic types of life insurance product: • Life insurance: The insurer promises to pay a death benefit when a named person dies. • Annuity. In return for receiving a premium, an insurer promises to make periodic payments. Insurance is based on risk pooling—spreading the cost of the relatively few anticipated losses among all insureds. Parties involved in an insurance transaction: • Applicant: The person or entity that applies for an insurance policy. • Policyowner: The person or entity that owns the issued policy. • Insured: The person whose life or health the policy insures. • Beneficiary: The person named to receive the policy benefit. The characteristics of an insurable risk: • The risk must be a pure risk • The loss must occur by chance • The loss must be definite in time and amount • The loss must be significant • The loss rate must be predictable • The loss cannot be catastrophic to the insurer Life insurance policies are valued contracts. Other types of insurance policies are contracts of indemnity. Insurers predict losses based on the law of large numbers. Insurers minimize catastrophic losses by purchasing reinsurance—insurance for insurance companies. Underwriters evaluate proposed risks and assign them to risk classes. • Underwriters evaluate applications for physical hazards and moral hazards. • Underwriters try to avoid antiselection. Insurers won’t issue a policy without the presence of insurable interest—the interest that an insurance policyowner has in the risk that is insured. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 15,
@@ -192,7 +192,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 1 Risky Business Summary of Key Points Risk is the possibility of an unexpected result. Speculative risk can result in a gain, a loss, or no change; pure risk involves either a loss or no loss. Four risk management techniques: • Avoid the risk • Control the risk • Accept the risk • Transfer the risk Two basic types of life insurance product: • Life insurance: The insurer promises to pay a death benefit when a named person dies. • Annuity. In return for receiving a premium, an insurer promises to make periodic payments. Insurance is based on risk pooling—spreading the cost of the relatively few anticipated losses among all insureds. Parties involved in an insurance transaction: • Applicant: The person or entity that applies for an insurance policy. • Policyowner: The person or entity that owns the issued policy. • Insured: The person whose life or health the policy insures. • Beneficiary: The person named to receive the policy benefit. The characteristics of an insurable risk: • The risk must be a pure risk • The loss must occur by chance • The loss must be definite in time and amount • The loss must be significant • The loss rate must be predictable • The loss cannot be catastrophic to the insurer Life insurance policies are valued contracts. Other types of insurance policies are contracts of indemnity. Insurers predict losses based on the law of large numbers. Insurers minimize catastrophic losses by purchasing reinsurance—insurance for insurance companies. Underwriters evaluate proposed risks and assign them to risk classes. • Underwriters evaluate applications for physical hazards and moral hazards. • Underwriters try to avoid antiselection. Insurers won’t issue a policy without the presence of insurable interest—the interest that an insurance policyowner has in the risk that is insured. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 16,
@@ -205,7 +205,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 1 Risky Business Summary of Key Points Risk is the possibility of an unexpected result. Speculative risk can result in a gain, a loss, or no change; pure risk involves either a loss or no loss. Four risk management techniques: • Avoid the risk • Control the risk • Accept the risk • Transfer the risk Two basic types of life insurance product: • Life insurance: The insurer promises to pay a death benefit when a named person dies. • Annuity. In return for receiving a premium, an insurer promises to make periodic payments. Insurance is based on risk pooling—spreading the cost of the relatively few anticipated losses among all insureds. Parties involved in an insurance transaction: • Applicant: The person or entity that applies for an insurance policy. • Policyowner: The person or entity that owns the issued policy. • Insured: The person whose life or health the policy insures. • Beneficiary: The person named to receive the policy benefit. The characteristics of an insurable risk: • The risk must be a pure risk • The loss must occur by chance • The loss must be definite in time and amount • The loss must be significant • The loss rate must be predictable • The loss cannot be catastrophic to the insurer Life insurance policies are valued contracts. Other types of insurance policies are contracts of indemnity. Insurers predict losses based on the law of large numbers. Insurers minimize catastrophic losses by purchasing reinsurance—insurance for insurance companies. Underwriters evaluate proposed risks and assign them to risk classes. • Underwriters evaluate applications for physical hazards and moral hazards. • Underwriters try to avoid antiselection. Insurers won’t issue a policy without the presence of insurable interest—the interest that an insurance policyowner has in the risk that is insured. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 17,
@@ -218,7 +218,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 1 Risky Business Summary of Key Points Risk is the possibility of an unexpected result. Speculative risk can result in a gain, a loss, or no change; pure risk involves either a loss or no loss. Four risk management techniques: • Avoid the risk • Control the risk • Accept the risk • Transfer the risk Two basic types of life insurance product: • Life insurance: The insurer promises to pay a death benefit when a named person dies. • Annuity. In return for receiving a premium, an insurer promises to make periodic payments. Insurance is based on risk pooling—spreading the cost of the relatively few anticipated losses among all insureds. Parties involved in an insurance transaction: • Applicant: The person or entity that applies for an insurance policy. • Policyowner: The person or entity that owns the issued policy. • Insured: The person whose life or health the policy insures. • Beneficiary: The person named to receive the policy benefit. The characteristics of an insurable risk: • The risk must be a pure risk • The loss must occur by chance • The loss must be definite in time and amount • The loss must be significant • The loss rate must be predictable • The loss cannot be catastrophic to the insurer Life insurance policies are valued contracts. Other types of insurance policies are contracts of indemnity. Insurers predict losses based on the law of large numbers. Insurers minimize catastrophic losses by purchasing reinsurance—insurance for insurance companies. Underwriters evaluate proposed risks and assign them to risk classes. • Underwriters evaluate applications for physical hazards and moral hazards. • Underwriters try to avoid antiselection. Insurers won’t issue a policy without the presence of insurable interest—the interest that an insurance policyowner has in the risk that is insured. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 18,
@@ -231,7 +231,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 1 Risky Business Summary of Key Points Risk is the possibility of an unexpected result. Speculative risk can result in a gain, a loss, or no change; pure risk involves either a loss or no loss. Four risk management techniques: • Avoid the risk • Control the risk • Accept the risk • Transfer the risk Two basic types of life insurance product: • Life insurance: The insurer promises to pay a death benefit when a named person dies. • Annuity. In return for receiving a premium, an insurer promises to make periodic payments. Insurance is based on risk pooling—spreading the cost of the relatively few anticipated losses among all insureds. Parties involved in an insurance transaction: • Applicant: The person or entity that applies for an insurance policy. • Policyowner: The person or entity that owns the issued policy. • Insured: The person whose life or health the policy insures. • Beneficiary: The person named to receive the policy benefit. The characteristics of an insurable risk: • The risk must be a pure risk • The loss must occur by chance • The loss must be definite in time and amount • The loss must be significant • The loss rate must be predictable • The loss cannot be catastrophic to the insurer Life insurance policies are valued contracts. Other types of insurance policies are contracts of indemnity. Insurers predict losses based on the law of large numbers. Insurers minimize catastrophic losses by purchasing reinsurance—insurance for insurance companies. Underwriters evaluate proposed risks and assign them to risk classes. • Underwriters evaluate applications for physical hazards and moral hazards. • Underwriters try to avoid antiselection. Insurers won’t issue a policy without the presence of insurable interest—the interest that an insurance policyowner has in the risk that is insured. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 19,
@@ -244,7 +244,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 1 Risky Business Summary of Key Points Risk is the possibility of an unexpected result. Speculative risk can result in a gain, a loss, or no change; pure risk involves either a loss or no loss. Four risk management techniques: • Avoid the risk • Control the risk • Accept the risk • Transfer the risk Two basic types of life insurance product: • Life insurance: The insurer promises to pay a death benefit when a named person dies. • Annuity. In return for receiving a premium, an insurer promises to make periodic payments. Insurance is based on risk pooling—spreading the cost of the relatively few anticipated losses among all insureds. Parties involved in an insurance transaction: • Applicant: The person or entity that applies for an insurance policy. • Policyowner: The person or entity that owns the issued policy. • Insured: The person whose life or health the policy insures. • Beneficiary: The person named to receive the policy benefit. The characteristics of an insurable risk: • The risk must be a pure risk • The loss must occur by chance • The loss must be definite in time and amount • The loss must be significant • The loss rate must be predictable • The loss cannot be catastrophic to the insurer Life insurance policies are valued contracts. Other types of insurance policies are contracts of indemnity. Insurers predict losses based on the law of large numbers. Insurers minimize catastrophic losses by purchasing reinsurance—insurance for insurance companies. Underwriters evaluate proposed risks and assign them to risk classes. • Underwriters evaluate applications for physical hazards and moral hazards. • Underwriters try to avoid antiselection. Insurers won’t issue a policy without the presence of insurable interest—the interest that an insurance policyowner has in the risk that is insured. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 20,
@@ -257,7 +257,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 1 Risky Business Summary of Key Points Risk is the possibility of an unexpected result. Speculative risk can result in a gain, a loss, or no change; pure risk involves either a loss or no loss. Four risk management techniques: • Avoid the risk • Control the risk • Accept the risk • Transfer the risk Two basic types of life insurance product: • Life insurance: The insurer promises to pay a death benefit when a named person dies. • Annuity. In return for receiving a premium, an insurer promises to make periodic payments. Insurance is based on risk pooling—spreading the cost of the relatively few anticipated losses among all insureds. Parties involved in an insurance transaction: • Applicant: The person or entity that applies for an insurance policy. • Policyowner: The person or entity that owns the issued policy. • Insured: The person whose life or health the policy insures. • Beneficiary: The person named to receive the policy benefit. The characteristics of an insurable risk: • The risk must be a pure risk • The loss must occur by chance • The loss must be definite in time and amount • The loss must be significant • The loss rate must be predictable • The loss cannot be catastrophic to the insurer Life insurance policies are valued contracts. Other types of insurance policies are contracts of indemnity. Insurers predict losses based on the law of large numbers. Insurers minimize catastrophic losses by purchasing reinsurance—insurance for insurance companies. Underwriters evaluate proposed risks and assign them to risk classes. • Underwriters evaluate applications for physical hazards and moral hazards. • Underwriters try to avoid antiselection. Insurers won’t issue a policy without the presence of insurable interest—the interest that an insurance policyowner has in the risk that is insured. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 21,
@@ -270,7 +270,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 1 Risky Business Summary of Key Points Risk is the possibility of an unexpected result. Speculative risk can result in a gain, a loss, or no change; pure risk involves either a loss or no loss. Four risk management techniques: • Avoid the risk • Control the risk • Accept the risk • Transfer the risk Two basic types of life insurance product: • Life insurance: The insurer promises to pay a death benefit when a named person dies. • Annuity. In return for receiving a premium, an insurer promises to make periodic payments. Insurance is based on risk pooling—spreading the cost of the relatively few anticipated losses among all insureds. Parties involved in an insurance transaction: • Applicant: The person or entity that applies for an insurance policy. • Policyowner: The person or entity that owns the issued policy. • Insured: The person whose life or health the policy insures. • Beneficiary: The person named to receive the policy benefit. The characteristics of an insurable risk: • The risk must be a pure risk • The loss must occur by chance • The loss must be definite in time and amount • The loss must be significant • The loss rate must be predictable • The loss cannot be catastrophic to the insurer Life insurance policies are valued contracts. Other types of insurance policies are contracts of indemnity. Insurers predict losses based on the law of large numbers. Insurers minimize catastrophic losses by purchasing reinsurance—insurance for insurance companies. Underwriters evaluate proposed risks and assign them to risk classes. • Underwriters evaluate applications for physical hazards and moral hazards. • Underwriters try to avoid antiselection. Insurers won’t issue a policy without the presence of insurable interest—the interest that an insurance policyowner has in the risk that is insured. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 22,
@@ -283,7 +283,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 1 Risky Business Summary of Key Points Risk is the possibility of an unexpected result. Speculative risk can result in a gain, a loss, or no change; pure risk involves either a loss or no loss. Four risk management techniques: • Avoid the risk • Control the risk • Accept the risk • Transfer the risk Two basic types of life insurance product: • Life insurance: The insurer promises to pay a death benefit when a named person dies. • Annuity. In return for receiving a premium, an insurer promises to make periodic payments. Insurance is based on risk pooling—spreading the cost of the relatively few anticipated losses among all insureds. Parties involved in an insurance transaction: • Applicant: The person or entity that applies for an insurance policy. • Policyowner: The person or entity that owns the issued policy. • Insured: The person whose life or health the policy insures. • Beneficiary: The person named to receive the policy benefit. The characteristics of an insurable risk: • The risk must be a pure risk • The loss must occur by chance • The loss must be definite in time and amount • The loss must be significant • The loss rate must be predictable • The loss cannot be catastrophic to the insurer Life insurance policies are valued contracts. Other types of insurance policies are contracts of indemnity. Insurers predict losses based on the law of large numbers. Insurers minimize catastrophic losses by purchasing reinsurance—insurance for insurance companies. Underwriters evaluate proposed risks and assign them to risk classes. • Underwriters evaluate applications for physical hazards and moral hazards. • Underwriters try to avoid antiselection. Insurers won’t issue a policy without the presence of insurable interest—the interest that an insurance policyowner has in the risk that is insured. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 23,
@@ -296,7 +296,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 1 Risky Business Summary of Key Points Risk is the possibility of an unexpected result. Speculative risk can result in a gain, a loss, or no change; pure risk involves either a loss or no loss. Four risk management techniques: • Avoid the risk • Control the risk • Accept the risk • Transfer the risk Two basic types of life insurance product: • Life insurance: The insurer promises to pay a death benefit when a named person dies. • Annuity. In return for receiving a premium, an insurer promises to make periodic payments. Insurance is based on risk pooling—spreading the cost of the relatively few anticipated losses among all insureds. Parties involved in an insurance transaction: • Applicant: The person or entity that applies for an insurance policy. • Policyowner: The person or entity that owns the issued policy. • Insured: The person whose life or health the policy insures. • Beneficiary: The person named to receive the policy benefit. The characteristics of an insurable risk: • The risk must be a pure risk • The loss must occur by chance • The loss must be definite in time and amount • The loss must be significant • The loss rate must be predictable • The loss cannot be catastrophic to the insurer Life insurance policies are valued contracts. Other types of insurance policies are contracts of indemnity. Insurers predict losses based on the law of large numbers. Insurers minimize catastrophic losses by purchasing reinsurance—insurance for insurance companies. Underwriters evaluate proposed risks and assign them to risk classes. • Underwriters evaluate applications for physical hazards and moral hazards. • Underwriters try to avoid antiselection. Insurers won’t issue a policy without the presence of insurable interest—the interest that an insurance policyowner has in the risk that is insured. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 24,
@@ -309,7 +309,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 1 Risky Business Summary of Key Points Risk is the possibility of an unexpected result. Speculative risk can result in a gain, a loss, or no change; pure risk involves either a loss or no loss. Four risk management techniques: • Avoid the risk • Control the risk • Accept the risk • Transfer the risk Two basic types of life insurance product: • Life insurance: The insurer promises to pay a death benefit when a named person dies. • Annuity. In return for receiving a premium, an insurer promises to make periodic payments. Insurance is based on risk pooling—spreading the cost of the relatively few anticipated losses among all insureds. Parties involved in an insurance transaction: • Applicant: The person or entity that applies for an insurance policy. • Policyowner: The person or entity that owns the issued policy. • Insured: The person whose life or health the policy insures. • Beneficiary: The person named to receive the policy benefit. The characteristics of an insurable risk: • The risk must be a pure risk • The loss must occur by chance • The loss must be definite in time and amount • The loss must be significant • The loss rate must be predictable • The loss cannot be catastrophic to the insurer Life insurance policies are valued contracts. Other types of insurance policies are contracts of indemnity. Insurers predict losses based on the law of large numbers. Insurers minimize catastrophic losses by purchasing reinsurance—insurance for insurance companies. Underwriters evaluate proposed risks and assign them to risk classes. • Underwriters evaluate applications for physical hazards and moral hazards. • Underwriters try to avoid antiselection. Insurers won’t issue a policy without the presence of insurable interest—the interest that an insurance policyowner has in the risk that is insured. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 25,
@@ -322,7 +322,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 1 Risky Business Summary of Key Points Risk is the possibility of an unexpected result. Speculative risk can result in a gain, a loss, or no change; pure risk involves either a loss or no loss. Four risk management techniques: • Avoid the risk • Control the risk • Accept the risk • Transfer the risk Two basic types of life insurance product: • Life insurance: The insurer promises to pay a death benefit when a named person dies. • Annuity. In return for receiving a premium, an insurer promises to make periodic payments. Insurance is based on risk pooling—spreading the cost of the relatively few anticipated losses among all insureds. Parties involved in an insurance transaction: • Applicant: The person or entity that applies for an insurance policy. • Policyowner: The person or entity that owns the issued policy. • Insured: The person whose life or health the policy insures. • Beneficiary: The person named to receive the policy benefit. The characteristics of an insurable risk: • The risk must be a pure risk • The loss must occur by chance • The loss must be definite in time and amount • The loss must be significant • The loss rate must be predictable • The loss cannot be catastrophic to the insurer Life insurance policies are valued contracts. Other types of insurance policies are contracts of indemnity. Insurers predict losses based on the law of large numbers. Insurers minimize catastrophic losses by purchasing reinsurance—insurance for insurance companies. Underwriters evaluate proposed risks and assign them to risk classes. • Underwriters evaluate applications for physical hazards and moral hazards. • Underwriters try to avoid antiselection. Insurers won’t issue a policy without the presence of insurable interest—the interest that an insurance policyowner has in the risk that is insured. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 26,
@@ -335,7 +335,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 1 Risky Business Summary of Key Points Risk is the possibility of an unexpected result. Speculative risk can result in a gain, a loss, or no change; pure risk involves either a loss or no loss. Four risk management techniques: • Avoid the risk • Control the risk • Accept the risk • Transfer the risk Two basic types of life insurance product: • Life insurance: The insurer promises to pay a death benefit when a named person dies. • Annuity. In return for receiving a premium, an insurer promises to make periodic payments. Insurance is based on risk pooling—spreading the cost of the relatively few anticipated losses among all insureds. Parties involved in an insurance transaction: • Applicant: The person or entity that applies for an insurance policy. • Policyowner: The person or entity that owns the issued policy. • Insured: The person whose life or health the policy insures. • Beneficiary: The person named to receive the policy benefit. The characteristics of an insurable risk: • The risk must be a pure risk • The loss must occur by chance • The loss must be definite in time and amount • The loss must be significant • The loss rate must be predictable • The loss cannot be catastrophic to the insurer Life insurance policies are valued contracts. Other types of insurance policies are contracts of indemnity. Insurers predict losses based on the law of large numbers. Insurers minimize catastrophic losses by purchasing reinsurance—insurance for insurance companies. Underwriters evaluate proposed risks and assign them to risk classes. • Underwriters evaluate applications for physical hazards and moral hazards. • Underwriters try to avoid antiselection. Insurers won’t issue a policy without the presence of insurable interest—the interest that an insurance policyowner has in the risk that is insured. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 27,
@@ -348,7 +348,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 1 Risky Business Summary of Key Points Risk is the possibility of an unexpected result. Speculative risk can result in a gain, a loss, or no change; pure risk involves either a loss or no loss. Four risk management techniques: • Avoid the risk • Control the risk • Accept the risk • Transfer the risk Two basic types of life insurance product: • Life insurance: The insurer promises to pay a death benefit when a named person dies. • Annuity. In return for receiving a premium, an insurer promises to make periodic payments. Insurance is based on risk pooling—spreading the cost of the relatively few anticipated losses among all insureds. Parties involved in an insurance transaction: • Applicant: The person or entity that applies for an insurance policy. • Policyowner: The person or entity that owns the issued policy. • Insured: The person whose life or health the policy insures. • Beneficiary: The person named to receive the policy benefit. The characteristics of an insurable risk: • The risk must be a pure risk • The loss must occur by chance • The loss must be definite in time and amount • The loss must be significant • The loss rate must be predictable • The loss cannot be catastrophic to the insurer Life insurance policies are valued contracts. Other types of insurance policies are contracts of indemnity. Insurers predict losses based on the law of large numbers. Insurers minimize catastrophic losses by purchasing reinsurance—insurance for insurance companies. Underwriters evaluate proposed risks and assign them to risk classes. • Underwriters evaluate applications for physical hazards and moral hazards. • Underwriters try to avoid antiselection. Insurers won’t issue a policy without the presence of insurable interest—the interest that an insurance policyowner has in the risk that is insured. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 28,
@@ -361,7 +361,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 1 Risky Business Summary of Key Points Risk is the possibility of an unexpected result. Speculative risk can result in a gain, a loss, or no change; pure risk involves either a loss or no loss. Four risk management techniques: • Avoid the risk • Control the risk • Accept the risk • Transfer the risk Two basic types of life insurance product: • Life insurance: The insurer promises to pay a death benefit when a named person dies. • Annuity. In return for receiving a premium, an insurer promises to make periodic payments. Insurance is based on risk pooling—spreading the cost of the relatively few anticipated losses among all insureds. Parties involved in an insurance transaction: • Applicant: The person or entity that applies for an insurance policy. • Policyowner: The person or entity that owns the issued policy. • Insured: The person whose life or health the policy insures. • Beneficiary: The person named to receive the policy benefit. The characteristics of an insurable risk: • The risk must be a pure risk • The loss must occur by chance • The loss must be definite in time and amount • The loss must be significant • The loss rate must be predictable • The loss cannot be catastrophic to the insurer Life insurance policies are valued contracts. Other types of insurance policies are contracts of indemnity. Insurers predict losses based on the law of large numbers. Insurers minimize catastrophic losses by purchasing reinsurance—insurance for insurance companies. Underwriters evaluate proposed risks and assign them to risk classes. • Underwriters evaluate applications for physical hazards and moral hazards. • Underwriters try to avoid antiselection. Insurers won’t issue a policy without the presence of insurable interest—the interest that an insurance policyowner has in the risk that is insured. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 29,
@@ -374,7 +374,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 2 Organization and Regulation of Insurance Companies Summary of Key Points The financial services industry includes financial institutions that help people save, borrow, invest, and manage money. (Examples: banks, insurance companies, brokerage firms, mutual fund companies, and finance companies) Deregulation and other factors have contributed to the removal of barriers that historically prevented different financial institutions from competing with each other. This evolution of the insurance industry is characterized by • Convergence • Consolidation • Globalization Insurance companies sell products that help people manage • Personal risk • Property damage risk • Liability risk All life insurance companies are corporations that are distinct from their owners. Typically, insurance companies are organized as stock insurance companies, mutual insurance companies, or fraternal benefit societies. The primary goals of insurance regulation are to make sure insurers • Remain solvent—able to pay all obligations on time • Conduct their business fairly, honestly, and competently In the United States, insurance is regulated mainly by state insurance departments. States oversee insurers’ • Market conduct practices • Financial condition • Policy forms The federal government regulates • Sales of variable life insurance and annuities • Consumer protections • Consumer privacy • Income taxes • Antiterrorism Federal laws pertaining to insurance industry: McCarran-Ferguson Act and Dodd-Frank Act, which established the Federal Insurance Office (FIO). Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 30,
@@ -387,7 +387,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 2 Organization and Regulation of Insurance Companies Summary of Key Points The financial services industry includes financial institutions that help people save, borrow, invest, and manage money. (Examples: banks, insurance companies, brokerage firms, mutual fund companies, and finance companies) Deregulation and other factors have contributed to the removal of barriers that historically prevented different financial institutions from competing with each other. This evolution of the insurance industry is characterized by • Convergence • Consolidation • Globalization Insurance companies sell products that help people manage • Personal risk • Property damage risk • Liability risk All life insurance companies are corporations that are distinct from their owners. Typically, insurance companies are organized as stock insurance companies, mutual insurance companies, or fraternal benefit societies. The primary goals of insurance regulation are to make sure insurers • Remain solvent—able to pay all obligations on time • Conduct their business fairly, honestly, and competently In the United States, insurance is regulated mainly by state insurance departments. States oversee insurers’ • Market conduct practices • Financial condition • Policy forms The federal government regulates • Sales of variable life insurance and annuities • Consumer protections • Consumer privacy • Income taxes • Antiterrorism Federal laws pertaining to insurance industry: McCarran-Ferguson Act and Dodd-Frank Act, which established the Federal Insurance Office (FIO). Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 31,
@@ -400,7 +400,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 2 Organization and Regulation of Insurance Companies Summary of Key Points The financial services industry includes financial institutions that help people save, borrow, invest, and manage money. (Examples: banks, insurance companies, brokerage firms, mutual fund companies, and finance companies) Deregulation and other factors have contributed to the removal of barriers that historically prevented different financial institutions from competing with each other. This evolution of the insurance industry is characterized by • Convergence • Consolidation • Globalization Insurance companies sell products that help people manage • Personal risk • Property damage risk • Liability risk All life insurance companies are corporations that are distinct from their owners. Typically, insurance companies are organized as stock insurance companies, mutual insurance companies, or fraternal benefit societies. The primary goals of insurance regulation are to make sure insurers • Remain solvent—able to pay all obligations on time • Conduct their business fairly, honestly, and competently In the United States, insurance is regulated mainly by state insurance departments. States oversee insurers’ • Market conduct practices • Financial condition • Policy forms The federal government regulates • Sales of variable life insurance and annuities • Consumer protections • Consumer privacy • Income taxes • Antiterrorism Federal laws pertaining to insurance industry: McCarran-Ferguson Act and Dodd-Frank Act, which established the Federal Insurance Office (FIO). Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 32,
@@ -413,7 +413,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 2 Organization and Regulation of Insurance Companies Summary of Key Points The financial services industry includes financial institutions that help people save, borrow, invest, and manage money. (Examples: banks, insurance companies, brokerage firms, mutual fund companies, and finance companies) Deregulation and other factors have contributed to the removal of barriers that historically prevented different financial institutions from competing with each other. This evolution of the insurance industry is characterized by • Convergence • Consolidation • Globalization Insurance companies sell products that help people manage • Personal risk • Property damage risk • Liability risk All life insurance companies are corporations that are distinct from their owners. Typically, insurance companies are organized as stock insurance companies, mutual insurance companies, or fraternal benefit societies. The primary goals of insurance regulation are to make sure insurers • Remain solvent—able to pay all obligations on time • Conduct their business fairly, honestly, and competently In the United States, insurance is regulated mainly by state insurance departments. States oversee insurers’ • Market conduct practices • Financial condition • Policy forms The federal government regulates • Sales of variable life insurance and annuities • Consumer protections • Consumer privacy • Income taxes • Antiterrorism Federal laws pertaining to insurance industry: McCarran-Ferguson Act and Dodd-Frank Act, which established the Federal Insurance Office (FIO). Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 33,
@@ -426,7 +426,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 2 Organization and Regulation of Insurance Companies Summary of Key Points The financial services industry includes financial institutions that help people save, borrow, invest, and manage money. (Examples: banks, insurance companies, brokerage firms, mutual fund companies, and finance companies) Deregulation and other factors have contributed to the removal of barriers that historically prevented different financial institutions from competing with each other. This evolution of the insurance industry is characterized by • Convergence • Consolidation • Globalization Insurance companies sell products that help people manage • Personal risk • Property damage risk • Liability risk All life insurance companies are corporations that are distinct from their owners. Typically, insurance companies are organized as stock insurance companies, mutual insurance companies, or fraternal benefit societies. The primary goals of insurance regulation are to make sure insurers • Remain solvent—able to pay all obligations on time • Conduct their business fairly, honestly, and competently In the United States, insurance is regulated mainly by state insurance departments. States oversee insurers’ • Market conduct practices • Financial condition • Policy forms The federal government regulates • Sales of variable life insurance and annuities • Consumer protections • Consumer privacy • Income taxes • Antiterrorism Federal laws pertaining to insurance industry: McCarran-Ferguson Act and Dodd-Frank Act, which established the Federal Insurance Office (FIO). Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 34,
@@ -439,7 +439,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 2 Organization and Regulation of Insurance Companies Summary of Key Points The financial services industry includes financial institutions that help people save, borrow, invest, and manage money. (Examples: banks, insurance companies, brokerage firms, mutual fund companies, and finance companies) Deregulation and other factors have contributed to the removal of barriers that historically prevented different financial institutions from competing with each other. This evolution of the insurance industry is characterized by • Convergence • Consolidation • Globalization Insurance companies sell products that help people manage • Personal risk • Property damage risk • Liability risk All life insurance companies are corporations that are distinct from their owners. Typically, insurance companies are organized as stock insurance companies, mutual insurance companies, or fraternal benefit societies. The primary goals of insurance regulation are to make sure insurers • Remain solvent—able to pay all obligations on time • Conduct their business fairly, honestly, and competently In the United States, insurance is regulated mainly by state insurance departments. States oversee insurers’ • Market conduct practices • Financial condition • Policy forms The federal government regulates • Sales of variable life insurance and annuities • Consumer protections • Consumer privacy • Income taxes • Antiterrorism Federal laws pertaining to insurance industry: McCarran-Ferguson Act and Dodd-Frank Act, which established the Federal Insurance Office (FIO). Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 35,
@@ -452,7 +452,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 2 Organization and Regulation of Insurance Companies Summary of Key Points The financial services industry includes financial institutions that help people save, borrow, invest, and manage money. (Examples: banks, insurance companies, brokerage firms, mutual fund companies, and finance companies) Deregulation and other factors have contributed to the removal of barriers that historically prevented different financial institutions from competing with each other. This evolution of the insurance industry is characterized by • Convergence • Consolidation • Globalization Insurance companies sell products that help people manage • Personal risk • Property damage risk • Liability risk All life insurance companies are corporations that are distinct from their owners. Typically, insurance companies are organized as stock insurance companies, mutual insurance companies, or fraternal benefit societies. The primary goals of insurance regulation are to make sure insurers • Remain solvent—able to pay all obligations on time • Conduct their business fairly, honestly, and competently In the United States, insurance is regulated mainly by state insurance departments. States oversee insurers’ • Market conduct practices • Financial condition • Policy forms The federal government regulates • Sales of variable life insurance and annuities • Consumer protections • Consumer privacy • Income taxes • Antiterrorism Federal laws pertaining to insurance industry: McCarran-Ferguson Act and Dodd-Frank Act, which established the Federal Insurance Office (FIO). Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 36,
@@ -465,7 +465,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 2 Organization and Regulation of Insurance Companies Summary of Key Points The financial services industry includes financial institutions that help people save, borrow, invest, and manage money. (Examples: banks, insurance companies, brokerage firms, mutual fund companies, and finance companies) Deregulation and other factors have contributed to the removal of barriers that historically prevented different financial institutions from competing with each other. This evolution of the insurance industry is characterized by • Convergence • Consolidation • Globalization Insurance companies sell products that help people manage • Personal risk • Property damage risk • Liability risk All life insurance companies are corporations that are distinct from their owners. Typically, insurance companies are organized as stock insurance companies, mutual insurance companies, or fraternal benefit societies. The primary goals of insurance regulation are to make sure insurers • Remain solvent—able to pay all obligations on time • Conduct their business fairly, honestly, and competently In the United States, insurance is regulated mainly by state insurance departments. States oversee insurers’ • Market conduct practices • Financial condition • Policy forms The federal government regulates • Sales of variable life insurance and annuities • Consumer protections • Consumer privacy • Income taxes • Antiterrorism Federal laws pertaining to insurance industry: McCarran-Ferguson Act and Dodd-Frank Act, which established the Federal Insurance Office (FIO). Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 37,
@@ -478,7 +478,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 2 Organization and Regulation of Insurance Companies Summary of Key Points The financial services industry includes financial institutions that help people save, borrow, invest, and manage money. (Examples: banks, insurance companies, brokerage firms, mutual fund companies, and finance companies) Deregulation and other factors have contributed to the removal of barriers that historically prevented different financial institutions from competing with each other. This evolution of the insurance industry is characterized by • Convergence • Consolidation • Globalization Insurance companies sell products that help people manage • Personal risk • Property damage risk • Liability risk All life insurance companies are corporations that are distinct from their owners. Typically, insurance companies are organized as stock insurance companies, mutual insurance companies, or fraternal benefit societies. The primary goals of insurance regulation are to make sure insurers • Remain solvent—able to pay all obligations on time • Conduct their business fairly, honestly, and competently In the United States, insurance is regulated mainly by state insurance departments. States oversee insurers’ • Market conduct practices • Financial condition • Policy forms The federal government regulates • Sales of variable life insurance and annuities • Consumer protections • Consumer privacy • Income taxes • Antiterrorism Federal laws pertaining to insurance industry: McCarran-Ferguson Act and Dodd-Frank Act, which established the Federal Insurance Office (FIO). Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 38,
@@ -491,7 +491,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 2 Organization and Regulation of Insurance Companies Summary of Key Points The financial services industry includes financial institutions that help people save, borrow, invest, and manage money. (Examples: banks, insurance companies, brokerage firms, mutual fund companies, and finance companies) Deregulation and other factors have contributed to the removal of barriers that historically prevented different financial institutions from competing with each other. This evolution of the insurance industry is characterized by • Convergence • Consolidation • Globalization Insurance companies sell products that help people manage • Personal risk • Property damage risk • Liability risk All life insurance companies are corporations that are distinct from their owners. Typically, insurance companies are organized as stock insurance companies, mutual insurance companies, or fraternal benefit societies. The primary goals of insurance regulation are to make sure insurers • Remain solvent—able to pay all obligations on time • Conduct their business fairly, honestly, and competently In the United States, insurance is regulated mainly by state insurance departments. States oversee insurers’ • Market conduct practices • Financial condition • Policy forms The federal government regulates • Sales of variable life insurance and annuities • Consumer protections • Consumer privacy • Income taxes • Antiterrorism Federal laws pertaining to insurance industry: McCarran-Ferguson Act and Dodd-Frank Act, which established the Federal Insurance Office (FIO). Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 39,
@@ -504,7 +504,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 2 Organization and Regulation of Insurance Companies Summary of Key Points The financial services industry includes financial institutions that help people save, borrow, invest, and manage money. (Examples: banks, insurance companies, brokerage firms, mutual fund companies, and finance companies) Deregulation and other factors have contributed to the removal of barriers that historically prevented different financial institutions from competing with each other. This evolution of the insurance industry is characterized by • Convergence • Consolidation • Globalization Insurance companies sell products that help people manage • Personal risk • Property damage risk • Liability risk All life insurance companies are corporations that are distinct from their owners. Typically, insurance companies are organized as stock insurance companies, mutual insurance companies, or fraternal benefit societies. The primary goals of insurance regulation are to make sure insurers • Remain solvent—able to pay all obligations on time • Conduct their business fairly, honestly, and competently In the United States, insurance is regulated mainly by state insurance departments. States oversee insurers’ • Market conduct practices • Financial condition • Policy forms The federal government regulates • Sales of variable life insurance and annuities • Consumer protections • Consumer privacy • Income taxes • Antiterrorism Federal laws pertaining to insurance industry: McCarran-Ferguson Act and Dodd-Frank Act, which established the Federal Insurance Office (FIO). Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 40,
@@ -517,7 +517,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 3 Life Insurance Policies as Contracts Summary of Key Points An insurance policy is a legally enforceable contract between a policyowner who applies for and owns the policy and the insurer that issues the policy. Contracts can be divided into types depending on their characteristics. • Unilateral and Bilateral contracts are defined by the enforceability of promises made by the contracting parties • Commutative and Aleatory contracts are defined by the specificity and relative equality of the values exchanged by the contracting parties • Bargaining Contracts and Contracts of Adhesion are defined by the amount of input the contracting parties have regarding the terms of the contract • Informal and Formal contracts are defined by requirements related to the form and substance of the agreement Principles of contract law determine the legal status of a contract, dictate whether the contract is legally enforceable, and establish the contracting parties' rights to enforce the contract. • A valid contract satisfies all legal requirements and is enforceable at law • A voidable contract gives one of the contracting parties grounds to reject an otherwise valid contract • A void contract fails to satisfy one or more of the legal requirements for a valid contract and is never enforceable at law To be legally enforceable, a contract must satisfy four legal requirements: • Mutual assent of the contracting parties is established through a process of offer and acceptance • Legally adequate consideration is satisfied by the exchange of promises or things of value by the contracting parties • Lawful intent is satisfied by the presence of insurable interest in the life of the insured o Shown if the insured's death creates a significant loss o Generally needed by the policyowner and the policy beneficiary; may be assumed because of bonds of affection or financial dependence o Needed only when the contract is formed • Contractual capacity is based on the legal capacity of contracting parties to form a valid contract Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 41,
@@ -530,7 +530,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 3 Life Insurance Policies as Contracts Summary of Key Points An insurance policy is a legally enforceable contract between a policyowner who applies for and owns the policy and the insurer that issues the policy. Contracts can be divided into types depending on their characteristics. • Unilateral and Bilateral contracts are defined by the enforceability of promises made by the contracting parties • Commutative and Aleatory contracts are defined by the specificity and relative equality of the values exchanged by the contracting parties • Bargaining Contracts and Contracts of Adhesion are defined by the amount of input the contracting parties have regarding the terms of the contract • Informal and Formal contracts are defined by requirements related to the form and substance of the agreement Principles of contract law determine the legal status of a contract, dictate whether the contract is legally enforceable, and establish the contracting parties' rights to enforce the contract. • A valid contract satisfies all legal requirements and is enforceable at law • A voidable contract gives one of the contracting parties grounds to reject an otherwise valid contract • A void contract fails to satisfy one or more of the legal requirements for a valid contract and is never enforceable at law To be legally enforceable, a contract must satisfy four legal requirements: • Mutual assent of the contracting parties is established through a process of offer and acceptance • Legally adequate consideration is satisfied by the exchange of promises or things of value by the contracting parties • Lawful intent is satisfied by the presence of insurable interest in the life of the insured o Shown if the insured's death creates a significant loss o Generally needed by the policyowner and the policy beneficiary; may be assumed because of bonds of affection or financial dependence o Needed only when the contract is formed • Contractual capacity is based on the legal capacity of contracting parties to form a valid contract Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 42,
@@ -543,7 +543,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 3 Life Insurance Policies as Contracts Summary of Key Points An insurance policy is a legally enforceable contract between a policyowner who applies for and owns the policy and the insurer that issues the policy. Contracts can be divided into types depending on their characteristics. • Unilateral and Bilateral contracts are defined by the enforceability of promises made by the contracting parties • Commutative and Aleatory contracts are defined by the specificity and relative equality of the values exchanged by the contracting parties • Bargaining Contracts and Contracts of Adhesion are defined by the amount of input the contracting parties have regarding the terms of the contract • Informal and Formal contracts are defined by requirements related to the form and substance of the agreement Principles of contract law determine the legal status of a contract, dictate whether the contract is legally enforceable, and establish the contracting parties' rights to enforce the contract. • A valid contract satisfies all legal requirements and is enforceable at law • A voidable contract gives one of the contracting parties grounds to reject an otherwise valid contract • A void contract fails to satisfy one or more of the legal requirements for a valid contract and is never enforceable at law To be legally enforceable, a contract must satisfy four legal requirements: • Mutual assent of the contracting parties is established through a process of offer and acceptance • Legally adequate consideration is satisfied by the exchange of promises or things of value by the contracting parties • Lawful intent is satisfied by the presence of insurable interest in the life of the insured o Shown if the insured's death creates a significant loss o Generally needed by the policyowner and the policy beneficiary; may be assumed because of bonds of affection or financial dependence o Needed only when the contract is formed • Contractual capacity is based on the legal capacity of contracting parties to form a valid contract Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 43,
@@ -556,7 +556,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 3 Life Insurance Policies as Contracts Summary of Key Points An insurance policy is a legally enforceable contract between a policyowner who applies for and owns the policy and the insurer that issues the policy. Contracts can be divided into types depending on their characteristics. • Unilateral and Bilateral contracts are defined by the enforceability of promises made by the contracting parties • Commutative and Aleatory contracts are defined by the specificity and relative equality of the values exchanged by the contracting parties • Bargaining Contracts and Contracts of Adhesion are defined by the amount of input the contracting parties have regarding the terms of the contract • Informal and Formal contracts are defined by requirements related to the form and substance of the agreement Principles of contract law determine the legal status of a contract, dictate whether the contract is legally enforceable, and establish the contracting parties' rights to enforce the contract. • A valid contract satisfies all legal requirements and is enforceable at law • A voidable contract gives one of the contracting parties grounds to reject an otherwise valid contract • A void contract fails to satisfy one or more of the legal requirements for a valid contract and is never enforceable at law To be legally enforceable, a contract must satisfy four legal requirements: • Mutual assent of the contracting parties is established through a process of offer and acceptance • Legally adequate consideration is satisfied by the exchange of promises or things of value by the contracting parties • Lawful intent is satisfied by the presence of insurable interest in the life of the insured o Shown if the insured's death creates a significant loss o Generally needed by the policyowner and the policy beneficiary; may be assumed because of bonds of affection or financial dependence o Needed only when the contract is formed • Contractual capacity is based on the legal capacity of contracting parties to form a valid contract Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 44,
@@ -569,7 +569,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 3 Life Insurance Policies as Contracts Summary of Key Points An insurance policy is a legally enforceable contract between a policyowner who applies for and owns the policy and the insurer that issues the policy. Contracts can be divided into types depending on their characteristics. • Unilateral and Bilateral contracts are defined by the enforceability of promises made by the contracting parties • Commutative and Aleatory contracts are defined by the specificity and relative equality of the values exchanged by the contracting parties • Bargaining Contracts and Contracts of Adhesion are defined by the amount of input the contracting parties have regarding the terms of the contract • Informal and Formal contracts are defined by requirements related to the form and substance of the agreement Principles of contract law determine the legal status of a contract, dictate whether the contract is legally enforceable, and establish the contracting parties' rights to enforce the contract. • A valid contract satisfies all legal requirements and is enforceable at law • A voidable contract gives one of the contracting parties grounds to reject an otherwise valid contract • A void contract fails to satisfy one or more of the legal requirements for a valid contract and is never enforceable at law To be legally enforceable, a contract must satisfy four legal requirements: • Mutual assent of the contracting parties is established through a process of offer and acceptance • Legally adequate consideration is satisfied by the exchange of promises or things of value by the contracting parties • Lawful intent is satisfied by the presence of insurable interest in the life of the insured o Shown if the insured's death creates a significant loss o Generally needed by the policyowner and the policy beneficiary; may be assumed because of bonds of affection or financial dependence o Needed only when the contract is formed • Contractual capacity is based on the legal capacity of contracting parties to form a valid contract Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 45,
@@ -582,7 +582,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 3 Life Insurance Policies as Contracts Summary of Key Points An insurance policy is a legally enforceable contract between a policyowner who applies for and owns the policy and the insurer that issues the policy. Contracts can be divided into types depending on their characteristics. • Unilateral and Bilateral contracts are defined by the enforceability of promises made by the contracting parties • Commutative and Aleatory contracts are defined by the specificity and relative equality of the values exchanged by the contracting parties • Bargaining Contracts and Contracts of Adhesion are defined by the amount of input the contracting parties have regarding the terms of the contract • Informal and Formal contracts are defined by requirements related to the form and substance of the agreement Principles of contract law determine the legal status of a contract, dictate whether the contract is legally enforceable, and establish the contracting parties' rights to enforce the contract. • A valid contract satisfies all legal requirements and is enforceable at law • A voidable contract gives one of the contracting parties grounds to reject an otherwise valid contract • A void contract fails to satisfy one or more of the legal requirements for a valid contract and is never enforceable at law To be legally enforceable, a contract must satisfy four legal requirements: • Mutual assent of the contracting parties is established through a process of offer and acceptance • Legally adequate consideration is satisfied by the exchange of promises or things of value by the contracting parties • Lawful intent is satisfied by the presence of insurable interest in the life of the insured o Shown if the insured's death creates a significant loss o Generally needed by the policyowner and the policy beneficiary; may be assumed because of bonds of affection or financial dependence o Needed only when the contract is formed • Contractual capacity is based on the legal capacity of contracting parties to form a valid contract Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 46,
@@ -595,7 +595,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 3 Life Insurance Policies as Contracts Summary of Key Points An insurance policy is a legally enforceable contract between a policyowner who applies for and owns the policy and the insurer that issues the policy. Contracts can be divided into types depending on their characteristics. • Unilateral and Bilateral contracts are defined by the enforceability of promises made by the contracting parties • Commutative and Aleatory contracts are defined by the specificity and relative equality of the values exchanged by the contracting parties • Bargaining Contracts and Contracts of Adhesion are defined by the amount of input the contracting parties have regarding the terms of the contract • Informal and Formal contracts are defined by requirements related to the form and substance of the agreement Principles of contract law determine the legal status of a contract, dictate whether the contract is legally enforceable, and establish the contracting parties' rights to enforce the contract. • A valid contract satisfies all legal requirements and is enforceable at law • A voidable contract gives one of the contracting parties grounds to reject an otherwise valid contract • A void contract fails to satisfy one or more of the legal requirements for a valid contract and is never enforceable at law To be legally enforceable, a contract must satisfy four legal requirements: • Mutual assent of the contracting parties is established through a process of offer and acceptance • Legally adequate consideration is satisfied by the exchange of promises or things of value by the contracting parties • Lawful intent is satisfied by the presence of insurable interest in the life of the insured o Shown if the insured's death creates a significant loss o Generally needed by the policyowner and the policy beneficiary; may be assumed because of bonds of affection or financial dependence o Needed only when the contract is formed • Contractual capacity is based on the legal capacity of contracting parties to form a valid contract Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 47,
@@ -608,7 +608,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 3 Life Insurance Policies as Contracts Summary of Key Points An insurance policy is a legally enforceable contract between a policyowner who applies for and owns the policy and the insurer that issues the policy. Contracts can be divided into types depending on their characteristics. • Unilateral and Bilateral contracts are defined by the enforceability of promises made by the contracting parties • Commutative and Aleatory contracts are defined by the specificity and relative equality of the values exchanged by the contracting parties • Bargaining Contracts and Contracts of Adhesion are defined by the amount of input the contracting parties have regarding the terms of the contract • Informal and Formal contracts are defined by requirements related to the form and substance of the agreement Principles of contract law determine the legal status of a contract, dictate whether the contract is legally enforceable, and establish the contracting parties' rights to enforce the contract. • A valid contract satisfies all legal requirements and is enforceable at law • A voidable contract gives one of the contracting parties grounds to reject an otherwise valid contract • A void contract fails to satisfy one or more of the legal requirements for a valid contract and is never enforceable at law To be legally enforceable, a contract must satisfy four legal requirements: • Mutual assent of the contracting parties is established through a process of offer and acceptance • Legally adequate consideration is satisfied by the exchange of promises or things of value by the contracting parties • Lawful intent is satisfied by the presence of insurable interest in the life of the insured o Shown if the insured's death creates a significant loss o Generally needed by the policyowner and the policy beneficiary; may be assumed because of bonds of affection or financial dependence o Needed only when the contract is formed • Contractual capacity is based on the legal capacity of contracting parties to form a valid contract Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 48,
@@ -621,7 +621,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 3 Life Insurance Policies as Contracts Summary of Key Points An insurance policy is a legally enforceable contract between a policyowner who applies for and owns the policy and the insurer that issues the policy. Contracts can be divided into types depending on their characteristics. • Unilateral and Bilateral contracts are defined by the enforceability of promises made by the contracting parties • Commutative and Aleatory contracts are defined by the specificity and relative equality of the values exchanged by the contracting parties • Bargaining Contracts and Contracts of Adhesion are defined by the amount of input the contracting parties have regarding the terms of the contract • Informal and Formal contracts are defined by requirements related to the form and substance of the agreement Principles of contract law determine the legal status of a contract, dictate whether the contract is legally enforceable, and establish the contracting parties' rights to enforce the contract. • A valid contract satisfies all legal requirements and is enforceable at law • A voidable contract gives one of the contracting parties grounds to reject an otherwise valid contract • A void contract fails to satisfy one or more of the legal requirements for a valid contract and is never enforceable at law To be legally enforceable, a contract must satisfy four legal requirements: • Mutual assent of the contracting parties is established through a process of offer and acceptance • Legally adequate consideration is satisfied by the exchange of promises or things of value by the contracting parties • Lawful intent is satisfied by the presence of insurable interest in the life of the insured o Shown if the insured's death creates a significant loss o Generally needed by the policyowner and the policy beneficiary; may be assumed because of bonds of affection or financial dependence o Needed only when the contract is formed • Contractual capacity is based on the legal capacity of contracting parties to form a valid contract Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 49,
@@ -634,7 +634,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 3 Life Insurance Policies as Contracts Summary of Key Points An insurance policy is a legally enforceable contract between a policyowner who applies for and owns the policy and the insurer that issues the policy. Contracts can be divided into types depending on their characteristics. • Unilateral and Bilateral contracts are defined by the enforceability of promises made by the contracting parties • Commutative and Aleatory contracts are defined by the specificity and relative equality of the values exchanged by the contracting parties • Bargaining Contracts and Contracts of Adhesion are defined by the amount of input the contracting parties have regarding the terms of the contract • Informal and Formal contracts are defined by requirements related to the form and substance of the agreement Principles of contract law determine the legal status of a contract, dictate whether the contract is legally enforceable, and establish the contracting parties' rights to enforce the contract. • A valid contract satisfies all legal requirements and is enforceable at law • A voidable contract gives one of the contracting parties grounds to reject an otherwise valid contract • A void contract fails to satisfy one or more of the legal requirements for a valid contract and is never enforceable at law To be legally enforceable, a contract must satisfy four legal requirements: • Mutual assent of the contracting parties is established through a process of offer and acceptance • Legally adequate consideration is satisfied by the exchange of promises or things of value by the contracting parties • Lawful intent is satisfied by the presence of insurable interest in the life of the insured o Shown if the insured's death creates a significant loss o Generally needed by the policyowner and the policy beneficiary; may be assumed because of bonds of affection or financial dependence o Needed only when the contract is formed • Contractual capacity is based on the legal capacity of contracting parties to form a valid contract Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 50,
@@ -647,7 +647,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 3 Life Insurance Policies as Contracts Summary of Key Points An insurance policy is a legally enforceable contract between a policyowner who applies for and owns the policy and the insurer that issues the policy. Contracts can be divided into types depending on their characteristics. • Unilateral and Bilateral contracts are defined by the enforceability of promises made by the contracting parties • Commutative and Aleatory contracts are defined by the specificity and relative equality of the values exchanged by the contracting parties • Bargaining Contracts and Contracts of Adhesion are defined by the amount of input the contracting parties have regarding the terms of the contract • Informal and Formal contracts are defined by requirements related to the form and substance of the agreement Principles of contract law determine the legal status of a contract, dictate whether the contract is legally enforceable, and establish the contracting parties' rights to enforce the contract. • A valid contract satisfies all legal requirements and is enforceable at law • A voidable contract gives one of the contracting parties grounds to reject an otherwise valid contract • A void contract fails to satisfy one or more of the legal requirements for a valid contract and is never enforceable at law To be legally enforceable, a contract must satisfy four legal requirements: • Mutual assent of the contracting parties is established through a process of offer and acceptance • Legally adequate consideration is satisfied by the exchange of promises or things of value by the contracting parties • Lawful intent is satisfied by the presence of insurable interest in the life of the insured o Shown if the insured's death creates a significant loss o Generally needed by the policyowner and the policy beneficiary; may be assumed because of bonds of affection or financial dependence o Needed only when the contract is formed • Contractual capacity is based on the legal capacity of contracting parties to form a valid contract Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 51,
@@ -660,12 +660,12 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 3 Life Insurance Policies as Contracts Summary of Key Points An insurance policy is a legally enforceable contract between a policyowner who applies for and owns the policy and the insurer that issues the policy. Contracts can be divided into types depending on their characteristics. • Unilateral and Bilateral contracts are defined by the enforceability of promises made by the contracting parties • Commutative and Aleatory contracts are defined by the specificity and relative equality of the values exchanged by the contracting parties • Bargaining Contracts and Contracts of Adhesion are defined by the amount of input the contracting parties have regarding the terms of the contract • Informal and Formal contracts are defined by requirements related to the form and substance of the agreement Principles of contract law determine the legal status of a contract, dictate whether the contract is legally enforceable, and establish the contracting parties' rights to enforce the contract. • A valid contract satisfies all legal requirements and is enforceable at law • A voidable contract gives one of the contracting parties grounds to reject an otherwise valid contract • A void contract fails to satisfy one or more of the legal requirements for a valid contract and is never enforceable at law To be legally enforceable, a contract must satisfy four legal requirements: • Mutual assent of the contracting parties is established through a process of offer and acceptance • Legally adequate consideration is satisfied by the exchange of promises or things of value by the contracting parties • Lawful intent is satisfied by the presence of insurable interest in the life of the insured o Shown if the insured's death creates a significant loss o Generally needed by the policyowner and the policy beneficiary; may be assumed because of bonds of affection or financial dependence o Needed only when the contract is formed • Contractual capacity is based on the legal capacity of contracting parties to form a valid contract Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 52,
         "Node Name": "Mutual Assent",
-        "Definition": "The requirement that all parties agree and understand the contract terms (\"meeting of the minds\").",
+        "Definition": 'The requirement that all parties agree and understand the contract terms ("meeting of the minds").',
         "Category": "Valid Contract Req.",
         "Domain Tags": "Legal, Insurance",
         "Related Nodes": "CV01, CR05, CR02, CR03, CR04",
@@ -673,7 +673,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 3 Life Insurance Policies as Contracts Summary of Key Points An insurance policy is a legally enforceable contract between a policyowner who applies for and owns the policy and the insurer that issues the policy. Contracts can be divided into types depending on their characteristics. • Unilateral and Bilateral contracts are defined by the enforceability of promises made by the contracting parties • Commutative and Aleatory contracts are defined by the specificity and relative equality of the values exchanged by the contracting parties • Bargaining Contracts and Contracts of Adhesion are defined by the amount of input the contracting parties have regarding the terms of the contract • Informal and Formal contracts are defined by requirements related to the form and substance of the agreement Principles of contract law determine the legal status of a contract, dictate whether the contract is legally enforceable, and establish the contracting parties' rights to enforce the contract. • A valid contract satisfies all legal requirements and is enforceable at law • A voidable contract gives one of the contracting parties grounds to reject an otherwise valid contract • A void contract fails to satisfy one or more of the legal requirements for a valid contract and is never enforceable at law To be legally enforceable, a contract must satisfy four legal requirements: • Mutual assent of the contracting parties is established through a process of offer and acceptance • Legally adequate consideration is satisfied by the exchange of promises or things of value by the contracting parties • Lawful intent is satisfied by the presence of insurable interest in the life of the insured o Shown if the insured's death creates a significant loss o Generally needed by the policyowner and the policy beneficiary; may be assumed because of bonds of affection or financial dependence o Needed only when the contract is formed • Contractual capacity is based on the legal capacity of contracting parties to form a valid contract Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 53,
@@ -686,7 +686,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 3 Life Insurance Policies as Contracts Summary of Key Points An insurance policy is a legally enforceable contract between a policyowner who applies for and owns the policy and the insurer that issues the policy. Contracts can be divided into types depending on their characteristics. • Unilateral and Bilateral contracts are defined by the enforceability of promises made by the contracting parties • Commutative and Aleatory contracts are defined by the specificity and relative equality of the values exchanged by the contracting parties • Bargaining Contracts and Contracts of Adhesion are defined by the amount of input the contracting parties have regarding the terms of the contract • Informal and Formal contracts are defined by requirements related to the form and substance of the agreement Principles of contract law determine the legal status of a contract, dictate whether the contract is legally enforceable, and establish the contracting parties' rights to enforce the contract. • A valid contract satisfies all legal requirements and is enforceable at law • A voidable contract gives one of the contracting parties grounds to reject an otherwise valid contract • A void contract fails to satisfy one or more of the legal requirements for a valid contract and is never enforceable at law To be legally enforceable, a contract must satisfy four legal requirements: • Mutual assent of the contracting parties is established through a process of offer and acceptance • Legally adequate consideration is satisfied by the exchange of promises or things of value by the contracting parties • Lawful intent is satisfied by the presence of insurable interest in the life of the insured o Shown if the insured's death creates a significant loss o Generally needed by the policyowner and the policy beneficiary; may be assumed because of bonds of affection or financial dependence o Needed only when the contract is formed • Contractual capacity is based on the legal capacity of contracting parties to form a valid contract Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 54,
@@ -699,7 +699,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 3 Life Insurance Policies as Contracts Summary of Key Points An insurance policy is a legally enforceable contract between a policyowner who applies for and owns the policy and the insurer that issues the policy. Contracts can be divided into types depending on their characteristics. • Unilateral and Bilateral contracts are defined by the enforceability of promises made by the contracting parties • Commutative and Aleatory contracts are defined by the specificity and relative equality of the values exchanged by the contracting parties • Bargaining Contracts and Contracts of Adhesion are defined by the amount of input the contracting parties have regarding the terms of the contract • Informal and Formal contracts are defined by requirements related to the form and substance of the agreement Principles of contract law determine the legal status of a contract, dictate whether the contract is legally enforceable, and establish the contracting parties' rights to enforce the contract. • A valid contract satisfies all legal requirements and is enforceable at law • A voidable contract gives one of the contracting parties grounds to reject an otherwise valid contract • A void contract fails to satisfy one or more of the legal requirements for a valid contract and is never enforceable at law To be legally enforceable, a contract must satisfy four legal requirements: • Mutual assent of the contracting parties is established through a process of offer and acceptance • Legally adequate consideration is satisfied by the exchange of promises or things of value by the contracting parties • Lawful intent is satisfied by the presence of insurable interest in the life of the insured o Shown if the insured's death creates a significant loss o Generally needed by the policyowner and the policy beneficiary; may be assumed because of bonds of affection or financial dependence o Needed only when the contract is formed • Contractual capacity is based on the legal capacity of contracting parties to form a valid contract Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 55,
@@ -712,7 +712,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 3 Life Insurance Policies as Contracts Summary of Key Points An insurance policy is a legally enforceable contract between a policyowner who applies for and owns the policy and the insurer that issues the policy. Contracts can be divided into types depending on their characteristics. • Unilateral and Bilateral contracts are defined by the enforceability of promises made by the contracting parties • Commutative and Aleatory contracts are defined by the specificity and relative equality of the values exchanged by the contracting parties • Bargaining Contracts and Contracts of Adhesion are defined by the amount of input the contracting parties have regarding the terms of the contract • Informal and Formal contracts are defined by requirements related to the form and substance of the agreement Principles of contract law determine the legal status of a contract, dictate whether the contract is legally enforceable, and establish the contracting parties' rights to enforce the contract. • A valid contract satisfies all legal requirements and is enforceable at law • A voidable contract gives one of the contracting parties grounds to reject an otherwise valid contract • A void contract fails to satisfy one or more of the legal requirements for a valid contract and is never enforceable at law To be legally enforceable, a contract must satisfy four legal requirements: • Mutual assent of the contracting parties is established through a process of offer and acceptance • Legally adequate consideration is satisfied by the exchange of promises or things of value by the contracting parties • Lawful intent is satisfied by the presence of insurable interest in the life of the insured o Shown if the insured's death creates a significant loss o Generally needed by the policyowner and the policy beneficiary; may be assumed because of bonds of affection or financial dependence o Needed only when the contract is formed • Contractual capacity is based on the legal capacity of contracting parties to form a valid contract Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 56,
@@ -725,7 +725,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 3 Life Insurance Policies as Contracts Summary of Key Points An insurance policy is a legally enforceable contract between a policyowner who applies for and owns the policy and the insurer that issues the policy. Contracts can be divided into types depending on their characteristics. • Unilateral and Bilateral contracts are defined by the enforceability of promises made by the contracting parties • Commutative and Aleatory contracts are defined by the specificity and relative equality of the values exchanged by the contracting parties • Bargaining Contracts and Contracts of Adhesion are defined by the amount of input the contracting parties have regarding the terms of the contract • Informal and Formal contracts are defined by requirements related to the form and substance of the agreement Principles of contract law determine the legal status of a contract, dictate whether the contract is legally enforceable, and establish the contracting parties' rights to enforce the contract. • A valid contract satisfies all legal requirements and is enforceable at law • A voidable contract gives one of the contracting parties grounds to reject an otherwise valid contract • A void contract fails to satisfy one or more of the legal requirements for a valid contract and is never enforceable at law To be legally enforceable, a contract must satisfy four legal requirements: • Mutual assent of the contracting parties is established through a process of offer and acceptance • Legally adequate consideration is satisfied by the exchange of promises or things of value by the contracting parties • Lawful intent is satisfied by the presence of insurable interest in the life of the insured o Shown if the insured's death creates a significant loss o Generally needed by the policyowner and the policy beneficiary; may be assumed because of bonds of affection or financial dependence o Needed only when the contract is formed • Contractual capacity is based on the legal capacity of contracting parties to form a valid contract Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 57,
@@ -738,7 +738,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 3 Life Insurance Policies as Contracts Summary of Key Points An insurance policy is a legally enforceable contract between a policyowner who applies for and owns the policy and the insurer that issues the policy. Contracts can be divided into types depending on their characteristics. • Unilateral and Bilateral contracts are defined by the enforceability of promises made by the contracting parties • Commutative and Aleatory contracts are defined by the specificity and relative equality of the values exchanged by the contracting parties • Bargaining Contracts and Contracts of Adhesion are defined by the amount of input the contracting parties have regarding the terms of the contract • Informal and Formal contracts are defined by requirements related to the form and substance of the agreement Principles of contract law determine the legal status of a contract, dictate whether the contract is legally enforceable, and establish the contracting parties' rights to enforce the contract. • A valid contract satisfies all legal requirements and is enforceable at law • A voidable contract gives one of the contracting parties grounds to reject an otherwise valid contract • A void contract fails to satisfy one or more of the legal requirements for a valid contract and is never enforceable at law To be legally enforceable, a contract must satisfy four legal requirements: • Mutual assent of the contracting parties is established through a process of offer and acceptance • Legally adequate consideration is satisfied by the exchange of promises or things of value by the contracting parties • Lawful intent is satisfied by the presence of insurable interest in the life of the insured o Shown if the insured's death creates a significant loss o Generally needed by the policyowner and the policy beneficiary; may be assumed because of bonds of affection or financial dependence o Needed only when the contract is formed • Contractual capacity is based on the legal capacity of contracting parties to form a valid contract Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 58,
@@ -751,7 +751,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 3 Life Insurance Policies as Contracts Summary of Key Points An insurance policy is a legally enforceable contract between a policyowner who applies for and owns the policy and the insurer that issues the policy. Contracts can be divided into types depending on their characteristics. • Unilateral and Bilateral contracts are defined by the enforceability of promises made by the contracting parties • Commutative and Aleatory contracts are defined by the specificity and relative equality of the values exchanged by the contracting parties • Bargaining Contracts and Contracts of Adhesion are defined by the amount of input the contracting parties have regarding the terms of the contract • Informal and Formal contracts are defined by requirements related to the form and substance of the agreement Principles of contract law determine the legal status of a contract, dictate whether the contract is legally enforceable, and establish the contracting parties' rights to enforce the contract. • A valid contract satisfies all legal requirements and is enforceable at law • A voidable contract gives one of the contracting parties grounds to reject an otherwise valid contract • A void contract fails to satisfy one or more of the legal requirements for a valid contract and is never enforceable at law To be legally enforceable, a contract must satisfy four legal requirements: • Mutual assent of the contracting parties is established through a process of offer and acceptance • Legally adequate consideration is satisfied by the exchange of promises or things of value by the contracting parties • Lawful intent is satisfied by the presence of insurable interest in the life of the insured o Shown if the insured's death creates a significant loss o Generally needed by the policyowner and the policy beneficiary; may be assumed because of bonds of affection or financial dependence o Needed only when the contract is formed • Contractual capacity is based on the legal capacity of contracting parties to form a valid contract Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 59,
@@ -764,7 +764,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 3 Life Insurance Policies as Contracts Summary of Key Points An insurance policy is a legally enforceable contract between a policyowner who applies for and owns the policy and the insurer that issues the policy. Contracts can be divided into types depending on their characteristics. • Unilateral and Bilateral contracts are defined by the enforceability of promises made by the contracting parties • Commutative and Aleatory contracts are defined by the specificity and relative equality of the values exchanged by the contracting parties • Bargaining Contracts and Contracts of Adhesion are defined by the amount of input the contracting parties have regarding the terms of the contract • Informal and Formal contracts are defined by requirements related to the form and substance of the agreement Principles of contract law determine the legal status of a contract, dictate whether the contract is legally enforceable, and establish the contracting parties' rights to enforce the contract. • A valid contract satisfies all legal requirements and is enforceable at law • A voidable contract gives one of the contracting parties grounds to reject an otherwise valid contract • A void contract fails to satisfy one or more of the legal requirements for a valid contract and is never enforceable at law To be legally enforceable, a contract must satisfy four legal requirements: • Mutual assent of the contracting parties is established through a process of offer and acceptance • Legally adequate consideration is satisfied by the exchange of promises or things of value by the contracting parties • Lawful intent is satisfied by the presence of insurable interest in the life of the insured o Shown if the insured's death creates a significant loss o Generally needed by the policyowner and the policy beneficiary; may be assumed because of bonds of affection or financial dependence o Needed only when the contract is formed • Contractual capacity is based on the legal capacity of contracting parties to form a valid contract Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 60,
@@ -777,7 +777,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 3 Life Insurance Policies as Contracts Summary of Key Points An insurance policy is a legally enforceable contract between a policyowner who applies for and owns the policy and the insurer that issues the policy. Contracts can be divided into types depending on their characteristics. • Unilateral and Bilateral contracts are defined by the enforceability of promises made by the contracting parties • Commutative and Aleatory contracts are defined by the specificity and relative equality of the values exchanged by the contracting parties • Bargaining Contracts and Contracts of Adhesion are defined by the amount of input the contracting parties have regarding the terms of the contract • Informal and Formal contracts are defined by requirements related to the form and substance of the agreement Principles of contract law determine the legal status of a contract, dictate whether the contract is legally enforceable, and establish the contracting parties' rights to enforce the contract. • A valid contract satisfies all legal requirements and is enforceable at law • A voidable contract gives one of the contracting parties grounds to reject an otherwise valid contract • A void contract fails to satisfy one or more of the legal requirements for a valid contract and is never enforceable at law To be legally enforceable, a contract must satisfy four legal requirements: • Mutual assent of the contracting parties is established through a process of offer and acceptance • Legally adequate consideration is satisfied by the exchange of promises or things of value by the contracting parties • Lawful intent is satisfied by the presence of insurable interest in the life of the insured o Shown if the insured's death creates a significant loss o Generally needed by the policyowner and the policy beneficiary; may be assumed because of bonds of affection or financial dependence o Needed only when the contract is formed • Contractual capacity is based on the legal capacity of contracting parties to form a valid contract Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 61,
@@ -790,7 +790,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 3 Life Insurance Policies as Contracts Summary of Key Points An insurance policy is a legally enforceable contract between a policyowner who applies for and owns the policy and the insurer that issues the policy. Contracts can be divided into types depending on their characteristics. • Unilateral and Bilateral contracts are defined by the enforceability of promises made by the contracting parties • Commutative and Aleatory contracts are defined by the specificity and relative equality of the values exchanged by the contracting parties • Bargaining Contracts and Contracts of Adhesion are defined by the amount of input the contracting parties have regarding the terms of the contract • Informal and Formal contracts are defined by requirements related to the form and substance of the agreement Principles of contract law determine the legal status of a contract, dictate whether the contract is legally enforceable, and establish the contracting parties' rights to enforce the contract. • A valid contract satisfies all legal requirements and is enforceable at law • A voidable contract gives one of the contracting parties grounds to reject an otherwise valid contract • A void contract fails to satisfy one or more of the legal requirements for a valid contract and is never enforceable at law To be legally enforceable, a contract must satisfy four legal requirements: • Mutual assent of the contracting parties is established through a process of offer and acceptance • Legally adequate consideration is satisfied by the exchange of promises or things of value by the contracting parties • Lawful intent is satisfied by the presence of insurable interest in the life of the insured o Shown if the insured's death creates a significant loss o Generally needed by the policyowner and the policy beneficiary; may be assumed because of bonds of affection or financial dependence o Needed only when the contract is formed • Contractual capacity is based on the legal capacity of contracting parties to form a valid contract Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 62,
@@ -803,7 +803,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 3 Life Insurance Policies as Contracts Summary of Key Points An insurance policy is a legally enforceable contract between a policyowner who applies for and owns the policy and the insurer that issues the policy. Contracts can be divided into types depending on their characteristics. • Unilateral and Bilateral contracts are defined by the enforceability of promises made by the contracting parties • Commutative and Aleatory contracts are defined by the specificity and relative equality of the values exchanged by the contracting parties • Bargaining Contracts and Contracts of Adhesion are defined by the amount of input the contracting parties have regarding the terms of the contract • Informal and Formal contracts are defined by requirements related to the form and substance of the agreement Principles of contract law determine the legal status of a contract, dictate whether the contract is legally enforceable, and establish the contracting parties' rights to enforce the contract. • A valid contract satisfies all legal requirements and is enforceable at law • A voidable contract gives one of the contracting parties grounds to reject an otherwise valid contract • A void contract fails to satisfy one or more of the legal requirements for a valid contract and is never enforceable at law To be legally enforceable, a contract must satisfy four legal requirements: • Mutual assent of the contracting parties is established through a process of offer and acceptance • Legally adequate consideration is satisfied by the exchange of promises or things of value by the contracting parties • Lawful intent is satisfied by the presence of insurable interest in the life of the insured o Shown if the insured's death creates a significant loss o Generally needed by the policyowner and the policy beneficiary; may be assumed because of bonds of affection or financial dependence o Needed only when the contract is formed • Contractual capacity is based on the legal capacity of contracting parties to form a valid contract Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 63,
@@ -816,7 +816,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 4 What’s in It for Me? The Value Exchange in the Insurance Transaction Summary of Key Points In an insurance transaction, the policyowner pays premiums to the insurer in exchange for the insurer's promise to pay benefits when they become due. • For the customer, the value of the exchange is the opportunity to transfer risk to the insurer and gain peace of mind. • For the insurer, the value of the exchange is the opportunity to collect premiums and grow the company's business. Actuaries specialize in putting a price tag on risk. This risk must be high enough to • Pay future benefits to customers • Cover the insurer's cost of administering the product • Enable the insurer to make a reasonable profit Actuaries determine premium rates per unit of coverage. These rates must be • Adequate enough to make sure the insurer can cover its costs and contribute to its profits. • Equitable so that the amount individual insureds pay reflects the amount of risk they present. Premium rates are based on the insurer's • Cost of providing benefits guaranteed under the contract. These benefits include o Death benefits payable when the insured dies. Death benefits are based on mortality rates. o Surrender benefits payable when a policyowner surrenders a policy for its cash surrender value. Surrender benefits and costs of lapses are based on lapse rates. • Earnings generated when insurers invest premiums in excess of amount needed to cover benefits. Earnings allow insurers to o Lower premium rates charged to customers. o Earn a reasonable profit for the company. • Operating expenses cover the company's costs for issuing and administering products and for maintaining its general operations. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 64,
@@ -829,7 +829,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 4 What’s in It for Me? The Value Exchange in the Insurance Transaction Summary of Key Points In an insurance transaction, the policyowner pays premiums to the insurer in exchange for the insurer's promise to pay benefits when they become due. • For the customer, the value of the exchange is the opportunity to transfer risk to the insurer and gain peace of mind. • For the insurer, the value of the exchange is the opportunity to collect premiums and grow the company's business. Actuaries specialize in putting a price tag on risk. This risk must be high enough to • Pay future benefits to customers • Cover the insurer's cost of administering the product • Enable the insurer to make a reasonable profit Actuaries determine premium rates per unit of coverage. These rates must be • Adequate enough to make sure the insurer can cover its costs and contribute to its profits. • Equitable so that the amount individual insureds pay reflects the amount of risk they present. Premium rates are based on the insurer's • Cost of providing benefits guaranteed under the contract. These benefits include o Death benefits payable when the insured dies. Death benefits are based on mortality rates. o Surrender benefits payable when a policyowner surrenders a policy for its cash surrender value. Surrender benefits and costs of lapses are based on lapse rates. • Earnings generated when insurers invest premiums in excess of amount needed to cover benefits. Earnings allow insurers to o Lower premium rates charged to customers. o Earn a reasonable profit for the company. • Operating expenses cover the company's costs for issuing and administering products and for maintaining its general operations. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 65,
@@ -842,7 +842,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 4 What’s in It for Me? The Value Exchange in the Insurance Transaction Summary of Key Points In an insurance transaction, the policyowner pays premiums to the insurer in exchange for the insurer's promise to pay benefits when they become due. • For the customer, the value of the exchange is the opportunity to transfer risk to the insurer and gain peace of mind. • For the insurer, the value of the exchange is the opportunity to collect premiums and grow the company's business. Actuaries specialize in putting a price tag on risk. This risk must be high enough to • Pay future benefits to customers • Cover the insurer's cost of administering the product • Enable the insurer to make a reasonable profit Actuaries determine premium rates per unit of coverage. These rates must be • Adequate enough to make sure the insurer can cover its costs and contribute to its profits. • Equitable so that the amount individual insureds pay reflects the amount of risk they present. Premium rates are based on the insurer's • Cost of providing benefits guaranteed under the contract. These benefits include o Death benefits payable when the insured dies. Death benefits are based on mortality rates. o Surrender benefits payable when a policyowner surrenders a policy for its cash surrender value. Surrender benefits and costs of lapses are based on lapse rates. • Earnings generated when insurers invest premiums in excess of amount needed to cover benefits. Earnings allow insurers to o Lower premium rates charged to customers. o Earn a reasonable profit for the company. • Operating expenses cover the company's costs for issuing and administering products and for maintaining its general operations. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 66,
@@ -855,7 +855,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 4 What’s in It for Me? The Value Exchange in the Insurance Transaction Summary of Key Points In an insurance transaction, the policyowner pays premiums to the insurer in exchange for the insurer's promise to pay benefits when they become due. • For the customer, the value of the exchange is the opportunity to transfer risk to the insurer and gain peace of mind. • For the insurer, the value of the exchange is the opportunity to collect premiums and grow the company's business. Actuaries specialize in putting a price tag on risk. This risk must be high enough to • Pay future benefits to customers • Cover the insurer's cost of administering the product • Enable the insurer to make a reasonable profit Actuaries determine premium rates per unit of coverage. These rates must be • Adequate enough to make sure the insurer can cover its costs and contribute to its profits. • Equitable so that the amount individual insureds pay reflects the amount of risk they present. Premium rates are based on the insurer's • Cost of providing benefits guaranteed under the contract. These benefits include o Death benefits payable when the insured dies. Death benefits are based on mortality rates. o Surrender benefits payable when a policyowner surrenders a policy for its cash surrender value. Surrender benefits and costs of lapses are based on lapse rates. • Earnings generated when insurers invest premiums in excess of amount needed to cover benefits. Earnings allow insurers to o Lower premium rates charged to customers. o Earn a reasonable profit for the company. • Operating expenses cover the company's costs for issuing and administering products and for maintaining its general operations. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 67,
@@ -868,7 +868,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 4 What’s in It for Me? The Value Exchange in the Insurance Transaction Summary of Key Points In an insurance transaction, the policyowner pays premiums to the insurer in exchange for the insurer's promise to pay benefits when they become due. • For the customer, the value of the exchange is the opportunity to transfer risk to the insurer and gain peace of mind. • For the insurer, the value of the exchange is the opportunity to collect premiums and grow the company's business. Actuaries specialize in putting a price tag on risk. This risk must be high enough to • Pay future benefits to customers • Cover the insurer's cost of administering the product • Enable the insurer to make a reasonable profit Actuaries determine premium rates per unit of coverage. These rates must be • Adequate enough to make sure the insurer can cover its costs and contribute to its profits. • Equitable so that the amount individual insureds pay reflects the amount of risk they present. Premium rates are based on the insurer's • Cost of providing benefits guaranteed under the contract. These benefits include o Death benefits payable when the insured dies. Death benefits are based on mortality rates. o Surrender benefits payable when a policyowner surrenders a policy for its cash surrender value. Surrender benefits and costs of lapses are based on lapse rates. • Earnings generated when insurers invest premiums in excess of amount needed to cover benefits. Earnings allow insurers to o Lower premium rates charged to customers. o Earn a reasonable profit for the company. • Operating expenses cover the company's costs for issuing and administering products and for maintaining its general operations. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 68,
@@ -881,7 +881,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 4 What’s in It for Me? The Value Exchange in the Insurance Transaction Summary of Key Points In an insurance transaction, the policyowner pays premiums to the insurer in exchange for the insurer's promise to pay benefits when they become due. • For the customer, the value of the exchange is the opportunity to transfer risk to the insurer and gain peace of mind. • For the insurer, the value of the exchange is the opportunity to collect premiums and grow the company's business. Actuaries specialize in putting a price tag on risk. This risk must be high enough to • Pay future benefits to customers • Cover the insurer's cost of administering the product • Enable the insurer to make a reasonable profit Actuaries determine premium rates per unit of coverage. These rates must be • Adequate enough to make sure the insurer can cover its costs and contribute to its profits. • Equitable so that the amount individual insureds pay reflects the amount of risk they present. Premium rates are based on the insurer's • Cost of providing benefits guaranteed under the contract. These benefits include o Death benefits payable when the insured dies. Death benefits are based on mortality rates. o Surrender benefits payable when a policyowner surrenders a policy for its cash surrender value. Surrender benefits and costs of lapses are based on lapse rates. • Earnings generated when insurers invest premiums in excess of amount needed to cover benefits. Earnings allow insurers to o Lower premium rates charged to customers. o Earn a reasonable profit for the company. • Operating expenses cover the company's costs for issuing and administering products and for maintaining its general operations. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 69,
@@ -894,7 +894,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 4 What’s in It for Me? The Value Exchange in the Insurance Transaction Summary of Key Points In an insurance transaction, the policyowner pays premiums to the insurer in exchange for the insurer's promise to pay benefits when they become due. • For the customer, the value of the exchange is the opportunity to transfer risk to the insurer and gain peace of mind. • For the insurer, the value of the exchange is the opportunity to collect premiums and grow the company's business. Actuaries specialize in putting a price tag on risk. This risk must be high enough to • Pay future benefits to customers • Cover the insurer's cost of administering the product • Enable the insurer to make a reasonable profit Actuaries determine premium rates per unit of coverage. These rates must be • Adequate enough to make sure the insurer can cover its costs and contribute to its profits. • Equitable so that the amount individual insureds pay reflects the amount of risk they present. Premium rates are based on the insurer's • Cost of providing benefits guaranteed under the contract. These benefits include o Death benefits payable when the insured dies. Death benefits are based on mortality rates. o Surrender benefits payable when a policyowner surrenders a policy for its cash surrender value. Surrender benefits and costs of lapses are based on lapse rates. • Earnings generated when insurers invest premiums in excess of amount needed to cover benefits. Earnings allow insurers to o Lower premium rates charged to customers. o Earn a reasonable profit for the company. • Operating expenses cover the company's costs for issuing and administering products and for maintaining its general operations. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 70,
@@ -907,7 +907,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 4 What’s in It for Me? The Value Exchange in the Insurance Transaction Summary of Key Points In an insurance transaction, the policyowner pays premiums to the insurer in exchange for the insurer's promise to pay benefits when they become due. • For the customer, the value of the exchange is the opportunity to transfer risk to the insurer and gain peace of mind. • For the insurer, the value of the exchange is the opportunity to collect premiums and grow the company's business. Actuaries specialize in putting a price tag on risk. This risk must be high enough to • Pay future benefits to customers • Cover the insurer's cost of administering the product • Enable the insurer to make a reasonable profit Actuaries determine premium rates per unit of coverage. These rates must be • Adequate enough to make sure the insurer can cover its costs and contribute to its profits. • Equitable so that the amount individual insureds pay reflects the amount of risk they present. Premium rates are based on the insurer's • Cost of providing benefits guaranteed under the contract. These benefits include o Death benefits payable when the insured dies. Death benefits are based on mortality rates. o Surrender benefits payable when a policyowner surrenders a policy for its cash surrender value. Surrender benefits and costs of lapses are based on lapse rates. • Earnings generated when insurers invest premiums in excess of amount needed to cover benefits. Earnings allow insurers to o Lower premium rates charged to customers. o Earn a reasonable profit for the company. • Operating expenses cover the company's costs for issuing and administering products and for maintaining its general operations. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 71,
@@ -920,7 +920,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 4 What’s in It for Me? The Value Exchange in the Insurance Transaction Summary of Key Points In an insurance transaction, the policyowner pays premiums to the insurer in exchange for the insurer's promise to pay benefits when they become due. • For the customer, the value of the exchange is the opportunity to transfer risk to the insurer and gain peace of mind. • For the insurer, the value of the exchange is the opportunity to collect premiums and grow the company's business. Actuaries specialize in putting a price tag on risk. This risk must be high enough to • Pay future benefits to customers • Cover the insurer's cost of administering the product • Enable the insurer to make a reasonable profit Actuaries determine premium rates per unit of coverage. These rates must be • Adequate enough to make sure the insurer can cover its costs and contribute to its profits. • Equitable so that the amount individual insureds pay reflects the amount of risk they present. Premium rates are based on the insurer's • Cost of providing benefits guaranteed under the contract. These benefits include o Death benefits payable when the insured dies. Death benefits are based on mortality rates. o Surrender benefits payable when a policyowner surrenders a policy for its cash surrender value. Surrender benefits and costs of lapses are based on lapse rates. • Earnings generated when insurers invest premiums in excess of amount needed to cover benefits. Earnings allow insurers to o Lower premium rates charged to customers. o Earn a reasonable profit for the company. • Operating expenses cover the company's costs for issuing and administering products and for maintaining its general operations. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 72,
@@ -933,7 +933,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 4 What’s in It for Me? The Value Exchange in the Insurance Transaction Summary of Key Points In an insurance transaction, the policyowner pays premiums to the insurer in exchange for the insurer's promise to pay benefits when they become due. • For the customer, the value of the exchange is the opportunity to transfer risk to the insurer and gain peace of mind. • For the insurer, the value of the exchange is the opportunity to collect premiums and grow the company's business. Actuaries specialize in putting a price tag on risk. This risk must be high enough to • Pay future benefits to customers • Cover the insurer's cost of administering the product • Enable the insurer to make a reasonable profit Actuaries determine premium rates per unit of coverage. These rates must be • Adequate enough to make sure the insurer can cover its costs and contribute to its profits. • Equitable so that the amount individual insureds pay reflects the amount of risk they present. Premium rates are based on the insurer's • Cost of providing benefits guaranteed under the contract. These benefits include o Death benefits payable when the insured dies. Death benefits are based on mortality rates. o Surrender benefits payable when a policyowner surrenders a policy for its cash surrender value. Surrender benefits and costs of lapses are based on lapse rates. • Earnings generated when insurers invest premiums in excess of amount needed to cover benefits. Earnings allow insurers to o Lower premium rates charged to customers. o Earn a reasonable profit for the company. • Operating expenses cover the company's costs for issuing and administering products and for maintaining its general operations. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 73,
@@ -946,7 +946,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 4 What’s in It for Me? The Value Exchange in the Insurance Transaction Summary of Key Points In an insurance transaction, the policyowner pays premiums to the insurer in exchange for the insurer's promise to pay benefits when they become due. • For the customer, the value of the exchange is the opportunity to transfer risk to the insurer and gain peace of mind. • For the insurer, the value of the exchange is the opportunity to collect premiums and grow the company's business. Actuaries specialize in putting a price tag on risk. This risk must be high enough to • Pay future benefits to customers • Cover the insurer's cost of administering the product • Enable the insurer to make a reasonable profit Actuaries determine premium rates per unit of coverage. These rates must be • Adequate enough to make sure the insurer can cover its costs and contribute to its profits. • Equitable so that the amount individual insureds pay reflects the amount of risk they present. Premium rates are based on the insurer's • Cost of providing benefits guaranteed under the contract. These benefits include o Death benefits payable when the insured dies. Death benefits are based on mortality rates. o Surrender benefits payable when a policyowner surrenders a policy for its cash surrender value. Surrender benefits and costs of lapses are based on lapse rates. • Earnings generated when insurers invest premiums in excess of amount needed to cover benefits. Earnings allow insurers to o Lower premium rates charged to customers. o Earn a reasonable profit for the company. • Operating expenses cover the company's costs for issuing and administering products and for maintaining its general operations. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 74,
@@ -959,7 +959,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 4 What’s in It for Me? The Value Exchange in the Insurance Transaction Summary of Key Points In an insurance transaction, the policyowner pays premiums to the insurer in exchange for the insurer's promise to pay benefits when they become due. • For the customer, the value of the exchange is the opportunity to transfer risk to the insurer and gain peace of mind. • For the insurer, the value of the exchange is the opportunity to collect premiums and grow the company's business. Actuaries specialize in putting a price tag on risk. This risk must be high enough to • Pay future benefits to customers • Cover the insurer's cost of administering the product • Enable the insurer to make a reasonable profit Actuaries determine premium rates per unit of coverage. These rates must be • Adequate enough to make sure the insurer can cover its costs and contribute to its profits. • Equitable so that the amount individual insureds pay reflects the amount of risk they present. Premium rates are based on the insurer's • Cost of providing benefits guaranteed under the contract. These benefits include o Death benefits payable when the insured dies. Death benefits are based on mortality rates. o Surrender benefits payable when a policyowner surrenders a policy for its cash surrender value. Surrender benefits and costs of lapses are based on lapse rates. • Earnings generated when insurers invest premiums in excess of amount needed to cover benefits. Earnings allow insurers to o Lower premium rates charged to customers. o Earn a reasonable profit for the company. • Operating expenses cover the company's costs for issuing and administering products and for maintaining its general operations. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 75,
@@ -972,7 +972,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 4 What’s in It for Me? The Value Exchange in the Insurance Transaction Summary of Key Points In an insurance transaction, the policyowner pays premiums to the insurer in exchange for the insurer's promise to pay benefits when they become due. • For the customer, the value of the exchange is the opportunity to transfer risk to the insurer and gain peace of mind. • For the insurer, the value of the exchange is the opportunity to collect premiums and grow the company's business. Actuaries specialize in putting a price tag on risk. This risk must be high enough to • Pay future benefits to customers • Cover the insurer's cost of administering the product • Enable the insurer to make a reasonable profit Actuaries determine premium rates per unit of coverage. These rates must be • Adequate enough to make sure the insurer can cover its costs and contribute to its profits. • Equitable so that the amount individual insureds pay reflects the amount of risk they present. Premium rates are based on the insurer's • Cost of providing benefits guaranteed under the contract. These benefits include o Death benefits payable when the insured dies. Death benefits are based on mortality rates. o Surrender benefits payable when a policyowner surrenders a policy for its cash surrender value. Surrender benefits and costs of lapses are based on lapse rates. • Earnings generated when insurers invest premiums in excess of amount needed to cover benefits. Earnings allow insurers to o Lower premium rates charged to customers. o Earn a reasonable profit for the company. • Operating expenses cover the company's costs for issuing and administering products and for maintaining its general operations. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 76,
@@ -985,7 +985,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 4 What’s in It for Me? The Value Exchange in the Insurance Transaction Summary of Key Points In an insurance transaction, the policyowner pays premiums to the insurer in exchange for the insurer's promise to pay benefits when they become due. • For the customer, the value of the exchange is the opportunity to transfer risk to the insurer and gain peace of mind. • For the insurer, the value of the exchange is the opportunity to collect premiums and grow the company's business. Actuaries specialize in putting a price tag on risk. This risk must be high enough to • Pay future benefits to customers • Cover the insurer's cost of administering the product • Enable the insurer to make a reasonable profit Actuaries determine premium rates per unit of coverage. These rates must be • Adequate enough to make sure the insurer can cover its costs and contribute to its profits. • Equitable so that the amount individual insureds pay reflects the amount of risk they present. Premium rates are based on the insurer's • Cost of providing benefits guaranteed under the contract. These benefits include o Death benefits payable when the insured dies. Death benefits are based on mortality rates. o Surrender benefits payable when a policyowner surrenders a policy for its cash surrender value. Surrender benefits and costs of lapses are based on lapse rates. • Earnings generated when insurers invest premiums in excess of amount needed to cover benefits. Earnings allow insurers to o Lower premium rates charged to customers. o Earn a reasonable profit for the company. • Operating expenses cover the company's costs for issuing and administering products and for maintaining its general operations. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 77,
@@ -998,7 +998,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 4 What’s in It for Me? The Value Exchange in the Insurance Transaction Summary of Key Points In an insurance transaction, the policyowner pays premiums to the insurer in exchange for the insurer's promise to pay benefits when they become due. • For the customer, the value of the exchange is the opportunity to transfer risk to the insurer and gain peace of mind. • For the insurer, the value of the exchange is the opportunity to collect premiums and grow the company's business. Actuaries specialize in putting a price tag on risk. This risk must be high enough to • Pay future benefits to customers • Cover the insurer's cost of administering the product • Enable the insurer to make a reasonable profit Actuaries determine premium rates per unit of coverage. These rates must be • Adequate enough to make sure the insurer can cover its costs and contribute to its profits. • Equitable so that the amount individual insureds pay reflects the amount of risk they present. Premium rates are based on the insurer's • Cost of providing benefits guaranteed under the contract. These benefits include o Death benefits payable when the insured dies. Death benefits are based on mortality rates. o Surrender benefits payable when a policyowner surrenders a policy for its cash surrender value. Surrender benefits and costs of lapses are based on lapse rates. • Earnings generated when insurers invest premiums in excess of amount needed to cover benefits. Earnings allow insurers to o Lower premium rates charged to customers. o Earn a reasonable profit for the company. • Operating expenses cover the company's costs for issuing and administering products and for maintaining its general operations. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 78,
@@ -1011,7 +1011,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 4 What’s in It for Me? The Value Exchange in the Insurance Transaction Summary of Key Points In an insurance transaction, the policyowner pays premiums to the insurer in exchange for the insurer's promise to pay benefits when they become due. • For the customer, the value of the exchange is the opportunity to transfer risk to the insurer and gain peace of mind. • For the insurer, the value of the exchange is the opportunity to collect premiums and grow the company's business. Actuaries specialize in putting a price tag on risk. This risk must be high enough to • Pay future benefits to customers • Cover the insurer's cost of administering the product • Enable the insurer to make a reasonable profit Actuaries determine premium rates per unit of coverage. These rates must be • Adequate enough to make sure the insurer can cover its costs and contribute to its profits. • Equitable so that the amount individual insureds pay reflects the amount of risk they present. Premium rates are based on the insurer's • Cost of providing benefits guaranteed under the contract. These benefits include o Death benefits payable when the insured dies. Death benefits are based on mortality rates. o Surrender benefits payable when a policyowner surrenders a policy for its cash surrender value. Surrender benefits and costs of lapses are based on lapse rates. • Earnings generated when insurers invest premiums in excess of amount needed to cover benefits. Earnings allow insurers to o Lower premium rates charged to customers. o Earn a reasonable profit for the company. • Operating expenses cover the company's costs for issuing and administering products and for maintaining its general operations. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 79,
@@ -1024,7 +1024,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 1 Lesson 4 What’s in It for Me? The Value Exchange in the Insurance Transaction Summary of Key Points In an insurance transaction, the policyowner pays premiums to the insurer in exchange for the insurer's promise to pay benefits when they become due. • For the customer, the value of the exchange is the opportunity to transfer risk to the insurer and gain peace of mind. • For the insurer, the value of the exchange is the opportunity to collect premiums and grow the company's business. Actuaries specialize in putting a price tag on risk. This risk must be high enough to • Pay future benefits to customers • Cover the insurer's cost of administering the product • Enable the insurer to make a reasonable profit Actuaries determine premium rates per unit of coverage. These rates must be • Adequate enough to make sure the insurer can cover its costs and contribute to its profits. • Equitable so that the amount individual insureds pay reflects the amount of risk they present. Premium rates are based on the insurer's • Cost of providing benefits guaranteed under the contract. These benefits include o Death benefits payable when the insured dies. Death benefits are based on mortality rates. o Surrender benefits payable when a policyowner surrenders a policy for its cash surrender value. Surrender benefits and costs of lapses are based on lapse rates. • Earnings generated when insurers invest premiums in excess of amount needed to cover benefits. Earnings allow insurers to o Lower premium rates charged to customers. o Earn a reasonable profit for the company. • Operating expenses cover the company's costs for issuing and administering products and for maintaining its general operations. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 1,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 80,
@@ -1037,7 +1037,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 1 Term Life Insurance Summary of Key Points Term life insurance provides coverage for a specified period of time, called the policy term. The policy benefit will be payable ONLY if • The insured dies during the specified policy term, and • The policy is in force when the insured dies. Four types of term life insurance: • Level term life insurance─The policy benefit—and usually the premium—remains the same over the term. • Decreasing term life insurance─The policy benefit decreases over the policy term, but the premium amount usually remains the same. Examples are mortgage insurance, credit life insurance, and family income coverage. • Increasing term life insurance─The policy benefit increases at stated intervals over the policy term. Premiums increase as the benefit increases. • Return of premium (ROP) term life insurance─The policy pays a death benefit if the insured dies within the policy term or a return of premiums if the insured lives until the end of the policy term. Two options to continue life insurance coverage at end of term: • Policy renewal o Extends existing coverage for another term, usually the same length as original term, but sometimes shorter o Renewed coverage is usually for same face amount, but it can be for a lesser amount o Premiums for renewed coverage are based on the insured’s attained age at time of renewal o Subject to maximum number of renewals or maximum age limit o Does not require evidence of insurability • Policy Conversion o Allows policyowner to convert term policy to permanent (cash value) coverage during a specified time, known as the conversion period. o Does not require evidence of insurability o Converted coverage amount can be the same as or less than the original policy’s face amount o Premiums for converted coverage can be based on the insured’s attained age or original age Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 81,
@@ -1050,7 +1050,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 1 Term Life Insurance Summary of Key Points Term life insurance provides coverage for a specified period of time, called the policy term. The policy benefit will be payable ONLY if • The insured dies during the specified policy term, and • The policy is in force when the insured dies. Four types of term life insurance: • Level term life insurance─The policy benefit—and usually the premium—remains the same over the term. • Decreasing term life insurance─The policy benefit decreases over the policy term, but the premium amount usually remains the same. Examples are mortgage insurance, credit life insurance, and family income coverage. • Increasing term life insurance─The policy benefit increases at stated intervals over the policy term. Premiums increase as the benefit increases. • Return of premium (ROP) term life insurance─The policy pays a death benefit if the insured dies within the policy term or a return of premiums if the insured lives until the end of the policy term. Two options to continue life insurance coverage at end of term: • Policy renewal o Extends existing coverage for another term, usually the same length as original term, but sometimes shorter o Renewed coverage is usually for same face amount, but it can be for a lesser amount o Premiums for renewed coverage are based on the insured’s attained age at time of renewal o Subject to maximum number of renewals or maximum age limit o Does not require evidence of insurability • Policy Conversion o Allows policyowner to convert term policy to permanent (cash value) coverage during a specified time, known as the conversion period. o Does not require evidence of insurability o Converted coverage amount can be the same as or less than the original policy’s face amount o Premiums for converted coverage can be based on the insured’s attained age or original age Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 82,
@@ -1063,7 +1063,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 1 Term Life Insurance Summary of Key Points Term life insurance provides coverage for a specified period of time, called the policy term. The policy benefit will be payable ONLY if • The insured dies during the specified policy term, and • The policy is in force when the insured dies. Four types of term life insurance: • Level term life insurance─The policy benefit—and usually the premium—remains the same over the term. • Decreasing term life insurance─The policy benefit decreases over the policy term, but the premium amount usually remains the same. Examples are mortgage insurance, credit life insurance, and family income coverage. • Increasing term life insurance─The policy benefit increases at stated intervals over the policy term. Premiums increase as the benefit increases. • Return of premium (ROP) term life insurance─The policy pays a death benefit if the insured dies within the policy term or a return of premiums if the insured lives until the end of the policy term. Two options to continue life insurance coverage at end of term: • Policy renewal o Extends existing coverage for another term, usually the same length as original term, but sometimes shorter o Renewed coverage is usually for same face amount, but it can be for a lesser amount o Premiums for renewed coverage are based on the insured’s attained age at time of renewal o Subject to maximum number of renewals or maximum age limit o Does not require evidence of insurability • Policy Conversion o Allows policyowner to convert term policy to permanent (cash value) coverage during a specified time, known as the conversion period. o Does not require evidence of insurability o Converted coverage amount can be the same as or less than the original policy’s face amount o Premiums for converted coverage can be based on the insured’s attained age or original age Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 83,
@@ -1076,7 +1076,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 1 Term Life Insurance Summary of Key Points Term life insurance provides coverage for a specified period of time, called the policy term. The policy benefit will be payable ONLY if • The insured dies during the specified policy term, and • The policy is in force when the insured dies. Four types of term life insurance: • Level term life insurance─The policy benefit—and usually the premium—remains the same over the term. • Decreasing term life insurance─The policy benefit decreases over the policy term, but the premium amount usually remains the same. Examples are mortgage insurance, credit life insurance, and family income coverage. • Increasing term life insurance─The policy benefit increases at stated intervals over the policy term. Premiums increase as the benefit increases. • Return of premium (ROP) term life insurance─The policy pays a death benefit if the insured dies within the policy term or a return of premiums if the insured lives until the end of the policy term. Two options to continue life insurance coverage at end of term: • Policy renewal o Extends existing coverage for another term, usually the same length as original term, but sometimes shorter o Renewed coverage is usually for same face amount, but it can be for a lesser amount o Premiums for renewed coverage are based on the insured’s attained age at time of renewal o Subject to maximum number of renewals or maximum age limit o Does not require evidence of insurability • Policy Conversion o Allows policyowner to convert term policy to permanent (cash value) coverage during a specified time, known as the conversion period. o Does not require evidence of insurability o Converted coverage amount can be the same as or less than the original policy’s face amount o Premiums for converted coverage can be based on the insured’s attained age or original age Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 84,
@@ -1089,7 +1089,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 1 Term Life Insurance Summary of Key Points Term life insurance provides coverage for a specified period of time, called the policy term. The policy benefit will be payable ONLY if • The insured dies during the specified policy term, and • The policy is in force when the insured dies. Four types of term life insurance: • Level term life insurance─The policy benefit—and usually the premium—remains the same over the term. • Decreasing term life insurance─The policy benefit decreases over the policy term, but the premium amount usually remains the same. Examples are mortgage insurance, credit life insurance, and family income coverage. • Increasing term life insurance─The policy benefit increases at stated intervals over the policy term. Premiums increase as the benefit increases. • Return of premium (ROP) term life insurance─The policy pays a death benefit if the insured dies within the policy term or a return of premiums if the insured lives until the end of the policy term. Two options to continue life insurance coverage at end of term: • Policy renewal o Extends existing coverage for another term, usually the same length as original term, but sometimes shorter o Renewed coverage is usually for same face amount, but it can be for a lesser amount o Premiums for renewed coverage are based on the insured’s attained age at time of renewal o Subject to maximum number of renewals or maximum age limit o Does not require evidence of insurability • Policy Conversion o Allows policyowner to convert term policy to permanent (cash value) coverage during a specified time, known as the conversion period. o Does not require evidence of insurability o Converted coverage amount can be the same as or less than the original policy’s face amount o Premiums for converted coverage can be based on the insured’s attained age or original age Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 85,
@@ -1102,7 +1102,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 1 Term Life Insurance Summary of Key Points Term life insurance provides coverage for a specified period of time, called the policy term. The policy benefit will be payable ONLY if • The insured dies during the specified policy term, and • The policy is in force when the insured dies. Four types of term life insurance: • Level term life insurance─The policy benefit—and usually the premium—remains the same over the term. • Decreasing term life insurance─The policy benefit decreases over the policy term, but the premium amount usually remains the same. Examples are mortgage insurance, credit life insurance, and family income coverage. • Increasing term life insurance─The policy benefit increases at stated intervals over the policy term. Premiums increase as the benefit increases. • Return of premium (ROP) term life insurance─The policy pays a death benefit if the insured dies within the policy term or a return of premiums if the insured lives until the end of the policy term. Two options to continue life insurance coverage at end of term: • Policy renewal o Extends existing coverage for another term, usually the same length as original term, but sometimes shorter o Renewed coverage is usually for same face amount, but it can be for a lesser amount o Premiums for renewed coverage are based on the insured’s attained age at time of renewal o Subject to maximum number of renewals or maximum age limit o Does not require evidence of insurability • Policy Conversion o Allows policyowner to convert term policy to permanent (cash value) coverage during a specified time, known as the conversion period. o Does not require evidence of insurability o Converted coverage amount can be the same as or less than the original policy’s face amount o Premiums for converted coverage can be based on the insured’s attained age or original age Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 86,
@@ -1115,7 +1115,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 1 Term Life Insurance Summary of Key Points Term life insurance provides coverage for a specified period of time, called the policy term. The policy benefit will be payable ONLY if • The insured dies during the specified policy term, and • The policy is in force when the insured dies. Four types of term life insurance: • Level term life insurance─The policy benefit—and usually the premium—remains the same over the term. • Decreasing term life insurance─The policy benefit decreases over the policy term, but the premium amount usually remains the same. Examples are mortgage insurance, credit life insurance, and family income coverage. • Increasing term life insurance─The policy benefit increases at stated intervals over the policy term. Premiums increase as the benefit increases. • Return of premium (ROP) term life insurance─The policy pays a death benefit if the insured dies within the policy term or a return of premiums if the insured lives until the end of the policy term. Two options to continue life insurance coverage at end of term: • Policy renewal o Extends existing coverage for another term, usually the same length as original term, but sometimes shorter o Renewed coverage is usually for same face amount, but it can be for a lesser amount o Premiums for renewed coverage are based on the insured’s attained age at time of renewal o Subject to maximum number of renewals or maximum age limit o Does not require evidence of insurability • Policy Conversion o Allows policyowner to convert term policy to permanent (cash value) coverage during a specified time, known as the conversion period. o Does not require evidence of insurability o Converted coverage amount can be the same as or less than the original policy’s face amount o Premiums for converted coverage can be based on the insured’s attained age or original age Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 87,
@@ -1128,7 +1128,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 1 Term Life Insurance Summary of Key Points Term life insurance provides coverage for a specified period of time, called the policy term. The policy benefit will be payable ONLY if • The insured dies during the specified policy term, and • The policy is in force when the insured dies. Four types of term life insurance: • Level term life insurance─The policy benefit—and usually the premium—remains the same over the term. • Decreasing term life insurance─The policy benefit decreases over the policy term, but the premium amount usually remains the same. Examples are mortgage insurance, credit life insurance, and family income coverage. • Increasing term life insurance─The policy benefit increases at stated intervals over the policy term. Premiums increase as the benefit increases. • Return of premium (ROP) term life insurance─The policy pays a death benefit if the insured dies within the policy term or a return of premiums if the insured lives until the end of the policy term. Two options to continue life insurance coverage at end of term: • Policy renewal o Extends existing coverage for another term, usually the same length as original term, but sometimes shorter o Renewed coverage is usually for same face amount, but it can be for a lesser amount o Premiums for renewed coverage are based on the insured’s attained age at time of renewal o Subject to maximum number of renewals or maximum age limit o Does not require evidence of insurability • Policy Conversion o Allows policyowner to convert term policy to permanent (cash value) coverage during a specified time, known as the conversion period. o Does not require evidence of insurability o Converted coverage amount can be the same as or less than the original policy’s face amount o Premiums for converted coverage can be based on the insured’s attained age or original age Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 88,
@@ -1141,7 +1141,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 1 Term Life Insurance Summary of Key Points Term life insurance provides coverage for a specified period of time, called the policy term. The policy benefit will be payable ONLY if • The insured dies during the specified policy term, and • The policy is in force when the insured dies. Four types of term life insurance: • Level term life insurance─The policy benefit—and usually the premium—remains the same over the term. • Decreasing term life insurance─The policy benefit decreases over the policy term, but the premium amount usually remains the same. Examples are mortgage insurance, credit life insurance, and family income coverage. • Increasing term life insurance─The policy benefit increases at stated intervals over the policy term. Premiums increase as the benefit increases. • Return of premium (ROP) term life insurance─The policy pays a death benefit if the insured dies within the policy term or a return of premiums if the insured lives until the end of the policy term. Two options to continue life insurance coverage at end of term: • Policy renewal o Extends existing coverage for another term, usually the same length as original term, but sometimes shorter o Renewed coverage is usually for same face amount, but it can be for a lesser amount o Premiums for renewed coverage are based on the insured’s attained age at time of renewal o Subject to maximum number of renewals or maximum age limit o Does not require evidence of insurability • Policy Conversion o Allows policyowner to convert term policy to permanent (cash value) coverage during a specified time, known as the conversion period. o Does not require evidence of insurability o Converted coverage amount can be the same as or less than the original policy’s face amount o Premiums for converted coverage can be based on the insured’s attained age or original age Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 89,
@@ -1154,7 +1154,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 1 Term Life Insurance Summary of Key Points Term life insurance provides coverage for a specified period of time, called the policy term. The policy benefit will be payable ONLY if • The insured dies during the specified policy term, and • The policy is in force when the insured dies. Four types of term life insurance: • Level term life insurance─The policy benefit—and usually the premium—remains the same over the term. • Decreasing term life insurance─The policy benefit decreases over the policy term, but the premium amount usually remains the same. Examples are mortgage insurance, credit life insurance, and family income coverage. • Increasing term life insurance─The policy benefit increases at stated intervals over the policy term. Premiums increase as the benefit increases. • Return of premium (ROP) term life insurance─The policy pays a death benefit if the insured dies within the policy term or a return of premiums if the insured lives until the end of the policy term. Two options to continue life insurance coverage at end of term: • Policy renewal o Extends existing coverage for another term, usually the same length as original term, but sometimes shorter o Renewed coverage is usually for same face amount, but it can be for a lesser amount o Premiums for renewed coverage are based on the insured’s attained age at time of renewal o Subject to maximum number of renewals or maximum age limit o Does not require evidence of insurability • Policy Conversion o Allows policyowner to convert term policy to permanent (cash value) coverage during a specified time, known as the conversion period. o Does not require evidence of insurability o Converted coverage amount can be the same as or less than the original policy’s face amount o Premiums for converted coverage can be based on the insured’s attained age or original age Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 90,
@@ -1167,7 +1167,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 1 Term Life Insurance Summary of Key Points Term life insurance provides coverage for a specified period of time, called the policy term. The policy benefit will be payable ONLY if • The insured dies during the specified policy term, and • The policy is in force when the insured dies. Four types of term life insurance: • Level term life insurance─The policy benefit—and usually the premium—remains the same over the term. • Decreasing term life insurance─The policy benefit decreases over the policy term, but the premium amount usually remains the same. Examples are mortgage insurance, credit life insurance, and family income coverage. • Increasing term life insurance─The policy benefit increases at stated intervals over the policy term. Premiums increase as the benefit increases. • Return of premium (ROP) term life insurance─The policy pays a death benefit if the insured dies within the policy term or a return of premiums if the insured lives until the end of the policy term. Two options to continue life insurance coverage at end of term: • Policy renewal o Extends existing coverage for another term, usually the same length as original term, but sometimes shorter o Renewed coverage is usually for same face amount, but it can be for a lesser amount o Premiums for renewed coverage are based on the insured’s attained age at time of renewal o Subject to maximum number of renewals or maximum age limit o Does not require evidence of insurability • Policy Conversion o Allows policyowner to convert term policy to permanent (cash value) coverage during a specified time, known as the conversion period. o Does not require evidence of insurability o Converted coverage amount can be the same as or less than the original policy’s face amount o Premiums for converted coverage can be based on the insured’s attained age or original age Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 91,
@@ -1180,7 +1180,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 1 Term Life Insurance Summary of Key Points Term life insurance provides coverage for a specified period of time, called the policy term. The policy benefit will be payable ONLY if • The insured dies during the specified policy term, and • The policy is in force when the insured dies. Four types of term life insurance: • Level term life insurance─The policy benefit—and usually the premium—remains the same over the term. • Decreasing term life insurance─The policy benefit decreases over the policy term, but the premium amount usually remains the same. Examples are mortgage insurance, credit life insurance, and family income coverage. • Increasing term life insurance─The policy benefit increases at stated intervals over the policy term. Premiums increase as the benefit increases. • Return of premium (ROP) term life insurance─The policy pays a death benefit if the insured dies within the policy term or a return of premiums if the insured lives until the end of the policy term. Two options to continue life insurance coverage at end of term: • Policy renewal o Extends existing coverage for another term, usually the same length as original term, but sometimes shorter o Renewed coverage is usually for same face amount, but it can be for a lesser amount o Premiums for renewed coverage are based on the insured’s attained age at time of renewal o Subject to maximum number of renewals or maximum age limit o Does not require evidence of insurability • Policy Conversion o Allows policyowner to convert term policy to permanent (cash value) coverage during a specified time, known as the conversion period. o Does not require evidence of insurability o Converted coverage amount can be the same as or less than the original policy’s face amount o Premiums for converted coverage can be based on the insured’s attained age or original age Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 92,
@@ -1193,7 +1193,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 1 Term Life Insurance Summary of Key Points Term life insurance provides coverage for a specified period of time, called the policy term. The policy benefit will be payable ONLY if • The insured dies during the specified policy term, and • The policy is in force when the insured dies. Four types of term life insurance: • Level term life insurance─The policy benefit—and usually the premium—remains the same over the term. • Decreasing term life insurance─The policy benefit decreases over the policy term, but the premium amount usually remains the same. Examples are mortgage insurance, credit life insurance, and family income coverage. • Increasing term life insurance─The policy benefit increases at stated intervals over the policy term. Premiums increase as the benefit increases. • Return of premium (ROP) term life insurance─The policy pays a death benefit if the insured dies within the policy term or a return of premiums if the insured lives until the end of the policy term. Two options to continue life insurance coverage at end of term: • Policy renewal o Extends existing coverage for another term, usually the same length as original term, but sometimes shorter o Renewed coverage is usually for same face amount, but it can be for a lesser amount o Premiums for renewed coverage are based on the insured’s attained age at time of renewal o Subject to maximum number of renewals or maximum age limit o Does not require evidence of insurability • Policy Conversion o Allows policyowner to convert term policy to permanent (cash value) coverage during a specified time, known as the conversion period. o Does not require evidence of insurability o Converted coverage amount can be the same as or less than the original policy’s face amount o Premiums for converted coverage can be based on the insured’s attained age or original age Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 93,
@@ -1206,7 +1206,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 1 Term Life Insurance Summary of Key Points Term life insurance provides coverage for a specified period of time, called the policy term. The policy benefit will be payable ONLY if • The insured dies during the specified policy term, and • The policy is in force when the insured dies. Four types of term life insurance: • Level term life insurance─The policy benefit—and usually the premium—remains the same over the term. • Decreasing term life insurance─The policy benefit decreases over the policy term, but the premium amount usually remains the same. Examples are mortgage insurance, credit life insurance, and family income coverage. • Increasing term life insurance─The policy benefit increases at stated intervals over the policy term. Premiums increase as the benefit increases. • Return of premium (ROP) term life insurance─The policy pays a death benefit if the insured dies within the policy term or a return of premiums if the insured lives until the end of the policy term. Two options to continue life insurance coverage at end of term: • Policy renewal o Extends existing coverage for another term, usually the same length as original term, but sometimes shorter o Renewed coverage is usually for same face amount, but it can be for a lesser amount o Premiums for renewed coverage are based on the insured’s attained age at time of renewal o Subject to maximum number of renewals or maximum age limit o Does not require evidence of insurability • Policy Conversion o Allows policyowner to convert term policy to permanent (cash value) coverage during a specified time, known as the conversion period. o Does not require evidence of insurability o Converted coverage amount can be the same as or less than the original policy’s face amount o Premiums for converted coverage can be based on the insured’s attained age or original age Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 94,
@@ -1219,7 +1219,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 2 Cash Value Life Insurance Summary of Key Points Cash value life insurance offers lifetime coverage and a savings element, called the cash value. Uses of cash value: • Policyowner can borrow against the cash value through a policy loan • Policyowner can surrender the policy for its cash surrender value Types of cash value coverage: • Whole life insurance—the most basic type of cash value policy o Provides constant amount of coverage with level premiums o Single-premium, limited payment, and continuous premium options • Modified whole life policies allow more flexibility o Modified-premium—Smaller premiums for an initial period, then larger premiums for remainder of policy. Level face amount. o Modified coverage—Larger face amount at first, then smaller face amount during policy’s later years. Level premium amount. o Joint whole life—Insures two lives under one policy. Pays death benefit when the FIRST insured dies. o Last survivor coverage—Insures two or more lives under one policy. Pays death benefit when the LAST insured dies. New generation cash value products: • Universal Life (UL) o Separate pricing factors—clearly lists mortality charges, interest rate, and fees o Within limits, policyowner can adjust face amount and size/timing of premiums o Policyowner can choose level death benefit or variable death benefit • Indexed Universal Life (IUL) o Offers same features as universal life o Allows policyowner to tie cash value to an equity index (example: S&P 500) o Guarantees a minimum interest rate • Variable Life (VL) o Premiums are fixed o Policyowner chooses how premiums are invested—into a fixed account or one or more subaccounts o Cash value and death benefit vary according to subaccount performance o Regulated as securities • Variable Universal Life (VUL) o Blends investment flexibility of VL with premium and death benefit flexibility of UL o Like VL, policyowner chooses how premiums are invested o Like UL, policyowner can choose the size/timing of renewal premiums o Like UL, policyowner can choose whether death benefit varies or remains level o Regulated as securities Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 95,
@@ -1232,7 +1232,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 2 Cash Value Life Insurance Summary of Key Points Cash value life insurance offers lifetime coverage and a savings element, called the cash value. Uses of cash value: • Policyowner can borrow against the cash value through a policy loan • Policyowner can surrender the policy for its cash surrender value Types of cash value coverage: • Whole life insurance—the most basic type of cash value policy o Provides constant amount of coverage with level premiums o Single-premium, limited payment, and continuous premium options • Modified whole life policies allow more flexibility o Modified-premium—Smaller premiums for an initial period, then larger premiums for remainder of policy. Level face amount. o Modified coverage—Larger face amount at first, then smaller face amount during policy’s later years. Level premium amount. o Joint whole life—Insures two lives under one policy. Pays death benefit when the FIRST insured dies. o Last survivor coverage—Insures two or more lives under one policy. Pays death benefit when the LAST insured dies. New generation cash value products: • Universal Life (UL) o Separate pricing factors—clearly lists mortality charges, interest rate, and fees o Within limits, policyowner can adjust face amount and size/timing of premiums o Policyowner can choose level death benefit or variable death benefit • Indexed Universal Life (IUL) o Offers same features as universal life o Allows policyowner to tie cash value to an equity index (example: S&P 500) o Guarantees a minimum interest rate • Variable Life (VL) o Premiums are fixed o Policyowner chooses how premiums are invested—into a fixed account or one or more subaccounts o Cash value and death benefit vary according to subaccount performance o Regulated as securities • Variable Universal Life (VUL) o Blends investment flexibility of VL with premium and death benefit flexibility of UL o Like VL, policyowner chooses how premiums are invested o Like UL, policyowner can choose the size/timing of renewal premiums o Like UL, policyowner can choose whether death benefit varies or remains level o Regulated as securities Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 96,
@@ -1245,7 +1245,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 2 Cash Value Life Insurance Summary of Key Points Cash value life insurance offers lifetime coverage and a savings element, called the cash value. Uses of cash value: • Policyowner can borrow against the cash value through a policy loan • Policyowner can surrender the policy for its cash surrender value Types of cash value coverage: • Whole life insurance—the most basic type of cash value policy o Provides constant amount of coverage with level premiums o Single-premium, limited payment, and continuous premium options • Modified whole life policies allow more flexibility o Modified-premium—Smaller premiums for an initial period, then larger premiums for remainder of policy. Level face amount. o Modified coverage—Larger face amount at first, then smaller face amount during policy’s later years. Level premium amount. o Joint whole life—Insures two lives under one policy. Pays death benefit when the FIRST insured dies. o Last survivor coverage—Insures two or more lives under one policy. Pays death benefit when the LAST insured dies. New generation cash value products: • Universal Life (UL) o Separate pricing factors—clearly lists mortality charges, interest rate, and fees o Within limits, policyowner can adjust face amount and size/timing of premiums o Policyowner can choose level death benefit or variable death benefit • Indexed Universal Life (IUL) o Offers same features as universal life o Allows policyowner to tie cash value to an equity index (example: S&P 500) o Guarantees a minimum interest rate • Variable Life (VL) o Premiums are fixed o Policyowner chooses how premiums are invested—into a fixed account or one or more subaccounts o Cash value and death benefit vary according to subaccount performance o Regulated as securities • Variable Universal Life (VUL) o Blends investment flexibility of VL with premium and death benefit flexibility of UL o Like VL, policyowner chooses how premiums are invested o Like UL, policyowner can choose the size/timing of renewal premiums o Like UL, policyowner can choose whether death benefit varies or remains level o Regulated as securities Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 97,
@@ -1258,7 +1258,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 2 Cash Value Life Insurance Summary of Key Points Cash value life insurance offers lifetime coverage and a savings element, called the cash value. Uses of cash value: • Policyowner can borrow against the cash value through a policy loan • Policyowner can surrender the policy for its cash surrender value Types of cash value coverage: • Whole life insurance—the most basic type of cash value policy o Provides constant amount of coverage with level premiums o Single-premium, limited payment, and continuous premium options • Modified whole life policies allow more flexibility o Modified-premium—Smaller premiums for an initial period, then larger premiums for remainder of policy. Level face amount. o Modified coverage—Larger face amount at first, then smaller face amount during policy’s later years. Level premium amount. o Joint whole life—Insures two lives under one policy. Pays death benefit when the FIRST insured dies. o Last survivor coverage—Insures two or more lives under one policy. Pays death benefit when the LAST insured dies. New generation cash value products: • Universal Life (UL) o Separate pricing factors—clearly lists mortality charges, interest rate, and fees o Within limits, policyowner can adjust face amount and size/timing of premiums o Policyowner can choose level death benefit or variable death benefit • Indexed Universal Life (IUL) o Offers same features as universal life o Allows policyowner to tie cash value to an equity index (example: S&P 500) o Guarantees a minimum interest rate • Variable Life (VL) o Premiums are fixed o Policyowner chooses how premiums are invested—into a fixed account or one or more subaccounts o Cash value and death benefit vary according to subaccount performance o Regulated as securities • Variable Universal Life (VUL) o Blends investment flexibility of VL with premium and death benefit flexibility of UL o Like VL, policyowner chooses how premiums are invested o Like UL, policyowner can choose the size/timing of renewal premiums o Like UL, policyowner can choose whether death benefit varies or remains level o Regulated as securities Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 98,
@@ -1271,7 +1271,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 2 Cash Value Life Insurance Summary of Key Points Cash value life insurance offers lifetime coverage and a savings element, called the cash value. Uses of cash value: • Policyowner can borrow against the cash value through a policy loan • Policyowner can surrender the policy for its cash surrender value Types of cash value coverage: • Whole life insurance—the most basic type of cash value policy o Provides constant amount of coverage with level premiums o Single-premium, limited payment, and continuous premium options • Modified whole life policies allow more flexibility o Modified-premium—Smaller premiums for an initial period, then larger premiums for remainder of policy. Level face amount. o Modified coverage—Larger face amount at first, then smaller face amount during policy’s later years. Level premium amount. o Joint whole life—Insures two lives under one policy. Pays death benefit when the FIRST insured dies. o Last survivor coverage—Insures two or more lives under one policy. Pays death benefit when the LAST insured dies. New generation cash value products: • Universal Life (UL) o Separate pricing factors—clearly lists mortality charges, interest rate, and fees o Within limits, policyowner can adjust face amount and size/timing of premiums o Policyowner can choose level death benefit or variable death benefit • Indexed Universal Life (IUL) o Offers same features as universal life o Allows policyowner to tie cash value to an equity index (example: S&P 500) o Guarantees a minimum interest rate • Variable Life (VL) o Premiums are fixed o Policyowner chooses how premiums are invested—into a fixed account or one or more subaccounts o Cash value and death benefit vary according to subaccount performance o Regulated as securities • Variable Universal Life (VUL) o Blends investment flexibility of VL with premium and death benefit flexibility of UL o Like VL, policyowner chooses how premiums are invested o Like UL, policyowner can choose the size/timing of renewal premiums o Like UL, policyowner can choose whether death benefit varies or remains level o Regulated as securities Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 99,
@@ -1284,7 +1284,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 2 Cash Value Life Insurance Summary of Key Points Cash value life insurance offers lifetime coverage and a savings element, called the cash value. Uses of cash value: • Policyowner can borrow against the cash value through a policy loan • Policyowner can surrender the policy for its cash surrender value Types of cash value coverage: • Whole life insurance—the most basic type of cash value policy o Provides constant amount of coverage with level premiums o Single-premium, limited payment, and continuous premium options • Modified whole life policies allow more flexibility o Modified-premium—Smaller premiums for an initial period, then larger premiums for remainder of policy. Level face amount. o Modified coverage—Larger face amount at first, then smaller face amount during policy’s later years. Level premium amount. o Joint whole life—Insures two lives under one policy. Pays death benefit when the FIRST insured dies. o Last survivor coverage—Insures two or more lives under one policy. Pays death benefit when the LAST insured dies. New generation cash value products: • Universal Life (UL) o Separate pricing factors—clearly lists mortality charges, interest rate, and fees o Within limits, policyowner can adjust face amount and size/timing of premiums o Policyowner can choose level death benefit or variable death benefit • Indexed Universal Life (IUL) o Offers same features as universal life o Allows policyowner to tie cash value to an equity index (example: S&P 500) o Guarantees a minimum interest rate • Variable Life (VL) o Premiums are fixed o Policyowner chooses how premiums are invested—into a fixed account or one or more subaccounts o Cash value and death benefit vary according to subaccount performance o Regulated as securities • Variable Universal Life (VUL) o Blends investment flexibility of VL with premium and death benefit flexibility of UL o Like VL, policyowner chooses how premiums are invested o Like UL, policyowner can choose the size/timing of renewal premiums o Like UL, policyowner can choose whether death benefit varies or remains level o Regulated as securities Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 100,
@@ -1297,12 +1297,12 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 2 Cash Value Life Insurance Summary of Key Points Cash value life insurance offers lifetime coverage and a savings element, called the cash value. Uses of cash value: • Policyowner can borrow against the cash value through a policy loan • Policyowner can surrender the policy for its cash surrender value Types of cash value coverage: • Whole life insurance—the most basic type of cash value policy o Provides constant amount of coverage with level premiums o Single-premium, limited payment, and continuous premium options • Modified whole life policies allow more flexibility o Modified-premium—Smaller premiums for an initial period, then larger premiums for remainder of policy. Level face amount. o Modified coverage—Larger face amount at first, then smaller face amount during policy’s later years. Level premium amount. o Joint whole life—Insures two lives under one policy. Pays death benefit when the FIRST insured dies. o Last survivor coverage—Insures two or more lives under one policy. Pays death benefit when the LAST insured dies. New generation cash value products: • Universal Life (UL) o Separate pricing factors—clearly lists mortality charges, interest rate, and fees o Within limits, policyowner can adjust face amount and size/timing of premiums o Policyowner can choose level death benefit or variable death benefit • Indexed Universal Life (IUL) o Offers same features as universal life o Allows policyowner to tie cash value to an equity index (example: S&P 500) o Guarantees a minimum interest rate • Variable Life (VL) o Premiums are fixed o Policyowner chooses how premiums are invested—into a fixed account or one or more subaccounts o Cash value and death benefit vary according to subaccount performance o Regulated as securities • Variable Universal Life (VUL) o Blends investment flexibility of VL with premium and death benefit flexibility of UL o Like VL, policyowner chooses how premiums are invested o Like UL, policyowner can choose the size/timing of renewal premiums o Like UL, policyowner can choose whether death benefit varies or remains level o Regulated as securities Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 101,
         "Node Name": "Limited-Payment Whole Life Insurance",
-        "Definition": "A type of whole life insurance where premiums are paid for a specified period (e.g., 20 years or until age 65), after which the policy is \"paid-up\" and coverage continues for life with no further payments.",
+        "Definition": 'A type of whole life insurance where premiums are paid for a specified period (e.g., 20 years or until age 65), after which the policy is "paid-up" and coverage continues for life with no further payments.',
         "Category": "Product",
         "Domain Tags": "Life Insurance, Whole Life, Premium Payment",
         "Related Nodes": "KN-006",
@@ -1310,7 +1310,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 2 Cash Value Life Insurance Summary of Key Points Cash value life insurance offers lifetime coverage and a savings element, called the cash value. Uses of cash value: • Policyowner can borrow against the cash value through a policy loan • Policyowner can surrender the policy for its cash surrender value Types of cash value coverage: • Whole life insurance—the most basic type of cash value policy o Provides constant amount of coverage with level premiums o Single-premium, limited payment, and continuous premium options • Modified whole life policies allow more flexibility o Modified-premium—Smaller premiums for an initial period, then larger premiums for remainder of policy. Level face amount. o Modified coverage—Larger face amount at first, then smaller face amount during policy’s later years. Level premium amount. o Joint whole life—Insures two lives under one policy. Pays death benefit when the FIRST insured dies. o Last survivor coverage—Insures two or more lives under one policy. Pays death benefit when the LAST insured dies. New generation cash value products: • Universal Life (UL) o Separate pricing factors—clearly lists mortality charges, interest rate, and fees o Within limits, policyowner can adjust face amount and size/timing of premiums o Policyowner can choose level death benefit or variable death benefit • Indexed Universal Life (IUL) o Offers same features as universal life o Allows policyowner to tie cash value to an equity index (example: S&P 500) o Guarantees a minimum interest rate • Variable Life (VL) o Premiums are fixed o Policyowner chooses how premiums are invested—into a fixed account or one or more subaccounts o Cash value and death benefit vary according to subaccount performance o Regulated as securities • Variable Universal Life (VUL) o Blends investment flexibility of VL with premium and death benefit flexibility of UL o Like VL, policyowner chooses how premiums are invested o Like UL, policyowner can choose the size/timing of renewal premiums o Like UL, policyowner can choose whether death benefit varies or remains level o Regulated as securities Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 102,
@@ -1323,7 +1323,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 2 Cash Value Life Insurance Summary of Key Points Cash value life insurance offers lifetime coverage and a savings element, called the cash value. Uses of cash value: • Policyowner can borrow against the cash value through a policy loan • Policyowner can surrender the policy for its cash surrender value Types of cash value coverage: • Whole life insurance—the most basic type of cash value policy o Provides constant amount of coverage with level premiums o Single-premium, limited payment, and continuous premium options • Modified whole life policies allow more flexibility o Modified-premium—Smaller premiums for an initial period, then larger premiums for remainder of policy. Level face amount. o Modified coverage—Larger face amount at first, then smaller face amount during policy’s later years. Level premium amount. o Joint whole life—Insures two lives under one policy. Pays death benefit when the FIRST insured dies. o Last survivor coverage—Insures two or more lives under one policy. Pays death benefit when the LAST insured dies. New generation cash value products: • Universal Life (UL) o Separate pricing factors—clearly lists mortality charges, interest rate, and fees o Within limits, policyowner can adjust face amount and size/timing of premiums o Policyowner can choose level death benefit or variable death benefit • Indexed Universal Life (IUL) o Offers same features as universal life o Allows policyowner to tie cash value to an equity index (example: S&P 500) o Guarantees a minimum interest rate • Variable Life (VL) o Premiums are fixed o Policyowner chooses how premiums are invested—into a fixed account or one or more subaccounts o Cash value and death benefit vary according to subaccount performance o Regulated as securities • Variable Universal Life (VUL) o Blends investment flexibility of VL with premium and death benefit flexibility of UL o Like VL, policyowner chooses how premiums are invested o Like UL, policyowner can choose the size/timing of renewal premiums o Like UL, policyowner can choose whether death benefit varies or remains level o Regulated as securities Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 103,
@@ -1336,7 +1336,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 2 Cash Value Life Insurance Summary of Key Points Cash value life insurance offers lifetime coverage and a savings element, called the cash value. Uses of cash value: • Policyowner can borrow against the cash value through a policy loan • Policyowner can surrender the policy for its cash surrender value Types of cash value coverage: • Whole life insurance—the most basic type of cash value policy o Provides constant amount of coverage with level premiums o Single-premium, limited payment, and continuous premium options • Modified whole life policies allow more flexibility o Modified-premium—Smaller premiums for an initial period, then larger premiums for remainder of policy. Level face amount. o Modified coverage—Larger face amount at first, then smaller face amount during policy’s later years. Level premium amount. o Joint whole life—Insures two lives under one policy. Pays death benefit when the FIRST insured dies. o Last survivor coverage—Insures two or more lives under one policy. Pays death benefit when the LAST insured dies. New generation cash value products: • Universal Life (UL) o Separate pricing factors—clearly lists mortality charges, interest rate, and fees o Within limits, policyowner can adjust face amount and size/timing of premiums o Policyowner can choose level death benefit or variable death benefit • Indexed Universal Life (IUL) o Offers same features as universal life o Allows policyowner to tie cash value to an equity index (example: S&P 500) o Guarantees a minimum interest rate • Variable Life (VL) o Premiums are fixed o Policyowner chooses how premiums are invested—into a fixed account or one or more subaccounts o Cash value and death benefit vary according to subaccount performance o Regulated as securities • Variable Universal Life (VUL) o Blends investment flexibility of VL with premium and death benefit flexibility of UL o Like VL, policyowner chooses how premiums are invested o Like UL, policyowner can choose the size/timing of renewal premiums o Like UL, policyowner can choose whether death benefit varies or remains level o Regulated as securities Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 104,
@@ -1349,7 +1349,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 2 Cash Value Life Insurance Summary of Key Points Cash value life insurance offers lifetime coverage and a savings element, called the cash value. Uses of cash value: • Policyowner can borrow against the cash value through a policy loan • Policyowner can surrender the policy for its cash surrender value Types of cash value coverage: • Whole life insurance—the most basic type of cash value policy o Provides constant amount of coverage with level premiums o Single-premium, limited payment, and continuous premium options • Modified whole life policies allow more flexibility o Modified-premium—Smaller premiums for an initial period, then larger premiums for remainder of policy. Level face amount. o Modified coverage—Larger face amount at first, then smaller face amount during policy’s later years. Level premium amount. o Joint whole life—Insures two lives under one policy. Pays death benefit when the FIRST insured dies. o Last survivor coverage—Insures two or more lives under one policy. Pays death benefit when the LAST insured dies. New generation cash value products: • Universal Life (UL) o Separate pricing factors—clearly lists mortality charges, interest rate, and fees o Within limits, policyowner can adjust face amount and size/timing of premiums o Policyowner can choose level death benefit or variable death benefit • Indexed Universal Life (IUL) o Offers same features as universal life o Allows policyowner to tie cash value to an equity index (example: S&P 500) o Guarantees a minimum interest rate • Variable Life (VL) o Premiums are fixed o Policyowner chooses how premiums are invested—into a fixed account or one or more subaccounts o Cash value and death benefit vary according to subaccount performance o Regulated as securities • Variable Universal Life (VUL) o Blends investment flexibility of VL with premium and death benefit flexibility of UL o Like VL, policyowner chooses how premiums are invested o Like UL, policyowner can choose the size/timing of renewal premiums o Like UL, policyowner can choose whether death benefit varies or remains level o Regulated as securities Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 105,
@@ -1362,7 +1362,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 2 Cash Value Life Insurance Summary of Key Points Cash value life insurance offers lifetime coverage and a savings element, called the cash value. Uses of cash value: • Policyowner can borrow against the cash value through a policy loan • Policyowner can surrender the policy for its cash surrender value Types of cash value coverage: • Whole life insurance—the most basic type of cash value policy o Provides constant amount of coverage with level premiums o Single-premium, limited payment, and continuous premium options • Modified whole life policies allow more flexibility o Modified-premium—Smaller premiums for an initial period, then larger premiums for remainder of policy. Level face amount. o Modified coverage—Larger face amount at first, then smaller face amount during policy’s later years. Level premium amount. o Joint whole life—Insures two lives under one policy. Pays death benefit when the FIRST insured dies. o Last survivor coverage—Insures two or more lives under one policy. Pays death benefit when the LAST insured dies. New generation cash value products: • Universal Life (UL) o Separate pricing factors—clearly lists mortality charges, interest rate, and fees o Within limits, policyowner can adjust face amount and size/timing of premiums o Policyowner can choose level death benefit or variable death benefit • Indexed Universal Life (IUL) o Offers same features as universal life o Allows policyowner to tie cash value to an equity index (example: S&P 500) o Guarantees a minimum interest rate • Variable Life (VL) o Premiums are fixed o Policyowner chooses how premiums are invested—into a fixed account or one or more subaccounts o Cash value and death benefit vary according to subaccount performance o Regulated as securities • Variable Universal Life (VUL) o Blends investment flexibility of VL with premium and death benefit flexibility of UL o Like VL, policyowner chooses how premiums are invested o Like UL, policyowner can choose the size/timing of renewal premiums o Like UL, policyowner can choose whether death benefit varies or remains level o Regulated as securities Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 106,
@@ -1375,7 +1375,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 2 Cash Value Life Insurance Summary of Key Points Cash value life insurance offers lifetime coverage and a savings element, called the cash value. Uses of cash value: • Policyowner can borrow against the cash value through a policy loan • Policyowner can surrender the policy for its cash surrender value Types of cash value coverage: • Whole life insurance—the most basic type of cash value policy o Provides constant amount of coverage with level premiums o Single-premium, limited payment, and continuous premium options • Modified whole life policies allow more flexibility o Modified-premium—Smaller premiums for an initial period, then larger premiums for remainder of policy. Level face amount. o Modified coverage—Larger face amount at first, then smaller face amount during policy’s later years. Level premium amount. o Joint whole life—Insures two lives under one policy. Pays death benefit when the FIRST insured dies. o Last survivor coverage—Insures two or more lives under one policy. Pays death benefit when the LAST insured dies. New generation cash value products: • Universal Life (UL) o Separate pricing factors—clearly lists mortality charges, interest rate, and fees o Within limits, policyowner can adjust face amount and size/timing of premiums o Policyowner can choose level death benefit or variable death benefit • Indexed Universal Life (IUL) o Offers same features as universal life o Allows policyowner to tie cash value to an equity index (example: S&P 500) o Guarantees a minimum interest rate • Variable Life (VL) o Premiums are fixed o Policyowner chooses how premiums are invested—into a fixed account or one or more subaccounts o Cash value and death benefit vary according to subaccount performance o Regulated as securities • Variable Universal Life (VUL) o Blends investment flexibility of VL with premium and death benefit flexibility of UL o Like VL, policyowner chooses how premiums are invested o Like UL, policyowner can choose the size/timing of renewal premiums o Like UL, policyowner can choose whether death benefit varies or remains level o Regulated as securities Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 107,
@@ -1388,7 +1388,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 2 Cash Value Life Insurance Summary of Key Points Cash value life insurance offers lifetime coverage and a savings element, called the cash value. Uses of cash value: • Policyowner can borrow against the cash value through a policy loan • Policyowner can surrender the policy for its cash surrender value Types of cash value coverage: • Whole life insurance—the most basic type of cash value policy o Provides constant amount of coverage with level premiums o Single-premium, limited payment, and continuous premium options • Modified whole life policies allow more flexibility o Modified-premium—Smaller premiums for an initial period, then larger premiums for remainder of policy. Level face amount. o Modified coverage—Larger face amount at first, then smaller face amount during policy’s later years. Level premium amount. o Joint whole life—Insures two lives under one policy. Pays death benefit when the FIRST insured dies. o Last survivor coverage—Insures two or more lives under one policy. Pays death benefit when the LAST insured dies. New generation cash value products: • Universal Life (UL) o Separate pricing factors—clearly lists mortality charges, interest rate, and fees o Within limits, policyowner can adjust face amount and size/timing of premiums o Policyowner can choose level death benefit or variable death benefit • Indexed Universal Life (IUL) o Offers same features as universal life o Allows policyowner to tie cash value to an equity index (example: S&P 500) o Guarantees a minimum interest rate • Variable Life (VL) o Premiums are fixed o Policyowner chooses how premiums are invested—into a fixed account or one or more subaccounts o Cash value and death benefit vary according to subaccount performance o Regulated as securities • Variable Universal Life (VUL) o Blends investment flexibility of VL with premium and death benefit flexibility of UL o Like VL, policyowner chooses how premiums are invested o Like UL, policyowner can choose the size/timing of renewal premiums o Like UL, policyowner can choose whether death benefit varies or remains level o Regulated as securities Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 108,
@@ -1401,7 +1401,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 2 Cash Value Life Insurance Summary of Key Points Cash value life insurance offers lifetime coverage and a savings element, called the cash value. Uses of cash value: • Policyowner can borrow against the cash value through a policy loan • Policyowner can surrender the policy for its cash surrender value Types of cash value coverage: • Whole life insurance—the most basic type of cash value policy o Provides constant amount of coverage with level premiums o Single-premium, limited payment, and continuous premium options • Modified whole life policies allow more flexibility o Modified-premium—Smaller premiums for an initial period, then larger premiums for remainder of policy. Level face amount. o Modified coverage—Larger face amount at first, then smaller face amount during policy’s later years. Level premium amount. o Joint whole life—Insures two lives under one policy. Pays death benefit when the FIRST insured dies. o Last survivor coverage—Insures two or more lives under one policy. Pays death benefit when the LAST insured dies. New generation cash value products: • Universal Life (UL) o Separate pricing factors—clearly lists mortality charges, interest rate, and fees o Within limits, policyowner can adjust face amount and size/timing of premiums o Policyowner can choose level death benefit or variable death benefit • Indexed Universal Life (IUL) o Offers same features as universal life o Allows policyowner to tie cash value to an equity index (example: S&P 500) o Guarantees a minimum interest rate • Variable Life (VL) o Premiums are fixed o Policyowner chooses how premiums are invested—into a fixed account or one or more subaccounts o Cash value and death benefit vary according to subaccount performance o Regulated as securities • Variable Universal Life (VUL) o Blends investment flexibility of VL with premium and death benefit flexibility of UL o Like VL, policyowner chooses how premiums are invested o Like UL, policyowner can choose the size/timing of renewal premiums o Like UL, policyowner can choose whether death benefit varies or remains level o Regulated as securities Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 109,
@@ -1414,7 +1414,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 2 Cash Value Life Insurance Summary of Key Points Cash value life insurance offers lifetime coverage and a savings element, called the cash value. Uses of cash value: • Policyowner can borrow against the cash value through a policy loan • Policyowner can surrender the policy for its cash surrender value Types of cash value coverage: • Whole life insurance—the most basic type of cash value policy o Provides constant amount of coverage with level premiums o Single-premium, limited payment, and continuous premium options • Modified whole life policies allow more flexibility o Modified-premium—Smaller premiums for an initial period, then larger premiums for remainder of policy. Level face amount. o Modified coverage—Larger face amount at first, then smaller face amount during policy’s later years. Level premium amount. o Joint whole life—Insures two lives under one policy. Pays death benefit when the FIRST insured dies. o Last survivor coverage—Insures two or more lives under one policy. Pays death benefit when the LAST insured dies. New generation cash value products: • Universal Life (UL) o Separate pricing factors—clearly lists mortality charges, interest rate, and fees o Within limits, policyowner can adjust face amount and size/timing of premiums o Policyowner can choose level death benefit or variable death benefit • Indexed Universal Life (IUL) o Offers same features as universal life o Allows policyowner to tie cash value to an equity index (example: S&P 500) o Guarantees a minimum interest rate • Variable Life (VL) o Premiums are fixed o Policyowner chooses how premiums are invested—into a fixed account or one or more subaccounts o Cash value and death benefit vary according to subaccount performance o Regulated as securities • Variable Universal Life (VUL) o Blends investment flexibility of VL with premium and death benefit flexibility of UL o Like VL, policyowner chooses how premiums are invested o Like UL, policyowner can choose the size/timing of renewal premiums o Like UL, policyowner can choose whether death benefit varies or remains level o Regulated as securities Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 110,
@@ -1427,7 +1427,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 2 Cash Value Life Insurance Summary of Key Points Cash value life insurance offers lifetime coverage and a savings element, called the cash value. Uses of cash value: • Policyowner can borrow against the cash value through a policy loan • Policyowner can surrender the policy for its cash surrender value Types of cash value coverage: • Whole life insurance—the most basic type of cash value policy o Provides constant amount of coverage with level premiums o Single-premium, limited payment, and continuous premium options • Modified whole life policies allow more flexibility o Modified-premium—Smaller premiums for an initial period, then larger premiums for remainder of policy. Level face amount. o Modified coverage—Larger face amount at first, then smaller face amount during policy’s later years. Level premium amount. o Joint whole life—Insures two lives under one policy. Pays death benefit when the FIRST insured dies. o Last survivor coverage—Insures two or more lives under one policy. Pays death benefit when the LAST insured dies. New generation cash value products: • Universal Life (UL) o Separate pricing factors—clearly lists mortality charges, interest rate, and fees o Within limits, policyowner can adjust face amount and size/timing of premiums o Policyowner can choose level death benefit or variable death benefit • Indexed Universal Life (IUL) o Offers same features as universal life o Allows policyowner to tie cash value to an equity index (example: S&P 500) o Guarantees a minimum interest rate • Variable Life (VL) o Premiums are fixed o Policyowner chooses how premiums are invested—into a fixed account or one or more subaccounts o Cash value and death benefit vary according to subaccount performance o Regulated as securities • Variable Universal Life (VUL) o Blends investment flexibility of VL with premium and death benefit flexibility of UL o Like VL, policyowner chooses how premiums are invested o Like UL, policyowner can choose the size/timing of renewal premiums o Like UL, policyowner can choose whether death benefit varies or remains level o Regulated as securities Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 111,
@@ -1440,7 +1440,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 2 Cash Value Life Insurance Summary of Key Points Cash value life insurance offers lifetime coverage and a savings element, called the cash value. Uses of cash value: • Policyowner can borrow against the cash value through a policy loan • Policyowner can surrender the policy for its cash surrender value Types of cash value coverage: • Whole life insurance—the most basic type of cash value policy o Provides constant amount of coverage with level premiums o Single-premium, limited payment, and continuous premium options • Modified whole life policies allow more flexibility o Modified-premium—Smaller premiums for an initial period, then larger premiums for remainder of policy. Level face amount. o Modified coverage—Larger face amount at first, then smaller face amount during policy’s later years. Level premium amount. o Joint whole life—Insures two lives under one policy. Pays death benefit when the FIRST insured dies. o Last survivor coverage—Insures two or more lives under one policy. Pays death benefit when the LAST insured dies. New generation cash value products: • Universal Life (UL) o Separate pricing factors—clearly lists mortality charges, interest rate, and fees o Within limits, policyowner can adjust face amount and size/timing of premiums o Policyowner can choose level death benefit or variable death benefit • Indexed Universal Life (IUL) o Offers same features as universal life o Allows policyowner to tie cash value to an equity index (example: S&P 500) o Guarantees a minimum interest rate • Variable Life (VL) o Premiums are fixed o Policyowner chooses how premiums are invested—into a fixed account or one or more subaccounts o Cash value and death benefit vary according to subaccount performance o Regulated as securities • Variable Universal Life (VUL) o Blends investment flexibility of VL with premium and death benefit flexibility of UL o Like VL, policyowner chooses how premiums are invested o Like UL, policyowner can choose the size/timing of renewal premiums o Like UL, policyowner can choose whether death benefit varies or remains level o Regulated as securities Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 112,
@@ -1453,7 +1453,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 2 Cash Value Life Insurance Summary of Key Points Cash value life insurance offers lifetime coverage and a savings element, called the cash value. Uses of cash value: • Policyowner can borrow against the cash value through a policy loan • Policyowner can surrender the policy for its cash surrender value Types of cash value coverage: • Whole life insurance—the most basic type of cash value policy o Provides constant amount of coverage with level premiums o Single-premium, limited payment, and continuous premium options • Modified whole life policies allow more flexibility o Modified-premium—Smaller premiums for an initial period, then larger premiums for remainder of policy. Level face amount. o Modified coverage—Larger face amount at first, then smaller face amount during policy’s later years. Level premium amount. o Joint whole life—Insures two lives under one policy. Pays death benefit when the FIRST insured dies. o Last survivor coverage—Insures two or more lives under one policy. Pays death benefit when the LAST insured dies. New generation cash value products: • Universal Life (UL) o Separate pricing factors—clearly lists mortality charges, interest rate, and fees o Within limits, policyowner can adjust face amount and size/timing of premiums o Policyowner can choose level death benefit or variable death benefit • Indexed Universal Life (IUL) o Offers same features as universal life o Allows policyowner to tie cash value to an equity index (example: S&P 500) o Guarantees a minimum interest rate • Variable Life (VL) o Premiums are fixed o Policyowner chooses how premiums are invested—into a fixed account or one or more subaccounts o Cash value and death benefit vary according to subaccount performance o Regulated as securities • Variable Universal Life (VUL) o Blends investment flexibility of VL with premium and death benefit flexibility of UL o Like VL, policyowner chooses how premiums are invested o Like UL, policyowner can choose the size/timing of renewal premiums o Like UL, policyowner can choose whether death benefit varies or remains level o Regulated as securities Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 113,
@@ -1466,7 +1466,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 2 Cash Value Life Insurance Summary of Key Points Cash value life insurance offers lifetime coverage and a savings element, called the cash value. Uses of cash value: • Policyowner can borrow against the cash value through a policy loan • Policyowner can surrender the policy for its cash surrender value Types of cash value coverage: • Whole life insurance—the most basic type of cash value policy o Provides constant amount of coverage with level premiums o Single-premium, limited payment, and continuous premium options • Modified whole life policies allow more flexibility o Modified-premium—Smaller premiums for an initial period, then larger premiums for remainder of policy. Level face amount. o Modified coverage—Larger face amount at first, then smaller face amount during policy’s later years. Level premium amount. o Joint whole life—Insures two lives under one policy. Pays death benefit when the FIRST insured dies. o Last survivor coverage—Insures two or more lives under one policy. Pays death benefit when the LAST insured dies. New generation cash value products: • Universal Life (UL) o Separate pricing factors—clearly lists mortality charges, interest rate, and fees o Within limits, policyowner can adjust face amount and size/timing of premiums o Policyowner can choose level death benefit or variable death benefit • Indexed Universal Life (IUL) o Offers same features as universal life o Allows policyowner to tie cash value to an equity index (example: S&P 500) o Guarantees a minimum interest rate • Variable Life (VL) o Premiums are fixed o Policyowner chooses how premiums are invested—into a fixed account or one or more subaccounts o Cash value and death benefit vary according to subaccount performance o Regulated as securities • Variable Universal Life (VUL) o Blends investment flexibility of VL with premium and death benefit flexibility of UL o Like VL, policyowner chooses how premiums are invested o Like UL, policyowner can choose the size/timing of renewal premiums o Like UL, policyowner can choose whether death benefit varies or remains level o Regulated as securities Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 114,
@@ -1479,7 +1479,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 115,
@@ -1492,7 +1492,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 116,
@@ -1505,7 +1505,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 117,
@@ -1518,7 +1518,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 118,
@@ -1531,7 +1531,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 119,
@@ -1544,7 +1544,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 120,
@@ -1557,7 +1557,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 121,
@@ -1570,7 +1570,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 122,
@@ -1583,7 +1583,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 123,
@@ -1596,7 +1596,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 124,
@@ -1609,7 +1609,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 125,
@@ -1622,7 +1622,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 126,
@@ -1635,7 +1635,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 127,
@@ -1648,7 +1648,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 128,
@@ -1661,7 +1661,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 129,
@@ -1674,7 +1674,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 130,
@@ -1687,7 +1687,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 131,
@@ -1700,7 +1700,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 132,
@@ -1713,7 +1713,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 133,
@@ -1726,7 +1726,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 134,
@@ -1739,7 +1739,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 135,
@@ -1752,7 +1752,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 136,
@@ -1765,7 +1765,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 137,
@@ -1778,7 +1778,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 138,
@@ -1791,7 +1791,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 139,
@@ -1804,7 +1804,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 140,
@@ -1817,7 +1817,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 141,
@@ -1830,7 +1830,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 142,
@@ -1843,7 +1843,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 143,
@@ -1856,7 +1856,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 144,
@@ -1869,7 +1869,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 145,
@@ -1882,7 +1882,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 146,
@@ -1895,7 +1895,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 147,
@@ -1908,7 +1908,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 148,
@@ -1921,7 +1921,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 149,
@@ -1934,7 +1934,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 150,
@@ -1947,7 +1947,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 151,
@@ -1960,7 +1960,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 152,
@@ -1973,7 +1973,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 153,
@@ -1986,7 +1986,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 154,
@@ -1999,7 +1999,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 155,
@@ -2012,7 +2012,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 156,
@@ -2025,7 +2025,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 157,
@@ -2038,12 +2038,12 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 158,
         "Node Name": "Total Disability",
-        "Definition": "A condition defined in a disability income policy to determine eligibility for benefits. Common definitions include \"current usual,\" \"own previous occupation,\" and \"income loss.\"",
+        "Definition": 'A condition defined in a disability income policy to determine eligibility for benefits. Common definitions include "current usual," "own previous occupation," and "income loss."',
         "Category": "Disability Definition",
         "Domain Tags": "disability, eligibility, definition",
         "Related Nodes": "KN-004, KN-023",
@@ -2051,7 +2051,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 159,
@@ -2064,7 +2064,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 160,
@@ -2077,7 +2077,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 161,
@@ -2090,7 +2090,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 162,
@@ -2103,7 +2103,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 163,
@@ -2116,7 +2116,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 2 Lesson 4 Health Insurance Summary of Key Points Health insurance protects against the risk of financial loss from illness or injury. Available in three main forms—medical expense, long-term care, and disability income. Medical expense coverage pays for treatment of insured’s illnesses and injuries. • Traditional medical expense coverage o Provides benefits for basic medical care; excludes some expenses o Require insureds to participate in medical costs—deductible, coinsurance • Supplemental benefits offered through dental and vision coverage, as well as dread disease (critical illness) coverage • Managed care plans manage members’ healthcare and costs o Use provider networks and primary care providers to coordinate care and access to specialists o Three types of plans: health maintenance organization (HMO), preferred provider organization (PPO), and point-of-service (POS) plan o Require insureds to participate in medical costs—copayment o Offer preventive, wellness, and patient education programs • Consumer-driven health plans encourage insureds to manage their own health care costs o Health savings plans, health reimbursement arrangements • The Affordable Care Act (ACA) Long-term care (LTC) coverage pays for medical and other services for constant care at home or in a qualified facility • Benefit triggers include activities of daily living (ADLs) and cognitive impairment • A variety of qualified facilities • Most policies include a daily benefit amount; others include a monthly benefit amount Disability income coverage provides income replacement benefits if insured is unable to work because of illness or injury. • Three common definitions of total disability: o Current usual definition, used in most policies o Own previous occupation definition o Income loss definition • Presumptive disabilities include loss of speech or hearing, total and permanent blindness, and loss of the use of any two limbs • Specify an elimination period (waiting period) before benefits are payable • Disability income payments are less than insured’s pre-disability earnings • Supplemental benefits available, including partial disability benefits and cost-of- living adjustments (COLAs) • Disability benefits through government-sponsored programs o Supplemental Security Income (SSI) program based on financial need o Social Security Disability Income (SSDI) program based on Social Security taxes paid o Workers’ Compensation program based on illness or injury suffered on the job Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 164,
@@ -2129,7 +2129,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 1 Supplemental Benefits Summary of Key Points Life insurance policyowners can purchase several different types of supplemental benefits to add to their policies. Supplemental disability benefits include: • waiver of premium for disability (WP)— the insurer waives renewal premiums while the insured is totally disabled • waiver of premium for payor—the insurer waives renewal premiums if the policyowner dies or becomes totally disabled • disability income benefit—provides a monthly income benefit to the policyowner- insured if he becomes totally disabled Accident-related benefits include: • accidental death benefit—provides an additional death benefit if an accident causes the insured’s death • accidental death and dismemberment (AD&D) benefit—provides an additional benefit if an accident causes the insured to die or to lose any two limbs or the sight in both eyes Accelerated death benefits include: • terminal illness (TI) benefit—pays part of the death benefit to a policyowner-insured with a terminal illness • dread disease (DD) benefit—pays part of the death benefit to the policyowner if the insured suffers from a specified disease • long-term care (LTC) insurance benefit—pays a monthly benefit to the policyowner if the insured requires constant care for a medical condition Coverage for additional insureds includes: • spouse and children’s insurance rider • children’s insurance rider • second insured rider Insurability benefit riders—an individual can purchase insurance without new evidence of insurability—include: • guaranteed insurability (GI) benefit—the policyowner can purchase additional insurance on stated dates • paid-up additions option benefit—(for whole life only) the policyowner can purchase single-premium paid-up additions on stated dates Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 165,
@@ -2142,7 +2142,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 1 Supplemental Benefits Summary of Key Points Life insurance policyowners can purchase several different types of supplemental benefits to add to their policies. Supplemental disability benefits include: • waiver of premium for disability (WP)— the insurer waives renewal premiums while the insured is totally disabled • waiver of premium for payor—the insurer waives renewal premiums if the policyowner dies or becomes totally disabled • disability income benefit—provides a monthly income benefit to the policyowner- insured if he becomes totally disabled Accident-related benefits include: • accidental death benefit—provides an additional death benefit if an accident causes the insured’s death • accidental death and dismemberment (AD&D) benefit—provides an additional benefit if an accident causes the insured to die or to lose any two limbs or the sight in both eyes Accelerated death benefits include: • terminal illness (TI) benefit—pays part of the death benefit to a policyowner-insured with a terminal illness • dread disease (DD) benefit—pays part of the death benefit to the policyowner if the insured suffers from a specified disease • long-term care (LTC) insurance benefit—pays a monthly benefit to the policyowner if the insured requires constant care for a medical condition Coverage for additional insureds includes: • spouse and children’s insurance rider • children’s insurance rider • second insured rider Insurability benefit riders—an individual can purchase insurance without new evidence of insurability—include: • guaranteed insurability (GI) benefit—the policyowner can purchase additional insurance on stated dates • paid-up additions option benefit—(for whole life only) the policyowner can purchase single-premium paid-up additions on stated dates Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 166,
@@ -2155,7 +2155,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 1 Supplemental Benefits Summary of Key Points Life insurance policyowners can purchase several different types of supplemental benefits to add to their policies. Supplemental disability benefits include: • waiver of premium for disability (WP)— the insurer waives renewal premiums while the insured is totally disabled • waiver of premium for payor—the insurer waives renewal premiums if the policyowner dies or becomes totally disabled • disability income benefit—provides a monthly income benefit to the policyowner- insured if he becomes totally disabled Accident-related benefits include: • accidental death benefit—provides an additional death benefit if an accident causes the insured’s death • accidental death and dismemberment (AD&D) benefit—provides an additional benefit if an accident causes the insured to die or to lose any two limbs or the sight in both eyes Accelerated death benefits include: • terminal illness (TI) benefit—pays part of the death benefit to a policyowner-insured with a terminal illness • dread disease (DD) benefit—pays part of the death benefit to the policyowner if the insured suffers from a specified disease • long-term care (LTC) insurance benefit—pays a monthly benefit to the policyowner if the insured requires constant care for a medical condition Coverage for additional insureds includes: • spouse and children’s insurance rider • children’s insurance rider • second insured rider Insurability benefit riders—an individual can purchase insurance without new evidence of insurability—include: • guaranteed insurability (GI) benefit—the policyowner can purchase additional insurance on stated dates • paid-up additions option benefit—(for whole life only) the policyowner can purchase single-premium paid-up additions on stated dates Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 167,
@@ -2168,7 +2168,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 1 Supplemental Benefits Summary of Key Points Life insurance policyowners can purchase several different types of supplemental benefits to add to their policies. Supplemental disability benefits include: • waiver of premium for disability (WP)— the insurer waives renewal premiums while the insured is totally disabled • waiver of premium for payor—the insurer waives renewal premiums if the policyowner dies or becomes totally disabled • disability income benefit—provides a monthly income benefit to the policyowner- insured if he becomes totally disabled Accident-related benefits include: • accidental death benefit—provides an additional death benefit if an accident causes the insured’s death • accidental death and dismemberment (AD&D) benefit—provides an additional benefit if an accident causes the insured to die or to lose any two limbs or the sight in both eyes Accelerated death benefits include: • terminal illness (TI) benefit—pays part of the death benefit to a policyowner-insured with a terminal illness • dread disease (DD) benefit—pays part of the death benefit to the policyowner if the insured suffers from a specified disease • long-term care (LTC) insurance benefit—pays a monthly benefit to the policyowner if the insured requires constant care for a medical condition Coverage for additional insureds includes: • spouse and children’s insurance rider • children’s insurance rider • second insured rider Insurability benefit riders—an individual can purchase insurance without new evidence of insurability—include: • guaranteed insurability (GI) benefit—the policyowner can purchase additional insurance on stated dates • paid-up additions option benefit—(for whole life only) the policyowner can purchase single-premium paid-up additions on stated dates Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 168,
@@ -2181,7 +2181,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 1 Supplemental Benefits Summary of Key Points Life insurance policyowners can purchase several different types of supplemental benefits to add to their policies. Supplemental disability benefits include: • waiver of premium for disability (WP)— the insurer waives renewal premiums while the insured is totally disabled • waiver of premium for payor—the insurer waives renewal premiums if the policyowner dies or becomes totally disabled • disability income benefit—provides a monthly income benefit to the policyowner- insured if he becomes totally disabled Accident-related benefits include: • accidental death benefit—provides an additional death benefit if an accident causes the insured’s death • accidental death and dismemberment (AD&D) benefit—provides an additional benefit if an accident causes the insured to die or to lose any two limbs or the sight in both eyes Accelerated death benefits include: • terminal illness (TI) benefit—pays part of the death benefit to a policyowner-insured with a terminal illness • dread disease (DD) benefit—pays part of the death benefit to the policyowner if the insured suffers from a specified disease • long-term care (LTC) insurance benefit—pays a monthly benefit to the policyowner if the insured requires constant care for a medical condition Coverage for additional insureds includes: • spouse and children’s insurance rider • children’s insurance rider • second insured rider Insurability benefit riders—an individual can purchase insurance without new evidence of insurability—include: • guaranteed insurability (GI) benefit—the policyowner can purchase additional insurance on stated dates • paid-up additions option benefit—(for whole life only) the policyowner can purchase single-premium paid-up additions on stated dates Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 169,
@@ -2194,12 +2194,12 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 1 Supplemental Benefits Summary of Key Points Life insurance policyowners can purchase several different types of supplemental benefits to add to their policies. Supplemental disability benefits include: • waiver of premium for disability (WP)— the insurer waives renewal premiums while the insured is totally disabled • waiver of premium for payor—the insurer waives renewal premiums if the policyowner dies or becomes totally disabled • disability income benefit—provides a monthly income benefit to the policyowner- insured if he becomes totally disabled Accident-related benefits include: • accidental death benefit—provides an additional death benefit if an accident causes the insured’s death • accidental death and dismemberment (AD&D) benefit—provides an additional benefit if an accident causes the insured to die or to lose any two limbs or the sight in both eyes Accelerated death benefits include: • terminal illness (TI) benefit—pays part of the death benefit to a policyowner-insured with a terminal illness • dread disease (DD) benefit—pays part of the death benefit to the policyowner if the insured suffers from a specified disease • long-term care (LTC) insurance benefit—pays a monthly benefit to the policyowner if the insured requires constant care for a medical condition Coverage for additional insureds includes: • spouse and children’s insurance rider • children’s insurance rider • second insured rider Insurability benefit riders—an individual can purchase insurance without new evidence of insurability—include: • guaranteed insurability (GI) benefit—the policyowner can purchase additional insurance on stated dates • paid-up additions option benefit—(for whole life only) the policyowner can purchase single-premium paid-up additions on stated dates Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 170,
         "Node Name": "Accidental Death Benefit (ADB)",
-        "Definition": "A rider that pays an additional sum, often equal to the policy's face amount (known as \"double indemnity\"), if the insured dies as a direct result of an accident.",
+        "Definition": 'A rider that pays an additional sum, often equal to the policy\'s face amount (known as "double indemnity"), if the insured dies as a direct result of an accident.',
         "Category": "Rider Type",
         "Domain Tags": "accident, double indemnity, ADB",
         "Related Nodes": "KN-006, KN-008",
@@ -2207,7 +2207,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 1 Supplemental Benefits Summary of Key Points Life insurance policyowners can purchase several different types of supplemental benefits to add to their policies. Supplemental disability benefits include: • waiver of premium for disability (WP)— the insurer waives renewal premiums while the insured is totally disabled • waiver of premium for payor—the insurer waives renewal premiums if the policyowner dies or becomes totally disabled • disability income benefit—provides a monthly income benefit to the policyowner- insured if he becomes totally disabled Accident-related benefits include: • accidental death benefit—provides an additional death benefit if an accident causes the insured’s death • accidental death and dismemberment (AD&D) benefit—provides an additional benefit if an accident causes the insured to die or to lose any two limbs or the sight in both eyes Accelerated death benefits include: • terminal illness (TI) benefit—pays part of the death benefit to a policyowner-insured with a terminal illness • dread disease (DD) benefit—pays part of the death benefit to the policyowner if the insured suffers from a specified disease • long-term care (LTC) insurance benefit—pays a monthly benefit to the policyowner if the insured requires constant care for a medical condition Coverage for additional insureds includes: • spouse and children’s insurance rider • children’s insurance rider • second insured rider Insurability benefit riders—an individual can purchase insurance without new evidence of insurability—include: • guaranteed insurability (GI) benefit—the policyowner can purchase additional insurance on stated dates • paid-up additions option benefit—(for whole life only) the policyowner can purchase single-premium paid-up additions on stated dates Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 171,
@@ -2220,7 +2220,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 1 Supplemental Benefits Summary of Key Points Life insurance policyowners can purchase several different types of supplemental benefits to add to their policies. Supplemental disability benefits include: • waiver of premium for disability (WP)— the insurer waives renewal premiums while the insured is totally disabled • waiver of premium for payor—the insurer waives renewal premiums if the policyowner dies or becomes totally disabled • disability income benefit—provides a monthly income benefit to the policyowner- insured if he becomes totally disabled Accident-related benefits include: • accidental death benefit—provides an additional death benefit if an accident causes the insured’s death • accidental death and dismemberment (AD&D) benefit—provides an additional benefit if an accident causes the insured to die or to lose any two limbs or the sight in both eyes Accelerated death benefits include: • terminal illness (TI) benefit—pays part of the death benefit to a policyowner-insured with a terminal illness • dread disease (DD) benefit—pays part of the death benefit to the policyowner if the insured suffers from a specified disease • long-term care (LTC) insurance benefit—pays a monthly benefit to the policyowner if the insured requires constant care for a medical condition Coverage for additional insureds includes: • spouse and children’s insurance rider • children’s insurance rider • second insured rider Insurability benefit riders—an individual can purchase insurance without new evidence of insurability—include: • guaranteed insurability (GI) benefit—the policyowner can purchase additional insurance on stated dates • paid-up additions option benefit—(for whole life only) the policyowner can purchase single-premium paid-up additions on stated dates Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 172,
@@ -2233,7 +2233,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 1 Supplemental Benefits Summary of Key Points Life insurance policyowners can purchase several different types of supplemental benefits to add to their policies. Supplemental disability benefits include: • waiver of premium for disability (WP)— the insurer waives renewal premiums while the insured is totally disabled • waiver of premium for payor—the insurer waives renewal premiums if the policyowner dies or becomes totally disabled • disability income benefit—provides a monthly income benefit to the policyowner- insured if he becomes totally disabled Accident-related benefits include: • accidental death benefit—provides an additional death benefit if an accident causes the insured’s death • accidental death and dismemberment (AD&D) benefit—provides an additional benefit if an accident causes the insured to die or to lose any two limbs or the sight in both eyes Accelerated death benefits include: • terminal illness (TI) benefit—pays part of the death benefit to a policyowner-insured with a terminal illness • dread disease (DD) benefit—pays part of the death benefit to the policyowner if the insured suffers from a specified disease • long-term care (LTC) insurance benefit—pays a monthly benefit to the policyowner if the insured requires constant care for a medical condition Coverage for additional insureds includes: • spouse and children’s insurance rider • children’s insurance rider • second insured rider Insurability benefit riders—an individual can purchase insurance without new evidence of insurability—include: • guaranteed insurability (GI) benefit—the policyowner can purchase additional insurance on stated dates • paid-up additions option benefit—(for whole life only) the policyowner can purchase single-premium paid-up additions on stated dates Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 173,
@@ -2246,7 +2246,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 1 Supplemental Benefits Summary of Key Points Life insurance policyowners can purchase several different types of supplemental benefits to add to their policies. Supplemental disability benefits include: • waiver of premium for disability (WP)— the insurer waives renewal premiums while the insured is totally disabled • waiver of premium for payor—the insurer waives renewal premiums if the policyowner dies or becomes totally disabled • disability income benefit—provides a monthly income benefit to the policyowner- insured if he becomes totally disabled Accident-related benefits include: • accidental death benefit—provides an additional death benefit if an accident causes the insured’s death • accidental death and dismemberment (AD&D) benefit—provides an additional benefit if an accident causes the insured to die or to lose any two limbs or the sight in both eyes Accelerated death benefits include: • terminal illness (TI) benefit—pays part of the death benefit to a policyowner-insured with a terminal illness • dread disease (DD) benefit—pays part of the death benefit to the policyowner if the insured suffers from a specified disease • long-term care (LTC) insurance benefit—pays a monthly benefit to the policyowner if the insured requires constant care for a medical condition Coverage for additional insureds includes: • spouse and children’s insurance rider • children’s insurance rider • second insured rider Insurability benefit riders—an individual can purchase insurance without new evidence of insurability—include: • guaranteed insurability (GI) benefit—the policyowner can purchase additional insurance on stated dates • paid-up additions option benefit—(for whole life only) the policyowner can purchase single-premium paid-up additions on stated dates Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 174,
@@ -2259,7 +2259,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 1 Supplemental Benefits Summary of Key Points Life insurance policyowners can purchase several different types of supplemental benefits to add to their policies. Supplemental disability benefits include: • waiver of premium for disability (WP)— the insurer waives renewal premiums while the insured is totally disabled • waiver of premium for payor—the insurer waives renewal premiums if the policyowner dies or becomes totally disabled • disability income benefit—provides a monthly income benefit to the policyowner- insured if he becomes totally disabled Accident-related benefits include: • accidental death benefit—provides an additional death benefit if an accident causes the insured’s death • accidental death and dismemberment (AD&D) benefit—provides an additional benefit if an accident causes the insured to die or to lose any two limbs or the sight in both eyes Accelerated death benefits include: • terminal illness (TI) benefit—pays part of the death benefit to a policyowner-insured with a terminal illness • dread disease (DD) benefit—pays part of the death benefit to the policyowner if the insured suffers from a specified disease • long-term care (LTC) insurance benefit—pays a monthly benefit to the policyowner if the insured requires constant care for a medical condition Coverage for additional insureds includes: • spouse and children’s insurance rider • children’s insurance rider • second insured rider Insurability benefit riders—an individual can purchase insurance without new evidence of insurability—include: • guaranteed insurability (GI) benefit—the policyowner can purchase additional insurance on stated dates • paid-up additions option benefit—(for whole life only) the policyowner can purchase single-premium paid-up additions on stated dates Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 175,
@@ -2272,7 +2272,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 1 Supplemental Benefits Summary of Key Points Life insurance policyowners can purchase several different types of supplemental benefits to add to their policies. Supplemental disability benefits include: • waiver of premium for disability (WP)— the insurer waives renewal premiums while the insured is totally disabled • waiver of premium for payor—the insurer waives renewal premiums if the policyowner dies or becomes totally disabled • disability income benefit—provides a monthly income benefit to the policyowner- insured if he becomes totally disabled Accident-related benefits include: • accidental death benefit—provides an additional death benefit if an accident causes the insured’s death • accidental death and dismemberment (AD&D) benefit—provides an additional benefit if an accident causes the insured to die or to lose any two limbs or the sight in both eyes Accelerated death benefits include: • terminal illness (TI) benefit—pays part of the death benefit to a policyowner-insured with a terminal illness • dread disease (DD) benefit—pays part of the death benefit to the policyowner if the insured suffers from a specified disease • long-term care (LTC) insurance benefit—pays a monthly benefit to the policyowner if the insured requires constant care for a medical condition Coverage for additional insureds includes: • spouse and children’s insurance rider • children’s insurance rider • second insured rider Insurability benefit riders—an individual can purchase insurance without new evidence of insurability—include: • guaranteed insurability (GI) benefit—the policyowner can purchase additional insurance on stated dates • paid-up additions option benefit—(for whole life only) the policyowner can purchase single-premium paid-up additions on stated dates Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 176,
@@ -2285,12 +2285,12 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 1 Supplemental Benefits Summary of Key Points Life insurance policyowners can purchase several different types of supplemental benefits to add to their policies. Supplemental disability benefits include: • waiver of premium for disability (WP)— the insurer waives renewal premiums while the insured is totally disabled • waiver of premium for payor—the insurer waives renewal premiums if the policyowner dies or becomes totally disabled • disability income benefit—provides a monthly income benefit to the policyowner- insured if he becomes totally disabled Accident-related benefits include: • accidental death benefit—provides an additional death benefit if an accident causes the insured’s death • accidental death and dismemberment (AD&D) benefit—provides an additional benefit if an accident causes the insured to die or to lose any two limbs or the sight in both eyes Accelerated death benefits include: • terminal illness (TI) benefit—pays part of the death benefit to a policyowner-insured with a terminal illness • dread disease (DD) benefit—pays part of the death benefit to the policyowner if the insured suffers from a specified disease • long-term care (LTC) insurance benefit—pays a monthly benefit to the policyowner if the insured requires constant care for a medical condition Coverage for additional insureds includes: • spouse and children’s insurance rider • children’s insurance rider • second insured rider Insurability benefit riders—an individual can purchase insurance without new evidence of insurability—include: • guaranteed insurability (GI) benefit—the policyowner can purchase additional insurance on stated dates • paid-up additions option benefit—(for whole life only) the policyowner can purchase single-premium paid-up additions on stated dates Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 177,
         "Node Name": "Spouse and Children’s Insurance Rider",
-        "Definition": "A rider that provides term life insurance for the insured's spouse and all of their children, often sold in \"coverage units\" for a flat premium rate for the children.",
+        "Definition": 'A rider that provides term life insurance for the insured\'s spouse and all of their children, often sold in "coverage units" for a flat premium rate for the children.',
         "Category": "Rider Type",
         "Domain Tags": "family coverage, term rider, child rider",
         "Related Nodes": "KN-013",
@@ -2298,7 +2298,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 1 Supplemental Benefits Summary of Key Points Life insurance policyowners can purchase several different types of supplemental benefits to add to their policies. Supplemental disability benefits include: • waiver of premium for disability (WP)— the insurer waives renewal premiums while the insured is totally disabled • waiver of premium for payor—the insurer waives renewal premiums if the policyowner dies or becomes totally disabled • disability income benefit—provides a monthly income benefit to the policyowner- insured if he becomes totally disabled Accident-related benefits include: • accidental death benefit—provides an additional death benefit if an accident causes the insured’s death • accidental death and dismemberment (AD&D) benefit—provides an additional benefit if an accident causes the insured to die or to lose any two limbs or the sight in both eyes Accelerated death benefits include: • terminal illness (TI) benefit—pays part of the death benefit to a policyowner-insured with a terminal illness • dread disease (DD) benefit—pays part of the death benefit to the policyowner if the insured suffers from a specified disease • long-term care (LTC) insurance benefit—pays a monthly benefit to the policyowner if the insured requires constant care for a medical condition Coverage for additional insureds includes: • spouse and children’s insurance rider • children’s insurance rider • second insured rider Insurability benefit riders—an individual can purchase insurance without new evidence of insurability—include: • guaranteed insurability (GI) benefit—the policyowner can purchase additional insurance on stated dates • paid-up additions option benefit—(for whole life only) the policyowner can purchase single-premium paid-up additions on stated dates Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 178,
@@ -2311,7 +2311,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 1 Supplemental Benefits Summary of Key Points Life insurance policyowners can purchase several different types of supplemental benefits to add to their policies. Supplemental disability benefits include: • waiver of premium for disability (WP)— the insurer waives renewal premiums while the insured is totally disabled • waiver of premium for payor—the insurer waives renewal premiums if the policyowner dies or becomes totally disabled • disability income benefit—provides a monthly income benefit to the policyowner- insured if he becomes totally disabled Accident-related benefits include: • accidental death benefit—provides an additional death benefit if an accident causes the insured’s death • accidental death and dismemberment (AD&D) benefit—provides an additional benefit if an accident causes the insured to die or to lose any two limbs or the sight in both eyes Accelerated death benefits include: • terminal illness (TI) benefit—pays part of the death benefit to a policyowner-insured with a terminal illness • dread disease (DD) benefit—pays part of the death benefit to the policyowner if the insured suffers from a specified disease • long-term care (LTC) insurance benefit—pays a monthly benefit to the policyowner if the insured requires constant care for a medical condition Coverage for additional insureds includes: • spouse and children’s insurance rider • children’s insurance rider • second insured rider Insurability benefit riders—an individual can purchase insurance without new evidence of insurability—include: • guaranteed insurability (GI) benefit—the policyowner can purchase additional insurance on stated dates • paid-up additions option benefit—(for whole life only) the policyowner can purchase single-premium paid-up additions on stated dates Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 179,
@@ -2324,7 +2324,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 2 Life Insurance Policy Provisions Summary of Key Points Life insurance policies include a number of important provisions. • entire contract provision— describes how policy, attached riders, and attached copy of the application make up contract • free-look provision— policyowner has stated period of time to examine policy • incontestability provision—allows insurers to avoid a life insurance contract if applicant provided inaccurate information considered material misrepresentation • grace period provision—specifies length of time following renewal premium due date within which premium may be paid without loss of coverage • reinstatement provision—describes conditions necessary for reinstatement • misstatement of age or sex provision— describes action an insurer takes to adjust amount of policy benefit or premium if age or sex of the insured is incorrectly stated on application Cash value life insurance policies have additional provisions. • policy loan provision—grants policyowner right to take out policy loan • policy withdrawal provision—allows universal policyowner to withdraw up to amount of cash value of policy in cash • nonforfeiture provision—provides options to owner of cash value policy if policy lapses or policyowner decides to surrender or terminate policy • automatic nonforfeiture benefit—applies if owner hasn’t chosen an option when policy lapses Exclusions are provisions that describe circumstances when an insurer will not pay the life insurance policy proceeds following the death of the insured. • suicide exclusion provision—typically excludes suicide for two years from policy issue • aviation exclusion applies to insureds involved with military aviation or experimental aircraft or crew members on small private planes Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 180,
@@ -2337,7 +2337,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 2 Life Insurance Policy Provisions Summary of Key Points Life insurance policies include a number of important provisions. • entire contract provision— describes how policy, attached riders, and attached copy of the application make up contract • free-look provision— policyowner has stated period of time to examine policy • incontestability provision—allows insurers to avoid a life insurance contract if applicant provided inaccurate information considered material misrepresentation • grace period provision—specifies length of time following renewal premium due date within which premium may be paid without loss of coverage • reinstatement provision—describes conditions necessary for reinstatement • misstatement of age or sex provision— describes action an insurer takes to adjust amount of policy benefit or premium if age or sex of the insured is incorrectly stated on application Cash value life insurance policies have additional provisions. • policy loan provision—grants policyowner right to take out policy loan • policy withdrawal provision—allows universal policyowner to withdraw up to amount of cash value of policy in cash • nonforfeiture provision—provides options to owner of cash value policy if policy lapses or policyowner decides to surrender or terminate policy • automatic nonforfeiture benefit—applies if owner hasn’t chosen an option when policy lapses Exclusions are provisions that describe circumstances when an insurer will not pay the life insurance policy proceeds following the death of the insured. • suicide exclusion provision—typically excludes suicide for two years from policy issue • aviation exclusion applies to insureds involved with military aviation or experimental aircraft or crew members on small private planes Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 181,
@@ -2350,7 +2350,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 2 Life Insurance Policy Provisions Summary of Key Points Life insurance policies include a number of important provisions. • entire contract provision— describes how policy, attached riders, and attached copy of the application make up contract • free-look provision— policyowner has stated period of time to examine policy • incontestability provision—allows insurers to avoid a life insurance contract if applicant provided inaccurate information considered material misrepresentation • grace period provision—specifies length of time following renewal premium due date within which premium may be paid without loss of coverage • reinstatement provision—describes conditions necessary for reinstatement • misstatement of age or sex provision— describes action an insurer takes to adjust amount of policy benefit or premium if age or sex of the insured is incorrectly stated on application Cash value life insurance policies have additional provisions. • policy loan provision—grants policyowner right to take out policy loan • policy withdrawal provision—allows universal policyowner to withdraw up to amount of cash value of policy in cash • nonforfeiture provision—provides options to owner of cash value policy if policy lapses or policyowner decides to surrender or terminate policy • automatic nonforfeiture benefit—applies if owner hasn’t chosen an option when policy lapses Exclusions are provisions that describe circumstances when an insurer will not pay the life insurance policy proceeds following the death of the insured. • suicide exclusion provision—typically excludes suicide for two years from policy issue • aviation exclusion applies to insureds involved with military aviation or experimental aircraft or crew members on small private planes Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 182,
@@ -2363,7 +2363,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 2 Life Insurance Policy Provisions Summary of Key Points Life insurance policies include a number of important provisions. • entire contract provision— describes how policy, attached riders, and attached copy of the application make up contract • free-look provision— policyowner has stated period of time to examine policy • incontestability provision—allows insurers to avoid a life insurance contract if applicant provided inaccurate information considered material misrepresentation • grace period provision—specifies length of time following renewal premium due date within which premium may be paid without loss of coverage • reinstatement provision—describes conditions necessary for reinstatement • misstatement of age or sex provision— describes action an insurer takes to adjust amount of policy benefit or premium if age or sex of the insured is incorrectly stated on application Cash value life insurance policies have additional provisions. • policy loan provision—grants policyowner right to take out policy loan • policy withdrawal provision—allows universal policyowner to withdraw up to amount of cash value of policy in cash • nonforfeiture provision—provides options to owner of cash value policy if policy lapses or policyowner decides to surrender or terminate policy • automatic nonforfeiture benefit—applies if owner hasn’t chosen an option when policy lapses Exclusions are provisions that describe circumstances when an insurer will not pay the life insurance policy proceeds following the death of the insured. • suicide exclusion provision—typically excludes suicide for two years from policy issue • aviation exclusion applies to insureds involved with military aviation or experimental aircraft or crew members on small private planes Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 183,
@@ -2376,7 +2376,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 2 Life Insurance Policy Provisions Summary of Key Points Life insurance policies include a number of important provisions. • entire contract provision— describes how policy, attached riders, and attached copy of the application make up contract • free-look provision— policyowner has stated period of time to examine policy • incontestability provision—allows insurers to avoid a life insurance contract if applicant provided inaccurate information considered material misrepresentation • grace period provision—specifies length of time following renewal premium due date within which premium may be paid without loss of coverage • reinstatement provision—describes conditions necessary for reinstatement • misstatement of age or sex provision— describes action an insurer takes to adjust amount of policy benefit or premium if age or sex of the insured is incorrectly stated on application Cash value life insurance policies have additional provisions. • policy loan provision—grants policyowner right to take out policy loan • policy withdrawal provision—allows universal policyowner to withdraw up to amount of cash value of policy in cash • nonforfeiture provision—provides options to owner of cash value policy if policy lapses or policyowner decides to surrender or terminate policy • automatic nonforfeiture benefit—applies if owner hasn’t chosen an option when policy lapses Exclusions are provisions that describe circumstances when an insurer will not pay the life insurance policy proceeds following the death of the insured. • suicide exclusion provision—typically excludes suicide for two years from policy issue • aviation exclusion applies to insureds involved with military aviation or experimental aircraft or crew members on small private planes Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 184,
@@ -2389,7 +2389,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 2 Life Insurance Policy Provisions Summary of Key Points Life insurance policies include a number of important provisions. • entire contract provision— describes how policy, attached riders, and attached copy of the application make up contract • free-look provision— policyowner has stated period of time to examine policy • incontestability provision—allows insurers to avoid a life insurance contract if applicant provided inaccurate information considered material misrepresentation • grace period provision—specifies length of time following renewal premium due date within which premium may be paid without loss of coverage • reinstatement provision—describes conditions necessary for reinstatement • misstatement of age or sex provision— describes action an insurer takes to adjust amount of policy benefit or premium if age or sex of the insured is incorrectly stated on application Cash value life insurance policies have additional provisions. • policy loan provision—grants policyowner right to take out policy loan • policy withdrawal provision—allows universal policyowner to withdraw up to amount of cash value of policy in cash • nonforfeiture provision—provides options to owner of cash value policy if policy lapses or policyowner decides to surrender or terminate policy • automatic nonforfeiture benefit—applies if owner hasn’t chosen an option when policy lapses Exclusions are provisions that describe circumstances when an insurer will not pay the life insurance policy proceeds following the death of the insured. • suicide exclusion provision—typically excludes suicide for two years from policy issue • aviation exclusion applies to insureds involved with military aviation or experimental aircraft or crew members on small private planes Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 185,
@@ -2402,7 +2402,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 2 Life Insurance Policy Provisions Summary of Key Points Life insurance policies include a number of important provisions. • entire contract provision— describes how policy, attached riders, and attached copy of the application make up contract • free-look provision— policyowner has stated period of time to examine policy • incontestability provision—allows insurers to avoid a life insurance contract if applicant provided inaccurate information considered material misrepresentation • grace period provision—specifies length of time following renewal premium due date within which premium may be paid without loss of coverage • reinstatement provision—describes conditions necessary for reinstatement • misstatement of age or sex provision— describes action an insurer takes to adjust amount of policy benefit or premium if age or sex of the insured is incorrectly stated on application Cash value life insurance policies have additional provisions. • policy loan provision—grants policyowner right to take out policy loan • policy withdrawal provision—allows universal policyowner to withdraw up to amount of cash value of policy in cash • nonforfeiture provision—provides options to owner of cash value policy if policy lapses or policyowner decides to surrender or terminate policy • automatic nonforfeiture benefit—applies if owner hasn’t chosen an option when policy lapses Exclusions are provisions that describe circumstances when an insurer will not pay the life insurance policy proceeds following the death of the insured. • suicide exclusion provision—typically excludes suicide for two years from policy issue • aviation exclusion applies to insureds involved with military aviation or experimental aircraft or crew members on small private planes Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 186,
@@ -2415,7 +2415,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 2 Life Insurance Policy Provisions Summary of Key Points Life insurance policies include a number of important provisions. • entire contract provision— describes how policy, attached riders, and attached copy of the application make up contract • free-look provision— policyowner has stated period of time to examine policy • incontestability provision—allows insurers to avoid a life insurance contract if applicant provided inaccurate information considered material misrepresentation • grace period provision—specifies length of time following renewal premium due date within which premium may be paid without loss of coverage • reinstatement provision—describes conditions necessary for reinstatement • misstatement of age or sex provision— describes action an insurer takes to adjust amount of policy benefit or premium if age or sex of the insured is incorrectly stated on application Cash value life insurance policies have additional provisions. • policy loan provision—grants policyowner right to take out policy loan • policy withdrawal provision—allows universal policyowner to withdraw up to amount of cash value of policy in cash • nonforfeiture provision—provides options to owner of cash value policy if policy lapses or policyowner decides to surrender or terminate policy • automatic nonforfeiture benefit—applies if owner hasn’t chosen an option when policy lapses Exclusions are provisions that describe circumstances when an insurer will not pay the life insurance policy proceeds following the death of the insured. • suicide exclusion provision—typically excludes suicide for two years from policy issue • aviation exclusion applies to insureds involved with military aviation or experimental aircraft or crew members on small private planes Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 187,
@@ -2428,7 +2428,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 2 Life Insurance Policy Provisions Summary of Key Points Life insurance policies include a number of important provisions. • entire contract provision— describes how policy, attached riders, and attached copy of the application make up contract • free-look provision— policyowner has stated period of time to examine policy • incontestability provision—allows insurers to avoid a life insurance contract if applicant provided inaccurate information considered material misrepresentation • grace period provision—specifies length of time following renewal premium due date within which premium may be paid without loss of coverage • reinstatement provision—describes conditions necessary for reinstatement • misstatement of age or sex provision— describes action an insurer takes to adjust amount of policy benefit or premium if age or sex of the insured is incorrectly stated on application Cash value life insurance policies have additional provisions. • policy loan provision—grants policyowner right to take out policy loan • policy withdrawal provision—allows universal policyowner to withdraw up to amount of cash value of policy in cash • nonforfeiture provision—provides options to owner of cash value policy if policy lapses or policyowner decides to surrender or terminate policy • automatic nonforfeiture benefit—applies if owner hasn’t chosen an option when policy lapses Exclusions are provisions that describe circumstances when an insurer will not pay the life insurance policy proceeds following the death of the insured. • suicide exclusion provision—typically excludes suicide for two years from policy issue • aviation exclusion applies to insureds involved with military aviation or experimental aircraft or crew members on small private planes Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 188,
@@ -2441,7 +2441,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 2 Life Insurance Policy Provisions Summary of Key Points Life insurance policies include a number of important provisions. • entire contract provision— describes how policy, attached riders, and attached copy of the application make up contract • free-look provision— policyowner has stated period of time to examine policy • incontestability provision—allows insurers to avoid a life insurance contract if applicant provided inaccurate information considered material misrepresentation • grace period provision—specifies length of time following renewal premium due date within which premium may be paid without loss of coverage • reinstatement provision—describes conditions necessary for reinstatement • misstatement of age or sex provision— describes action an insurer takes to adjust amount of policy benefit or premium if age or sex of the insured is incorrectly stated on application Cash value life insurance policies have additional provisions. • policy loan provision—grants policyowner right to take out policy loan • policy withdrawal provision—allows universal policyowner to withdraw up to amount of cash value of policy in cash • nonforfeiture provision—provides options to owner of cash value policy if policy lapses or policyowner decides to surrender or terminate policy • automatic nonforfeiture benefit—applies if owner hasn’t chosen an option when policy lapses Exclusions are provisions that describe circumstances when an insurer will not pay the life insurance policy proceeds following the death of the insured. • suicide exclusion provision—typically excludes suicide for two years from policy issue • aviation exclusion applies to insureds involved with military aviation or experimental aircraft or crew members on small private planes Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 189,
@@ -2454,7 +2454,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 2 Life Insurance Policy Provisions Summary of Key Points Life insurance policies include a number of important provisions. • entire contract provision— describes how policy, attached riders, and attached copy of the application make up contract • free-look provision— policyowner has stated period of time to examine policy • incontestability provision—allows insurers to avoid a life insurance contract if applicant provided inaccurate information considered material misrepresentation • grace period provision—specifies length of time following renewal premium due date within which premium may be paid without loss of coverage • reinstatement provision—describes conditions necessary for reinstatement • misstatement of age or sex provision— describes action an insurer takes to adjust amount of policy benefit or premium if age or sex of the insured is incorrectly stated on application Cash value life insurance policies have additional provisions. • policy loan provision—grants policyowner right to take out policy loan • policy withdrawal provision—allows universal policyowner to withdraw up to amount of cash value of policy in cash • nonforfeiture provision—provides options to owner of cash value policy if policy lapses or policyowner decides to surrender or terminate policy • automatic nonforfeiture benefit—applies if owner hasn’t chosen an option when policy lapses Exclusions are provisions that describe circumstances when an insurer will not pay the life insurance policy proceeds following the death of the insured. • suicide exclusion provision—typically excludes suicide for two years from policy issue • aviation exclusion applies to insureds involved with military aviation or experimental aircraft or crew members on small private planes Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 190,
@@ -2467,7 +2467,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 2 Life Insurance Policy Provisions Summary of Key Points Life insurance policies include a number of important provisions. • entire contract provision— describes how policy, attached riders, and attached copy of the application make up contract • free-look provision— policyowner has stated period of time to examine policy • incontestability provision—allows insurers to avoid a life insurance contract if applicant provided inaccurate information considered material misrepresentation • grace period provision—specifies length of time following renewal premium due date within which premium may be paid without loss of coverage • reinstatement provision—describes conditions necessary for reinstatement • misstatement of age or sex provision— describes action an insurer takes to adjust amount of policy benefit or premium if age or sex of the insured is incorrectly stated on application Cash value life insurance policies have additional provisions. • policy loan provision—grants policyowner right to take out policy loan • policy withdrawal provision—allows universal policyowner to withdraw up to amount of cash value of policy in cash • nonforfeiture provision—provides options to owner of cash value policy if policy lapses or policyowner decides to surrender or terminate policy • automatic nonforfeiture benefit—applies if owner hasn’t chosen an option when policy lapses Exclusions are provisions that describe circumstances when an insurer will not pay the life insurance policy proceeds following the death of the insured. • suicide exclusion provision—typically excludes suicide for two years from policy issue • aviation exclusion applies to insureds involved with military aviation or experimental aircraft or crew members on small private planes Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 191,
@@ -2480,7 +2480,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 2 Life Insurance Policy Provisions Summary of Key Points Life insurance policies include a number of important provisions. • entire contract provision— describes how policy, attached riders, and attached copy of the application make up contract • free-look provision— policyowner has stated period of time to examine policy • incontestability provision—allows insurers to avoid a life insurance contract if applicant provided inaccurate information considered material misrepresentation • grace period provision—specifies length of time following renewal premium due date within which premium may be paid without loss of coverage • reinstatement provision—describes conditions necessary for reinstatement • misstatement of age or sex provision— describes action an insurer takes to adjust amount of policy benefit or premium if age or sex of the insured is incorrectly stated on application Cash value life insurance policies have additional provisions. • policy loan provision—grants policyowner right to take out policy loan • policy withdrawal provision—allows universal policyowner to withdraw up to amount of cash value of policy in cash • nonforfeiture provision—provides options to owner of cash value policy if policy lapses or policyowner decides to surrender or terminate policy • automatic nonforfeiture benefit—applies if owner hasn’t chosen an option when policy lapses Exclusions are provisions that describe circumstances when an insurer will not pay the life insurance policy proceeds following the death of the insured. • suicide exclusion provision—typically excludes suicide for two years from policy issue • aviation exclusion applies to insureds involved with military aviation or experimental aircraft or crew members on small private planes Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 192,
@@ -2493,7 +2493,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 2 Life Insurance Policy Provisions Summary of Key Points Life insurance policies include a number of important provisions. • entire contract provision— describes how policy, attached riders, and attached copy of the application make up contract • free-look provision— policyowner has stated period of time to examine policy • incontestability provision—allows insurers to avoid a life insurance contract if applicant provided inaccurate information considered material misrepresentation • grace period provision—specifies length of time following renewal premium due date within which premium may be paid without loss of coverage • reinstatement provision—describes conditions necessary for reinstatement • misstatement of age or sex provision— describes action an insurer takes to adjust amount of policy benefit or premium if age or sex of the insured is incorrectly stated on application Cash value life insurance policies have additional provisions. • policy loan provision—grants policyowner right to take out policy loan • policy withdrawal provision—allows universal policyowner to withdraw up to amount of cash value of policy in cash • nonforfeiture provision—provides options to owner of cash value policy if policy lapses or policyowner decides to surrender or terminate policy • automatic nonforfeiture benefit—applies if owner hasn’t chosen an option when policy lapses Exclusions are provisions that describe circumstances when an insurer will not pay the life insurance policy proceeds following the death of the insured. • suicide exclusion provision—typically excludes suicide for two years from policy issue • aviation exclusion applies to insureds involved with military aviation or experimental aircraft or crew members on small private planes Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 193,
@@ -2506,7 +2506,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 2 Life Insurance Policy Provisions Summary of Key Points Life insurance policies include a number of important provisions. • entire contract provision— describes how policy, attached riders, and attached copy of the application make up contract • free-look provision— policyowner has stated period of time to examine policy • incontestability provision—allows insurers to avoid a life insurance contract if applicant provided inaccurate information considered material misrepresentation • grace period provision—specifies length of time following renewal premium due date within which premium may be paid without loss of coverage • reinstatement provision—describes conditions necessary for reinstatement • misstatement of age or sex provision— describes action an insurer takes to adjust amount of policy benefit or premium if age or sex of the insured is incorrectly stated on application Cash value life insurance policies have additional provisions. • policy loan provision—grants policyowner right to take out policy loan • policy withdrawal provision—allows universal policyowner to withdraw up to amount of cash value of policy in cash • nonforfeiture provision—provides options to owner of cash value policy if policy lapses or policyowner decides to surrender or terminate policy • automatic nonforfeiture benefit—applies if owner hasn’t chosen an option when policy lapses Exclusions are provisions that describe circumstances when an insurer will not pay the life insurance policy proceeds following the death of the insured. • suicide exclusion provision—typically excludes suicide for two years from policy issue • aviation exclusion applies to insureds involved with military aviation or experimental aircraft or crew members on small private planes Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 194,
@@ -2519,7 +2519,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 2 Life Insurance Policy Provisions Summary of Key Points Life insurance policies include a number of important provisions. • entire contract provision— describes how policy, attached riders, and attached copy of the application make up contract • free-look provision— policyowner has stated period of time to examine policy • incontestability provision—allows insurers to avoid a life insurance contract if applicant provided inaccurate information considered material misrepresentation • grace period provision—specifies length of time following renewal premium due date within which premium may be paid without loss of coverage • reinstatement provision—describes conditions necessary for reinstatement • misstatement of age or sex provision— describes action an insurer takes to adjust amount of policy benefit or premium if age or sex of the insured is incorrectly stated on application Cash value life insurance policies have additional provisions. • policy loan provision—grants policyowner right to take out policy loan • policy withdrawal provision—allows universal policyowner to withdraw up to amount of cash value of policy in cash • nonforfeiture provision—provides options to owner of cash value policy if policy lapses or policyowner decides to surrender or terminate policy • automatic nonforfeiture benefit—applies if owner hasn’t chosen an option when policy lapses Exclusions are provisions that describe circumstances when an insurer will not pay the life insurance policy proceeds following the death of the insured. • suicide exclusion provision—typically excludes suicide for two years from policy issue • aviation exclusion applies to insureds involved with military aviation or experimental aircraft or crew members on small private planes Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 195,
@@ -2532,7 +2532,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 2 Life Insurance Policy Provisions Summary of Key Points Life insurance policies include a number of important provisions. • entire contract provision— describes how policy, attached riders, and attached copy of the application make up contract • free-look provision— policyowner has stated period of time to examine policy • incontestability provision—allows insurers to avoid a life insurance contract if applicant provided inaccurate information considered material misrepresentation • grace period provision—specifies length of time following renewal premium due date within which premium may be paid without loss of coverage • reinstatement provision—describes conditions necessary for reinstatement • misstatement of age or sex provision— describes action an insurer takes to adjust amount of policy benefit or premium if age or sex of the insured is incorrectly stated on application Cash value life insurance policies have additional provisions. • policy loan provision—grants policyowner right to take out policy loan • policy withdrawal provision—allows universal policyowner to withdraw up to amount of cash value of policy in cash • nonforfeiture provision—provides options to owner of cash value policy if policy lapses or policyowner decides to surrender or terminate policy • automatic nonforfeiture benefit—applies if owner hasn’t chosen an option when policy lapses Exclusions are provisions that describe circumstances when an insurer will not pay the life insurance policy proceeds following the death of the insured. • suicide exclusion provision—typically excludes suicide for two years from policy issue • aviation exclusion applies to insureds involved with military aviation or experimental aircraft or crew members on small private planes Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 196,
@@ -2545,7 +2545,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 2 Life Insurance Policy Provisions Summary of Key Points Life insurance policies include a number of important provisions. • entire contract provision— describes how policy, attached riders, and attached copy of the application make up contract • free-look provision— policyowner has stated period of time to examine policy • incontestability provision—allows insurers to avoid a life insurance contract if applicant provided inaccurate information considered material misrepresentation • grace period provision—specifies length of time following renewal premium due date within which premium may be paid without loss of coverage • reinstatement provision—describes conditions necessary for reinstatement • misstatement of age or sex provision— describes action an insurer takes to adjust amount of policy benefit or premium if age or sex of the insured is incorrectly stated on application Cash value life insurance policies have additional provisions. • policy loan provision—grants policyowner right to take out policy loan • policy withdrawal provision—allows universal policyowner to withdraw up to amount of cash value of policy in cash • nonforfeiture provision—provides options to owner of cash value policy if policy lapses or policyowner decides to surrender or terminate policy • automatic nonforfeiture benefit—applies if owner hasn’t chosen an option when policy lapses Exclusions are provisions that describe circumstances when an insurer will not pay the life insurance policy proceeds following the death of the insured. • suicide exclusion provision—typically excludes suicide for two years from policy issue • aviation exclusion applies to insureds involved with military aviation or experimental aircraft or crew members on small private planes Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 197,
@@ -2558,7 +2558,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 3 Life Insurance Policy Ownership Rights Summary of Key Points A life insurance policy is a type of property • Real property vs. personal property • Intangible property Life insurance policyowners have a number of rights, including: • Right to name and change primary and contingent beneficiaries and transfer ownership of policy • Unlimited right to change the beneficiary, unless policy has irrevocable beneficiary • Applicant selects and can change policy’s premium payment mode • Participating policyowner receives some of company’s divisible surplus by choosing one of several dividend options; nonparticipating policyowner doesn’t get dividends o Options for receiving policy dividends: cash dividend, premium reduction, policy loan repayment, accumulation at interest, paid-up additional insurance, additional term insurance • Settlement options provision grants policyowner or beneficiaries choices about receiving policy proceeds. o Settlement options: interest option, fixed-period option, fixed-amount option, life income option • Policyowner can transfer ownership to another person • Assignment provision describes insurer’s and policyowner’s roles under absolute and collateral assignments, accomplished by separate agreement signed by parties or by endorsement Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 198,
@@ -2571,7 +2571,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 3 Life Insurance Policy Ownership Rights Summary of Key Points A life insurance policy is a type of property • Real property vs. personal property • Intangible property Life insurance policyowners have a number of rights, including: • Right to name and change primary and contingent beneficiaries and transfer ownership of policy • Unlimited right to change the beneficiary, unless policy has irrevocable beneficiary • Applicant selects and can change policy’s premium payment mode • Participating policyowner receives some of company’s divisible surplus by choosing one of several dividend options; nonparticipating policyowner doesn’t get dividends o Options for receiving policy dividends: cash dividend, premium reduction, policy loan repayment, accumulation at interest, paid-up additional insurance, additional term insurance • Settlement options provision grants policyowner or beneficiaries choices about receiving policy proceeds. o Settlement options: interest option, fixed-period option, fixed-amount option, life income option • Policyowner can transfer ownership to another person • Assignment provision describes insurer’s and policyowner’s roles under absolute and collateral assignments, accomplished by separate agreement signed by parties or by endorsement Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 199,
@@ -2584,7 +2584,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 3 Life Insurance Policy Ownership Rights Summary of Key Points A life insurance policy is a type of property • Real property vs. personal property • Intangible property Life insurance policyowners have a number of rights, including: • Right to name and change primary and contingent beneficiaries and transfer ownership of policy • Unlimited right to change the beneficiary, unless policy has irrevocable beneficiary • Applicant selects and can change policy’s premium payment mode • Participating policyowner receives some of company’s divisible surplus by choosing one of several dividend options; nonparticipating policyowner doesn’t get dividends o Options for receiving policy dividends: cash dividend, premium reduction, policy loan repayment, accumulation at interest, paid-up additional insurance, additional term insurance • Settlement options provision grants policyowner or beneficiaries choices about receiving policy proceeds. o Settlement options: interest option, fixed-period option, fixed-amount option, life income option • Policyowner can transfer ownership to another person • Assignment provision describes insurer’s and policyowner’s roles under absolute and collateral assignments, accomplished by separate agreement signed by parties or by endorsement Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 200,
@@ -2597,7 +2597,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 3 Life Insurance Policy Ownership Rights Summary of Key Points A life insurance policy is a type of property • Real property vs. personal property • Intangible property Life insurance policyowners have a number of rights, including: • Right to name and change primary and contingent beneficiaries and transfer ownership of policy • Unlimited right to change the beneficiary, unless policy has irrevocable beneficiary • Applicant selects and can change policy’s premium payment mode • Participating policyowner receives some of company’s divisible surplus by choosing one of several dividend options; nonparticipating policyowner doesn’t get dividends o Options for receiving policy dividends: cash dividend, premium reduction, policy loan repayment, accumulation at interest, paid-up additional insurance, additional term insurance • Settlement options provision grants policyowner or beneficiaries choices about receiving policy proceeds. o Settlement options: interest option, fixed-period option, fixed-amount option, life income option • Policyowner can transfer ownership to another person • Assignment provision describes insurer’s and policyowner’s roles under absolute and collateral assignments, accomplished by separate agreement signed by parties or by endorsement Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 201,
@@ -2610,7 +2610,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 3 Life Insurance Policy Ownership Rights Summary of Key Points A life insurance policy is a type of property • Real property vs. personal property • Intangible property Life insurance policyowners have a number of rights, including: • Right to name and change primary and contingent beneficiaries and transfer ownership of policy • Unlimited right to change the beneficiary, unless policy has irrevocable beneficiary • Applicant selects and can change policy’s premium payment mode • Participating policyowner receives some of company’s divisible surplus by choosing one of several dividend options; nonparticipating policyowner doesn’t get dividends o Options for receiving policy dividends: cash dividend, premium reduction, policy loan repayment, accumulation at interest, paid-up additional insurance, additional term insurance • Settlement options provision grants policyowner or beneficiaries choices about receiving policy proceeds. o Settlement options: interest option, fixed-period option, fixed-amount option, life income option • Policyowner can transfer ownership to another person • Assignment provision describes insurer’s and policyowner’s roles under absolute and collateral assignments, accomplished by separate agreement signed by parties or by endorsement Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 202,
@@ -2623,7 +2623,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 3 Life Insurance Policy Ownership Rights Summary of Key Points A life insurance policy is a type of property • Real property vs. personal property • Intangible property Life insurance policyowners have a number of rights, including: • Right to name and change primary and contingent beneficiaries and transfer ownership of policy • Unlimited right to change the beneficiary, unless policy has irrevocable beneficiary • Applicant selects and can change policy’s premium payment mode • Participating policyowner receives some of company’s divisible surplus by choosing one of several dividend options; nonparticipating policyowner doesn’t get dividends o Options for receiving policy dividends: cash dividend, premium reduction, policy loan repayment, accumulation at interest, paid-up additional insurance, additional term insurance • Settlement options provision grants policyowner or beneficiaries choices about receiving policy proceeds. o Settlement options: interest option, fixed-period option, fixed-amount option, life income option • Policyowner can transfer ownership to another person • Assignment provision describes insurer’s and policyowner’s roles under absolute and collateral assignments, accomplished by separate agreement signed by parties or by endorsement Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 203,
@@ -2636,7 +2636,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 3 Life Insurance Policy Ownership Rights Summary of Key Points A life insurance policy is a type of property • Real property vs. personal property • Intangible property Life insurance policyowners have a number of rights, including: • Right to name and change primary and contingent beneficiaries and transfer ownership of policy • Unlimited right to change the beneficiary, unless policy has irrevocable beneficiary • Applicant selects and can change policy’s premium payment mode • Participating policyowner receives some of company’s divisible surplus by choosing one of several dividend options; nonparticipating policyowner doesn’t get dividends o Options for receiving policy dividends: cash dividend, premium reduction, policy loan repayment, accumulation at interest, paid-up additional insurance, additional term insurance • Settlement options provision grants policyowner or beneficiaries choices about receiving policy proceeds. o Settlement options: interest option, fixed-period option, fixed-amount option, life income option • Policyowner can transfer ownership to another person • Assignment provision describes insurer’s and policyowner’s roles under absolute and collateral assignments, accomplished by separate agreement signed by parties or by endorsement Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 204,
@@ -2649,7 +2649,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 3 Life Insurance Policy Ownership Rights Summary of Key Points A life insurance policy is a type of property • Real property vs. personal property • Intangible property Life insurance policyowners have a number of rights, including: • Right to name and change primary and contingent beneficiaries and transfer ownership of policy • Unlimited right to change the beneficiary, unless policy has irrevocable beneficiary • Applicant selects and can change policy’s premium payment mode • Participating policyowner receives some of company’s divisible surplus by choosing one of several dividend options; nonparticipating policyowner doesn’t get dividends o Options for receiving policy dividends: cash dividend, premium reduction, policy loan repayment, accumulation at interest, paid-up additional insurance, additional term insurance • Settlement options provision grants policyowner or beneficiaries choices about receiving policy proceeds. o Settlement options: interest option, fixed-period option, fixed-amount option, life income option • Policyowner can transfer ownership to another person • Assignment provision describes insurer’s and policyowner’s roles under absolute and collateral assignments, accomplished by separate agreement signed by parties or by endorsement Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 205,
@@ -2662,7 +2662,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 3 Life Insurance Policy Ownership Rights Summary of Key Points A life insurance policy is a type of property • Real property vs. personal property • Intangible property Life insurance policyowners have a number of rights, including: • Right to name and change primary and contingent beneficiaries and transfer ownership of policy • Unlimited right to change the beneficiary, unless policy has irrevocable beneficiary • Applicant selects and can change policy’s premium payment mode • Participating policyowner receives some of company’s divisible surplus by choosing one of several dividend options; nonparticipating policyowner doesn’t get dividends o Options for receiving policy dividends: cash dividend, premium reduction, policy loan repayment, accumulation at interest, paid-up additional insurance, additional term insurance • Settlement options provision grants policyowner or beneficiaries choices about receiving policy proceeds. o Settlement options: interest option, fixed-period option, fixed-amount option, life income option • Policyowner can transfer ownership to another person • Assignment provision describes insurer’s and policyowner’s roles under absolute and collateral assignments, accomplished by separate agreement signed by parties or by endorsement Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 206,
@@ -2675,7 +2675,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 3 Life Insurance Policy Ownership Rights Summary of Key Points A life insurance policy is a type of property • Real property vs. personal property • Intangible property Life insurance policyowners have a number of rights, including: • Right to name and change primary and contingent beneficiaries and transfer ownership of policy • Unlimited right to change the beneficiary, unless policy has irrevocable beneficiary • Applicant selects and can change policy’s premium payment mode • Participating policyowner receives some of company’s divisible surplus by choosing one of several dividend options; nonparticipating policyowner doesn’t get dividends o Options for receiving policy dividends: cash dividend, premium reduction, policy loan repayment, accumulation at interest, paid-up additional insurance, additional term insurance • Settlement options provision grants policyowner or beneficiaries choices about receiving policy proceeds. o Settlement options: interest option, fixed-period option, fixed-amount option, life income option • Policyowner can transfer ownership to another person • Assignment provision describes insurer’s and policyowner’s roles under absolute and collateral assignments, accomplished by separate agreement signed by parties or by endorsement Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 207,
@@ -2688,7 +2688,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 3 Lesson 3 Life Insurance Policy Ownership Rights Summary of Key Points A life insurance policy is a type of property • Real property vs. personal property • Intangible property Life insurance policyowners have a number of rights, including: • Right to name and change primary and contingent beneficiaries and transfer ownership of policy • Unlimited right to change the beneficiary, unless policy has irrevocable beneficiary • Applicant selects and can change policy’s premium payment mode • Participating policyowner receives some of company’s divisible surplus by choosing one of several dividend options; nonparticipating policyowner doesn’t get dividends o Options for receiving policy dividends: cash dividend, premium reduction, policy loan repayment, accumulation at interest, paid-up additional insurance, additional term insurance • Settlement options provision grants policyowner or beneficiaries choices about receiving policy proceeds. o Settlement options: interest option, fixed-period option, fixed-amount option, life income option • Policyowner can transfer ownership to another person • Assignment provision describes insurer’s and policyowner’s roles under absolute and collateral assignments, accomplished by separate agreement signed by parties or by endorsement Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 3,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 208,
@@ -2701,7 +2701,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 4 Lesson 1 Group Insurance Summary of Key Points The group policyholder and the insurer are the parties to the contract. Requirements to form a valid group insurance contract include:  Mutual agreement  Contractual capacity  Legally adequate consideration  Lawful purpose—but no insurable interest requirement. Naming the beneficiary Certificate of insurance Premium payments are • Noncontributory—the policyholder pays the entire premium  Contributory—the group members contribute some or all of the premium Reasons that the cost per insured for group insurance is relatively low cost compared to the cost of individual insurance Self-administered plan—the group policyholder maintains administrative records. Insurer-administered plan—the insurer maintains administrative records. Requirements for group underwriting include • Group must exist for a reason other than to get insurance • Group size affects the underwriter’s ability to accurately estimate loss rate. • Need a steady flow of new members to keep a stable age distribution • Group must exist for a reasonable length of time, and its composition must remain relatively stable over time. • Participation requirements prevent antiselection • Benefit levels—the group member does not select the benefit level • A group is assigned a risk classification based on the group’s normal activities. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 4,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 209,
@@ -2714,7 +2714,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 4 Lesson 1 Group Insurance Summary of Key Points The group policyholder and the insurer are the parties to the contract. Requirements to form a valid group insurance contract include:  Mutual agreement  Contractual capacity  Legally adequate consideration  Lawful purpose—but no insurable interest requirement. Naming the beneficiary Certificate of insurance Premium payments are • Noncontributory—the policyholder pays the entire premium  Contributory—the group members contribute some or all of the premium Reasons that the cost per insured for group insurance is relatively low cost compared to the cost of individual insurance Self-administered plan—the group policyholder maintains administrative records. Insurer-administered plan—the insurer maintains administrative records. Requirements for group underwriting include • Group must exist for a reason other than to get insurance • Group size affects the underwriter’s ability to accurately estimate loss rate. • Need a steady flow of new members to keep a stable age distribution • Group must exist for a reasonable length of time, and its composition must remain relatively stable over time. • Participation requirements prevent antiselection • Benefit levels—the group member does not select the benefit level • A group is assigned a risk classification based on the group’s normal activities. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 4,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 210,
@@ -2727,7 +2727,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 4 Lesson 1 Group Insurance Summary of Key Points The group policyholder and the insurer are the parties to the contract. Requirements to form a valid group insurance contract include:  Mutual agreement  Contractual capacity  Legally adequate consideration  Lawful purpose—but no insurable interest requirement. Naming the beneficiary Certificate of insurance Premium payments are • Noncontributory—the policyholder pays the entire premium  Contributory—the group members contribute some or all of the premium Reasons that the cost per insured for group insurance is relatively low cost compared to the cost of individual insurance Self-administered plan—the group policyholder maintains administrative records. Insurer-administered plan—the insurer maintains administrative records. Requirements for group underwriting include • Group must exist for a reason other than to get insurance • Group size affects the underwriter’s ability to accurately estimate loss rate. • Need a steady flow of new members to keep a stable age distribution • Group must exist for a reasonable length of time, and its composition must remain relatively stable over time. • Participation requirements prevent antiselection • Benefit levels—the group member does not select the benefit level • A group is assigned a risk classification based on the group’s normal activities. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 4,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 211,
@@ -2740,7 +2740,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 4 Lesson 1 Group Insurance Summary of Key Points The group policyholder and the insurer are the parties to the contract. Requirements to form a valid group insurance contract include:  Mutual agreement  Contractual capacity  Legally adequate consideration  Lawful purpose—but no insurable interest requirement. Naming the beneficiary Certificate of insurance Premium payments are • Noncontributory—the policyholder pays the entire premium  Contributory—the group members contribute some or all of the premium Reasons that the cost per insured for group insurance is relatively low cost compared to the cost of individual insurance Self-administered plan—the group policyholder maintains administrative records. Insurer-administered plan—the insurer maintains administrative records. Requirements for group underwriting include • Group must exist for a reason other than to get insurance • Group size affects the underwriter’s ability to accurately estimate loss rate. • Need a steady flow of new members to keep a stable age distribution • Group must exist for a reasonable length of time, and its composition must remain relatively stable over time. • Participation requirements prevent antiselection • Benefit levels—the group member does not select the benefit level • A group is assigned a risk classification based on the group’s normal activities. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 4,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 212,
@@ -2753,7 +2753,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 4 Lesson 1 Group Insurance Summary of Key Points The group policyholder and the insurer are the parties to the contract. Requirements to form a valid group insurance contract include:  Mutual agreement  Contractual capacity  Legally adequate consideration  Lawful purpose—but no insurable interest requirement. Naming the beneficiary Certificate of insurance Premium payments are • Noncontributory—the policyholder pays the entire premium  Contributory—the group members contribute some or all of the premium Reasons that the cost per insured for group insurance is relatively low cost compared to the cost of individual insurance Self-administered plan—the group policyholder maintains administrative records. Insurer-administered plan—the insurer maintains administrative records. Requirements for group underwriting include • Group must exist for a reason other than to get insurance • Group size affects the underwriter’s ability to accurately estimate loss rate. • Need a steady flow of new members to keep a stable age distribution • Group must exist for a reasonable length of time, and its composition must remain relatively stable over time. • Participation requirements prevent antiselection • Benefit levels—the group member does not select the benefit level • A group is assigned a risk classification based on the group’s normal activities. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 4,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 213,
@@ -2766,7 +2766,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 4 Lesson 1 Group Insurance Summary of Key Points The group policyholder and the insurer are the parties to the contract. Requirements to form a valid group insurance contract include:  Mutual agreement  Contractual capacity  Legally adequate consideration  Lawful purpose—but no insurable interest requirement. Naming the beneficiary Certificate of insurance Premium payments are • Noncontributory—the policyholder pays the entire premium  Contributory—the group members contribute some or all of the premium Reasons that the cost per insured for group insurance is relatively low cost compared to the cost of individual insurance Self-administered plan—the group policyholder maintains administrative records. Insurer-administered plan—the insurer maintains administrative records. Requirements for group underwriting include • Group must exist for a reason other than to get insurance • Group size affects the underwriter’s ability to accurately estimate loss rate. • Need a steady flow of new members to keep a stable age distribution • Group must exist for a reasonable length of time, and its composition must remain relatively stable over time. • Participation requirements prevent antiselection • Benefit levels—the group member does not select the benefit level • A group is assigned a risk classification based on the group’s normal activities. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 4,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 214,
@@ -2779,7 +2779,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 4 Lesson 1 Group Insurance Summary of Key Points The group policyholder and the insurer are the parties to the contract. Requirements to form a valid group insurance contract include:  Mutual agreement  Contractual capacity  Legally adequate consideration  Lawful purpose—but no insurable interest requirement. Naming the beneficiary Certificate of insurance Premium payments are • Noncontributory—the policyholder pays the entire premium  Contributory—the group members contribute some or all of the premium Reasons that the cost per insured for group insurance is relatively low cost compared to the cost of individual insurance Self-administered plan—the group policyholder maintains administrative records. Insurer-administered plan—the insurer maintains administrative records. Requirements for group underwriting include • Group must exist for a reason other than to get insurance • Group size affects the underwriter’s ability to accurately estimate loss rate. • Need a steady flow of new members to keep a stable age distribution • Group must exist for a reasonable length of time, and its composition must remain relatively stable over time. • Participation requirements prevent antiselection • Benefit levels—the group member does not select the benefit level • A group is assigned a risk classification based on the group’s normal activities. Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 4,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 215,
@@ -2792,7 +2792,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 4 Lesson 2 Group Life Insurance Summary of Key Points Eligibility Requirements • Probationary period: how long a new group member must wait before becoming eligible to enroll in the group insurance plan. • Coverage under a noncontributory group insurance is automatic; under a contributory plan, there is an eligibility period. • Enrollment after the eligibility period requires evidence of insurability. • Actively-at-work provision: Eligible employee must be at work on the day coverage is to take effect. Dependent Coverage • Less than the amount of the group insured’s coverage. • The group member usually is the beneficiary. Grace Period • The grace period usually is 31 days. • Group policyholder must pay for coverage provided during the grace period. Incontestability Provision • Limits the time during which the insurer can contest the validity of the contract. • Insurer can contest a group member’s coverage without contesting the group contract. Termination of Coverage • Termination of the group policy. • Group insured is no longer eligible for coverage, but group policy continues. Conversion Privilege • Allows a group insured to convert group coverage to individual coverage. Benefit Schedules • Includes three categories: o Flat amount o Based on salary o Based on job classification Settlement Options • Lump sum option, Interest option, Fixed amount option, Fixed period option, Life income option Types of Group Life Insurance • Yearly renewable term (YRT) life insurance • Accidental death and dismemberment (AD&D) benefits • Group cash value life insurance plans o Group paid-up plans o Level premium whole life plans o Group universal life plans • Group creditor life Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 4,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 216,
@@ -2805,7 +2805,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 4 Lesson 2 Group Life Insurance Summary of Key Points Eligibility Requirements • Probationary period: how long a new group member must wait before becoming eligible to enroll in the group insurance plan. • Coverage under a noncontributory group insurance is automatic; under a contributory plan, there is an eligibility period. • Enrollment after the eligibility period requires evidence of insurability. • Actively-at-work provision: Eligible employee must be at work on the day coverage is to take effect. Dependent Coverage • Less than the amount of the group insured’s coverage. • The group member usually is the beneficiary. Grace Period • The grace period usually is 31 days. • Group policyholder must pay for coverage provided during the grace period. Incontestability Provision • Limits the time during which the insurer can contest the validity of the contract. • Insurer can contest a group member’s coverage without contesting the group contract. Termination of Coverage • Termination of the group policy. • Group insured is no longer eligible for coverage, but group policy continues. Conversion Privilege • Allows a group insured to convert group coverage to individual coverage. Benefit Schedules • Includes three categories: o Flat amount o Based on salary o Based on job classification Settlement Options • Lump sum option, Interest option, Fixed amount option, Fixed period option, Life income option Types of Group Life Insurance • Yearly renewable term (YRT) life insurance • Accidental death and dismemberment (AD&D) benefits • Group cash value life insurance plans o Group paid-up plans o Level premium whole life plans o Group universal life plans • Group creditor life Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 4,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 217,
@@ -2818,7 +2818,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 4 Lesson 2 Group Life Insurance Summary of Key Points Eligibility Requirements • Probationary period: how long a new group member must wait before becoming eligible to enroll in the group insurance plan. • Coverage under a noncontributory group insurance is automatic; under a contributory plan, there is an eligibility period. • Enrollment after the eligibility period requires evidence of insurability. • Actively-at-work provision: Eligible employee must be at work on the day coverage is to take effect. Dependent Coverage • Less than the amount of the group insured’s coverage. • The group member usually is the beneficiary. Grace Period • The grace period usually is 31 days. • Group policyholder must pay for coverage provided during the grace period. Incontestability Provision • Limits the time during which the insurer can contest the validity of the contract. • Insurer can contest a group member’s coverage without contesting the group contract. Termination of Coverage • Termination of the group policy. • Group insured is no longer eligible for coverage, but group policy continues. Conversion Privilege • Allows a group insured to convert group coverage to individual coverage. Benefit Schedules • Includes three categories: o Flat amount o Based on salary o Based on job classification Settlement Options • Lump sum option, Interest option, Fixed amount option, Fixed period option, Life income option Types of Group Life Insurance • Yearly renewable term (YRT) life insurance • Accidental death and dismemberment (AD&D) benefits • Group cash value life insurance plans o Group paid-up plans o Level premium whole life plans o Group universal life plans • Group creditor life Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 4,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 218,
@@ -2831,7 +2831,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 4 Lesson 2 Group Life Insurance Summary of Key Points Eligibility Requirements • Probationary period: how long a new group member must wait before becoming eligible to enroll in the group insurance plan. • Coverage under a noncontributory group insurance is automatic; under a contributory plan, there is an eligibility period. • Enrollment after the eligibility period requires evidence of insurability. • Actively-at-work provision: Eligible employee must be at work on the day coverage is to take effect. Dependent Coverage • Less than the amount of the group insured’s coverage. • The group member usually is the beneficiary. Grace Period • The grace period usually is 31 days. • Group policyholder must pay for coverage provided during the grace period. Incontestability Provision • Limits the time during which the insurer can contest the validity of the contract. • Insurer can contest a group member’s coverage without contesting the group contract. Termination of Coverage • Termination of the group policy. • Group insured is no longer eligible for coverage, but group policy continues. Conversion Privilege • Allows a group insured to convert group coverage to individual coverage. Benefit Schedules • Includes three categories: o Flat amount o Based on salary o Based on job classification Settlement Options • Lump sum option, Interest option, Fixed amount option, Fixed period option, Life income option Types of Group Life Insurance • Yearly renewable term (YRT) life insurance • Accidental death and dismemberment (AD&D) benefits • Group cash value life insurance plans o Group paid-up plans o Level premium whole life plans o Group universal life plans • Group creditor life Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 4,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 219,
@@ -2844,7 +2844,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 4 Lesson 2 Group Life Insurance Summary of Key Points Eligibility Requirements • Probationary period: how long a new group member must wait before becoming eligible to enroll in the group insurance plan. • Coverage under a noncontributory group insurance is automatic; under a contributory plan, there is an eligibility period. • Enrollment after the eligibility period requires evidence of insurability. • Actively-at-work provision: Eligible employee must be at work on the day coverage is to take effect. Dependent Coverage • Less than the amount of the group insured’s coverage. • The group member usually is the beneficiary. Grace Period • The grace period usually is 31 days. • Group policyholder must pay for coverage provided during the grace period. Incontestability Provision • Limits the time during which the insurer can contest the validity of the contract. • Insurer can contest a group member’s coverage without contesting the group contract. Termination of Coverage • Termination of the group policy. • Group insured is no longer eligible for coverage, but group policy continues. Conversion Privilege • Allows a group insured to convert group coverage to individual coverage. Benefit Schedules • Includes three categories: o Flat amount o Based on salary o Based on job classification Settlement Options • Lump sum option, Interest option, Fixed amount option, Fixed period option, Life income option Types of Group Life Insurance • Yearly renewable term (YRT) life insurance • Accidental death and dismemberment (AD&D) benefits • Group cash value life insurance plans o Group paid-up plans o Level premium whole life plans o Group universal life plans • Group creditor life Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 4,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 220,
@@ -2857,7 +2857,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 4 Lesson 2 Group Life Insurance Summary of Key Points Eligibility Requirements • Probationary period: how long a new group member must wait before becoming eligible to enroll in the group insurance plan. • Coverage under a noncontributory group insurance is automatic; under a contributory plan, there is an eligibility period. • Enrollment after the eligibility period requires evidence of insurability. • Actively-at-work provision: Eligible employee must be at work on the day coverage is to take effect. Dependent Coverage • Less than the amount of the group insured’s coverage. • The group member usually is the beneficiary. Grace Period • The grace period usually is 31 days. • Group policyholder must pay for coverage provided during the grace period. Incontestability Provision • Limits the time during which the insurer can contest the validity of the contract. • Insurer can contest a group member’s coverage without contesting the group contract. Termination of Coverage • Termination of the group policy. • Group insured is no longer eligible for coverage, but group policy continues. Conversion Privilege • Allows a group insured to convert group coverage to individual coverage. Benefit Schedules • Includes three categories: o Flat amount o Based on salary o Based on job classification Settlement Options • Lump sum option, Interest option, Fixed amount option, Fixed period option, Life income option Types of Group Life Insurance • Yearly renewable term (YRT) life insurance • Accidental death and dismemberment (AD&D) benefits • Group cash value life insurance plans o Group paid-up plans o Level premium whole life plans o Group universal life plans • Group creditor life Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 4,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 221,
@@ -2870,7 +2870,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 4 Lesson 2 Group Life Insurance Summary of Key Points Eligibility Requirements • Probationary period: how long a new group member must wait before becoming eligible to enroll in the group insurance plan. • Coverage under a noncontributory group insurance is automatic; under a contributory plan, there is an eligibility period. • Enrollment after the eligibility period requires evidence of insurability. • Actively-at-work provision: Eligible employee must be at work on the day coverage is to take effect. Dependent Coverage • Less than the amount of the group insured’s coverage. • The group member usually is the beneficiary. Grace Period • The grace period usually is 31 days. • Group policyholder must pay for coverage provided during the grace period. Incontestability Provision • Limits the time during which the insurer can contest the validity of the contract. • Insurer can contest a group member’s coverage without contesting the group contract. Termination of Coverage • Termination of the group policy. • Group insured is no longer eligible for coverage, but group policy continues. Conversion Privilege • Allows a group insured to convert group coverage to individual coverage. Benefit Schedules • Includes three categories: o Flat amount o Based on salary o Based on job classification Settlement Options • Lump sum option, Interest option, Fixed amount option, Fixed period option, Life income option Types of Group Life Insurance • Yearly renewable term (YRT) life insurance • Accidental death and dismemberment (AD&D) benefits • Group cash value life insurance plans o Group paid-up plans o Level premium whole life plans o Group universal life plans • Group creditor life Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 4,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 222,
@@ -2883,7 +2883,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 4 Lesson 2 Group Life Insurance Summary of Key Points Eligibility Requirements • Probationary period: how long a new group member must wait before becoming eligible to enroll in the group insurance plan. • Coverage under a noncontributory group insurance is automatic; under a contributory plan, there is an eligibility period. • Enrollment after the eligibility period requires evidence of insurability. • Actively-at-work provision: Eligible employee must be at work on the day coverage is to take effect. Dependent Coverage • Less than the amount of the group insured’s coverage. • The group member usually is the beneficiary. Grace Period • The grace period usually is 31 days. • Group policyholder must pay for coverage provided during the grace period. Incontestability Provision • Limits the time during which the insurer can contest the validity of the contract. • Insurer can contest a group member’s coverage without contesting the group contract. Termination of Coverage • Termination of the group policy. • Group insured is no longer eligible for coverage, but group policy continues. Conversion Privilege • Allows a group insured to convert group coverage to individual coverage. Benefit Schedules • Includes three categories: o Flat amount o Based on salary o Based on job classification Settlement Options • Lump sum option, Interest option, Fixed amount option, Fixed period option, Life income option Types of Group Life Insurance • Yearly renewable term (YRT) life insurance • Accidental death and dismemberment (AD&D) benefits • Group cash value life insurance plans o Group paid-up plans o Level premium whole life plans o Group universal life plans • Group creditor life Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 4,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 223,
@@ -2896,7 +2896,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 4 Lesson 2 Group Life Insurance Summary of Key Points Eligibility Requirements • Probationary period: how long a new group member must wait before becoming eligible to enroll in the group insurance plan. • Coverage under a noncontributory group insurance is automatic; under a contributory plan, there is an eligibility period. • Enrollment after the eligibility period requires evidence of insurability. • Actively-at-work provision: Eligible employee must be at work on the day coverage is to take effect. Dependent Coverage • Less than the amount of the group insured’s coverage. • The group member usually is the beneficiary. Grace Period • The grace period usually is 31 days. • Group policyholder must pay for coverage provided during the grace period. Incontestability Provision • Limits the time during which the insurer can contest the validity of the contract. • Insurer can contest a group member’s coverage without contesting the group contract. Termination of Coverage • Termination of the group policy. • Group insured is no longer eligible for coverage, but group policy continues. Conversion Privilege • Allows a group insured to convert group coverage to individual coverage. Benefit Schedules • Includes three categories: o Flat amount o Based on salary o Based on job classification Settlement Options • Lump sum option, Interest option, Fixed amount option, Fixed period option, Life income option Types of Group Life Insurance • Yearly renewable term (YRT) life insurance • Accidental death and dismemberment (AD&D) benefits • Group cash value life insurance plans o Group paid-up plans o Level premium whole life plans o Group universal life plans • Group creditor life Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 4,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 224,
@@ -2909,7 +2909,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 4 Lesson 2 Group Life Insurance Summary of Key Points Eligibility Requirements • Probationary period: how long a new group member must wait before becoming eligible to enroll in the group insurance plan. • Coverage under a noncontributory group insurance is automatic; under a contributory plan, there is an eligibility period. • Enrollment after the eligibility period requires evidence of insurability. • Actively-at-work provision: Eligible employee must be at work on the day coverage is to take effect. Dependent Coverage • Less than the amount of the group insured’s coverage. • The group member usually is the beneficiary. Grace Period • The grace period usually is 31 days. • Group policyholder must pay for coverage provided during the grace period. Incontestability Provision • Limits the time during which the insurer can contest the validity of the contract. • Insurer can contest a group member’s coverage without contesting the group contract. Termination of Coverage • Termination of the group policy. • Group insured is no longer eligible for coverage, but group policy continues. Conversion Privilege • Allows a group insured to convert group coverage to individual coverage. Benefit Schedules • Includes three categories: o Flat amount o Based on salary o Based on job classification Settlement Options • Lump sum option, Interest option, Fixed amount option, Fixed period option, Life income option Types of Group Life Insurance • Yearly renewable term (YRT) life insurance • Accidental death and dismemberment (AD&D) benefits • Group cash value life insurance plans o Group paid-up plans o Level premium whole life plans o Group universal life plans • Group creditor life Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 4,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 225,
@@ -2922,7 +2922,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 4 Lesson 2 Group Life Insurance Summary of Key Points Eligibility Requirements • Probationary period: how long a new group member must wait before becoming eligible to enroll in the group insurance plan. • Coverage under a noncontributory group insurance is automatic; under a contributory plan, there is an eligibility period. • Enrollment after the eligibility period requires evidence of insurability. • Actively-at-work provision: Eligible employee must be at work on the day coverage is to take effect. Dependent Coverage • Less than the amount of the group insured’s coverage. • The group member usually is the beneficiary. Grace Period • The grace period usually is 31 days. • Group policyholder must pay for coverage provided during the grace period. Incontestability Provision • Limits the time during which the insurer can contest the validity of the contract. • Insurer can contest a group member’s coverage without contesting the group contract. Termination of Coverage • Termination of the group policy. • Group insured is no longer eligible for coverage, but group policy continues. Conversion Privilege • Allows a group insured to convert group coverage to individual coverage. Benefit Schedules • Includes three categories: o Flat amount o Based on salary o Based on job classification Settlement Options • Lump sum option, Interest option, Fixed amount option, Fixed period option, Life income option Types of Group Life Insurance • Yearly renewable term (YRT) life insurance • Accidental death and dismemberment (AD&D) benefits • Group cash value life insurance plans o Group paid-up plans o Level premium whole life plans o Group universal life plans • Group creditor life Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 4,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 226,
@@ -2935,7 +2935,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 4 Lesson 3 Group Retirement Plans Summary of Key Points Retirement plan basics include the • Plan sponsor • Plan administrator • Plan participants • Plan document • Summary plan description Qualified retirement plans offer • Tax incentives o Employers and participants can reduce their taxable income. o Employer contributions to a traditional qualified plan on behalf of a participant are taxable at withdrawal. o Tax-deferred investment earnings. Employee Retirement Income Security Act (ERISA) requirements for qualified retirement plans include • Vesting schedules o Graded vesting (or step vesting) o Cliff vesting Types of benefit formulas include • Defined benefit (DB) plan: The benefit is determined in advance. • Defined contribution (DC) plan: The contribution is determined in advance. Pension plan • Defined benefit formula 401(k) plan: A retirement plan that allows employees to make pre-tax contributions to the plan through salary reduction. • Pre-tax contributions • Matching contributions • Withdrawals • Loans Roth 401(k) plans: After-tax contributions and tax-free distributions of contributions and earnings. Two types of plans similar to the 401(k): • 403(b) plan • 457 plan Profit Sharing Plans Stock Bonus Plans Qualified retirement plans for small employers include • SEP • SIMPLE IRA • SIMPLE 401(k) • Keogh Plan Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 4,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 227,
@@ -2948,7 +2948,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 4 Lesson 3 Group Retirement Plans Summary of Key Points Retirement plan basics include the • Plan sponsor • Plan administrator • Plan participants • Plan document • Summary plan description Qualified retirement plans offer • Tax incentives o Employers and participants can reduce their taxable income. o Employer contributions to a traditional qualified plan on behalf of a participant are taxable at withdrawal. o Tax-deferred investment earnings. Employee Retirement Income Security Act (ERISA) requirements for qualified retirement plans include • Vesting schedules o Graded vesting (or step vesting) o Cliff vesting Types of benefit formulas include • Defined benefit (DB) plan: The benefit is determined in advance. • Defined contribution (DC) plan: The contribution is determined in advance. Pension plan • Defined benefit formula 401(k) plan: A retirement plan that allows employees to make pre-tax contributions to the plan through salary reduction. • Pre-tax contributions • Matching contributions • Withdrawals • Loans Roth 401(k) plans: After-tax contributions and tax-free distributions of contributions and earnings. Two types of plans similar to the 401(k): • 403(b) plan • 457 plan Profit Sharing Plans Stock Bonus Plans Qualified retirement plans for small employers include • SEP • SIMPLE IRA • SIMPLE 401(k) • Keogh Plan Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 4,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 228,
@@ -2961,7 +2961,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 4 Lesson 3 Group Retirement Plans Summary of Key Points Retirement plan basics include the • Plan sponsor • Plan administrator • Plan participants • Plan document • Summary plan description Qualified retirement plans offer • Tax incentives o Employers and participants can reduce their taxable income. o Employer contributions to a traditional qualified plan on behalf of a participant are taxable at withdrawal. o Tax-deferred investment earnings. Employee Retirement Income Security Act (ERISA) requirements for qualified retirement plans include • Vesting schedules o Graded vesting (or step vesting) o Cliff vesting Types of benefit formulas include • Defined benefit (DB) plan: The benefit is determined in advance. • Defined contribution (DC) plan: The contribution is determined in advance. Pension plan • Defined benefit formula 401(k) plan: A retirement plan that allows employees to make pre-tax contributions to the plan through salary reduction. • Pre-tax contributions • Matching contributions • Withdrawals • Loans Roth 401(k) plans: After-tax contributions and tax-free distributions of contributions and earnings. Two types of plans similar to the 401(k): • 403(b) plan • 457 plan Profit Sharing Plans Stock Bonus Plans Qualified retirement plans for small employers include • SEP • SIMPLE IRA • SIMPLE 401(k) • Keogh Plan Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 4,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 229,
@@ -2974,7 +2974,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 4 Lesson 3 Group Retirement Plans Summary of Key Points Retirement plan basics include the • Plan sponsor • Plan administrator • Plan participants • Plan document • Summary plan description Qualified retirement plans offer • Tax incentives o Employers and participants can reduce their taxable income. o Employer contributions to a traditional qualified plan on behalf of a participant are taxable at withdrawal. o Tax-deferred investment earnings. Employee Retirement Income Security Act (ERISA) requirements for qualified retirement plans include • Vesting schedules o Graded vesting (or step vesting) o Cliff vesting Types of benefit formulas include • Defined benefit (DB) plan: The benefit is determined in advance. • Defined contribution (DC) plan: The contribution is determined in advance. Pension plan • Defined benefit formula 401(k) plan: A retirement plan that allows employees to make pre-tax contributions to the plan through salary reduction. • Pre-tax contributions • Matching contributions • Withdrawals • Loans Roth 401(k) plans: After-tax contributions and tax-free distributions of contributions and earnings. Two types of plans similar to the 401(k): • 403(b) plan • 457 plan Profit Sharing Plans Stock Bonus Plans Qualified retirement plans for small employers include • SEP • SIMPLE IRA • SIMPLE 401(k) • Keogh Plan Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 4,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 230,
@@ -2987,7 +2987,7 @@ metadata_nodes = [
         "Summary": "LOMA 281 Module 4 Lesson 3 Group Retirement Plans Summary of Key Points Retirement plan basics include the • Plan sponsor • Plan administrator • Plan participants • Plan document • Summary plan description Qualified retirement plans offer • Tax incentives o Employers and participants can reduce their taxable income. o Employer contributions to a traditional qualified plan on behalf of a participant are taxable at withdrawal. o Tax-deferred investment earnings. Employee Retirement Income Security Act (ERISA) requirements for qualified retirement plans include • Vesting schedules o Graded vesting (or step vesting) o Cliff vesting Types of benefit formulas include • Defined benefit (DB) plan: The benefit is determined in advance. • Defined contribution (DC) plan: The contribution is determined in advance. Pension plan • Defined benefit formula 401(k) plan: A retirement plan that allows employees to make pre-tax contributions to the plan through salary reduction. • Pre-tax contributions • Matching contributions • Withdrawals • Loans Roth 401(k) plans: After-tax contributions and tax-free distributions of contributions and earnings. Two types of plans similar to the 401(k): • 403(b) plan • 457 plan Profit Sharing Plans Stock Bonus Plans Qualified retirement plans for small employers include • SEP • SIMPLE IRA • SIMPLE 401(k) • Keogh Plan Copyright © 2020 LOMA (Life Office Management Association, Inc.). All rights reserved.",
         "Course": "LOMA281",
         "Module": 4,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 231,
@@ -3000,7 +3000,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 232,
@@ -3013,7 +3013,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 233,
@@ -3026,7 +3026,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 234,
@@ -3039,7 +3039,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 235,
@@ -3052,7 +3052,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 236,
@@ -3065,7 +3065,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 237,
@@ -3078,7 +3078,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 1,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 238,
@@ -3091,7 +3091,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 1,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 239,
@@ -3104,7 +3104,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 1,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 240,
@@ -3117,7 +3117,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 1,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 241,
@@ -3130,7 +3130,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 1,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 242,
@@ -3143,7 +3143,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 1,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 243,
@@ -3156,7 +3156,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 1,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 244,
@@ -3169,7 +3169,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 1,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 245,
@@ -3182,7 +3182,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 1,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 246,
@@ -3195,7 +3195,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 1,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 247,
@@ -3208,7 +3208,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 248,
@@ -3221,7 +3221,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 249,
@@ -3234,7 +3234,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 250,
@@ -3247,7 +3247,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 251,
@@ -3260,7 +3260,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 252,
@@ -3273,7 +3273,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 253,
@@ -3286,7 +3286,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 254,
@@ -3299,7 +3299,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 255,
@@ -3312,7 +3312,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 256,
@@ -3325,7 +3325,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 1,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 257,
@@ -3338,7 +3338,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 258,
@@ -3351,7 +3351,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 259,
@@ -3364,7 +3364,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 260,
@@ -3377,7 +3377,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 261,
@@ -3390,7 +3390,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 262,
@@ -3403,7 +3403,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 263,
@@ -3416,7 +3416,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 264,
@@ -3429,7 +3429,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 265,
@@ -3442,7 +3442,7 @@ metadata_nodes = [
         "Summary": "Copyright © 2021 LL Global, Inc. All rights reserved. LOMA 291 Module 2 Lesson 2 New Business and Underwriting Summary of Key Points Underwriting is the process of assessing and classifying the degree of risk represented by a proposed insured and then deciding to accept or decline that risk. Underwriting is part of new business processing, but it’s not the only part. New business processing for life insurance includes all of the activities involved in processing applications, underwriting applications, and issuing policies. Each application generally goes through all of the following steps in the new business process, whether manually or automatically:  Data entry  Good order check  Suitability or best interest check  Records search  Underwriting  Policy issue Recent technological advances allow insurers to carry out new business processing faster than ever before. Insurers use electronic application systems to transfer application information automatically into the new business administration system. Insureres use data analytics to find new, faster ways to evaluate mortality risk. The underwriting process is made faster by simplified underwriting, accelerated underwriting, and automated underwriting. The fastest processing of an application takes place with the combination of instant issue underwriting and straight-through processing. Underwriting is considered to be sound if each risk is Assessed accurately Classified properly Approved for an appropriate premium rate or denied accurately Underwriters use the information on applications and from other sources to determine how much certain risk factors affect a proposed insured’s mortality risk. If risks are accepted at premium rates that are not adequate for the true risks, the insurer will pay more in claims than it can afford. Underwriters also must be wary of antiselection—the tendency of a person who believes he may be dying to go out and buy insurance. Persistency, the retention of business that occurs when a policy remains in force, is also an important concept in underwriting. Underwriters look for insurable interest, a requirement that exists when a person is likely to suffer a genuine financial loss if the event insured against occurs. Underwriting begins with field underwriting, in which the producer gathers initial information about an applicant and proposed insured. Some insurers use teleunderwriting to gather most of the information needed for underwriting. Next, underwriters examine the various medical risk factors, personal risk factors, and financial risk factors the proposed insured presents. The underwriter may consult several information sources beyond the insurance application, including an attending physician’s statement, medicalCopyright © 2021 LL Global, Inc. All rights reserved. questionnaire, pharmaceutical databases, motor vehicle records, tax documents, and financial statements. An underwriter also needs to do financial underwriting to figure out if The proposed insured can afford the premiums The applicant and beneficiary have an insurable interest in the proposed insured The face amount is reasonable given the beneficiary’s economic loss The financial professional consults the insurer’s age and amount requirement chart to determine what reports and evidence of insurability to order for the underwriter. The older the insured and the higher the amount of insurance applied for, the more information the underwriter will need. Most insurers use the numerical rating system to calculate a proposed insured’s total mortality risk. Underwriters consult their extra percentage table to classify proposed insureds into risk classes—preferred, standard, substandard, or declined. Finally, underwriters make the underwriting decision to accept or decline the policy.",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 266,
@@ -3455,7 +3455,7 @@ metadata_nodes = [
         "Summary": "Copyright © 2021 LL Global, Inc. All rights reserved. LOMA 291 Module 2 Lesson 2 New Business and Underwriting Summary of Key Points Underwriting is the process of assessing and classifying the degree of risk represented by a proposed insured and then deciding to accept or decline that risk. Underwriting is part of new business processing, but it’s not the only part. New business processing for life insurance includes all of the activities involved in processing applications, underwriting applications, and issuing policies. Each application generally goes through all of the following steps in the new business process, whether manually or automatically:  Data entry  Good order check  Suitability or best interest check  Records search  Underwriting  Policy issue Recent technological advances allow insurers to carry out new business processing faster than ever before. Insurers use electronic application systems to transfer application information automatically into the new business administration system. Insureres use data analytics to find new, faster ways to evaluate mortality risk. The underwriting process is made faster by simplified underwriting, accelerated underwriting, and automated underwriting. The fastest processing of an application takes place with the combination of instant issue underwriting and straight-through processing. Underwriting is considered to be sound if each risk is Assessed accurately Classified properly Approved for an appropriate premium rate or denied accurately Underwriters use the information on applications and from other sources to determine how much certain risk factors affect a proposed insured’s mortality risk. If risks are accepted at premium rates that are not adequate for the true risks, the insurer will pay more in claims than it can afford. Underwriters also must be wary of antiselection—the tendency of a person who believes he may be dying to go out and buy insurance. Persistency, the retention of business that occurs when a policy remains in force, is also an important concept in underwriting. Underwriters look for insurable interest, a requirement that exists when a person is likely to suffer a genuine financial loss if the event insured against occurs. Underwriting begins with field underwriting, in which the producer gathers initial information about an applicant and proposed insured. Some insurers use teleunderwriting to gather most of the information needed for underwriting. Next, underwriters examine the various medical risk factors, personal risk factors, and financial risk factors the proposed insured presents. The underwriter may consult several information sources beyond the insurance application, including an attending physician’s statement, medicalCopyright © 2021 LL Global, Inc. All rights reserved. questionnaire, pharmaceutical databases, motor vehicle records, tax documents, and financial statements. An underwriter also needs to do financial underwriting to figure out if The proposed insured can afford the premiums The applicant and beneficiary have an insurable interest in the proposed insured The face amount is reasonable given the beneficiary’s economic loss The financial professional consults the insurer’s age and amount requirement chart to determine what reports and evidence of insurability to order for the underwriter. The older the insured and the higher the amount of insurance applied for, the more information the underwriter will need. Most insurers use the numerical rating system to calculate a proposed insured’s total mortality risk. Underwriters consult their extra percentage table to classify proposed insureds into risk classes—preferred, standard, substandard, or declined. Finally, underwriters make the underwriting decision to accept or decline the policy.",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 267,
@@ -3468,7 +3468,7 @@ metadata_nodes = [
         "Summary": "Copyright © 2021 LL Global, Inc. All rights reserved. LOMA 291 Module 2 Lesson 2 New Business and Underwriting Summary of Key Points Underwriting is the process of assessing and classifying the degree of risk represented by a proposed insured and then deciding to accept or decline that risk. Underwriting is part of new business processing, but it’s not the only part. New business processing for life insurance includes all of the activities involved in processing applications, underwriting applications, and issuing policies. Each application generally goes through all of the following steps in the new business process, whether manually or automatically:  Data entry  Good order check  Suitability or best interest check  Records search  Underwriting  Policy issue Recent technological advances allow insurers to carry out new business processing faster than ever before. Insurers use electronic application systems to transfer application information automatically into the new business administration system. Insureres use data analytics to find new, faster ways to evaluate mortality risk. The underwriting process is made faster by simplified underwriting, accelerated underwriting, and automated underwriting. The fastest processing of an application takes place with the combination of instant issue underwriting and straight-through processing. Underwriting is considered to be sound if each risk is Assessed accurately Classified properly Approved for an appropriate premium rate or denied accurately Underwriters use the information on applications and from other sources to determine how much certain risk factors affect a proposed insured’s mortality risk. If risks are accepted at premium rates that are not adequate for the true risks, the insurer will pay more in claims than it can afford. Underwriters also must be wary of antiselection—the tendency of a person who believes he may be dying to go out and buy insurance. Persistency, the retention of business that occurs when a policy remains in force, is also an important concept in underwriting. Underwriters look for insurable interest, a requirement that exists when a person is likely to suffer a genuine financial loss if the event insured against occurs. Underwriting begins with field underwriting, in which the producer gathers initial information about an applicant and proposed insured. Some insurers use teleunderwriting to gather most of the information needed for underwriting. Next, underwriters examine the various medical risk factors, personal risk factors, and financial risk factors the proposed insured presents. The underwriter may consult several information sources beyond the insurance application, including an attending physician’s statement, medicalCopyright © 2021 LL Global, Inc. All rights reserved. questionnaire, pharmaceutical databases, motor vehicle records, tax documents, and financial statements. An underwriter also needs to do financial underwriting to figure out if The proposed insured can afford the premiums The applicant and beneficiary have an insurable interest in the proposed insured The face amount is reasonable given the beneficiary’s economic loss The financial professional consults the insurer’s age and amount requirement chart to determine what reports and evidence of insurability to order for the underwriter. The older the insured and the higher the amount of insurance applied for, the more information the underwriter will need. Most insurers use the numerical rating system to calculate a proposed insured’s total mortality risk. Underwriters consult their extra percentage table to classify proposed insureds into risk classes—preferred, standard, substandard, or declined. Finally, underwriters make the underwriting decision to accept or decline the policy.",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 268,
@@ -3481,7 +3481,7 @@ metadata_nodes = [
         "Summary": "Copyright © 2021 LL Global, Inc. All rights reserved. LOMA 291 Module 2 Lesson 2 New Business and Underwriting Summary of Key Points Underwriting is the process of assessing and classifying the degree of risk represented by a proposed insured and then deciding to accept or decline that risk. Underwriting is part of new business processing, but it’s not the only part. New business processing for life insurance includes all of the activities involved in processing applications, underwriting applications, and issuing policies. Each application generally goes through all of the following steps in the new business process, whether manually or automatically:  Data entry  Good order check  Suitability or best interest check  Records search  Underwriting  Policy issue Recent technological advances allow insurers to carry out new business processing faster than ever before. Insurers use electronic application systems to transfer application information automatically into the new business administration system. Insureres use data analytics to find new, faster ways to evaluate mortality risk. The underwriting process is made faster by simplified underwriting, accelerated underwriting, and automated underwriting. The fastest processing of an application takes place with the combination of instant issue underwriting and straight-through processing. Underwriting is considered to be sound if each risk is Assessed accurately Classified properly Approved for an appropriate premium rate or denied accurately Underwriters use the information on applications and from other sources to determine how much certain risk factors affect a proposed insured’s mortality risk. If risks are accepted at premium rates that are not adequate for the true risks, the insurer will pay more in claims than it can afford. Underwriters also must be wary of antiselection—the tendency of a person who believes he may be dying to go out and buy insurance. Persistency, the retention of business that occurs when a policy remains in force, is also an important concept in underwriting. Underwriters look for insurable interest, a requirement that exists when a person is likely to suffer a genuine financial loss if the event insured against occurs. Underwriting begins with field underwriting, in which the producer gathers initial information about an applicant and proposed insured. Some insurers use teleunderwriting to gather most of the information needed for underwriting. Next, underwriters examine the various medical risk factors, personal risk factors, and financial risk factors the proposed insured presents. The underwriter may consult several information sources beyond the insurance application, including an attending physician’s statement, medicalCopyright © 2021 LL Global, Inc. All rights reserved. questionnaire, pharmaceutical databases, motor vehicle records, tax documents, and financial statements. An underwriter also needs to do financial underwriting to figure out if The proposed insured can afford the premiums The applicant and beneficiary have an insurable interest in the proposed insured The face amount is reasonable given the beneficiary’s economic loss The financial professional consults the insurer’s age and amount requirement chart to determine what reports and evidence of insurability to order for the underwriter. The older the insured and the higher the amount of insurance applied for, the more information the underwriter will need. Most insurers use the numerical rating system to calculate a proposed insured’s total mortality risk. Underwriters consult their extra percentage table to classify proposed insureds into risk classes—preferred, standard, substandard, or declined. Finally, underwriters make the underwriting decision to accept or decline the policy.",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 269,
@@ -3494,7 +3494,7 @@ metadata_nodes = [
         "Summary": "Copyright © 2021 LL Global, Inc. All rights reserved. LOMA 291 Module 2 Lesson 2 New Business and Underwriting Summary of Key Points Underwriting is the process of assessing and classifying the degree of risk represented by a proposed insured and then deciding to accept or decline that risk. Underwriting is part of new business processing, but it’s not the only part. New business processing for life insurance includes all of the activities involved in processing applications, underwriting applications, and issuing policies. Each application generally goes through all of the following steps in the new business process, whether manually or automatically:  Data entry  Good order check  Suitability or best interest check  Records search  Underwriting  Policy issue Recent technological advances allow insurers to carry out new business processing faster than ever before. Insurers use electronic application systems to transfer application information automatically into the new business administration system. Insureres use data analytics to find new, faster ways to evaluate mortality risk. The underwriting process is made faster by simplified underwriting, accelerated underwriting, and automated underwriting. The fastest processing of an application takes place with the combination of instant issue underwriting and straight-through processing. Underwriting is considered to be sound if each risk is Assessed accurately Classified properly Approved for an appropriate premium rate or denied accurately Underwriters use the information on applications and from other sources to determine how much certain risk factors affect a proposed insured’s mortality risk. If risks are accepted at premium rates that are not adequate for the true risks, the insurer will pay more in claims than it can afford. Underwriters also must be wary of antiselection—the tendency of a person who believes he may be dying to go out and buy insurance. Persistency, the retention of business that occurs when a policy remains in force, is also an important concept in underwriting. Underwriters look for insurable interest, a requirement that exists when a person is likely to suffer a genuine financial loss if the event insured against occurs. Underwriting begins with field underwriting, in which the producer gathers initial information about an applicant and proposed insured. Some insurers use teleunderwriting to gather most of the information needed for underwriting. Next, underwriters examine the various medical risk factors, personal risk factors, and financial risk factors the proposed insured presents. The underwriter may consult several information sources beyond the insurance application, including an attending physician’s statement, medicalCopyright © 2021 LL Global, Inc. All rights reserved. questionnaire, pharmaceutical databases, motor vehicle records, tax documents, and financial statements. An underwriter also needs to do financial underwriting to figure out if The proposed insured can afford the premiums The applicant and beneficiary have an insurable interest in the proposed insured The face amount is reasonable given the beneficiary’s economic loss The financial professional consults the insurer’s age and amount requirement chart to determine what reports and evidence of insurability to order for the underwriter. The older the insured and the higher the amount of insurance applied for, the more information the underwriter will need. Most insurers use the numerical rating system to calculate a proposed insured’s total mortality risk. Underwriters consult their extra percentage table to classify proposed insureds into risk classes—preferred, standard, substandard, or declined. Finally, underwriters make the underwriting decision to accept or decline the policy.",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 270,
@@ -3507,7 +3507,7 @@ metadata_nodes = [
         "Summary": "Copyright © 2021 LL Global, Inc. All rights reserved. LOMA 291 Module 2 Lesson 2 New Business and Underwriting Summary of Key Points Underwriting is the process of assessing and classifying the degree of risk represented by a proposed insured and then deciding to accept or decline that risk. Underwriting is part of new business processing, but it’s not the only part. New business processing for life insurance includes all of the activities involved in processing applications, underwriting applications, and issuing policies. Each application generally goes through all of the following steps in the new business process, whether manually or automatically:  Data entry  Good order check  Suitability or best interest check  Records search  Underwriting  Policy issue Recent technological advances allow insurers to carry out new business processing faster than ever before. Insurers use electronic application systems to transfer application information automatically into the new business administration system. Insureres use data analytics to find new, faster ways to evaluate mortality risk. The underwriting process is made faster by simplified underwriting, accelerated underwriting, and automated underwriting. The fastest processing of an application takes place with the combination of instant issue underwriting and straight-through processing. Underwriting is considered to be sound if each risk is Assessed accurately Classified properly Approved for an appropriate premium rate or denied accurately Underwriters use the information on applications and from other sources to determine how much certain risk factors affect a proposed insured’s mortality risk. If risks are accepted at premium rates that are not adequate for the true risks, the insurer will pay more in claims than it can afford. Underwriters also must be wary of antiselection—the tendency of a person who believes he may be dying to go out and buy insurance. Persistency, the retention of business that occurs when a policy remains in force, is also an important concept in underwriting. Underwriters look for insurable interest, a requirement that exists when a person is likely to suffer a genuine financial loss if the event insured against occurs. Underwriting begins with field underwriting, in which the producer gathers initial information about an applicant and proposed insured. Some insurers use teleunderwriting to gather most of the information needed for underwriting. Next, underwriters examine the various medical risk factors, personal risk factors, and financial risk factors the proposed insured presents. The underwriter may consult several information sources beyond the insurance application, including an attending physician’s statement, medicalCopyright © 2021 LL Global, Inc. All rights reserved. questionnaire, pharmaceutical databases, motor vehicle records, tax documents, and financial statements. An underwriter also needs to do financial underwriting to figure out if The proposed insured can afford the premiums The applicant and beneficiary have an insurable interest in the proposed insured The face amount is reasonable given the beneficiary’s economic loss The financial professional consults the insurer’s age and amount requirement chart to determine what reports and evidence of insurability to order for the underwriter. The older the insured and the higher the amount of insurance applied for, the more information the underwriter will need. Most insurers use the numerical rating system to calculate a proposed insured’s total mortality risk. Underwriters consult their extra percentage table to classify proposed insureds into risk classes—preferred, standard, substandard, or declined. Finally, underwriters make the underwriting decision to accept or decline the policy.",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 271,
@@ -3520,7 +3520,7 @@ metadata_nodes = [
         "Summary": "Copyright © 2021 LL Global, Inc. All rights reserved. LOMA 291 Module 2 Lesson 2 New Business and Underwriting Summary of Key Points Underwriting is the process of assessing and classifying the degree of risk represented by a proposed insured and then deciding to accept or decline that risk. Underwriting is part of new business processing, but it’s not the only part. New business processing for life insurance includes all of the activities involved in processing applications, underwriting applications, and issuing policies. Each application generally goes through all of the following steps in the new business process, whether manually or automatically:  Data entry  Good order check  Suitability or best interest check  Records search  Underwriting  Policy issue Recent technological advances allow insurers to carry out new business processing faster than ever before. Insurers use electronic application systems to transfer application information automatically into the new business administration system. Insureres use data analytics to find new, faster ways to evaluate mortality risk. The underwriting process is made faster by simplified underwriting, accelerated underwriting, and automated underwriting. The fastest processing of an application takes place with the combination of instant issue underwriting and straight-through processing. Underwriting is considered to be sound if each risk is Assessed accurately Classified properly Approved for an appropriate premium rate or denied accurately Underwriters use the information on applications and from other sources to determine how much certain risk factors affect a proposed insured’s mortality risk. If risks are accepted at premium rates that are not adequate for the true risks, the insurer will pay more in claims than it can afford. Underwriters also must be wary of antiselection—the tendency of a person who believes he may be dying to go out and buy insurance. Persistency, the retention of business that occurs when a policy remains in force, is also an important concept in underwriting. Underwriters look for insurable interest, a requirement that exists when a person is likely to suffer a genuine financial loss if the event insured against occurs. Underwriting begins with field underwriting, in which the producer gathers initial information about an applicant and proposed insured. Some insurers use teleunderwriting to gather most of the information needed for underwriting. Next, underwriters examine the various medical risk factors, personal risk factors, and financial risk factors the proposed insured presents. The underwriter may consult several information sources beyond the insurance application, including an attending physician’s statement, medicalCopyright © 2021 LL Global, Inc. All rights reserved. questionnaire, pharmaceutical databases, motor vehicle records, tax documents, and financial statements. An underwriter also needs to do financial underwriting to figure out if The proposed insured can afford the premiums The applicant and beneficiary have an insurable interest in the proposed insured The face amount is reasonable given the beneficiary’s economic loss The financial professional consults the insurer’s age and amount requirement chart to determine what reports and evidence of insurability to order for the underwriter. The older the insured and the higher the amount of insurance applied for, the more information the underwriter will need. Most insurers use the numerical rating system to calculate a proposed insured’s total mortality risk. Underwriters consult their extra percentage table to classify proposed insureds into risk classes—preferred, standard, substandard, or declined. Finally, underwriters make the underwriting decision to accept or decline the policy.",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 272,
@@ -3533,7 +3533,7 @@ metadata_nodes = [
         "Summary": "Copyright © 2021 LL Global, Inc. All rights reserved. LOMA 291 Module 2 Lesson 2 New Business and Underwriting Summary of Key Points Underwriting is the process of assessing and classifying the degree of risk represented by a proposed insured and then deciding to accept or decline that risk. Underwriting is part of new business processing, but it’s not the only part. New business processing for life insurance includes all of the activities involved in processing applications, underwriting applications, and issuing policies. Each application generally goes through all of the following steps in the new business process, whether manually or automatically:  Data entry  Good order check  Suitability or best interest check  Records search  Underwriting  Policy issue Recent technological advances allow insurers to carry out new business processing faster than ever before. Insurers use electronic application systems to transfer application information automatically into the new business administration system. Insureres use data analytics to find new, faster ways to evaluate mortality risk. The underwriting process is made faster by simplified underwriting, accelerated underwriting, and automated underwriting. The fastest processing of an application takes place with the combination of instant issue underwriting and straight-through processing. Underwriting is considered to be sound if each risk is Assessed accurately Classified properly Approved for an appropriate premium rate or denied accurately Underwriters use the information on applications and from other sources to determine how much certain risk factors affect a proposed insured’s mortality risk. If risks are accepted at premium rates that are not adequate for the true risks, the insurer will pay more in claims than it can afford. Underwriters also must be wary of antiselection—the tendency of a person who believes he may be dying to go out and buy insurance. Persistency, the retention of business that occurs when a policy remains in force, is also an important concept in underwriting. Underwriters look for insurable interest, a requirement that exists when a person is likely to suffer a genuine financial loss if the event insured against occurs. Underwriting begins with field underwriting, in which the producer gathers initial information about an applicant and proposed insured. Some insurers use teleunderwriting to gather most of the information needed for underwriting. Next, underwriters examine the various medical risk factors, personal risk factors, and financial risk factors the proposed insured presents. The underwriter may consult several information sources beyond the insurance application, including an attending physician’s statement, medicalCopyright © 2021 LL Global, Inc. All rights reserved. questionnaire, pharmaceutical databases, motor vehicle records, tax documents, and financial statements. An underwriter also needs to do financial underwriting to figure out if The proposed insured can afford the premiums The applicant and beneficiary have an insurable interest in the proposed insured The face amount is reasonable given the beneficiary’s economic loss The financial professional consults the insurer’s age and amount requirement chart to determine what reports and evidence of insurability to order for the underwriter. The older the insured and the higher the amount of insurance applied for, the more information the underwriter will need. Most insurers use the numerical rating system to calculate a proposed insured’s total mortality risk. Underwriters consult their extra percentage table to classify proposed insureds into risk classes—preferred, standard, substandard, or declined. Finally, underwriters make the underwriting decision to accept or decline the policy.",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 273,
@@ -3546,7 +3546,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 274,
@@ -3559,7 +3559,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 275,
@@ -3572,7 +3572,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 276,
@@ -3585,7 +3585,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 277,
@@ -3598,7 +3598,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 278,
@@ -3611,7 +3611,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 279,
@@ -3624,7 +3624,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 280,
@@ -3637,7 +3637,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 281,
@@ -3650,7 +3650,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 282,
@@ -3663,7 +3663,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 283,
@@ -3676,12 +3676,12 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 284,
         "Node Name": "Net Promoter Score (NPS)",
-        "Definition": "A widely used metric for measuring customer loyalty by asking a single question: \"On a scale of 0-10, how likely are you to recommend our company to a friend or colleague?\"",
+        "Definition": 'A widely used metric for measuring customer loyalty by asking a single question: "On a scale of 0-10, how likely are you to recommend our company to a friend or colleague?"',
         "Category": "Performance Metric",
         "Domain Tags": "NPS, customer loyalty, promoters, detractors",
         "Related Nodes": "LOMA291_M2L3_KN_011",
@@ -3689,7 +3689,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 285,
@@ -3702,7 +3702,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 286,
@@ -3715,7 +3715,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 287,
@@ -3728,7 +3728,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 288,
@@ -3741,7 +3741,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 289,
@@ -3754,7 +3754,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 290,
@@ -3767,7 +3767,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 291,
@@ -3780,7 +3780,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 292,
@@ -3793,7 +3793,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 293,
@@ -3806,7 +3806,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 294,
@@ -3819,7 +3819,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 295,
@@ -3832,7 +3832,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 2,
-        "Lesson": 4
+        "Lesson": 4,
     },
     {
         "Node ID": 296,
@@ -3845,7 +3845,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 297,
@@ -3858,7 +3858,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 298,
@@ -3871,7 +3871,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 299,
@@ -3884,7 +3884,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 300,
@@ -3897,7 +3897,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 301,
@@ -3910,7 +3910,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 302,
@@ -3923,7 +3923,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 303,
@@ -3936,7 +3936,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 304,
@@ -3949,7 +3949,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 305,
@@ -3962,7 +3962,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 306,
@@ -3975,7 +3975,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 307,
@@ -3988,7 +3988,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 308,
@@ -4001,7 +4001,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 309,
@@ -4014,7 +4014,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 310,
@@ -4027,7 +4027,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 311,
@@ -4040,7 +4040,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 312,
@@ -4053,7 +4053,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 313,
@@ -4066,7 +4066,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 314,
@@ -4079,7 +4079,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 315,
@@ -4092,7 +4092,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 316,
@@ -4105,7 +4105,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 317,
@@ -4118,7 +4118,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 318,
@@ -4131,7 +4131,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 319,
@@ -4144,7 +4144,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 320,
@@ -4157,7 +4157,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 321,
@@ -4170,7 +4170,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 322,
@@ -4183,7 +4183,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 323,
@@ -4196,7 +4196,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 324,
@@ -4209,7 +4209,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 325,
@@ -4222,7 +4222,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 326,
@@ -4235,7 +4235,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 3,
-        "Lesson": 3
+        "Lesson": 3,
     },
     {
         "Node ID": 327,
@@ -4248,7 +4248,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 4,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 328,
@@ -4261,7 +4261,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 4,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 329,
@@ -4274,7 +4274,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 4,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 330,
@@ -4287,7 +4287,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 4,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 331,
@@ -4300,7 +4300,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 4,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 332,
@@ -4313,7 +4313,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 4,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 333,
@@ -4326,7 +4326,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 4,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 334,
@@ -4339,7 +4339,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 4,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 335,
@@ -4352,7 +4352,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 4,
-        "Lesson": 1
+        "Lesson": 1,
     },
     {
         "Node ID": 336,
@@ -4365,7 +4365,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 4,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 337,
@@ -4378,7 +4378,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 4,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 338,
@@ -4391,7 +4391,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 4,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 339,
@@ -4404,7 +4404,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 4,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 340,
@@ -4417,7 +4417,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 4,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 341,
@@ -4430,7 +4430,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 4,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 342,
@@ -4443,7 +4443,7 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 4,
-        "Lesson": 2
+        "Lesson": 2,
     },
     {
         "Node ID": 343,
@@ -4456,6 +4456,6 @@ metadata_nodes = [
         "Summary": "",
         "Course": "LOMA291",
         "Module": 4,
-        "Lesson": 2
-    }
+        "Lesson": 2,
+    },
 ]

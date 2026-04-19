@@ -44,8 +44,14 @@ CHUNK_SIZE = 500
 CHUNK_OVERLAP = 80
 EMBED_DIM = 1536
 
-FAISS_INDEX_PATH = "faiss_index.bin"
-FAISS_META_PATH = "faiss_meta.pkl"
+import os
+PROJECT_ROOT = str(Path(__file__).resolve().parents[3])
+
+FAISS_INDEX_PATH = os.path.join(PROJECT_ROOT, "faiss", "faiss_index.bin")
+FAISS_META_PATH = os.path.join(PROJECT_ROOT, "faiss", "faiss_meta.pkl")
+
+os.makedirs(os.path.dirname(FAISS_INDEX_PATH), exist_ok=True)
+os.makedirs(os.path.dirname(FAISS_META_PATH), exist_ok=True)
 
 # Type aliases (Python 3.12+)
 type RawResult = dict[str, Any]

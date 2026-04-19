@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Any
 
 import pandas as pd
+from langchain_core.messages import SystemMessage, HumanMessage
 from qdrant_client import models
 
 from src.config.app_config import get_app_config
@@ -304,7 +305,10 @@ def _call_llm_for_row(
     )
     user_prompt = _build_user_prompt(row, chunks, n_questions, difficulty, examples)
     raw = llm.chat(
-        messages=[{"role": "system", "content": system_prompt}, {"role": "user", "content": user_prompt}],
+        messages=[
+            SystemMessage(content=system_prompt),
+            HumanMessage(content=user_prompt),
+        ],
         max_tokens=min(n_questions * TOKENS_PER_QUESTION, MAX_TOKENS_PER_CALL),
     )
     return parse_llm_json(raw)

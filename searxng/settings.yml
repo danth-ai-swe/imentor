@@ -1,0 +1,109 @@
+use_default_settings: true
+
+server:
+  secret_key: "change_this_to_random_string"
+  limiter: false
+  public_instance: false
+
+search:
+  safe_search: 0
+  autocomplete: "duckduckgo"
+  formats:
+    - html
+    - json
+
+general:
+  instance_name: "My SearXNG"
+
+engines:
+
+  # ───────────────
+  # Web Search
+  # ───────────────
+  - name: duckduckgo
+    engine: duckduckgo
+    shortcut: ddg
+
+  - name: google
+    engine: google
+    shortcut: g
+
+  - name: bing
+    engine: bing
+    shortcut: bi
+
+  - name: brave
+    engine: brave
+    shortcut: br
+
+  - name: startpage
+    engine: startpage
+    shortcut: sp
+
+  # ───────────────
+  # Dev / Technical
+  # ───────────────
+  - name: github
+    engine: github
+    shortcut: gh
+
+  - name: stackoverflow
+    engine: stackoverflow
+    shortcut: so
+
+  # ───────────────
+  # Media
+  # ───────────────
+  - name: youtube
+    engine: youtube
+    shortcut: yt
+
+  - name: vimeo
+    engine: vimeo
+    shortcut: vm
+
+  # ───────────────
+  # Knowledge
+  # ───────────────
+  - name: wikipedia
+    engine: wikipedia
+    shortcut: wp
+
+  - name: wikidata
+    engine: wikidata
+    shortcut: wd
+
+  # ───────────────
+  # News
+  # ───────────────
+  - name: google_news
+    engine: google_news
+    shortcut: gn
+
+  - name: yahoo_news
+    engine: yahoo_news
+    shortcut: yn
+
+  # ───────────────
+  # Files / Academic
+  # ───────────────
+  - name: arxiv
+    engine: arxiv
+    shortcut: arx
+
+  - name: pubmed
+    engine: pubmed
+    shortcut: pm
+
+  # ───────────────
+  # Torrents (optional)
+  # ───────────────
+  - name: nyaa
+    engine: nyaa
+    shortcut: ny
+    disabled: true
+
+  - name: piratebay
+    engine: piratebay
+    shortcut: pb
+    disabled: true

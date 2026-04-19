@@ -63,7 +63,7 @@ class LLMAgenticChunkerv2(BaseChunker):
     ) -> List[int]:
         try:
             result = self.client.chat(
-                self._build_messages(chunked_input, current_chunk, max_chunk)
+                messages=self._build_messages(chunked_input, current_chunk, max_chunk)
             )
         except Exception as e:
             logger.warning(f"LLM call failed: {e}")
