@@ -91,7 +91,7 @@ async def chat_ask(payload: ChatRequest) -> ChatResponse:
 
 
 @documents_router.post("/upload")
-async def upload_documents(payload: UploadDocumentsRequest, manager=Depends(get_qdrant_client)) -> dict:
+async def upload_documents(payload: UploadDocumentsRequest, manager=Depends(lambda: get_qdrant_client())) -> dict:
     try:
         await manager.aupload_documents(
             documents=payload.documents,
