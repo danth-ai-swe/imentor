@@ -1,6 +1,5 @@
-import re
-
 import pandas as pd
+import re
 
 COURSE_NAMES = {
     "LOMA281": "LOMA 281 - Meeting Customer Needs with Insurance and Annuities - 3rd Edition",
@@ -93,7 +92,7 @@ def parse_source(source_str):
     return None, None, None, None
 
 
-FILE_PATH = r"D:\Deverlopment\huudan.com\PythonProject\data\metadata_node.xlsx"
+FILE_PATH = r"C:\imt-ai-brain\data\metadata_node.xlsx"
 
 df = pd.read_excel(FILE_PATH, dtype=str)
 

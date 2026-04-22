@@ -161,53 +161,6 @@ def exception_logging(exctype, value, tb):
     logger.error(f"UNHANDLED EXCEPTION: {write_val}")
 
 
-def log_function_call(func):
-    """Decorator that logs start time, end time and execution duration for sync functions."""
-
-    @functools.wraps(func)
-    def wrapper(*args, **kwargs):
-        func_name = func.__name__
-        module_name = func.__module__
-        qualified = f"{module_name}.{func_name}"
-        args_repr = [repr(a) for a in args]
-        kwargs_repr = [f"{k}={repr(v)}" for k, v in kwargs.items()]
-        signature = ", ".join(args_repr + kwargs_repr)
-
-        start_dt = datetime.now()
-        start_ts = time.perf_counter()
-        logger.debug(
-            f">>> START  {qualified}({signature}) | Start: {start_dt.strftime(_TIME_FMT)}"
-        )
-
-        try:
-            result = func(*args, **kwargs)
-            end_ts = time.perf_counter()
-            end_dt = datetime.now()
-            duration = end_ts - start_ts
-            # Do not log result for embedding functions
-            if "embedding" in qualified.lower():
-                logger.debug(
-                    f"<<< END    {qualified} | End: {end_dt.strftime(_TIME_FMT)} | "
-                    f"Duration: {duration:.4f}s"
-                )
-            else:
-                logger.debug(
-                    f"<<< END    {qualified} | End: {end_dt.strftime(_TIME_FMT)} | "
-                    f"Duration: {duration:.4f}s | Result: {repr(result)}"
-                )
-            return result
-        except Exception as e:
-            end_ts = time.perf_counter()
-            end_dt = datetime.now()
-            duration = end_ts - start_ts
-            logger.error(
-                f"!!! ERROR  {qualified} | End: {end_dt.strftime(_TIME_FMT)} | "
-                f"Duration: {duration:.4f}s | Error: {e!r}"
-            )
-            raise
-
-    return wrapper
-
 
 def alog_function_call(func):
     """Decorator that logs start time, end time and execution duration for async functions."""

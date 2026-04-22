@@ -1,38 +1,29 @@
 import asyncio
+import json
 from typing import Any, Dict, List, Optional
 
 import numpy as np
 
+from src.rag.search.searxng_search import web_rag_answer
 from src.apis.app_model import ChatSourceModel
 from src.config.app_config import AppConfig, get_app_config
-from src.config.metadata import metadata_nodes
 from src.constants.app_constant import (
     COLLECTION_NAME,
     MAX_INPUT_CHARS,
     INTENT_CORE_KNOWLEDGE, INTENT_OFF_TOPIC, INTENT_QUIZ, NEIGHBOR_PREV_INDEX, VECTOR_SEARCH_TOP_K,
-    NEIGHBOR_NEXT_INDEX, UNSUPPORTED_LANGUAGE_MSG, INPUT_TOO_LONG_RESPONSE, NO_RESULT_RESPONSE_MAP,
-    ANSWER_ERROR_RESPONSE_MAP, OFF_TOPIC_RESPONSE_MAP,
+    NEIGHBOR_NEXT_INDEX, UNSUPPORTED_LANGUAGE_MSG, INPUT_TOO_LONG_RESPONSE, OFF_TOPIC_RESPONSE_MAP,
 )
 from src.rag.db_vector import get_qdrant_client, QdrantManager
 from src.rag.llm.chat_llm import AzureChatClient, get_openai_chat_client
 from src.rag.llm.embedding_llm import AzureEmbeddingClient, get_openai_embedding_client
 from src.rag.reflector import Reflection
-from src.rag.search.entrypoint import build_final_prompt, afetch_chat_history
+from src.rag.search.entrypoint import build_final_prompt, afetch_chat_history, _build_chunk_filter_payload
 from src.rag.search.model import PipelineResult, ChunkDict
-from src.rag.search.prompt import DETECT_LANGUAGE_PROMPT, CLARITY_CHECK_PROMPT, HYDE_VARIANTS_PROMPT
-from src.rag.search.web_search import asearch_and_extract, agenerate_web_answer
+from src.rag.search.prompt import DETECT_LANGUAGE_PROMPT, CLARITY_CHECK_PROMPT, HYDE_VARIANTS_PROMPT, \
+    CHUNK_RELEVANCE_FILTER_PROMPT
 from src.rag.semantic_router.intent_router_registry import get_intent_router
 from src.utils.app_utils import is_quiz_intent, parse_json_response, mean_pool_colbert, mean_pool_dense
 from src.utils.logger_utils import logger, StepTimer
-
-_NODE_INDEX: Dict[str, Dict[str, Any]] = {
-    str(node["Node ID"]): {
-        k: v
-        for k, v in node.items()
-        if k not in ("Node ID", "Source")
-    }
-    for node in metadata_nodes
-}
 
 
 def _make_off_topic_result(
@@ -136,6 +127,63 @@ async def _acheck_input_clarity(
         return {"clear": True}
 
 
+async def _afilter_relevant_chunks(
+        llm: AzureChatClient,
+        standalone_query: str,
+        chunks: List[ChunkDict],
+        max_text_chars: int = 400,
+) -> List[ChunkDict]:
+    """
+    Dùng LLM lọc chunks thực sự liên quan.
+    Gửi kèm metadata (source, course, module, lesson, page, node summary)
+    lẫn nội dung text để LLM có đủ context phán xét.
+    """
+    if not chunks:
+        return []
+
+    chunks_payload = [
+        _build_chunk_filter_payload(i, chunk, max_text_chars)
+        for i, chunk in enumerate(chunks)
+    ]
+
+    chunks_json = json.dumps(chunks_payload, ensure_ascii=False, indent=2)
+
+    prompt = CHUNK_RELEVANCE_FILTER_PROMPT.format(
+        standalone_query=standalone_query,
+        chunks_json=chunks_json,
+    )
+
+    try:
+        raw = (await llm.ainvoke(prompt)).strip()
+        indices = parse_json_response(raw)
+
+        if not isinstance(indices, dict) or "relevant_indices" not in indices:
+            logger.warning("Chunk filter returned unexpected format — keeping all chunks")
+            return chunks
+
+        raw_indices = indices["relevant_indices"]
+        if not isinstance(raw_indices, list):
+            logger.warning("relevant_indices is not a list — keeping all chunks")
+            return chunks
+
+        valid_indices = [
+            i for i in raw_indices
+            if isinstance(i, int) and 0 <= i < len(chunks)
+        ]
+
+        logger.info(
+            f"Chunk relevance filter: {len(chunks)} total → "
+            f"{len(valid_indices)} relevant "
+            f"(dropped {len(chunks) - len(valid_indices)})"
+        )
+
+        return [chunks[i] for i in valid_indices]
+
+    except Exception:
+        logger.exception("Chunk relevance filter failed — keeping all chunks as fallback")
+        return chunks
+
+
 async def _avalidate_and_prepare(
         user_input: str,
         conversation_id: Optional[str],
@@ -149,9 +197,7 @@ async def _avalidate_and_prepare(
         return None, None, UNSUPPORTED_LANGUAGE_MSG
 
     chat_history = await afetch_chat_history(llm, conversation_id)
-    standalone_query = user_input
-    if chat_history:
-        standalone_query = await Reflection(llm).areflect(chat_history, user_input)
+    standalone_query = await Reflection(llm).areflect(chat_history, user_input)
 
     return detected_language, standalone_query, None
 
@@ -185,11 +231,11 @@ async def _adetect_language_llm(
     try:
         raw = (await llm.ainvoke(prompt)).strip()
         parsed = parse_json_response(raw)
-        language: str = parsed.get("language", "English")
+        language: str = parsed.get("language", "")
         return language
     except Exception:
         logger.exception("LLM language detection failed, defaulting to English")
-        return "English"
+        return ""
 
 
 def extract_sources(
@@ -210,29 +256,6 @@ def extract_sources(
         if source and source.name not in seen:
             seen[source.name] = source
     return list(seen.values())
-
-
-async def _afallback_web_search(
-        llm: AzureChatClient,
-        user_input: str,
-        standalone_query: str,
-        detected_language: str,
-) -> tuple[str, List[Any]]:
-    extracted_results, search_meta = await asearch_and_extract(standalone_query)
-
-    if not extracted_results:
-        logger.warning("Web search fallback: no extracted results")
-        return NO_RESULT_RESPONSE_MAP.get(detected_language), []
-
-    answer, source_items = await agenerate_web_answer(
-        llm=llm,
-        user_input=user_input,
-        detected_language=detected_language,
-        extracted_results=extracted_results,
-        search_meta=search_meta,
-    )
-
-    return (answer or NO_RESULT_RESPONSE_MAP.get(detected_language)), source_items
 
 
 async def _aroute_intent(embedder: AzureEmbeddingClient, standalone_query: str) -> str:
@@ -357,38 +380,16 @@ async def _agenerate_answer(
         user_input: str,
         detected_language: str,
         enriched_chunks: List[ChunkDict],
-        node_data_list: List[Dict[str, Any]],
-) -> str:
+):
     final_prompt = build_final_prompt(
         user_input=user_input,
         detected_language=detected_language,
         relevant_chunks=enriched_chunks,
-        node_data_list=node_data_list,
     )
     try:
         return (await llm.ainvoke(final_prompt)).strip()
     except Exception:
         logger.exception("Failed to generate answer from LLM")
-        return ANSWER_ERROR_RESPONSE_MAP.get(detected_language)
-
-
-async def _aload_node_data(
-        relevant_chunks: List[ChunkDict],
-) -> List[Dict[str, Any]]:
-    node_data_list: List[Dict[str, Any]] = []
-    seen_node_ids: set[str] = set()
-
-    for chunk in relevant_chunks:
-        node_id = str(chunk.get("metadata", {}).get("node_id", ""))
-        if not node_id or node_id == "N/A" or node_id in seen_node_ids:
-            continue
-        seen_node_ids.add(node_id)
-
-        node_data = _NODE_INDEX.get(node_id)
-        if node_data:
-            node_data_list.append(node_data)
-
-    return node_data_list
 
 
 async def async_pipeline_hyde_search(
@@ -445,24 +446,28 @@ async def async_pipeline_hyde_search(
         if not sorted_chunks:
             logger.info("No vector results — triggering web search fallback")
             async with timer.astep("web_search_fallback_no_chunks"):
-                answer, source_items = await _afallback_web_search(
-                    llm, standalone_query, standalone_query, detected_language
-                )
-            return _make_web_search_result(answer, source_items, detected_language)
+                rs = await web_rag_answer(llm, embedder, standalone_query, detected_language)
+            return _make_web_search_result(rs["answer"], rs["sources"], detected_language)
 
         async with timer.astep("enrich_chunks"):
-            fetch_neighbor_task = _afetch_neighbor_chunks(qdrant, sorted_chunks)
-            load_node_data_task = _aload_node_data(sorted_chunks)
-            neighbor_chunks, node_data_list = await asyncio.gather(
-                fetch_neighbor_task,
-                load_node_data_task
-            )
+            neighbor_chunks = await _afetch_neighbor_chunks(qdrant, sorted_chunks)
             enriched_chunks = _merge_chunks(sorted_chunks, neighbor_chunks)
+
+        async with timer.astep("filter_relevant_chunks"):
+            filtered_chunks = await _afilter_relevant_chunks(
+                llm, standalone_query, enriched_chunks
+            )
+
+        if not filtered_chunks:
+            logger.info("No relevant chunks after filtering — triggering web search fallback")
+            async with timer.astep("web_search_fallback_no_chunks"):
+                rs = await web_rag_answer(llm, embedder, standalone_query, detected_language)
+            return _make_web_search_result(rs["answer"], rs["sources"], detected_language)
 
         async with timer.astep("generate_answer"):
             answer = await _agenerate_answer(
                 llm, standalone_query, detected_language,
-                enriched_chunks, node_data_list
+                filtered_chunks,
             )
 
         return _make_rag_result(

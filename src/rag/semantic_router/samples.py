@@ -17,60 +17,14 @@ coreKnowledgeSamples = [
 offTopicSamples = [
     "hello",
     "Hi there!",
-    # Daily life / general knowledge
     "What is the weather today?",
     "What is the capital of France?",
-    # Entertainment / sports
     "Who won the World Cup?",
     "Recommend a good movie to watch.",
-    # Tasks outside scope
     "Tell me a joke.",
     "Can you help me write an email to my boss?",
-    # Tech / finance unrelated
     "How do I fix a bug in Python?",
     "What stocks should I buy?",
-    # Food / lifestyle
     "How do I make pasta carbonara?",
-    # Media
     "What's trending on social media today?",
 ]
-
-courseMetadataSamples = [
-    # // Về khóa học tổng quát
-    "What is LOMA?",
-    "What does LOMA stand for?",
-    "What is LOMA 281?",
-    "What is LOMA 291?",
-    "Give me an overview of LOMA 281.",
-    "Give me an overview of LOMA 291.",
-    "What is the difference between LOMA 281 and LOMA 291?",
-    "Compare LOMA 281 and LOMA 291.",
-
-    # // Về cấu trúc khóa học
-    "How many modules are in LOMA 281?",
-    "How many lessons does LOMA 291 have?",
-    "What modules are covered in LOMA 281?",
-    "List all lessons in LOMA 291.",
-    "What is covered in Module 2 of LOMA 281?",
-    "What is the structure of LOMA 291?",
-
-    # // Định nghĩa / tóm tắt node
-    "What is the definition of underwriting in LOMA 281?",
-    "Summarize lesson 3 of LOMA 281.",
-    "What does Module 1 of LOMA 291 cover?",
-    "Give me a summary of the lesson on risk management.",
-    "What topics are tagged under 'reinsurance' in LOMA?",
-    "Which lessons belong to the 'Underwriting' domain?",
-    "What category does the lesson on premiums fall under?",
-
-    # // So sánh khái niệm cơ bản
-    "Compare the definitions of risk and uncertainty as taught in LOMA.",
-    "What is the difference between a module and a lesson in LOMA?",
-    "How are topics organized in LOMA 281 vs LOMA 291?",
-
-    # // Tra cứu node metadata
-    "What are the tags for the lesson on beneficiaries?",
-    "What domain does LOMA 281 Module 3 belong to?",
-    "Find all lessons related to 'mortality risk'.",
-    "What node covers the concept of insurable interest?",
-];

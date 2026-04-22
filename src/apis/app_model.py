@@ -1,7 +1,8 @@
 from enum import Enum
-from typing import Any, List
+from typing import List
 
 from pydantic import BaseModel, Field
+
 
 class ChatRequest(BaseModel):
     message: str = Field(..., min_length=1, max_length=15_000, description="User message")

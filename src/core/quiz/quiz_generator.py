@@ -7,10 +7,8 @@ from pathlib import Path
 from typing import Any
 
 import pandas as pd
-from langchain_core.messages import SystemMessage, HumanMessage
 from qdrant_client import models
 
-from src.config.app_config import get_app_config
 from src.constants.app_constant import METADATA_NODE_XLSX, QUIZ_DIR, DATA_DIR
 from src.core.quiz.prompt import QUIZ_SYSTEM_PROMPT
 from src.rag.db_vector import get_qdrant_client
@@ -305,17 +303,13 @@ def _call_llm_for_row(
     )
     user_prompt = _build_user_prompt(row, chunks, n_questions, difficulty, examples)
     raw = llm.chat(
-        messages=[
-            SystemMessage(content=system_prompt),
-            HumanMessage(content=user_prompt),
-        ],
+        messages=[{"role": "system", "content": system_prompt}, {"role": "user", "content": user_prompt}],
         max_tokens=min(n_questions * TOKENS_PER_QUESTION, MAX_TOKENS_PER_CALL),
     )
     return parse_llm_json(raw)
 
 
 def _enrich_question_metadata(question: dict, row: dict, chunks: list[dict]) -> None:
-    base_url = get_app_config().APP_DOMAIN
     question["category"] = str(row.get("Category", "")).strip()
     question["node_name"] = str(row.get("Node Name", "")).strip()
 
@@ -328,7 +322,7 @@ def _enrich_question_metadata(question: dict, row: dict, chunks: list[dict]) -> 
     question["sources"] = [
         {
             "name": fn,
-            "url": f"{base_url}/api/v1/file/{fn}.pdf",
+            "url": f"https://api.fpt-apps.com/imt-ai-brain/api/v1/file/{fn}.pdf",
             "page": chunk.get("page_number"),
             "total_pages": chunk.get("total_pages"),
             "module": chunk.get("module") or str(row.get("Module", "")).strip() or None,

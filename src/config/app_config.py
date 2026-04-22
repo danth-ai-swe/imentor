@@ -1,24 +1,23 @@
 from functools import lru_cache
 from pathlib import Path
 from typing import Optional
+
 import openai
-
-
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from tenacity import (
     retry,
     stop_after_attempt,
-    retry_if_exception_type,
-    wait_exponential,
+    retry_if_exception_type, wait_exponential,
 )
 
-env_path = Path(__file__).parent.parent.parent / ".env"
+env_path = Path(__file__).parent.parent.parent / '.env'
 
 
 class AppConfig(BaseSettings):
     GIT_COMMIT_ID: str = "unknown"
     DEFINITION_NAME: str = "unknown"
     APP_BUILD_NUMBER: str = "unknown"
+
     PROJECT_NAME: str = "OKR AI Agent"
     PROFILE_NAME: str = "default"
     DEBUG: bool = False
@@ -40,77 +39,13 @@ class AppConfig(BaseSettings):
     APP_DOMAIN: str = "https://api.fpt-apps.com/imt-ai-brain"
     QDRANT_URL: str = "http://localhost:6333"
     QDRANT_APIKEY: str
-    # ───────────────── RabbitMQ ─────────────────
-    RABBITMQ_USER: str
-    RABBITMQ_PASS: str
-
-    # ───────────────── Redis ─────────────────
-    REDIS_PASSWORD: str
-
-    # ───────────────── MinIO ─────────────────
-    MINIO_ACCESS_KEY: str
-    MINIO_SECRET_ACCESS_KEY: str
-
-    # ───────────────── MongoDB ─────────────────
-    MONGO_INITDB_ROOT_USERNAME: str
-    MONGO_INITDB_ROOT_PASSWORD: str
-
-    # ───────────────── Postgres ─────────────────
-    POSTGRES_USER: str
-    POSTGRES_PASSWORD: str
-    POSTGRES_DB: str
-
-    # ───────────────── PgAdmin ─────────────────
-    PGADMIN_DEFAULT_EMAIL: str
-    PGADMIN_DEFAULT_PASSWORD: str
-    PGADMIN_PORT: int = 5050
-
-    # ───────────────── Grafana ─────────────────
-    GF_ADMIN_USER: str
-    GF_ADMIN_PASSWORD: str
-
-    # ───────────────── Custom Auth ─────────────────
-    ME_USERNAME: str
-    ME_PASSWORD: str
-
-    # ───────────────── ClickHouse ─────────────────
-    CLICKHOUSE_USER: str
-    CLICKHOUSE_PASSWORD: str
-
-    # ───────────────── Langfuse ─────────────────
-    LANGFUSE_SALT: str
-    LANGFUSE_ENCRYPTION_KEY: str
-    LANGFUSE_NEXTAUTH_SECRET: str
-    NEXTAUTH_URL: str
-
-    LANGFUSE_INIT_USER_EMAIL: str
-    LANGFUSE_INIT_USER_NAME: str
-    LANGFUSE_INIT_USER_PASSWORD: str
-
-    LANGFUSE_INIT_ORG_ID: str
-    LANGFUSE_INIT_ORG_NAME: str
-
-    LANGFUSE_INIT_PROJECT_ID: str
-    LANGFUSE_INIT_PROJECT_NAME: str
-    LANGFUSE_INIT_PROJECT_PUBLIC_KEY: str
-    LANGFUSE_INIT_PROJECT_SECRET_KEY: str
-
-    LANGFUSE_SECRET_KEY: str
-    LANGFUSE_PUBLIC_KEY: str
-    LANGFUSE_BASE_URL: str
-
-    # ───────────────── Optional ─────────────────
-    TELEMETRY_ENABLED: bool = True
-    LANGFUSE_ENABLE_EXPERIMENTAL_FEATURES: bool = False
-
-    EMAIL_FROM_ADDRESS: Optional[str] = None
-    SMTP_CONNECTION_URL: Optional[str] = None
-
+    SEARX_HOST: str
+    CF_ACCESS_CLIENT_ID: str
+    CF_ACCESS_CLIENT_SECRET: str
     model_config = SettingsConfigDict(
         env_file=env_path,
         env_file_encoding="utf-8",
         case_sensitive=False,
-        extra="ignore",
     )
 
 

@@ -16,7 +16,7 @@ class ForbiddenError(HTTPException):
             detail=message
         )
 
-  
+
 class UnauthorizedError(HTTPException):
     def __init__(self, message: str = "Not authenticated"):
         super().__init__(

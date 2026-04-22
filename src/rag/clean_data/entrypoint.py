@@ -3,14 +3,14 @@ from pathlib import Path
 
 import fitz
 
-from rag.clean_data.image_processor import ImageProcessor
-from rag.clean_data.model import Chunk
-from rag.clean_data.node_classifier import NodeClassifier
+from src.rag.clean_data.image_processor import ImageProcessor
+from src.rag.clean_data.model import Chunk
+from src.rag.clean_data.node_classifier import NodeClassifier
 from src.constants.app_constant import PREPARES_DIR
 from src.rag.chunking.recursive_chunker import get_recursive_token_chunk
 from src.rag.llm.chat_llm import get_openai_chat_client
 from src.utils.app_utils import clean_text
-from utils.logger_utils import logger
+from src.utils.logger_utils import logger
 
 _PAGE_SEP_RE = re.compile(r"={5} Trang (\d+) / (\d+) ={5}")
 _FILENAME_RE = re.compile(r"^(LOMA\d+)_M(\d+)L(\d+)")

@@ -4,9 +4,9 @@ from typing import Optional
 
 import fitz
 
-from rag.clean_data.prompt import EXTRACT_TABLE_PROMPT, EXTRACT_CHART_PROMPT, EXTRACT_TEXT_PROMPT, CLASSIFY_PROMPT
-from utils.app_utils import strip_json_fence
-from utils.logger_utils import logger
+from src.rag.clean_data.prompt import EXTRACT_TABLE_PROMPT, EXTRACT_CHART_PROMPT, EXTRACT_TEXT_PROMPT, CLASSIFY_PROMPT
+from src.utils.app_utils import strip_json_fence
+from src.utils.logger_utils import logger
 
 MIN_IMAGE_PIXELS = 5_000
 _LABEL_MAP = {

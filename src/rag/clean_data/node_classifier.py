@@ -2,11 +2,11 @@ import json
 
 import pandas as pd
 
-from rag.clean_data.model import Chunk
-from rag.clean_data.prompt import CLASSIFY_NODE_PROMPT
-from rag.llm.chat_llm import get_openai_chat_client
-from utils.app_utils import strip_json_fence
-from utils.logger_utils import logger
+from src.rag.clean_data.model import Chunk
+from src.rag.clean_data.prompt import CLASSIFY_NODE_PROMPT
+from src.rag.llm.chat_llm import get_openai_chat_client
+from src.utils.app_utils import strip_json_fence
+from src.utils.logger_utils import logger
 
 
 class NodeClassifier:

@@ -222,7 +222,7 @@ class QdrantManager:
             self,
             dense_query_vec: list[float],  # ← pre-computed mean dense vector
             colbert_query_vec: list[list[float]],  # ← pre-computed mean colbert vector
-            top_k: int = 3,
+            top_k: int = 2,
             prefetch_limit: int = 10,
             bm25_query: str = "",  # ← original query string for BM25
             filter_conditions: Optional[list[models.Condition]] = None,

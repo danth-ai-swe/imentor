@@ -10,8 +10,6 @@ import re
 import time
 from pathlib import Path
 
-from langchain_core.messages import SystemMessage, HumanMessage
-
 from src.rag.llm.chat_llm import get_openai_chat_client
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
@@ -140,8 +138,11 @@ def main() -> None:
         try:
             response = client.chat(
                 messages=[
-                    SystemMessage(content=EXPLANATION_SYSTEM_PROMPT),
-                    HumanMessage(content=build_user_prompt(obj)),
+                    {"role": "system", "content": EXPLANATION_SYSTEM_PROMPT},
+                    {
+                        "role": "user",
+                        "content": build_user_prompt(obj)
+                    }
                 ]
             )
 

@@ -57,16 +57,3 @@ class TokenCount:
             total += 3
 
         return max(1, total)
-
-
-def main():
-    tc = TokenCount(method="tiktoken")
-    try:
-        count = tc.num_tokens_from_string("test")
-        print(f"Token count (tiktoken): {count}")
-    except ImportError as e:
-        print(e)
-
-
-if __name__ == "__main__":
-    main()

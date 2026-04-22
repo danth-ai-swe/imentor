@@ -1,4 +1,3 @@
-import logging
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from typing import (
@@ -15,9 +14,8 @@ from typing import (
     Union,
 )
 
-from .base_chunker import BaseChunker
-
-logger = logging.getLogger(__name__)
+from src.rag.chunking.base_chunker import BaseChunker
+from src.utils.logger_utils import logger
 
 TS = TypeVar("TS", bound="TextSplitter")
 

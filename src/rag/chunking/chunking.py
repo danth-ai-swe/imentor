@@ -1,7 +1,7 @@
 import re
 from typing import Any, List, Optional
 
-from .fixed_token_chunker import TextSplitter
+from src.rag.chunking.fixed_token_chunker import TextSplitter
 
 
 def _split_text_with_regex(

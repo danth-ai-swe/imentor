@@ -13,7 +13,7 @@ from src.apis.app_model import (
     QuizRequest
 )
 from src.apis.app_router import documents_router, chat_router, file_router, quiz_router
-from src.constants.app_constant import PDFS_DIR, COLLECTION_NAME, T_ZIP, TT_ZIP
+from src.constants.app_constant import PDFS_DIR, COLLECTION_NAME, T_ZIP, TT_ZIP, STORAGE_FAQ_TEMPLATE
 from src.core.quiz.quiz_generator import generate_quiz, generate_quiz_full_background, read_quiz_result
 from src.rag.db_vector import get_qdrant_client
 from src.rag.ingest.pipeline import upload_to_qdrant
@@ -102,8 +102,18 @@ def get_t_zip_file():
 @file_router.get("/tt")
 def get_tt_zip_file():
     if not os.path.isfile(TT_ZIP):
-        raise NotFoundError(resource="TT file not found", id=T_ZIP)
+        raise NotFoundError(resource="TT file not found", id=TT_ZIP)
     return FileResponse(TT_ZIP, filename=os.path.basename(TT_ZIP), media_type="application/zip")
+
+
+@file_router.get("/faq-template")
+def get_fqa_template():
+    if not os.path.isfile(STORAGE_FAQ_TEMPLATE):
+        raise NotFoundError(resource="STORAGE_FAQ_TEMPLATE file not found", id=STORAGE_FAQ_TEMPLATE)
+    response = FileResponse(STORAGE_FAQ_TEMPLATE, filename=os.path.basename(STORAGE_FAQ_TEMPLATE),
+                            media_type="application/pdf")
+    response.headers["Content-Disposition"] = 'inline; filename="iMentor_FAQ_Template.pdf"'
+    return response
 
 
 @file_router.get("/{filename:path}")

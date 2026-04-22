@@ -1,6 +1,6 @@
 from pathlib import Path
 
-COLLECTION_NAME = "imt_kb_v10"
+COLLECTION_NAME = "imt_kb_v1"
 DENSE_EMBEDDING_DIM = 1536
 BM25_MODEL = "Qdrant/bm42-all-minilm-l6-v2-attentions"
 BM25_OPTIONS = {"language": "none", "ascii_folding": True, "tokenizer": "multilingual"}
@@ -9,13 +9,26 @@ MAX_INPUT_CHARS = 2_000
 
 CHAT_HISTORY_TIMEOUT = 10
 
-MAX_RECENT_HISTORY_ENTRIES = 6
+MAX_RECENT_HISTORY_ENTRIES = 10
+
+# ── Config ───────────────────────────────────────────────────────────────────
+_HTTP_TIMEOUT = 5  # fail-fast
+TOP_URLS = 2
+CHUNK_SIZE = 500
+CHUNK_OVERLAP = 80
+EMBED_DIM = 1536
+FAISS_TTL_SECONDS = 86_400  # 24 h
+
+DEFAULT_MAX_RESULTS = 3
+DEFAULT_ENGINES = ["google", "bing", "duckduckgo"]
+DEFAULT_CATEGORIES = ["general"]
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = PROJECT_ROOT / "data"
 INGEST_DIR = DATA_DIR / "ingest"
 T_ZIP = DATA_DIR / "t.7z"
 TT_ZIP = DATA_DIR / "tt.7z"
+STORAGE_FAQ_TEMPLATE = DATA_DIR / "storage" / "iMentor_FAQ_Template.pdf"
 PREPARES_DIR = DATA_DIR / "prepares"
 QUIZ_DIR = DATA_DIR / "quiz"
 PDFS_DIR = DATA_DIR / "output" / "pdfs"
@@ -30,7 +43,6 @@ NEIGHBOR_PREV_INDEX: int = -1  # phần tử cuối của list "previous" = chun
 NEIGHBOR_NEXT_INDEX: int = 0  # phần tử đầu của list "next"     = chunk liền sau
 INTENT_CORE_KNOWLEDGE: str = "core_knowledge"
 INTENT_OFF_TOPIC: str = "off_topic"
-OVERALL_CORE_KNOWLEDGE: str = "overall_core_knowledge"
 INTENT_QUIZ: str = "quiz"
 
 OFF_TOPIC_RESPONSE_MAP = {
@@ -48,20 +60,6 @@ that topic. Do you have a question related to insurance?
 Insuripediaは保険知識に特化したAIアシスタントです。
 そのため、そのトピックに関するご質問にはお答えできません。
 保険に関するご質問はありますか？
-""".strip())
-}
-ANSWER_ERROR_RESPONSE_MAP = {
-    "Vietnamese": ("""
-Xin lỗi, Insuripedia đã gặp lỗi khi tạo câu trả lời. 
-Vui lòng thử lại.
-""".strip()),
-    "English": ("""
-Sorry, Insuripedia encountered an error generating the answer. 
-Please try again.
-""".strip()),
-    "Japanese": ("""
-申し訳ありませんが、Insuripediaは回答の生成中にエラーが発生しました。
-もう一度お試しください。
 """.strip())
 }
 INPUT_TOO_LONG_RESPONSE = """
