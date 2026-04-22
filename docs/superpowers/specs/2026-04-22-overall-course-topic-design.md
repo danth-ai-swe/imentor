@@ -14,7 +14,7 @@ The current RAG pipeline routes user queries between two intents: `core_knowledg
 
 In scope:
 
-- New constant `OVERALL_CORE_KNOWLEDGE` and collection name `overall_course`.
+- New constant `INTENT_OVERALL_COURSE_KNOWLEDGE` and collection name `overall_course`.
 - New `courseMetadataSamples` route for the semantic intent router (~30 samples already supplied).
 - New script `build_overall_chunks.py` that reads `data/metadata_node.json` and emits 5 chunk types (~380 chunks total — node counts are exact, lesson count derives from data) into `data/ingest_overall/overall_course.json`.
 - Refactor `pipeline.py` into a `dispatch` + `_arun_hyde_search` split so the search stage can be invoked against any collection.
@@ -36,7 +36,7 @@ Out of scope:
 `SemanticRouter` in `src/rag/semantic_router/router.py` already supports N routes. Today only 2 are registered. Add a 3rd:
 
 ```python
-Route(name=OVERALL_CORE_KNOWLEDGE, samples=courseMetadataSamples)
+Route(name=INTENT_OVERALL_COURSE_KNOWLEDGE, samples=courseMetadataSamples)
 ```
 
 `main.py` is already wired for this (lines 10, 25, 52) — only the constant + sample list need to be added to make imports succeed. The precomputed embedding cache (`cache/embeddings/intent_routes.npz`) auto-invalidates when `ROUTE_SAMPLES` content changes (existing checksum mechanism in `precomputed.py`).
@@ -141,7 +141,7 @@ Workflow:
 Add to `src/constants/app_constant.py`:
 
 ```python
-OVERALL_CORE_KNOWLEDGE: str = "overall_course_knowledge"
+INTENT_OVERALL_COURSE_KNOWLEDGE: str = "overall_course_knowledge"
 OVERALL_COLLECTION_NAME = "overall_course"
 OVERALL_INGEST_DIR = DATA_DIR / "ingest_overall"
 ```
@@ -158,7 +158,7 @@ OVERALL_INGEST_DIR = DATA_DIR / "ingest_overall"
 
 | File | Change |
 |------|--------|
-| `src/constants/app_constant.py` | Add `OVERALL_CORE_KNOWLEDGE`, `OVERALL_COLLECTION_NAME`, `OVERALL_INGEST_DIR` |
+| `src/constants/app_constant.py` | Add `INTENT_OVERALL_COURSE_KNOWLEDGE`, `OVERALL_COLLECTION_NAME`, `OVERALL_INGEST_DIR` |
 | `src/rag/semantic_router/samples.py` | Add `courseMetadataSamples` |
 | `src/rag/semantic_router/precomputed.py` | Add overall route to `ROUTE_SAMPLES` |
 | `src/rag/db_vector.py` | Add `_get_colbert()` singleton; refactor `get_qdrant_client(collection_name)` to per-collection cache |

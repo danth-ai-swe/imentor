@@ -50,7 +50,7 @@ Replace with:
 INTENT_CORE_KNOWLEDGE: str = "core_knowledge"
 INTENT_OFF_TOPIC: str = "off_topic"
 INTENT_QUIZ: str = "quiz"
-OVERALL_CORE_KNOWLEDGE: str = "overall_course_knowledge"
+INTENT_OVERALL_COURSE_KNOWLEDGE: str = "overall_course_knowledge"
 
 OVERALL_COLLECTION_NAME = "overall_course"
 OVERALL_INGEST_DIR = DATA_DIR / "ingest_overall"
@@ -61,7 +61,7 @@ OVERALL_INGEST_DIR = DATA_DIR / "ingest_overall"
 Run from project root:
 
 ```bash
-python -c "from src.constants.app_constant import OVERALL_CORE_KNOWLEDGE, OVERALL_COLLECTION_NAME, OVERALL_INGEST_DIR; print(OVERALL_CORE_KNOWLEDGE, OVERALL_COLLECTION_NAME, OVERALL_INGEST_DIR)"
+python -c "from src.constants.app_constant import INTENT_OVERALL_COURSE_KNOWLEDGE, OVERALL_COLLECTION_NAME, OVERALL_INGEST_DIR; print(INTENT_OVERALL_COURSE_KNOWLEDGE, OVERALL_COLLECTION_NAME, OVERALL_INGEST_DIR)"
 ```
 
 Expected output:
@@ -191,7 +191,7 @@ with:
 
 ```python
 from src.constants.app_constant import (
-    INTENT_CORE_KNOWLEDGE, INTENT_OFF_TOPIC, OVERALL_CORE_KNOWLEDGE,
+    INTENT_CORE_KNOWLEDGE, INTENT_OFF_TOPIC, INTENT_OVERALL_COURSE_KNOWLEDGE,
 )
 from src.rag.semantic_router.samples import (
     offTopicSamples, coreKnowledgeSamples, courseMetadataSamples,
@@ -205,7 +205,7 @@ CHECKSUM_FILE = CACHE_DIR / "intent_routes.checksum"
 ROUTE_SAMPLES: Dict[str, list] = {
     INTENT_CORE_KNOWLEDGE: coreKnowledgeSamples,
     INTENT_OFF_TOPIC: offTopicSamples,
-    OVERALL_CORE_KNOWLEDGE: courseMetadataSamples,
+    INTENT_OVERALL_COURSE_KNOWLEDGE: courseMetadataSamples,
 }
 ```
 
@@ -848,7 +848,7 @@ from src.constants.app_constant import (
     MAX_INPUT_CHARS,
     INTENT_CORE_KNOWLEDGE, INTENT_OFF_TOPIC, INTENT_QUIZ, NEIGHBOR_PREV_INDEX, VECTOR_SEARCH_TOP_K,
     NEIGHBOR_NEXT_INDEX, UNSUPPORTED_LANGUAGE_MSG, INPUT_TOO_LONG_RESPONSE, OFF_TOPIC_RESPONSE_MAP,
-    OVERALL_CORE_KNOWLEDGE, OVERALL_COLLECTION_NAME,
+    INTENT_OVERALL_COURSE_KNOWLEDGE, OVERALL_COLLECTION_NAME,
 )
 ```
 
@@ -960,7 +960,7 @@ async def async_pipeline_dispatch(
 
         # Pick collection theo intent. Mọi intent ngoài OVERALL → core collection.
         collection_name = (
-            OVERALL_COLLECTION_NAME if intent == OVERALL_CORE_KNOWLEDGE
+            OVERALL_COLLECTION_NAME if intent == INTENT_OVERALL_COURSE_KNOWLEDGE
             else COLLECTION_NAME
         )
 

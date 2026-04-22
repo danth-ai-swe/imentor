@@ -7,7 +7,7 @@ from langfuse import get_client as get_langfuse_client  # ← thêm
 
 from src.apis.app_router import api_router
 from src.config.app_config import get_app_config
-from src.constants.app_constant import OVERALL_CORE_KNOWLEDGE
+from src.constants.app_constant import INTENT_OVERALL_COURSE_KNOWLEDGE
 from src.rag.db_vector import get_qdrant_client
 from src.rag.llm.chat_llm import get_openai_chat_client
 from src.rag.llm.embedding_llm import (
@@ -49,7 +49,7 @@ async def lifespan(application: FastAPI):
         routes=[
             Route(name=INTENT_CORE_KNOWLEDGE, samples=coreKnowledgeSamples),
             Route(name=INTENT_OFF_TOPIC, samples=offTopicSamples),
-            Route(name=OVERALL_CORE_KNOWLEDGE, samples=courseMetadataSamples),
+            Route(name=INTENT_OVERALL_COURSE_KNOWLEDGE, samples=courseMetadataSamples),
         ],
         embedder=embedder,
         precomputed_embeddings=precomputed,
