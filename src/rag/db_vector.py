@@ -18,6 +18,17 @@ from src.utils.logger_utils import alog_method_call
 
 config = get_app_config()
 
+_colbert_singleton: LateInteractionTextEmbedding | None = None
+
+
+def _get_colbert(model: str = "colbert-ir/colbertv2.0") -> LateInteractionTextEmbedding:
+    """ColBERT model is heavy (~hundreds MB) — cache at module level so every
+    QdrantManager instance shares the same loaded model."""
+    global _colbert_singleton
+    if _colbert_singleton is None:
+        _colbert_singleton = LateInteractionTextEmbedding(model)
+    return _colbert_singleton
+
 
 class QdrantManager:
     def __init__(
@@ -31,7 +42,7 @@ class QdrantManager:
         self.client = QdrantClient(url=url, api_key=api_key)
         self.async_client = AsyncQdrantClient(url=url, api_key=api_key)
         self.dense_embedder = get_openai_embedding_client()
-        self._colbert = LateInteractionTextEmbedding(colbert_model)
+        self._colbert = _get_colbert(colbert_model)
 
     def _embed_colbert_doc(self, text: str) -> list[list[float]]:
         return list(self._colbert.embed([text]))[0].tolist()
@@ -306,11 +317,13 @@ class QdrantManager:
         )
 
 
-_client_instance: "QdrantManager | None" = None
+_clients: dict[str, QdrantManager] = {}
 
 
-def get_qdrant_client() -> QdrantManager:
-    global _client_instance
-    if _client_instance is None:
-        _client_instance = QdrantManager(collection_name=COLLECTION_NAME)
-    return _client_instance
+def get_qdrant_client(collection_name: str = COLLECTION_NAME) -> QdrantManager:
+    """Per-collection cached QdrantManager. Avoids the race condition that
+    arises when multiple requests mutate `manager.collection_name` to point
+    at different collections simultaneously."""
+    if collection_name not in _clients:
+        _clients[collection_name] = QdrantManager(collection_name=collection_name)
+    return _clients[collection_name]
