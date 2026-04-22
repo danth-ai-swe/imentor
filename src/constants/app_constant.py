@@ -44,6 +44,10 @@ NEIGHBOR_NEXT_INDEX: int = 0  # phần tử đầu của list "next"     = chunk
 INTENT_CORE_KNOWLEDGE: str = "core_knowledge"
 INTENT_OFF_TOPIC: str = "off_topic"
 INTENT_QUIZ: str = "quiz"
+OVERALL_CORE_KNOWLEDGE: str = "overall_course_knowledge"
+
+OVERALL_COLLECTION_NAME = "overall_course"
+OVERALL_INGEST_DIR = DATA_DIR / "ingest_overall"
 
 OFF_TOPIC_RESPONSE_MAP = {
     "Vietnamese": ("""
