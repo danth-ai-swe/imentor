@@ -17,16 +17,21 @@ from src.rag.llm.embedding_llm import get_openai_embedding_client
 from src.utils.logger_utils import alog_method_call
 
 config = get_app_config()
+_COLBERT_MODEL = "colbert-ir/colbertv2.0"
 
 _colbert_singleton: LateInteractionTextEmbedding | None = None
 
 
-def _get_colbert(model: str = "colbert-ir/colbertv2.0") -> LateInteractionTextEmbedding:
+def _get_colbert() -> LateInteractionTextEmbedding:
     """ColBERT model is heavy (~hundreds MB) — cache at module level so every
-    QdrantManager instance shares the same loaded model."""
+    QdrantManager instance shares the same loaded model.
+
+    First-call-wins. Safe under a single event loop because the check + set
+    runs without an `await` in between (no scheduling point).
+    """
     global _colbert_singleton
     if _colbert_singleton is None:
-        _colbert_singleton = LateInteractionTextEmbedding(model)
+        _colbert_singleton = LateInteractionTextEmbedding(_COLBERT_MODEL)
     return _colbert_singleton
 
 
@@ -35,14 +40,13 @@ class QdrantManager:
             self,
             collection_name: str,
             url: str = config.QDRANT_URL,
-            colbert_model: str = "colbert-ir/colbertv2.0",
     ) -> None:
         self.collection_name = collection_name
         api_key = config.QDRANT_APIKEY if config.PROFILE_NAME == "prod" else None
         self.client = QdrantClient(url=url, api_key=api_key)
         self.async_client = AsyncQdrantClient(url=url, api_key=api_key)
         self.dense_embedder = get_openai_embedding_client()
-        self._colbert = _get_colbert(colbert_model)
+        self._colbert = _get_colbert()
 
     def _embed_colbert_doc(self, text: str) -> list[list[float]]:
         return list(self._colbert.embed([text]))[0].tolist()
@@ -323,7 +327,11 @@ _clients: dict[str, QdrantManager] = {}
 def get_qdrant_client(collection_name: str = COLLECTION_NAME) -> QdrantManager:
     """Per-collection cached QdrantManager. Avoids the race condition that
     arises when multiple requests mutate `manager.collection_name` to point
-    at different collections simultaneously."""
+    at different collections simultaneously.
+
+    First-call-wins. Safe under a single event loop because the check + set
+    runs without an `await` in between (no scheduling point).
+    """
     if collection_name not in _clients:
         _clients[collection_name] = QdrantManager(collection_name=collection_name)
     return _clients[collection_name]
