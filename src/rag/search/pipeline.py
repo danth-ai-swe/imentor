@@ -12,6 +12,7 @@ from src.constants.app_constant import (
     MAX_INPUT_CHARS,
     INTENT_CORE_KNOWLEDGE, INTENT_OFF_TOPIC, INTENT_QUIZ, NEIGHBOR_PREV_INDEX, VECTOR_SEARCH_TOP_K,
     NEIGHBOR_NEXT_INDEX, UNSUPPORTED_LANGUAGE_MSG, INPUT_TOO_LONG_RESPONSE, OFF_TOPIC_RESPONSE_MAP,
+    INTENT_OVERALL_COURSE_KNOWLEDGE, OVERALL_COLLECTION_NAME,
 )
 from src.rag.db_vector import get_qdrant_client, QdrantManager
 from src.rag.llm.chat_llm import AzureChatClient, get_openai_chat_client
@@ -392,35 +393,19 @@ async def _agenerate_answer(
         logger.exception("Failed to generate answer from LLM")
 
 
-async def async_pipeline_hyde_search(
+async def _arun_hyde_search(
+        llm: AzureChatClient,
+        embedder: AzureEmbeddingClient,
+        collection_name: str,
         user_input: str,
-        conversation_id: Optional[str] = None,
+        standalone_query: str,
+        detected_language: str,
 ) -> PipelineResult:
-    timer = StepTimer("hyde_search")
+    timer = StepTimer(f"hyde_search:{collection_name}")
     config: AppConfig = get_app_config()
 
     try:
-        llm = get_openai_chat_client()
-        embedder = get_openai_embedding_client()
-        qdrant = get_qdrant_client()
-        qdrant.collection_name = COLLECTION_NAME
-
-        async with timer.astep("validate_and_prepare"):
-            detected_language, standalone_query, error_response = (
-                await _avalidate_and_prepare(user_input, conversation_id, llm)
-            )
-            if error_response:
-                return _make_off_topic_result(error_response, "English")
-
-        async with timer.astep("quiz_keyword_check"):
-            if is_quiz_intent(user_input) or is_quiz_intent(standalone_query):
-                return _make_quiz_result()
-
-        async with timer.astep("intent_routing"):
-            intent = await _aroute_intent(embedder, standalone_query)
-
-        if intent == INTENT_OFF_TOPIC:
-            return _make_off_topic_result(OFF_TOPIC_RESPONSE_MAP.get(detected_language), detected_language)
+        qdrant = get_qdrant_client(collection_name)
 
         # ── 5a+5b. clarity_check VÀ hyde_variants chạy song song ─────────────
         async with timer.astep("clarity_and_hyde_parallel"):
@@ -432,7 +417,6 @@ async def async_pipeline_hyde_search(
             logger.info(f"Input unclear (type={clarity.get('type')}) — returning clarification")
             return _make_clarity_result(clarity, detected_language)
 
-        # variants đã sẵn sàng, không cần chờ thêm
         async with timer.astep("hyde_embedding"):
             mean_dense, mean_colbert = await _aembed_hyde_variants(
                 embedder, qdrant, variants
@@ -460,7 +444,7 @@ async def async_pipeline_hyde_search(
 
         if not filtered_chunks:
             logger.info("No relevant chunks after filtering — triggering web search fallback")
-            async with timer.astep("web_search_fallback_no_chunks"):
+            async with timer.astep("web_search_fallback_no_relevant"):
                 rs = await web_rag_answer(llm, embedder, standalone_query, detected_language)
             return _make_web_search_result(rs["answer"], rs["sources"], detected_language)
 
@@ -475,6 +459,54 @@ async def async_pipeline_hyde_search(
             sources=extract_sources(sorted_chunks, config.APP_DOMAIN),
             detected_language=detected_language,
             answer_satisfied=True,
+        )
+
+    finally:
+        timer.summary()
+
+
+async def async_pipeline_dispatch(
+        user_input: str,
+        conversation_id: Optional[str] = None,
+) -> PipelineResult:
+    timer = StepTimer("dispatch")
+
+    try:
+        llm = get_openai_chat_client()
+        embedder = get_openai_embedding_client()
+
+        async with timer.astep("validate_and_prepare"):
+            detected_language, standalone_query, error_response = (
+                await _avalidate_and_prepare(user_input, conversation_id, llm)
+            )
+            if error_response:
+                return _make_off_topic_result(error_response, "English")
+
+        async with timer.astep("quiz_keyword_check"):
+            if is_quiz_intent(user_input) or is_quiz_intent(standalone_query):
+                return _make_quiz_result()
+
+        async with timer.astep("intent_routing"):
+            intent = await _aroute_intent(embedder, standalone_query)
+
+        if intent == INTENT_OFF_TOPIC:
+            return _make_off_topic_result(
+                OFF_TOPIC_RESPONSE_MAP.get(detected_language), detected_language
+            )
+
+        # Pick collection theo intent. Mọi intent ngoài OVERALL → core collection.
+        collection_name = (
+            OVERALL_COLLECTION_NAME if intent == INTENT_OVERALL_COURSE_KNOWLEDGE
+            else COLLECTION_NAME
+        )
+
+        return await _arun_hyde_search(
+            llm=llm,
+            embedder=embedder,
+            collection_name=collection_name,
+            user_input=user_input,
+            standalone_query=standalone_query,
+            detected_language=detected_language,
         )
 
     finally:
