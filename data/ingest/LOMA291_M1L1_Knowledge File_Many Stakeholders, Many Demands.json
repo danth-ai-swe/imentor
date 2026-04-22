@@ -1,7 +1,7 @@
 [
   {
     "id": "dac4fdf5-a15d-4633-b257-5af9e3f9be77",
-    "text": "Module 1: Managing the Company to Meet Stakeholder Needs... 2\nLesson 1: Many Stakeholders, Many Demands... 2\nLearning Objectives... 3\nBalancing Stakeholder Needs... 3\nCorporate Governance...13\nGovernance and Ethics...20",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: The strategic challenge for an insurance company's management to satisfy the often competing needs and expectations of its various stakeholders to ensure long-term success. | Domain Tags: corporate governance, strategic management, conflict resolution | Related Nodes: KN-001 | Category: Management Strategy | Node Name: Balancing Stakeholder Demands | Chunk Text Content: Module 1: Managing the Company to Meet Stakeholder Needs... 2\nLesson 1: Many Stakeholders, Many Demands... 2\nLearning Objectives... 3\nBalancing Stakeholder Needs... 3\nCorporate Governance...13\nGovernance and Ethics...20",
     "payload": {
       "chunk_index": 0,
       "total_chunks": 55,
@@ -11,20 +11,21 @@
       "category": "Management Strategy",
       "node_name": "Balancing Stakeholder Demands",
       "node_id": 232,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [],
       "next": [
         "6e7a43aa-0504-4ffd-9149-86dff6bf20e6",
         "6a5641c0-f317-4b1b-9921-e07c637a24c3",
         "b0a54ba9-08f7-4c5e-97cb-dc484292c5ab"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "6e7a43aa-0504-4ffd-9149-86dff6bf20e6",
-    "text": "Module 1: Managing the Company to\nMeet Stakeholder Needs\nAn insurer’s overall direction is determined by its executives, with\nguidance from the board of directors. In this module, we explore how an\ninsurer is organized and managed to balance the needs of a diverse set\nof stakeholder groups, and how an insurer manages the risk it must take\nin order to earn a return.\nIn this module, you’ll learn about\n\nHow an insurer’s board and executives manage the company ethically",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: The strategic challenge for an insurance company's management to satisfy the often competing needs and expectations of its various stakeholders to ensure long-term success. | Domain Tags: corporate governance, strategic management, conflict resolution | Related Nodes: KN-001 | Category: Management Strategy | Node Name: Balancing Stakeholder Demands | Chunk Text Content: Module 1: Managing the Company to\nMeet Stakeholder Needs\nAn insurer’s overall direction is determined by its executives, with\nguidance from the board of directors. In this module, we explore how an\ninsurer is organized and managed to balance the needs of a diverse set\nof stakeholder groups, and how an insurer manages the risk it must take\nin order to earn a return.\nIn this module, you’ll learn about\n\nHow an insurer’s board and executives manage the company ethically",
     "payload": {
       "chunk_index": 1,
       "total_chunks": 55,
@@ -34,8 +35,6 @@
       "category": "Management Strategy",
       "node_name": "Balancing Stakeholder Demands",
       "node_id": 232,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "dac4fdf5-a15d-4633-b257-5af9e3f9be77"
@@ -44,12 +43,15 @@
         "6a5641c0-f317-4b1b-9921-e07c637a24c3",
         "b0a54ba9-08f7-4c5e-97cb-dc484292c5ab",
         "ab9a2af4-e5a1-434b-96ba-42360176ecde"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "6a5641c0-f317-4b1b-9921-e07c637a24c3",
-    "text": "\nHow an insurer’s board and executives manage the company ethically\nto meet the needs of various stakeholders\n\nThe ways an insurer can be organized for success\n\nHow an insurer manages the various risks it faces to earn an\nappropriate return\nLesson 1: Many Stakeholders, Many\nDemands\nAn insurer is governed by a board of directors, which gives broad guidance\nto management. But how do the board and management know if the\ncompany is succeeding? Learn how an insurer balances its obligations to",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: The strategic challenge for an insurance company's management to satisfy the often competing needs and expectations of its various stakeholders to ensure long-term success. | Domain Tags: corporate governance, strategic management, conflict resolution | Related Nodes: KN-001 | Category: Management Strategy | Node Name: Balancing Stakeholder Demands | Chunk Text Content: \nHow an insurer’s board and executives manage the company ethically\nto meet the needs of various stakeholders\n\nThe ways an insurer can be organized for success\n\nHow an insurer manages the various risks it faces to earn an\nappropriate return\nLesson 1: Many Stakeholders, Many\nDemands\nAn insurer is governed by a board of directors, which gives broad guidance\nto management. But how do the board and management know if the\ncompany is succeeding? Learn how an insurer balances its obligations to",
     "payload": {
       "chunk_index": 2,
       "total_chunks": 55,
@@ -59,8 +61,6 @@
       "category": "Management Strategy",
       "node_name": "Balancing Stakeholder Demands",
       "node_id": 232,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "dac4fdf5-a15d-4633-b257-5af9e3f9be77",
@@ -70,12 +70,15 @@
         "b0a54ba9-08f7-4c5e-97cb-dc484292c5ab",
         "ab9a2af4-e5a1-434b-96ba-42360176ecde",
         "6d5e90d9-7e6b-4098-b846-79e512a79b09"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "b0a54ba9-08f7-4c5e-97cb-dc484292c5ab",
-    "text": "company is succeeding? Learn how an insurer balances its obligations to\nmultiple stakeholders, while adhering to the appropriate ethical standards.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: The strategic challenge for an insurance company's management to satisfy the often competing needs and expectations of its various stakeholders to ensure long-term success. | Domain Tags: corporate governance, strategic management, conflict resolution | Related Nodes: KN-001 | Category: Management Strategy | Node Name: Balancing Stakeholder Demands | Chunk Text Content: company is succeeding? Learn how an insurer balances its obligations to\nmultiple stakeholders, while adhering to the appropriate ethical standards.",
     "payload": {
       "chunk_index": 3,
       "total_chunks": 55,
@@ -85,8 +88,6 @@
       "category": "Management Strategy",
       "node_name": "Balancing Stakeholder Demands",
       "node_id": 232,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "dac4fdf5-a15d-4633-b257-5af9e3f9be77",
@@ -97,12 +98,15 @@
         "ab9a2af4-e5a1-434b-96ba-42360176ecde",
         "6d5e90d9-7e6b-4098-b846-79e512a79b09",
         "03bc7dc1-27f3-4d12-82c6-345f4f5ddf0c"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "ab9a2af4-e5a1-434b-96ba-42360176ecde",
-    "text": "Learning Objectives\n\nDescribe various stakeholder groups connected with an insurance\ncompany.\n\nExplain the governance role of a company's board of directors, and\ndescribe the impact of governance on conflicting priorities.\n\nDefine ethics, and identify mechanisms companies employ to foster a\nculture of ethical behavior.\nBalancing Stakeholder Needs\nLearning Objective\nDescribe various stakeholder groups connected with an insurance company.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: Any individual, group, or organization that has a vested interest or concern in an insurance company's operations, performance, and decisions. | Domain Tags: stakeholder theory, corporate governance, business environment | Related Nodes: KN-002, KN-003, KN-004, KN-005, KN-006, KN-007 | Category: Business Concept | Node Name: Stakeholder | Chunk Text Content: Learning Objectives\n\nDescribe various stakeholder groups connected with an insurance\ncompany.\n\nExplain the governance role of a company's board of directors, and\ndescribe the impact of governance on conflicting priorities.\n\nDefine ethics, and identify mechanisms companies employ to foster a\nculture of ethical behavior.\nBalancing Stakeholder Needs\nLearning Objective\nDescribe various stakeholder groups connected with an insurance company.",
     "payload": {
       "chunk_index": 4,
       "total_chunks": 55,
@@ -112,8 +116,6 @@
       "category": "Business Concept",
       "node_name": "Stakeholder",
       "node_id": 231,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "6e7a43aa-0504-4ffd-9149-86dff6bf20e6",
@@ -124,12 +126,15 @@
         "6d5e90d9-7e6b-4098-b846-79e512a79b09",
         "03bc7dc1-27f3-4d12-82c6-345f4f5ddf0c",
         "cd0318a5-d512-49f1-80e1-5b08cfaa6eb3"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "6d5e90d9-7e6b-4098-b846-79e512a79b09",
-    "text": "Learning Objective\nDescribe various stakeholder groups connected with an insurance company.\nWelcome to LOMA 291: Improving the Bottom Line—Insurance Company Operations.\nMy name is Grace Avon and I am CEO of Forthright Financial, a life insurance company.\nLike anybody, I want to be successful in my job and make sure that my company is\nsuccessful as well. But how do I know if I am being successful? How do you measure a\ncompany's success?",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: Any individual, group, or organization that has a vested interest or concern in an insurance company's operations, performance, and decisions. | Domain Tags: stakeholder theory, corporate governance, business environment | Related Nodes: KN-002, KN-003, KN-004, KN-005, KN-006, KN-007 | Category: Business Concept | Node Name: Stakeholder | Chunk Text Content: Learning Objective\nDescribe various stakeholder groups connected with an insurance company.\nWelcome to LOMA 291: Improving the Bottom Line—Insurance Company Operations.\nMy name is Grace Avon and I am CEO of Forthright Financial, a life insurance company.\nLike anybody, I want to be successful in my job and make sure that my company is\nsuccessful as well. But how do I know if I am being successful? How do you measure a\ncompany's success?",
     "payload": {
       "chunk_index": 5,
       "total_chunks": 55,
@@ -139,8 +144,6 @@
       "category": "Business Concept",
       "node_name": "Stakeholder",
       "node_id": 231,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "6a5641c0-f317-4b1b-9921-e07c637a24c3",
@@ -151,12 +154,15 @@
         "03bc7dc1-27f3-4d12-82c6-345f4f5ddf0c",
         "cd0318a5-d512-49f1-80e1-5b08cfaa6eb3",
         "ab2158f9-4a16-4fde-81f9-0d3386e93747"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "03bc7dc1-27f3-4d12-82c6-345f4f5ddf0c",
-    "text": "company's success?\nShould I aim to maximize revenues, or profit, or stock price? Should I be most worried\nabout our ratings from the ratings agencies, about satisfying government regulators, or\nabout paying a dividend—to shareholders or to policyowners? Should I be aiming to\ncreate an amazing workplace full of happy employees, or a company that other\ncompanies and individuals love to do business with?\nThe answer to all these questions is \"Yes!\" But which factors should be the top priorities?",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: The strategic challenge for an insurance company's management to satisfy the often competing needs and expectations of its various stakeholders to ensure long-term success. | Domain Tags: corporate governance, strategic management, conflict resolution | Related Nodes: KN-001 | Category: Management Strategy | Node Name: Balancing Stakeholder Demands | Chunk Text Content: company's success?\nShould I aim to maximize revenues, or profit, or stock price? Should I be most worried\nabout our ratings from the ratings agencies, about satisfying government regulators, or\nabout paying a dividend—to shareholders or to policyowners? Should I be aiming to\ncreate an amazing workplace full of happy employees, or a company that other\ncompanies and individuals love to do business with?\nThe answer to all these questions is \"Yes!\" But which factors should be the top priorities?",
     "payload": {
       "chunk_index": 6,
       "total_chunks": 55,
@@ -166,8 +172,6 @@
       "category": "Management Strategy",
       "node_name": "Balancing Stakeholder Demands",
       "node_id": 232,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "b0a54ba9-08f7-4c5e-97cb-dc484292c5ab",
@@ -178,12 +182,15 @@
         "cd0318a5-d512-49f1-80e1-5b08cfaa6eb3",
         "ab2158f9-4a16-4fde-81f9-0d3386e93747",
         "e0da452b-4365-4b32-be85-5ea5a3db9f15"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "cd0318a5-d512-49f1-80e1-5b08cfaa6eb3",
-    "text": "The answer to all these questions is \"Yes!\" But which factors should be the top priorities?\nThat's a difficult question, and different people would probably give a different answer.\nAs you'll see, Forthright must weigh the interests of several different groups. In this\ncourse, we'll start by examining how an insurance company decides what goals it will\npursue. Then we'll discuss the roles of all the different areas of the company in\nachieving these goals.\nInsurance Company Stakeholders",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: Any individual, group, or organization that has a vested interest or concern in an insurance company's operations, performance, and decisions. | Domain Tags: stakeholder theory, corporate governance, business environment | Related Nodes: KN-002, KN-003, KN-004, KN-005, KN-006, KN-007 | Category: Business Concept | Node Name: Stakeholder | Chunk Text Content: The answer to all these questions is \"Yes!\" But which factors should be the top priorities?\nThat's a difficult question, and different people would probably give a different answer.\nAs you'll see, Forthright must weigh the interests of several different groups. In this\ncourse, we'll start by examining how an insurance company decides what goals it will\npursue. Then we'll discuss the roles of all the different areas of the company in\nachieving these goals.\nInsurance Company Stakeholders",
     "payload": {
       "chunk_index": 7,
       "total_chunks": 55,
@@ -193,8 +200,6 @@
       "category": "Business Concept",
       "node_name": "Stakeholder",
       "node_id": 231,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "ab9a2af4-e5a1-434b-96ba-42360176ecde",
@@ -205,12 +210,15 @@
         "ab2158f9-4a16-4fde-81f9-0d3386e93747",
         "e0da452b-4365-4b32-be85-5ea5a3db9f15",
         "f88e69b0-570f-4511-a0be-8e1de56262e8"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "ab2158f9-4a16-4fde-81f9-0d3386e93747",
-    "text": "Lots of different groups have a stake in how Forthright Financial operates. We\nsometimes refer to these groups as stakeholders (A party that has an interest in how\na company conducts its business. Also known as a constituent. )or constituents.\nStakeholders are parties who have a stake in how Forthright conducts its business.\nLet's meet some of these stakeholders.\nFrank Pulaski—Forthright Stockholder\nWe stockholders expect the company to grow steadily. We expect to earn a reasonable",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: The stakeholder group that provides capital and expects a financial return. Their demands focus on profitability, long-term growth, and return on investment (ROI). | Domain Tags: ownership, shareholder, mutual company, profitability | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Owners (Shareholders / Mutual Policyholders) | Chunk Text Content: Lots of different groups have a stake in how Forthright Financial operates. We\nsometimes refer to these groups as stakeholders (A party that has an interest in how\na company conducts its business. Also known as a constituent. )or constituents.\nStakeholders are parties who have a stake in how Forthright conducts its business.\nLet's meet some of these stakeholders.\nFrank Pulaski—Forthright Stockholder\nWe stockholders expect the company to grow steadily. We expect to earn a reasonable",
     "payload": {
       "chunk_index": 8,
       "total_chunks": 55,
@@ -220,8 +228,6 @@
       "category": "Stakeholder Group",
       "node_name": "Owners (Shareholders / Mutual Policyholders)",
       "node_id": 234,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "6d5e90d9-7e6b-4098-b846-79e512a79b09",
@@ -232,12 +238,15 @@
         "e0da452b-4365-4b32-be85-5ea5a3db9f15",
         "f88e69b0-570f-4511-a0be-8e1de56262e8",
         "73c3a6a0-b979-4c9d-95c5-0f3b5b6022a1"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "e0da452b-4365-4b32-be85-5ea5a3db9f15",
-    "text": "We stockholders expect the company to grow steadily. We expect to earn a reasonable\nreturn, sometimes in the form of dividends. Do you know what a dividend is?\nSometimes the board of directors votes to make a payment to the stockholders. The\npayment is called a dividend (Compensation that a company may pay to owners upon\na vote by the company's board of directors.)\nA: What about mutual and fraternal companies\nB: They don't issue corporate stock, so they don't have stockholders. They're owned by",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: The stakeholder group that provides capital and expects a financial return. Their demands focus on profitability, long-term growth, and return on investment (ROI). | Domain Tags: ownership, shareholder, mutual company, profitability | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Owners (Shareholders / Mutual Policyholders) | Chunk Text Content: We stockholders expect the company to grow steadily. We expect to earn a reasonable\nreturn, sometimes in the form of dividends. Do you know what a dividend is?\nSometimes the board of directors votes to make a payment to the stockholders. The\npayment is called a dividend (Compensation that a company may pay to owners upon\na vote by the company's board of directors.)\nA: What about mutual and fraternal companies\nB: They don't issue corporate stock, so they don't have stockholders. They're owned by",
     "payload": {
       "chunk_index": 9,
       "total_chunks": 55,
@@ -247,8 +256,6 @@
       "category": "Stakeholder Group",
       "node_name": "Owners (Shareholders / Mutual Policyholders)",
       "node_id": 234,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "03bc7dc1-27f3-4d12-82c6-345f4f5ddf0c",
@@ -259,12 +266,15 @@
         "f88e69b0-570f-4511-a0be-8e1de56262e8",
         "73c3a6a0-b979-4c9d-95c5-0f3b5b6022a1",
         "540ac867-c04d-4bdb-8dd9-114196a78255"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "f88e69b0-570f-4511-a0be-8e1de56262e8",
-    "text": "B: They don't issue corporate stock, so they don't have stockholders. They're owned by\ntheir policyowners.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: A primary stakeholder group whose demands include financially secure products, fair prices, clear communication, and excellent service, particularly during the claims process. | Domain Tags: customer relations, policyowner, consumer | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Customers (Policyowners) | Chunk Text Content: B: They don't issue corporate stock, so they don't have stockholders. They're owned by\ntheir policyowners.",
     "payload": {
       "chunk_index": 10,
       "total_chunks": 55,
@@ -274,8 +284,6 @@
       "category": "Stakeholder Group",
       "node_name": "Customers (Policyowners)",
       "node_id": 233,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "cd0318a5-d512-49f1-80e1-5b08cfaa6eb3",
@@ -286,12 +294,15 @@
         "73c3a6a0-b979-4c9d-95c5-0f3b5b6022a1",
         "540ac867-c04d-4bdb-8dd9-114196a78255",
         "37bc1673-6c2b-4a3d-bcc1-55d954df3186"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "73c3a6a0-b979-4c9d-95c5-0f3b5b6022a1",
-    "text": "A: So they don't issue dividends?\nB: They don't issue stockholder dividends, but sometimes they issue policyowner\ndividends by action of the board of directors.\nStart\nDale Jensen—Forthright Policyowner\nHere are some factors I considered when I chose to buy a policy from Forthright:\n1. Good company reputation\n2. Policy features\n3. Reasonable charges\n4. Financial strength\n5. Customer service\nForthright provides my personal safety net because of their good reputation and policy",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: A primary stakeholder group whose demands include financially secure products, fair prices, clear communication, and excellent service, particularly during the claims process. | Domain Tags: customer relations, policyowner, consumer | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Customers (Policyowners) | Chunk Text Content: A: So they don't issue dividends?\nB: They don't issue stockholder dividends, but sometimes they issue policyowner\ndividends by action of the board of directors.\nStart\nDale Jensen—Forthright Policyowner\nHere are some factors I considered when I chose to buy a policy from Forthright:\n1. Good company reputation\n2. Policy features\n3. Reasonable charges\n4. Financial strength\n5. Customer service\nForthright provides my personal safety net because of their good reputation and policy",
     "payload": {
       "chunk_index": 11,
       "total_chunks": 55,
@@ -301,8 +312,6 @@
       "category": "Stakeholder Group",
       "node_name": "Customers (Policyowners)",
       "node_id": 233,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "ab2158f9-4a16-4fde-81f9-0d3386e93747",
@@ -313,12 +322,15 @@
         "540ac867-c04d-4bdb-8dd9-114196a78255",
         "37bc1673-6c2b-4a3d-bcc1-55d954df3186",
         "80a81aed-1267-428a-9115-b532f72043dd"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "540ac867-c04d-4bdb-8dd9-114196a78255",
-    "text": "Forthright provides my personal safety net because of their good reputation and policy\nfeatures. They charge me for reasonable expenses and they have the financial strength\nto be around for the long haul to pay the policy benefits they promise me and my\nfamily. So far, I'm pleased with my policy and the company's customer service.\n\"Mac\" MacDonald—Financial Professional",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: A primary stakeholder group whose demands include financially secure products, fair prices, clear communication, and excellent service, particularly during the claims process. | Domain Tags: customer relations, policyowner, consumer | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Customers (Policyowners) | Chunk Text Content: Forthright provides my personal safety net because of their good reputation and policy\nfeatures. They charge me for reasonable expenses and they have the financial strength\nto be around for the long haul to pay the policy benefits they promise me and my\nfamily. So far, I'm pleased with my policy and the company's customer service.\n\"Mac\" MacDonald—Financial Professional",
     "payload": {
       "chunk_index": 12,
       "total_chunks": 55,
@@ -328,8 +340,6 @@
       "category": "Stakeholder Group",
       "node_name": "Customers (Policyowners)",
       "node_id": 233,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "e0da452b-4365-4b32-be85-5ea5a3db9f15",
@@ -340,12 +350,15 @@
         "37bc1673-6c2b-4a3d-bcc1-55d954df3186",
         "80a81aed-1267-428a-9115-b532f72043dd",
         "963c0620-9594-44ec-9abb-a8c43e8de0b6"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "37bc1673-6c2b-4a3d-bcc1-55d954df3186",
-    "text": "As a financial professional (In insurance sales, any individual—including agents,\nbank-affiliated sales personnel, and brokers—who is licensed to sell insurance products,\nsolicit sales, or negotiate insurance contracts.), I sell Forthright's products to the public.\nSome people call me an insurance agent because I have an agency relationship with\nForthright. I'm a Forthright customer, too. Why do I place business with Forthright?\nHere are some reasons:\n1. Forthright's products meet my clients' needs.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: A primary stakeholder group whose demands include financially secure products, fair prices, clear communication, and excellent service, particularly during the claims process. | Domain Tags: customer relations, policyowner, consumer | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Customers (Policyowners) | Chunk Text Content: As a financial professional (In insurance sales, any individual—including agents,\nbank-affiliated sales personnel, and brokers—who is licensed to sell insurance products,\nsolicit sales, or negotiate insurance contracts.), I sell Forthright's products to the public.\nSome people call me an insurance agent because I have an agency relationship with\nForthright. I'm a Forthright customer, too. Why do I place business with Forthright?\nHere are some reasons:\n1. Forthright's products meet my clients' needs.",
     "payload": {
       "chunk_index": 13,
       "total_chunks": 55,
@@ -355,8 +368,6 @@
       "category": "Stakeholder Group",
       "node_name": "Customers (Policyowners)",
       "node_id": 233,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "f88e69b0-570f-4511-a0be-8e1de56262e8",
@@ -367,12 +378,15 @@
         "80a81aed-1267-428a-9115-b532f72043dd",
         "963c0620-9594-44ec-9abb-a8c43e8de0b6",
         "fbaf95d3-469a-4066-b835-4f5c98d12c73"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "80a81aed-1267-428a-9115-b532f72043dd",
-    "text": "Here are some reasons:\n1. Forthright's products meet my clients' needs.\n2. Forthright offers competitive compensation on the business I sell.\n3. Its staff is top notch and provides fast and accurate support.\n4. The company has good ratings, so I trust its ability to meet policy obligations in\nthe future.\nKhalid Husseini—Forthright Employee\nI've been in customer service at Forthright for almost 15 years. I manage the customer",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: An internal stakeholder group whose demands include fair compensation and benefits, a safe and ethical work environment, career development opportunities, and job security. | Domain Tags: human resources, internal stakeholder, workforce | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Employees | Chunk Text Content: Here are some reasons:\n1. Forthright's products meet my clients' needs.\n2. Forthright offers competitive compensation on the business I sell.\n3. Its staff is top notch and provides fast and accurate support.\n4. The company has good ratings, so I trust its ability to meet policy obligations in\nthe future.\nKhalid Husseini—Forthright Employee\nI've been in customer service at Forthright for almost 15 years. I manage the customer",
     "payload": {
       "chunk_index": 14,
       "total_chunks": 55,
@@ -382,8 +396,6 @@
       "category": "Stakeholder Group",
       "node_name": "Employees",
       "node_id": 235,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "73c3a6a0-b979-4c9d-95c5-0f3b5b6022a1",
@@ -394,12 +406,15 @@
         "963c0620-9594-44ec-9abb-a8c43e8de0b6",
         "fbaf95d3-469a-4066-b835-4f5c98d12c73",
         "04d5feb2-526c-4ca8-a4f0-37fd7f6cdfd7"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "963c0620-9594-44ec-9abb-a8c43e8de0b6",
-    "text": "I've been in customer service at Forthright for almost 15 years. I manage the customer\nservice staff, and we're always busy. I like working with good people and in a reputable\ncompany. I appreciate Forthright's employee benefits and competitive compensation.\n1. I value the long-term employment.\n2. I enjoy my coworkers.\n3. I'm proud to work for a reputable company.\n4. I appreciate the salary and benefits.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: An internal stakeholder group whose demands include fair compensation and benefits, a safe and ethical work environment, career development opportunities, and job security. | Domain Tags: human resources, internal stakeholder, workforce | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Employees | Chunk Text Content: I've been in customer service at Forthright for almost 15 years. I manage the customer\nservice staff, and we're always busy. I like working with good people and in a reputable\ncompany. I appreciate Forthright's employee benefits and competitive compensation.\n1. I value the long-term employment.\n2. I enjoy my coworkers.\n3. I'm proud to work for a reputable company.\n4. I appreciate the salary and benefits.",
     "payload": {
       "chunk_index": 15,
       "total_chunks": 55,
@@ -409,8 +424,6 @@
       "category": "Stakeholder Group",
       "node_name": "Employees",
       "node_id": 235,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "540ac867-c04d-4bdb-8dd9-114196a78255",
@@ -421,12 +434,15 @@
         "fbaf95d3-469a-4066-b835-4f5c98d12c73",
         "04d5feb2-526c-4ca8-a4f0-37fd7f6cdfd7",
         "fbb18af7-093c-4ee4-a869-e6736e7c0d9c"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "fbaf95d3-469a-4066-b835-4f5c98d12c73",
-    "text": "Pol Rand—Reinsurer\nI'm with Gargantuan Reinsurance. Reinsurance (Insurance that one insurance\ncompany, known as the direct writer, purchases from another insurance\ncompany, known as the reinsurer, to transfer all or part of the risk on\ninsurance policies that the direct writer issued. )—that's insurance for insurance\ncompanies.\nGargantuan Re extends reinsurance to Forthright when Forthright wants our backup on\nclaims. Because of reinsurance, Forthright can issue more insurance than it would",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: Any individual, group, or organization that has a vested interest or concern in an insurance company's operations, performance, and decisions. | Domain Tags: stakeholder theory, corporate governance, business environment | Related Nodes: KN-002, KN-003, KN-004, KN-005, KN-006, KN-007 | Category: Business Concept | Node Name: Stakeholder | Chunk Text Content: Pol Rand—Reinsurer\nI'm with Gargantuan Reinsurance. Reinsurance (Insurance that one insurance\ncompany, known as the direct writer, purchases from another insurance\ncompany, known as the reinsurer, to transfer all or part of the risk on\ninsurance policies that the direct writer issued. )—that's insurance for insurance\ncompanies.\nGargantuan Re extends reinsurance to Forthright when Forthright wants our backup on\nclaims. Because of reinsurance, Forthright can issue more insurance than it would",
     "payload": {
       "chunk_index": 16,
       "total_chunks": 55,
@@ -436,8 +452,6 @@
       "category": "Business Concept",
       "node_name": "Stakeholder",
       "node_id": 231,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "37bc1673-6c2b-4a3d-bcc1-55d954df3186",
@@ -448,12 +462,15 @@
         "04d5feb2-526c-4ca8-a4f0-37fd7f6cdfd7",
         "fbb18af7-093c-4ee4-a869-e6736e7c0d9c",
         "9c7d8fdf-05e3-4565-ba05-75e5a969c3cd"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "04d5feb2-526c-4ca8-a4f0-37fd7f6cdfd7",
-    "text": "claims. Because of reinsurance, Forthright can issue more insurance than it would\nwithout us. In some ways, we're like business partners.\nOther Stakeholders\nForthright has other stakeholders.\nConsultants/Vendors\nI'm a public accountant. I provide external audit services to Forthright. Many\nvendors provide goods and services to Forthright.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: Any individual, group, or organization that has a vested interest or concern in an insurance company's operations, performance, and decisions. | Domain Tags: stakeholder theory, corporate governance, business environment | Related Nodes: KN-002, KN-003, KN-004, KN-005, KN-006, KN-007 | Category: Business Concept | Node Name: Stakeholder | Chunk Text Content: claims. Because of reinsurance, Forthright can issue more insurance than it would\nwithout us. In some ways, we're like business partners.\nOther Stakeholders\nForthright has other stakeholders.\nConsultants/Vendors\nI'm a public accountant. I provide external audit services to Forthright. Many\nvendors provide goods and services to Forthright.",
     "payload": {
       "chunk_index": 17,
       "total_chunks": 55,
@@ -463,8 +480,6 @@
       "category": "Business Concept",
       "node_name": "Stakeholder",
       "node_id": 231,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "80a81aed-1267-428a-9115-b532f72043dd",
@@ -475,12 +490,15 @@
         "fbb18af7-093c-4ee4-a869-e6736e7c0d9c",
         "9c7d8fdf-05e3-4565-ba05-75e5a969c3cd",
         "a90bbc81-98ae-4090-bb7c-b8f5dfea30a9"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "fbb18af7-093c-4ee4-a869-e6736e7c0d9c",
-    "text": "Borrowers\nI'm a real estate developer. To fund construction projects, I borrow from\nForthright Financial. Forthright lends money as one of its investments. They\nexpect to earn a return, so they keep a close eye on me.\nRegulators",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: A government stakeholder group responsible for overseeing the insurance industry. Their demands include insurer solvency, ethical market conduct, fair treatment of policyholders, and compliance with all applicable laws. | Domain Tags: compliance, government oversight, solvency, market conduct | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Regulators | Chunk Text Content: Borrowers\nI'm a real estate developer. To fund construction projects, I borrow from\nForthright Financial. Forthright lends money as one of its investments. They\nexpect to earn a return, so they keep a close eye on me.\nRegulators",
     "payload": {
       "chunk_index": 18,
       "total_chunks": 55,
@@ -490,8 +508,6 @@
       "category": "Stakeholder Group",
       "node_name": "Regulators",
       "node_id": 237,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "963c0620-9594-44ec-9abb-a8c43e8de0b6",
@@ -502,12 +518,15 @@
         "9c7d8fdf-05e3-4565-ba05-75e5a969c3cd",
         "a90bbc81-98ae-4090-bb7c-b8f5dfea30a9",
         "8174489f-4ef0-41ec-99f8-a60d9862b590"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "9c7d8fdf-05e3-4565-ba05-75e5a969c3cd",
-    "text": "I conduct in-person examinations of insurance companies that do business in\nmy state. I make sure they comply with regulations and maintain fair\nbusiness practices.\nRating Agencies\nI assign a grade to Forthright Financial and other companies. The grade,\ncalled a rating, indicates my company's opinion of Forthright's overall health\nand stability.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: A government stakeholder group responsible for overseeing the insurance industry. Their demands include insurer solvency, ethical market conduct, fair treatment of policyholders, and compliance with all applicable laws. | Domain Tags: compliance, government oversight, solvency, market conduct | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Regulators | Chunk Text Content: I conduct in-person examinations of insurance companies that do business in\nmy state. I make sure they comply with regulations and maintain fair\nbusiness practices.\nRating Agencies\nI assign a grade to Forthright Financial and other companies. The grade,\ncalled a rating, indicates my company's opinion of Forthright's overall health\nand stability.",
     "payload": {
       "chunk_index": 19,
       "total_chunks": 55,
@@ -517,8 +536,6 @@
       "category": "Stakeholder Group",
       "node_name": "Regulators",
       "node_id": 237,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "fbaf95d3-469a-4066-b835-4f5c98d12c73",
@@ -529,12 +546,15 @@
         "a90bbc81-98ae-4090-bb7c-b8f5dfea30a9",
         "8174489f-4ef0-41ec-99f8-a60d9862b590",
         "0e8078ec-9572-472f-92c8-2b5f2b2acb26"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "a90bbc81-98ae-4090-bb7c-b8f5dfea30a9",
-    "text": "Associations\nAs a Forthright actuary, I belong to several organizations that set\nprofessional standards. Forthright employs many professionals—actuaries,\naccountants, auditors, attorneys, underwriters, medical directors, and others.\nAll of these groups have professional associations.\nSelect each group which counts among an insurance company's stakeholders.\n1. In each of the following questions, select the person who would most\nlikely make each statement about his or her interests as a stakeholder.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: Any individual, group, or organization that has a vested interest or concern in an insurance company's operations, performance, and decisions. | Domain Tags: stakeholder theory, corporate governance, business environment | Related Nodes: KN-002, KN-003, KN-004, KN-005, KN-006, KN-007 | Category: Business Concept | Node Name: Stakeholder | Chunk Text Content: Associations\nAs a Forthright actuary, I belong to several organizations that set\nprofessional standards. Forthright employs many professionals—actuaries,\naccountants, auditors, attorneys, underwriters, medical directors, and others.\nAll of these groups have professional associations.\nSelect each group which counts among an insurance company's stakeholders.\n1. In each of the following questions, select the person who would most\nlikely make each statement about his or her interests as a stakeholder.",
     "payload": {
       "chunk_index": 20,
       "total_chunks": 55,
@@ -544,8 +564,6 @@
       "category": "Business Concept",
       "node_name": "Stakeholder",
       "node_id": 231,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "04d5feb2-526c-4ca8-a4f0-37fd7f6cdfd7",
@@ -556,12 +574,15 @@
         "8174489f-4ef0-41ec-99f8-a60d9862b590",
         "0e8078ec-9572-472f-92c8-2b5f2b2acb26",
         "ab97b0e2-94ea-4ffa-bc65-06cc34ec6b6a"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "8174489f-4ef0-41ec-99f8-a60d9862b590",
-    "text": "likely make each statement about his or her interests as a stakeholder.\nFinancial professionals\nReinsurance companies\nEmployees\nTrade associations\nOwners of company stock",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: The stakeholder group that provides capital and expects a financial return. Their demands focus on profitability, long-term growth, and return on investment (ROI). | Domain Tags: ownership, shareholder, mutual company, profitability | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Owners (Shareholders / Mutual Policyholders) | Chunk Text Content: likely make each statement about his or her interests as a stakeholder.\nFinancial professionals\nReinsurance companies\nEmployees\nTrade associations\nOwners of company stock",
     "payload": {
       "chunk_index": 21,
       "total_chunks": 55,
@@ -571,8 +592,6 @@
       "category": "Stakeholder Group",
       "node_name": "Owners (Shareholders / Mutual Policyholders)",
       "node_id": 234,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "fbb18af7-093c-4ee4-a869-e6736e7c0d9c",
@@ -583,12 +602,15 @@
         "0e8078ec-9572-472f-92c8-2b5f2b2acb26",
         "ab97b0e2-94ea-4ffa-bc65-06cc34ec6b6a",
         "85e84204-ce86-41d1-bfeb-315cfb16bcc1"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "0e8078ec-9572-472f-92c8-2b5f2b2acb26",
-    "text": "Policyowners\nAll is correct\nAll of these groups and many more can be counted among the stakeholders\nof an insurance company!\n2. In each of the following questions, select the person who\nwould most likely make each statement about his or her\ninterests as a stakeholder.\n\"My company provides backup to Forthright on paying its claims.\nPolicyowner\nStockholder\nEmployee\nReinsurer\nFinancial professional\nReinsurer\n3. \"I need prompt handling of my transactions when I make a withdrawal.\"\nPolicyowner",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: A primary stakeholder group whose demands include financially secure products, fair prices, clear communication, and excellent service, particularly during the claims process. | Domain Tags: customer relations, policyowner, consumer | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Customers (Policyowners) | Chunk Text Content: Policyowners\nAll is correct\nAll of these groups and many more can be counted among the stakeholders\nof an insurance company!\n2. In each of the following questions, select the person who\nwould most likely make each statement about his or her\ninterests as a stakeholder.\n\"My company provides backup to Forthright on paying its claims.\nPolicyowner\nStockholder\nEmployee\nReinsurer\nFinancial professional\nReinsurer\n3. \"I need prompt handling of my transactions when I make a withdrawal.\"\nPolicyowner",
     "payload": {
       "chunk_index": 22,
       "total_chunks": 55,
@@ -598,8 +620,6 @@
       "category": "Stakeholder Group",
       "node_name": "Customers (Policyowners)",
       "node_id": 233,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "9c7d8fdf-05e3-4565-ba05-75e5a969c3cd",
@@ -610,12 +630,15 @@
         "ab97b0e2-94ea-4ffa-bc65-06cc34ec6b6a",
         "85e84204-ce86-41d1-bfeb-315cfb16bcc1",
         "db930184-3b6b-4a34-b9db-290f05be672a"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "ab97b0e2-94ea-4ffa-bc65-06cc34ec6b6a",
-    "text": "Reinsurer\n3. \"I need prompt handling of my transactions when I make a withdrawal.\"\nPolicyowner\nStockholder\nEmployee\nReinsurer\nFinancial professional\nPolicyowner",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: A primary stakeholder group whose demands include financially secure products, fair prices, clear communication, and excellent service, particularly during the claims process. | Domain Tags: customer relations, policyowner, consumer | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Customers (Policyowners) | Chunk Text Content: Reinsurer\n3. \"I need prompt handling of my transactions when I make a withdrawal.\"\nPolicyowner\nStockholder\nEmployee\nReinsurer\nFinancial professional\nPolicyowner",
     "payload": {
       "chunk_index": 23,
       "total_chunks": 55,
@@ -625,8 +648,6 @@
       "category": "Stakeholder Group",
       "node_name": "Customers (Policyowners)",
       "node_id": 233,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "a90bbc81-98ae-4090-bb7c-b8f5dfea30a9",
@@ -637,12 +658,15 @@
         "85e84204-ce86-41d1-bfeb-315cfb16bcc1",
         "db930184-3b6b-4a34-b9db-290f05be672a",
         "86a13db0-f2e5-43e6-90b4-c6b87ba6db2f"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "85e84204-ce86-41d1-bfeb-315cfb16bcc1",
-    "text": "4. \"I value having a good job with reliable income and benefits.\"\nPolicyowner\nStockholder\nEmployee\nReinsurer\nFinancial professional\nEmployee\n5. \"I need Forthright to offer products that meet my clients' needs so that I\ncan earn an income.\"\nPolicyowner\nStockholder\nEmployee\nReinsurer\nFinancial professional\nFinancial professional\n6. \"I need to earn a return on my stock investment in Forthright.\"\nPolicyowner\nStockholder\nEmployee\nReinsurer\nFinancial professional\nStockholder",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: An internal stakeholder group whose demands include fair compensation and benefits, a safe and ethical work environment, career development opportunities, and job security. | Domain Tags: human resources, internal stakeholder, workforce | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Employees | Chunk Text Content: 4. \"I value having a good job with reliable income and benefits.\"\nPolicyowner\nStockholder\nEmployee\nReinsurer\nFinancial professional\nEmployee\n5. \"I need Forthright to offer products that meet my clients' needs so that I\ncan earn an income.\"\nPolicyowner\nStockholder\nEmployee\nReinsurer\nFinancial professional\nFinancial professional\n6. \"I need to earn a return on my stock investment in Forthright.\"\nPolicyowner\nStockholder\nEmployee\nReinsurer\nFinancial professional\nStockholder",
     "payload": {
       "chunk_index": 24,
       "total_chunks": 55,
@@ -652,8 +676,6 @@
       "category": "Stakeholder Group",
       "node_name": "Employees",
       "node_id": 235,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "8174489f-4ef0-41ec-99f8-a60d9862b590",
@@ -664,12 +686,15 @@
         "db930184-3b6b-4a34-b9db-290f05be672a",
         "86a13db0-f2e5-43e6-90b4-c6b87ba6db2f",
         "aba6c20e-4d26-4540-a3bb-fea8b06e46cd"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "db930184-3b6b-4a34-b9db-290f05be672a",
-    "text": "Corporate Governance\nLearning Objective\nExplain the governance role of a company's board of directors, and describe the impact\nof governance on conflicting priorities.\nEach stakeholder group has an interest in how the insurer operates—the decisions it\nmakes and the actions it takes.\nSometimes stakeholder groups share the same company goals. But other times these\ngroups have different interests and, as a result, different goals. For example, suppose",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: The strategic challenge for an insurance company's management to satisfy the often competing needs and expectations of its various stakeholders to ensure long-term success. | Domain Tags: corporate governance, strategic management, conflict resolution | Related Nodes: KN-001 | Category: Management Strategy | Node Name: Balancing Stakeholder Demands | Chunk Text Content: Corporate Governance\nLearning Objective\nExplain the governance role of a company's board of directors, and describe the impact\nof governance on conflicting priorities.\nEach stakeholder group has an interest in how the insurer operates—the decisions it\nmakes and the actions it takes.\nSometimes stakeholder groups share the same company goals. But other times these\ngroups have different interests and, as a result, different goals. For example, suppose",
     "payload": {
       "chunk_index": 25,
       "total_chunks": 55,
@@ -679,8 +704,6 @@
       "category": "Management Strategy",
       "node_name": "Balancing Stakeholder Demands",
       "node_id": 232,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "0e8078ec-9572-472f-92c8-2b5f2b2acb26",
@@ -691,12 +714,15 @@
         "86a13db0-f2e5-43e6-90b4-c6b87ba6db2f",
         "aba6c20e-4d26-4540-a3bb-fea8b06e46cd",
         "80599373-b6ca-416a-8bd3-f6b5e24907fe"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "86a13db0-f2e5-43e6-90b4-c6b87ba6db2f",
-    "text": "groups have different interests and, as a result, different goals. For example, suppose\nForthright has some capital—money, that is—and it needs to decide how to spend it.\nSome options could be\n\nDeclare a stockholder dividend\n\nDeclare a policyowner dividend\n\nPurchase another company\n\nExpand into a new product line\nWhich would you want the company to do?\nYour answer depends on whether you're a stockholder, policyowner, employee, or\nfinancial professional. That's why the company needs to\n",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: The stakeholder group that provides capital and expects a financial return. Their demands focus on profitability, long-term growth, and return on investment (ROI). | Domain Tags: ownership, shareholder, mutual company, profitability | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Owners (Shareholders / Mutual Policyholders) | Chunk Text Content: groups have different interests and, as a result, different goals. For example, suppose\nForthright has some capital—money, that is—and it needs to decide how to spend it.\nSome options could be\n\nDeclare a stockholder dividend\n\nDeclare a policyowner dividend\n\nPurchase another company\n\nExpand into a new product line\nWhich would you want the company to do?\nYour answer depends on whether you're a stockholder, policyowner, employee, or\nfinancial professional. That's why the company needs to\n",
     "payload": {
       "chunk_index": 26,
       "total_chunks": 55,
@@ -706,8 +732,6 @@
       "category": "Stakeholder Group",
       "node_name": "Owners (Shareholders / Mutual Policyholders)",
       "node_id": 234,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "ab97b0e2-94ea-4ffa-bc65-06cc34ec6b6a",
@@ -718,12 +742,15 @@
         "aba6c20e-4d26-4540-a3bb-fea8b06e46cd",
         "80599373-b6ca-416a-8bd3-f6b5e24907fe",
         "63635f93-d45d-4ad8-88b9-3722efa6e988"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "aba6c20e-4d26-4540-a3bb-fea8b06e46cd",
-    "text": "financial professional. That's why the company needs to\n\nBalance the interests of the different stakeholder groups and\n\nPrioritize each group's interests, if necessary",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: The strategic challenge for an insurance company's management to satisfy the often competing needs and expectations of its various stakeholders to ensure long-term success. | Domain Tags: corporate governance, strategic management, conflict resolution | Related Nodes: KN-001 | Category: Management Strategy | Node Name: Balancing Stakeholder Demands | Chunk Text Content: financial professional. That's why the company needs to\n\nBalance the interests of the different stakeholder groups and\n\nPrioritize each group's interests, if necessary",
     "payload": {
       "chunk_index": 27,
       "total_chunks": 55,
@@ -733,8 +760,6 @@
       "category": "Management Strategy",
       "node_name": "Balancing Stakeholder Demands",
       "node_id": 232,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "85e84204-ce86-41d1-bfeb-315cfb16bcc1",
@@ -745,12 +770,15 @@
         "80599373-b6ca-416a-8bd3-f6b5e24907fe",
         "63635f93-d45d-4ad8-88b9-3722efa6e988",
         "253d346a-1a88-4846-ab02-79aca6be78c1"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "80599373-b6ca-416a-8bd3-f6b5e24907fe",
-    "text": "Board of Directors\nThe owners elect a board of directors (A corporation's governing body, elected by\nthe owners, that makes broad policy decisions to ensure that stakeholder interests\nare safeguarded appropriately. )—a \"government\" for the company. The directors are\nresponsible for corporate governance (A corporate board's accountability,\nresponsibility, and authority to direct an organization to properly fulfill its\nmissions on behalf of legitimate stakeholders.) Governance refers to a board's",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: The stakeholder group that provides capital and expects a financial return. Their demands focus on profitability, long-term growth, and return on investment (ROI). | Domain Tags: ownership, shareholder, mutual company, profitability | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Owners (Shareholders / Mutual Policyholders) | Chunk Text Content: Board of Directors\nThe owners elect a board of directors (A corporation's governing body, elected by\nthe owners, that makes broad policy decisions to ensure that stakeholder interests\nare safeguarded appropriately. )—a \"government\" for the company. The directors are\nresponsible for corporate governance (A corporate board's accountability,\nresponsibility, and authority to direct an organization to properly fulfill its\nmissions on behalf of legitimate stakeholders.) Governance refers to a board's",
     "payload": {
       "chunk_index": 28,
       "total_chunks": 55,
@@ -760,8 +788,6 @@
       "category": "Stakeholder Group",
       "node_name": "Owners (Shareholders / Mutual Policyholders)",
       "node_id": 234,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "db930184-3b6b-4a34-b9db-290f05be672a",
@@ -772,12 +798,15 @@
         "63635f93-d45d-4ad8-88b9-3722efa6e988",
         "253d346a-1a88-4846-ab02-79aca6be78c1",
         "997a577d-6c8a-4b11-9c2e-44a4d8f63027"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "63635f93-d45d-4ad8-88b9-3722efa6e988",
-    "text": "missions on behalf of legitimate stakeholders.) Governance refers to a board's\nresponsibility and authority, as well as to management's accountability, to direct an\norganization to properly fulfill its missions on behalf of its owners and other legitimate\nstakeholders.\nHow do they safeguard stakeholder interests? Use the right arrows below to see some\ntools they can use.\nCompany Policy",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: The stakeholder group that provides capital and expects a financial return. Their demands focus on profitability, long-term growth, and return on investment (ROI). | Domain Tags: ownership, shareholder, mutual company, profitability | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Owners (Shareholders / Mutual Policyholders) | Chunk Text Content: missions on behalf of legitimate stakeholders.) Governance refers to a board's\nresponsibility and authority, as well as to management's accountability, to direct an\norganization to properly fulfill its missions on behalf of its owners and other legitimate\nstakeholders.\nHow do they safeguard stakeholder interests? Use the right arrows below to see some\ntools they can use.\nCompany Policy",
     "payload": {
       "chunk_index": 29,
       "total_chunks": 55,
@@ -787,8 +816,6 @@
       "category": "Stakeholder Group",
       "node_name": "Owners (Shareholders / Mutual Policyholders)",
       "node_id": 234,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "86a13db0-f2e5-43e6-90b4-c6b87ba6db2f",
@@ -799,12 +826,15 @@
         "253d346a-1a88-4846-ab02-79aca6be78c1",
         "997a577d-6c8a-4b11-9c2e-44a4d8f63027",
         "37942042-f804-4982-8c4a-79b61bb0386c"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "253d346a-1a88-4846-ab02-79aca6be78c1",
-    "text": "Codes of Conduct\nOrganizational Structure",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: Any individual, group, or organization that has a vested interest or concern in an insurance company's operations, performance, and decisions. | Domain Tags: stakeholder theory, corporate governance, business environment | Related Nodes: KN-002, KN-003, KN-004, KN-005, KN-006, KN-007 | Category: Business Concept | Node Name: Stakeholder | Chunk Text Content: Codes of Conduct\nOrganizational Structure",
     "payload": {
       "chunk_index": 30,
       "total_chunks": 55,
@@ -814,8 +844,6 @@
       "category": "Business Concept",
       "node_name": "Stakeholder",
       "node_id": 231,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "aba6c20e-4d26-4540-a3bb-fea8b06e46cd",
@@ -826,12 +854,15 @@
         "997a577d-6c8a-4b11-9c2e-44a4d8f63027",
         "37942042-f804-4982-8c4a-79b61bb0386c",
         "02cceeb4-1b1c-4721-89a9-1f9cce053f9f"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "997a577d-6c8a-4b11-9c2e-44a4d8f63027",
-    "text": "Compensation Arrangements and Bonus\nPay\nOrganizational Control Tools\nBoard Transactions\nA board's decisions—called policy decisions—give broad guidance to management.\nTypical policy-making responsibilities of Forthright's board of directors include",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: The strategic challenge for an insurance company's management to satisfy the often competing needs and expectations of its various stakeholders to ensure long-term success. | Domain Tags: corporate governance, strategic management, conflict resolution | Related Nodes: KN-001 | Category: Management Strategy | Node Name: Balancing Stakeholder Demands | Chunk Text Content: Compensation Arrangements and Bonus\nPay\nOrganizational Control Tools\nBoard Transactions\nA board's decisions—called policy decisions—give broad guidance to management.\nTypical policy-making responsibilities of Forthright's board of directors include",
     "payload": {
       "chunk_index": 31,
       "total_chunks": 55,
@@ -841,8 +872,6 @@
       "category": "Management Strategy",
       "node_name": "Balancing Stakeholder Demands",
       "node_id": 232,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "80599373-b6ca-416a-8bd3-f6b5e24907fe",
@@ -853,12 +882,15 @@
         "37942042-f804-4982-8c4a-79b61bb0386c",
         "02cceeb4-1b1c-4721-89a9-1f9cce053f9f",
         "0e465b80-02c5-4c7f-9bbf-1d6cfe2ac2f3"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "37942042-f804-4982-8c4a-79b61bb0386c",
-    "text": "\nAuthorizing a major business transaction, such as a merger\n\nDeclaring a dividend payable to owners\n\nSetting a major company policy\n\nOperating permanent committees of the board\n\nEvaluating the company's operating results\n\nAppointing executives\n\nSetting compensation, including incentives, for executive officers\nBoard Committees\nA company's board of directors meets regularly, but, outside of these meetings,\npermanent committees of the board do important work.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: The stakeholder group that provides capital and expects a financial return. Their demands focus on profitability, long-term growth, and return on investment (ROI). | Domain Tags: ownership, shareholder, mutual company, profitability | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Owners (Shareholders / Mutual Policyholders) | Chunk Text Content: \nAuthorizing a major business transaction, such as a merger\n\nDeclaring a dividend payable to owners\n\nSetting a major company policy\n\nOperating permanent committees of the board\n\nEvaluating the company's operating results\n\nAppointing executives\n\nSetting compensation, including incentives, for executive officers\nBoard Committees\nA company's board of directors meets regularly, but, outside of these meetings,\npermanent committees of the board do important work.",
     "payload": {
       "chunk_index": 32,
       "total_chunks": 55,
@@ -868,8 +900,6 @@
       "category": "Stakeholder Group",
       "node_name": "Owners (Shareholders / Mutual Policyholders)",
       "node_id": 234,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "63635f93-d45d-4ad8-88b9-3722efa6e988",
@@ -880,12 +910,15 @@
         "02cceeb4-1b1c-4721-89a9-1f9cce053f9f",
         "0e465b80-02c5-4c7f-9bbf-1d6cfe2ac2f3",
         "a7122e25-1db8-4834-83e2-4ca164d6ef49"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "02cceeb4-1b1c-4721-89a9-1f9cce053f9f",
-    "text": "permanent committees of the board do important work.\nThese committees set general guidelines and make decisions about how to direct\nForthright's resources toward achieving corporate objectives.\nInside and Outside Directors\nForthright's board contains inside directors (A member of the board of directors\nwho also holds a position within the company.) and outside directors (A member\nof the board of directors who does not hold a position within the company. Also",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: Any individual, group, or organization that has a vested interest or concern in an insurance company's operations, performance, and decisions. | Domain Tags: stakeholder theory, corporate governance, business environment | Related Nodes: KN-002, KN-003, KN-004, KN-005, KN-006, KN-007 | Category: Business Concept | Node Name: Stakeholder | Chunk Text Content: permanent committees of the board do important work.\nThese committees set general guidelines and make decisions about how to direct\nForthright's resources toward achieving corporate objectives.\nInside and Outside Directors\nForthright's board contains inside directors (A member of the board of directors\nwho also holds a position within the company.) and outside directors (A member\nof the board of directors who does not hold a position within the company. Also",
     "payload": {
       "chunk_index": 33,
       "total_chunks": 55,
@@ -895,8 +928,6 @@
       "category": "Business Concept",
       "node_name": "Stakeholder",
       "node_id": 231,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "253d346a-1a88-4846-ab02-79aca6be78c1",
@@ -907,12 +938,15 @@
         "0e465b80-02c5-4c7f-9bbf-1d6cfe2ac2f3",
         "a7122e25-1db8-4834-83e2-4ca164d6ef49",
         "d72ae1f5-9667-45dd-8c94-7fd7fe0a5a3a"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "0e465b80-02c5-4c7f-9bbf-1d6cfe2ac2f3",
-    "text": "known as an independent director.). Several of Forthright's senior executive officers\nare inside directors. Forthright's outside directors are business people, academic or\nmedical professionals, and community leaders.\nWhy have both inside and outside directors?\nInside directors are knowledgeable about a company's operations.\nBecause of their experiences outside of the company, outside directors can provide a\nbroader, less biased perspective than inside directors.\nBoth perspectives are important.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: Any individual, group, or organization that has a vested interest or concern in an insurance company's operations, performance, and decisions. | Domain Tags: stakeholder theory, corporate governance, business environment | Related Nodes: KN-002, KN-003, KN-004, KN-005, KN-006, KN-007 | Category: Business Concept | Node Name: Stakeholder | Chunk Text Content: known as an independent director.). Several of Forthright's senior executive officers\nare inside directors. Forthright's outside directors are business people, academic or\nmedical professionals, and community leaders.\nWhy have both inside and outside directors?\nInside directors are knowledgeable about a company's operations.\nBecause of their experiences outside of the company, outside directors can provide a\nbroader, less biased perspective than inside directors.\nBoth perspectives are important.",
     "payload": {
       "chunk_index": 34,
       "total_chunks": 55,
@@ -922,8 +956,6 @@
       "category": "Business Concept",
       "node_name": "Stakeholder",
       "node_id": 231,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "997a577d-6c8a-4b11-9c2e-44a4d8f63027",
@@ -934,12 +966,15 @@
         "a7122e25-1db8-4834-83e2-4ca164d6ef49",
         "d72ae1f5-9667-45dd-8c94-7fd7fe0a5a3a",
         "e0951e35-9085-4a1e-ab7b-31db71ee036c"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "a7122e25-1db8-4834-83e2-4ca164d6ef49",
-    "text": "broader, less biased perspective than inside directors.\nBoth perspectives are important.\n1. For the agenda for Forthright Financial's board meeting, select the items that are\na board responsibility. Choose all that apply.\nPlace an advertising campaign in appropriate media\nAuthorize a major transaction, such as a merger\nDeclare a cash dividend payable to owners\nSet a major policy for the company\nEvaluate the company's operating results\nAssemble financial reports requested as part of an audit",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: The stakeholder group that provides capital and expects a financial return. Their demands focus on profitability, long-term growth, and return on investment (ROI). | Domain Tags: ownership, shareholder, mutual company, profitability | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Owners (Shareholders / Mutual Policyholders) | Chunk Text Content: broader, less biased perspective than inside directors.\nBoth perspectives are important.\n1. For the agenda for Forthright Financial's board meeting, select the items that are\na board responsibility. Choose all that apply.\nPlace an advertising campaign in appropriate media\nAuthorize a major transaction, such as a merger\nDeclare a cash dividend payable to owners\nSet a major policy for the company\nEvaluate the company's operating results\nAssemble financial reports requested as part of an audit",
     "payload": {
       "chunk_index": 35,
       "total_chunks": 55,
@@ -949,8 +984,6 @@
       "category": "Stakeholder Group",
       "node_name": "Owners (Shareholders / Mutual Policyholders)",
       "node_id": 234,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "37942042-f804-4982-8c4a-79b61bb0386c",
@@ -961,12 +994,15 @@
         "d72ae1f5-9667-45dd-8c94-7fd7fe0a5a3a",
         "e0951e35-9085-4a1e-ab7b-31db71ee036c",
         "9d348e92-1607-49b5-ae1d-a727975626ed"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "d72ae1f5-9667-45dd-8c94-7fd7fe0a5a3a",
-    "text": "Evaluate the company's operating results\nAssemble financial reports requested as part of an audit\nSet compensation, including incentives, for executives\nRecruit financial professionals\nAuthorize a major transaction, such as a merger\nDeclare a cash dividend payable to owners\nSet a major policy for the company\nEvaluate the company's operating results\nSet compensation, including incentives, for executives",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: The stakeholder group that provides capital and expects a financial return. Their demands focus on profitability, long-term growth, and return on investment (ROI). | Domain Tags: ownership, shareholder, mutual company, profitability | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Owners (Shareholders / Mutual Policyholders) | Chunk Text Content: Evaluate the company's operating results\nAssemble financial reports requested as part of an audit\nSet compensation, including incentives, for executives\nRecruit financial professionals\nAuthorize a major transaction, such as a merger\nDeclare a cash dividend payable to owners\nSet a major policy for the company\nEvaluate the company's operating results\nSet compensation, including incentives, for executives",
     "payload": {
       "chunk_index": 36,
       "total_chunks": 55,
@@ -976,8 +1012,6 @@
       "category": "Stakeholder Group",
       "node_name": "Owners (Shareholders / Mutual Policyholders)",
       "node_id": 234,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "02cceeb4-1b1c-4721-89a9-1f9cce053f9f",
@@ -988,12 +1022,15 @@
         "e0951e35-9085-4a1e-ab7b-31db71ee036c",
         "9d348e92-1607-49b5-ae1d-a727975626ed",
         "54aa088c-30da-4b00-a452-62d51994b22b"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "e0951e35-9085-4a1e-ab7b-31db71ee036c",
-    "text": "The board of directors is responsible for making broad policy decisions that\nprovide broad guidance to a company's management.\n2. Can you identify the inside and outside directors on Forthright's board?\n2.1. Hi. We've met before. I'm Chief Executive Officer of Forthright Financial. I\nchair the human resources committee and sit on the risk committee.\nInside Director\nOutside Director\nInside Director\nGrace is an inside director because she holds a position within Forthright\nFinancial.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: Any individual, group, or organization that has a vested interest or concern in an insurance company's operations, performance, and decisions. | Domain Tags: stakeholder theory, corporate governance, business environment | Related Nodes: KN-002, KN-003, KN-004, KN-005, KN-006, KN-007 | Category: Business Concept | Node Name: Stakeholder | Chunk Text Content: The board of directors is responsible for making broad policy decisions that\nprovide broad guidance to a company's management.\n2. Can you identify the inside and outside directors on Forthright's board?\n2.1. Hi. We've met before. I'm Chief Executive Officer of Forthright Financial. I\nchair the human resources committee and sit on the risk committee.\nInside Director\nOutside Director\nInside Director\nGrace is an inside director because she holds a position within Forthright\nFinancial.",
     "payload": {
       "chunk_index": 37,
       "total_chunks": 55,
@@ -1003,8 +1040,6 @@
       "category": "Business Concept",
       "node_name": "Stakeholder",
       "node_id": 231,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "0e465b80-02c5-4c7f-9bbf-1d6cfe2ac2f3",
@@ -1015,12 +1050,15 @@
         "9d348e92-1607-49b5-ae1d-a727975626ed",
         "54aa088c-30da-4b00-a452-62d51994b22b",
         "f4433da6-1526-40bd-88c2-39534563710c"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "9d348e92-1607-49b5-ae1d-a727975626ed",
-    "text": "2.2. My name's Forrest. I'm retired from a career in securities law, so\nnow my board positions for several companies are my career. I also\nchair the tax committee of Forthright's board.\nInside Director\nOutside Director\nInside Director\nForrest is an outside director because he does not hold any other\nposition with Forthright Financial.\nGovernance and Ethics\nLearning Objective\nDefine ethics, and identify mechanisms companies employ to foster a culture of ethical\nbehavior.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: Any individual, group, or organization that has a vested interest or concern in an insurance company's operations, performance, and decisions. | Domain Tags: stakeholder theory, corporate governance, business environment | Related Nodes: KN-002, KN-003, KN-004, KN-005, KN-006, KN-007 | Category: Business Concept | Node Name: Stakeholder | Chunk Text Content: 2.2. My name's Forrest. I'm retired from a career in securities law, so\nnow my board positions for several companies are my career. I also\nchair the tax committee of Forthright's board.\nInside Director\nOutside Director\nInside Director\nForrest is an outside director because he does not hold any other\nposition with Forthright Financial.\nGovernance and Ethics\nLearning Objective\nDefine ethics, and identify mechanisms companies employ to foster a culture of ethical\nbehavior.",
     "payload": {
       "chunk_index": 38,
       "total_chunks": 55,
@@ -1030,8 +1068,6 @@
       "category": "Business Concept",
       "node_name": "Stakeholder",
       "node_id": 231,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "a7122e25-1db8-4834-83e2-4ca164d6ef49",
@@ -1042,12 +1078,15 @@
         "54aa088c-30da-4b00-a452-62d51994b22b",
         "f4433da6-1526-40bd-88c2-39534563710c",
         "b6360221-aa9d-41c1-9df2-09181f536806"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "54aa088c-30da-4b00-a452-62d51994b22b",
-    "text": "Boards of directors fulfill their governance function, in part, by establishing a culture of\nethical conduct. It's important for a company to show a true commitment to high\nethical standards and for all employees—especially those at the top—to embrace these\nstandards. If employees see their leaders display ethical behavior, they're more likely\nto trust the company and follow suit.\nAnd companies with strong ethical cultures usually have more motivated and\ncommitted employees.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: An internal stakeholder group whose demands include fair compensation and benefits, a safe and ethical work environment, career development opportunities, and job security. | Domain Tags: human resources, internal stakeholder, workforce | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Employees | Chunk Text Content: Boards of directors fulfill their governance function, in part, by establishing a culture of\nethical conduct. It's important for a company to show a true commitment to high\nethical standards and for all employees—especially those at the top—to embrace these\nstandards. If employees see their leaders display ethical behavior, they're more likely\nto trust the company and follow suit.\nAnd companies with strong ethical cultures usually have more motivated and\ncommitted employees.",
     "payload": {
       "chunk_index": 39,
       "total_chunks": 55,
@@ -1057,8 +1096,6 @@
       "category": "Stakeholder Group",
       "node_name": "Employees",
       "node_id": 235,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "d72ae1f5-9667-45dd-8c94-7fd7fe0a5a3a",
@@ -1069,12 +1106,15 @@
         "f4433da6-1526-40bd-88c2-39534563710c",
         "b6360221-aa9d-41c1-9df2-09181f536806",
         "111fd5f7-4d26-48d5-ad4b-57373a5339e7"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "f4433da6-1526-40bd-88c2-39534563710c",
-    "text": "And companies with strong ethical cultures usually have more motivated and\ncommitted employees.\nCorporate scandals can damage a company's reputation and cost millions in settlement\npayments. So when it comes to ethics, the old saying about \"an ounce of prevention is\nworth a pound of cure\" couldn't be more true.\nEthics and Ethical Conduct\nEthics (A system of accepted standards of conduct and moral judgment that\ncombines the elements of honesty, integrity, and fair treatment.) is a system of",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: An internal stakeholder group whose demands include fair compensation and benefits, a safe and ethical work environment, career development opportunities, and job security. | Domain Tags: human resources, internal stakeholder, workforce | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Employees | Chunk Text Content: And companies with strong ethical cultures usually have more motivated and\ncommitted employees.\nCorporate scandals can damage a company's reputation and cost millions in settlement\npayments. So when it comes to ethics, the old saying about \"an ounce of prevention is\nworth a pound of cure\" couldn't be more true.\nEthics and Ethical Conduct\nEthics (A system of accepted standards of conduct and moral judgment that\ncombines the elements of honesty, integrity, and fair treatment.) is a system of",
     "payload": {
       "chunk_index": 40,
       "total_chunks": 55,
@@ -1084,8 +1124,6 @@
       "category": "Stakeholder Group",
       "node_name": "Employees",
       "node_id": 235,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "e0951e35-9085-4a1e-ab7b-31db71ee036c",
@@ -1096,12 +1134,15 @@
         "b6360221-aa9d-41c1-9df2-09181f536806",
         "111fd5f7-4d26-48d5-ad4b-57373a5339e7",
         "95beee9c-5838-4226-8089-a1aade0384d0"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "b6360221-aa9d-41c1-9df2-09181f536806",
-    "text": "combines the elements of honesty, integrity, and fair treatment.) is a system of\naccepted standards of conduct and moral judgment. It includes honesty, integrity, and\nfair treatment.\nFor most companies, the basic ethical rules start with respecting stakeholders\n(including employees), competing fairly and within the law, and being a responsible\ncorporate citizen\nHere are some basic components of ethical corporate behavior:\n\nFollow accepted legal and moral principles of right and wrong\n",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: Any individual, group, or organization that has a vested interest or concern in an insurance company's operations, performance, and decisions. | Domain Tags: stakeholder theory, corporate governance, business environment | Related Nodes: KN-002, KN-003, KN-004, KN-005, KN-006, KN-007 | Category: Business Concept | Node Name: Stakeholder | Chunk Text Content: combines the elements of honesty, integrity, and fair treatment.) is a system of\naccepted standards of conduct and moral judgment. It includes honesty, integrity, and\nfair treatment.\nFor most companies, the basic ethical rules start with respecting stakeholders\n(including employees), competing fairly and within the law, and being a responsible\ncorporate citizen\nHere are some basic components of ethical corporate behavior:\n\nFollow accepted legal and moral principles of right and wrong\n",
     "payload": {
       "chunk_index": 41,
       "total_chunks": 55,
@@ -1111,8 +1152,6 @@
       "category": "Business Concept",
       "node_name": "Stakeholder",
       "node_id": 231,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "9d348e92-1607-49b5-ae1d-a727975626ed",
@@ -1123,12 +1162,15 @@
         "111fd5f7-4d26-48d5-ad4b-57373a5339e7",
         "95beee9c-5838-4226-8089-a1aade0384d0",
         "49658f24-0e64-494c-962b-f7f5a4e16c53"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "111fd5f7-4d26-48d5-ad4b-57373a5339e7",
-    "text": "\nFollow accepted legal and moral principles of right and wrong\n\nUphold promises to customers\n\nPerform high-quality work in a timely fashion\n\nKeep private information confidential\nSupport for Ethical Behavior",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: A primary stakeholder group whose demands include financially secure products, fair prices, clear communication, and excellent service, particularly during the claims process. | Domain Tags: customer relations, policyowner, consumer | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Customers (Policyowners) | Chunk Text Content: \nFollow accepted legal and moral principles of right and wrong\n\nUphold promises to customers\n\nPerform high-quality work in a timely fashion\n\nKeep private information confidential\nSupport for Ethical Behavior",
     "payload": {
       "chunk_index": 42,
       "total_chunks": 55,
@@ -1138,8 +1180,6 @@
       "category": "Stakeholder Group",
       "node_name": "Customers (Policyowners)",
       "node_id": 233,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "54aa088c-30da-4b00-a452-62d51994b22b",
@@ -1150,12 +1190,15 @@
         "95beee9c-5838-4226-8089-a1aade0384d0",
         "49658f24-0e64-494c-962b-f7f5a4e16c53",
         "1ee64abd-549a-4b8a-8ef1-0aff6aa2446a"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "95beee9c-5838-4226-8089-a1aade0384d0",
-    "text": "Use the right arrows below to look at some of the tools that companies like Forthright\ncan employ to encourage integrity and principled business conduct.\nAn effective organizational structure\nSystems of internal and external controls",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: The strategic challenge for an insurance company's management to satisfy the often competing needs and expectations of its various stakeholders to ensure long-term success. | Domain Tags: corporate governance, strategic management, conflict resolution | Related Nodes: KN-001 | Category: Management Strategy | Node Name: Balancing Stakeholder Demands | Chunk Text Content: Use the right arrows below to look at some of the tools that companies like Forthright\ncan employ to encourage integrity and principled business conduct.\nAn effective organizational structure\nSystems of internal and external controls",
     "payload": {
       "chunk_index": 43,
       "total_chunks": 55,
@@ -1165,8 +1208,6 @@
       "category": "Management Strategy",
       "node_name": "Balancing Stakeholder Demands",
       "node_id": 232,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "f4433da6-1526-40bd-88c2-39534563710c",
@@ -1177,12 +1218,15 @@
         "49658f24-0e64-494c-962b-f7f5a4e16c53",
         "1ee64abd-549a-4b8a-8ef1-0aff6aa2446a",
         "7e3d55bd-1f67-436b-9373-35174d750eea"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "49658f24-0e64-494c-962b-f7f5a4e16c53",
-    "text": "A formal compensation system\nForthright's system for awarding bonus pay encourages\nemployees to act ethically and also discourages them\nfrom acting contrary to Forthright's interests.\nLearning and development opportunities for\nemployees\nForthright promotes employee learning and\ndevelopment opportunities that emphasize compliance\nin the heavily regulated insurance industry.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: An internal stakeholder group whose demands include fair compensation and benefits, a safe and ethical work environment, career development opportunities, and job security. | Domain Tags: human resources, internal stakeholder, workforce | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Employees | Chunk Text Content: A formal compensation system\nForthright's system for awarding bonus pay encourages\nemployees to act ethically and also discourages them\nfrom acting contrary to Forthright's interests.\nLearning and development opportunities for\nemployees\nForthright promotes employee learning and\ndevelopment opportunities that emphasize compliance\nin the heavily regulated insurance industry.",
     "payload": {
       "chunk_index": 44,
       "total_chunks": 55,
@@ -1192,8 +1236,6 @@
       "category": "Stakeholder Group",
       "node_name": "Employees",
       "node_id": 235,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "b6360221-aa9d-41c1-9df2-09181f536806",
@@ -1204,12 +1246,15 @@
         "1ee64abd-549a-4b8a-8ef1-0aff6aa2446a",
         "7e3d55bd-1f67-436b-9373-35174d750eea",
         "b2af7178-e483-4ec7-bcb4-c8bcf55b9160"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "1ee64abd-549a-4b8a-8ef1-0aff6aa2446a",
-    "text": "Participation in industry associations and\nprofessional organizations\nForthright actively participates in industry associations\nthat promote professionalism and good business\nconduct, including a self-regulatory market conduct\nprogram.\nA code of conduct",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: The strategic challenge for an insurance company's management to satisfy the often competing needs and expectations of its various stakeholders to ensure long-term success. | Domain Tags: corporate governance, strategic management, conflict resolution | Related Nodes: KN-001 | Category: Management Strategy | Node Name: Balancing Stakeholder Demands | Chunk Text Content: Participation in industry associations and\nprofessional organizations\nForthright actively participates in industry associations\nthat promote professionalism and good business\nconduct, including a self-regulatory market conduct\nprogram.\nA code of conduct",
     "payload": {
       "chunk_index": 45,
       "total_chunks": 55,
@@ -1219,8 +1264,6 @@
       "category": "Management Strategy",
       "node_name": "Balancing Stakeholder Demands",
       "node_id": 232,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "111fd5f7-4d26-48d5-ad4b-57373a5339e7",
@@ -1231,12 +1274,15 @@
         "7e3d55bd-1f67-436b-9373-35174d750eea",
         "b2af7178-e483-4ec7-bcb4-c8bcf55b9160",
         "90d0229e-53f2-4ac0-b31b-4bd619ae2f9b"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "7e3d55bd-1f67-436b-9373-35174d750eea",
-    "text": "Forthright's business must unfailingly meet the highest ethical and moral standards.\nCompany success depends on principled business conduct and public confidence in our\nintegrity.\nAnnually, Forthright's employees read and sign the code of conduct (A formal\nstatement of a company's values and its expectations for the behavior of its\nemployees. Also known as a code of business conduct or a code of ethics.),\nwhich is a statement of the principles employees should follow when representing the",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: An internal stakeholder group whose demands include fair compensation and benefits, a safe and ethical work environment, career development opportunities, and job security. | Domain Tags: human resources, internal stakeholder, workforce | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Employees | Chunk Text Content: Forthright's business must unfailingly meet the highest ethical and moral standards.\nCompany success depends on principled business conduct and public confidence in our\nintegrity.\nAnnually, Forthright's employees read and sign the code of conduct (A formal\nstatement of a company's values and its expectations for the behavior of its\nemployees. Also known as a code of business conduct or a code of ethics.),\nwhich is a statement of the principles employees should follow when representing the",
     "payload": {
       "chunk_index": 46,
       "total_chunks": 55,
@@ -1246,8 +1292,6 @@
       "category": "Stakeholder Group",
       "node_name": "Employees",
       "node_id": 235,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "95beee9c-5838-4226-8089-a1aade0384d0",
@@ -1258,12 +1302,15 @@
         "b2af7178-e483-4ec7-bcb4-c8bcf55b9160",
         "90d0229e-53f2-4ac0-b31b-4bd619ae2f9b",
         "d210e11c-500e-468d-bf51-16d2988cc552"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "b2af7178-e483-4ec7-bcb4-c8bcf55b9160",
-    "text": "which is a statement of the principles employees should follow when representing the\ncompany. Every employee receives a wallet reminder card on this occasion.\nEthical Guidance\nMany companies offer employees ready access to guidance in ethical matters. Click or\ntouch each heading below to learn more.\nEthics Office",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: An internal stakeholder group whose demands include fair compensation and benefits, a safe and ethical work environment, career development opportunities, and job security. | Domain Tags: human resources, internal stakeholder, workforce | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Employees | Chunk Text Content: which is a statement of the principles employees should follow when representing the\ncompany. Every employee receives a wallet reminder card on this occasion.\nEthical Guidance\nMany companies offer employees ready access to guidance in ethical matters. Click or\ntouch each heading below to learn more.\nEthics Office",
     "payload": {
       "chunk_index": 47,
       "total_chunks": 55,
@@ -1273,8 +1320,6 @@
       "category": "Stakeholder Group",
       "node_name": "Employees",
       "node_id": 235,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "49658f24-0e64-494c-962b-f7f5a4e16c53",
@@ -1285,12 +1330,15 @@
         "90d0229e-53f2-4ac0-b31b-4bd619ae2f9b",
         "d210e11c-500e-468d-bf51-16d2988cc552",
         "98e3e86a-cb32-4ec0-af18-7587fdd8b977"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "90d0229e-53f2-4ac0-b31b-4bd619ae2f9b",
-    "text": "An ethics office offers qualified professionals who consult with employees\nabout handling ethical issues.\nOnline Ethics Help\nProvides company policies on:\n\nConduct\n\nInside information\n\nEqual employment opportunity (EEO)\n\nSexual harassment\n\nPrivacy and data protection\nOmbudsman\nAn ombudsman—an independent, impartial, and confidential professional\nwith expertise in handling ethics problems.\nInside Information\nEmployees, in the course of performing a job, have access to inside information.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: An internal stakeholder group whose demands include fair compensation and benefits, a safe and ethical work environment, career development opportunities, and job security. | Domain Tags: human resources, internal stakeholder, workforce | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Employees | Chunk Text Content: An ethics office offers qualified professionals who consult with employees\nabout handling ethical issues.\nOnline Ethics Help\nProvides company policies on:\n\nConduct\n\nInside information\n\nEqual employment opportunity (EEO)\n\nSexual harassment\n\nPrivacy and data protection\nOmbudsman\nAn ombudsman—an independent, impartial, and confidential professional\nwith expertise in handling ethics problems.\nInside Information\nEmployees, in the course of performing a job, have access to inside information.",
     "payload": {
       "chunk_index": 48,
       "total_chunks": 55,
@@ -1300,8 +1348,6 @@
       "category": "Stakeholder Group",
       "node_name": "Employees",
       "node_id": 235,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "1ee64abd-549a-4b8a-8ef1-0aff6aa2446a",
@@ -1312,12 +1358,15 @@
         "d210e11c-500e-468d-bf51-16d2988cc552",
         "98e3e86a-cb32-4ec0-af18-7587fdd8b977",
         "5198857d-213d-4889-9c0c-acb3b3fd8d45"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "d210e11c-500e-468d-bf51-16d2988cc552",
-    "text": "Inside Information\nEmployees, in the course of performing a job, have access to inside information.\n\"Hey Todd, I've got a great stock tip for you.\"",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: An internal stakeholder group whose demands include fair compensation and benefits, a safe and ethical work environment, career development opportunities, and job security. | Domain Tags: human resources, internal stakeholder, workforce | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Employees | Chunk Text Content: Inside Information\nEmployees, in the course of performing a job, have access to inside information.\n\"Hey Todd, I've got a great stock tip for you.\"",
     "payload": {
       "chunk_index": 49,
       "total_chunks": 55,
@@ -1327,8 +1376,6 @@
       "category": "Stakeholder Group",
       "node_name": "Employees",
       "node_id": 235,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "7e3d55bd-1f67-436b-9373-35174d750eea",
@@ -1339,12 +1386,15 @@
         "98e3e86a-cb32-4ec0-af18-7587fdd8b977",
         "5198857d-213d-4889-9c0c-acb3b3fd8d45",
         "443ce610-9250-44b8-a6dd-7866714a710f"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "98e3e86a-cb32-4ec0-af18-7587fdd8b977",
-    "text": "Ethically and legally, employees may not unfairly profit by the misuse of inside\ninformation. Here are some examples:\n\nConducting a transaction in Forthright securities during a blackout period\n\nAdvising a third party about transactions in Forthright securities based on non-\npublic information\n\nDisclosing any non-public information to third parties\nEmployees need to keep inside information private, and companies need to provide",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: An internal stakeholder group whose demands include fair compensation and benefits, a safe and ethical work environment, career development opportunities, and job security. | Domain Tags: human resources, internal stakeholder, workforce | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Employees | Chunk Text Content: Ethically and legally, employees may not unfairly profit by the misuse of inside\ninformation. Here are some examples:\n\nConducting a transaction in Forthright securities during a blackout period\n\nAdvising a third party about transactions in Forthright securities based on non-\npublic information\n\nDisclosing any non-public information to third parties\nEmployees need to keep inside information private, and companies need to provide",
     "payload": {
       "chunk_index": 50,
       "total_chunks": 55,
@@ -1354,8 +1404,6 @@
       "category": "Stakeholder Group",
       "node_name": "Employees",
       "node_id": 235,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "b2af7178-e483-4ec7-bcb4-c8bcf55b9160",
@@ -1366,12 +1414,15 @@
         "5198857d-213d-4889-9c0c-acb3b3fd8d45",
         "443ce610-9250-44b8-a6dd-7866714a710f",
         "193fea46-808a-45dd-ba98-6c8c6d8fdfcc"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "5198857d-213d-4889-9c0c-acb3b3fd8d45",
-    "text": "Employees need to keep inside information private, and companies need to provide\nemployees with the resources they need to recognize inside information and understand\nthe importance of keeping it private.\n1. Which of the following would Forthright consider to be inside information?\nChoose all that apply.\nInformation published by a rating agency\nMarketing strategies\nProduct design assumptions\nProfessional standards set by a trade association\nMarketing strategies\nProduct design assumptions",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: An internal stakeholder group whose demands include fair compensation and benefits, a safe and ethical work environment, career development opportunities, and job security. | Domain Tags: human resources, internal stakeholder, workforce | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Employees | Chunk Text Content: Employees need to keep inside information private, and companies need to provide\nemployees with the resources they need to recognize inside information and understand\nthe importance of keeping it private.\n1. Which of the following would Forthright consider to be inside information?\nChoose all that apply.\nInformation published by a rating agency\nMarketing strategies\nProduct design assumptions\nProfessional standards set by a trade association\nMarketing strategies\nProduct design assumptions",
     "payload": {
       "chunk_index": 51,
       "total_chunks": 55,
@@ -1381,8 +1432,6 @@
       "category": "Stakeholder Group",
       "node_name": "Employees",
       "node_id": 235,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "90d0229e-53f2-4ac0-b31b-4bd619ae2f9b",
@@ -1393,12 +1442,15 @@
         "443ce610-9250-44b8-a6dd-7866714a710f",
         "193fea46-808a-45dd-ba98-6c8c6d8fdfcc",
         "fc4afa3b-5b05-46e7-85e9-f6a0c096776a"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "443ce610-9250-44b8-a6dd-7866714a710f",
-    "text": "Professional standards set by a trade association\nMarketing strategies\nProduct design assumptions\nMarketing strategies and product assumptions are examples of inside\ninformation. The other types of information are readily available to the public\nand are therefore not inside information.\nWhich of the following would Forthright consider to be inside information? Choose all\nthat apply.\nAdditional Activities\nTry these activities to relate the content of this lesson to the real world of your\ncompany.\n",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: The strategic challenge for an insurance company's management to satisfy the often competing needs and expectations of its various stakeholders to ensure long-term success. | Domain Tags: corporate governance, strategic management, conflict resolution | Related Nodes: KN-001 | Category: Management Strategy | Node Name: Balancing Stakeholder Demands | Chunk Text Content: Professional standards set by a trade association\nMarketing strategies\nProduct design assumptions\nMarketing strategies and product assumptions are examples of inside\ninformation. The other types of information are readily available to the public\nand are therefore not inside information.\nWhich of the following would Forthright consider to be inside information? Choose all\nthat apply.\nAdditional Activities\nTry these activities to relate the content of this lesson to the real world of your\ncompany.\n",
     "payload": {
       "chunk_index": 52,
       "total_chunks": 55,
@@ -1408,8 +1460,6 @@
       "category": "Management Strategy",
       "node_name": "Balancing Stakeholder Demands",
       "node_id": 232,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "d210e11c-500e-468d-bf51-16d2988cc552",
@@ -1419,12 +1469,15 @@
       "next": [
         "193fea46-808a-45dd-ba98-6c8c6d8fdfcc",
         "fc4afa3b-5b05-46e7-85e9-f6a0c096776a"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "193fea46-808a-45dd-ba98-6c8c6d8fdfcc",
-    "text": "Try these activities to relate the content of this lesson to the real world of your\ncompany.\n\nOn your company's website, find the board of directors (usually under Investor\nRelations or Governance) and read about standing committees of the board.\n\nFind your company's code of ethics (also known as a code of conduct or code of\nbusiness conduct) and identify support tools to help employees interpret\nquestions of proper conduct.\n\nIdentify elements your company uses to help define an ethical culture.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: An internal stakeholder group whose demands include fair compensation and benefits, a safe and ethical work environment, career development opportunities, and job security. | Domain Tags: human resources, internal stakeholder, workforce | Related Nodes: KN-001 | Category: Stakeholder Group | Node Name: Employees | Chunk Text Content: Try these activities to relate the content of this lesson to the real world of your\ncompany.\n\nOn your company's website, find the board of directors (usually under Investor\nRelations or Governance) and read about standing committees of the board.\n\nFind your company's code of ethics (also known as a code of conduct or code of\nbusiness conduct) and identify support tools to help employees interpret\nquestions of proper conduct.\n\nIdentify elements your company uses to help define an ethical culture.",
     "payload": {
       "chunk_index": 53,
       "total_chunks": 55,
@@ -1434,8 +1487,6 @@
       "category": "Stakeholder Group",
       "node_name": "Employees",
       "node_id": 235,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "98e3e86a-cb32-4ec0-af18-7587fdd8b977",
@@ -1444,12 +1495,15 @@
       ],
       "next": [
         "fc4afa3b-5b05-46e7-85e9-f6a0c096776a"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   },
   {
     "id": "fc4afa3b-5b05-46e7-85e9-f6a0c096776a",
-    "text": "My name's Forrest. I'm retired from a career in securities law, so now my board\npositions for several companies are my career. I also chair the tax committee of\nForthright's board.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 1 - Many Stakeholders, Many Demands | Source name: LOMA291_M1L1_Knowledge File_Many Stakeholders, Many Demands | Definition: Any individual, group, or organization that has a vested interest or concern in an insurance company's operations, performance, and decisions. | Domain Tags: stakeholder theory, corporate governance, business environment | Related Nodes: KN-002, KN-003, KN-004, KN-005, KN-006, KN-007 | Category: Business Concept | Node Name: Stakeholder | Chunk Text Content: My name's Forrest. I'm retired from a career in securities law, so now my board\npositions for several companies are my career. I also chair the tax committee of\nForthright's board.",
     "payload": {
       "chunk_index": 54,
       "total_chunks": 55,
@@ -1459,15 +1513,16 @@
       "category": "Business Concept",
       "node_name": "Stakeholder",
       "node_id": 231,
-      "module": "1",
-      "lesson": "1",
       "course": "LOMA291",
       "previous": [
         "5198857d-213d-4889-9c0c-acb3b3fd8d45",
         "443ce610-9250-44b8-a6dd-7866714a710f",
         "193fea46-808a-45dd-ba98-6c8c6d8fdfcc"
       ],
-      "next": []
+      "next": [],
+      "module_number": 1,
+      "lesson_number": 1,
+      "summary": ""
     }
   }
 ]

@@ -2,7 +2,7 @@ import os
 
 # Thư mục gốc
 root_dir = (
-    r"/mnt/d/Deverlopment/java/java-core/java-multithread-concurrency/src/main/java"
+    r"D:\Deverlopment\java\design-pattern\design-pattern-java\solutions"
 )
 
 # File output

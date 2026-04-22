@@ -1,0 +1,2406 @@
+[Adapter]
+package Adapter;
+
+import java.util.Scanner;
+
+public class Exercise {
+    
+    public void run() {
+        
+        Scanner sc = new Scanner(System.in);
+
+        String legacyTemperature = sc.nextLine();
+        String legacyCondition = sc.nextLine();
+
+        // Using the legacy weather service with user input
+        WeatherService legacyService = new LegacyWeatherService(legacyTemperature, legacyCondition);
+        System.out.println("Legacy Weather Service Data:");
+        System.out.println(legacyService.getWeatherData());
+
+        String temperature = sc.nextLine();
+        String condition = sc.nextLine();
+
+        // Using the new weather service with user input
+        NewWeatherService newService = new NewWeatherService(temperature, condition);
+        WeatherService adaptedService = new NewWeatherServiceAdapter(newService);
+        System.out.println("New Weather Service Data:");
+        System.out.println(adaptedService.getWeatherData());
+
+        sc.close();
+    }
+}
+
+[Adapter]
+package Adapter;
+
+public class LegacyWeatherService implements WeatherService {
+    
+    private String temperature;
+    private String condition;
+
+    public LegacyWeatherService(String temperature, String condition) {
+        this.temperature = temperature;
+        this.condition = condition;
+    }
+
+    @Override
+    public String getWeatherData() {
+        return "<weather><temperature>" + temperature + "</temperature><condition>" + condition + "</condition></weather>";
+    }
+}
+
+[Adapter]
+package Adapter;
+
+public class NewWeatherService {
+    
+    private String temperature;
+    private String condition;
+
+    public NewWeatherService(String temperature, String condition) {
+        this.temperature = temperature;
+        this.condition = condition;
+    }
+
+    public String fetchWeather() {
+        return "{\"temperature\": " + temperature + ", \"condition\": \"" + condition + "\"}";
+    }
+}
+
+[Adapter]
+package Adapter;
+
+public class NewWeatherServiceAdapter implements WeatherService {
+    
+    private NewWeatherService newWeatherService;
+
+    public NewWeatherServiceAdapter(NewWeatherService newWeatherService) {
+        this.newWeatherService = newWeatherService;
+    }
+
+    @Override
+    public String getWeatherData() {
+        return newWeatherService.fetchWeather();
+    }
+}
+
+[Adapter]
+package Adapter;
+
+public interface WeatherService {
+    String getWeatherData();
+}
+
+[Builder]
+package Builder;
+
+import java.util.Scanner;
+
+public class Exercise {
+
+    public void run() {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        // Get full meal components from user
+        String fullMainDish = sc.nextLine();
+        
+        String fullSideDish = sc.nextLine();
+        
+        String fullDrink = sc.nextLine();
+        
+        String fullDessert = sc.nextLine();
+        
+        String fullAppetizer = sc.nextLine();
+        
+        Meal fullMeal = new MealBuilder(fullMainDish, fullSideDish, fullDrink)
+                                        .setDessert(fullDessert)
+                                        .setAppetizer(fullAppetizer)
+                                        .build();
+                            
+        System.out.println("Full Meal Summary:");
+        fullMeal.printMealSummary();
+
+
+        // Get simple meal components from user
+        String simpleMainDish = sc.nextLine();
+
+        String simpleSideDish = sc.nextLine();
+        
+        String simpleDrink = sc.nextLine();
+
+        Meal simpleMeal = new MealBuilder(simpleMainDish, simpleSideDish, simpleDrink).build();
+                            
+        System.out.println("Simple Meal Summary:");
+        simpleMeal.printMealSummary();
+
+        sc.close();
+    }
+}
+
+[Builder]
+package Builder;
+
+public class Meal {
+    
+    private String mainDish;
+    private String sideDish;
+    private String drink;
+    private String dessert;
+    private String appetizer;
+
+    private Meal(MealBuilder builder) {
+        this.mainDish = builder.mainDish;
+        this.sideDish = builder.sideDish;
+        this.drink = builder.drink;
+        this.dessert = builder.dessert;
+        this.appetizer = builder.appetizer;
+    }
+    
+    public static synchronized Meal getInstance(MealBuilder builder) {
+        return new Meal(builder);
+    }
+
+    public void printMealSummary() {
+        System.out.println("Main Dish: " + mainDish);
+        System.out.println("Side Dish: " + sideDish);
+        System.out.println("Drink: " + drink);
+        System.out.println("Dessert: " + dessert);
+        System.out.println("Appetizer: " + appetizer);
+    }
+}
+
+[Builder]
+package Builder;
+
+public class MealBuilder {
+    
+    public String mainDish;
+    public String sideDish;
+    public String drink;
+    public String dessert = "Default Dessert";
+    public String appetizer = "Default Appetizer";
+
+    public MealBuilder(String mainDish, String sideDish, String drink) {
+        this.mainDish = mainDish;
+        this.sideDish = sideDish;
+        this.drink = drink;
+    }
+
+    public MealBuilder setDessert(String dessert) {
+        this.dessert = dessert;
+        return this;
+    }
+
+    public MealBuilder setAppetizer(String appetizer) {
+        this.appetizer = appetizer;
+        return this;
+    }
+
+    public Meal build() {
+        return Meal.getInstance(this);
+    }
+}
+
+[Command]
+package Command;
+
+public interface Command {
+    void execute();
+}
+
+[Command]
+package Command;
+
+public class Exercise {
+    
+    public void run () {
+        
+        // Create devices
+        Light light = new Light();
+        Fan fan = new Fan();
+
+        // Create commands
+        Command lightOn = new LightCommands.LightOnCommand(light);
+        Command lightOff = new LightCommands.LightOffCommand(light);
+        Command fanOn = new FanCommands.FanOnCommand(fan);
+        Command fanOff = new FanCommands.FanOffCommand(fan);
+
+        // Create remote control
+        RemoteControl remoteControl = new RemoteControl();
+        remoteControl.setLightOnCommand(lightOn);
+        remoteControl.setLightOffCommand(lightOff);
+        remoteControl.setFanOnCommand(fanOn);
+        remoteControl.setFanOffCommand(fanOff);
+
+        // Test the functionality
+        remoteControl.pressLightOnButton(); // Output: The light is on.
+        remoteControl.pressLightOffButton(); // Output: The light is off.
+        remoteControl.pressFanOnButton(); // Output: The fan is on.
+        remoteControl.pressFanOffButton(); // Output: The fan is off.
+    }
+}
+
+[Command]
+package Command;
+
+public class Fan {
+    
+    public void turnOn() {
+        System.out.println("The fan is on.");
+    }
+
+    public void turnOff() {
+        System.out.println("The fan is off.");
+    }
+}
+
+[Command]
+package Command;
+
+public class FanCommands {
+
+    public static class FanOnCommand implements Command {
+        
+        private Fan fan;
+
+        public FanOnCommand(Fan fan) {
+            this.fan = fan;
+        }
+
+        @Override
+        public void execute() {
+            fan.turnOn();
+        }
+    }
+
+    public static class FanOffCommand implements Command {
+        
+        private Fan fan;
+
+        public FanOffCommand(Fan fan) {
+            this.fan = fan;
+        }
+
+        @Override
+        public void execute() {
+            fan.turnOff();
+        }
+    }
+}
+
+[Command]
+package Command;
+
+public class Light {
+    
+    public void turnOn() {
+        System.out.println("The light is on.");
+    }
+
+    public void turnOff() {
+        System.out.println("The light is off.");
+    }
+}
+
+[Command]
+package Command;
+
+public class LightCommands {
+    
+    public static class LightOnCommand implements Command {
+        
+        private Light light;
+
+        public LightOnCommand(Light light) {
+            this.light = light;
+        }
+
+        @Override
+        public void execute() {
+            light.turnOn();
+        }
+    }
+
+    public static class LightOffCommand implements Command {
+        
+        private Light light;
+
+        public LightOffCommand(Light light) {
+            this.light = light;
+        }
+
+        @Override
+        public void execute() {
+            light.turnOff();
+        }
+    }
+}
+
+[Command]
+package Command;
+
+public class RemoteControl {
+    
+    private Command lightOnCommand;
+    private Command lightOffCommand;
+    private Command fanOnCommand;
+    private Command fanOffCommand;
+
+    public void setLightOnCommand(Command command) {
+        this.lightOnCommand = command;
+    }
+
+    public void setLightOffCommand(Command command) {
+        this.lightOffCommand = command;
+    }
+
+    public void setFanOnCommand(Command command) {
+        this.fanOnCommand = command;
+    }
+
+    public void setFanOffCommand(Command command) {
+        this.fanOffCommand = command;
+    }
+
+    public void pressLightOnButton() {
+        if (lightOnCommand != null) {
+            lightOnCommand.execute();
+        }
+    }
+
+    public void pressLightOffButton() {
+        if (lightOffCommand != null) {
+            lightOffCommand.execute();
+        }
+    }
+
+    public void pressFanOnButton() {
+        if (fanOnCommand != null) {
+            fanOnCommand.execute();
+        }
+    }
+
+    public void pressFanOffButton() {
+        if (fanOffCommand != null) {
+            fanOffCommand.execute();
+        }
+    }
+}
+
+[Composite]
+package Composite;
+
+import java.util.Scanner;
+
+public class Exercise {
+    
+    public void run() {
+        
+        Scanner sc = new Scanner(System.in);
+    
+        String appetizersSectionName = sc.nextLine();
+        String mainCoursesSectionName = sc.nextLine();
+        String dessertsSectionName = sc.nextLine();
+        String seaFoodSectionName = sc.nextLine();
+    
+        // Create menu sections with user-defined names
+        MenuSection appetizers = new MenuSection(appetizersSectionName);
+        MenuSection mainCourses = new MenuSection(mainCoursesSectionName);
+        MenuSection desserts = new MenuSection(dessertsSectionName);
+        MenuSection seafood = new MenuSection(seaFoodSectionName);
+    
+        // Get user input for appetizers
+        for (int i = 0; i < 2; i++) {
+            String name = sc.nextLine();
+            String description = sc.nextLine();
+            double price = sc.nextDouble();
+            sc.nextLine();
+            MenuItem appetizer = new MenuItem(name, description, price);
+            appetizers.add(appetizer);
+        }
+    
+        // Get user input for main courses
+        for (int i = 0; i < 2; i++) {
+            String name = sc.nextLine();
+            String description = sc.nextLine();
+            double price = sc.nextDouble();
+            sc.nextLine();
+            MenuItem mainCourse = new MenuItem(name, description, price);
+            mainCourses.add(mainCourse);
+        }
+    
+        // Get user input for desserts
+        for (int i = 0; i < 2; i++) {
+            String name = sc.nextLine();
+            String description = sc.nextLine();
+            double price = sc.nextDouble();
+            sc.nextLine();
+            MenuItem dessert = new MenuItem(name, description, price);
+            desserts.add(dessert);
+        }
+        
+        mainCourses.add(seafood);
+    
+        // Create the full menu section
+        MenuSection fullMenu = new MenuSection("Restaurant Menu");
+        fullMenu.add(appetizers);
+        fullMenu.add(mainCourses);
+        fullMenu.add(desserts);
+    
+        // Print the entire menu
+        System.out.println("\nFull Menu:");
+        fullMenu.print();
+
+        sc.close();
+    }
+}
+
+[Composite]
+package Composite;
+
+public interface MenuComponent {
+    void print();
+}
+
+[Composite]
+package Composite;
+
+public class MenuItem implements MenuComponent {
+    private String name;
+    private String description;
+    private double price;
+
+    public MenuItem(String name, String description, double price) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+    }
+
+    @Override
+    public void print() {
+        System.out.printf("Item: %s\nDescription: %s\nPrice: $%.2f\n", name, description, price);
+    }
+}
+
+[Composite]
+package Composite;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MenuSection implements MenuComponent {
+    private String sectionName;
+    private List<MenuComponent> menuComponents;
+
+    public MenuSection(String sectionName) {
+        this.sectionName = sectionName;
+        this.menuComponents = new ArrayList<>();
+    }
+
+    public void add(MenuComponent menuComponent) {
+        menuComponents.add(menuComponent);
+    }
+
+    @Override
+    public void print() {
+        System.out.println("Section: " + sectionName);
+        for (MenuComponent menuComponent : menuComponents) {
+            menuComponent.print();
+        }
+    }
+}
+
+[Decorator]
+package Decorator;
+
+public class BasicCoffee implements Coffee {
+
+    @Override
+    public String getDescription() {
+        return "Basic Coffee";
+    }
+
+    @Override
+    public double getCost() {
+        return 3.00; 
+    }
+}
+
+[Decorator]
+package Decorator;
+
+public interface Coffee {
+    String getDescription();
+    double getCost();
+}
+
+[Decorator]
+package Decorator;
+
+public abstract class CoffeeDecorator implements Coffee {
+    protected Coffee coffee;
+
+    public CoffeeDecorator(Coffee coffee) {
+        this.coffee = coffee;
+    }
+
+    @Override
+    public String getDescription() {
+        return coffee.getDescription();
+    }
+
+    @Override
+    public double getCost() {
+        return coffee.getCost();
+    }
+}
+
+[Decorator]
+package Decorator;
+
+import java.util.Scanner;
+
+public class Exercise {
+
+    public void run(){
+        
+        Scanner sc = new Scanner(System.in);
+
+        Coffee coffee = new BasicCoffee();
+
+        boolean addMoreIngredients = true;
+
+        while (addMoreIngredients) {
+
+            String choices = sc.nextLine();
+            String[] ingredients = choices.split(" ");
+
+            for (String choice : ingredients) {
+                
+                switch (choice) {
+                    case "1":
+                        coffee = new Milk(coffee);
+                        break;
+                    case "2":
+                        coffee = new Sugar(coffee);
+                        break;
+                    case "3":
+                        coffee = new WhippedCream(coffee);
+                        break;
+                    case "4":
+                        addMoreIngredients = false;
+                        break;
+                    default:
+                        System.out.println("Invalid choice: " + choice);
+                        break;
+                }
+            }
+
+            if (!addMoreIngredients) {
+                break;
+            }
+        }
+
+        System.out.println("Final Coffee Description: " + coffee.getDescription());
+        System.out.println("Total Cost: $" + coffee.getCost());
+
+        sc.close();
+    }
+}
+
+
+[Decorator]
+package Decorator;
+
+public class Milk extends CoffeeDecorator {
+
+    public Milk(Coffee coffee) {
+        super(coffee);
+    }
+
+    @Override
+    public String getDescription() {
+        return coffee.getDescription() + ", Milk";
+    }
+
+    @Override
+    public double getCost() {
+        return coffee.getCost() + 0.50; 
+    }
+}
+
+[Decorator]
+package Decorator;
+
+public class Sugar extends CoffeeDecorator {
+
+    public Sugar(Coffee coffee) {
+        super(coffee);
+    }
+
+    @Override
+    public String getDescription() {
+        return coffee.getDescription() + ", Sugar";
+    }
+
+    @Override
+    public double getCost() {
+        return coffee.getCost() + 0.30; 
+    }
+}
+
+[Decorator]
+package Decorator;
+
+public class WhippedCream extends CoffeeDecorator {
+
+    public WhippedCream(Coffee coffee) {
+        super(coffee);
+    }
+
+    @Override
+    public String getDescription() {
+        return coffee.getDescription() + ", Whipped Cream";
+    }
+
+    @Override
+    public double getCost() {
+        return coffee.getCost() + 0.70; 
+    }
+}
+
+[Facade]
+package Facade;
+
+public class DVDPlayer {
+    
+    public void play() {
+        System.out.println("DVD Player: Playing the movie");
+    }
+
+    public void pause() {
+        System.out.println("DVD Player: Paused the movie");
+    }
+
+    public void stop() {
+        System.out.println("DVD Player: Stopped the movie");
+    }
+}
+
+[Facade]
+package Facade;
+
+import java.util.Scanner;
+
+public class Exercise {
+    
+    public void run() {
+        
+        Scanner sc = new Scanner(System.in);
+        HomeTheaterFacade homeTheater = new HomeTheaterFacade();
+        
+        int dimmingPercentage = sc.nextInt();
+
+        int volumeLevel = sc.nextInt();
+        
+        homeTheater.watchMovie(dimmingPercentage, volumeLevel);
+
+        sc.close();
+    }
+}
+
+[Facade]
+package Facade;
+
+public class HomeTheaterFacade {
+    
+    private DVDPlayer dvdPlayer;
+    private Projector projector;
+    private SoundSystem soundSystem;
+    private LightingControl lightingControl;
+
+    public HomeTheaterFacade() {
+        this.dvdPlayer = new DVDPlayer();
+        this.projector = new Projector();
+        this.soundSystem = new SoundSystem();
+        this.lightingControl = new LightingControl();
+    }
+
+    public void watchMovie(int dimmingPercentage, int volumeLevel) {
+        System.out.println("Get ready to watch a movie");
+        lightingControl.dim(dimmingPercentage);
+        projector.on();
+        projector.setInput();
+        soundSystem.on();
+        soundSystem.setVolume(volumeLevel);
+        dvdPlayer.play();
+        System.out.println("Movie is ready to watch!");
+    }
+}
+
+[Facade]
+package Facade;
+
+public class LightingControl {
+    
+    public void dim(int level) {
+        System.out.println("Lighting Control: Dimming lights to " + level + "%");
+    }
+
+    public void on() {
+        System.out.println("Lighting Control: Lights are on");
+    }
+
+    public void off() {
+        System.out.println("Lighting Control: Lights are off");
+    }
+}
+
+[Facade]
+package Facade;
+
+public class Projector {
+    
+    public void on() {
+        System.out.println("Projector: Turned on");
+    }
+
+    public void off() {
+        System.out.println("Projector: Turned off");
+    }
+
+    public void setInput() {
+        System.out.println("Projector: Input set to DVD");
+    }
+}
+
+[Facade]
+package Facade;
+
+public class SoundSystem {
+    
+    public void on() {
+        System.out.println("Sound System: Turned on");
+    }
+
+    public void off() {
+        System.out.println("Sound System: Turned off");
+    }
+
+    public void setVolume(int level) {
+        System.out.println("Sound System: Volume set to " + level);
+    }
+}
+
+[Factory]
+package Factory;
+
+public abstract class Document {
+    public abstract void displayType();
+}
+
+[Factory]
+package Factory;
+
+public class DocumentFactory {
+    
+    public static Document createDocument(String type) {
+        
+        switch (type.toLowerCase()) {
+            case "pdf":
+                return new PDFDocument();
+            case "word":
+                return new WordDocument();
+            case "html":
+                return new HTMLDocument();
+            default:
+                throw new IllegalArgumentException("Unknown document type: " + type);
+        }
+    }
+}
+
+[Factory]
+package Factory;
+
+import java.util.Scanner;
+
+public class Exercise {
+    
+    public void run() {
+        
+        Scanner sc = new Scanner(System.in);
+
+        String documentType = sc.nextLine();
+
+        try {
+            Document document = DocumentFactory.createDocument(documentType);
+            document.displayType();
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
+
+        sc.close();
+    }
+}
+
+[Factory]
+package Factory;
+
+public class HTMLDocument extends Document {
+    
+    @Override
+    public void displayType() {
+        System.out.println("Creating an HTML Document");
+    }
+}
+
+[Factory]
+package Factory;
+
+public class PDFDocument extends Document {
+    
+    @Override
+    public void displayType() {
+        System.out.println("Creating a PDF Document");
+    }
+}
+
+[Factory]
+package Factory;
+
+public class WordDocument extends Document {
+    
+    @Override
+    public void displayType() {
+        System.out.println("Creating a Word Document");
+    }
+}
+
+[Flyweight]
+package Flyweight;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class CharacterFactory {
+    private final Map<String, CharacterFlyweight> characters = new HashMap<>();
+
+    public CharacterFlyweight getCharacter(String fontStyle, int fontSize, String color) {
+        String key = fontStyle + fontSize + color;
+        
+        if (!characters.containsKey(key)) {
+            System.out.println("Creating new character: " + fontStyle + " " + fontSize + " " + color);
+            characters.put(key, new ConcreteCharacter(fontStyle, fontSize, color));
+        } else {
+            System.out.println("Reusing character: " + fontStyle + " " + fontSize + " " + color);
+        }
+        
+        return characters.get(key);
+    }
+}
+
+[Flyweight]
+package Flyweight;
+
+interface CharacterFlyweight {
+    void display(String character);
+}
+
+[Flyweight]
+package Flyweight;
+
+public class ConcreteCharacter implements CharacterFlyweight {
+    private final String fontStyle;
+    private final int fontSize;
+    private final String color;
+
+    public ConcreteCharacter(String fontStyle, int fontSize, String color) {
+        this.fontStyle = fontStyle;
+        this.fontSize = fontSize;
+        this.color = color;
+    }
+
+    @Override
+    public void display(String character) {
+        System.out.printf("Character: %s, Font Style: %s, Font Size: %d, Color: %s%n", 
+                           character, fontStyle, fontSize, color);
+    }
+}
+
+[Flyweight]
+package Flyweight;
+
+public class Document {
+    private final StringBuilder content = new StringBuilder();
+    private final CharacterFactory characterFactory = new CharacterFactory();
+
+    public void addCharacter(String character, String fontStyle, int fontSize, String color) {
+        CharacterFlyweight characterFlyweight = characterFactory.getCharacter(fontStyle, fontSize, color);
+        content.append(character);
+        characterFlyweight.display(character);
+    }
+
+    public void render() {
+        System.out.println("Document Content: " + content.toString());
+    }
+}
+
+[Flyweight]
+package Flyweight;
+
+import java.util.Scanner;
+
+public class Exercise {
+
+    public void run() {
+        
+        Scanner sc = new Scanner(System.in);
+        Document doc = new Document();
+
+        int numberOfCharacters = sc.nextInt();
+        sc.nextLine(); 
+
+        for (int i = 0; i < numberOfCharacters; i++) {
+            String character = sc.nextLine();
+            String fontStyle = sc.nextLine();
+            String color = sc.nextLine();
+            int fontSize = sc.nextInt();
+            sc.nextLine(); 
+
+            doc.addCharacter(character, fontStyle, fontSize, color);
+        }
+
+        doc.render();
+
+        sc.close();
+    }
+}
+
+[Iterator]
+package Iterator;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class EmailNotification implements NotificationCollection {
+    
+    private List<Notification> emailNotifications;
+
+    public EmailNotification() {
+        emailNotifications = new ArrayList<>();
+    }
+
+    public void addNotification(String message) {
+        emailNotifications.add(new Notification(message));
+    }
+
+    @Override
+    public Iterator<Notification> createIterator() {
+        return new EmailNotificationIterator(emailNotifications);
+    }
+
+    private class EmailNotificationIterator implements Iterator<Notification> {
+        private int position = 0;
+        private List<Notification> notifications;
+
+        public EmailNotificationIterator(List<Notification> notifications) {
+            this.notifications = notifications;
+        }
+
+        @Override
+        public boolean hasNext() {
+            return position < notifications.size();
+        }
+
+        @Override
+        public Notification next() {
+            return notifications.get(position++);
+        }
+    }
+}
+
+[Iterator]
+package Iterator;
+
+import java.util.Scanner;
+
+public class Exercise {
+
+    public void run() {
+        
+        Scanner sc = new Scanner(System.in);
+        NotificationManager notificationManager = new NotificationManager();
+
+        // Add Notifications
+        for(int i=0;i < 2;i++) {
+            String emailNotification = sc.nextLine();
+            String smsNotification = sc.nextLine();
+            String pushNotification = sc.nextLine();
+            
+            notificationManager.addEmailNotification(emailNotification);
+            notificationManager.addSMSNotification(smsNotification);
+            notificationManager.addPushNotification(pushNotification);
+        }
+
+        // Print all notifications
+        notificationManager.printAllNotifications();
+
+        sc.close();
+    }
+}
+
+[Iterator]
+package Iterator;
+
+public class Notification {
+    private String message;
+
+    public Notification(String message) {
+        this.message = message;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+}
+
+[Iterator]
+package Iterator;
+
+import java.util.Iterator;
+
+public interface NotificationCollection {
+    public Iterator<Notification> createIterator();
+}
+
+[Iterator]
+package Iterator;
+
+import java.util.Iterator;
+
+public class NotificationManager {
+    
+    private NotificationCollection emailNotifications;
+    private NotificationCollection smsNotifications;
+    private NotificationCollection pushNotifications;
+
+    public NotificationManager() {
+        emailNotifications = new EmailNotification();
+        smsNotifications = new SMSNotification();
+        pushNotifications = new PushNotification();
+    }
+
+    public void addEmailNotification(String message) {
+        ((EmailNotification) emailNotifications).addNotification(message);
+    }
+
+    public void addSMSNotification(String message) {
+        ((SMSNotification) smsNotifications).addNotification(message);
+    }
+
+    public void addPushNotification(String message) {
+        ((PushNotification) pushNotifications).addNotification(message);
+    }
+
+    public void printAllNotifications() {
+        printNotifications(emailNotifications.createIterator(), "Email");
+        printNotifications(smsNotifications.createIterator(), "SMS");
+        printNotifications(pushNotifications.createIterator(), "Push");
+    }
+
+    private void printNotifications(Iterator<Notification> iterator, String type) {
+        System.out.println(type + " Notifications:");
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next().getMessage());
+        }
+    }
+}
+
+[Iterator]
+package Iterator;
+
+import java.util.LinkedHashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+public class PushNotification implements NotificationCollection {
+    
+    private Set<Notification> pushNotifications;
+
+    public PushNotification() {
+        pushNotifications = new LinkedHashSet<>();
+    }
+
+    public void addNotification(String message) {
+        pushNotifications.add(new Notification(message));
+    }
+
+    @Override
+    public Iterator<Notification> createIterator() {
+        return new PushNotificationIterator(pushNotifications);
+    }
+
+    private class PushNotificationIterator implements Iterator<Notification> {
+        private Iterator<Notification> iterator;
+
+        public PushNotificationIterator(Set<Notification> notifications) {
+            this.iterator = notifications.iterator();
+        }
+
+        @Override
+        public boolean hasNext() {
+            return iterator.hasNext();
+        }
+
+        @Override
+        public Notification next() {
+            return iterator.next();
+        }
+    }
+}
+
+[Iterator]
+package Iterator;
+
+import java.util.Iterator;
+import java.util.ArrayDeque;
+import java.util.Queue;
+
+public class SMSNotification implements NotificationCollection {
+    
+    private Queue<Notification> smsNotifications;
+
+    public SMSNotification() {
+        smsNotifications = new ArrayDeque<>();
+    }
+
+    public void addNotification(String message) {
+        smsNotifications.add(new Notification(message));
+    }
+
+    @Override
+    public Iterator<Notification> createIterator() {
+        return new SMSNotificationIterator(smsNotifications);
+    }
+
+    private class SMSNotificationIterator implements Iterator<Notification> {
+        private Queue<Notification> notifications;
+
+        public SMSNotificationIterator(Queue<Notification> notifications) {
+            this.notifications = new ArrayDeque<>(notifications);
+        }
+
+        @Override
+        public boolean hasNext() {
+            return !notifications.isEmpty();
+        }
+
+        @Override
+        public Notification next() {
+            return notifications.poll();
+        }
+    }
+}
+
+[Mediator]
+package Mediator;
+
+public class Airplane {
+    private String id;
+    private Mediator mediator;
+
+    public Airplane(String id) {
+        this.id = id;
+    }
+
+    public void setMediator(Mediator mediator) {
+        this.mediator = mediator;
+    }
+
+    public void requestTakeoff() {
+        System.out.println("Airplane " + id + " requesting takeoff");
+        mediator.handleTakeoffRequest(this);
+    }
+
+    public void requestLanding() {
+        System.out.println("Airplane " + id + " requesting landing");
+        mediator.handleLandingRequest(this);
+    }
+
+    public void receiveNotification(String message) {
+        System.out.println("Airplane " + id + ": " + message);
+    }
+
+    public String getId() {
+        return id;
+    }
+}
+
+[Mediator]
+package Mediator;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ControlTower implements Mediator {
+    
+    private List<Airplane> airplanes;
+    private int takeoffRunways;
+    private int landingRunways;
+
+    public ControlTower() {
+        airplanes = new ArrayList<>();
+        this.takeoffRunways = 2;
+        this.landingRunways = 2;
+    }
+
+    @Override
+    public void registerAirplane(Airplane airplane) {
+        airplanes.add(airplane);
+        airplane.setMediator(this);
+    }
+
+    @Override
+    public void handleTakeoffRequest(Airplane airplane) {
+        if (takeoffRunways > 0) {
+            takeoffRunways--; 
+            notifyAirplane(airplane, "Takeoff approved. Runways available: " + takeoffRunways);
+        } else {
+            notifyAirplane(airplane, "Takeoff denied. No runways available. Please wait");
+        }
+    }
+
+    @Override
+    public void handleLandingRequest(Airplane airplane) {
+        if (landingRunways > 0) {
+            landingRunways--;
+            notifyAirplane(airplane, "Landing approved. Runways available: " + landingRunways);
+        } else {
+            notifyAirplane(airplane, "Landing denied. No runways available. Please wait");
+        }
+    }
+
+    // Simulate the completion of takeoff and free the runway
+    public void completeTakeoff(Airplane airplane) {
+        System.out.println("Airplane " + airplane.getId() + " has taken off");
+        takeoffRunways++;
+        System.out.println("Runway freed. Available takeoff runways: " + takeoffRunways);
+    }
+
+    // Simulate the completion of landing and free the runway
+    public void completeLanding(Airplane airplane) {
+        System.out.println("Airplane " + airplane.getId() + " has landed");
+        landingRunways++;
+        System.out.println("Runway freed. Available landing runways: " + landingRunways);
+    }
+
+    private void notifyAirplane(Airplane airplane, String message) {
+        airplane.receiveNotification(message);
+    }
+}
+
+
+[Mediator]
+package Mediator;
+
+import java.util.Scanner;
+
+public class Exercise {
+
+    public void run() {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        // Create the control tower (mediator)
+        ControlTower controlTower = new ControlTower();
+        
+        String airplaneId1 = sc.nextLine();
+        String airplaneId2 = sc.nextLine();
+        String airplaneId3 = sc.nextLine();
+        String airplaneId4 = sc.nextLine();
+
+        // Create airplanes with user input
+        Airplane airplane1 = new Airplane(airplaneId1);
+        Airplane airplane2 = new Airplane(airplaneId2);
+        Airplane airplane3 = new Airplane(airplaneId3);
+        Airplane airplane4 = new Airplane(airplaneId4);
+
+        // Register airplanes with the control tower
+        controlTower.registerAirplane(airplane1);
+        controlTower.registerAirplane(airplane2);
+        controlTower.registerAirplane(airplane3);
+        controlTower.registerAirplane(airplane4);
+
+        // Airplanes request takeoff and landing
+        airplane1.requestTakeoff();
+        airplane2.requestTakeoff();
+        airplane3.requestTakeoff();
+        airplane4.requestTakeoff();
+        
+        // Manually simulate completion of the next requests
+        controlTower.completeTakeoff(airplane1);
+        controlTower.completeTakeoff(airplane2);
+
+        airplane3.requestTakeoff();
+        airplane4.requestTakeoff();
+        
+        // Manually simulate completion of the next requests
+        controlTower.completeTakeoff(airplane3);
+        controlTower.completeTakeoff(airplane4);
+
+        // Additional requests to demonstrate functionality
+        airplane1.requestLanding();
+        airplane2.requestLanding();
+        
+        // Manually simulate completion of the next requests
+        controlTower.completeLanding(airplane1);
+        controlTower.completeLanding(airplane2);
+        
+        airplane3.requestLanding();
+        airplane4.requestLanding();
+        
+        // Manually simulate completion of the next requests
+        controlTower.completeLanding(airplane3);
+        controlTower.completeLanding(airplane4);
+
+        sc.close();
+    }
+}
+
+[Mediator]
+package Mediator;
+
+public interface Mediator {
+    void registerAirplane(Airplane airplane);
+    void handleTakeoffRequest(Airplane airplane);
+    void handleLandingRequest(Airplane airplane);
+}
+
+[Memento]
+package Memento;
+
+import java.util.Stack;
+
+public class Caretaker {
+    
+    private final Stack<EditorMemento> history = new Stack<>();
+
+    public void saveState(GraphicEditor graphicEditor) {
+        history.push(graphicEditor.save());
+    }
+
+    public void undo(GraphicEditor graphicEditor){
+        if(!history.empty()){
+            history.pop();
+            graphicEditor.restore(history.peek());
+        }
+    }
+}
+
+
+[Memento]
+package Memento;
+
+public class EditorMemento {
+    
+    private final String shapeType;
+    private final int x;
+    private final int y;
+    private final String color;
+    private final int size;
+
+    public EditorMemento(String shapeType, int x, int y, String color, int size) {
+        this.shapeType = shapeType;
+        this.x = x;
+        this.y = y;
+        this.color = color;
+        this.size = size;
+    }
+    
+    public String getShapeType() {
+        return shapeType;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public int getSize() {
+        return size;
+    }
+}
+
+
+[Memento]
+package Memento;
+
+import java.util.Scanner;
+
+public class Exercise {
+
+    public void run() {
+        
+        Scanner sc = new Scanner(System.in);
+        GraphicEditor graphicEditor = new GraphicEditor();
+        Caretaker caretaker = new Caretaker();
+
+        for (int i = 0; i < 3; i++) {
+            String shape = sc.next(); // Read shape name
+            int x = sc.nextInt();     // Read x position
+            int y = sc.nextInt();     // Read y position
+            String color = sc.next(); // Read color
+            int size = sc.nextInt();  // Read size
+
+            // Set shape attributes based on input
+            graphicEditor.setShape(shape, x, y, color, size);
+            caretaker.saveState(graphicEditor);
+        }
+        sc.close();
+
+        // Perform an undo operation
+        caretaker.undo(graphicEditor);
+
+        // Print the current shape after undo
+        System.out.println(graphicEditor.getShape());
+    }
+}
+
+
+[Memento]
+package Memento;
+
+public class GraphicEditor {
+    
+    private String shapeType;
+    private int x;
+    private int y;
+    private String color;
+    private int size;
+
+    public EditorMemento save() {
+        return new EditorMemento(shapeType, x, y, color, size);
+    }
+
+    public void restore(EditorMemento memento) {
+        this.shapeType = memento.getShapeType();
+        this.x = memento.getX();
+        this.y = memento.getY();
+        this.color = memento.getColor();
+        this.size = memento.getSize();
+    }
+
+    public String getShape() {
+        return "Shape: " + shapeType + ", Position: (" + x + ", " + y + "), Color: " + color + ", Size: " + size;
+    }
+
+    public void setShape(String shapeType, int x, int y, String color, int size) {
+        this.shapeType = shapeType;
+        this.x = x;
+        this.y = y;
+        this.color = color;
+        this.size = size;
+    }
+}
+
+
+[Observer]
+package Observer;
+
+import java.util.Scanner;
+
+public class Exercise {
+    
+    public void run() {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        double priceChangeThreshold = sc.nextDouble();
+        StockMarket stockMarket = new StockMarket(priceChangeThreshold);
+
+        InvestorA investorA = new InvestorA();
+        InvestorB investorB = new InvestorB();
+
+        stockMarket.registerObserver(investorA);
+        stockMarket.registerObserver(investorB);
+
+        int updates = sc.nextInt();
+        
+        for (int i = 1; i <= updates; i++) {
+            
+            if(i == 5) {
+                stockMarket.removeObserver(investorB);
+            }
+            
+            String stockSymbol = sc.next();
+            double newPrice = sc.nextDouble();
+            double oldPrice = sc.nextDouble();
+            
+            stockMarket.setStockPrice(stockSymbol, newPrice, oldPrice);
+        }
+        sc.close();
+    }
+}
+
+
+[Observer]
+package Observer;
+
+public class InvestorA implements Observer {
+    
+    @Override
+    public void update(String stockSymbol, double newPrice) {
+        System.out.println("Investor A notified: Stock " + stockSymbol + " has a new price: $" + newPrice);
+    }
+}
+
+[Observer]
+package Observer;
+
+public class InvestorB implements Observer {
+    
+    @Override
+    public void update(String stockSymbol, double newPrice) {
+        System.out.println("Investor B notified: Stock " + stockSymbol + " has a new price: $" + newPrice);
+    }
+}
+
+[Observer]
+package Observer;
+
+public interface Observer {
+    void update(String stockSymbol, double newPrice);
+}
+
+[Observer]
+package Observer;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class StockMarket implements Subject {
+    
+    private final List<Observer> observers;
+    private final double priceChangeThreshold;
+
+    public StockMarket(double priceChangeThreshold) {
+        this.observers = new ArrayList<>();
+        this.priceChangeThreshold = priceChangeThreshold;
+    }
+
+    @Override
+    public void registerObserver(Observer o) {
+        observers.add(o);
+    }
+
+    @Override
+    public void removeObserver(Observer o) {
+        observers.remove(o);
+    }
+
+    @Override
+    public void notifyObservers(String stockSymbol, double newPrice) {
+        for (Observer observer : observers) {
+            observer.update(stockSymbol, newPrice);
+        }
+    }
+
+    public void setStockPrice(String stockSymbol, double newPrice, double oldPrice) {
+        double priceChange = Math.abs(newPrice - oldPrice) / oldPrice * 100;
+        if (priceChange >= priceChangeThreshold) {
+            notifyObservers(stockSymbol, newPrice);
+        }
+    }
+}
+
+[Observer]
+package Observer;
+
+public interface Subject {
+    void registerObserver(Observer o);
+    void removeObserver(Observer o);
+    void notifyObservers(String stockSymbol, double newPrice);
+}
+
+[Prototype]
+package Prototype;
+
+public class Archer implements Character {
+    
+    private String name;
+    private int health;
+    private int attackPower;
+    private int defense;
+
+    public Archer(String name, int health, int attackPower, int defense) {
+        this.name = name;
+        this.health = health;
+        this.attackPower = attackPower;
+        this.defense = defense;
+    }
+
+    @Override
+    public Archer clone() {
+        return new Archer(name, health, attackPower, defense);
+    }
+
+    @Override
+    public void displayAttributes() {
+        System.out.println("Archer - Name: " + name + ", Health: " + health + ", Attack Power: " + attackPower + ", Defense: " + defense);
+    }
+
+    // Getters
+    public String getName() {
+        return name;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public int getAttackPower() {
+        return attackPower;
+    }
+
+    public int getDefense() {
+        return defense;
+    }
+
+    // Setters
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public void setAttackPower(int attackPower) {
+        this.attackPower = attackPower;
+    }
+
+    public void setDefense(int defense) {
+        this.defense = defense;
+    }
+}
+
+[Prototype]
+package Prototype;
+
+public interface Character {
+    Character clone();
+    void displayAttributes();
+}
+
+[Prototype]
+package Prototype;
+
+import java.util.Scanner;
+
+public class Exercise {
+    
+    public void run() {
+        
+        Scanner sc = new Scanner(System.in);
+
+        String warriorName = sc.nextLine();
+
+        int health = sc.nextInt();
+
+        int attackPower = sc.nextInt();
+
+        int defense = sc.nextInt();
+
+        Warrior warrior = new Warrior(warriorName, health, attackPower, defense);
+
+        Warrior clonedWarrior = warrior.clone();
+        
+        int clonedHealth = sc.nextInt();
+
+        int clonedAttackPower = sc.nextInt();
+
+        int clonedDefense = sc.nextInt();
+
+        clonedWarrior.setHealth(clonedHealth);
+        clonedWarrior.setAttackPower(clonedAttackPower);
+        clonedWarrior.setDefense(clonedDefense);
+        
+        System.out.println("Original Character:");
+        warrior.displayAttributes();
+
+        System.out.println("Cloned Character:");
+        clonedWarrior.displayAttributes();
+
+        sc.close();
+    }
+}
+
+
+[Prototype]
+package Prototype;
+
+public class Mage implements Character {
+    
+    private String name;
+    private int health;
+    private int attackPower;
+    private int defense;
+
+    public Mage(String name, int health, int attackPower, int defense) {
+        this.name = name;
+        this.health = health;
+        this.attackPower = attackPower;
+        this.defense = defense;
+    }
+
+    @Override
+    public Mage clone() {
+        return new Mage(name, health, attackPower, defense);
+    }
+
+    @Override
+    public void displayAttributes() {
+        System.out.println("Mage - Name: " + name + ", Health: " + health + ", Attack Power: " + attackPower + ", Defense: " + defense);
+    }
+
+    // Getters
+    public String getName() {
+        return name;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public int getAttackPower() {
+        return attackPower;
+    }
+
+    public int getDefense() {
+        return defense;
+    }
+
+    // Setters
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public void setAttackPower(int attackPower) {
+        this.attackPower = attackPower;
+    }
+
+    public void setDefense(int defense) {
+        this.defense = defense;
+    }
+}
+
+[Prototype]
+package Prototype;
+
+public class Warrior implements Character {
+    
+    private String name;
+    private int health;
+    private int attackPower;
+    private int defense;
+
+    public Warrior(String name, int health, int attackPower, int defense) {
+        this.name = name;
+        this.health = health;
+        this.attackPower = attackPower;
+        this.defense = defense;
+    }
+
+    @Override
+    public Warrior clone() {
+        return new Warrior(name, health, attackPower, defense);
+    }
+
+    @Override
+    public void displayAttributes() {
+        System.out.println("Warrior - Name: " + name + ", Health: " + health + ", Attack Power: " + attackPower + ", Defense: " + defense);
+    }
+
+    // Getters
+    public String getName() {
+        return name;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public int getAttackPower() {
+        return attackPower;
+    }
+
+    public int getDefense() {
+        return defense;
+    }
+
+    // Setters
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public void setAttackPower(int attackPower) {
+        this.attackPower = attackPower;
+    }
+
+    public void setDefense(int defense) {
+        this.defense = defense;
+    }
+}
+
+[Proxy]
+package Proxy;
+
+import java.util.Scanner;
+
+public class Exercise {
+
+    public void run() {
+        
+        NetworkService networkService = new NetworkServiceProxy();
+        Scanner sc = new Scanner(System.in);
+
+        String userInput = sc.nextLine();
+
+        // First call: should fetch from the remote server
+        String firstFetch = networkService.fetchData(userInput);
+        System.out.println(firstFetch);
+
+        // Second call: should retrieve from the cache
+        String secondFetch = networkService.fetchData(userInput);
+        System.out.println(secondFetch);
+
+        sc.close();
+    }
+}
+
+[Proxy]
+package Proxy;
+
+public interface NetworkService {
+    String fetchData(String input);
+}
+
+[Proxy]
+package Proxy;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class NetworkServiceProxy implements NetworkService {
+    
+    private RealNetworkService realNetworkService;
+    private Map<String, String> cache;
+
+    public NetworkServiceProxy() {
+        cache = new HashMap<>();
+    }
+
+    @Override
+    public String fetchData(String input) {
+        
+        if (cache.containsKey(input)) {
+            System.out.println("Fetching data from cache");
+            return cache.get(input);
+        }
+
+        if (realNetworkService == null) {
+            realNetworkService = new RealNetworkService();
+        }
+        
+        String data = realNetworkService.fetchData(input);
+        cache.put(input, data);
+        return data;
+    }
+}
+
+[Proxy]
+package Proxy;
+
+public class RealNetworkService implements NetworkService {
+    
+    private String data;
+    
+    @Override
+    public String fetchData(String input) {
+        data = "Data fetched from remote server for input: " + input;
+        return data;
+    }
+}
+
+[Singleton]
+package Singleton;
+
+import java.util.Scanner;
+
+public class Exercise {
+
+    public void run() {
+        
+        Logger logger = Logger.getInstance();
+        Scanner sc = new Scanner(System.in);
+
+        // Get an info message from the user
+        System.out.print("Enter an info message: ");
+        String infoMessage = sc.nextLine();
+        logger.info(infoMessage);
+
+        // Get a warning message from the user
+        System.out.print("Enter a warning message: ");
+        String warnMessage = sc.nextLine();
+        logger.warn(warnMessage);
+
+        // Get an error message from the user
+        System.out.print("Enter an error message: ");
+        String errorMessage = sc.nextLine();
+        logger.error(errorMessage);
+
+        sc.close();
+    }
+}
+
+[Singleton]
+package Singleton;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Logger {
+
+    private static Logger instance;
+
+    private Logger() { 
+        
+    }
+    
+    public static synchronized Logger getInstance() {
+        if (instance == null) {
+            instance = new Logger();
+        }
+        return instance;
+    }
+
+    public void info(String message) {
+        log("INFO", message);
+    }
+
+    public void warn(String message) {
+        log("WARN", message);
+    }
+
+    public void error(String message) {
+        log("ERROR", message);
+    }
+
+    private void log(String level, String message) {
+        String timestamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
+        System.out.println(String.format("%s [%s]: %s", timestamp, level, message));
+    }
+}
+
+[State]
+package State;
+
+import java.util.Scanner;
+
+public class Exercise {
+
+    public void run() {
+        
+        MediaPlayer mediaPlayer = new MediaPlayer();
+        Scanner sc = new Scanner(System.in);
+        
+        String choice = sc.next();
+        
+        switch (choice) {
+            case "Play":
+                mediaPlayer.play();
+                break;
+            case "Pause":
+                mediaPlayer.setState(new PausedState());
+                mediaPlayer.pause();
+                break;
+            case "Stop":
+                mediaPlayer.setState(new StoppedState());
+                mediaPlayer.stop();
+                break;
+            default:
+                System.out.println("Invalid choice");
+        }
+        
+        mediaPlayer.displayState();
+
+        sc.close();
+    }
+}
+
+[State]
+package State;
+
+public class MediaPlayer {
+    
+    private State state;
+    
+    public MediaPlayer() {
+        // Initial state is playing
+        state = new PlayingState();
+    }
+    
+    public void setState(State state) {
+        this.state = state;
+    }
+    
+    public void play() {
+        state.pressPlay();
+    }
+
+    public void stop() {
+        state.pressStop();
+    }
+
+    public void pause() {
+        state.pressPause();
+    }
+
+    public void displayState() {
+        state.display();
+    }
+}
+
+[State]
+package State;
+
+public class PausedState implements State {
+
+    @Override
+    public void pressPlay() {
+        System.out.println("Resuming playback");
+    }
+
+    @Override
+    public void pressStop() {
+        System.out.println("Stopping playback from pause");
+    }
+
+    @Override
+    public void pressPause() {
+        System.out.println("Pausing playback");
+    }
+
+    @Override
+    public void display() {
+        System.out.println("Current State: Paused");
+    }
+}
+
+[State]
+package State;
+
+public class PlayingState implements State {
+
+    @Override
+    public void pressPlay() {
+        System.out.println("Starting playback");
+    }
+
+    @Override
+    public void pressStop() {
+        System.out.println("Stopping playback");
+    }
+
+    @Override
+    public void pressPause() {
+        System.out.println("Pausing playback");
+    }
+
+    @Override
+    public void display() {
+        System.out.println("Current State: Playing");
+    }
+}
+
+[State]
+package State;
+
+public interface State {
+    void pressPlay();
+    void pressStop();
+    void pressPause();
+    void display();
+}
+
+[State]
+package State;
+
+public class StoppedState implements State {
+
+    @Override
+    public void pressPlay() {
+        System.out.println("Starting playback");
+    }
+
+    @Override
+    public void pressStop() {
+        System.out.println("Stopping playback");
+    }
+
+    @Override
+    public void pressPause() {
+        System.out.println("Can't pause. Media is already stopped");
+    }
+
+    @Override
+    public void display() {
+        System.out.println("Current State: Stopped");
+    }
+}
+
+[Strategy]
+package Strategy;
+
+public class Document {
+    
+    private String content;
+    private TextFormatter formatter;
+    
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public void setFormatter(TextFormatter formatter) {
+        this.formatter = formatter;
+    }
+
+    public void display() {
+        System.out.println(formatter.format(content));
+    }
+}
+
+[Strategy]
+package Strategy;
+
+import java.util.Scanner;
+
+public class Exercise {
+    
+    public void run() {
+        
+        Scanner sc = new Scanner(System.in);
+        Document document = new Document();
+        
+        String userInput = sc.nextLine();
+        document.setContent(userInput);
+
+        // Using PlainTextFormatter
+        document.setFormatter(new PlainTextFormatter());
+        System.out.println("Plain Text:");
+        document.display();
+
+        // Using HTMLFormatter
+        document.setFormatter(new HTMLFormatter());
+        System.out.println("HTML Format:");
+        document.display();
+
+        // Using MarkdownFormatter
+        document.setFormatter(new MarkdownFormatter());
+        System.out.println("Markdown Format:");
+        document.display();   
+
+        sc.close();
+    }
+}
+
+[Strategy]
+package Strategy;
+
+public class HTMLFormatter implements TextFormatter {
+    
+    @Override
+    public String format(String text) {
+        return "<html><body>" + text + "</body></html>";  // Wraps content in HTML tags
+    }
+}
+
+[Strategy]
+package Strategy;
+
+public class MarkdownFormatter implements TextFormatter {
+    
+    @Override
+    public String format(String text) {
+        return "**" + text + "**";  // For simplicity, wraps content in Markdown bold syntax
+    }
+}
+
+[Strategy]
+package Strategy;
+
+public class PlainTextFormatter implements TextFormatter {
+    
+    @Override
+    public String format(String text) {
+        return text;  // Returns plain text as-is
+    }
+}
+
+[Strategy]
+package Strategy;
+
+public interface TextFormatter {
+    String format(String text);
+}
+
+[Template]
+package Template;
+
+import java.util.Scanner;
+
+public class EmployeeReport extends ReportTemplate {
+    
+    private Scanner sc;
+
+    public EmployeeReport(Scanner sc) {
+        this.sc = sc;
+    }
+    
+    @Override
+    protected void gatherData() {
+        String gatherData = sc.nextLine();
+        System.out.println(gatherData);
+    }
+
+    @Override
+    protected void processData() {
+        String processData = sc.nextLine();
+        System.out.println(processData);
+    }
+}
+
+[Template]
+package Template;
+
+import java.util.Scanner;
+
+public class Exercise {
+    
+    public void run() {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        // Generate Sales Report
+        ReportTemplate salesReport = new SalesReport(sc);
+        System.out.println("Generating Sales Report:");
+        salesReport.generateReport();
+        
+        // Generate Employee Report
+        ReportTemplate employeeReport = new EmployeeReport(sc);
+        System.out.println("Generating Employee Report:");
+        employeeReport.generateReport();
+        
+        // Generate Inventory Report
+        ReportTemplate inventoryReport = new InventoryReport(sc);
+        System.out.println("Generating Inventory Report:");
+        inventoryReport.generateReport();
+    }
+}
+
+[Template]
+package Template;
+
+import java.util.Scanner;
+
+public class InventoryReport extends ReportTemplate {
+    
+    private Scanner sc;
+
+    public InventoryReport(Scanner sc) {
+        this.sc = sc;
+    }
+    
+    @Override
+    protected void gatherData() {
+        String gatherData = sc.nextLine();
+        System.out.println(gatherData);
+    }
+
+    @Override
+    protected void processData() {
+        String processData = sc.nextLine();
+        System.out.println(processData);
+    }
+}
+
+[Template]
+package Template;
+
+public abstract class ReportTemplate {
+    
+    // Template method defining the skeleton of the report generation
+    public final void generateReport() {
+        gatherData(); // Specific to each report
+        processData(); // Specific to each report
+        formatReport();  // Common across all reports
+        printReport();  // Common across all reports
+    }
+    
+    // Steps to be implemented by subclasses
+    protected abstract void gatherData();
+    protected abstract void processData();
+    
+    // Default methods that can be common across all reports
+    protected void formatReport() {
+        System.out.println("Formatting the report with appropriate layout and style.");
+    }
+    
+    protected void printReport() {
+        System.out.println("Printing the report for final review and distribution.");
+    }
+}
+
+[Template]
+package Template;
+
+import java.util.Scanner;
+
+public class SalesReport extends ReportTemplate {
+    
+    private Scanner sc;
+
+    public SalesReport(Scanner sc) {
+        this.sc = sc;
+    }
+    
+    @Override
+    protected void gatherData() {
+        String gatherData = sc.nextLine();
+        System.out.println(gatherData);
+    }
+
+    @Override
+    protected void processData() {
+        String processData = sc.nextLine();
+        System.out.println(processData);
+    }
+}
+

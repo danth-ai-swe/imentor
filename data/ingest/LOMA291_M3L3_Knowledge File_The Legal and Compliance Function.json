@@ -1,7 +1,7 @@
 [
   {
     "id": "26beefe2-9c33-47f2-8bd3-4fe31f71b75d",
-    "text": "Module 3: Key Support Functions for Insurer Success...1\nLesson 3: The Legal and Compliance Function...2\nLearning Objectives... 2\nThe Legal and Compliance Functions...3\nOrganization of Legal and Compliance... 5\nResponsibilities of the Legal Department... 7\nResponsibilities of the Compliance Department...13\nModule 3: Key Support Functions for Insurer\nSuccess\nSome functions primarily provide support to other functions. In this\nmodule, we’ll discuss three of the most important support functions that",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The key difference between the two functions. Legal provides advice on what the law says and represents the company. Compliance operationalizes legal and regulatory requirements into day-to-day business processes and monitors adherence. | Domain Tags: legal vs compliance, roles, responsibilities | Related Nodes: LOMA291_M3L3_KN_001, LOMA291_M3L3_KN_002 | Category: Core Concept | Node Name: Distinction between Legal and Compliance | Chunk Text Content: Module 3: Key Support Functions for Insurer Success...1\nLesson 3: The Legal and Compliance Function...2\nLearning Objectives... 2\nThe Legal and Compliance Functions...3\nOrganization of Legal and Compliance... 5\nResponsibilities of the Legal Department... 7\nResponsibilities of the Compliance Department...13\nModule 3: Key Support Functions for Insurer\nSuccess\nSome functions primarily provide support to other functions. In this\nmodule, we’ll discuss three of the most important support functions that",
     "payload": {
       "chunk_index": 0,
       "total_chunks": 76,
@@ -11,20 +11,21 @@
       "category": "Core Concept",
       "node_name": "Distinction between Legal and Compliance",
       "node_id": 321,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [],
       "next": [
         "927ba5a2-8a37-4ba5-a2a1-3b18751c68ee",
         "7d30f61f-8f3e-4a9a-af38-46282f46b033",
         "4f78218a-b499-489e-aea6-0810bb8d3380"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "927ba5a2-8a37-4ba5-a2a1-3b18751c68ee",
-    "text": "module, we’ll discuss three of the most important support functions that\nare essential to an insurance company’s success.\nIn this module, you’ll learn about\n\nHow insurers use research and data to develop their marketing mix\n\nThe process insurers use to create successful new products",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The key difference between the two functions. Legal provides advice on what the law says and represents the company. Compliance operationalizes legal and regulatory requirements into day-to-day business processes and monitors adherence. | Domain Tags: legal vs compliance, roles, responsibilities | Related Nodes: LOMA291_M3L3_KN_001, LOMA291_M3L3_KN_002 | Category: Core Concept | Node Name: Distinction between Legal and Compliance | Chunk Text Content: module, we’ll discuss three of the most important support functions that\nare essential to an insurance company’s success.\nIn this module, you’ll learn about\n\nHow insurers use research and data to develop their marketing mix\n\nThe process insurers use to create successful new products",
     "payload": {
       "chunk_index": 1,
       "total_chunks": 76,
@@ -34,8 +35,6 @@
       "category": "Core Concept",
       "node_name": "Distinction between Legal and Compliance",
       "node_id": 321,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "26beefe2-9c33-47f2-8bd3-4fe31f71b75d"
@@ -44,12 +43,15 @@
         "7d30f61f-8f3e-4a9a-af38-46282f46b033",
         "4f78218a-b499-489e-aea6-0810bb8d3380",
         "a7d06efb-97e1-4e02-bbac-601c3c44c071"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "7d30f61f-8f3e-4a9a-af38-46282f46b033",
-    "text": "\nHow the legal and compliance functions work together and separately\nto keep the insurer on the right side of the law\nLesson 3: The Legal and Compliance Function\nAn insurer must comply with an increasing number of laws and regulations\nin carrying out its business. In addition, insurers need advice and\nrepresentation related to legal disputes, corporate transactions, and other\nissues. Learn how legal and compliance carry out their related, but separate\nresponsibilities.\nLearning Objectives\n",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The key difference between the two functions. Legal provides advice on what the law says and represents the company. Compliance operationalizes legal and regulatory requirements into day-to-day business processes and monitors adherence. | Domain Tags: legal vs compliance, roles, responsibilities | Related Nodes: LOMA291_M3L3_KN_001, LOMA291_M3L3_KN_002 | Category: Core Concept | Node Name: Distinction between Legal and Compliance | Chunk Text Content: \nHow the legal and compliance functions work together and separately\nto keep the insurer on the right side of the law\nLesson 3: The Legal and Compliance Function\nAn insurer must comply with an increasing number of laws and regulations\nin carrying out its business. In addition, insurers need advice and\nrepresentation related to legal disputes, corporate transactions, and other\nissues. Learn how legal and compliance carry out their related, but separate\nresponsibilities.\nLearning Objectives\n",
     "payload": {
       "chunk_index": 2,
       "total_chunks": 76,
@@ -59,8 +61,6 @@
       "category": "Core Concept",
       "node_name": "Distinction between Legal and Compliance",
       "node_id": 321,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "26beefe2-9c33-47f2-8bd3-4fe31f71b75d",
@@ -70,12 +70,15 @@
         "4f78218a-b499-489e-aea6-0810bb8d3380",
         "a7d06efb-97e1-4e02-bbac-601c3c44c071",
         "932e86cd-b16c-4e9d-8ee9-f95a6db98f6e"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "4f78218a-b499-489e-aea6-0810bb8d3380",
-    "text": "responsibilities.\nLearning Objectives\n\nDistinguish between the legal and compliance functions, and describe\nthe roles and responsibilities of each area.\n\nDescribe the primary responsibilities of the legal department.\n\nDescribe the primary responsibilities of the compliance department.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The key difference between the two functions. Legal provides advice on what the law says and represents the company. Compliance operationalizes legal and regulatory requirements into day-to-day business processes and monitors adherence. | Domain Tags: legal vs compliance, roles, responsibilities | Related Nodes: LOMA291_M3L3_KN_001, LOMA291_M3L3_KN_002 | Category: Core Concept | Node Name: Distinction between Legal and Compliance | Chunk Text Content: responsibilities.\nLearning Objectives\n\nDistinguish between the legal and compliance functions, and describe\nthe roles and responsibilities of each area.\n\nDescribe the primary responsibilities of the legal department.\n\nDescribe the primary responsibilities of the compliance department.",
     "payload": {
       "chunk_index": 3,
       "total_chunks": 76,
@@ -85,8 +88,6 @@
       "category": "Core Concept",
       "node_name": "Distinction between Legal and Compliance",
       "node_id": 321,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "26beefe2-9c33-47f2-8bd3-4fe31f71b75d",
@@ -97,12 +98,15 @@
         "a7d06efb-97e1-4e02-bbac-601c3c44c071",
         "932e86cd-b16c-4e9d-8ee9-f95a6db98f6e",
         "bb3f96d1-c519-4893-9d28-b552011dcfd9"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "a7d06efb-97e1-4e02-bbac-601c3c44c071",
-    "text": "\nExplain the difference between solvency laws and market conduct\nlaws, and explain several market conduct laws that insurers must\ncomply with.\n\nDescribe the purpose of a market conduct examination and how the\ncompliance department is involved in market conduct examinations.\n\nDistinguish between two types of market conduct examinations in the\nUnited States.\nThe Legal and Compliance Functions\nLearning Objective\nDistinguish between the legal and compliance functions, and describe the",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The key difference between the two functions. Legal provides advice on what the law says and represents the company. Compliance operationalizes legal and regulatory requirements into day-to-day business processes and monitors adherence. | Domain Tags: legal vs compliance, roles, responsibilities | Related Nodes: LOMA291_M3L3_KN_001, LOMA291_M3L3_KN_002 | Category: Core Concept | Node Name: Distinction between Legal and Compliance | Chunk Text Content: \nExplain the difference between solvency laws and market conduct\nlaws, and explain several market conduct laws that insurers must\ncomply with.\n\nDescribe the purpose of a market conduct examination and how the\ncompliance department is involved in market conduct examinations.\n\nDistinguish between two types of market conduct examinations in the\nUnited States.\nThe Legal and Compliance Functions\nLearning Objective\nDistinguish between the legal and compliance functions, and describe the",
     "payload": {
       "chunk_index": 4,
       "total_chunks": 76,
@@ -112,8 +116,6 @@
       "category": "Core Concept",
       "node_name": "Distinction between Legal and Compliance",
       "node_id": 321,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "927ba5a2-8a37-4ba5-a2a1-3b18751c68ee",
@@ -124,12 +126,15 @@
         "932e86cd-b16c-4e9d-8ee9-f95a6db98f6e",
         "bb3f96d1-c519-4893-9d28-b552011dcfd9",
         "7d50714c-58f2-46b7-87be-3be749c3ee24"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "932e86cd-b16c-4e9d-8ee9-f95a6db98f6e",
-    "text": "Learning Objective\nDistinguish between the legal and compliance functions, and describe the\nroles and responsibilities of each area.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The key difference between the two functions. Legal provides advice on what the law says and represents the company. Compliance operationalizes legal and regulatory requirements into day-to-day business processes and monitors adherence. | Domain Tags: legal vs compliance, roles, responsibilities | Related Nodes: LOMA291_M3L3_KN_001, LOMA291_M3L3_KN_002 | Category: Core Concept | Node Name: Distinction between Legal and Compliance | Chunk Text Content: Learning Objective\nDistinguish between the legal and compliance functions, and describe the\nroles and responsibilities of each area.",
     "payload": {
       "chunk_index": 5,
       "total_chunks": 76,
@@ -139,8 +144,6 @@
       "category": "Core Concept",
       "node_name": "Distinction between Legal and Compliance",
       "node_id": 321,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "7d30f61f-8f3e-4a9a-af38-46282f46b033",
@@ -151,12 +154,15 @@
         "bb3f96d1-c519-4893-9d28-b552011dcfd9",
         "7d50714c-58f2-46b7-87be-3be749c3ee24",
         "3ba861ba-dec5-4425-a15f-e3198d944c09"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "bb3f96d1-c519-4893-9d28-b552011dcfd9",
-    "text": "You probably noticed that the marketing and product development lessons\ncontained a lot of talk about regulations:\n\nProduct approval\n\nRequired disclosure forms\n\nAds approval\nBut how do insurers know if they're following the rules and doing things the\nright way? Legal and compliance play a big role. These functions sound the\nsame, but they're not.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The key difference between the two functions. Legal provides advice on what the law says and represents the company. Compliance operationalizes legal and regulatory requirements into day-to-day business processes and monitors adherence. | Domain Tags: legal vs compliance, roles, responsibilities | Related Nodes: LOMA291_M3L3_KN_001, LOMA291_M3L3_KN_002 | Category: Core Concept | Node Name: Distinction between Legal and Compliance | Chunk Text Content: You probably noticed that the marketing and product development lessons\ncontained a lot of talk about regulations:\n\nProduct approval\n\nRequired disclosure forms\n\nAds approval\nBut how do insurers know if they're following the rules and doing things the\nright way? Legal and compliance play a big role. These functions sound the\nsame, but they're not.",
     "payload": {
       "chunk_index": 6,
       "total_chunks": 76,
@@ -166,8 +172,6 @@
       "category": "Core Concept",
       "node_name": "Distinction between Legal and Compliance",
       "node_id": 321,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "4f78218a-b499-489e-aea6-0810bb8d3380",
@@ -178,12 +182,15 @@
         "7d50714c-58f2-46b7-87be-3be749c3ee24",
         "3ba861ba-dec5-4425-a15f-e3198d944c09",
         "aa6a57ac-5353-4601-aff2-a4607f0302b5"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "7d50714c-58f2-46b7-87be-3be749c3ee24",
-    "text": "Organization of Legal and Compliance\nInsurance companies typically have a legal department, also known as a law\ndepartment, to handle issues related to law. In some companies, the legal\ndepartment handles both legal and compliance functions. Smaller companies\nthat operate in fewer jurisdictions are more likely to use this type of\norganizational structure.\nLarger insurance companies are more likely to maintain separate legal and\ncompliance departments. Yet even small companies sometimes separate the",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The key difference between the two functions. Legal provides advice on what the law says and represents the company. Compliance operationalizes legal and regulatory requirements into day-to-day business processes and monitors adherence. | Domain Tags: legal vs compliance, roles, responsibilities | Related Nodes: LOMA291_M3L3_KN_001, LOMA291_M3L3_KN_002 | Category: Core Concept | Node Name: Distinction between Legal and Compliance | Chunk Text Content: Organization of Legal and Compliance\nInsurance companies typically have a legal department, also known as a law\ndepartment, to handle issues related to law. In some companies, the legal\ndepartment handles both legal and compliance functions. Smaller companies\nthat operate in fewer jurisdictions are more likely to use this type of\norganizational structure.\nLarger insurance companies are more likely to maintain separate legal and\ncompliance departments. Yet even small companies sometimes separate the",
     "payload": {
       "chunk_index": 7,
       "total_chunks": 76,
@@ -193,8 +200,6 @@
       "category": "Core Concept",
       "node_name": "Distinction between Legal and Compliance",
       "node_id": 321,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "a7d06efb-97e1-4e02-bbac-601c3c44c071",
@@ -205,12 +210,15 @@
         "3ba861ba-dec5-4425-a15f-e3198d944c09",
         "aa6a57ac-5353-4601-aff2-a4607f0302b5",
         "eafd7cd9-76f3-4458-b6c3-5cc9f98118a1"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "3ba861ba-dec5-4425-a15f-e3198d944c09",
-    "text": "compliance departments. Yet even small companies sometimes separate the\nlegal function from the compliance function organizationally to emphasize\nthe importance of compliance and to ensure the independence of the\ncompliance function.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The key difference between the two functions. Legal provides advice on what the law says and represents the company. Compliance operationalizes legal and regulatory requirements into day-to-day business processes and monitors adherence. | Domain Tags: legal vs compliance, roles, responsibilities | Related Nodes: LOMA291_M3L3_KN_001, LOMA291_M3L3_KN_002 | Category: Core Concept | Node Name: Distinction between Legal and Compliance | Chunk Text Content: compliance departments. Yet even small companies sometimes separate the\nlegal function from the compliance function organizationally to emphasize\nthe importance of compliance and to ensure the independence of the\ncompliance function.",
     "payload": {
       "chunk_index": 8,
       "total_chunks": 76,
@@ -220,8 +228,6 @@
       "category": "Core Concept",
       "node_name": "Distinction between Legal and Compliance",
       "node_id": 321,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "932e86cd-b16c-4e9d-8ee9-f95a6db98f6e",
@@ -232,12 +238,15 @@
         "aa6a57ac-5353-4601-aff2-a4607f0302b5",
         "eafd7cd9-76f3-4458-b6c3-5cc9f98118a1",
         "52fc3a90-5f58-4785-88ce-f3ebe4c5a10a"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "aa6a57ac-5353-4601-aff2-a4607f0302b5",
-    "text": "Other insurers, typically very large insurers, may establish a compliance\ndepartment responsible for ensuring corporate compliance with laws and\nregulations, but still delegate responsibility for each division's compliance to\ncompliance personnel in that division. For example, a company that is\norganized by product line might delegate compliance responsibility to\nindividuals in each of the company's product lines.\nGenerally, the person in charge of an insurance company's legal department",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: Key responsibilities include monitoring regulatory changes, developing and implementing compliance policies, conducting employee training, overseeing business conduct, and managing regulatory reporting. | Domain Tags: compliance management, policy development, regulatory monitoring | Related Nodes: LOMA291_M3L3_KN_002, LOMA291_M3L3_KN_006 | Category: Functional Area | Node Name: Role of the Compliance Department | Chunk Text Content: Other insurers, typically very large insurers, may establish a compliance\ndepartment responsible for ensuring corporate compliance with laws and\nregulations, but still delegate responsibility for each division's compliance to\ncompliance personnel in that division. For example, a company that is\norganized by product line might delegate compliance responsibility to\nindividuals in each of the company's product lines.\nGenerally, the person in charge of an insurance company's legal department",
     "payload": {
       "chunk_index": 9,
       "total_chunks": 76,
@@ -247,8 +256,6 @@
       "category": "Functional Area",
       "node_name": "Role of the Compliance Department",
       "node_id": 323,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "bb3f96d1-c519-4893-9d28-b552011dcfd9",
@@ -259,12 +266,15 @@
         "eafd7cd9-76f3-4458-b6c3-5cc9f98118a1",
         "52fc3a90-5f58-4785-88ce-f3ebe4c5a10a",
         "8fba397f-c9f5-41a0-bb20-34c64f8e7c86"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "eafd7cd9-76f3-4458-b6c3-5cc9f98118a1",
-    "text": "Generally, the person in charge of an insurance company's legal department\nis known as the general counsel or chief counsel. The general counsel usually",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: Key responsibilities include managing litigation and disputes, reviewing and drafting contracts, providing legal counsel on business strategies, and advising on corporate governance matters. | Domain Tags: legal counsel, litigation management, contract review | Related Nodes: LOMA291_M3L3_KN_001 | Category: Functional Area | Node Name: Role of the Legal Department | Chunk Text Content: Generally, the person in charge of an insurance company's legal department\nis known as the general counsel or chief counsel. The general counsel usually",
     "payload": {
       "chunk_index": 10,
       "total_chunks": 76,
@@ -274,8 +284,6 @@
       "category": "Functional Area",
       "node_name": "Role of the Legal Department",
       "node_id": 322,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "7d50714c-58f2-46b7-87be-3be749c3ee24",
@@ -286,12 +294,15 @@
         "52fc3a90-5f58-4785-88ce-f3ebe4c5a10a",
         "8fba397f-c9f5-41a0-bb20-34c64f8e7c86",
         "64c1bf6b-c347-4dfc-9b67-94af0108553b"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "52fc3a90-5f58-4785-88ce-f3ebe4c5a10a",
-    "text": "**[CHART]**\n\nCAPTION: Organizational structure of an insurer highlighting the Legal and Compliance Departments.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: Key responsibilities include managing litigation and disputes, reviewing and drafting contracts, providing legal counsel on business strategies, and advising on corporate governance matters. | Domain Tags: legal counsel, litigation management, contract review | Related Nodes: LOMA291_M3L3_KN_001 | Category: Functional Area | Node Name: Role of the Legal Department | Chunk Text Content: **[CHART]**\n\nCAPTION: Organizational structure of an insurer highlighting the Legal and Compliance Departments.",
     "payload": {
       "chunk_index": 11,
       "total_chunks": 76,
@@ -301,8 +312,6 @@
       "category": "Functional Area",
       "node_name": "Role of the Legal Department",
       "node_id": 322,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "3ba861ba-dec5-4425-a15f-e3198d944c09",
@@ -313,12 +322,15 @@
         "8fba397f-c9f5-41a0-bb20-34c64f8e7c86",
         "64c1bf6b-c347-4dfc-9b67-94af0108553b",
         "ddc7f1a4-f0cd-4484-81d2-0cebb91221ef"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "8fba397f-c9f5-41a0-bb20-34c64f8e7c86",
-    "text": "ANALYSIS: The chart is a hierarchical organizational structure diagram representing an insurer. At the top is the \"Insurer,\" which branches into two main departments: the \"Legal Department\" and the \"Compliance Department.\" There are no x/y axes or data series, as this is not a data-driven chart but rather a structural representation",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: Key responsibilities include managing litigation and disputes, reviewing and drafting contracts, providing legal counsel on business strategies, and advising on corporate governance matters. | Domain Tags: legal counsel, litigation management, contract review | Related Nodes: LOMA291_M3L3_KN_001 | Category: Functional Area | Node Name: Role of the Legal Department | Chunk Text Content: ANALYSIS: The chart is a hierarchical organizational structure diagram representing an insurer. At the top is the \"Insurer,\" which branches into two main departments: the \"Legal Department\" and the \"Compliance Department.\" There are no x/y axes or data series, as this is not a data-driven chart but rather a structural representation",
     "payload": {
       "chunk_index": 12,
       "total_chunks": 76,
@@ -328,8 +340,6 @@
       "category": "Functional Area",
       "node_name": "Role of the Legal Department",
       "node_id": 322,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "aa6a57ac-5353-4601-aff2-a4607f0302b5",
@@ -340,12 +350,15 @@
         "64c1bf6b-c347-4dfc-9b67-94af0108553b",
         "ddc7f1a4-f0cd-4484-81d2-0cebb91221ef",
         "b05d24d9-bd1a-4739-a310-3e948f79f2da"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "64c1bf6b-c347-4dfc-9b67-94af0108553b",
-    "text": ". The chart emphasizes the division of responsibilities within the insurer, indicating that legal matters and regulatory compliance are handled by separate specialized departments. Key takeaways include the importance of having distinct departments to manage legal issues and ensure adherence to regulations within the insurance industry.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The key difference between the two functions. Legal provides advice on what the law says and represents the company. Compliance operationalizes legal and regulatory requirements into day-to-day business processes and monitors adherence. | Domain Tags: legal vs compliance, roles, responsibilities | Related Nodes: LOMA291_M3L3_KN_001, LOMA291_M3L3_KN_002 | Category: Core Concept | Node Name: Distinction between Legal and Compliance | Chunk Text Content: . The chart emphasizes the division of responsibilities within the insurer, indicating that legal matters and regulatory compliance are handled by separate specialized departments. Key takeaways include the importance of having distinct departments to manage legal issues and ensure adherence to regulations within the insurance industry.",
     "payload": {
       "chunk_index": 13,
       "total_chunks": 76,
@@ -355,8 +368,6 @@
       "category": "Core Concept",
       "node_name": "Distinction between Legal and Compliance",
       "node_id": 321,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "eafd7cd9-76f3-4458-b6c3-5cc9f98118a1",
@@ -367,12 +378,15 @@
         "ddc7f1a4-f0cd-4484-81d2-0cebb91221ef",
         "b05d24d9-bd1a-4739-a310-3e948f79f2da",
         "892f1617-fa6b-47bc-a56f-ee8bccaba382"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "ddc7f1a4-f0cd-4484-81d2-0cebb91221ef",
-    "text": "**[CHART]**\n\nCAPTION: Organizational structure of an insurer, highlighting key departments and compliance areas.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: **[CHART]**\n\nCAPTION: Organizational structure of an insurer, highlighting key departments and compliance areas.",
     "payload": {
       "chunk_index": 14,
       "total_chunks": 76,
@@ -382,8 +396,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "52fc3a90-5f58-4785-88ce-f3ebe4c5a10a",
@@ -394,12 +406,15 @@
         "b05d24d9-bd1a-4739-a310-3e948f79f2da",
         "892f1617-fa6b-47bc-a56f-ee8bccaba382",
         "2c133c8a-a2ad-4a85-b750-381a72111f8a"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "b05d24d9-bd1a-4739-a310-3e948f79f2da",
-    "text": "ANALYSIS: The chart is a hierarchical organizational structure diagram representing an insurer. It features a top-level node labeled \"Insurer,\" branching into five main categories: \"Legal Department,\" \"Corporate Compliance,\" \"Life Insurance,\" and \"Annuities.\" Under \"Life Insurance,\" there are further subdivisions for \"Life Insurance Compliance,\" while \"Annuities\" also has a corresponding \"Annuities Compliance\" section",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: ANALYSIS: The chart is a hierarchical organizational structure diagram representing an insurer. It features a top-level node labeled \"Insurer,\" branching into five main categories: \"Legal Department,\" \"Corporate Compliance,\" \"Life Insurance,\" and \"Annuities.\" Under \"Life Insurance,\" there are further subdivisions for \"Life Insurance Compliance,\" while \"Annuities\" also has a corresponding \"Annuities Compliance\" section",
     "payload": {
       "chunk_index": 15,
       "total_chunks": 76,
@@ -409,8 +424,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "8fba397f-c9f5-41a0-bb20-34c64f8e7c86",
@@ -421,12 +434,15 @@
         "892f1617-fa6b-47bc-a56f-ee8bccaba382",
         "2c133c8a-a2ad-4a85-b750-381a72111f8a",
         "e373b673-7547-416c-a04d-ccb11bd05fbe"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "892f1617-fa6b-47bc-a56f-ee8bccaba382",
-    "text": ". This structure emphasizes the importance of compliance in both life insurance and annuities, indicating a focus on regulatory adherence within the insurance industry. The clear delineation of departments suggests a well-organized approach to managing legal and compliance issues, which are critical in the insurance sector.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: . This structure emphasizes the importance of compliance in both life insurance and annuities, indicating a focus on regulatory adherence within the insurance industry. The clear delineation of departments suggests a well-organized approach to managing legal and compliance issues, which are critical in the insurance sector.",
     "payload": {
       "chunk_index": 16,
       "total_chunks": 76,
@@ -436,8 +452,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "64c1bf6b-c347-4dfc-9b67-94af0108553b",
@@ -448,12 +462,15 @@
         "2c133c8a-a2ad-4a85-b750-381a72111f8a",
         "e373b673-7547-416c-a04d-ccb11bd05fbe",
         "fab78902-db18-442d-995d-e61f1c1e0d58"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "2c133c8a-a2ad-4a85-b750-381a72111f8a",
-    "text": "reports directly to the company's CEO and advises the company's board of\ndirectors on important legal issues affecting the company. Attorneys and\nother legal department staff report to the general counsel.\nIn some companies, the general counsel is also the company's chief\ncompliance officer. The chief compliance officer (CCO) is responsible for\noverseeing and managing the company's compliance with regulatory\nrequirements and internal policies and procedures. If compliance activities",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: A senior-level executive responsible for overseeing the company's entire compliance program. The CCO ensures the company has an effective Compliance Management System and reports to senior management and the board. | Domain Tags: CCO, compliance leadership, governance | Related Nodes: LOMA291_M3L3_KN_002, LOMA291_M3L3_KN_006 | Category: Key Role | Node Name: Chief Compliance Officer (CCO) | Chunk Text Content: reports directly to the company's CEO and advises the company's board of\ndirectors on important legal issues affecting the company. Attorneys and\nother legal department staff report to the general counsel.\nIn some companies, the general counsel is also the company's chief\ncompliance officer. The chief compliance officer (CCO) is responsible for\noverseeing and managing the company's compliance with regulatory\nrequirements and internal policies and procedures. If compliance activities",
     "payload": {
       "chunk_index": 17,
       "total_chunks": 76,
@@ -463,8 +480,6 @@
       "category": "Key Role",
       "node_name": "Chief Compliance Officer (CCO)",
       "node_id": 326,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "ddc7f1a4-f0cd-4484-81d2-0cebb91221ef",
@@ -475,12 +490,15 @@
         "e373b673-7547-416c-a04d-ccb11bd05fbe",
         "fab78902-db18-442d-995d-e61f1c1e0d58",
         "e28c7cd5-b03d-4ae3-9b63-e1d97df95225"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "e373b673-7547-416c-a04d-ccb11bd05fbe",
-    "text": "requirements and internal policies and procedures. If compliance activities\nare part of the legal department's duties, the general counsel also manages\nthe compliance managers and specialists. If the CCO is a separate position\nfrom the general counsel, the chief compliance officer may report to the\ngeneral counsel or to the CEO.\nResponsibilities of the Legal Department\nLearning Objective\nDescribe the primary responsibilities of the legal department.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: Key responsibilities include managing litigation and disputes, reviewing and drafting contracts, providing legal counsel on business strategies, and advising on corporate governance matters. | Domain Tags: legal counsel, litigation management, contract review | Related Nodes: LOMA291_M3L3_KN_001 | Category: Functional Area | Node Name: Role of the Legal Department | Chunk Text Content: requirements and internal policies and procedures. If compliance activities\nare part of the legal department's duties, the general counsel also manages\nthe compliance managers and specialists. If the CCO is a separate position\nfrom the general counsel, the chief compliance officer may report to the\ngeneral counsel or to the CEO.\nResponsibilities of the Legal Department\nLearning Objective\nDescribe the primary responsibilities of the legal department.",
     "payload": {
       "chunk_index": 18,
       "total_chunks": 76,
@@ -490,8 +508,6 @@
       "category": "Functional Area",
       "node_name": "Role of the Legal Department",
       "node_id": 322,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "b05d24d9-bd1a-4739-a310-3e948f79f2da",
@@ -502,12 +518,15 @@
         "fab78902-db18-442d-995d-e61f1c1e0d58",
         "e28c7cd5-b03d-4ae3-9b63-e1d97df95225",
         "807545f4-8240-4245-8303-53a98df5837a"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "fab78902-db18-442d-995d-e61f1c1e0d58",
-    "text": "Learning Objective\nDescribe the primary responsibilities of the legal department.\nWhich of the following activities do you think the legal department of an insurer would\nbe involved in? Choose all that apply.\nIncorporation, Licensing, and Corporate Changes\nInsurance laws in the United States and Canada typically require that insurers be\norganized as corporations. As a corporation, an insurer can be a party in a legal action,",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: Key responsibilities include managing litigation and disputes, reviewing and drafting contracts, providing legal counsel on business strategies, and advising on corporate governance matters. | Domain Tags: legal counsel, litigation management, contract review | Related Nodes: LOMA291_M3L3_KN_001 | Category: Functional Area | Node Name: Role of the Legal Department | Chunk Text Content: Learning Objective\nDescribe the primary responsibilities of the legal department.\nWhich of the following activities do you think the legal department of an insurer would\nbe involved in? Choose all that apply.\nIncorporation, Licensing, and Corporate Changes\nInsurance laws in the United States and Canada typically require that insurers be\norganized as corporations. As a corporation, an insurer can be a party in a legal action,",
     "payload": {
       "chunk_index": 19,
       "total_chunks": 76,
@@ -517,8 +536,6 @@
       "category": "Functional Area",
       "node_name": "Role of the Legal Department",
       "node_id": 322,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "892f1617-fa6b-47bc-a56f-ee8bccaba382",
@@ -529,12 +546,15 @@
         "e28c7cd5-b03d-4ae3-9b63-e1d97df95225",
         "807545f4-8240-4245-8303-53a98df5837a",
         "238de35c-895f-42e1-82dc-768f7e514083"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "e28c7cd5-b03d-4ae3-9b63-e1d97df95225",
-    "text": "enter into contracts, and own property. Click or touch each heading below to learn\nmore.\nDomestic Corporations\nThe jurisdiction in which an insurer incorporates, or forms the corporation,\nis known as its domicile, and the insurer is known as a domestic corporation\nof that jurisdiction.\nOnce incorporated, the company's legal department must obtain a\ncertificate of authority, or license, which is a document that grants the\ninsurer legal authority to conduct an insurance business in the specified",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: Key responsibilities include managing litigation and disputes, reviewing and drafting contracts, providing legal counsel on business strategies, and advising on corporate governance matters. | Domain Tags: legal counsel, litigation management, contract review | Related Nodes: LOMA291_M3L3_KN_001 | Category: Functional Area | Node Name: Role of the Legal Department | Chunk Text Content: enter into contracts, and own property. Click or touch each heading below to learn\nmore.\nDomestic Corporations\nThe jurisdiction in which an insurer incorporates, or forms the corporation,\nis known as its domicile, and the insurer is known as a domestic corporation\nof that jurisdiction.\nOnce incorporated, the company's legal department must obtain a\ncertificate of authority, or license, which is a document that grants the\ninsurer legal authority to conduct an insurance business in the specified",
     "payload": {
       "chunk_index": 20,
       "total_chunks": 76,
@@ -544,8 +564,6 @@
       "category": "Functional Area",
       "node_name": "Role of the Legal Department",
       "node_id": 322,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "2c133c8a-a2ad-4a85-b750-381a72111f8a",
@@ -556,12 +574,15 @@
         "807545f4-8240-4245-8303-53a98df5837a",
         "238de35c-895f-42e1-82dc-768f7e514083",
         "710c5487-54dd-4410-a833-b96a0f1abc1e"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "807545f4-8240-4245-8303-53a98df5837a",
-    "text": "insurer legal authority to conduct an insurance business in the specified\njurisdiction. As a general rule, most jurisdictions require insurance\ncompanies and insurance financial professionals to be licensed by or\nregistered with a specific regulatory agency before conducting business in\nthat jurisdiction.\nAn insurer can sell only the products or services authorized by its certificate\nof authority or license. If a company's board of directors decides to expand",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: insurer legal authority to conduct an insurance business in the specified\njurisdiction. As a general rule, most jurisdictions require insurance\ncompanies and insurance financial professionals to be licensed by or\nregistered with a specific regulatory agency before conducting business in\nthat jurisdiction.\nAn insurer can sell only the products or services authorized by its certificate\nof authority or license. If a company's board of directors decides to expand",
     "payload": {
       "chunk_index": 21,
       "total_chunks": 76,
@@ -571,8 +592,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "e373b673-7547-416c-a04d-ccb11bd05fbe",
@@ -583,12 +602,15 @@
         "238de35c-895f-42e1-82dc-768f7e514083",
         "710c5487-54dd-4410-a833-b96a0f1abc1e",
         "2fa8a7d9-edb1-41ae-b929-4c2bbdd901cc"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "238de35c-895f-42e1-82dc-768f7e514083",
-    "text": "of authority or license. If a company's board of directors decides to expand\ninto additional product lines or jurisdictions, the legal department oversees\nthe application process for additional licenses.\nMultinational Corporations\nA corporation that operates in more than one country—known as a\nmultinational corporation—faces unique legal issues in that it must comply\nwith the laws of its country of domicile and also the laws and regulations of",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: Key responsibilities include managing litigation and disputes, reviewing and drafting contracts, providing legal counsel on business strategies, and advising on corporate governance matters. | Domain Tags: legal counsel, litigation management, contract review | Related Nodes: LOMA291_M3L3_KN_001 | Category: Functional Area | Node Name: Role of the Legal Department | Chunk Text Content: of authority or license. If a company's board of directors decides to expand\ninto additional product lines or jurisdictions, the legal department oversees\nthe application process for additional licenses.\nMultinational Corporations\nA corporation that operates in more than one country—known as a\nmultinational corporation—faces unique legal issues in that it must comply\nwith the laws of its country of domicile and also the laws and regulations of",
     "payload": {
       "chunk_index": 22,
       "total_chunks": 76,
@@ -598,8 +620,6 @@
       "category": "Functional Area",
       "node_name": "Role of the Legal Department",
       "node_id": 322,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "fab78902-db18-442d-995d-e61f1c1e0d58",
@@ -610,12 +630,15 @@
         "710c5487-54dd-4410-a833-b96a0f1abc1e",
         "2fa8a7d9-edb1-41ae-b929-4c2bbdd901cc",
         "7d353232-0bfa-45f3-9daa-eca0807a42b4"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "710c5487-54dd-4410-a833-b96a0f1abc1e",
-    "text": "with the laws of its country of domicile and also the laws and regulations of\neach country in which it conducts business. The legal department advises the\nboard of directors on the best way to enter into business in a foreign\nmarket.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: Key responsibilities include managing litigation and disputes, reviewing and drafting contracts, providing legal counsel on business strategies, and advising on corporate governance matters. | Domain Tags: legal counsel, litigation management, contract review | Related Nodes: LOMA291_M3L3_KN_001 | Category: Functional Area | Node Name: Role of the Legal Department | Chunk Text Content: with the laws of its country of domicile and also the laws and regulations of\neach country in which it conducts business. The legal department advises the\nboard of directors on the best way to enter into business in a foreign\nmarket.",
     "payload": {
       "chunk_index": 23,
       "total_chunks": 76,
@@ -625,8 +648,6 @@
       "category": "Functional Area",
       "node_name": "Role of the Legal Department",
       "node_id": 322,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "e28c7cd5-b03d-4ae3-9b63-e1d97df95225",
@@ -637,12 +658,15 @@
         "2fa8a7d9-edb1-41ae-b929-4c2bbdd901cc",
         "7d353232-0bfa-45f3-9daa-eca0807a42b4",
         "dc2f31de-12b9-4c1f-8f56-fa230587b4b9"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "2fa8a7d9-edb1-41ae-b929-4c2bbdd901cc",
-    "text": "The legal department also handles many aspects involved in expanding or reducing\noperations. For example, an insurance company can expand operations by acquiring or\nmerging with another company. In an acquisition, one company gains ownership\ncontrol by buying most or all of the other company's stock or assets. In a merger, a\ncompany agrees to unite with another company to form a new company. In both cases,\nthe companies can gain access to additional products, customers, distributors, and\nmarkets.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: Key responsibilities include managing litigation and disputes, reviewing and drafting contracts, providing legal counsel on business strategies, and advising on corporate governance matters. | Domain Tags: legal counsel, litigation management, contract review | Related Nodes: LOMA291_M3L3_KN_001 | Category: Functional Area | Node Name: Role of the Legal Department | Chunk Text Content: The legal department also handles many aspects involved in expanding or reducing\noperations. For example, an insurance company can expand operations by acquiring or\nmerging with another company. In an acquisition, one company gains ownership\ncontrol by buying most or all of the other company's stock or assets. In a merger, a\ncompany agrees to unite with another company to form a new company. In both cases,\nthe companies can gain access to additional products, customers, distributors, and\nmarkets.",
     "payload": {
       "chunk_index": 24,
       "total_chunks": 76,
@@ -652,8 +676,6 @@
       "category": "Functional Area",
       "node_name": "Role of the Legal Department",
       "node_id": 322,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "807545f4-8240-4245-8303-53a98df5837a",
@@ -664,12 +686,15 @@
         "7d353232-0bfa-45f3-9daa-eca0807a42b4",
         "dc2f31de-12b9-4c1f-8f56-fa230587b4b9",
         "6fb35444-677b-438c-a632-bf995ff47460"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "7d353232-0bfa-45f3-9daa-eca0807a42b4",
-    "text": "the companies can gain access to additional products, customers, distributors, and\nmarkets.\nOn the other hand, an insurer may decide to sell blocks of business or spin off a\ncompany to exit a line or lines of business. For example, a company preferring to exit\nthe individual life insurance market could sell its block of individual life insurance\npolicies through assumption reinsurance to another insurer. The company could also",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The key difference between the two functions. Legal provides advice on what the law says and represents the company. Compliance operationalizes legal and regulatory requirements into day-to-day business processes and monitors adherence. | Domain Tags: legal vs compliance, roles, responsibilities | Related Nodes: LOMA291_M3L3_KN_001, LOMA291_M3L3_KN_002 | Category: Core Concept | Node Name: Distinction between Legal and Compliance | Chunk Text Content: the companies can gain access to additional products, customers, distributors, and\nmarkets.\nOn the other hand, an insurer may decide to sell blocks of business or spin off a\ncompany to exit a line or lines of business. For example, a company preferring to exit\nthe individual life insurance market could sell its block of individual life insurance\npolicies through assumption reinsurance to another insurer. The company could also",
     "payload": {
       "chunk_index": 25,
       "total_chunks": 76,
@@ -679,8 +704,6 @@
       "category": "Core Concept",
       "node_name": "Distinction between Legal and Compliance",
       "node_id": 321,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "238de35c-895f-42e1-82dc-768f7e514083",
@@ -691,12 +714,15 @@
         "dc2f31de-12b9-4c1f-8f56-fa230587b4b9",
         "6fb35444-677b-438c-a632-bf995ff47460",
         "ad835a09-7b49-4908-80e5-b4b76e1ebb50"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "dc2f31de-12b9-4c1f-8f56-fa230587b4b9",
-    "text": "policies through assumption reinsurance to another insurer. The company could also\nseparate from one of its divisions or a company that it owns through a spinoff. The\nindependent company created in the spinoff would own the original company's\nindividual life insurance business. The legal department would be involved in these\ntransactions as well.\nWatch this animation for a summary of the corporate transactions we have discussed\nin this section.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: Key responsibilities include managing litigation and disputes, reviewing and drafting contracts, providing legal counsel on business strategies, and advising on corporate governance matters. | Domain Tags: legal counsel, litigation management, contract review | Related Nodes: LOMA291_M3L3_KN_001 | Category: Functional Area | Node Name: Role of the Legal Department | Chunk Text Content: policies through assumption reinsurance to another insurer. The company could also\nseparate from one of its divisions or a company that it owns through a spinoff. The\nindependent company created in the spinoff would own the original company's\nindividual life insurance business. The legal department would be involved in these\ntransactions as well.\nWatch this animation for a summary of the corporate transactions we have discussed\nin this section.",
     "payload": {
       "chunk_index": 26,
       "total_chunks": 76,
@@ -706,8 +732,6 @@
       "category": "Functional Area",
       "node_name": "Role of the Legal Department",
       "node_id": 322,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "710c5487-54dd-4410-a833-b96a0f1abc1e",
@@ -718,12 +742,15 @@
         "6fb35444-677b-438c-a632-bf995ff47460",
         "ad835a09-7b49-4908-80e5-b4b76e1ebb50",
         "a40c3630-a901-4c17-be2a-348b0ed27a84"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "6fb35444-677b-438c-a632-bf995ff47460",
-    "text": "Watch this animation for a summary of the corporate transactions we have discussed\nin this section.\nIn addition, the legal department is available to advise the board of directors on any\nnumber of issues that arise during the course of the company's operations. For example,\nthe board may want the legal department to review a contract with a foreign\ncompany to ensure that it doesn't violate any trade agreements before the contract is\nsigned.\nRepresenting the Insurer in Legal Proceedings",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: Key responsibilities include managing litigation and disputes, reviewing and drafting contracts, providing legal counsel on business strategies, and advising on corporate governance matters. | Domain Tags: legal counsel, litigation management, contract review | Related Nodes: LOMA291_M3L3_KN_001 | Category: Functional Area | Node Name: Role of the Legal Department | Chunk Text Content: Watch this animation for a summary of the corporate transactions we have discussed\nin this section.\nIn addition, the legal department is available to advise the board of directors on any\nnumber of issues that arise during the course of the company's operations. For example,\nthe board may want the legal department to review a contract with a foreign\ncompany to ensure that it doesn't violate any trade agreements before the contract is\nsigned.\nRepresenting the Insurer in Legal Proceedings",
     "payload": {
       "chunk_index": 27,
       "total_chunks": 76,
@@ -733,8 +760,6 @@
       "category": "Functional Area",
       "node_name": "Role of the Legal Department",
       "node_id": 322,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "2fa8a7d9-edb1-41ae-b929-4c2bbdd901cc",
@@ -745,12 +770,15 @@
         "ad835a09-7b49-4908-80e5-b4b76e1ebb50",
         "a40c3630-a901-4c17-be2a-348b0ed27a84",
         "19a517bf-476e-4651-8047-ec25ba2f82a8"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "ad835a09-7b49-4908-80e5-b4b76e1ebb50",
-    "text": "signed.\nRepresenting the Insurer in Legal Proceedings\nAt times, a person or organization may initiate a legal proceeding, known as a lawsuit,\nagainst a life insurance company, or an insurer may institute a lawsuit against another\nperson or organization. For example, insurers deny a small percentage of life insurance\nclaims for reasons such as the policy was not in force at the time of the insured's death,\nthe deceased was not covered under the policy, or the cause of death was excluded",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department within an insurer responsible for providing legal advice, representing the company in legal matters, managing litigation, and interpreting laws and regulations from a legal standpoint. | Domain Tags: legal, counsel, litigation, law | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_004 | Category: Core Function | Node Name: Legal Function | Chunk Text Content: signed.\nRepresenting the Insurer in Legal Proceedings\nAt times, a person or organization may initiate a legal proceeding, known as a lawsuit,\nagainst a life insurance company, or an insurer may institute a lawsuit against another\nperson or organization. For example, insurers deny a small percentage of life insurance\nclaims for reasons such as the policy was not in force at the time of the insured's death,\nthe deceased was not covered under the policy, or the cause of death was excluded",
     "payload": {
       "chunk_index": 28,
       "total_chunks": 76,
@@ -760,8 +788,6 @@
       "category": "Core Function",
       "node_name": "Legal Function",
       "node_id": 319,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "7d353232-0bfa-45f3-9daa-eca0807a42b4",
@@ -772,12 +798,15 @@
         "a40c3630-a901-4c17-be2a-348b0ed27a84",
         "19a517bf-476e-4651-8047-ec25ba2f82a8",
         "f2268ff2-4a50-46c4-a451-3f9dd62e2804"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "a40c3630-a901-4c17-be2a-348b0ed27a84",
-    "text": "from the insurance coverage. If a policyowner or beneficiary disputes an insurer's\ndecision to deny a claim for benefits, the insurer's claim department, in conjunction\nwith the legal department, works with the claimant to settle the dispute. If the dispute\ncannot be settled, and a lawsuit is filed, the legal department oversees the litigation\nprocess.\nA lawsuit is an action brought before a court of law by a party claiming that they have",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: Key responsibilities include managing litigation and disputes, reviewing and drafting contracts, providing legal counsel on business strategies, and advising on corporate governance matters. | Domain Tags: legal counsel, litigation management, contract review | Related Nodes: LOMA291_M3L3_KN_001 | Category: Functional Area | Node Name: Role of the Legal Department | Chunk Text Content: from the insurance coverage. If a policyowner or beneficiary disputes an insurer's\ndecision to deny a claim for benefits, the insurer's claim department, in conjunction\nwith the legal department, works with the claimant to settle the dispute. If the dispute\ncannot be settled, and a lawsuit is filed, the legal department oversees the litigation\nprocess.\nA lawsuit is an action brought before a court of law by a party claiming that they have",
     "payload": {
       "chunk_index": 29,
       "total_chunks": 76,
@@ -787,8 +816,6 @@
       "category": "Functional Area",
       "node_name": "Role of the Legal Department",
       "node_id": 322,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "dc2f31de-12b9-4c1f-8f56-fa230587b4b9",
@@ -799,12 +826,15 @@
         "19a517bf-476e-4651-8047-ec25ba2f82a8",
         "f2268ff2-4a50-46c4-a451-3f9dd62e2804",
         "239506bd-8d95-4db6-81fa-118bfe413bc9"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "19a517bf-476e-4651-8047-ec25ba2f82a8",
-    "text": "process.\nA lawsuit is an action brought before a court of law by a party claiming that they have\nbeen harmed in some way by another party. The process or act of presenting the\ndispute to a court of law for a resolution is known as litigation. In such situations, the\nlegal department represents the insurer, or arranges for an independent law firm,\noften known as outside counsel, to represent the insurer in the litigation process. If the",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: Key responsibilities include managing litigation and disputes, reviewing and drafting contracts, providing legal counsel on business strategies, and advising on corporate governance matters. | Domain Tags: legal counsel, litigation management, contract review | Related Nodes: LOMA291_M3L3_KN_001 | Category: Functional Area | Node Name: Role of the Legal Department | Chunk Text Content: process.\nA lawsuit is an action brought before a court of law by a party claiming that they have\nbeen harmed in some way by another party. The process or act of presenting the\ndispute to a court of law for a resolution is known as litigation. In such situations, the\nlegal department represents the insurer, or arranges for an independent law firm,\noften known as outside counsel, to represent the insurer in the litigation process. If the",
     "payload": {
       "chunk_index": 30,
       "total_chunks": 76,
@@ -814,8 +844,6 @@
       "category": "Functional Area",
       "node_name": "Role of the Legal Department",
       "node_id": 322,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "6fb35444-677b-438c-a632-bf995ff47460",
@@ -826,12 +854,15 @@
         "f2268ff2-4a50-46c4-a451-3f9dd62e2804",
         "239506bd-8d95-4db6-81fa-118bfe413bc9",
         "ec6714c7-d392-488c-aa71-ef92730bf837"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "f2268ff2-4a50-46c4-a451-3f9dd62e2804",
-    "text": "often known as outside counsel, to represent the insurer in the litigation process. If the\ncompany chooses outside counsel for representation, the insurer's legal department\ncommunicates with and oversees the outside counsel. Attorneys who handle litigation\nfor an insurance company, whether company employees or outside counsel, are\nresponsible for\n\nInitiating or responding to a lawsuit\n\nResearching the facts of a case\n\nTaking statements and depositions from involved parties\n",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: Key responsibilities include managing litigation and disputes, reviewing and drafting contracts, providing legal counsel on business strategies, and advising on corporate governance matters. | Domain Tags: legal counsel, litigation management, contract review | Related Nodes: LOMA291_M3L3_KN_001 | Category: Functional Area | Node Name: Role of the Legal Department | Chunk Text Content: often known as outside counsel, to represent the insurer in the litigation process. If the\ncompany chooses outside counsel for representation, the insurer's legal department\ncommunicates with and oversees the outside counsel. Attorneys who handle litigation\nfor an insurance company, whether company employees or outside counsel, are\nresponsible for\n\nInitiating or responding to a lawsuit\n\nResearching the facts of a case\n\nTaking statements and depositions from involved parties\n",
     "payload": {
       "chunk_index": 31,
       "total_chunks": 76,
@@ -841,8 +872,6 @@
       "category": "Functional Area",
       "node_name": "Role of the Legal Department",
       "node_id": 322,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "ad835a09-7b49-4908-80e5-b4b76e1ebb50",
@@ -853,12 +882,15 @@
         "239506bd-8d95-4db6-81fa-118bfe413bc9",
         "ec6714c7-d392-488c-aa71-ef92730bf837",
         "c7b6cbef-a50f-44ef-8be1-354c7a23999d"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "239506bd-8d95-4db6-81fa-118bfe413bc9",
-    "text": "\nResearching the facts of a case\n\nTaking statements and depositions from involved parties\n\nConsulting with company employees before they testify in court",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: Key responsibilities include managing litigation and disputes, reviewing and drafting contracts, providing legal counsel on business strategies, and advising on corporate governance matters. | Domain Tags: legal counsel, litigation management, contract review | Related Nodes: LOMA291_M3L3_KN_001 | Category: Functional Area | Node Name: Role of the Legal Department | Chunk Text Content: \nResearching the facts of a case\n\nTaking statements and depositions from involved parties\n\nConsulting with company employees before they testify in court",
     "payload": {
       "chunk_index": 32,
       "total_chunks": 76,
@@ -868,8 +900,6 @@
       "category": "Functional Area",
       "node_name": "Role of the Legal Department",
       "node_id": 322,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "a40c3630-a901-4c17-be2a-348b0ed27a84",
@@ -880,12 +910,15 @@
         "ec6714c7-d392-488c-aa71-ef92730bf837",
         "c7b6cbef-a50f-44ef-8be1-354c7a23999d",
         "4cf6a586-c0d1-47af-9a60-29613efc53a5"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "ec6714c7-d392-488c-aa71-ef92730bf837",
-    "text": "\nResearching relevant court cases\n\nHiring expert testimony, if needed\n\nRepresenting the insurer in all aspects of the litigation process, including\ncorrespondence and court appearances\nLitigation can be time consuming and costly. Additionally, a public trial can result in\nnegative publicity that may harm the company's image. For these reasons, the legal\ndepartment typically tries to settle legal disputes without going to court if at all",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: Key responsibilities include managing litigation and disputes, reviewing and drafting contracts, providing legal counsel on business strategies, and advising on corporate governance matters. | Domain Tags: legal counsel, litigation management, contract review | Related Nodes: LOMA291_M3L3_KN_001 | Category: Functional Area | Node Name: Role of the Legal Department | Chunk Text Content: \nResearching relevant court cases\n\nHiring expert testimony, if needed\n\nRepresenting the insurer in all aspects of the litigation process, including\ncorrespondence and court appearances\nLitigation can be time consuming and costly. Additionally, a public trial can result in\nnegative publicity that may harm the company's image. For these reasons, the legal\ndepartment typically tries to settle legal disputes without going to court if at all",
     "payload": {
       "chunk_index": 33,
       "total_chunks": 76,
@@ -895,8 +928,6 @@
       "category": "Functional Area",
       "node_name": "Role of the Legal Department",
       "node_id": 322,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "19a517bf-476e-4651-8047-ec25ba2f82a8",
@@ -907,12 +938,15 @@
         "c7b6cbef-a50f-44ef-8be1-354c7a23999d",
         "4cf6a586-c0d1-47af-9a60-29613efc53a5",
         "46d211f9-ffdb-4c52-a6d4-40d5fb742548"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "c7b6cbef-a50f-44ef-8be1-354c7a23999d",
-    "text": "department typically tries to settle legal disputes without going to court if at all\npossible. Formal or informal negotiations to resolve the dispute are known as\nalternative dispute resolution (ADR) methods. Two common methods of ADR are\nmediation and arbitration. Click or touch in the boxes below to learn more.\nMediation\nMediation is a process in which an impartial third party, known as a mediator,\nfacilitates negotiations between the parties in an effort to create a mutually agreeable",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department within an insurer responsible for providing legal advice, representing the company in legal matters, managing litigation, and interpreting laws and regulations from a legal standpoint. | Domain Tags: legal, counsel, litigation, law | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_004 | Category: Core Function | Node Name: Legal Function | Chunk Text Content: department typically tries to settle legal disputes without going to court if at all\npossible. Formal or informal negotiations to resolve the dispute are known as\nalternative dispute resolution (ADR) methods. Two common methods of ADR are\nmediation and arbitration. Click or touch in the boxes below to learn more.\nMediation\nMediation is a process in which an impartial third party, known as a mediator,\nfacilitates negotiations between the parties in an effort to create a mutually agreeable",
     "payload": {
       "chunk_index": 34,
       "total_chunks": 76,
@@ -922,8 +956,6 @@
       "category": "Core Function",
       "node_name": "Legal Function",
       "node_id": 319,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "f2268ff2-4a50-46c4-a451-3f9dd62e2804",
@@ -934,12 +966,15 @@
         "4cf6a586-c0d1-47af-9a60-29613efc53a5",
         "46d211f9-ffdb-4c52-a6d4-40d5fb742548",
         "5a7c2674-af20-429e-9242-ad1b3da44eaa"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "4cf6a586-c0d1-47af-9a60-29613efc53a5",
-    "text": "facilitates negotiations between the parties in an effort to create a mutually agreeable\nresolution of the dispute.\nIf the parties cannot resolve their dispute through mediation, they typically have the\nright to go to arbitration or to continue with litigation.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department within an insurer responsible for providing legal advice, representing the company in legal matters, managing litigation, and interpreting laws and regulations from a legal standpoint. | Domain Tags: legal, counsel, litigation, law | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_004 | Category: Core Function | Node Name: Legal Function | Chunk Text Content: facilitates negotiations between the parties in an effort to create a mutually agreeable\nresolution of the dispute.\nIf the parties cannot resolve their dispute through mediation, they typically have the\nright to go to arbitration or to continue with litigation.",
     "payload": {
       "chunk_index": 35,
       "total_chunks": 76,
@@ -949,8 +984,6 @@
       "category": "Core Function",
       "node_name": "Legal Function",
       "node_id": 319,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "239506bd-8d95-4db6-81fa-118bfe413bc9",
@@ -961,12 +994,15 @@
         "46d211f9-ffdb-4c52-a6d4-40d5fb742548",
         "5a7c2674-af20-429e-9242-ad1b3da44eaa",
         "37c96b35-c692-40ea-8e57-c78970ca5732"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "46d211f9-ffdb-4c52-a6d4-40d5fb742548",
-    "text": "Arbitration\nArbitration is a process in which an impartial third party, known as an arbitrator,\nevaluates the facts in the dispute and renders a decision that usually is binding on the\nparties.\nAn appeal of an arbitrator's decision is generally possible only if the arbitration was\ndone improperly.\nWorking with Internal Functions\nThe legal department interacts with and provides support to every internal function\nwithin an insurance company. Some of the legal department's specific responsibilities",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: Key responsibilities include managing litigation and disputes, reviewing and drafting contracts, providing legal counsel on business strategies, and advising on corporate governance matters. | Domain Tags: legal counsel, litigation management, contract review | Related Nodes: LOMA291_M3L3_KN_001 | Category: Functional Area | Node Name: Role of the Legal Department | Chunk Text Content: Arbitration\nArbitration is a process in which an impartial third party, known as an arbitrator,\nevaluates the facts in the dispute and renders a decision that usually is binding on the\nparties.\nAn appeal of an arbitrator's decision is generally possible only if the arbitration was\ndone improperly.\nWorking with Internal Functions\nThe legal department interacts with and provides support to every internal function\nwithin an insurance company. Some of the legal department's specific responsibilities",
     "payload": {
       "chunk_index": 36,
       "total_chunks": 76,
@@ -976,8 +1012,6 @@
       "category": "Functional Area",
       "node_name": "Role of the Legal Department",
       "node_id": 322,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "ec6714c7-d392-488c-aa71-ef92730bf837",
@@ -988,12 +1022,15 @@
         "5a7c2674-af20-429e-9242-ad1b3da44eaa",
         "37c96b35-c692-40ea-8e57-c78970ca5732",
         "1f7bcdc7-2406-4f14-985d-7d7b3670953d"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "5a7c2674-af20-429e-9242-ad1b3da44eaa",
-    "text": "within an insurance company. Some of the legal department's specific responsibilities\ninclude the following (click or touch the right arrows below to learn more).\nHuman Resources",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: Key responsibilities include managing litigation and disputes, reviewing and drafting contracts, providing legal counsel on business strategies, and advising on corporate governance matters. | Domain Tags: legal counsel, litigation management, contract review | Related Nodes: LOMA291_M3L3_KN_001 | Category: Functional Area | Node Name: Role of the Legal Department | Chunk Text Content: within an insurance company. Some of the legal department's specific responsibilities\ninclude the following (click or touch the right arrows below to learn more).\nHuman Resources",
     "payload": {
       "chunk_index": 37,
       "total_chunks": 76,
@@ -1003,8 +1040,6 @@
       "category": "Functional Area",
       "node_name": "Role of the Legal Department",
       "node_id": 322,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "c7b6cbef-a50f-44ef-8be1-354c7a23999d",
@@ -1015,12 +1050,15 @@
         "37c96b35-c692-40ea-8e57-c78970ca5732",
         "1f7bcdc7-2406-4f14-985d-7d7b3670953d",
         "800cad0f-f333-45e9-9b38-00b66fc2480d"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "37c96b35-c692-40ea-8e57-c78970ca5732",
-    "text": "Advises on employment laws, particularly those related to\nemployee rights, benefits, and nondiscrimination in\nemployment practices.\nResponsibilities of the Compliance Department\nLearning Objectives\nDescribe the primary responsibilities of the compliance department.\nExplain the difference between solvency laws and market conduct laws, and describe\nvarious laws that insurers must comply with.\nWhy is compliance important for an insurer? An insurer that fails to comply with a",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: Advises on employment laws, particularly those related to\nemployee rights, benefits, and nondiscrimination in\nemployment practices.\nResponsibilities of the Compliance Department\nLearning Objectives\nDescribe the primary responsibilities of the compliance department.\nExplain the difference between solvency laws and market conduct laws, and describe\nvarious laws that insurers must comply with.\nWhy is compliance important for an insurer? An insurer that fails to comply with a",
     "payload": {
       "chunk_index": 38,
       "total_chunks": 76,
@@ -1030,8 +1068,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "4cf6a586-c0d1-47af-9a60-29613efc53a5",
@@ -1042,12 +1078,15 @@
         "1f7bcdc7-2406-4f14-985d-7d7b3670953d",
         "800cad0f-f333-45e9-9b38-00b66fc2480d",
         "ebbd6d2a-876c-4e13-8ce0-97ac904ef0c1"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "1f7bcdc7-2406-4f14-985d-7d7b3670953d",
-    "text": "Why is compliance important for an insurer? An insurer that fails to comply with a\nlaw or regulation may suffer significant financial consequences. Which of the following\nconsequences can occur when an insurer is found to not be in compliance with\napplicable laws and regulations? Choose all that apply.\nThe compliance department, in conjunction with the legal department, monitors all\napplicable laws and regulations, communicates compliance requirements to employees",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: Why is compliance important for an insurer? An insurer that fails to comply with a\nlaw or regulation may suffer significant financial consequences. Which of the following\nconsequences can occur when an insurer is found to not be in compliance with\napplicable laws and regulations? Choose all that apply.\nThe compliance department, in conjunction with the legal department, monitors all\napplicable laws and regulations, communicates compliance requirements to employees",
     "payload": {
       "chunk_index": 39,
       "total_chunks": 76,
@@ -1057,8 +1096,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "46d211f9-ffdb-4c52-a6d4-40d5fb742548",
@@ -1069,12 +1106,15 @@
         "800cad0f-f333-45e9-9b38-00b66fc2480d",
         "ebbd6d2a-876c-4e13-8ce0-97ac904ef0c1",
         "11191f92-3490-4439-a559-ab3bb900ebff"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "800cad0f-f333-45e9-9b38-00b66fc2480d",
-    "text": "applicable laws and regulations, communicates compliance requirements to employees\nthrough policies and procedures, and makes sure that company employees are",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: applicable laws and regulations, communicates compliance requirements to employees\nthrough policies and procedures, and makes sure that company employees are",
     "payload": {
       "chunk_index": 40,
       "total_chunks": 76,
@@ -1084,8 +1124,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "5a7c2674-af20-429e-9242-ad1b3da44eaa",
@@ -1096,12 +1134,15 @@
         "ebbd6d2a-876c-4e13-8ce0-97ac904ef0c1",
         "11191f92-3490-4439-a559-ab3bb900ebff",
         "03bd6a6c-efd8-4885-b230-bb903150841d"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "ebbd6d2a-876c-4e13-8ce0-97ac904ef0c1",
-    "text": "following the company's established policies and procedures. Actions of the compliance\ndepartment may include\n\nDisseminating regulatory information to employees\n\nOverseeing the licensing, training, and conduct of financial professionals\n\nApproving advertisements and sales literature\n\nProtecting customer privacy and confidentiality\n\nCoordinating internal and external audits\n\nCoordinating market conduct examinations\n\nWorking with regulatory agencies to demonstrate the company's compliance",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: following the company's established policies and procedures. Actions of the compliance\ndepartment may include\n\nDisseminating regulatory information to employees\n\nOverseeing the licensing, training, and conduct of financial professionals\n\nApproving advertisements and sales literature\n\nProtecting customer privacy and confidentiality\n\nCoordinating internal and external audits\n\nCoordinating market conduct examinations\n\nWorking with regulatory agencies to demonstrate the company's compliance",
     "payload": {
       "chunk_index": 41,
       "total_chunks": 76,
@@ -1111,8 +1152,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "37c96b35-c692-40ea-8e57-c78970ca5732",
@@ -1123,12 +1162,15 @@
         "11191f92-3490-4439-a559-ab3bb900ebff",
         "03bd6a6c-efd8-4885-b230-bb903150841d",
         "d23c4a25-ea93-4e98-b800-2302e1219cf8"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "11191f92-3490-4439-a559-ab3bb900ebff",
-    "text": "\nWorking with regulatory agencies to demonstrate the company's compliance\nwith applicable laws\n\nManaging a fraud prevention unit\nIn the United States, the states are the primary regulators of insurance; and they have\ninsurance laws designed to protect the public trust. These laws can be divided into two\ngeneral types. Click or touch in the boxes below to learn more.\nSolvency Laws\nSolvency laws ensure that insurers are financially able to meet their debts and pay\npolicy benefits as they come due.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: \nWorking with regulatory agencies to demonstrate the company's compliance\nwith applicable laws\n\nManaging a fraud prevention unit\nIn the United States, the states are the primary regulators of insurance; and they have\ninsurance laws designed to protect the public trust. These laws can be divided into two\ngeneral types. Click or touch in the boxes below to learn more.\nSolvency Laws\nSolvency laws ensure that insurers are financially able to meet their debts and pay\npolicy benefits as they come due.",
     "payload": {
       "chunk_index": 42,
       "total_chunks": 76,
@@ -1138,8 +1180,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "1f7bcdc7-2406-4f14-985d-7d7b3670953d",
@@ -1150,12 +1190,15 @@
         "03bd6a6c-efd8-4885-b230-bb903150841d",
         "d23c4a25-ea93-4e98-b800-2302e1219cf8",
         "a93a1e16-6274-4e08-985a-4513fa99a787"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "03bd6a6c-efd8-4885-b230-bb903150841d",
-    "text": "Market Conduct Laws\nMarket conduct laws ensure that insurers conduct business fairly and ethically.\nEmployees who handle an insurer's financial matters generally manage solvency\ncompliance. Compliance department employees generally are responsible for ensuring\nthat the company complies with market conduct laws.\nAreas of State Market Conduct Compliance\nMarket conduct requirements seek to ensure that insurance companies treat",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: Market Conduct Laws\nMarket conduct laws ensure that insurers conduct business fairly and ethically.\nEmployees who handle an insurer's financial matters generally manage solvency\ncompliance. Compliance department employees generally are responsible for ensuring\nthat the company complies with market conduct laws.\nAreas of State Market Conduct Compliance\nMarket conduct requirements seek to ensure that insurance companies treat",
     "payload": {
       "chunk_index": 43,
       "total_chunks": 76,
@@ -1165,8 +1208,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "800cad0f-f333-45e9-9b38-00b66fc2480d",
@@ -1177,12 +1218,15 @@
         "d23c4a25-ea93-4e98-b800-2302e1219cf8",
         "a93a1e16-6274-4e08-985a-4513fa99a787",
         "f2a13f73-0a2f-4e6f-b99e-e5c86ba57331"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "d23c4a25-ea93-4e98-b800-2302e1219cf8",
-    "text": "Market conduct requirements seek to ensure that insurance companies treat\npolicyowners fairly with respect to marketing and sales practices, policy provisions,\nclaim handling, and customer service. In the United States, market conduct laws are\noften based on model regulations proposed by the National Association of Insurance\nCommissioners (NAIC), a private, nonprofit association that promotes uniformity of\nstate insurance regulation. Click or touch each heading below to learn about areas with",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: Market conduct requirements seek to ensure that insurance companies treat\npolicyowners fairly with respect to marketing and sales practices, policy provisions,\nclaim handling, and customer service. In the United States, market conduct laws are\noften based on model regulations proposed by the National Association of Insurance\nCommissioners (NAIC), a private, nonprofit association that promotes uniformity of\nstate insurance regulation. Click or touch each heading below to learn about areas with",
     "payload": {
       "chunk_index": 44,
       "total_chunks": 76,
@@ -1192,8 +1236,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "ebbd6d2a-876c-4e13-8ce0-97ac904ef0c1",
@@ -1204,12 +1246,15 @@
         "a93a1e16-6274-4e08-985a-4513fa99a787",
         "f2a13f73-0a2f-4e6f-b99e-e5c86ba57331",
         "26ce34a4-17d7-4c60-a4a8-31a0b6163088"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "a93a1e16-6274-4e08-985a-4513fa99a787",
-    "text": "state insurance regulation. Click or touch each heading below to learn about areas with\nwhich insurers in the U.S. need to comply with state laws.\nProduct Development\nAdvertising\nFinancial Professionals and Sales Activities\nUnderwriting Practices\nClaims Practices\nComplaint Handling",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: state insurance regulation. Click or touch each heading below to learn about areas with\nwhich insurers in the U.S. need to comply with state laws.\nProduct Development\nAdvertising\nFinancial Professionals and Sales Activities\nUnderwriting Practices\nClaims Practices\nComplaint Handling",
     "payload": {
       "chunk_index": 45,
       "total_chunks": 76,
@@ -1219,8 +1264,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "11191f92-3490-4439-a559-ab3bb900ebff",
@@ -1231,12 +1274,15 @@
         "f2a13f73-0a2f-4e6f-b99e-e5c86ba57331",
         "26ce34a4-17d7-4c60-a4a8-31a0b6163088",
         "1160ae96-6e89-4091-adde-0b7c9fbd29e0"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "f2a13f73-0a2f-4e6f-b99e-e5c86ba57331",
-    "text": "Privacy\nElectronic Signatures, Contracts, and Documents\nCybersecurity\nInsurance Fraud\nFederal Regulation of Insurance\nWhile the states have primary authority for regulating insurance, insurers are also\nsubject to federal regulation. Here are a few of the areas governed by federal laws with\nwhich insurers must comply:",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: Privacy\nElectronic Signatures, Contracts, and Documents\nCybersecurity\nInsurance Fraud\nFederal Regulation of Insurance\nWhile the states have primary authority for regulating insurance, insurers are also\nsubject to federal regulation. Here are a few of the areas governed by federal laws with\nwhich insurers must comply:",
     "payload": {
       "chunk_index": 46,
       "total_chunks": 76,
@@ -1246,8 +1292,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "03bd6a6c-efd8-4885-b230-bb903150841d",
@@ -1258,12 +1302,15 @@
         "26ce34a4-17d7-4c60-a4a8-31a0b6163088",
         "1160ae96-6e89-4091-adde-0b7c9fbd29e0",
         "43d6946c-fdbe-4fef-941b-1a5a20d7fe45"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "26ce34a4-17d7-4c60-a4a8-31a0b6163088",
-    "text": "Functional Regulation\nThe Gramm-Leach-Bliley (GLB) Act permits financial firms to affiliate in ways that\nresult in a more competitive and integrated financial services industry. In addition, the\nGLB Act requires companies to maintain policies to safeguard the security and\nconfidentiality of customer information and requires states to have uniform or\nreciprocal insurance agent licensing laws.\n\n**[TEXT DATA]**\n\nFederal Regulation of Insurance",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: Functional Regulation\nThe Gramm-Leach-Bliley (GLB) Act permits financial firms to affiliate in ways that\nresult in a more competitive and integrated financial services industry. In addition, the\nGLB Act requires companies to maintain policies to safeguard the security and\nconfidentiality of customer information and requires states to have uniform or\nreciprocal insurance agent licensing laws.\n\n**[TEXT DATA]**\n\nFederal Regulation of Insurance",
     "payload": {
       "chunk_index": 47,
       "total_chunks": 76,
@@ -1273,8 +1320,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "d23c4a25-ea93-4e98-b800-2302e1219cf8",
@@ -1285,12 +1330,15 @@
         "1160ae96-6e89-4091-adde-0b7c9fbd29e0",
         "43d6946c-fdbe-4fef-941b-1a5a20d7fe45",
         "4a8bf59f-bb01-462c-8664-e5101357ae68"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "1160ae96-6e89-4091-adde-0b7c9fbd29e0",
-    "text": "**[TEXT DATA]**\n\nFederal Regulation of Insurance\n\nGLB Act\nCreate a more competitive and integrated financial services industry\n\nDodd-Frank Act\nImprove accountability and transparency\n\nFair Credit Reporting Act\nRegulate reporting and use of consumer credit information\n\nUSA PATRIOT Act\nPrevent terrorism and money laundering",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: **[TEXT DATA]**\n\nFederal Regulation of Insurance\n\nGLB Act\nCreate a more competitive and integrated financial services industry\n\nDodd-Frank Act\nImprove accountability and transparency\n\nFair Credit Reporting Act\nRegulate reporting and use of consumer credit information\n\nUSA PATRIOT Act\nPrevent terrorism and money laundering",
     "payload": {
       "chunk_index": 48,
       "total_chunks": 76,
@@ -1300,8 +1348,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "a93a1e16-6274-4e08-985a-4513fa99a787",
@@ -1312,12 +1358,15 @@
         "43d6946c-fdbe-4fef-941b-1a5a20d7fe45",
         "4a8bf59f-bb01-462c-8664-e5101357ae68",
         "c49a8ac9-7182-4bae-a4e5-db6c298915be"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "43d6946c-fdbe-4fef-941b-1a5a20d7fe45",
-    "text": "Accountability and Consumer Protection\nThe Dodd-Frank Wall Street Reform and Consumer Protection Act (Dodd-Frank Act)\nis a U.S. federal law that improves accountability and transparency in the financial\nservices system and protects consumers from abusive practices.\nUse of Consumer Credit Information\nThe Fair Credit Reporting Act is a U.S. federal law that regulates the reporting and use\nof consumer credit information. It seeks to ensure that consumer credit reports",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: Accountability and Consumer Protection\nThe Dodd-Frank Wall Street Reform and Consumer Protection Act (Dodd-Frank Act)\nis a U.S. federal law that improves accountability and transparency in the financial\nservices system and protects consumers from abusive practices.\nUse of Consumer Credit Information\nThe Fair Credit Reporting Act is a U.S. federal law that regulates the reporting and use\nof consumer credit information. It seeks to ensure that consumer credit reports",
     "payload": {
       "chunk_index": 49,
       "total_chunks": 76,
@@ -1327,8 +1376,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "f2a13f73-0a2f-4e6f-b99e-e5c86ba57331",
@@ -1339,12 +1386,15 @@
         "4a8bf59f-bb01-462c-8664-e5101357ae68",
         "c49a8ac9-7182-4bae-a4e5-db6c298915be",
         "6476f2d0-16bd-4379-96b2-219476be966a"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "4a8bf59f-bb01-462c-8664-e5101357ae68",
-    "text": "of consumer credit information. It seeks to ensure that consumer credit reports\ncontain only accurate, relevant, and current information.\nTerrorism and Money Laundering\nThe USA PATRIOT Act is a federal law designed to prevent, detect, and prosecute\nterrorism and international money laundering. According to the act, U.S. insurers that\nsell products that can be used to launder money, such as individual permanent life\ninsurance, individual annuities, and individual products that have a cash value or",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: of consumer credit information. It seeks to ensure that consumer credit reports\ncontain only accurate, relevant, and current information.\nTerrorism and Money Laundering\nThe USA PATRIOT Act is a federal law designed to prevent, detect, and prosecute\nterrorism and international money laundering. According to the act, U.S. insurers that\nsell products that can be used to launder money, such as individual permanent life\ninsurance, individual annuities, and individual products that have a cash value or",
     "payload": {
       "chunk_index": 50,
       "total_chunks": 76,
@@ -1354,8 +1404,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "26ce34a4-17d7-4c60-a4a8-31a0b6163088",
@@ -1366,12 +1414,15 @@
         "c49a8ac9-7182-4bae-a4e5-db6c298915be",
         "6476f2d0-16bd-4379-96b2-219476be966a",
         "293a49f8-6d75-4fcb-afd4-064c5bae738e"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "c49a8ac9-7182-4bae-a4e5-db6c298915be",
-    "text": "insurance, individual annuities, and individual products that have a cash value or\ninvestment feature, must have an anti-money-laundering program.\nRegulation of Securities\nThe U.S. federal government has the primary authority to regulate the securities\nindustry. Examples of securities include stocks, bonds, mutual funds, variable life\ninsurance, and variable annuities. Federal securities laws provide a framework that\nincludes registration requirements; regulation of the purchase and sale of publicly",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: insurance, individual annuities, and individual products that have a cash value or\ninvestment feature, must have an anti-money-laundering program.\nRegulation of Securities\nThe U.S. federal government has the primary authority to regulate the securities\nindustry. Examples of securities include stocks, bonds, mutual funds, variable life\ninsurance, and variable annuities. Federal securities laws provide a framework that\nincludes registration requirements; regulation of the purchase and sale of publicly",
     "payload": {
       "chunk_index": 51,
       "total_chunks": 76,
@@ -1381,8 +1432,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "1160ae96-6e89-4091-adde-0b7c9fbd29e0",
@@ -1393,12 +1442,15 @@
         "6476f2d0-16bd-4379-96b2-219476be966a",
         "293a49f8-6d75-4fcb-afd4-064c5bae738e",
         "56829046-5754-49f2-aa97-e7b941afa5a8"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "6476f2d0-16bd-4379-96b2-219476be966a",
-    "text": "includes registration requirements; regulation of the purchase and sale of publicly\ntraded securities; reporting and filing requirements; and dispute resolution\nrequirements, periodic examinations of registered entities and individuals, and the\nright to take action against those who violate laws. The Securities and Exchange\nCommission (SEC) is the federal agency responsible for administering federal securities\nlaws.\nRegulatory Compliance Management Programs",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: includes registration requirements; regulation of the purchase and sale of publicly\ntraded securities; reporting and filing requirements; and dispute resolution\nrequirements, periodic examinations of registered entities and individuals, and the\nright to take action against those who violate laws. The Securities and Exchange\nCommission (SEC) is the federal agency responsible for administering federal securities\nlaws.\nRegulatory Compliance Management Programs",
     "payload": {
       "chunk_index": 52,
       "total_chunks": 76,
@@ -1408,8 +1460,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "43d6946c-fdbe-4fef-941b-1a5a20d7fe45",
@@ -1420,12 +1470,15 @@
         "293a49f8-6d75-4fcb-afd4-064c5bae738e",
         "56829046-5754-49f2-aa97-e7b941afa5a8",
         "1eb0ea6c-cfb4-4058-b8fe-ca63dabb1918"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "293a49f8-6d75-4fcb-afd4-064c5bae738e",
-    "text": "Most insurers establish regulatory compliance management programs that focus on\nprevention, education and training, and monitoring. Although we present these three\ninitiatives individually here, they overlap in many ways and ideally are integrated\nthroughout business processes.\nPrevention\nTo have a successful regulatory compliance management program, management must\ncommit to an ethical work environment. Compliance and ethics are related concepts. A",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: Most insurers establish regulatory compliance management programs that focus on\nprevention, education and training, and monitoring. Although we present these three\ninitiatives individually here, they overlap in many ways and ideally are integrated\nthroughout business processes.\nPrevention\nTo have a successful regulatory compliance management program, management must\ncommit to an ethical work environment. Compliance and ethics are related concepts. A",
     "payload": {
       "chunk_index": 53,
       "total_chunks": 76,
@@ -1435,8 +1488,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "4a8bf59f-bb01-462c-8664-e5101357ae68",
@@ -1447,12 +1498,15 @@
         "56829046-5754-49f2-aa97-e7b941afa5a8",
         "1eb0ea6c-cfb4-4058-b8fe-ca63dabb1918",
         "2a6c9c4b-6251-4ea2-8c55-40d5008fb8ba"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "56829046-5754-49f2-aa97-e7b941afa5a8",
-    "text": "company that operates within a framework of integrity and ethical values also\nmaintains a culture of compliance. Use the right arrows below for examples of a\nculture of compliance.\nThe company has in place hiring practices that reinforce\nthe company's commitment to compliance.\nIn a culture of organizational compliance, every employee views compliance as his own\nresponsibility.\nFor a regulatory compliance management program to be effective, compliance",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: company that operates within a framework of integrity and ethical values also\nmaintains a culture of compliance. Use the right arrows below for examples of a\nculture of compliance.\nThe company has in place hiring practices that reinforce\nthe company's commitment to compliance.\nIn a culture of organizational compliance, every employee views compliance as his own\nresponsibility.\nFor a regulatory compliance management program to be effective, compliance",
     "payload": {
       "chunk_index": 54,
       "total_chunks": 76,
@@ -1462,8 +1516,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "c49a8ac9-7182-4bae-a4e5-db6c298915be",
@@ -1474,12 +1526,15 @@
         "1eb0ea6c-cfb4-4058-b8fe-ca63dabb1918",
         "2a6c9c4b-6251-4ea2-8c55-40d5008fb8ba",
         "3a924de5-b269-45b9-8817-a196e285537a"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "1eb0ea6c-cfb4-4058-b8fe-ca63dabb1918",
-    "text": "responsibility.\nFor a regulatory compliance management program to be effective, compliance\npersonnel must be knowledgeable about the regulatory requirements of all jurisdictions\nin which the company operates. Personnel must also continually monitor the\nregulatory environment for changes that might impact insurer operations. If the right\npolicies and procedures are in place, and if employees follow these policies and\nprocedures, then problems with noncompliance are significantly reduced or eliminated.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: responsibility.\nFor a regulatory compliance management program to be effective, compliance\npersonnel must be knowledgeable about the regulatory requirements of all jurisdictions\nin which the company operates. Personnel must also continually monitor the\nregulatory environment for changes that might impact insurer operations. If the right\npolicies and procedures are in place, and if employees follow these policies and\nprocedures, then problems with noncompliance are significantly reduced or eliminated.",
     "payload": {
       "chunk_index": 55,
       "total_chunks": 76,
@@ -1489,8 +1544,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "6476f2d0-16bd-4379-96b2-219476be966a",
@@ -1501,12 +1554,15 @@
         "2a6c9c4b-6251-4ea2-8c55-40d5008fb8ba",
         "3a924de5-b269-45b9-8817-a196e285537a",
         "e4fea6e3-c3a0-4937-91a6-03753c0930fc"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "2a6c9c4b-6251-4ea2-8c55-40d5008fb8ba",
-    "text": "procedures, then problems with noncompliance are significantly reduced or eliminated.\nFinally, an insurer must establish internal control systems that can assess how well\nemployees are adhering to the company's compliance policies and procedures. Internal\ncontrols may be as simple as establishing a procedure for a compliance officer to sign\noff on marketing materials before they are used, or as complex as installing a\ncomputer program that can detect confidential information in an employee's email.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: procedures, then problems with noncompliance are significantly reduced or eliminated.\nFinally, an insurer must establish internal control systems that can assess how well\nemployees are adhering to the company's compliance policies and procedures. Internal\ncontrols may be as simple as establishing a procedure for a compliance officer to sign\noff on marketing materials before they are used, or as complex as installing a\ncomputer program that can detect confidential information in an employee's email.",
     "payload": {
       "chunk_index": 56,
       "total_chunks": 76,
@@ -1516,8 +1572,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "293a49f8-6d75-4fcb-afd4-064c5bae738e",
@@ -1528,12 +1582,15 @@
         "3a924de5-b269-45b9-8817-a196e285537a",
         "e4fea6e3-c3a0-4937-91a6-03753c0930fc",
         "0ef83c2b-d6fa-4980-9eee-171c9dd57580"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "3a924de5-b269-45b9-8817-a196e285537a",
-    "text": "computer program that can detect confidential information in an employee's email.\nEducation and Training\nTo be effective, a regulatory compliance management program must educate\nemployees about the laws and regulations relevant to their work activities. For example,\nin the United States, state insurance laws describe the minimum information that",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: computer program that can detect confidential information in an employee's email.\nEducation and Training\nTo be effective, a regulatory compliance management program must educate\nemployees about the laws and regulations relevant to their work activities. For example,\nin the United States, state insurance laws describe the minimum information that",
     "payload": {
       "chunk_index": 57,
       "total_chunks": 76,
@@ -1543,8 +1600,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "56829046-5754-49f2-aa97-e7b941afa5a8",
@@ -1555,12 +1610,15 @@
         "e4fea6e3-c3a0-4937-91a6-03753c0930fc",
         "0ef83c2b-d6fa-4980-9eee-171c9dd57580",
         "b55d43f5-abda-4b15-9c8e-274585ba7a6e"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "e4fea6e3-c3a0-4937-91a6-03753c0930fc",
-    "text": "insurers must maintain in their complaint records and place specific requirements on\nthe way insurers handle customer complaints. Just recording a customer's complaint\nisn't enough to satisfy these laws. Customer service representatives and any other\nemployees who are likely to receive customer complaints must be trained in a\ncompany's complaint handling procedures. In addition, all company employees must be\naware of and understand the company's policies and procedures for complying with",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: insurers must maintain in their complaint records and place specific requirements on\nthe way insurers handle customer complaints. Just recording a customer's complaint\nisn't enough to satisfy these laws. Customer service representatives and any other\nemployees who are likely to receive customer complaints must be trained in a\ncompany's complaint handling procedures. In addition, all company employees must be\naware of and understand the company's policies and procedures for complying with",
     "payload": {
       "chunk_index": 58,
       "total_chunks": 76,
@@ -1570,8 +1628,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "1eb0ea6c-cfb4-4058-b8fe-ca63dabb1918",
@@ -1582,12 +1638,15 @@
         "0ef83c2b-d6fa-4980-9eee-171c9dd57580",
         "b55d43f5-abda-4b15-9c8e-274585ba7a6e",
         "746ae4d8-1c2b-47e6-868b-6c9122f50c6b"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "0ef83c2b-d6fa-4980-9eee-171c9dd57580",
-    "text": "aware of and understand the company's policies and procedures for complying with\nthese laws, so that they do not inadvertently violate a law.\nMuch market conduct legislation applies to the insurance sales process. Because insurers\nare generally held responsible for the actions of their financial professionals, insurers\nspend a significant amount of time and money training financial professionals in\ncompliance issues.\nMany companies provide their employees and financial professionals with compliance",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: aware of and understand the company's policies and procedures for complying with\nthese laws, so that they do not inadvertently violate a law.\nMuch market conduct legislation applies to the insurance sales process. Because insurers\nare generally held responsible for the actions of their financial professionals, insurers\nspend a significant amount of time and money training financial professionals in\ncompliance issues.\nMany companies provide their employees and financial professionals with compliance",
     "payload": {
       "chunk_index": 59,
       "total_chunks": 76,
@@ -1597,8 +1656,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "2a6c9c4b-6251-4ea2-8c55-40d5008fb8ba",
@@ -1609,12 +1666,15 @@
         "b55d43f5-abda-4b15-9c8e-274585ba7a6e",
         "746ae4d8-1c2b-47e6-868b-6c9122f50c6b",
         "9150fc3a-92e6-4757-826c-31f1020e3b7f"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "b55d43f5-abda-4b15-9c8e-274585ba7a6e",
-    "text": "compliance issues.\nMany companies provide their employees and financial professionals with compliance\nmanuals containing information about the company's compliance programs and the\nmarket conduct rules they must follow. Ideally, such manuals provide employees with",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: compliance issues.\nMany companies provide their employees and financial professionals with compliance\nmanuals containing information about the company's compliance programs and the\nmarket conduct rules they must follow. Ideally, such manuals provide employees with",
     "payload": {
       "chunk_index": 60,
       "total_chunks": 76,
@@ -1624,8 +1684,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "3a924de5-b269-45b9-8817-a196e285537a",
@@ -1636,12 +1694,15 @@
         "746ae4d8-1c2b-47e6-868b-6c9122f50c6b",
         "9150fc3a-92e6-4757-826c-31f1020e3b7f",
         "2af43487-6c9c-4483-81eb-20bd958f89e9"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "746ae4d8-1c2b-47e6-868b-6c9122f50c6b",
-    "text": "specific examples of compliance and noncompliance so that employees can better\nidentify compliance risks in their day-to-day work activities. In addition, a regulatory\ncompliance manual must be updated as regulatory requirements change, and such\nchanges should be clearly communicated to employees.\nHere, an expert explains the role that compliance plays in training financial\nprofessionals.\nMonitoring\nAn insurer's regulatory compliance management program must include monitoring.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: specific examples of compliance and noncompliance so that employees can better\nidentify compliance risks in their day-to-day work activities. In addition, a regulatory\ncompliance manual must be updated as regulatory requirements change, and such\nchanges should be clearly communicated to employees.\nHere, an expert explains the role that compliance plays in training financial\nprofessionals.\nMonitoring\nAn insurer's regulatory compliance management program must include monitoring.",
     "payload": {
       "chunk_index": 61,
       "total_chunks": 76,
@@ -1651,8 +1712,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "e4fea6e3-c3a0-4937-91a6-03753c0930fc",
@@ -1663,12 +1722,15 @@
         "9150fc3a-92e6-4757-826c-31f1020e3b7f",
         "2af43487-6c9c-4483-81eb-20bd958f89e9",
         "0aff81d6-4e7a-4910-8790-9883ffc3fad8"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "9150fc3a-92e6-4757-826c-31f1020e3b7f",
-    "text": "Monitoring\nAn insurer's regulatory compliance management program must include monitoring.\nWhy? To ensure that the company (1) responds quickly to issues before they become\nbigger problems, (2) identifies training needs of employees, and (3) improves the\nquality of compliance procedures.\nA common way to monitor compliance is through auditing. An internal audit is an\nexamination of a company's records, policies, and procedures that is conducted by a",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: Monitoring\nAn insurer's regulatory compliance management program must include monitoring.\nWhy? To ensure that the company (1) responds quickly to issues before they become\nbigger problems, (2) identifies training needs of employees, and (3) improves the\nquality of compliance procedures.\nA common way to monitor compliance is through auditing. An internal audit is an\nexamination of a company's records, policies, and procedures that is conducted by a",
     "payload": {
       "chunk_index": 62,
       "total_chunks": 76,
@@ -1678,8 +1740,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "0ef83c2b-d6fa-4980-9eee-171c9dd57580",
@@ -1690,12 +1750,15 @@
         "2af43487-6c9c-4483-81eb-20bd958f89e9",
         "0aff81d6-4e7a-4910-8790-9883ffc3fad8",
         "107813cc-c38d-4f44-a212-9664181aabee"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "2af43487-6c9c-4483-81eb-20bd958f89e9",
-    "text": "examination of a company's records, policies, and procedures that is conducted by a\nperson who works for the insurer, typically in the compliance area. An internal audit\nexamines a specified area of a company's operations rather than the entire company.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: examination of a company's records, policies, and procedures that is conducted by a\nperson who works for the insurer, typically in the compliance area. An internal audit\nexamines a specified area of a company's operations rather than the entire company.",
     "payload": {
       "chunk_index": 63,
       "total_chunks": 76,
@@ -1705,8 +1768,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "b55d43f5-abda-4b15-9c8e-274585ba7a6e",
@@ -1717,12 +1778,15 @@
         "0aff81d6-4e7a-4910-8790-9883ffc3fad8",
         "107813cc-c38d-4f44-a212-9664181aabee",
         "971ee22a-0ccf-49f5-97fb-c288d2d65577"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "0aff81d6-4e7a-4910-8790-9883ffc3fad8",
-    "text": "The results of an internal audit are reported directly to the audit committee of the\ninsurer's board of directors.\nAudits conducted by parties not associated with the insurance company are called\nexternal audits or independent audits. Insurance laws in many countries require\nexternal audits of an insurer's market conduct.\nMarket Conduct Examinations\nLearning Objectives\nDescribe the purpose of a market conduct examination and how the compliance\ndepartment is involved in market conduct examinations.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: The results of an internal audit are reported directly to the audit committee of the\ninsurer's board of directors.\nAudits conducted by parties not associated with the insurance company are called\nexternal audits or independent audits. Insurance laws in many countries require\nexternal audits of an insurer's market conduct.\nMarket Conduct Examinations\nLearning Objectives\nDescribe the purpose of a market conduct examination and how the compliance\ndepartment is involved in market conduct examinations.",
     "payload": {
       "chunk_index": 64,
       "total_chunks": 76,
@@ -1732,8 +1796,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "746ae4d8-1c2b-47e6-868b-6c9122f50c6b",
@@ -1744,12 +1806,15 @@
         "107813cc-c38d-4f44-a212-9664181aabee",
         "971ee22a-0ccf-49f5-97fb-c288d2d65577",
         "669c2e16-3ad6-4b37-a126-cb601a24f8f1"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "107813cc-c38d-4f44-a212-9664181aabee",
-    "text": "department is involved in market conduct examinations.\nDistinguish between two types of market conduct examinations in the United States.\nPeriodically, in the United States, insurance regulators conduct examinations of the\noperations of life insurance companies. A market conduct examination is a formal\ninvestigation of an insurer by one or more state insurance departments. The purpose of\nthe market conduct examination is to determine whether the insurer's market",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The key difference between the two functions. Legal provides advice on what the law says and represents the company. Compliance operationalizes legal and regulatory requirements into day-to-day business processes and monitors adherence. | Domain Tags: legal vs compliance, roles, responsibilities | Related Nodes: LOMA291_M3L3_KN_001, LOMA291_M3L3_KN_002 | Category: Core Concept | Node Name: Distinction between Legal and Compliance | Chunk Text Content: department is involved in market conduct examinations.\nDistinguish between two types of market conduct examinations in the United States.\nPeriodically, in the United States, insurance regulators conduct examinations of the\noperations of life insurance companies. A market conduct examination is a formal\ninvestigation of an insurer by one or more state insurance departments. The purpose of\nthe market conduct examination is to determine whether the insurer's market",
     "payload": {
       "chunk_index": 65,
       "total_chunks": 76,
@@ -1759,8 +1824,6 @@
       "category": "Core Concept",
       "node_name": "Distinction between Legal and Compliance",
       "node_id": 321,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "9150fc3a-92e6-4757-826c-31f1020e3b7f",
@@ -1771,12 +1834,15 @@
         "971ee22a-0ccf-49f5-97fb-c288d2d65577",
         "669c2e16-3ad6-4b37-a126-cb601a24f8f1",
         "5d1cf7d0-3770-4f19-a66b-b95721b7833c"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "971ee22a-0ccf-49f5-97fb-c288d2d65577",
-    "text": "the market conduct examination is to determine whether the insurer's market\nconduct—its nonfinancial operations—is in compliance with applicable laws and\nregulations.\nThere are two types of market conduct examinations. See if you can figure out which\nkind is described below.\nhrght examining all nonfinancial aspects of its operations.\nSome state insurance departments periodically examine each insurer licensed by the\nstate. For example, a state may examine all insurers operating within the state every",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: the market conduct examination is to determine whether the insurer's market\nconduct—its nonfinancial operations—is in compliance with applicable laws and\nregulations.\nThere are two types of market conduct examinations. See if you can figure out which\nkind is described below.\nhrght examining all nonfinancial aspects of its operations.\nSome state insurance departments periodically examine each insurer licensed by the\nstate. For example, a state may examine all insurers operating within the state every",
     "payload": {
       "chunk_index": 66,
       "total_chunks": 76,
@@ -1786,8 +1852,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "2af43487-6c9c-4483-81eb-20bd958f89e9",
@@ -1798,12 +1862,15 @@
         "669c2e16-3ad6-4b37-a126-cb601a24f8f1",
         "5d1cf7d0-3770-4f19-a66b-b95721b7833c",
         "6c83d505-98bb-474e-a19b-08e1cac8fc51"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "669c2e16-3ad6-4b37-a126-cb601a24f8f1",
-    "text": "state. For example, a state may examine all insurers operating within the state every\ntwo to three years. Other states conduct examinations when they identify specific\ncomplaints about an insurer's market conduct activities or have a specific concern\nabout an insurer's operations.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: Specific business activities that are heavily regulated and require significant Legal and Compliance involvement, such as product development (filing and approval), advertising (review), and sales practices. | Domain Tags: product filing, advertising review, market conduct | Related Nodes: LOMA291_M3L3_KN_001, LOMA291_M3L3_KN_002 | Category: Compliance | Node Name: Regulatory Oversight Areas | Chunk Text Content: state. For example, a state may examine all insurers operating within the state every\ntwo to three years. Other states conduct examinations when they identify specific\ncomplaints about an insurer's market conduct activities or have a specific concern\nabout an insurer's operations.",
     "payload": {
       "chunk_index": 67,
       "total_chunks": 76,
@@ -1813,8 +1880,6 @@
       "category": "Compliance",
       "node_name": "Regulatory Oversight Areas",
       "node_id": 325,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "0aff81d6-4e7a-4910-8790-9883ffc3fad8",
@@ -1825,12 +1890,15 @@
         "5d1cf7d0-3770-4f19-a66b-b95721b7833c",
         "6c83d505-98bb-474e-a19b-08e1cac8fc51",
         "b626990f-a232-4b4c-8c57-51b6891bbece"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "5d1cf7d0-3770-4f19-a66b-b95721b7833c",
-    "text": "One of the primary roles of the NAIC is to advise state insurance regulators on the\nmost effective and efficient methods for overseeing the market conduct of insurance\ncompanies. The NAIC encourages multistate examinations as a way for state insurance\ndepartments to share costs. However, states reserve the right to independently\nconduct their own reviews.\nBoth target and comprehensive examinations are designed to ensure that the\n1. insurer has standards in place for the activity being examined",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: Specific business activities that are heavily regulated and require significant Legal and Compliance involvement, such as product development (filing and approval), advertising (review), and sales practices. | Domain Tags: product filing, advertising review, market conduct | Related Nodes: LOMA291_M3L3_KN_001, LOMA291_M3L3_KN_002 | Category: Compliance | Node Name: Regulatory Oversight Areas | Chunk Text Content: One of the primary roles of the NAIC is to advise state insurance regulators on the\nmost effective and efficient methods for overseeing the market conduct of insurance\ncompanies. The NAIC encourages multistate examinations as a way for state insurance\ndepartments to share costs. However, states reserve the right to independently\nconduct their own reviews.\nBoth target and comprehensive examinations are designed to ensure that the\n1. insurer has standards in place for the activity being examined",
     "payload": {
       "chunk_index": 68,
       "total_chunks": 76,
@@ -1840,8 +1908,6 @@
       "category": "Compliance",
       "node_name": "Regulatory Oversight Areas",
       "node_id": 325,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "107813cc-c38d-4f44-a212-9664181aabee",
@@ -1852,12 +1918,15 @@
         "6c83d505-98bb-474e-a19b-08e1cac8fc51",
         "b626990f-a232-4b4c-8c57-51b6891bbece",
         "1e447e79-9803-46b1-a38a-f6bee0b30421"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "6c83d505-98bb-474e-a19b-08e1cac8fc51",
-    "text": "1. insurer has standards in place for the activity being examined\n2. insurer's standards comply with applicable regulatory requirements\n3. activity being examined is carried out according to established standards\nState laws require that insurers maintain various business records for a specified time\nand allow examiners to review these business records as well as other documents.\nMarket conduct examiners also want to know whether an insurer has established an",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: 1. insurer has standards in place for the activity being examined\n2. insurer's standards comply with applicable regulatory requirements\n3. activity being examined is carried out according to established standards\nState laws require that insurers maintain various business records for a specified time\nand allow examiners to review these business records as well as other documents.\nMarket conduct examiners also want to know whether an insurer has established an",
     "payload": {
       "chunk_index": 69,
       "total_chunks": 76,
@@ -1867,8 +1936,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "971ee22a-0ccf-49f5-97fb-c288d2d65577",
@@ -1879,12 +1946,15 @@
         "b626990f-a232-4b4c-8c57-51b6891bbece",
         "1e447e79-9803-46b1-a38a-f6bee0b30421",
         "fa8900c4-94c9-44fe-9819-1393ca004d48"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "b626990f-a232-4b4c-8c57-51b6891bbece",
-    "text": "Market conduct examiners also want to know whether an insurer has established an\ninternal audit plan by which it can detect and correct compliance problems.\nMarket conduct examiners review the insurer's audit plan and audit reports, as well as\nall accompanying procedures manuals. Market conduct examiners review how",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: Market conduct examiners also want to know whether an insurer has established an\ninternal audit plan by which it can detect and correct compliance problems.\nMarket conduct examiners review the insurer's audit plan and audit reports, as well as\nall accompanying procedures manuals. Market conduct examiners review how",
     "payload": {
       "chunk_index": 70,
       "total_chunks": 76,
@@ -1894,8 +1964,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "669c2e16-3ad6-4b37-a126-cb601a24f8f1",
@@ -1906,12 +1974,15 @@
         "1e447e79-9803-46b1-a38a-f6bee0b30421",
         "fa8900c4-94c9-44fe-9819-1393ca004d48",
         "dfc14b17-9bc4-4670-ad72-cea4a4d77c6a"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "1e447e79-9803-46b1-a38a-f6bee0b30421",
-    "text": "management uses the information in an audit report. For example, does management\nrespond to recommendations in an audit report by adopting new procedures or\nmodifying existing procedures?\nMost market conduct examinations today are target examinations that examine one or\nmore lines of business or specific areas of an insurer's nonfinancial operations, such as\nits advertising materials. Target examinations are conducted whenever an insurance",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: management uses the information in an audit report. For example, does management\nrespond to recommendations in an audit report by adopting new procedures or\nmodifying existing procedures?\nMost market conduct examinations today are target examinations that examine one or\nmore lines of business or specific areas of an insurer's nonfinancial operations, such as\nits advertising materials. Target examinations are conducted whenever an insurance",
     "payload": {
       "chunk_index": 71,
       "total_chunks": 76,
@@ -1921,8 +1992,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "5d1cf7d0-3770-4f19-a66b-b95721b7833c",
@@ -1933,12 +2002,15 @@
         "fa8900c4-94c9-44fe-9819-1393ca004d48",
         "dfc14b17-9bc4-4670-ad72-cea4a4d77c6a",
         "b0e23a2d-988a-4995-a867-c63b46b89ace"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "fa8900c4-94c9-44fe-9819-1393ca004d48",
-    "text": "its advertising materials. Target examinations are conducted whenever an insurance\ndepartment thinks them necessary, and often result from customer complaints or\nrecent changes in applicable regulations.\nWhat Happens After the Completion of a Market Conduct Exam\nExaminers provide a report of their findings.\nThe report may include an order detailing actions the insurer must take to correct\ncompliance problems.\nIf it has disagreements with the report, the insurer may request a hearing.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: its advertising materials. Target examinations are conducted whenever an insurance\ndepartment thinks them necessary, and often result from customer complaints or\nrecent changes in applicable regulations.\nWhat Happens After the Completion of a Market Conduct Exam\nExaminers provide a report of their findings.\nThe report may include an order detailing actions the insurer must take to correct\ncompliance problems.\nIf it has disagreements with the report, the insurer may request a hearing.",
     "payload": {
       "chunk_index": 72,
       "total_chunks": 76,
@@ -1948,8 +2020,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "6c83d505-98bb-474e-a19b-08e1cac8fc51",
@@ -1960,12 +2030,15 @@
         "dfc14b17-9bc4-4670-ad72-cea4a4d77c6a",
         "b0e23a2d-988a-4995-a867-c63b46b89ace",
         "cc6e856c-ac39-4962-ad8f-e31706683e49"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "dfc14b17-9bc4-4670-ad72-cea4a4d77c6a",
-    "text": "compliance problems.\nIf it has disagreements with the report, the insurer may request a hearing.\nAfter the hearing, the hearing officer may make changes to the report.\nThe state insurance department adopts the finalized examination report, places it on\nfile, publishes it on its website, and provides a copy to the NAIC.\nIf necessary, the state insurance department sanctions the insurer and/or imposes a\ncompliance action plan.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: compliance problems.\nIf it has disagreements with the report, the insurer may request a hearing.\nAfter the hearing, the hearing officer may make changes to the report.\nThe state insurance department adopts the finalized examination report, places it on\nfile, publishes it on its website, and provides a copy to the NAIC.\nIf necessary, the state insurance department sanctions the insurer and/or imposes a\ncompliance action plan.",
     "payload": {
       "chunk_index": 73,
       "total_chunks": 76,
@@ -1975,8 +2048,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "b626990f-a232-4b4c-8c57-51b6891bbece",
@@ -1986,12 +2057,15 @@
       "next": [
         "b0e23a2d-988a-4995-a867-c63b46b89ace",
         "cc6e856c-ac39-4962-ad8f-e31706683e49"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "b0e23a2d-988a-4995-a867-c63b46b89ace",
-    "text": "compliance action plan.\nThe insurer may be required to provide periodic evidence of compliance with any order\ncontained in the report.\nThe more you understand what legal and compliance do, the better you'll be at\navoiding potential legal liability for your company. Remember, compliance isn't just a\nfunction within your company: it's every employee's responsibility.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The department responsible for ensuring the insurer and its employees adhere to all applicable external laws and regulations as well as internal policies and procedures. It focuses on prevention, monitoring, and detection of non-compliance. | Domain Tags: compliance, regulatory, adherence, monitoring | Related Nodes: LOMA291_M3L3_KN_003, LOMA291_M3L3_KN_005 | Category: Core Function | Node Name: Compliance Function | Chunk Text Content: compliance action plan.\nThe insurer may be required to provide periodic evidence of compliance with any order\ncontained in the report.\nThe more you understand what legal and compliance do, the better you'll be at\navoiding potential legal liability for your company. Remember, compliance isn't just a\nfunction within your company: it's every employee's responsibility.",
     "payload": {
       "chunk_index": 74,
       "total_chunks": 76,
@@ -2001,8 +2075,6 @@
       "category": "Core Function",
       "node_name": "Compliance Function",
       "node_id": 320,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "1e447e79-9803-46b1-a38a-f6bee0b30421",
@@ -2011,12 +2083,15 @@
       ],
       "next": [
         "cc6e856c-ac39-4962-ad8f-e31706683e49"
-      ]
+      ],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   },
   {
     "id": "cc6e856c-ac39-4962-ad8f-e31706683e49",
-    "text": "_Trang này không có nội dung văn bản hay ảnh dữ liệu._",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 3 - Key Support Functions for Insurer Success | Lesson: Lesson 3 - Legal and Compliance Functions | Source name: LOMA291_M3L3_Knowledge File_The Legal and Compliance Function | Definition: The key difference between the two functions. Legal provides advice on what the law says and represents the company. Compliance operationalizes legal and regulatory requirements into day-to-day business processes and monitors adherence. | Domain Tags: legal vs compliance, roles, responsibilities | Related Nodes: LOMA291_M3L3_KN_001, LOMA291_M3L3_KN_002 | Category: Core Concept | Node Name: Distinction between Legal and Compliance | Chunk Text Content: _Trang này không có nội dung văn bản hay ảnh dữ liệu._",
     "payload": {
       "chunk_index": 75,
       "total_chunks": 76,
@@ -2026,15 +2101,16 @@
       "category": "Core Concept",
       "node_name": "Distinction between Legal and Compliance",
       "node_id": 321,
-      "module": "3",
-      "lesson": "3",
       "course": "LOMA291",
       "previous": [
         "fa8900c4-94c9-44fe-9819-1393ca004d48",
         "dfc14b17-9bc4-4670-ad72-cea4a4d77c6a",
         "b0e23a2d-988a-4995-a867-c63b46b89ace"
       ],
-      "next": []
+      "next": [],
+      "module_number": 3,
+      "lesson_number": 3,
+      "summary": ""
     }
   }
 ]

@@ -30,6 +30,7 @@ NEIGHBOR_PREV_INDEX: int = -1  # phần tử cuối của list "previous" = chun
 NEIGHBOR_NEXT_INDEX: int = 0  # phần tử đầu của list "next"     = chunk liền sau
 INTENT_CORE_KNOWLEDGE: str = "core_knowledge"
 INTENT_OFF_TOPIC: str = "off_topic"
+OVERALL_CORE_KNOWLEDGE: str = "overall_core_knowledge"
 INTENT_QUIZ: str = "quiz"
 
 OFF_TOPIC_RESPONSE_MAP = {

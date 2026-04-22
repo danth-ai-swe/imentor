@@ -1,7 +1,7 @@
 [
   {
     "id": "bbea27ad-8c71-4a8d-94f0-b816b161f9a6",
-    "text": "Module 1: Managing the Company to Meet Stakeholder Needs... 2\nLesson 2: Insurance Company Management... 3\nLearning Objectives... 3\nPlanning and Organizing in an Insurance Company...4\nOrganizational Concepts and Directing... 17\nManagerial Roles...25\nFunctional Organization... 30",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: The management function that involves setting organizational goals and objectives and determining the best course of action to achieve them. | Domain Tags: planning, strategy, goal setting | Related Nodes: LOMA291_M1L2_KN_001 | Category: Management Function | Node Name: Planning | Chunk Text Content: Module 1: Managing the Company to Meet Stakeholder Needs... 2\nLesson 2: Insurance Company Management... 3\nLearning Objectives... 3\nPlanning and Organizing in an Insurance Company...4\nOrganizational Concepts and Directing... 17\nManagerial Roles...25\nFunctional Organization... 30",
     "payload": {
       "chunk_index": 0,
       "total_chunks": 89,
@@ -11,20 +11,21 @@
       "category": "Management Function",
       "node_name": "Planning",
       "node_id": 239,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [],
       "next": [
         "b5737175-f4f1-49e2-9c74-fbd04c6c60a6",
         "82eb69e4-03df-4025-9fc3-7a9d856cadf6",
         "825f4d86-304e-4246-8d25-ec1be076e4a9"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "b5737175-f4f1-49e2-9c74-fbd04c6c60a6",
-    "text": "Module 1: Managing the Company to\nMeet Stakeholder Needs\nAn insurer’s overall direction is determined by its executives, with\nguidance from the board of directors. In this module, we explore how an\ninsurer is organized and managed to balance the needs of a diverse set\nof stakeholder groups, and how an insurer manages the risk it must\ntake in order to earn a return.\nIn this module, you’ll learn about\n\nHow an insurer’s board and executives manage the company ethically",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: Module 1: Managing the Company to\nMeet Stakeholder Needs\nAn insurer’s overall direction is determined by its executives, with\nguidance from the board of directors. In this module, we explore how an\ninsurer is organized and managed to balance the needs of a diverse set\nof stakeholder groups, and how an insurer manages the risk it must\ntake in order to earn a return.\nIn this module, you’ll learn about\n\nHow an insurer’s board and executives manage the company ethically",
     "payload": {
       "chunk_index": 1,
       "total_chunks": 89,
@@ -34,8 +35,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "bbea27ad-8c71-4a8d-94f0-b816b161f9a6"
@@ -44,12 +43,15 @@
         "82eb69e4-03df-4025-9fc3-7a9d856cadf6",
         "825f4d86-304e-4246-8d25-ec1be076e4a9",
         "133362dd-1436-478c-8bd6-f9f8b59da47d"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "82eb69e4-03df-4025-9fc3-7a9d856cadf6",
-    "text": "\nHow an insurer’s board and executives manage the company ethically\nto meet the needs of various stakeholders\n\nThe ways an insurer can be organized for success\n\nHow an insurer manages the various risks it faces to earn an\nappropriate return",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: The management function of arranging resources—such as people, technology, and capital—and structuring tasks and responsibilities to carry out the organization's plans. | Domain Tags: organizing, organizational structure, resource allocation | Related Nodes: LOMA291_M1L2_KN_001, LOMA291_M1L2_KN_006 | Category: Management Function | Node Name: Organizing | Chunk Text Content: \nHow an insurer’s board and executives manage the company ethically\nto meet the needs of various stakeholders\n\nThe ways an insurer can be organized for success\n\nHow an insurer manages the various risks it faces to earn an\nappropriate return",
     "payload": {
       "chunk_index": 2,
       "total_chunks": 89,
@@ -59,8 +61,6 @@
       "category": "Management Function",
       "node_name": "Organizing",
       "node_id": 240,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "bbea27ad-8c71-4a8d-94f0-b816b161f9a6",
@@ -70,12 +70,15 @@
         "825f4d86-304e-4246-8d25-ec1be076e4a9",
         "133362dd-1436-478c-8bd6-f9f8b59da47d",
         "16e9ce18-d612-4896-b9c2-490fa9caabc8"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "825f4d86-304e-4246-8d25-ec1be076e4a9",
-    "text": "Lesson 2: Insurance Company Management\nWhat is management? It is generally described as consisting of four\nfunctions. Companies differ in how they approach the four functions of\nmanagement. Learn about the different ways to organize and run an\ninsurance company.\nLearning Objectives\n\nDescribe the four functions of management.\n\nRecognize typical functional areas for insurance operations, and\nclassify units as line or support functions.\n\nDescribe organizational concepts such as accountability, authority,",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: The core activities that constitute the practice of management within an organization. These functions are planning, organizing, directing (leading), and controlling. | Domain Tags: management, planning, organizing, directing, controlling | Related Nodes: LOMA291_M1L2_KN_002, LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_004, LOMA291_M1L2_KN_005 | Category: Management Principles | Node Name: Four Functions of Management | Chunk Text Content: Lesson 2: Insurance Company Management\nWhat is management? It is generally described as consisting of four\nfunctions. Companies differ in how they approach the four functions of\nmanagement. Learn about the different ways to organize and run an\ninsurance company.\nLearning Objectives\n\nDescribe the four functions of management.\n\nRecognize typical functional areas for insurance operations, and\nclassify units as line or support functions.\n\nDescribe organizational concepts such as accountability, authority,",
     "payload": {
       "chunk_index": 3,
       "total_chunks": 89,
@@ -85,8 +88,6 @@
       "category": "Management Principles",
       "node_name": "Four Functions of Management",
       "node_id": 238,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "bbea27ad-8c71-4a8d-94f0-b816b161f9a6",
@@ -97,12 +98,15 @@
         "133362dd-1436-478c-8bd6-f9f8b59da47d",
         "16e9ce18-d612-4896-b9c2-490fa9caabc8",
         "dea70140-6a8f-4723-9bc0-43e3dc78f8ea"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "133362dd-1436-478c-8bd6-f9f8b59da47d",
-    "text": "\nDescribe organizational concepts such as accountability, authority,\nchain of command, delegation, division of labor, and responsibility.\n\nCharacterize the distinct roles of executives, middle managers, and\nsupervisors.\n\nDescribe how financial services companies use function, product,\nterritory, customer, and distribution channel to structure their\norganization.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: \nDescribe organizational concepts such as accountability, authority,\nchain of command, delegation, division of labor, and responsibility.\n\nCharacterize the distinct roles of executives, middle managers, and\nsupervisors.\n\nDescribe how financial services companies use function, product,\nterritory, customer, and distribution channel to structure their\norganization.",
     "payload": {
       "chunk_index": 4,
       "total_chunks": 89,
@@ -112,8 +116,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "b5737175-f4f1-49e2-9c74-fbd04c6c60a6",
@@ -124,12 +126,15 @@
         "16e9ce18-d612-4896-b9c2-490fa9caabc8",
         "dea70140-6a8f-4723-9bc0-43e3dc78f8ea",
         "ea007ff8-0f76-4bd0-9340-d7b45c18cf35"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "16e9ce18-d612-4896-b9c2-490fa9caabc8",
-    "text": "Planning and Organizing in an Insurance\nCompany\nLearning Objectives\nDescribe the four functions of management.\nRecognize typical functional areas for insurance operations, and classify\nunits as line or support units.\nStart\nEvery company needs to define who's in charge and who performs what\ntasks. An organizational structure sets these rules and focuses different\nindividuals on one set of goals. But how do these rules apply to\nForthright…or to any company for that matter? It's easy to see the daily",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: The core activities that constitute the practice of management within an organization. These functions are planning, organizing, directing (leading), and controlling. | Domain Tags: management, planning, organizing, directing, controlling | Related Nodes: LOMA291_M1L2_KN_002, LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_004, LOMA291_M1L2_KN_005 | Category: Management Principles | Node Name: Four Functions of Management | Chunk Text Content: Planning and Organizing in an Insurance\nCompany\nLearning Objectives\nDescribe the four functions of management.\nRecognize typical functional areas for insurance operations, and classify\nunits as line or support units.\nStart\nEvery company needs to define who's in charge and who performs what\ntasks. An organizational structure sets these rules and focuses different\nindividuals on one set of goals. But how do these rules apply to\nForthright…or to any company for that matter? It's easy to see the daily",
     "payload": {
       "chunk_index": 5,
       "total_chunks": 89,
@@ -139,8 +144,6 @@
       "category": "Management Principles",
       "node_name": "Four Functions of Management",
       "node_id": 238,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "82eb69e4-03df-4025-9fc3-7a9d856cadf6",
@@ -151,12 +154,15 @@
         "dea70140-6a8f-4723-9bc0-43e3dc78f8ea",
         "ea007ff8-0f76-4bd0-9340-d7b45c18cf35",
         "d26d5f0c-9ee6-4fbd-b458-7c8f5f6757aa"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "dea70140-6a8f-4723-9bc0-43e3dc78f8ea",
-    "text": "Forthright…or to any company for that matter? It's easy to see the daily\ncontributions of employees like Todd and Rey, but how do leaders like the\nCEO and President contribute?\nLeaders have vast responsibility. Most managers have jam packed schedules\nfrom the time they walk into the office until the time they leave. The\nfunctions of management are important to company operations. After all,\nmanagement shapes an organization's vision. This involves planning for the",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: The core activities that constitute the practice of management within an organization. These functions are planning, organizing, directing (leading), and controlling. | Domain Tags: management, planning, organizing, directing, controlling | Related Nodes: LOMA291_M1L2_KN_002, LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_004, LOMA291_M1L2_KN_005 | Category: Management Principles | Node Name: Four Functions of Management | Chunk Text Content: Forthright…or to any company for that matter? It's easy to see the daily\ncontributions of employees like Todd and Rey, but how do leaders like the\nCEO and President contribute?\nLeaders have vast responsibility. Most managers have jam packed schedules\nfrom the time they walk into the office until the time they leave. The\nfunctions of management are important to company operations. After all,\nmanagement shapes an organization's vision. This involves planning for the",
     "payload": {
       "chunk_index": 6,
       "total_chunks": 89,
@@ -166,8 +172,6 @@
       "category": "Management Principles",
       "node_name": "Four Functions of Management",
       "node_id": 238,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "825f4d86-304e-4246-8d25-ec1be076e4a9",
@@ -178,12 +182,15 @@
         "ea007ff8-0f76-4bd0-9340-d7b45c18cf35",
         "d26d5f0c-9ee6-4fbd-b458-7c8f5f6757aa",
         "cbb85485-cc54-40c8-8585-32b9d760ff30"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "ea007ff8-0f76-4bd0-9340-d7b45c18cf35",
-    "text": "management shapes an organization's vision. This involves planning for the\nfuture, organizing personnel, directing work activity, and delegating duties.\nIn this lesson, we'll explore how different management functions help an\norganization run smoothly.\nOne approach to understanding management is to consider the four\nfunctions of management:\n\nPLANNING for desired outcomes",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: The core activities that constitute the practice of management within an organization. These functions are planning, organizing, directing (leading), and controlling. | Domain Tags: management, planning, organizing, directing, controlling | Related Nodes: LOMA291_M1L2_KN_002, LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_004, LOMA291_M1L2_KN_005 | Category: Management Principles | Node Name: Four Functions of Management | Chunk Text Content: management shapes an organization's vision. This involves planning for the\nfuture, organizing personnel, directing work activity, and delegating duties.\nIn this lesson, we'll explore how different management functions help an\norganization run smoothly.\nOne approach to understanding management is to consider the four\nfunctions of management:\n\nPLANNING for desired outcomes",
     "payload": {
       "chunk_index": 7,
       "total_chunks": 89,
@@ -193,8 +200,6 @@
       "category": "Management Principles",
       "node_name": "Four Functions of Management",
       "node_id": 238,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "133362dd-1436-478c-8bd6-f9f8b59da47d",
@@ -205,12 +210,15 @@
         "d26d5f0c-9ee6-4fbd-b458-7c8f5f6757aa",
         "cbb85485-cc54-40c8-8585-32b9d760ff30",
         "45ea52dd-1877-4b18-8818-e34facd82196"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "d26d5f0c-9ee6-4fbd-b458-7c8f5f6757aa",
-    "text": "\nORGANIZING tasks, employees, and other resources\n\nDIRECTING employees and other resources\n\nCONTROLLING work processes to ensure that actual results\ncorrespond to desired results\nWe'll start with planning.\nPlanning, Strategy, and Tactics\nWe all plan for the future and set goals, but not in the same elaborate way\nas large financial companies. A goal (A desired future outcome. Also called\nan objective) is a desired future outcome.\nPlanning (The process of preparing for the future by establishing",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: The core activities that constitute the practice of management within an organization. These functions are planning, organizing, directing (leading), and controlling. | Domain Tags: management, planning, organizing, directing, controlling | Related Nodes: LOMA291_M1L2_KN_002, LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_004, LOMA291_M1L2_KN_005 | Category: Management Principles | Node Name: Four Functions of Management | Chunk Text Content: \nORGANIZING tasks, employees, and other resources\n\nDIRECTING employees and other resources\n\nCONTROLLING work processes to ensure that actual results\ncorrespond to desired results\nWe'll start with planning.\nPlanning, Strategy, and Tactics\nWe all plan for the future and set goals, but not in the same elaborate way\nas large financial companies. A goal (A desired future outcome. Also called\nan objective) is a desired future outcome.\nPlanning (The process of preparing for the future by establishing",
     "payload": {
       "chunk_index": 8,
       "total_chunks": 89,
@@ -220,8 +228,6 @@
       "category": "Management Principles",
       "node_name": "Four Functions of Management",
       "node_id": 238,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "16e9ce18-d612-4896-b9c2-490fa9caabc8",
@@ -232,12 +238,15 @@
         "cbb85485-cc54-40c8-8585-32b9d760ff30",
         "45ea52dd-1877-4b18-8818-e34facd82196",
         "ad0cf32d-b8fd-49fd-bd40-c78e0d65748e"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "cbb85485-cc54-40c8-8585-32b9d760ff30",
-    "text": "Planning (The process of preparing for the future by establishing\nappropriate goals and formulating strategies and activities for achieving\nthose goals.) consists of identifying goals, and also the strategies and tactics\nthe company will use to achieve those goals.\n\nStrategies—long-term, high-level plans for achieving goals.\n\nTactics—activities to support strategies.\nBut who sets strategy and who sets tactics?",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: The management function that involves setting organizational goals and objectives and determining the best course of action to achieve them. | Domain Tags: planning, strategy, goal setting | Related Nodes: LOMA291_M1L2_KN_001 | Category: Management Function | Node Name: Planning | Chunk Text Content: Planning (The process of preparing for the future by establishing\nappropriate goals and formulating strategies and activities for achieving\nthose goals.) consists of identifying goals, and also the strategies and tactics\nthe company will use to achieve those goals.\n\nStrategies—long-term, high-level plans for achieving goals.\n\nTactics—activities to support strategies.\nBut who sets strategy and who sets tactics?",
     "payload": {
       "chunk_index": 9,
       "total_chunks": 89,
@@ -247,8 +256,6 @@
       "category": "Management Function",
       "node_name": "Planning",
       "node_id": 239,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "dea70140-6a8f-4723-9bc0-43e3dc78f8ea",
@@ -259,12 +266,15 @@
         "45ea52dd-1877-4b18-8818-e34facd82196",
         "ad0cf32d-b8fd-49fd-bd40-c78e0d65748e",
         "6587599c-affe-4629-8bfe-881f7af42573"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "45ea52dd-1877-4b18-8818-e34facd82196",
-    "text": "I set strategy. I'm an executive. To set strategy, executives consider the\ncompany's goals, resources, capabilities, and circumstances.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: The management function that involves setting organizational goals and objectives and determining the best course of action to achieve them. | Domain Tags: planning, strategy, goal setting | Related Nodes: LOMA291_M1L2_KN_001 | Category: Management Function | Node Name: Planning | Chunk Text Content: I set strategy. I'm an executive. To set strategy, executives consider the\ncompany's goals, resources, capabilities, and circumstances.",
     "payload": {
       "chunk_index": 10,
       "total_chunks": 89,
@@ -274,8 +284,6 @@
       "category": "Management Function",
       "node_name": "Planning",
       "node_id": 239,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "ea007ff8-0f76-4bd0-9340-d7b45c18cf35",
@@ -286,12 +294,15 @@
         "ad0cf32d-b8fd-49fd-bd40-c78e0d65748e",
         "6587599c-affe-4629-8bfe-881f7af42573",
         "c04716ee-0d99-45fe-a843-487d82413700"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "ad0cf32d-b8fd-49fd-bd40-c78e0d65748e",
-    "text": "Tactics are my business. I'm a middle manager. Tactics are the specific tasks\nand activities employees will perform to support the company's strategies\nand achieve its goals.\nOrganizing\nOrganizing (The management function of establishing authority,\nresponsibility, and accountability for accomplishing various company\nactivities, including assembling people and other company resources.) means\ndefining a structure for an organization to enable it to meet its goals.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: The management function of arranging resources—such as people, technology, and capital—and structuring tasks and responsibilities to carry out the organization's plans. | Domain Tags: organizing, organizational structure, resource allocation | Related Nodes: LOMA291_M1L2_KN_001, LOMA291_M1L2_KN_006 | Category: Management Function | Node Name: Organizing | Chunk Text Content: Tactics are my business. I'm a middle manager. Tactics are the specific tasks\nand activities employees will perform to support the company's strategies\nand achieve its goals.\nOrganizing\nOrganizing (The management function of establishing authority,\nresponsibility, and accountability for accomplishing various company\nactivities, including assembling people and other company resources.) means\ndefining a structure for an organization to enable it to meet its goals.",
     "payload": {
       "chunk_index": 11,
       "total_chunks": 89,
@@ -301,8 +312,6 @@
       "category": "Management Function",
       "node_name": "Organizing",
       "node_id": 240,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "d26d5f0c-9ee6-4fbd-b458-7c8f5f6757aa",
@@ -313,12 +322,15 @@
         "6587599c-affe-4629-8bfe-881f7af42573",
         "c04716ee-0d99-45fe-a843-487d82413700",
         "935bf604-bfc0-4858-a682-427c51e60fc9"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "6587599c-affe-4629-8bfe-881f7af42573",
-    "text": "defining a structure for an organization to enable it to meet its goals.\nCompanies do this by setting up specialized organizational units to perform\nwork activities.\nA distinct type of work is often called a function (A distinct type of work or\nan aspect of operations or management that requires specialized knowledge\nor technical skill.). So, when organized so that each unit performs a distinct\ntype of work, organizational units are often referred to as functional areas.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: defining a structure for an organization to enable it to meet its goals.\nCompanies do this by setting up specialized organizational units to perform\nwork activities.\nA distinct type of work is often called a function (A distinct type of work or\nan aspect of operations or management that requires specialized knowledge\nor technical skill.). So, when organized so that each unit performs a distinct\ntype of work, organizational units are often referred to as functional areas.",
     "payload": {
       "chunk_index": 12,
       "total_chunks": 89,
@@ -328,8 +340,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "cbb85485-cc54-40c8-8585-32b9d760ff30",
@@ -340,12 +350,15 @@
         "c04716ee-0d99-45fe-a843-487d82413700",
         "935bf604-bfc0-4858-a682-427c51e60fc9",
         "b96173d5-e8a6-4cf4-82a9-cf7858825184"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "c04716ee-0d99-45fe-a843-487d82413700",
-    "text": "The types of work done by the different functional areas are classified as\nline functions (A department or other organizational unit that produces or\nadministers products or services.) or support functions (A department or\nother organizational unit that provides support services to line functions or\nto other support functions but does not produce or administer products.\nAlso called a staff function.).\nForthright has a major division for each line function and structures work",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: Departments or roles within an insurer that are directly involved in achieving the company's core business objectives, such as creating, selling, or servicing insurance products. Examples include underwriting and claims. | Domain Tags: line unit, core operations, underwriting, claims | Related Nodes: LOMA291_M1L2_KN_006, LOMA291_M1L2_KN_008 | Category: Functional Area | Node Name: Line Functions | Chunk Text Content: The types of work done by the different functional areas are classified as\nline functions (A department or other organizational unit that produces or\nadministers products or services.) or support functions (A department or\nother organizational unit that provides support services to line functions or\nto other support functions but does not produce or administer products.\nAlso called a staff function.).\nForthright has a major division for each line function and structures work",
     "payload": {
       "chunk_index": 13,
       "total_chunks": 89,
@@ -355,8 +368,6 @@
       "category": "Functional Area",
       "node_name": "Line Functions",
       "node_id": 244,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "45ea52dd-1877-4b18-8818-e34facd82196",
@@ -367,12 +378,15 @@
         "935bf604-bfc0-4858-a682-427c51e60fc9",
         "b96173d5-e8a6-4cf4-82a9-cf7858825184",
         "b07d1680-90ee-439b-ae54-2eacbb499416"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "935bf604-bfc0-4858-a682-427c51e60fc9",
-    "text": "Forthright has a major division for each line function and structures work\nunits according to the work they perform. Classification of units as line or\nsupport functions—and reporting relationships between units—varies by",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: Departments or roles within an insurer that are directly involved in achieving the company's core business objectives, such as creating, selling, or servicing insurance products. Examples include underwriting and claims. | Domain Tags: line unit, core operations, underwriting, claims | Related Nodes: LOMA291_M1L2_KN_006, LOMA291_M1L2_KN_008 | Category: Functional Area | Node Name: Line Functions | Chunk Text Content: Forthright has a major division for each line function and structures work\nunits according to the work they perform. Classification of units as line or\nsupport functions—and reporting relationships between units—varies by",
     "payload": {
       "chunk_index": 14,
       "total_chunks": 89,
@@ -382,8 +396,6 @@
       "category": "Functional Area",
       "node_name": "Line Functions",
       "node_id": 244,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "ad0cf32d-b8fd-49fd-bd40-c78e0d65748e",
@@ -394,12 +406,15 @@
         "b96173d5-e8a6-4cf4-82a9-cf7858825184",
         "b07d1680-90ee-439b-ae54-2eacbb499416",
         "474f882c-e970-42e2-b88f-121669885e04"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "b96173d5-e8a6-4cf4-82a9-cf7858825184",
-    "text": "**[CHART]**\n\nCAPTION: This chart categorizes functional areas in an organization into line functions and support functions, highlighting their roles and alternative terms used.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: Departments or roles within an insurer that are directly involved in achieving the company's core business objectives, such as creating, selling, or servicing insurance products. Examples include underwriting and claims. | Domain Tags: line unit, core operations, underwriting, claims | Related Nodes: LOMA291_M1L2_KN_006, LOMA291_M1L2_KN_008 | Category: Functional Area | Node Name: Line Functions | Chunk Text Content: **[CHART]**\n\nCAPTION: This chart categorizes functional areas in an organization into line functions and support functions, highlighting their roles and alternative terms used.",
     "payload": {
       "chunk_index": 15,
       "total_chunks": 89,
@@ -409,8 +424,6 @@
       "category": "Functional Area",
       "node_name": "Line Functions",
       "node_id": 244,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "6587599c-affe-4629-8bfe-881f7af42573",
@@ -421,12 +434,15 @@
         "b07d1680-90ee-439b-ae54-2eacbb499416",
         "474f882c-e970-42e2-b88f-121669885e04",
         "870e4314-64c1-40d6-bd7d-a813afaf3fc3"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "b07d1680-90ee-439b-ae54-2eacbb499416",
-    "text": "ANALYSIS: The chart is a hierarchical diagram that visually organizes functional areas within an organization. It is divided into two main categories: \"Line Functions\" and \"Support Functions.\" Line Functions are described as those that produce or administer products and services, with alternative terms listed such as Strategic Business Units and profit centers. Support Functions are defined as those that support other units, with alternative terms including service departments and cost centers",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: Departments or roles within an insurer that are directly involved in achieving the company's core business objectives, such as creating, selling, or servicing insurance products. Examples include underwriting and claims. | Domain Tags: line unit, core operations, underwriting, claims | Related Nodes: LOMA291_M1L2_KN_006, LOMA291_M1L2_KN_008 | Category: Functional Area | Node Name: Line Functions | Chunk Text Content: ANALYSIS: The chart is a hierarchical diagram that visually organizes functional areas within an organization. It is divided into two main categories: \"Line Functions\" and \"Support Functions.\" Line Functions are described as those that produce or administer products and services, with alternative terms listed such as Strategic Business Units and profit centers. Support Functions are defined as those that support other units, with alternative terms including service departments and cost centers",
     "payload": {
       "chunk_index": 16,
       "total_chunks": 89,
@@ -436,8 +452,6 @@
       "category": "Functional Area",
       "node_name": "Line Functions",
       "node_id": 244,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "c04716ee-0d99-45fe-a843-487d82413700",
@@ -448,12 +462,15 @@
         "474f882c-e970-42e2-b88f-121669885e04",
         "870e4314-64c1-40d6-bd7d-a813afaf3fc3",
         "1c1b7e23-ee16-4e4b-9bcb-a52d9c205281"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "474f882c-e970-42e2-b88f-121669885e04",
-    "text": ". The chart emphasizes the distinction between functions that directly contribute to the core business operations and those that provide necessary support, illustrating the interconnectedness of various organizational roles. Key takeaways include the understanding of how different functions are categorized and the terminology used to describe them.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: Departments or roles within an insurer that provide specialized services and support to the line functions, enabling them to operate efficiently. Examples include Human Resources, IT, and Legal. | Domain Tags: support unit, staff unit, HR, IT, legal | Related Nodes: LOMA291_M1L2_KN_006, LOMA291_M1L2_KN_007 | Category: Functional Area | Node Name: Support Functions (Staff Functions) | Chunk Text Content: . The chart emphasizes the distinction between functions that directly contribute to the core business operations and those that provide necessary support, illustrating the interconnectedness of various organizational roles. Key takeaways include the understanding of how different functions are categorized and the terminology used to describe them.",
     "payload": {
       "chunk_index": 17,
       "total_chunks": 89,
@@ -463,8 +480,6 @@
       "category": "Functional Area",
       "node_name": "Support Functions (Staff Functions)",
       "node_id": 245,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "935bf604-bfc0-4858-a682-427c51e60fc9",
@@ -475,12 +490,15 @@
         "870e4314-64c1-40d6-bd7d-a813afaf3fc3",
         "1c1b7e23-ee16-4e4b-9bcb-a52d9c205281",
         "7766d4b5-f586-403e-ba01-00ff982cf376"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "870e4314-64c1-40d6-bd7d-a813afaf3fc3",
-    "text": "company. Notably, Investment and Actuarial may be classified as line or\nsupport functions.\nLine Functions in Insurance Companies\nUse the right arrows below to learn about the line functions each work unit\nperforms.\n\n**[CHART]**\n\nCAPTION: This organizational chart outlines the functional areas within an insurance company, highlighting key departments and their relationships.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: Departments or roles within an insurer that are directly involved in achieving the company's core business objectives, such as creating, selling, or servicing insurance products. Examples include underwriting and claims. | Domain Tags: line unit, core operations, underwriting, claims | Related Nodes: LOMA291_M1L2_KN_006, LOMA291_M1L2_KN_008 | Category: Functional Area | Node Name: Line Functions | Chunk Text Content: company. Notably, Investment and Actuarial may be classified as line or\nsupport functions.\nLine Functions in Insurance Companies\nUse the right arrows below to learn about the line functions each work unit\nperforms.\n\n**[CHART]**\n\nCAPTION: This organizational chart outlines the functional areas within an insurance company, highlighting key departments and their relationships.",
     "payload": {
       "chunk_index": 18,
       "total_chunks": 89,
@@ -490,8 +508,6 @@
       "category": "Functional Area",
       "node_name": "Line Functions",
       "node_id": 244,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "b96173d5-e8a6-4cf4-82a9-cf7858825184",
@@ -502,12 +518,15 @@
         "1c1b7e23-ee16-4e4b-9bcb-a52d9c205281",
         "7766d4b5-f586-403e-ba01-00ff982cf376",
         "7ca2a6a0-5cf8-4f69-bd7d-46def575431b"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "1c1b7e23-ee16-4e4b-9bcb-a52d9c205281",
-    "text": "ANALYSIS: The chart is a hierarchical organizational structure, illustrating the functional areas of an insurance company. At the top, \"Functional Areas\" branches into three main categories: \"Line Functions,\" \"Actuarial,\" and \"Investment.\" Under \"Line Functions,\" there are five subdivisions: \"Product Development,\" \"Distribution & Sales,\" \"Customer Service,\" \"Claims,\" and \"Marketing,\" which is positioned parallel to \"Underwriting & New Business\" and \"Reinsurance Administration\" under the Actuarial section",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: ANALYSIS: The chart is a hierarchical organizational structure, illustrating the functional areas of an insurance company. At the top, \"Functional Areas\" branches into three main categories: \"Line Functions,\" \"Actuarial,\" and \"Investment.\" Under \"Line Functions,\" there are five subdivisions: \"Product Development,\" \"Distribution & Sales,\" \"Customer Service,\" \"Claims,\" and \"Marketing,\" which is positioned parallel to \"Underwriting & New Business\" and \"Reinsurance Administration\" under the Actuarial section",
     "payload": {
       "chunk_index": 19,
       "total_chunks": 89,
@@ -517,8 +536,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "b07d1680-90ee-439b-ae54-2eacbb499416",
@@ -529,12 +546,15 @@
         "7766d4b5-f586-403e-ba01-00ff982cf376",
         "7ca2a6a0-5cf8-4f69-bd7d-46def575431b",
         "c1074b64-05b6-4055-9076-abe261556e41"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "7766d4b5-f586-403e-ba01-00ff982cf376",
-    "text": ". This layout emphasizes the interconnectedness of various departments, showcasing how they contribute to the overall operations of the company. The chart highlights the importance of both line functions and actuarial roles in driving business success, with a clear delineation of responsibilities across different areas.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: Departments or roles within an insurer that are directly involved in achieving the company's core business objectives, such as creating, selling, or servicing insurance products. Examples include underwriting and claims. | Domain Tags: line unit, core operations, underwriting, claims | Related Nodes: LOMA291_M1L2_KN_006, LOMA291_M1L2_KN_008 | Category: Functional Area | Node Name: Line Functions | Chunk Text Content: . This layout emphasizes the interconnectedness of various departments, showcasing how they contribute to the overall operations of the company. The chart highlights the importance of both line functions and actuarial roles in driving business success, with a clear delineation of responsibilities across different areas.",
     "payload": {
       "chunk_index": 20,
       "total_chunks": 89,
@@ -544,8 +564,6 @@
       "category": "Functional Area",
       "node_name": "Line Functions",
       "node_id": 244,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "474f882c-e970-42e2-b88f-121669885e04",
@@ -556,12 +574,15 @@
         "7ca2a6a0-5cf8-4f69-bd7d-46def575431b",
         "c1074b64-05b6-4055-9076-abe261556e41",
         "1fb56be7-e9c1-40d8-8d20-22269e551203"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "7ca2a6a0-5cf8-4f69-bd7d-46def575431b",
-    "text": "Product Development\nTakes new products from concept to launch\nDistribution and Sales\nOversees or performs the company's activities for making products\navailable for sale\nCustomer Service\nAssists customers and financial professionals by providing information,\nprocessing policy changes, administering financial transactions,\nmaintaining records, and in other ways\nClaims",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: Product Development\nTakes new products from concept to launch\nDistribution and Sales\nOversees or performs the company's activities for making products\navailable for sale\nCustomer Service\nAssists customers and financial professionals by providing information,\nprocessing policy changes, administering financial transactions,\nmaintaining records, and in other ways\nClaims",
     "payload": {
       "chunk_index": 21,
       "total_chunks": 89,
@@ -571,8 +592,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "870e4314-64c1-40d6-bd7d-a813afaf3fc3",
@@ -583,12 +602,15 @@
         "c1074b64-05b6-4055-9076-abe261556e41",
         "1fb56be7-e9c1-40d8-8d20-22269e551203",
         "c2a48168-e7de-4ae2-b183-262a15a241c5"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "c1074b64-05b6-4055-9076-abe261556e41",
-    "text": "Evaluates, processes, and pays claims for contractual benefits\nMarketing\nDefines who the company's customers are, what type of products it\nshould offer, and how it should bring its customers and products\ntogether\nUnderwriting and New Business\nAnalyzes the risk presented by insurance applicants to assign an\nappropriate premium rate classification; issues policies\nReinsurance Administration\nManages the insurance company's relations with reinsurance providers\nand files reinsurance claims\nActuarial",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: Departments or roles within an insurer that provide specialized services and support to the line functions, enabling them to operate efficiently. Examples include Human Resources, IT, and Legal. | Domain Tags: support unit, staff unit, HR, IT, legal | Related Nodes: LOMA291_M1L2_KN_006, LOMA291_M1L2_KN_007 | Category: Functional Area | Node Name: Support Functions (Staff Functions) | Chunk Text Content: Evaluates, processes, and pays claims for contractual benefits\nMarketing\nDefines who the company's customers are, what type of products it\nshould offer, and how it should bring its customers and products\ntogether\nUnderwriting and New Business\nAnalyzes the risk presented by insurance applicants to assign an\nappropriate premium rate classification; issues policies\nReinsurance Administration\nManages the insurance company's relations with reinsurance providers\nand files reinsurance claims\nActuarial",
     "payload": {
       "chunk_index": 22,
       "total_chunks": 89,
@@ -598,8 +620,6 @@
       "category": "Functional Area",
       "node_name": "Support Functions (Staff Functions)",
       "node_id": 245,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "1c1b7e23-ee16-4e4b-9bcb-a52d9c205281",
@@ -610,12 +630,15 @@
         "1fb56be7-e9c1-40d8-8d20-22269e551203",
         "c2a48168-e7de-4ae2-b183-262a15a241c5",
         "6d1bcfe9-0bed-4bc9-9f9e-3887436b83e4"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "1fb56be7-e9c1-40d8-8d20-22269e551203",
-    "text": "Performs numerous activities to ensure that the company conducts its\noperations on a financially sound basis\nInvestment Management\nManages the company's investable assets according to company\nguidelines\nSupport Functions in Insurance Companies\nRead below to learn about the support functions each work unit performs.\nAccounting and Financial Reporting\nMaintains the financial records of the company's businesses,\nprepares reports on the company's financial condition, and files",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: Departments or roles within an insurer that provide specialized services and support to the line functions, enabling them to operate efficiently. Examples include Human Resources, IT, and Legal. | Domain Tags: support unit, staff unit, HR, IT, legal | Related Nodes: LOMA291_M1L2_KN_006, LOMA291_M1L2_KN_007 | Category: Functional Area | Node Name: Support Functions (Staff Functions) | Chunk Text Content: Performs numerous activities to ensure that the company conducts its\noperations on a financially sound basis\nInvestment Management\nManages the company's investable assets according to company\nguidelines\nSupport Functions in Insurance Companies\nRead below to learn about the support functions each work unit performs.\nAccounting and Financial Reporting\nMaintains the financial records of the company's businesses,\nprepares reports on the company's financial condition, and files",
     "payload": {
       "chunk_index": 23,
       "total_chunks": 89,
@@ -625,8 +648,6 @@
       "category": "Functional Area",
       "node_name": "Support Functions (Staff Functions)",
       "node_id": 245,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "7766d4b5-f586-403e-ba01-00ff982cf376",
@@ -637,12 +658,15 @@
         "c2a48168-e7de-4ae2-b183-262a15a241c5",
         "6d1bcfe9-0bed-4bc9-9f9e-3887436b83e4",
         "829254ed-50a9-4a3d-b89d-6f24f392afea"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "c2a48168-e7de-4ae2-b183-262a15a241c5",
-    "text": "prepares reports on the company's financial condition, and files\nrequired financial statements with regulators",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: The management function that involves monitoring performance, comparing it against set goals, and taking corrective action as needed to ensure that objectives are met. | Domain Tags: controlling, performance management, monitoring | Related Nodes: LOMA291_M1L2_KN_001 | Category: Management Function | Node Name: Controlling | Chunk Text Content: prepares reports on the company's financial condition, and files\nrequired financial statements with regulators",
     "payload": {
       "chunk_index": 24,
       "total_chunks": 89,
@@ -652,8 +676,6 @@
       "category": "Management Function",
       "node_name": "Controlling",
       "node_id": 242,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "7ca2a6a0-5cf8-4f69-bd7d-46def575431b",
@@ -664,12 +686,15 @@
         "6d1bcfe9-0bed-4bc9-9f9e-3887436b83e4",
         "829254ed-50a9-4a3d-b89d-6f24f392afea",
         "b1c543a4-0ad1-4776-b262-32f7ed213c21"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "6d1bcfe9-0bed-4bc9-9f9e-3887436b83e4",
-    "text": "Corporate Communications\nPresents a consistent public image and message in all communications\non behalf of the company\nFinance\nMonitors the company's overall financial strength and performance\nand acquires or uses funds (capital) to help the company accomplish\nits strategic goals\nInformation Technology\nDevelops and maintains computer systems and oversees information\nmanagement\nRisk Management",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: Corporate Communications\nPresents a consistent public image and message in all communications\non behalf of the company\nFinance\nMonitors the company's overall financial strength and performance\nand acquires or uses funds (capital) to help the company accomplish\nits strategic goals\nInformation Technology\nDevelops and maintains computer systems and oversees information\nmanagement\nRisk Management",
     "payload": {
       "chunk_index": 25,
       "total_chunks": 89,
@@ -679,8 +704,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "c1074b64-05b6-4055-9076-abe261556e41",
@@ -691,12 +714,15 @@
         "829254ed-50a9-4a3d-b89d-6f24f392afea",
         "b1c543a4-0ad1-4776-b262-32f7ed213c21",
         "7082a390-0721-466b-acc6-8fb03d87aa69"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "829254ed-50a9-4a3d-b89d-6f24f392afea",
-    "text": "Coordinates the management of risk throughout the organization\nAudit\nPerforms examinations or reviews to verify the accuracy of procedures\nor records\nLegal and Compliance\nRepresents the company in all legal matters and ensures that the\ncompany's operations comply with all applicable laws and regulations\neverywhere the company operates\nHuman Resources\nManages employee hiring, training, development, evaluation,\ncompensation, benefit administration, and terminations\nTreasury",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: Departments or roles within an insurer that provide specialized services and support to the line functions, enabling them to operate efficiently. Examples include Human Resources, IT, and Legal. | Domain Tags: support unit, staff unit, HR, IT, legal | Related Nodes: LOMA291_M1L2_KN_006, LOMA291_M1L2_KN_007 | Category: Functional Area | Node Name: Support Functions (Staff Functions) | Chunk Text Content: Coordinates the management of risk throughout the organization\nAudit\nPerforms examinations or reviews to verify the accuracy of procedures\nor records\nLegal and Compliance\nRepresents the company in all legal matters and ensures that the\ncompany's operations comply with all applicable laws and regulations\neverywhere the company operates\nHuman Resources\nManages employee hiring, training, development, evaluation,\ncompensation, benefit administration, and terminations\nTreasury",
     "payload": {
       "chunk_index": 26,
       "total_chunks": 89,
@@ -706,8 +732,6 @@
       "category": "Functional Area",
       "node_name": "Support Functions (Staff Functions)",
       "node_id": 245,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "1fb56be7-e9c1-40d8-8d20-22269e551203",
@@ -718,12 +742,15 @@
         "b1c543a4-0ad1-4776-b262-32f7ed213c21",
         "7082a390-0721-466b-acc6-8fb03d87aa69",
         "476bd684-49b0-4ca9-84c2-830fcc308052"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "b1c543a4-0ad1-4776-b262-32f7ed213c21",
-    "text": "Manages cash and near-cash assets\n1. Thompson considers the company's goals, resources, capabilities, and\ncircumstances to develop long-term, high-level plans. Thompson is\nmost likely\nAn executive\nA middle manager\nAn executive\nThompson is most likely an executive. Executives set strategy. Middle\nmanagers focus on tactics, which are the activities that support the overall\nstrategy.\n2. Sal helps maintain financial records, prepare reports on the",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: The management function that involves setting organizational goals and objectives and determining the best course of action to achieve them. | Domain Tags: planning, strategy, goal setting | Related Nodes: LOMA291_M1L2_KN_001 | Category: Management Function | Node Name: Planning | Chunk Text Content: Manages cash and near-cash assets\n1. Thompson considers the company's goals, resources, capabilities, and\ncircumstances to develop long-term, high-level plans. Thompson is\nmost likely\nAn executive\nA middle manager\nAn executive\nThompson is most likely an executive. Executives set strategy. Middle\nmanagers focus on tactics, which are the activities that support the overall\nstrategy.\n2. Sal helps maintain financial records, prepare reports on the",
     "payload": {
       "chunk_index": 27,
       "total_chunks": 89,
@@ -733,8 +760,6 @@
       "category": "Management Function",
       "node_name": "Planning",
       "node_id": 239,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "c2a48168-e7de-4ae2-b183-262a15a241c5",
@@ -745,12 +770,15 @@
         "7082a390-0721-466b-acc6-8fb03d87aa69",
         "476bd684-49b0-4ca9-84c2-830fcc308052",
         "f6d1e25a-64e9-44d0-9ed6-b4d8c057e7ae"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "7082a390-0721-466b-acc6-8fb03d87aa69",
-    "text": "strategy.\n2. Sal helps maintain financial records, prepare reports on the\ncompany's financial condition, and file required financial statements.\nSal most likely works in which functional area?\nAccounting and Financial Reporting\nAudit\nRisk Management\nLegal and Compliance",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: Departments or roles within an insurer that are directly involved in achieving the company's core business objectives, such as creating, selling, or servicing insurance products. Examples include underwriting and claims. | Domain Tags: line unit, core operations, underwriting, claims | Related Nodes: LOMA291_M1L2_KN_006, LOMA291_M1L2_KN_008 | Category: Functional Area | Node Name: Line Functions | Chunk Text Content: strategy.\n2. Sal helps maintain financial records, prepare reports on the\ncompany's financial condition, and file required financial statements.\nSal most likely works in which functional area?\nAccounting and Financial Reporting\nAudit\nRisk Management\nLegal and Compliance",
     "payload": {
       "chunk_index": 28,
       "total_chunks": 89,
@@ -760,8 +788,6 @@
       "category": "Functional Area",
       "node_name": "Line Functions",
       "node_id": 244,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "6d1bcfe9-0bed-4bc9-9f9e-3887436b83e4",
@@ -772,12 +798,15 @@
         "476bd684-49b0-4ca9-84c2-830fcc308052",
         "f6d1e25a-64e9-44d0-9ed6-b4d8c057e7ae",
         "6df5df3b-30de-4eef-9c2a-dd7a65b8de3e"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "476bd684-49b0-4ca9-84c2-830fcc308052",
-    "text": "Accounting and Financial Reporting\nAccounting and Financial Reporting is the functional area that maintains\nfinancial records, prepares reports on the company's financial condition,\nand files required financial statements.\n3. Rodney works in an area that comes up with product ideas and then\ntakes those ideas all the way through creation and launch. Rodney\nprobably works in which functional area?\nActuarial\nUnderwriting and New Business\nMarketing\nProduct Development\nProduct Development",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: Departments or roles within an insurer that are directly involved in achieving the company's core business objectives, such as creating, selling, or servicing insurance products. Examples include underwriting and claims. | Domain Tags: line unit, core operations, underwriting, claims | Related Nodes: LOMA291_M1L2_KN_006, LOMA291_M1L2_KN_008 | Category: Functional Area | Node Name: Line Functions | Chunk Text Content: Accounting and Financial Reporting\nAccounting and Financial Reporting is the functional area that maintains\nfinancial records, prepares reports on the company's financial condition,\nand files required financial statements.\n3. Rodney works in an area that comes up with product ideas and then\ntakes those ideas all the way through creation and launch. Rodney\nprobably works in which functional area?\nActuarial\nUnderwriting and New Business\nMarketing\nProduct Development\nProduct Development",
     "payload": {
       "chunk_index": 29,
       "total_chunks": 89,
@@ -787,8 +816,6 @@
       "category": "Functional Area",
       "node_name": "Line Functions",
       "node_id": 244,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "829254ed-50a9-4a3d-b89d-6f24f392afea",
@@ -799,12 +826,15 @@
         "f6d1e25a-64e9-44d0-9ed6-b4d8c057e7ae",
         "6df5df3b-30de-4eef-9c2a-dd7a65b8de3e",
         "716c3e73-b986-4288-9f73-bd1ac051c6a7"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "f6d1e25a-64e9-44d0-9ed6-b4d8c057e7ae",
-    "text": "Actuarial\nUnderwriting and New Business\nMarketing\nProduct Development\nProduct Development\nProduct Development is the functional area that takes new products from\nconcept to launch.\n4. Which of the following are line functions? Choose all that apply.\nProduct Development\nMarketing",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: Departments or roles within an insurer that are directly involved in achieving the company's core business objectives, such as creating, selling, or servicing insurance products. Examples include underwriting and claims. | Domain Tags: line unit, core operations, underwriting, claims | Related Nodes: LOMA291_M1L2_KN_006, LOMA291_M1L2_KN_008 | Category: Functional Area | Node Name: Line Functions | Chunk Text Content: Actuarial\nUnderwriting and New Business\nMarketing\nProduct Development\nProduct Development\nProduct Development is the functional area that takes new products from\nconcept to launch.\n4. Which of the following are line functions? Choose all that apply.\nProduct Development\nMarketing",
     "payload": {
       "chunk_index": 30,
       "total_chunks": 89,
@@ -814,8 +844,6 @@
       "category": "Functional Area",
       "node_name": "Line Functions",
       "node_id": 244,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "b1c543a4-0ad1-4776-b262-32f7ed213c21",
@@ -826,12 +854,15 @@
         "6df5df3b-30de-4eef-9c2a-dd7a65b8de3e",
         "716c3e73-b986-4288-9f73-bd1ac051c6a7",
         "5cda5d47-6958-474e-83de-63da065efda6"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "6df5df3b-30de-4eef-9c2a-dd7a65b8de3e",
-    "text": "Corporate Communications\nTreasury\nCustomer Service\nUnderwriting and New Business\nAudit\nAccounting and Financial Reporting\nProduct Development\nMarketing\nCustomer Service\nUnderwriting and New Business\nMajor line functions—such as Product Development, Marketing, Customer\nService, and Underwriting and New Business—produce and administer\nproducts. Support functions support each other and the line functions.\nOrganizational Concepts and Directing\nLearning Objective",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: Departments or roles within an insurer that are directly involved in achieving the company's core business objectives, such as creating, selling, or servicing insurance products. Examples include underwriting and claims. | Domain Tags: line unit, core operations, underwriting, claims | Related Nodes: LOMA291_M1L2_KN_006, LOMA291_M1L2_KN_008 | Category: Functional Area | Node Name: Line Functions | Chunk Text Content: Corporate Communications\nTreasury\nCustomer Service\nUnderwriting and New Business\nAudit\nAccounting and Financial Reporting\nProduct Development\nMarketing\nCustomer Service\nUnderwriting and New Business\nMajor line functions—such as Product Development, Marketing, Customer\nService, and Underwriting and New Business—produce and administer\nproducts. Support functions support each other and the line functions.\nOrganizational Concepts and Directing\nLearning Objective",
     "payload": {
       "chunk_index": 31,
       "total_chunks": 89,
@@ -841,8 +872,6 @@
       "category": "Functional Area",
       "node_name": "Line Functions",
       "node_id": 244,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "7082a390-0721-466b-acc6-8fb03d87aa69",
@@ -853,12 +882,15 @@
         "716c3e73-b986-4288-9f73-bd1ac051c6a7",
         "5cda5d47-6958-474e-83de-63da065efda6",
         "9b7f4875-ae0d-4ddb-b49e-dbc1e07de62b"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "716c3e73-b986-4288-9f73-bd1ac051c6a7",
-    "text": "Organizational Concepts and Directing\nLearning Objective\nDescribe organizational concepts such as accountability, authority, chain of\ncommand, delegation, division of labor, and responsibility.\nForthright uses organizational structure to",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: The management function that involves influencing, guiding, and motivating employees to perform their tasks and work towards achieving the organization's goals. | Domain Tags: directing, leading, motivation, communication | Related Nodes: LOMA291_M1L2_KN_001 | Category: Management Function | Node Name: Directing (Leading) | Chunk Text Content: Organizational Concepts and Directing\nLearning Objective\nDescribe organizational concepts such as accountability, authority, chain of\ncommand, delegation, division of labor, and responsibility.\nForthright uses organizational structure to",
     "payload": {
       "chunk_index": 32,
       "total_chunks": 89,
@@ -868,8 +900,6 @@
       "category": "Management Function",
       "node_name": "Directing (Leading)",
       "node_id": 241,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "476bd684-49b0-4ca9-84c2-830fcc308052",
@@ -880,12 +910,15 @@
         "5cda5d47-6958-474e-83de-63da065efda6",
         "9b7f4875-ae0d-4ddb-b49e-dbc1e07de62b",
         "9abaab89-9a8c-45b3-8f55-b7d34b41ed77"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "5cda5d47-6958-474e-83de-63da065efda6",
-    "text": "\nDefine employees' primary duties and formal rights to direct the\ncompany's resources by specifying authority (The right to direct\nresources, including people.), responsibility (An assigned duty or task.),\nand accountability (The duty to answer for one's own actions.)\n\nDefine divisions, departments, and job positions\nAn organization chart (A visual display of the lines of authority and\nresponsibility within a company. )—also known as an org chart—is a visual",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: \nDefine employees' primary duties and formal rights to direct the\ncompany's resources by specifying authority (The right to direct\nresources, including people.), responsibility (An assigned duty or task.),\nand accountability (The duty to answer for one's own actions.)\n\nDefine divisions, departments, and job positions\nAn organization chart (A visual display of the lines of authority and\nresponsibility within a company. )—also known as an org chart—is a visual",
     "payload": {
       "chunk_index": 33,
       "total_chunks": 89,
@@ -895,8 +928,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "f6d1e25a-64e9-44d0-9ed6-b4d8c057e7ae",
@@ -907,12 +938,15 @@
         "9b7f4875-ae0d-4ddb-b49e-dbc1e07de62b",
         "9abaab89-9a8c-45b3-8f55-b7d34b41ed77",
         "1ab54a57-7db0-45e0-b08e-9634d55539bc"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "9b7f4875-ae0d-4ddb-b49e-dbc1e07de62b",
-    "text": "responsibility within a company. )—also known as an org chart—is a visual\ndisplay of the lines of authority and responsibility within a company.\nHere's a mystery: Why is the classic org chart shaped like a pyramid—\nnarrow at the top and wide at the bottom?\nAn org chart illustrates how authority flows from top management down to\nnon-managerial employees. Typically, a company has more non-managerial",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: responsibility within a company. )—also known as an org chart—is a visual\ndisplay of the lines of authority and responsibility within a company.\nHere's a mystery: Why is the classic org chart shaped like a pyramid—\nnarrow at the top and wide at the bottom?\nAn org chart illustrates how authority flows from top management down to\nnon-managerial employees. Typically, a company has more non-managerial",
     "payload": {
       "chunk_index": 34,
       "total_chunks": 89,
@@ -922,8 +956,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "6df5df3b-30de-4eef-9c2a-dd7a65b8de3e",
@@ -934,12 +966,15 @@
         "9abaab89-9a8c-45b3-8f55-b7d34b41ed77",
         "1ab54a57-7db0-45e0-b08e-9634d55539bc",
         "e7d30139-5f61-4235-af41-863acfacfa5c"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "9abaab89-9a8c-45b3-8f55-b7d34b41ed77",
-    "text": "employees than management employees, which makes the org chart wider\nat the bottom than at the top.\nDirecting\nDirecting (The management function of ensuring that employees perform\nthe appropriate activities in the appropriate fashion to achieve company\nobjectives.) involves ensuring that employees perform the right activities in\nthe right way. Managerial activities of directing include\n\nLeading\n\nMotivating\n\nSupervising\n\nCommunicating\n\nFacilitating\nChain of Command",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: The management function that involves influencing, guiding, and motivating employees to perform their tasks and work towards achieving the organization's goals. | Domain Tags: directing, leading, motivation, communication | Related Nodes: LOMA291_M1L2_KN_001 | Category: Management Function | Node Name: Directing (Leading) | Chunk Text Content: employees than management employees, which makes the org chart wider\nat the bottom than at the top.\nDirecting\nDirecting (The management function of ensuring that employees perform\nthe appropriate activities in the appropriate fashion to achieve company\nobjectives.) involves ensuring that employees perform the right activities in\nthe right way. Managerial activities of directing include\n\nLeading\n\nMotivating\n\nSupervising\n\nCommunicating\n\nFacilitating\nChain of Command",
     "payload": {
       "chunk_index": 35,
       "total_chunks": 89,
@@ -949,8 +984,6 @@
       "category": "Management Function",
       "node_name": "Directing (Leading)",
       "node_id": 241,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "716c3e73-b986-4288-9f73-bd1ac051c6a7",
@@ -961,12 +994,15 @@
         "1ab54a57-7db0-45e0-b08e-9634d55539bc",
         "e7d30139-5f61-4235-af41-863acfacfa5c",
         "b716b4d9-5876-440c-bb6d-62718e1bb354"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "1ab54a57-7db0-45e0-b08e-9634d55539bc",
-    "text": "\nLeading\n\nMotivating\n\nSupervising\n\nCommunicating\n\nFacilitating\nChain of Command\nIn a pyramid-shaped organization, authority starts at the top with one\nperson or a very few people and flows down through a chain of command\n(A hierarchy of authority in an organization, starting at the top with one\nperson or a very few people and distributed downward from the higher\nlevels to the lower levels. Also known as hierarchy; hierarchy of authority.)\nto ever-larger numbers of people.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: The management function that involves influencing, guiding, and motivating employees to perform their tasks and work towards achieving the organization's goals. | Domain Tags: directing, leading, motivation, communication | Related Nodes: LOMA291_M1L2_KN_001 | Category: Management Function | Node Name: Directing (Leading) | Chunk Text Content: \nLeading\n\nMotivating\n\nSupervising\n\nCommunicating\n\nFacilitating\nChain of Command\nIn a pyramid-shaped organization, authority starts at the top with one\nperson or a very few people and flows down through a chain of command\n(A hierarchy of authority in an organization, starting at the top with one\nperson or a very few people and distributed downward from the higher\nlevels to the lower levels. Also known as hierarchy; hierarchy of authority.)\nto ever-larger numbers of people.",
     "payload": {
       "chunk_index": 36,
       "total_chunks": 89,
@@ -976,8 +1012,6 @@
       "category": "Management Function",
       "node_name": "Directing (Leading)",
       "node_id": 241,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "5cda5d47-6958-474e-83de-63da065efda6",
@@ -988,12 +1022,15 @@
         "e7d30139-5f61-4235-af41-863acfacfa5c",
         "b716b4d9-5876-440c-bb6d-62718e1bb354",
         "7359f8c0-efc2-4c23-b0f7-39f93c5ebcec"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "e7d30139-5f61-4235-af41-863acfacfa5c",
-    "text": "to ever-larger numbers of people.\nDifferent companies take different approaches to chains of command. In\nvertical (An organization with a long chain of command and a narrow span\nof control.) organizations, the chain of command is long, and the span of\ncontrol (The number of people or functions over which an employee has",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: to ever-larger numbers of people.\nDifferent companies take different approaches to chains of command. In\nvertical (An organization with a long chain of command and a narrow span\nof control.) organizations, the chain of command is long, and the span of\ncontrol (The number of people or functions over which an employee has",
     "payload": {
       "chunk_index": 37,
       "total_chunks": 89,
@@ -1003,8 +1040,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "9b7f4875-ae0d-4ddb-b49e-dbc1e07de62b",
@@ -1015,12 +1050,15 @@
         "b716b4d9-5876-440c-bb6d-62718e1bb354",
         "7359f8c0-efc2-4c23-b0f7-39f93c5ebcec",
         "20d3f196-e88d-45a4-a40c-9d39cad71d8c"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "b716b4d9-5876-440c-bb6d-62718e1bb354",
-    "text": "authority. )—that is, the number of people or functions over which an\nemployee has authority—is narrow.\nClick or touch in the boxes below to learn about potential benefits and\ndrawbacks of a vertical organizational structure.\nVertical Organization Benefits\nBenefits often attributed to vertical organizations include\n\nWell-defined roles\n\nSmooth processes\n\nEasy supervision\n\n**[CHART]**",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: authority. )—that is, the number of people or functions over which an\nemployee has authority—is narrow.\nClick or touch in the boxes below to learn about potential benefits and\ndrawbacks of a vertical organizational structure.\nVertical Organization Benefits\nBenefits often attributed to vertical organizations include\n\nWell-defined roles\n\nSmooth processes\n\nEasy supervision\n\n**[CHART]**",
     "payload": {
       "chunk_index": 38,
       "total_chunks": 89,
@@ -1030,8 +1068,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "9abaab89-9a8c-45b3-8f55-b7d34b41ed77",
@@ -1042,12 +1078,15 @@
         "7359f8c0-efc2-4c23-b0f7-39f93c5ebcec",
         "20d3f196-e88d-45a4-a40c-9d39cad71d8c",
         "431f247f-9864-4a64-844b-dc4e91d8a748"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "7359f8c0-efc2-4c23-b0f7-39f93c5ebcec",
-    "text": "**[CHART]**\n\nCAPTION: This organizational chart illustrates a hierarchical structure with many layers of authority and a narrow span of control.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: **[CHART]**\n\nCAPTION: This organizational chart illustrates a hierarchical structure with many layers of authority and a narrow span of control.",
     "payload": {
       "chunk_index": 39,
       "total_chunks": 89,
@@ -1057,8 +1096,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "1ab54a57-7db0-45e0-b08e-9634d55539bc",
@@ -1069,12 +1106,15 @@
         "20d3f196-e88d-45a4-a40c-9d39cad71d8c",
         "431f247f-9864-4a64-844b-dc4e91d8a748",
         "9a2c8525-cef9-43af-9ef0-4d2387e408a8"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "20d3f196-e88d-45a4-a40c-9d39cad71d8c",
-    "text": "ANALYSIS: The chart is a hierarchical organizational structure, depicted as a pyramid with multiple layers. The vertical axis represents levels of authority, starting from a single individual at the top, indicating the highest level of management. As you move down, the number of individuals increases, showcasing a broad base of employees at the bottom",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: ANALYSIS: The chart is a hierarchical organizational structure, depicted as a pyramid with multiple layers. The vertical axis represents levels of authority, starting from a single individual at the top, indicating the highest level of management. As you move down, the number of individuals increases, showcasing a broad base of employees at the bottom",
     "payload": {
       "chunk_index": 40,
       "total_chunks": 89,
@@ -1084,8 +1124,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "e7d30139-5f61-4235-af41-863acfacfa5c",
@@ -1096,12 +1134,15 @@
         "431f247f-9864-4a64-844b-dc4e91d8a748",
         "9a2c8525-cef9-43af-9ef0-4d2387e408a8",
         "d606507e-4cfe-424e-9577-cf624ce4e00b"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "431f247f-9864-4a64-844b-dc4e91d8a748",
-    "text": ". The left side of the chart highlights \"Many layers of authority,\" suggesting a complex chain of command, while the right side notes \"Narrow span of control,\" indicating that each manager oversees a limited number of subordinates. This structure may lead to slower decision-making due to the multiple layers involved, but it can also provide clear lines of authority and responsibility",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: . The left side of the chart highlights \"Many layers of authority,\" suggesting a complex chain of command, while the right side notes \"Narrow span of control,\" indicating that each manager oversees a limited number of subordinates. This structure may lead to slower decision-making due to the multiple layers involved, but it can also provide clear lines of authority and responsibility",
     "payload": {
       "chunk_index": 41,
       "total_chunks": 89,
@@ -1111,8 +1152,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "b716b4d9-5876-440c-bb6d-62718e1bb354",
@@ -1123,12 +1162,15 @@
         "9a2c8525-cef9-43af-9ef0-4d2387e408a8",
         "d606507e-4cfe-424e-9577-cf624ce4e00b",
         "6ece85a8-0682-4a45-a48d-aea8c4cae14c"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "9a2c8525-cef9-43af-9ef0-4d2387e408a8",
-    "text": ". Key takeaways include the emphasis on hierarchy and the potential implications for management efficiency and employee oversight.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: . Key takeaways include the emphasis on hierarchy and the potential implications for management efficiency and employee oversight.",
     "payload": {
       "chunk_index": 42,
       "total_chunks": 89,
@@ -1138,8 +1180,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "7359f8c0-efc2-4c23-b0f7-39f93c5ebcec",
@@ -1150,12 +1190,15 @@
         "d606507e-4cfe-424e-9577-cf624ce4e00b",
         "6ece85a8-0682-4a45-a48d-aea8c4cae14c",
         "37772513-c544-438f-9449-ddf164c67a03"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "d606507e-4cfe-424e-9577-cf624ce4e00b",
-    "text": "Vertical Organization Drawbacks\nVertical organizations sometimes face criticism for the following perceived\ndrawbacks:\n\nDecisions must move through multiple rungs\n\nOpen communication is less likely, so silos (Operational unit that\noperates in isolation from other operating units, not understanding\nhow their jobs relate to other operational units or how corporate goals\nrelate to their jobs.) are more likely\n\nEmployees may feel discouraged from sharing creative solutions to\nproblems",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: Vertical Organization Drawbacks\nVertical organizations sometimes face criticism for the following perceived\ndrawbacks:\n\nDecisions must move through multiple rungs\n\nOpen communication is less likely, so silos (Operational unit that\noperates in isolation from other operating units, not understanding\nhow their jobs relate to other operational units or how corporate goals\nrelate to their jobs.) are more likely\n\nEmployees may feel discouraged from sharing creative solutions to\nproblems",
     "payload": {
       "chunk_index": 43,
       "total_chunks": 89,
@@ -1165,8 +1208,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "20d3f196-e88d-45a4-a40c-9d39cad71d8c",
@@ -1177,12 +1218,15 @@
         "6ece85a8-0682-4a45-a48d-aea8c4cae14c",
         "37772513-c544-438f-9449-ddf164c67a03",
         "7bb60af9-69ac-44fd-8ca2-e6d226171387"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "6ece85a8-0682-4a45-a48d-aea8c4cae14c",
-    "text": "\nEmployees may feel discouraged from sharing creative solutions to\nproblems\nIn flat organizations (An organization with a short chain of command and a\nwide span of control. Also called a horizontal organization.) (also called\nhorizontal organizations), the chain of command is short, and the span of\ncontrol is wide.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: \nEmployees may feel discouraged from sharing creative solutions to\nproblems\nIn flat organizations (An organization with a short chain of command and a\nwide span of control. Also called a horizontal organization.) (also called\nhorizontal organizations), the chain of command is short, and the span of\ncontrol is wide.",
     "payload": {
       "chunk_index": 44,
       "total_chunks": 89,
@@ -1192,8 +1236,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "431f247f-9864-4a64-844b-dc4e91d8a748",
@@ -1204,12 +1246,15 @@
         "37772513-c544-438f-9449-ddf164c67a03",
         "7bb60af9-69ac-44fd-8ca2-e6d226171387",
         "ef37d5dd-7c5c-4cc8-935d-06496518d05a"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "37772513-c544-438f-9449-ddf164c67a03",
-    "text": "Click or touch in the boxes below to learn about potential benefits and\ndrawbacks of a flat organizational structure.\nFlat Organization Benefits\nFlat organizations are often said to have the following advantages:\n\nLimited bureaucracy, which leads to faster decision-making\n\nOpen communication\n\nCross-functional teamwork\nFlat Organization Drawbacks\nPerceived disadvantages of flat organization include\n\nUndefined roles\n\nUnclear processes\n\nDifficulty holding employees accountable for results",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: Click or touch in the boxes below to learn about potential benefits and\ndrawbacks of a flat organizational structure.\nFlat Organization Benefits\nFlat organizations are often said to have the following advantages:\n\nLimited bureaucracy, which leads to faster decision-making\n\nOpen communication\n\nCross-functional teamwork\nFlat Organization Drawbacks\nPerceived disadvantages of flat organization include\n\nUndefined roles\n\nUnclear processes\n\nDifficulty holding employees accountable for results",
     "payload": {
       "chunk_index": 45,
       "total_chunks": 89,
@@ -1219,8 +1264,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "9a2c8525-cef9-43af-9ef0-4d2387e408a8",
@@ -1231,12 +1274,15 @@
         "7bb60af9-69ac-44fd-8ca2-e6d226171387",
         "ef37d5dd-7c5c-4cc8-935d-06496518d05a",
         "7445ad6b-50f9-4bde-9911-97becd992a6a"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "7bb60af9-69ac-44fd-8ca2-e6d226171387",
-    "text": "\nUndefined roles\n\nUnclear processes\n\nDifficulty holding employees accountable for results\nIn addition, a flat structure isn't always practical for large companies.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: \nUndefined roles\n\nUnclear processes\n\nDifficulty holding employees accountable for results\nIn addition, a flat structure isn't always practical for large companies.",
     "payload": {
       "chunk_index": 46,
       "total_chunks": 89,
@@ -1246,8 +1292,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "d606507e-4cfe-424e-9577-cf624ce4e00b",
@@ -1258,12 +1302,15 @@
         "ef37d5dd-7c5c-4cc8-935d-06496518d05a",
         "7445ad6b-50f9-4bde-9911-97becd992a6a",
         "84c567e2-68e0-409d-84ff-dc351a537147"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "ef37d5dd-7c5c-4cc8-935d-06496518d05a",
-    "text": "**[CHART]**\n\nCAPTION: This organizational chart illustrates a structure with few layers of authority and a wide span of control.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: **[CHART]**\n\nCAPTION: This organizational chart illustrates a structure with few layers of authority and a wide span of control.",
     "payload": {
       "chunk_index": 47,
       "total_chunks": 89,
@@ -1273,8 +1320,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "6ece85a8-0682-4a45-a48d-aea8c4cae14c",
@@ -1285,12 +1330,15 @@
         "7445ad6b-50f9-4bde-9911-97becd992a6a",
         "84c567e2-68e0-409d-84ff-dc351a537147",
         "aa6ac869-2ca9-411d-b563-957b4aae667b"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "7445ad6b-50f9-4bde-9911-97becd992a6a",
-    "text": "ANALYSIS: The chart is a hierarchical organizational structure, depicted with a top-down approach. At the top, there is a single figure representing a leader or manager, indicating a flat management style. Below this leader, there are two subordinate figures, each overseeing multiple individuals, which emphasizes a wide span of control. The few layers of authority suggest a streamlined decision-making process, allowing for quicker communication and potentially more agile operations",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: ANALYSIS: The chart is a hierarchical organizational structure, depicted with a top-down approach. At the top, there is a single figure representing a leader or manager, indicating a flat management style. Below this leader, there are two subordinate figures, each overseeing multiple individuals, which emphasizes a wide span of control. The few layers of authority suggest a streamlined decision-making process, allowing for quicker communication and potentially more agile operations",
     "payload": {
       "chunk_index": 48,
       "total_chunks": 89,
@@ -1300,8 +1348,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "37772513-c544-438f-9449-ddf164c67a03",
@@ -1312,12 +1358,15 @@
         "84c567e2-68e0-409d-84ff-dc351a537147",
         "aa6ac869-2ca9-411d-b563-957b4aae667b",
         "e1b99628-4256-4c71-8ea5-e7db598e3ff1"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "84c567e2-68e0-409d-84ff-dc351a537147",
-    "text": ". The overall design highlights the efficiency of having fewer management levels, which can lead to increased employee autonomy and faster response times within the organization.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: . The overall design highlights the efficiency of having fewer management levels, which can lead to increased employee autonomy and faster response times within the organization.",
     "payload": {
       "chunk_index": 49,
       "total_chunks": 89,
@@ -1327,8 +1376,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "7bb60af9-69ac-44fd-8ca2-e6d226171387",
@@ -1339,12 +1386,15 @@
         "aa6ac869-2ca9-411d-b563-957b4aae667b",
         "e1b99628-4256-4c71-8ea5-e7db598e3ff1",
         "0ba2f309-b31a-46ec-9964-4a82cc6ed074"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "aa6ac869-2ca9-411d-b563-957b4aae667b",
-    "text": "Companies' chains of command are based on their business needs and\ncompany culture, with many operating somewhere between vertical and\nflat.\nThe nature of an organization's chain of command determines how\ndelegation (The process of assigning responsibility and authority to another\nemployee.) and division of labor (The process of dividing large tasks into\nsmaller functional components.)\nare handled in that organization.\n\nDelegation is assigning responsibility and authority to other",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: Companies' chains of command are based on their business needs and\ncompany culture, with many operating somewhere between vertical and\nflat.\nThe nature of an organization's chain of command determines how\ndelegation (The process of assigning responsibility and authority to another\nemployee.) and division of labor (The process of dividing large tasks into\nsmaller functional components.)\nare handled in that organization.\n\nDelegation is assigning responsibility and authority to other",
     "payload": {
       "chunk_index": 50,
       "total_chunks": 89,
@@ -1354,8 +1404,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "ef37d5dd-7c5c-4cc8-935d-06496518d05a",
@@ -1366,12 +1414,15 @@
         "e1b99628-4256-4c71-8ea5-e7db598e3ff1",
         "0ba2f309-b31a-46ec-9964-4a82cc6ed074",
         "58726fb9-f501-4c55-bc57-193f1fd22a37"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "e1b99628-4256-4c71-8ea5-e7db598e3ff1",
-    "text": "are handled in that organization.\n\nDelegation is assigning responsibility and authority to other\nemployees—generally to employees lower in the chain of command.\n\nDivision of labor is dividing large tasks into smaller components that\ncan be assigned to different employees.\nTrue or false?\n1. Authority refers to each employee's duty to answer for his own\nactions.\nTrue\nFalse\nFalse",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: are handled in that organization.\n\nDelegation is assigning responsibility and authority to other\nemployees—generally to employees lower in the chain of command.\n\nDivision of labor is dividing large tasks into smaller components that\ncan be assigned to different employees.\nTrue or false?\n1. Authority refers to each employee's duty to answer for his own\nactions.\nTrue\nFalse\nFalse",
     "payload": {
       "chunk_index": 51,
       "total_chunks": 89,
@@ -1381,8 +1432,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "7445ad6b-50f9-4bde-9911-97becd992a6a",
@@ -1393,12 +1442,15 @@
         "0ba2f309-b31a-46ec-9964-4a82cc6ed074",
         "58726fb9-f501-4c55-bc57-193f1fd22a37",
         "53f41ce0-7fb5-4d19-9a9d-c52b1431c661"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "0ba2f309-b31a-46ec-9964-4a82cc6ed074",
-    "text": "Authority refers to the right to direct resources, including people.\nAccountability refers to each employee's duty to answer for his own actions.\n2. Derek works for a small company as a software developer. He and\neight other software developers report to Liam, who is the director of\nproduct. Liam reports to the head of the company. Derek works in a\ncompany with a\nVertical organizational structure\nFlat organizational structure\nFlat organizational structure",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: Authority refers to the right to direct resources, including people.\nAccountability refers to each employee's duty to answer for his own actions.\n2. Derek works for a small company as a software developer. He and\neight other software developers report to Liam, who is the director of\nproduct. Liam reports to the head of the company. Derek works in a\ncompany with a\nVertical organizational structure\nFlat organizational structure\nFlat organizational structure",
     "payload": {
       "chunk_index": 52,
       "total_chunks": 89,
@@ -1408,8 +1460,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "84c567e2-68e0-409d-84ff-dc351a537147",
@@ -1420,12 +1470,15 @@
         "58726fb9-f501-4c55-bc57-193f1fd22a37",
         "53f41ce0-7fb5-4d19-9a9d-c52b1431c661",
         "4654100f-7655-4825-ab76-916c486c51c3"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "58726fb9-f501-4c55-bc57-193f1fd22a37",
-    "text": "Vertical organizational structure\nFlat organizational structure\nFlat organizational structure\nDerek works for a company with a flat organizational structure. The\ncompany has a relatively short chain of command and Liam has a relatively\nwide span of control.\n3. Delegation refers to which of the following concepts?\nThe process of dividing large tasks into smaller functional components\nThe hierarchy of authority in an organization\nThe process of assigning responsibility and authority to another\nemployee",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: Vertical organizational structure\nFlat organizational structure\nFlat organizational structure\nDerek works for a company with a flat organizational structure. The\ncompany has a relatively short chain of command and Liam has a relatively\nwide span of control.\n3. Delegation refers to which of the following concepts?\nThe process of dividing large tasks into smaller functional components\nThe hierarchy of authority in an organization\nThe process of assigning responsibility and authority to another\nemployee",
     "payload": {
       "chunk_index": 53,
       "total_chunks": 89,
@@ -1435,8 +1488,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "aa6ac869-2ca9-411d-b563-957b4aae667b",
@@ -1447,12 +1498,15 @@
         "53f41ce0-7fb5-4d19-9a9d-c52b1431c661",
         "4654100f-7655-4825-ab76-916c486c51c3",
         "78ac694d-9b37-4624-9407-a796160e83a9"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "53f41ce0-7fb5-4d19-9a9d-c52b1431c661",
-    "text": "The process of assigning responsibility and authority to another\nemployee\nThe process of assigning responsibility and authority to another employee\nThe process of assigning responsibility and authority to another employee is\ndelegation.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: The specific sets of behaviors and responsibilities associated with a management position, which can be categorized into interpersonal, informational, and decisional roles. | Domain Tags: management roles, leadership | Related Nodes: LOMA291_M1L2_KN_001 | Category: Management Principles | Node Name: Managerial Roles | Chunk Text Content: The process of assigning responsibility and authority to another\nemployee\nThe process of assigning responsibility and authority to another employee\nThe process of assigning responsibility and authority to another employee is\ndelegation.",
     "payload": {
       "chunk_index": 54,
       "total_chunks": 89,
@@ -1462,8 +1516,6 @@
       "category": "Management Principles",
       "node_name": "Managerial Roles",
       "node_id": 246,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "e1b99628-4256-4c71-8ea5-e7db598e3ff1",
@@ -1474,12 +1526,15 @@
         "4654100f-7655-4825-ab76-916c486c51c3",
         "78ac694d-9b37-4624-9407-a796160e83a9",
         "e698f96a-4408-402e-b8cd-3f16a9cec97b"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "4654100f-7655-4825-ab76-916c486c51c3",
-    "text": "Managerial Roles\nLearning Objective\nCharacterize the distinct roles of executives, middle managers, and\nsupervisors.\nNow that we have introduced the functions of management, let's discuss the\ndifferent levels of management. A typical organization's management\nconsists of executives, middle managers, and supervisors.\nEach level of management serves a unique purpose. Any manager at any\nlevel will normally wear more than one hat and perform more than just",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: The specific sets of behaviors and responsibilities associated with a management position, which can be categorized into interpersonal, informational, and decisional roles. | Domain Tags: management roles, leadership | Related Nodes: LOMA291_M1L2_KN_001 | Category: Management Principles | Node Name: Managerial Roles | Chunk Text Content: Managerial Roles\nLearning Objective\nCharacterize the distinct roles of executives, middle managers, and\nsupervisors.\nNow that we have introduced the functions of management, let's discuss the\ndifferent levels of management. A typical organization's management\nconsists of executives, middle managers, and supervisors.\nEach level of management serves a unique purpose. Any manager at any\nlevel will normally wear more than one hat and perform more than just",
     "payload": {
       "chunk_index": 55,
       "total_chunks": 89,
@@ -1489,8 +1544,6 @@
       "category": "Management Principles",
       "node_name": "Managerial Roles",
       "node_id": 246,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "0ba2f309-b31a-46ec-9964-4a82cc6ed074",
@@ -1501,12 +1554,15 @@
         "78ac694d-9b37-4624-9407-a796160e83a9",
         "e698f96a-4408-402e-b8cd-3f16a9cec97b",
         "5d944f87-562c-4755-942d-2adb21a8fe1f"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "78ac694d-9b37-4624-9407-a796160e83a9",
-    "text": "level will normally wear more than one hat and perform more than just\none function. Let's look at the differences in the jobs of these managers.\nExecutive Officers\nThe management domain of executives is sometimes called strategic\nmanagement (The top level of management.)\nExecutives (also known as officers, or senior-level managers) perform\nstrategic planning (Setting long-term corporate goals and the broad, overall\ncourses of action to achieve these goals. )—setting major long-term",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: The management function that involves setting organizational goals and objectives and determining the best course of action to achieve them. | Domain Tags: planning, strategy, goal setting | Related Nodes: LOMA291_M1L2_KN_001 | Category: Management Function | Node Name: Planning | Chunk Text Content: level will normally wear more than one hat and perform more than just\none function. Let's look at the differences in the jobs of these managers.\nExecutive Officers\nThe management domain of executives is sometimes called strategic\nmanagement (The top level of management.)\nExecutives (also known as officers, or senior-level managers) perform\nstrategic planning (Setting long-term corporate goals and the broad, overall\ncourses of action to achieve these goals. )—setting major long-term",
     "payload": {
       "chunk_index": 56,
       "total_chunks": 89,
@@ -1516,8 +1572,6 @@
       "category": "Management Function",
       "node_name": "Planning",
       "node_id": 239,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "58726fb9-f501-4c55-bc57-193f1fd22a37",
@@ -1528,12 +1582,15 @@
         "e698f96a-4408-402e-b8cd-3f16a9cec97b",
         "5d944f87-562c-4755-942d-2adb21a8fe1f",
         "d1b3a66a-48bb-4d1a-8a77-a2af41982fc9"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "e698f96a-4408-402e-b8cd-3f16a9cec97b",
-    "text": "courses of action to achieve these goals. )—setting major long-term\ncorporate goals and broad approaches to achieve them.\nA company's executives and officers are the chief executive officer, president,\nother chief officers, vice presidents, and any other individuals appointed as\nofficers by the board of directors.\nCommon Executive Positions",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: The management function that involves setting organizational goals and objectives and determining the best course of action to achieve them. | Domain Tags: planning, strategy, goal setting | Related Nodes: LOMA291_M1L2_KN_001 | Category: Management Function | Node Name: Planning | Chunk Text Content: courses of action to achieve these goals. )—setting major long-term\ncorporate goals and broad approaches to achieve them.\nA company's executives and officers are the chief executive officer, president,\nother chief officers, vice presidents, and any other individuals appointed as\nofficers by the board of directors.\nCommon Executive Positions",
     "payload": {
       "chunk_index": 57,
       "total_chunks": 89,
@@ -1543,8 +1600,6 @@
       "category": "Management Function",
       "node_name": "Planning",
       "node_id": 239,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "53f41ce0-7fb5-4d19-9a9d-c52b1431c661",
@@ -1555,12 +1610,15 @@
         "5d944f87-562c-4755-942d-2adb21a8fe1f",
         "d1b3a66a-48bb-4d1a-8a77-a2af41982fc9",
         "89ccf660-d1b9-4375-92de-b78f128118af"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "5d944f87-562c-4755-942d-2adb21a8fe1f",
-    "text": "Companies can have any number of executive titles depending on their\nbusiness needs, but most companies have about five or fewer. Some common\nexecutive positions include the ones below. Click or touch the arrows to see\nthem all.\nChief Operating Officer (COO)\nThe executive in charge of all day-to-day company operations",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: Companies can have any number of executive titles depending on their\nbusiness needs, but most companies have about five or fewer. Some common\nexecutive positions include the ones below. Click or touch the arrows to see\nthem all.\nChief Operating Officer (COO)\nThe executive in charge of all day-to-day company operations",
     "payload": {
       "chunk_index": 58,
       "total_chunks": 89,
@@ -1570,8 +1628,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "4654100f-7655-4825-ab76-916c486c51c3",
@@ -1582,12 +1638,15 @@
         "d1b3a66a-48bb-4d1a-8a77-a2af41982fc9",
         "89ccf660-d1b9-4375-92de-b78f128118af",
         "a73b84f5-18ab-409b-bd1b-2275fcbbb19c"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "d1b3a66a-48bb-4d1a-8a77-a2af41982fc9",
-    "text": "Chief Financial Officer (CFO)\nThe executive in charge of financial operations\nChief Technology Officer (CTO)\nThe executive in charge of the company's external technology strategy\nChief Information Officer\nThe executive in charge of the internal use of information and\ntechnology\nChief Marketing Officer",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: Chief Financial Officer (CFO)\nThe executive in charge of financial operations\nChief Technology Officer (CTO)\nThe executive in charge of the company's external technology strategy\nChief Information Officer\nThe executive in charge of the internal use of information and\ntechnology\nChief Marketing Officer",
     "payload": {
       "chunk_index": 59,
       "total_chunks": 89,
@@ -1597,8 +1656,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "78ac694d-9b37-4624-9407-a796160e83a9",
@@ -1609,12 +1666,15 @@
         "89ccf660-d1b9-4375-92de-b78f128118af",
         "a73b84f5-18ab-409b-bd1b-2275fcbbb19c",
         "f2d69ddc-bbea-40c1-8743-6aaa7ba429f6"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "89ccf660-d1b9-4375-92de-b78f128118af",
-    "text": "The executive in charge of marketing and communications to\ncustomers, clients, and/or partners\nGeneral Counsel\nThe attorney who heads the legal and compliance functions\nSome officer positions—for example, Appointed Actuary or Certifying\nCompliance Officer—are required by regulation or statute.\nMiddle Managers\nMiddle managers supervise other managers and report to other managers.\nMiddle management determines how to accomplish the specific tasks for\ncarrying out the organization's strategic plans.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: The executive in charge of marketing and communications to\ncustomers, clients, and/or partners\nGeneral Counsel\nThe attorney who heads the legal and compliance functions\nSome officer positions—for example, Appointed Actuary or Certifying\nCompliance Officer—are required by regulation or statute.\nMiddle Managers\nMiddle managers supervise other managers and report to other managers.\nMiddle management determines how to accomplish the specific tasks for\ncarrying out the organization's strategic plans.",
     "payload": {
       "chunk_index": 60,
       "total_chunks": 89,
@@ -1624,8 +1684,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "e698f96a-4408-402e-b8cd-3f16a9cec97b",
@@ -1636,12 +1694,15 @@
         "a73b84f5-18ab-409b-bd1b-2275fcbbb19c",
         "f2d69ddc-bbea-40c1-8743-6aaa7ba429f6",
         "cee3b101-a136-4f83-8211-faa82e963386"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "a73b84f5-18ab-409b-bd1b-2275fcbbb19c",
-    "text": "carrying out the organization's strategic plans.\nMiddle management performs operational planning (Creating plans for\nday-to-day operations designed to support the organization's strategic\nplans. Also known as tactical planning.) (also known as tactical planning)—\ntranslating strategic-level plans into plans for day-to-day tactical\noperations within their units.\nSupervisors\nSupervisors (also known as first-level managers) directly supervise non-",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: The management function that involves setting organizational goals and objectives and determining the best course of action to achieve them. | Domain Tags: planning, strategy, goal setting | Related Nodes: LOMA291_M1L2_KN_001 | Category: Management Function | Node Name: Planning | Chunk Text Content: carrying out the organization's strategic plans.\nMiddle management performs operational planning (Creating plans for\nday-to-day operations designed to support the organization's strategic\nplans. Also known as tactical planning.) (also known as tactical planning)—\ntranslating strategic-level plans into plans for day-to-day tactical\noperations within their units.\nSupervisors\nSupervisors (also known as first-level managers) directly supervise non-",
     "payload": {
       "chunk_index": 61,
       "total_chunks": 89,
@@ -1651,8 +1712,6 @@
       "category": "Management Function",
       "node_name": "Planning",
       "node_id": 239,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "5d944f87-562c-4755-942d-2adb21a8fe1f",
@@ -1663,12 +1722,15 @@
         "f2d69ddc-bbea-40c1-8743-6aaa7ba429f6",
         "cee3b101-a136-4f83-8211-faa82e963386",
         "cea0a55a-49f5-4753-bd3a-e2f2c9ad58dc"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "f2d69ddc-bbea-40c1-8743-6aaa7ba429f6",
-    "text": "Supervisors\nSupervisors (also known as first-level managers) directly supervise non-\nmanagement employees and report to middle management employees.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: The management function that involves influencing, guiding, and motivating employees to perform their tasks and work towards achieving the organization's goals. | Domain Tags: directing, leading, motivation, communication | Related Nodes: LOMA291_M1L2_KN_001 | Category: Management Function | Node Name: Directing (Leading) | Chunk Text Content: Supervisors\nSupervisors (also known as first-level managers) directly supervise non-\nmanagement employees and report to middle management employees.",
     "payload": {
       "chunk_index": 62,
       "total_chunks": 89,
@@ -1678,8 +1740,6 @@
       "category": "Management Function",
       "node_name": "Directing (Leading)",
       "node_id": 241,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "d1b3a66a-48bb-4d1a-8a77-a2af41982fc9",
@@ -1690,12 +1750,15 @@
         "cee3b101-a136-4f83-8211-faa82e963386",
         "cea0a55a-49f5-4753-bd3a-e2f2c9ad58dc",
         "c177a2af-2094-42c4-9409-e682aa3d3e70"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "cee3b101-a136-4f83-8211-faa82e963386",
-    "text": "Supervisors manage the smallest units of the organization and implement\ntactical plans.\nSupervisors practice operational (tactical) management.\nListen as an expert explains the difference between strategic and\noperational management.\nTrue or false?\n1. Operational planning consists of setting long-term corporate goals\nand the broad courses of action for achieving them.\nTrue\nFalse\nFalse\nThe planning described is strategic planning. Operational planning is",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: The management function that involves setting organizational goals and objectives and determining the best course of action to achieve them. | Domain Tags: planning, strategy, goal setting | Related Nodes: LOMA291_M1L2_KN_001 | Category: Management Function | Node Name: Planning | Chunk Text Content: Supervisors manage the smallest units of the organization and implement\ntactical plans.\nSupervisors practice operational (tactical) management.\nListen as an expert explains the difference between strategic and\noperational management.\nTrue or false?\n1. Operational planning consists of setting long-term corporate goals\nand the broad courses of action for achieving them.\nTrue\nFalse\nFalse\nThe planning described is strategic planning. Operational planning is",
     "payload": {
       "chunk_index": 63,
       "total_chunks": 89,
@@ -1705,8 +1768,6 @@
       "category": "Management Function",
       "node_name": "Planning",
       "node_id": 239,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "89ccf660-d1b9-4375-92de-b78f128118af",
@@ -1717,12 +1778,15 @@
         "cea0a55a-49f5-4753-bd3a-e2f2c9ad58dc",
         "c177a2af-2094-42c4-9409-e682aa3d3e70",
         "762ae4af-f57d-4a67-ac7d-88bc993619f3"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "cea0a55a-49f5-4753-bd3a-e2f2c9ad58dc",
-    "text": "True\nFalse\nFalse\nThe planning described is strategic planning. Operational planning is\ntranslating strategic plans into plans for everyday operations.\n2. Anya recently received a promotion to claims supervisor. Anya is likely\nto be responsible for which of the following duties? Choose all that\napply.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: The management function that involves setting organizational goals and objectives and determining the best course of action to achieve them. | Domain Tags: planning, strategy, goal setting | Related Nodes: LOMA291_M1L2_KN_001 | Category: Management Function | Node Name: Planning | Chunk Text Content: True\nFalse\nFalse\nThe planning described is strategic planning. Operational planning is\ntranslating strategic plans into plans for everyday operations.\n2. Anya recently received a promotion to claims supervisor. Anya is likely\nto be responsible for which of the following duties? Choose all that\napply.",
     "payload": {
       "chunk_index": 64,
       "total_chunks": 89,
@@ -1732,8 +1796,6 @@
       "category": "Management Function",
       "node_name": "Planning",
       "node_id": 239,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "a73b84f5-18ab-409b-bd1b-2275fcbbb19c",
@@ -1744,12 +1806,15 @@
         "c177a2af-2094-42c4-9409-e682aa3d3e70",
         "762ae4af-f57d-4a67-ac7d-88bc993619f3",
         "138efa16-bb7c-4a6f-b9bf-6daa55767c37"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "c177a2af-2094-42c4-9409-e682aa3d3e70",
-    "text": "Reporting to middle management\nTranslating policy and strategic plans into tactical plans\nDirectly supervising non-management employees\nImplementing tactical plans\nSetting strategic policy and making strategic plans\nReporting to middle management\nDirectly supervising non-management employees\nImplementing tactical plans\nAs a supervisor, Anya likely reports to middle management, supervises non-\nmanagement employees, and implements tactical plans. Anya is probably",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: The management function that involves setting organizational goals and objectives and determining the best course of action to achieve them. | Domain Tags: planning, strategy, goal setting | Related Nodes: LOMA291_M1L2_KN_001 | Category: Management Function | Node Name: Planning | Chunk Text Content: Reporting to middle management\nTranslating policy and strategic plans into tactical plans\nDirectly supervising non-management employees\nImplementing tactical plans\nSetting strategic policy and making strategic plans\nReporting to middle management\nDirectly supervising non-management employees\nImplementing tactical plans\nAs a supervisor, Anya likely reports to middle management, supervises non-\nmanagement employees, and implements tactical plans. Anya is probably",
     "payload": {
       "chunk_index": 65,
       "total_chunks": 89,
@@ -1759,8 +1824,6 @@
       "category": "Management Function",
       "node_name": "Planning",
       "node_id": 239,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "f2d69ddc-bbea-40c1-8743-6aaa7ba429f6",
@@ -1771,12 +1834,15 @@
         "762ae4af-f57d-4a67-ac7d-88bc993619f3",
         "138efa16-bb7c-4a6f-b9bf-6daa55767c37",
         "005cd121-c660-4c48-b691-a24c0b31cf07"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "762ae4af-f57d-4a67-ac7d-88bc993619f3",
-    "text": "management employees, and implements tactical plans. Anya is probably\nnot responsible for setting strategic policy (executives) or for translating\npolicy and strategic plans into tactical plans (middle management).\nFunctional Organization\nLearning Objective\nDescribe how financial services companies use function, product, territory, customer,\nand distribution channel to structure their organization.\nCompanies can choose from among several types of organizational structures. In fact,",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: management employees, and implements tactical plans. Anya is probably\nnot responsible for setting strategic policy (executives) or for translating\npolicy and strategic plans into tactical plans (middle management).\nFunctional Organization\nLearning Objective\nDescribe how financial services companies use function, product, territory, customer,\nand distribution channel to structure their organization.\nCompanies can choose from among several types of organizational structures. In fact,",
     "payload": {
       "chunk_index": 66,
       "total_chunks": 89,
@@ -1786,8 +1852,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "cee3b101-a136-4f83-8211-faa82e963386",
@@ -1798,12 +1862,15 @@
         "138efa16-bb7c-4a6f-b9bf-6daa55767c37",
         "005cd121-c660-4c48-b691-a24c0b31cf07",
         "1a2ba534-b069-423a-8d4c-1cd58a765b0b"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "138efa16-bb7c-4a6f-b9bf-6daa55767c37",
-    "text": "Companies can choose from among several types of organizational structures. In fact,\nmost financial services companies combine two or more organizational approaches.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: Companies can choose from among several types of organizational structures. In fact,\nmost financial services companies combine two or more organizational approaches.",
     "payload": {
       "chunk_index": 67,
       "total_chunks": 89,
@@ -1813,8 +1880,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "cea0a55a-49f5-4753-bd3a-e2f2c9ad58dc",
@@ -1825,12 +1890,15 @@
         "005cd121-c660-4c48-b691-a24c0b31cf07",
         "1a2ba534-b069-423a-8d4c-1cd58a765b0b",
         "6bd40b5b-c6c5-47a6-bae3-055fe0abf83b"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "005cd121-c660-4c48-b691-a24c0b31cf07",
-    "text": "One way to organize a company's operations is organization by functional area—\nillustrated in this figure.\nWith organization by product (An organizational structure which arranges a company's\nmajor divisions according to the company's product lines.), each division focuses on a\nproduct line.\n\n**[CHART]**\n\nCAPTION: Organizational structure of Forthright Financial, highlighting its key divisions.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: One way to organize a company's operations is organization by functional area—\nillustrated in this figure.\nWith organization by product (An organizational structure which arranges a company's\nmajor divisions according to the company's product lines.), each division focuses on a\nproduct line.\n\n**[CHART]**\n\nCAPTION: Organizational structure of Forthright Financial, highlighting its key divisions.",
     "payload": {
       "chunk_index": 68,
       "total_chunks": 89,
@@ -1840,8 +1908,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "c177a2af-2094-42c4-9409-e682aa3d3e70",
@@ -1852,12 +1918,15 @@
         "1a2ba534-b069-423a-8d4c-1cd58a765b0b",
         "6bd40b5b-c6c5-47a6-bae3-055fe0abf83b",
         "ad34bec5-81f3-49b4-a0e5-437503f0fe7e"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "1a2ba534-b069-423a-8d4c-1cd58a765b0b",
-    "text": "ANALYSIS: The chart is a hierarchical organizational structure diagram representing Forthright Financial. It features a top-down layout with \"Forthright Financial\" at the top, indicating the parent company. Below it, \"Administration\" is centrally positioned, suggesting it plays a crucial role in the company's operations. The two branches extending from Administration are \"Marketing & Sales\" on the left and \"Financial & Investments\" on the right, indicating the primary functional areas of the organization",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: ANALYSIS: The chart is a hierarchical organizational structure diagram representing Forthright Financial. It features a top-down layout with \"Forthright Financial\" at the top, indicating the parent company. Below it, \"Administration\" is centrally positioned, suggesting it plays a crucial role in the company's operations. The two branches extending from Administration are \"Marketing & Sales\" on the left and \"Financial & Investments\" on the right, indicating the primary functional areas of the organization",
     "payload": {
       "chunk_index": 69,
       "total_chunks": 89,
@@ -1867,8 +1936,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "762ae4af-f57d-4a67-ac7d-88bc993619f3",
@@ -1879,12 +1946,15 @@
         "6bd40b5b-c6c5-47a6-bae3-055fe0abf83b",
         "ad34bec5-81f3-49b4-a0e5-437503f0fe7e",
         "bf0eae98-89ed-47a0-870b-c8bc173c49ad"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "6bd40b5b-c6c5-47a6-bae3-055fe0abf83b",
-    "text": ". This structure emphasizes the importance of both marketing and financial management in the company's strategy, showcasing a balanced approach to business operations.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: . This structure emphasizes the importance of both marketing and financial management in the company's strategy, showcasing a balanced approach to business operations.",
     "payload": {
       "chunk_index": 70,
       "total_chunks": 89,
@@ -1894,8 +1964,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "138efa16-bb7c-4a6f-b9bf-6daa55767c37",
@@ -1906,12 +1974,15 @@
         "ad34bec5-81f3-49b4-a0e5-437503f0fe7e",
         "bf0eae98-89ed-47a0-870b-c8bc173c49ad",
         "295fa836-5cd8-40c4-8133-29ed991dea74"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "ad34bec5-81f3-49b4-a0e5-437503f0fe7e",
-    "text": "With organization by territory (An organizational structure which arranges a\ncompany's major divisions according to the geographic areas in which it operates.),\neach division serves a certain geographic area.\n\n**[CHART]**\n\nCAPTION: Organizational structure of Forthright Financial, detailing its divisions and departments.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: With organization by territory (An organizational structure which arranges a\ncompany's major divisions according to the geographic areas in which it operates.),\neach division serves a certain geographic area.\n\n**[CHART]**\n\nCAPTION: Organizational structure of Forthright Financial, detailing its divisions and departments.",
     "payload": {
       "chunk_index": 71,
       "total_chunks": 89,
@@ -1921,8 +1992,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "005cd121-c660-4c48-b691-a24c0b31cf07",
@@ -1933,12 +2002,15 @@
         "bf0eae98-89ed-47a0-870b-c8bc173c49ad",
         "295fa836-5cd8-40c4-8133-29ed991dea74",
         "537e58fd-8794-4689-8985-a518b3b6ea42"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "bf0eae98-89ed-47a0-870b-c8bc173c49ad",
-    "text": "ANALYSIS: The chart is an organizational structure diagram representing Forthright Financial",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: ANALYSIS: The chart is an organizational structure diagram representing Forthright Financial",
     "payload": {
       "chunk_index": 72,
       "total_chunks": 89,
@@ -1948,8 +2020,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "1a2ba534-b069-423a-8d4c-1cd58a765b0b",
@@ -1960,12 +2030,15 @@
         "295fa836-5cd8-40c4-8133-29ed991dea74",
         "537e58fd-8794-4689-8985-a518b3b6ea42",
         "d8ff9661-e8d4-4393-8178-e74c85bff6bc"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "295fa836-5cd8-40c4-8133-29ed991dea74",
-    "text": ". It is divided into two main branches: \"Annuities & Life Insurance\" and \"Property & Casualty Insurance.\" Each branch further splits into three departments: \"Marketing & Sales,\" \"Administration,\" and \"Financial & Investments.\" The layout indicates a clear hierarchical structure, with each division having its own specialized functions, suggesting a focus on both operational efficiency and targeted service delivery in the financial sector",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: . It is divided into two main branches: \"Annuities & Life Insurance\" and \"Property & Casualty Insurance.\" Each branch further splits into three departments: \"Marketing & Sales,\" \"Administration,\" and \"Financial & Investments.\" The layout indicates a clear hierarchical structure, with each division having its own specialized functions, suggesting a focus on both operational efficiency and targeted service delivery in the financial sector",
     "payload": {
       "chunk_index": 73,
       "total_chunks": 89,
@@ -1975,8 +2048,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "6bd40b5b-c6c5-47a6-bae3-055fe0abf83b",
@@ -1987,12 +2058,15 @@
         "537e58fd-8794-4689-8985-a518b3b6ea42",
         "d8ff9661-e8d4-4393-8178-e74c85bff6bc",
         "86f9ca07-c8ba-4bd0-8f76-9dac28a5a52e"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "537e58fd-8794-4689-8985-a518b3b6ea42",
-    "text": ". The use of color differentiates the two main branches, enhancing visual clarity. Key takeaways include the emphasis on marketing and sales across both divisions, indicating a strong focus on customer engagement and revenue generation.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: The management function that involves setting organizational goals and objectives and determining the best course of action to achieve them. | Domain Tags: planning, strategy, goal setting | Related Nodes: LOMA291_M1L2_KN_001 | Category: Management Function | Node Name: Planning | Chunk Text Content: . The use of color differentiates the two main branches, enhancing visual clarity. Key takeaways include the emphasis on marketing and sales across both divisions, indicating a strong focus on customer engagement and revenue generation.",
     "payload": {
       "chunk_index": 74,
       "total_chunks": 89,
@@ -2002,8 +2076,6 @@
       "category": "Management Function",
       "node_name": "Planning",
       "node_id": 239,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "ad34bec5-81f3-49b4-a0e5-437503f0fe7e",
@@ -2014,12 +2086,15 @@
         "d8ff9661-e8d4-4393-8178-e74c85bff6bc",
         "86f9ca07-c8ba-4bd0-8f76-9dac28a5a52e",
         "a9249e05-6fd8-40a3-b7d7-f23313a3b560"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "d8ff9661-e8d4-4393-8178-e74c85bff6bc",
-    "text": "With organization by customer group (An organizational structure which arranges a\ncompany's major divisions according to the customer group each unit serves.), each\ndivision serves a specified customer group.\n\n**[CHART]**\n\nCAPTION: Organizational structure of Forthright Financial, highlighting regional divisions and functional areas.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: With organization by customer group (An organizational structure which arranges a\ncompany's major divisions according to the customer group each unit serves.), each\ndivision serves a specified customer group.\n\n**[CHART]**\n\nCAPTION: Organizational structure of Forthright Financial, highlighting regional divisions and functional areas.",
     "payload": {
       "chunk_index": 75,
       "total_chunks": 89,
@@ -2029,8 +2104,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "bf0eae98-89ed-47a0-870b-c8bc173c49ad",
@@ -2041,12 +2114,15 @@
         "86f9ca07-c8ba-4bd0-8f76-9dac28a5a52e",
         "a9249e05-6fd8-40a3-b7d7-f23313a3b560",
         "67913319-d294-4fdb-9e82-7adb30b1361d"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "86f9ca07-c8ba-4bd0-8f76-9dac28a5a52e",
-    "text": "ANALYSIS: The chart is an organizational structure diagram representing Forthright Financial. It is not a traditional graph with x/y axes but rather a hierarchical layout. At the top is \"Forthright Financial,\" which branches into three regional divisions: \"Americas,\" \"Asia Pacific,\" and \"Europe.\" Below the regional divisions, there are two functional areas: \"Marketing & Sales\" and \"Financial & Investments,\" which are associated with the Americas and Asia Pacific regions",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: ANALYSIS: The chart is an organizational structure diagram representing Forthright Financial. It is not a traditional graph with x/y axes but rather a hierarchical layout. At the top is \"Forthright Financial,\" which branches into three regional divisions: \"Americas,\" \"Asia Pacific,\" and \"Europe.\" Below the regional divisions, there are two functional areas: \"Marketing & Sales\" and \"Financial & Investments,\" which are associated with the Americas and Asia Pacific regions",
     "payload": {
       "chunk_index": 76,
       "total_chunks": 89,
@@ -2056,8 +2132,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "295fa836-5cd8-40c4-8133-29ed991dea74",
@@ -2068,12 +2142,15 @@
         "a9249e05-6fd8-40a3-b7d7-f23313a3b560",
         "67913319-d294-4fdb-9e82-7adb30b1361d",
         "98927cc6-8ac9-4f39-a87a-5ebd1c1f6016"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "a9249e05-6fd8-40a3-b7d7-f23313a3b560",
-    "text": ". \"Administration\" is linked to the Europe division. This structure indicates a clear division of responsibilities by region and function, emphasizing a global approach to financial services while maintaining specialized operational areas. Key takeaways include the focus on regional management and the integration of marketing, sales, and financial functions within the organizational framework.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: . \"Administration\" is linked to the Europe division. This structure indicates a clear division of responsibilities by region and function, emphasizing a global approach to financial services while maintaining specialized operational areas. Key takeaways include the focus on regional management and the integration of marketing, sales, and financial functions within the organizational framework.",
     "payload": {
       "chunk_index": 77,
       "total_chunks": 89,
@@ -2083,8 +2160,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "537e58fd-8794-4689-8985-a518b3b6ea42",
@@ -2095,12 +2170,15 @@
         "67913319-d294-4fdb-9e82-7adb30b1361d",
         "98927cc6-8ac9-4f39-a87a-5ebd1c1f6016",
         "fdf4d216-da50-47a2-91e7-a243b71dd9e2"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "67913319-d294-4fdb-9e82-7adb30b1361d",
-    "text": "With organization by distribution channel (An organizational structure which arranges\na company's major divisions according to the distribution channels that deliver\nproducts to customers.), each division works with a given distribution channel.\n\n**[CHART]**\n\nCAPTION: Organizational structure of Forthright Financial, outlining its divisions and departments.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: With organization by distribution channel (An organizational structure which arranges\na company's major divisions according to the distribution channels that deliver\nproducts to customers.), each division works with a given distribution channel.\n\n**[CHART]**\n\nCAPTION: Organizational structure of Forthright Financial, outlining its divisions and departments.",
     "payload": {
       "chunk_index": 78,
       "total_chunks": 89,
@@ -2110,8 +2188,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "d8ff9661-e8d4-4393-8178-e74c85bff6bc",
@@ -2122,12 +2198,15 @@
         "98927cc6-8ac9-4f39-a87a-5ebd1c1f6016",
         "fdf4d216-da50-47a2-91e7-a243b71dd9e2",
         "16a62429-0fcc-427a-9bf3-281f7ea1e269"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "98927cc6-8ac9-4f39-a87a-5ebd1c1f6016",
-    "text": "ANALYSIS: The chart is a hierarchical organizational structure diagram representing Forthright Financial. It is divided into two main branches: \"Group Products (Commercial Lines)\" and \"Individual Business (Personal Lines).\" Under \"Individual Business,\" there are three subdivisions: \"Marketing & Sales,\" \"Financial & Investments,\" and \"Administration.\" The chart does not have traditional x/y axes, as it is not a graph displaying data trends but rather a visual representation of the company's structure",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: ANALYSIS: The chart is a hierarchical organizational structure diagram representing Forthright Financial. It is divided into two main branches: \"Group Products (Commercial Lines)\" and \"Individual Business (Personal Lines).\" Under \"Individual Business,\" there are three subdivisions: \"Marketing & Sales,\" \"Financial & Investments,\" and \"Administration.\" The chart does not have traditional x/y axes, as it is not a graph displaying data trends but rather a visual representation of the company's structure",
     "payload": {
       "chunk_index": 79,
       "total_chunks": 89,
@@ -2137,8 +2216,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "86f9ca07-c8ba-4bd0-8f76-9dac28a5a52e",
@@ -2149,12 +2226,15 @@
         "fdf4d216-da50-47a2-91e7-a243b71dd9e2",
         "16a62429-0fcc-427a-9bf3-281f7ea1e269",
         "9b5edd24-d7a8-4439-8c23-8d2f053af79d"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "fdf4d216-da50-47a2-91e7-a243b71dd9e2",
-    "text": ". The key takeaway is the clear delineation of responsibilities within the organization, highlighting the focus on both commercial and personal financial services.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: . The key takeaway is the clear delineation of responsibilities within the organization, highlighting the focus on both commercial and personal financial services.",
     "payload": {
       "chunk_index": 80,
       "total_chunks": 89,
@@ -2164,8 +2244,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "a9249e05-6fd8-40a3-b7d7-f23313a3b560",
@@ -2176,12 +2254,15 @@
         "16a62429-0fcc-427a-9bf3-281f7ea1e269",
         "9b5edd24-d7a8-4439-8c23-8d2f053af79d",
         "552fea5d-7d4d-4fc3-bf2e-71a5fac6aed6"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "16a62429-0fcc-427a-9bf3-281f7ea1e269",
-    "text": "1. The following statements are about organizational structure in a typical\ninsurance company. Choose all statements that are true.\nA chief operating officer likely reports to the company's chief executive\nofficer.\nSupervisors typically report directly to middle managers.\nA company that has major divisions for Europe, Asia-Pacific, and the\nAmericas is organized by customer.\nAn underwriting unit is classified as a support unit.\n\n**[CHART]**",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: 1. The following statements are about organizational structure in a typical\ninsurance company. Choose all statements that are true.\nA chief operating officer likely reports to the company's chief executive\nofficer.\nSupervisors typically report directly to middle managers.\nA company that has major divisions for Europe, Asia-Pacific, and the\nAmericas is organized by customer.\nAn underwriting unit is classified as a support unit.\n\n**[CHART]**",
     "payload": {
       "chunk_index": 81,
       "total_chunks": 89,
@@ -2191,8 +2272,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "67913319-d294-4fdb-9e82-7adb30b1361d",
@@ -2203,12 +2282,15 @@
         "9b5edd24-d7a8-4439-8c23-8d2f053af79d",
         "552fea5d-7d4d-4fc3-bf2e-71a5fac6aed6",
         "cf6743db-8ac5-422a-a1b5-c3304d907c99"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "9b5edd24-d7a8-4439-8c23-8d2f053af79d",
-    "text": "**[CHART]**\n\nCAPTION: Organizational structure of Forthright Financial, showcasing its various marketing and sales divisions.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: **[CHART]**\n\nCAPTION: Organizational structure of Forthright Financial, showcasing its various marketing and sales divisions.",
     "payload": {
       "chunk_index": 82,
       "total_chunks": 89,
@@ -2218,8 +2300,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "98927cc6-8ac9-4f39-a87a-5ebd1c1f6016",
@@ -2230,12 +2310,15 @@
         "552fea5d-7d4d-4fc3-bf2e-71a5fac6aed6",
         "cf6743db-8ac5-422a-a1b5-c3304d907c99",
         "dfb68b4f-efe6-4e6d-8cde-3828b30549c5"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "552fea5d-7d4d-4fc3-bf2e-71a5fac6aed6",
-    "text": "ANALYSIS: The chart is a hierarchical organizational structure diagram representing Forthright Financial. It features a central node labeled \"Forthright Financial,\" with three primary branches: \"Direct Sales Force,\" \"Direct-to-Consumer,\" and \"Worksite Marketing.\" Beneath \"Direct Sales Force,\" there are two additional branches: \"Investment Brokerage\" and \"Bank Insurance.\" The layout indicates a clear division of functions within the company, emphasizing a multi-channel approach to marketing and sales",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: ANALYSIS: The chart is a hierarchical organizational structure diagram representing Forthright Financial. It features a central node labeled \"Forthright Financial,\" with three primary branches: \"Direct Sales Force,\" \"Direct-to-Consumer,\" and \"Worksite Marketing.\" Beneath \"Direct Sales Force,\" there are two additional branches: \"Investment Brokerage\" and \"Bank Insurance.\" The layout indicates a clear division of functions within the company, emphasizing a multi-channel approach to marketing and sales",
     "payload": {
       "chunk_index": 83,
       "total_chunks": 89,
@@ -2245,8 +2328,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "fdf4d216-da50-47a2-91e7-a243b71dd9e2",
@@ -2257,12 +2338,15 @@
         "cf6743db-8ac5-422a-a1b5-c3304d907c99",
         "dfb68b4f-efe6-4e6d-8cde-3828b30549c5",
         "0e30bd95-1738-462b-befa-4d9c1ce8fcd8"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "cf6743db-8ac5-422a-a1b5-c3304d907c99",
-    "text": ". The structure suggests that Forthright Financial utilizes both direct sales and consumer-focused strategies to reach its target market effectively. Key takeaways include the company's diversified approach to sales and marketing, which may enhance its reach and adaptability in the financial services sector.",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: The management function that involves setting organizational goals and objectives and determining the best course of action to achieve them. | Domain Tags: planning, strategy, goal setting | Related Nodes: LOMA291_M1L2_KN_001 | Category: Management Function | Node Name: Planning | Chunk Text Content: . The structure suggests that Forthright Financial utilizes both direct sales and consumer-focused strategies to reach its target market effectively. Key takeaways include the company's diversified approach to sales and marketing, which may enhance its reach and adaptability in the financial services sector.",
     "payload": {
       "chunk_index": 84,
       "total_chunks": 89,
@@ -2272,8 +2356,6 @@
       "category": "Management Function",
       "node_name": "Planning",
       "node_id": 239,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "16a62429-0fcc-427a-9bf3-281f7ea1e269",
@@ -2284,12 +2366,15 @@
         "dfb68b4f-efe6-4e6d-8cde-3828b30549c5",
         "0e30bd95-1738-462b-befa-4d9c1ce8fcd8",
         "af16ed25-b35b-4e6e-a7be-b2f90c3c620f"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "dfb68b4f-efe6-4e6d-8cde-3828b30549c5",
-    "text": "A chief operating officer likely reports to the company's chief executive\nofficer.\nSupervisors typically report directly to middle managers.\n2. The Rex Financial Services Company has separate companies for the\nUnited States and Canada. Within each of those companies, each has a\ndivision for group business and individual business. Then, both the group\nand the individual business divisions have major departments for each\nline function. Choose all of the approaches to organizational structure",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: A chief operating officer likely reports to the company's chief executive\nofficer.\nSupervisors typically report directly to middle managers.\n2. The Rex Financial Services Company has separate companies for the\nUnited States and Canada. Within each of those companies, each has a\ndivision for group business and individual business. Then, both the group\nand the individual business divisions have major departments for each\nline function. Choose all of the approaches to organizational structure",
     "payload": {
       "chunk_index": 85,
       "total_chunks": 89,
@@ -2299,8 +2384,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "9b5edd24-d7a8-4439-8c23-8d2f053af79d",
@@ -2311,12 +2394,15 @@
         "0e30bd95-1738-462b-befa-4d9c1ce8fcd8",
         "af16ed25-b35b-4e6e-a7be-b2f90c3c620f",
         "76114252-9921-4a1e-85e4-be5177cf9ff8"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "0e30bd95-1738-462b-befa-4d9c1ce8fcd8",
-    "text": "line function. Choose all of the approaches to organizational structure\nincluded in this description of Rex.\nOrganization by product\nOrganization by function\nOrganization by territory\nOrganization by customer group\nOrganization by distribution channel\nOrganization by function\nOrganization by territory\nOrganization by customer group",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: line function. Choose all of the approaches to organizational structure\nincluded in this description of Rex.\nOrganization by product\nOrganization by function\nOrganization by territory\nOrganization by customer group\nOrganization by distribution channel\nOrganization by function\nOrganization by territory\nOrganization by customer group",
     "payload": {
       "chunk_index": 86,
       "total_chunks": 89,
@@ -2326,8 +2412,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "552fea5d-7d4d-4fc3-bf2e-71a5fac6aed6",
@@ -2337,12 +2421,15 @@
       "next": [
         "af16ed25-b35b-4e6e-a7be-b2f90c3c620f",
         "76114252-9921-4a1e-85e4-be5177cf9ff8"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "af16ed25-b35b-4e6e-a7be-b2f90c3c620f",
-    "text": "At the highest level, the company is organized by territory—in this case by\ncountry. The division for each country is organized by customer group, and\nthe business unit for each customer group is organized by function.\nSuggested Activities\nTry these activities to relate the content of this lesson to the real world of your\ncompany.\nA. How is your company organized? Find a copy of your company's organization\nchart. Can you find your own position on the chart?",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: At the highest level, the company is organized by territory—in this case by\ncountry. The division for each country is organized by customer group, and\nthe business unit for each customer group is organized by function.\nSuggested Activities\nTry these activities to relate the content of this lesson to the real world of your\ncompany.\nA. How is your company organized? Find a copy of your company's organization\nchart. Can you find your own position on the chart?",
     "payload": {
       "chunk_index": 87,
       "total_chunks": 89,
@@ -2352,8 +2439,6 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "cf6743db-8ac5-422a-a1b5-c3304d907c99",
@@ -2362,12 +2447,15 @@
       ],
       "next": [
         "76114252-9921-4a1e-85e4-be5177cf9ff8"
-      ]
+      ],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   },
   {
     "id": "76114252-9921-4a1e-85e4-be5177cf9ff8",
-    "text": "chart. Can you find your own position on the chart?\nB. Name some line and support units in your company.\nC. Determine what organizational structure is used in your company. How about in\nyour division?\nDelegation refers to which of the following concepts?",
+    "text": "Course: LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition | Module: Module 1 - Managing the Company to Meet Stakeholder Needs | Lesson: Lesson 2 - The Great Organizational Pyramid | Source name: LOMA291_M1L2_Knowledge File_Insurance Company Management | Definition: An organizational structure where a company is divided into departments based on specialized functions or areas of expertise, such as underwriting, claims, marketing, and finance. | Domain Tags: functional structure, departments, specialization | Related Nodes: LOMA291_M1L2_KN_003, LOMA291_M1L2_KN_007, LOMA291_M1L2_KN_008 | Category: Organizational Structure | Node Name: Functional Organization | Chunk Text Content: chart. Can you find your own position on the chart?\nB. Name some line and support units in your company.\nC. Determine what organizational structure is used in your company. How about in\nyour division?\nDelegation refers to which of the following concepts?",
     "payload": {
       "chunk_index": 88,
       "total_chunks": 89,
@@ -2377,15 +2465,16 @@
       "category": "Organizational Structure",
       "node_name": "Functional Organization",
       "node_id": 243,
-      "module": "1",
-      "lesson": "2",
       "course": "LOMA291",
       "previous": [
         "dfb68b4f-efe6-4e6d-8cde-3828b30549c5",
         "0e30bd95-1738-462b-befa-4d9c1ce8fcd8",
         "af16ed25-b35b-4e6e-a7be-b2f90c3c620f"
       ],
-      "next": []
+      "next": [],
+      "module_number": 1,
+      "lesson_number": 2,
+      "summary": ""
     }
   }
 ]

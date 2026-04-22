@@ -5,8 +5,9 @@ from typing import Dict, Optional
 
 import numpy as np
 
+from src.constants.app_constant import OVERALL_CORE_KNOWLEDGE
 from src.rag.search.pipeline import INTENT_CORE_KNOWLEDGE, INTENT_OFF_TOPIC
-from src.rag.semantic_router.samples import offTopicSamples, coreKnowledgeSamples
+from src.rag.semantic_router.samples import offTopicSamples, coreKnowledgeSamples, courseMetadataSamples
 from src.utils.logger_utils import logger
 
 CACHE_DIR = Path("cache/embeddings")
@@ -16,6 +17,7 @@ CHECKSUM_FILE = CACHE_DIR / "intent_routes.checksum"
 ROUTE_SAMPLES: Dict[str, list] = {
     INTENT_CORE_KNOWLEDGE: coreKnowledgeSamples,
     INTENT_OFF_TOPIC: offTopicSamples,
+    OVERALL_CORE_KNOWLEDGE: courseMetadataSamples,
 }
 
 

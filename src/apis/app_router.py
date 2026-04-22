@@ -1,4 +1,5 @@
 from fastapi import APIRouter
+
 documents_router = APIRouter(prefix="/vector/documents", tags=["Vector Documents"])
 search_router = APIRouter(prefix="/vector/search", tags=["Vector Search"])
 file_router = APIRouter(prefix="/file", tags=["File Search"])

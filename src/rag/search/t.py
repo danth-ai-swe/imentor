@@ -33,7 +33,7 @@ from src.rag.llm.embedding_llm import get_openai_embedding_client
 
 logger = logging.getLogger(__name__)
 
-SEARX_HOST = "http://localhost:8080"
+SEARX_HOST = "https://tools.fpt-apps.com/searxng/search"
 DEFAULT_MAX_RESULTS = 5
 DEFAULT_ENGINES = ["google", "bing", "duckduckgo"]
 DEFAULT_CATEGORIES = ["general"]
@@ -45,6 +45,7 @@ CHUNK_OVERLAP = 80
 EMBED_DIM = 1536
 
 import os
+
 PROJECT_ROOT = str(Path(__file__).resolve().parents[3])
 
 FAISS_INDEX_PATH = os.path.join(PROJECT_ROOT, "faiss", "faiss_index.bin")
@@ -53,10 +54,16 @@ FAISS_META_PATH = os.path.join(PROJECT_ROOT, "faiss", "faiss_meta.pkl")
 os.makedirs(os.path.dirname(FAISS_INDEX_PATH), exist_ok=True)
 os.makedirs(os.path.dirname(FAISS_META_PATH), exist_ok=True)
 
+# ── Cloudflare Access credentials ────────────────────────────────────────────
+CF_ACCESS_CLIENT_ID = "6ffe18a5aacf0775cae40050eec66f83.access"
+CF_ACCESS_CLIENT_SECRET = (
+    "724ea74e525fd0419f7713dfd9ace08d19696ae0f030ee55ae563977ca7bd957"
+)
+
 # Type aliases (Python 3.12+)
-type RawResult = dict[str, Any]
-type ExtractedResult = dict[str, Any]
-type SourceItem = dict[str, Any]
+RawResult = dict[str, Any]
+ExtractedResult = dict[str, Any]
+SourceItem = dict[str, Any]
 
 _WEB_ANSWER_PROMPT = """\
 You are a helpful assistant answering a user question using web search results.
@@ -76,16 +83,35 @@ Answer the question thoroughly based on the provided web content.
 """
 
 # ══════════════════════════════════════════════════════════════════════════════
-# 1. SEARXNG CLIENT
+# 1. SEARXNG CLIENT  (CF Access injected via aiohttp session headers,
+#                    NOT query-string params — that causes TypeError in yarl)
 # ══════════════════════════════════════════════════════════════════════════════
 
-_searx_client: SearxSearchWrapper | None = None
+import aiohttp
+from langchain_community.utilities.searx_search import SearxResults
 
 
-def get_searx_client() -> SearxSearchWrapper:
+class _CFSearxWrapper(SearxSearchWrapper):
+    """Subclass that injects CF Access headers into every aiohttp request."""
+
+    async def _asearx_api_query(self, params: dict) -> SearxResults:
+        cf_headers = {
+            "CF-Access-Client-Id": CF_ACCESS_CLIENT_ID,
+            "CF-Access-Client-Secret": CF_ACCESS_CLIENT_SECRET,
+        }
+        async with aiohttp.ClientSession(headers=cf_headers) as session:
+            async with session.get(self.searx_host, params=params) as resp:
+                resp.raise_for_status()
+                return SearxResults(await resp.text())
+
+
+_searx_client: _CFSearxWrapper | None = None
+
+
+def get_searx_client() -> _CFSearxWrapper:
     global _searx_client
     if _searx_client is None:
-        _searx_client = SearxSearchWrapper(
+        _searx_client = _CFSearxWrapper(
             searx_host=SEARX_HOST,
             engines=DEFAULT_ENGINES,
             categories=DEFAULT_CATEGORIES,
@@ -96,12 +122,12 @@ def get_searx_client() -> SearxSearchWrapper:
 
 
 async def asearch_and_extract(
-        search_query: str,
-        *,
-        max_results: int = DEFAULT_MAX_RESULTS,
-        engines: list[str] | None = None,
-        categories: list[str] | None = None,
-        query_suffix: str = "",
+    search_query: str,
+    *,
+    max_results: int = DEFAULT_MAX_RESULTS,
+    engines: list[str] | None = None,
+    categories: list[str] | None = None,
+    query_suffix: str = "",
 ) -> list[ExtractedResult]:
     """
     Query SearxNG and return a deduplicated list of result dicts.
@@ -139,14 +165,16 @@ async def asearch_and_extract(
             continue
         seen_urls.add(url)
 
-        extracted.append({
-            "url": url,
-            "title": title,
-            "snippet": snippet,
-            "engines": eng,
-            "category": category,
-            "hostname": urlparse(url).netloc,
-        })
+        extracted.append(
+            {
+                "url": url,
+                "title": title,
+                "snippet": snippet,
+                "engines": eng,
+                "category": category,
+                "hostname": urlparse(url).netloc,
+            }
+        )
 
     logger.info("SearxNG: query=%r → %d results", search_query, len(extracted))
     return extracted
@@ -155,6 +183,7 @@ async def asearch_and_extract(
 # ══════════════════════════════════════════════════════════════════════════════
 # 2. FAISS STORE
 # ══════════════════════════════════════════════════════════════════════════════
+
 
 class FaissStore:
     """
@@ -197,12 +226,16 @@ class FaissStore:
         ids: list[int] = []
         for i, chunk in enumerate(chunks):
             chunk_id = start_id + i
-            self.metadata.append({"id": chunk_id, "url": url, "text": chunk, "timestamp": now})
+            self.metadata.append(
+                {"id": chunk_id, "url": url, "text": chunk, "timestamp": now}
+            )
             ids.append(chunk_id)
 
         self.url_index[url] = ids
         self.save()
-        logger.info("FAISS: +%d chunks for %s  (total=%d)", len(ids), url, self.index.ntotal)
+        logger.info(
+            "FAISS: +%d chunks for %s  (total=%d)", len(ids), url, self.index.ntotal
+        )
 
     # ── read ─────────────────────────────────────────────────────────────────
 
@@ -210,10 +243,10 @@ class FaissStore:
         return bool(self.url_index.get(url))
 
     def search(
-            self,
-            query_emb: list[float],
-            top_k: int = TOP_CHUNKS,
-            url_filter: str | None = None,
+        self,
+        query_emb: list[float],
+        top_k: int = TOP_CHUNKS,
+        url_filter: str | None = None,
     ) -> list[dict]:
         """
         Search globally, then filter by url_filter if given.
@@ -256,10 +289,11 @@ def get_faiss_store() -> FaissStore:
 # 3. SEMANTIC URL RANKER
 # ══════════════════════════════════════════════════════════════════════════════
 
+
 async def rank_urls_by_snippet(
-        query: str,
-        results: list[ExtractedResult],
-        top_k: int = TOP_URLS,
+    query: str,
+    results: list[ExtractedResult],
+    top_k: int = TOP_URLS,
 ) -> list[ExtractedResult]:
     """
     Embed query + snippets in one batch call; rank by cosine similarity.
@@ -267,10 +301,7 @@ async def rank_urls_by_snippet(
     """
     embedder = get_openai_embedding_client()
 
-    texts = [
-        f"{r.get('title', '')}.\n{r.get('snippet', '')}"
-        for r in results
-    ]
+    texts = [f"{r.get('title', '')}.\n{r.get('snippet', '')}" for r in results]
     embeddings = await embedder.aembed_documents([query, *texts])
 
     q_emb = np.array(embeddings[0], dtype="float32")
@@ -283,10 +314,12 @@ async def rank_urls_by_snippet(
 
         score = float(np.dot(q_emb, s_emb))
 
-        scored.append({
-            **result,
-            "semantic_score": score,
-        })
+        scored.append(
+            {
+                **result,
+                "semantic_score": score,
+            }
+        )
 
     scored.sort(key=lambda x: x["semantic_score"], reverse=True)
     top = scored[:top_k]
@@ -306,12 +339,17 @@ import httpx
 
 # Domains known to block bots or require login — skip crawl, use snippet only
 _BLOCKED_DOMAINS = {
-    "facebook.com", "www.facebook.com",
-    "instagram.com", "twitter.com", "x.com",
-    "linkedin.com", "tiktok.com",
+    "facebook.com",
+    "www.facebook.com",
+    "instagram.com",
+    "twitter.com",
+    "x.com",
+    "linkedin.com",
+    "tiktok.com",
     "accounts.google.com",
 }
 
+# Browser-like headers + Cloudflare Access credentials (cho crawler)
 _HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -320,6 +358,8 @@ _HEADERS = {
     ),
     "Accept-Language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "CF-Access-Client-Id": CF_ACCESS_CLIENT_ID,  # ← thêm
+    "CF-Access-Client-Secret": CF_ACCESS_CLIENT_SECRET,  # ← thêm
 }
 
 _HTTP_TIMEOUT = 15  # seconds
@@ -331,12 +371,12 @@ def _is_blocked_domain(url: str) -> bool:
 
 
 async def _fetch_html_httpx(url: str) -> str | None:
-    """Fallback fetcher với browser-like headers."""
+    """Fallback fetcher với browser-like headers + CF Access."""
     try:
         async with httpx.AsyncClient(
-                headers=_HEADERS,
-                follow_redirects=True,
-                timeout=_HTTP_TIMEOUT,
+            headers=_HEADERS,
+            follow_redirects=True,
+            timeout=_HTTP_TIMEOUT,
         ) as client:
             resp = await client.get(url)
             resp.raise_for_status()
@@ -353,7 +393,7 @@ async def _crawl_single(url: str) -> tuple[str, str | None]:
     Strategy:
       1. Skip blocked domains ngay lập tức
       2. Thử trafilatura.fetch_url (có user-agent setting)
-      3. Nếu empty → fallback httpx với browser headers
+      3. Nếu empty → fallback httpx với browser headers + CF Access
       4. Extract markdown từ raw HTML
     """
     if _is_blocked_domain(url):
@@ -415,17 +455,18 @@ async def crawl_urls_parallel(urls: list[str]) -> dict[str, str]:
 # 5. CHUNKER
 # ══════════════════════════════════════════════════════════════════════════════
 
+
 def chunk_text(
-        text: str,
-        size: int = CHUNK_SIZE,
-        overlap: int = CHUNK_OVERLAP,
-        min_len: int = 40,
+    text: str,
+    size: int = CHUNK_SIZE,
+    overlap: int = CHUNK_OVERLAP,
+    min_len: int = 40,
 ) -> list[str]:
     """Sliding-window character chunker with overlap."""
     chunks: list[str] = []
     start = 0
     while start < len(text):
-        chunk = text[start: start + size].strip()
+        chunk = text[start : start + size].strip()
         if len(chunk) >= min_len:
             chunks.append(chunk)
         start += size - overlap
@@ -480,11 +521,11 @@ async def _ingest_url(url: str, text: str):
 # 7. RETRIEVER  (cache-aware: FAISS hit → skip crawl)
 # ══════════════════════════════════════════════════════════════════════════════
 async def retrieve_chunks(
-        urls: list[str],
-        query_emb: list[float],
-        top_k: int = TOP_CHUNKS,
-        # truyền thêm search results để fallback
-        url_snippets: dict[str, str] | None = None,
+    urls: list[str],
+    query_emb: list[float],
+    top_k: int = TOP_CHUNKS,
+    # truyền thêm search results để fallback
+    url_snippets: dict[str, str] | None = None,
 ) -> list[dict]:
     store = get_faiss_store()
 
@@ -524,6 +565,7 @@ async def retrieve_chunks(
 # 9. MAIN PIPELINE
 # ══════════════════════════════════════════════════════════════════════════════
 
+
 async def web_rag_answer(user_input: str) -> dict[str, Any]:
     """
     End-to-end RAG pipeline. Returns:
@@ -539,7 +581,11 @@ async def web_rag_answer(user_input: str) -> dict[str, Any]:
     # 1. Search ────────────────────────────────────────────────────────────────
     raw_results = await asearch_and_extract(user_input)
     if not raw_results:
-        return {"answer": "Không tìm thấy kết quả web cho câu hỏi này.", "sources": [], "chunks_used": 0}
+        return {
+            "answer": "Không tìm thấy kết quả web cho câu hỏi này.",
+            "sources": [],
+            "chunks_used": 0,
+        }
 
     # 2. Rank URLs semantically ────────────────────────────────────────────────
     top_results = await rank_urls_by_snippet(user_input, raw_results, top_k=TOP_URLS)
@@ -555,10 +601,14 @@ async def web_rag_answer(user_input: str) -> dict[str, Any]:
         top_urls,
         query_emb,
         top_k=TOP_CHUNKS,
-        url_snippets=url_snippets,  # ← thêm dòng này
+        url_snippets=url_snippets,
     )
     if not chunks:
-        return {"answer": "Không truy xuất được nội dung từ các trang web.", "sources": top_urls, "chunks_used": 0}
+        return {
+            "answer": "Không truy xuất được nội dung từ các trang web.",
+            "sources": top_urls,
+            "chunks_used": 0,
+        }
 
     # 5. Build prompt ──────────────────────────────────────────────────────────
     web_context = "\n\n---\n\n".join(
@@ -591,5 +641,5 @@ async def main():
     print(result["sources"])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     asyncio.run(main())
