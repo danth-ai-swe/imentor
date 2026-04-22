@@ -13,11 +13,14 @@ from src.apis.app_model import (
     QuizRequest
 )
 from src.apis.app_router import documents_router, chat_router, file_router, quiz_router
-from src.constants.app_constant import PDFS_DIR, COLLECTION_NAME, T_ZIP, TT_ZIP, STORAGE_FAQ_TEMPLATE
+from src.constants.app_constant import (
+    PDFS_DIR, COLLECTION_NAME, T_ZIP, TT_ZIP, STORAGE_FAQ_TEMPLATE,
+    OVERALL_COLLECTION_NAME, OVERALL_INGEST_DIR, INGEST_DIR,
+)
 from src.core.quiz.quiz_generator import generate_quiz, generate_quiz_full_background, read_quiz_result
 from src.rag.db_vector import get_qdrant_client
 from src.rag.ingest.pipeline import upload_to_qdrant
-from src.rag.search.pipeline import async_pipeline_hyde_search
+from src.rag.search.pipeline import async_pipeline_dispatch
 from src.utils.logger_utils import logger
 
 
@@ -25,10 +28,14 @@ from src.utils.logger_utils import logger
 async def ingest_documents(force_restart: bool = False, collection_name: str | None = None,
                            background_tasks: BackgroundTasks = None):
     target_collection = collection_name or COLLECTION_NAME
+    source_dir = (
+        OVERALL_INGEST_DIR
+        if target_collection == OVERALL_COLLECTION_NAME
+        else INGEST_DIR
+    )
     try:
         if not force_restart:
-            manager = get_qdrant_client()
-            manager.collection_name = target_collection
+            manager = get_qdrant_client(target_collection)
             exists = await manager.async_client.collection_exists(target_collection)
             if exists:
                 info = await manager.async_client.get_collection(target_collection)
@@ -42,15 +49,21 @@ async def ingest_documents(force_restart: bool = False, collection_name: str | N
         logger.exception("Ingest failed")
         raise QdrantApiError(f"Ingest failed: {exc}") from exc
 
-    background_tasks.add_task(upload_to_qdrant, force_restart=force_restart, collection_name=target_collection)
-    return {"status": "started", "message": f"Ingest triggered in background for collection '{target_collection}'."}
+    background_tasks.add_task(
+        upload_to_qdrant,
+        force_restart=force_restart,
+        collection_name=target_collection,
+        source_dir=source_dir,
+    )
+    return {"status": "started",
+            "message": f"Ingest triggered in background for collection '{target_collection}' from '{source_dir}'."}
 
 
 @chat_router.post("/ask", response_model=ChatResponse)
 async def chat_ask(payload: ChatRequest) -> ChatResponse:
     logger.info("chat_ask called | user_name=%s | conversation_id=%s", payload.user_name, payload.conversation_id)
     try:
-        result = await async_pipeline_hyde_search(
+        result = await async_pipeline_dispatch(
             user_input=payload.message,
             conversation_id=payload.conversation_id
         )
