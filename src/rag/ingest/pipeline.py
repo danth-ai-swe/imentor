@@ -1,11 +1,9 @@
 import json
+from pathlib import Path
 
 from qdrant_client import models
 
-from src.constants.app_constant import COLLECTION_NAME
-from src.constants.app_constant import (
-    INGEST_DIR,
-)
+from src.constants.app_constant import COLLECTION_NAME, INGEST_DIR
 from src.rag.db_vector import get_qdrant_client
 from src.utils.checkpoint_utils import (
     load_checkpoint as _load_checkpoint_raw,
@@ -26,8 +24,13 @@ def save_checkpoint(completed: set[str]) -> None:
     _save_checkpoint_raw(data)
 
 
-async def upload_to_qdrant(force_restart: bool = False, collection_name: str | None = None):
+async def upload_to_qdrant(
+        force_restart: bool = False,
+        collection_name: str | None = None,
+        source_dir: Path | None = None,
+):
     target_collection = collection_name or COLLECTION_NAME
+    target_dir = source_dir or INGEST_DIR
     timer = StepTimer("ingest_upload")
 
     try:
@@ -36,7 +39,7 @@ async def upload_to_qdrant(force_restart: bool = False, collection_name: str | N
                 clear_checkpoint()
 
             uploaded_files = load_checkpoint()
-            all_json_files = sorted(INGEST_DIR.glob("*.json"))
+            all_json_files = sorted(target_dir.glob("*.json"))
             pending_files = [f for f in all_json_files if f.name not in uploaded_files]
 
         logger.info(f"📊 Tổng file: {len(all_json_files)}")
@@ -48,8 +51,7 @@ async def upload_to_qdrant(force_restart: bool = False, collection_name: str | N
             return
 
         async with timer.astep("create_collection_and_indexes"):
-            manager = get_qdrant_client()
-            manager.collection_name = target_collection
+            manager = get_qdrant_client(target_collection)
             await manager.acreate_collection(recreate=force_restart)
             await manager.acreate_payload_index("category", models.PayloadSchemaType.KEYWORD)
             await manager.acreate_payload_index("node_name", models.PayloadSchemaType.KEYWORD)
