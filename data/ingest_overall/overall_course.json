@@ -5520,24 +5520,44 @@
   },
   {
     "id": "b0e169d2-a26f-54df-b875-72206ab3fdce",
-    "text": "LOMA 281 - Meeting Customer Needs with Insurance and Annuities - 3rd Edition\nNumber of modules: 4\nNumber of lessons: 14\nNumber of nodes: 230\nModules:\n- Module 1 - Risk and Insurance (4 lessons)\n- Module 2 - Individual Insurance Products (4 lessons)\n- Module 3 - Benefits, Provisions, and Ownership Rights (3 lessons)\n- Module 4 - Group Products (3 lessons)\n\nMain topics: Standard Provision, Product, Concept, Rider Type, Contract Type, Policy Feature, Contract Features, Annuity Types",
+    "text": "LOMA 281 - Meeting Customer Needs with Insurance and Annuities - 3rd Edition\nNumber of modules: 4\nNumber of lessons: 14\nNumber of nodes: 230\nModules:\n- Module 1 - Risk and Insurance (4 lessons)\n- Module 2 - Individual Insurance Products (4 lessons)\n- Module 3 - Benefits, Provisions, and Ownership Rights (3 lessons)\n- Module 4 - Group Products (3 lessons)\n\nMain topics: Standard Provision, Product, Concept, Rider Type, Contract Type, Policy Feature, Contract Features, Annuity Types\n\nCourse Objectives:\n- Understand Risk and Insurance Concepts\n- Insurance Regulation\n- Life Insurance Products\n- Annuities\n- Policy Provisions and Rights\n- Group Insurance\n- Retirement Plans\n- Supplemental Benefits and Health Insurance\n\nCourse Outcomes:\n- Understand Insurance Fundamentals\n- Analyze Insurance Contracts\n- Evaluate Life Insurance Products\n- Understand Annuities\n- Explore Health and Supplemental Insurance\n- Understand Ownership and Policy Rights\n- Group Insurance and Retirement Plans\n\nCompletion: 80% quiz points. Total 42h (28h self-study, 7h quiz, 7h review).",
     "payload": {
       "chunk_type": "course",
       "course": "LOMA 281 - Meeting Customer Needs with Insurance and Annuities - 3rd Edition",
       "module_count": 4,
       "lesson_count": 14,
-      "node_count": 230
+      "node_count": 230,
+      "version": "1.0",
+      "effective_date": "2025-06-26",
+      "topic_code": "Meeting Customer Needs with Insurance and Annuities - 3rd Edition",
+      "type_of_learners": "BA",
+      "training_method": "Selft-study",
+      "assessment_scheme": [
+        "Quiz",
+        "Assignments"
+      ],
+      "total_hours": 42.0
     }
   },
   {
     "id": "d0ef0a2f-616f-5209-a51e-92a6540370c2",
-    "text": "LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition\nNumber of modules: 4\nNumber of lessons: 12\nNumber of nodes: 113\nModules:\n- Module 1 - Managing the Company to Meet Stakeholder Needs (3 lessons)\n- Module 2 - Serving the Customer throughout the Policy Lifecycle (4 lessons)\n- Module 3 - Key Support Functions for Insurer Success (3 lessons)\n- Module 4 - Functions and Goals of Financial Management (2 lessons)\n\nMain topics: Core Concept, Functional Area, Risk Management, Core Function, Stakeholder Group, Management Function, Management Strategy, Performance Metric",
+    "text": "LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition\nNumber of modules: 4\nNumber of lessons: 12\nNumber of nodes: 113\nModules:\n- Module 1 - Managing the Company to Meet Stakeholder Needs (3 lessons)\n- Module 2 - Serving the Customer throughout the Policy Lifecycle (4 lessons)\n- Module 3 - Key Support Functions for Insurer Success (3 lessons)\n- Module 4 - Functions and Goals of Financial Management (2 lessons)\n\nMain topics: Core Concept, Functional Area, Risk Management, Core Function, Stakeholder Group, Management Function, Management Strategy, Performance Metric\n\nCourse Objectives:\n- Governance and Ethics\n- Insurance Company Operations and Management\n- Risk Management\n- Distribution Systems\n- New Business Process\n- Underwriting\n- Customer Service\n- Claims Administration\n- Marketing\n- Legal and Compliance\n- Regulatory Compliance\n- Accounting and Financial Reporting\n\nCourse Outcomes:\n- Understand key stakeholders in insurance companies\n- Identify major operational functions and their roles\n- Explain risk management principles\n- Distinguish insurance distribution systems\n- Describe underwriting and risk classification\n- Recognize effective customer service practices\n- Understand the claims administration process\n- Explain marketing strategies in insurance\n- Compare legal and compliance functions\n- Summarize financial management responsibilities\n- Understand financial reporting requirements\n\nCompletion: 80% quiz points. Total 36h (24h self-study, 6h quiz, 6h review).",
     "payload": {
       "chunk_type": "course",
       "course": "LOMA 291 - Improving the Bottom Line - Insurance Company Operations - 2nd Edition",
       "module_count": 4,
       "lesson_count": 12,
-      "node_count": 113
+      "node_count": 113,
+      "version": "1.0",
+      "effective_date": "2025-08-03",
+      "topic_code": "Improving the Bottom Line: Insurance Company Operations",
+      "type_of_learners": "BA",
+      "training_method": "Selft-study",
+      "assessment_scheme": [
+        "Quiz",
+        "Assignments"
+      ],
+      "total_hours": 36.0
     }
   },
   {

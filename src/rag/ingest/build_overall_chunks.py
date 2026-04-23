@@ -11,7 +11,9 @@ import uuid
 from collections import Counter, defaultdict
 from typing import Any
 
-from src.constants.app_constant import METADATA_NODE_JSON, OVERALL_INGEST_DIR
+from src.constants.app_constant import (
+    METADATA_NODE_JSON, OVERALL_INGEST_DIR, SYLLABUS_JSON,
+)
 
 # Namespace cố định để generate deterministic UUID v5 — cho phép
 # rebuild + re-ingest mà không tạo duplicate point.
@@ -33,6 +35,22 @@ def _module_number(module_str: str) -> int:
 def _lesson_number(lesson_str: str) -> int:
     m = re.match(r"Lesson\s+(\d+)", lesson_str)
     return int(m.group(1)) if m else 0
+
+
+_COURSE_CODE_RE = re.compile(r"LOMA\s+\d+")
+
+
+def _course_code(course: str) -> str:
+    """'LOMA 281 - Meeting Customer Needs...' -> 'LOMA 281' (or '' if no match)."""
+    m = _COURSE_CODE_RE.search(course)
+    return m.group(0) if m else ""
+
+
+def _fmt_hours(h: float) -> str:
+    """2.0 -> '2h', 0.5 -> '0.5h'."""
+    if h == int(h):
+        return f"{int(h)}h"
+    return f"{h}h"
 
 
 def _build_node_chunks(rows: list[dict]) -> list[dict]:
@@ -65,7 +83,7 @@ def _build_node_chunks(rows: list[dict]) -> list[dict]:
     return chunks
 
 
-def _build_lesson_chunks(rows: list[dict]) -> list[dict]:
+def _build_lesson_chunks(rows: list[dict], syllabus: dict) -> list[dict]:
     grouped: dict[tuple[str, str, str], list[dict]] = defaultdict(list)
     for r in rows:
         key = (r["Course"], r["Module"], r["Lesson"])
@@ -97,7 +115,7 @@ def _build_lesson_chunks(rows: list[dict]) -> list[dict]:
     return chunks
 
 
-def _build_module_chunks(rows: list[dict]) -> list[dict]:
+def _build_module_chunks(rows: list[dict], syllabus: dict) -> list[dict]:
     grouped: dict[tuple[str, str], list[dict]] = defaultdict(list)
     for r in rows:
         grouped[(r["Course"], r["Module"])].append(r)
@@ -140,7 +158,7 @@ def _build_module_chunks(rows: list[dict]) -> list[dict]:
     return chunks
 
 
-def _build_course_chunks(rows: list[dict]) -> list[dict]:
+def _build_course_chunks(rows: list[dict], syllabus: dict) -> list[dict]:
     grouped: dict[str, list[dict]] = defaultdict(list)
     for r in rows:
         grouped[r["Course"]].append(r)
@@ -164,7 +182,7 @@ def _build_course_chunks(rows: list[dict]) -> list[dict]:
         cat_counts = Counter(n["Category"] for n in nodes)
         top_cats = [c for c, _ in cat_counts.most_common(_TOP_CATEGORIES_COURSE)]
 
-        text = "\n".join([
+        text_lines = [
             course,
             f"Number of modules: {len(sorted_modules)}",
             f"Number of lessons: {len(lesson_set)}",
@@ -173,17 +191,56 @@ def _build_course_chunks(rows: list[dict]) -> list[dict]:
             *module_lines,
             "",
             f"Main topics: {', '.join(top_cats)}",
-        ])
+        ]
+
+        payload = {
+            "chunk_type": "course",
+            "course": course,
+            "module_count": len(sorted_modules),
+            "lesson_count": len(lesson_set),
+            "node_count": len(nodes),
+        }
+
+        # Enrich from syllabus if matched
+        syl = syllabus.get(_course_code(course))
+        if syl:
+            if syl["objectives"]:
+                text_lines.append("")
+                text_lines.append("Course Objectives:")
+                text_lines.extend(f"- {o}" for o in syl["objectives"])
+            if syl["outcomes"]:
+                text_lines.append("")
+                text_lines.append("Course Outcomes:")
+                text_lines.extend(f"- {o}" for o in syl["outcomes"])
+            totals = syl["totals"]
+            passing = syl["assessment"]["passing_criteria"]
+            if passing or totals["total_hours"]:
+                text_lines.append("")
+                completion = []
+                if passing:
+                    completion.append(f"Completion: {passing}.")
+                if totals["total_hours"]:
+                    completion.append(
+                        f"Total {_fmt_hours(totals['total_hours'])} "
+                        f"({_fmt_hours(totals['self_learning_hours'])} self-study, "
+                        f"{_fmt_hours(totals['quiz_hours'])} quiz, "
+                        f"{_fmt_hours(totals['review_hours'])} review)."
+                    )
+                text_lines.append(" ".join(completion))
+            payload.update({
+                "version": syl["version"],
+                "effective_date": syl["effective_date"],
+                "topic_code": syl["topic_code"],
+                "type_of_learners": syl["type_of_learners"],
+                "training_method": syl["training_method"],
+                "assessment_scheme": syl["assessment"]["scheme"],
+                "total_hours": totals["total_hours"],
+            })
+
         chunks.append({
             "id": _det_id("course", course),
-            "text": text,
-            "payload": {
-                "chunk_type": "course",
-                "course": course,
-                "module_count": len(sorted_modules),
-                "lesson_count": len(lesson_set),
-                "node_count": len(nodes),
-            },
+            "text": "\n".join(text_lines),
+            "payload": payload,
         })
     return chunks
 
@@ -234,12 +291,12 @@ def _build_overview_chunk(rows: list[dict]) -> dict:
     }
 
 
-def build_all_chunks(rows: list[dict]) -> list[dict[str, Any]]:
+def build_all_chunks(rows: list[dict], syllabus: dict) -> list[dict[str, Any]]:
     chunks: list[dict[str, Any]] = []
     chunks.extend(_build_node_chunks(rows))
-    chunks.extend(_build_lesson_chunks(rows))
-    chunks.extend(_build_module_chunks(rows))
-    chunks.extend(_build_course_chunks(rows))
+    chunks.extend(_build_lesson_chunks(rows, syllabus))
+    chunks.extend(_build_module_chunks(rows, syllabus))
+    chunks.extend(_build_course_chunks(rows, syllabus))
     chunks.append(_build_overview_chunk(rows))
     return chunks
 
@@ -248,7 +305,14 @@ def main() -> None:
     with open(METADATA_NODE_JSON, "r", encoding="utf-8") as f:
         rows = json.load(f)
 
-    chunks = build_all_chunks(rows)
+    syllabus: dict = {}
+    if SYLLABUS_JSON.exists():
+        with open(SYLLABUS_JSON, "r", encoding="utf-8") as f:
+            syllabus = json.load(f)
+    else:
+        print(f"⚠️  {SYLLABUS_JSON} not found — skipping enrichment")
+
+    chunks = build_all_chunks(rows, syllabus)
 
     OVERALL_INGEST_DIR.mkdir(parents=True, exist_ok=True)
     out_path = OVERALL_INGEST_DIR / "overall_course.json"
@@ -262,4 +326,9 @@ def main() -> None:
 
 
 if __name__ == "__main__":
+    import sys
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+    except (AttributeError, OSError):
+        pass
     main()
