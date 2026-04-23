@@ -35,7 +35,7 @@ PDFS_DIR = DATA_DIR / "output" / "pdfs"
 METADATA_NODE_XLSX = DATA_DIR / "metadata_node.xlsx"
 METADATA_NODE_JSON = DATA_DIR / "metadata_node.json"
 SYLLABUS_FILES = sorted(DATA_DIR.glob("LOMA*_Syllabus_*.xlsx"))
-SYLLABUS_JSON = DATA_DIR / "ingest_overall" / "syllabus.json"
+SYLLABUS_JSON = DATA_DIR / "syllabus.json"
 
 QUIZ_KEYWORDS: set[str] = {
     "quiz"
