@@ -14,6 +14,7 @@ from typing import Any
 from src.constants.app_constant import (
     METADATA_NODE_JSON, OVERALL_INGEST_DIR, SYLLABUS_JSON,
 )
+from src.rag.ingest.load_syllabus import main as load_syllabus_main
 
 # Namespace cố định để generate deterministic UUID v5 — cho phép
 # rebuild + re-ingest mà không tạo duplicate point.
@@ -345,15 +346,10 @@ def build_all_chunks(rows: list[dict], syllabus: dict) -> list[dict[str, Any]]:
 
 
 def main() -> None:
+    syllabus = load_syllabus_main()
+
     with open(METADATA_NODE_JSON, "r", encoding="utf-8") as f:
         rows = json.load(f)
-
-    syllabus: dict = {}
-    if SYLLABUS_JSON.exists():
-        with open(SYLLABUS_JSON, "r", encoding="utf-8") as f:
-            syllabus = json.load(f)
-    else:
-        print(f"⚠️  {SYLLABUS_JSON} not found — skipping enrichment")
 
     chunks = build_all_chunks(rows, syllabus)
 
