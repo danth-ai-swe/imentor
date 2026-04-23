@@ -133,3 +133,107 @@ def _parse_syllabus_sheet(xlsx_path: Path) -> dict[str, Any]:
                 if sub not in out["assessment_scheme"]:
                     out["assessment_scheme"].append(sub)
     return out
+
+
+def _parse_module_header(raw: str) -> tuple[int, str, str]:
+    """
+    'Module 1: Risk and Insurance\\nIn this module...' ->
+        (1, 'Risk and Insurance', 'In this module...')
+    Title is taken from the first line; description is the rest (joined).
+    Returns (0, "", "") if input is not a module header.
+    """
+    m = _MODULE_RE.match(raw)
+    if not m:
+        return 0, "", ""
+    mod_num = int(m.group(1))
+    tail = m.group(2)
+    parts = tail.split("\n", 1)
+    title = parts[0].strip()
+    description = parts[1].strip() if len(parts) == 2 else ""
+    return mod_num, title, description
+
+
+def _parse_lesson_header(raw: str) -> tuple[int, str]:
+    """'Lesson 1: Risky Business?' -> (1, 'Risky Business?'). (0, '') on no match."""
+    m = _LESSON_RE.match(raw)
+    if not m:
+        return 0, ""
+    return int(m.group(1)), m.group(2).strip()
+
+
+def _parse_schedule(xlsx_path: Path) -> tuple[dict[str, Any], dict[str, float]]:
+    """
+    Return (modules, totals).
+
+    modules: dict keyed by module number as str ("1", "2", ...) ->
+        {module_num, title, description, lessons: {lesson_num_str -> lesson_dict}}
+    totals: {self_learning_hours, quiz_hours, review_hours, total_hours}
+
+    Sheet layout (header at row 1): col B=Module, col C=Lesson,
+    col D=Section/Objectives, col E=Delivery Mode, col F=Duration,
+    col I=Directory, col J=Remark.
+    """
+    df = pd.read_excel(xlsx_path, sheet_name="Schedule", header=None)
+
+    modules: dict[str, Any] = {}
+    totals = {
+        "self_learning_hours": 0.0,
+        "quiz_hours": 0.0,
+        "review_hours": 0.0,
+        "total_hours": 0.0,
+    }
+    totals_labels = {
+        "Document self-learning": "self_learning_hours",
+        "Quiz": "quiz_hours",
+        "Review": "review_hours",
+        "Total hours": "total_hours",
+    }
+
+    current_mod_num: int = 0
+    current_lesson: dict[str, Any] | None = None
+
+    for idx in range(2, len(df)):
+        row = df.iloc[idx]
+        module_cell = _clean_cell(row.iloc[1]) if len(row) > 1 else ""
+        lesson_cell = _clean_cell(row.iloc[2]) if len(row) > 2 else ""
+        section_cell = _clean_cell(row.iloc[3]) if len(row) > 3 else ""
+        delivery_cell = _clean_cell(row.iloc[4]) if len(row) > 4 else ""
+        duration_val = row.iloc[5] if len(row) > 5 else None
+        directory_cell = _clean_cell(row.iloc[8]) if len(row) > 8 else ""
+        remark_cell = _clean_cell(row.iloc[9]) if len(row) > 9 else ""
+
+        if module_cell in totals_labels and lesson_cell:
+            totals[totals_labels[module_cell]] = _to_float(lesson_cell)
+            continue
+
+        mod_num, mod_title, mod_desc = _parse_module_header(module_cell)
+        if mod_num:
+            current_mod_num = mod_num
+            modules[str(mod_num)] = {
+                "module_num": mod_num,
+                "title": mod_title,
+                "description": mod_desc,
+                "lessons": {},
+            }
+
+        lesson_num, lesson_title = _parse_lesson_header(lesson_cell)
+        if lesson_num and current_mod_num:
+            current_lesson = {
+                "lesson_num": lesson_num,
+                "title": lesson_title,
+                "objectives": section_cell,
+                "self_learning_hours": _to_float(duration_val),
+                "quiz_hours": 0.0,
+                "review_hours": 0.0,
+                "delivery_mode": delivery_cell,
+                "directory": directory_cell,
+                "remark": remark_cell,
+            }
+            modules[str(current_mod_num)]["lessons"][str(lesson_num)] = current_lesson
+            continue
+
+        if current_lesson is not None and delivery_cell in ("Quiz", "Review"):
+            key = "quiz_hours" if delivery_cell == "Quiz" else "review_hours"
+            current_lesson[key] = _to_float(duration_val)
+
+    return modules, totals
