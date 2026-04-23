@@ -62,7 +62,7 @@ def _parse_cover(xlsx_path: Path) -> dict[str, str]:
         elif label == "Version":
             out["version"] = _clean_cell(value)
         elif label == "Effective Date":
-            if isinstance(value, (pd.Timestamp, datetime)):
+            if isinstance(value, datetime):
                 out["effective_date"] = value.strftime("%Y-%m-%d")
             else:
                 out["effective_date"] = _clean_cell(value)
@@ -210,6 +210,7 @@ def _parse_schedule(xlsx_path: Path) -> tuple[dict[str, Any], dict[str, float]]:
         mod_num, mod_title, mod_desc = _parse_module_header(module_cell)
         if mod_num:
             current_mod_num = mod_num
+            current_lesson = None
             modules[str(mod_num)] = {
                 "module_num": mod_num,
                 "title": mod_title,
