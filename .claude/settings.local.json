@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import json; d=json.load\\(open\\('D:/Deverlopment/huudan.com/PythonProject/data/metadata_node.json','r',encoding='utf-8'\\)\\); print\\('Total rows:', len\\(d\\)\\); import collections; c=collections.Counter\\(r.get\\('Course',''\\) for r in d\\); print\\('Courses:', c\\); m=collections.Counter\\(\\(r.get\\('Course',''\\), r.get\\('Module',''\\)\\) for r in d\\); print\\('Modules:'\\); [print\\(' ',k,v\\) for k,v in m.items\\(\\)]\")",
+      "Bash(git add *)",
+      "Bash(git *)",
+      "Bash(ls -d .worktrees)",
+      "Bash(ls -d worktrees)",
+      "Bash(grep -i \"worktree\" CLAUDE.md)",
+      "Bash(python -c \"from src.constants.app_constant import OVERALL_CORE_KNOWLEDGE, OVERALL_COLLECTION_NAME, OVERALL_INGEST_DIR; print\\(OVERALL_CORE_KNOWLEDGE, OVERALL_COLLECTION_NAME, OVERALL_INGEST_DIR\\)\")",
+      "Bash(python -c \"from src.constants.app_constant import INTENT_OVERALL_COURSE_KNOWLEDGE, OVERALL_COLLECTION_NAME, OVERALL_INGEST_DIR; print\\(INTENT_OVERALL_COURSE_KNOWLEDGE, OVERALL_COLLECTION_NAME, OVERALL_INGEST_DIR\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('main.py', 'r', encoding='utf-8'\\).read\\(\\)\\); print\\('main.py parses OK'\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('main.py', encoding='utf-8'\\).read\\(\\)\\); ast.parse\\(open\\('src/constants/app_constant.py', encoding='utf-8'\\).read\\(\\)\\); print\\('both parse OK'\\)\")",
+      "Bash(python -c \"from src.rag.semantic_router.samples import courseMetadataSamples; print\\(f'count={len\\(courseMetadataSamples\\)}'\\); print\\(courseMetadataSamples[0]\\)\")",
+      "Bash(python -c \"from src.rag.semantic_router.samples import offTopicSamples, coreKnowledgeSamples, courseMetadataSamples; print\\('OK'\\)\")",
+      "Bash(python -c \"from src.rag.semantic_router.samples import courseMetadataSamples; print\\(len\\(courseMetadataSamples\\)\\)\")",
+      "Bash(python -c \"from src.rag.semantic_router.precomputed import ROUTE_SAMPLES, _compute_checksum, _is_cache_valid; print\\('routes:', list\\(ROUTE_SAMPLES.keys\\(\\)\\)\\); print\\('cache_valid:', _is_cache_valid\\(\\)\\)\")",
+      "Bash(QDRANT_APIKEY=x SEARX_HOST=x CF_ACCESS_CLIENT_ID=x CF_ACCESS_CLIENT_SECRET=x python -c \"from src.rag.semantic_router.precomputed import ROUTE_SAMPLES, _compute_checksum, _is_cache_valid; print\\('routes:', list\\(ROUTE_SAMPLES.keys\\(\\)\\)\\); print\\('cache_valid:', _is_cache_valid\\(\\)\\)\")",
+      "Bash(python -c \"from src.rag.db_vector import get_qdrant_client, _get_colbert; a = get_qdrant_client\\('foo'\\); b = get_qdrant_client\\('bar'\\); c = get_qdrant_client\\('foo'\\); print\\('a is c:', a is c\\); print\\('a is b:', a is b\\); print\\('a.collection:', a.collection_name\\); print\\('b.collection:', b.collection_name\\); print\\('shared colbert:', a._colbert is b._colbert\\)\")",
+      "Bash(python -c \"from src.rag.db_vector import get_qdrant_client; print\\('import ok'\\)\")",
+      "Bash(python -c ' *)",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('src/rag/db_vector.py', encoding='utf-8'\\).read\\(\\)\\); print\\('OK'\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('src/rag/ingest/pipeline.py', encoding='utf-8'\\).read\\(\\)\\); print\\('AST OK'\\)\")",
+      "Bash(python -m src.rag.ingest.build_overall_chunks)",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('src/rag/search/pipeline.py', encoding='utf-8'\\).read\\(\\)\\); print\\('OK'\\)\")",
+      "Bash(python *)"
+    ]
+  },
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true
+  }
+}

@@ -46,6 +46,7 @@ class AppConfig(BaseSettings):
         env_file=env_path,
         env_file_encoding="utf-8",
         case_sensitive=False,
+        extra="ignore"
     )
 
 
