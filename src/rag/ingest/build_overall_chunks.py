@@ -93,24 +93,54 @@ def _build_lesson_chunks(rows: list[dict], syllabus: dict) -> list[dict]:
     for (course, module, lesson), nodes in grouped.items():
         first = nodes[0]
         concept_lines = [f"- {n['Node Name']}: {n['Definition']}" for n in nodes]
-        text = "\n".join([
+        text_lines = [
             f"{lesson} (Course: {course}, {module})",
             f"Number of nodes: {len(nodes)}",
             "Concepts covered:",
             *concept_lines,
             "",
             f"Lesson Summary (from source): {first['Summary']}",
-        ])
+        ]
+
+        payload = {
+            "chunk_type": "lesson",
+            "course": course,
+            "module": _module_number(module),
+            "lesson": _lesson_number(lesson),
+            "node_count": len(nodes),
+        }
+
+        # Syllabus enrichment (D1)
+        mod_num = _module_number(module)
+        les_num = _lesson_number(lesson)
+        syl = syllabus.get(_course_code(course))
+        lesson_syl = None
+        if syl and str(mod_num) in syl["modules"]:
+            lesson_syl = syl["modules"][str(mod_num)]["lessons"].get(str(les_num))
+        if lesson_syl:
+            if lesson_syl["objectives"]:
+                text_lines.append("")
+                text_lines.append("Learning Objectives (from syllabus):")
+                text_lines.append(lesson_syl["objectives"])
+            text_lines.append("")
+            text_lines.append(
+                f"Duration: {_fmt_hours(lesson_syl['self_learning_hours'])} self-study, "
+                f"{_fmt_hours(lesson_syl['quiz_hours'])} quiz, "
+                f"{_fmt_hours(lesson_syl['review_hours'])} review"
+            )
+            payload.update({
+                "delivery_mode": lesson_syl["delivery_mode"],
+                "directory": lesson_syl["directory"],
+                "remark": lesson_syl["remark"],
+                "self_learning_hours": lesson_syl["self_learning_hours"],
+                "quiz_hours": lesson_syl["quiz_hours"],
+                "review_hours": lesson_syl["review_hours"],
+            })
+
         chunks.append({
             "id": _det_id("lesson", course, module, lesson),
-            "text": text,
-            "payload": {
-                "chunk_type": "lesson",
-                "course": course,
-                "module": _module_number(module),
-                "lesson": _lesson_number(lesson),
-                "node_count": len(nodes),
-            },
+            "text": "\n".join(text_lines),
+            "payload": payload,
         })
     return chunks
 
