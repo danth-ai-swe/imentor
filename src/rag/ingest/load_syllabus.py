@@ -8,6 +8,7 @@ Chạy: python -m src.rag.ingest.load_syllabus
 """
 import json
 import re
+import sys
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -237,3 +238,64 @@ def _parse_schedule(xlsx_path: Path) -> tuple[dict[str, Any], dict[str, float]]:
             current_lesson[key] = _to_float(duration_val)
 
     return modules, totals
+
+
+def parse_one(xlsx_path: Path) -> tuple[str, dict[str, Any]]:
+    """Parse a single Syllabus xlsx into (course_code, course_blob)."""
+    course_code = _course_code_from_filename(xlsx_path)
+    cover = _parse_cover(xlsx_path)
+    syllabus = _parse_syllabus_sheet(xlsx_path)
+    modules, totals = _parse_schedule(xlsx_path)
+    return course_code, {
+        "course_code": course_code,
+        "topic_name": syllabus["topic_name"],
+        "topic_code": syllabus["topic_code"],
+        "version": cover["version"],
+        "effective_date": cover["effective_date"],
+        "document_code": cover["document_code"],
+        "training_method": syllabus["training_method"],
+        "type_of_learners": syllabus["type_of_learners"],
+        "prerequisites": syllabus["prerequisites"],
+        "objectives": syllabus["objectives"],
+        "outcomes": syllabus["outcomes"],
+        "assessment": {
+            "scheme": syllabus["assessment_scheme"],
+            "passing_criteria": syllabus["passing_criteria"],
+        },
+        "totals": totals,
+        "modules": modules,
+    }
+
+
+def build_syllabus_blob() -> dict[str, Any]:
+    """Parse every file in SYLLABUS_FILES into a {course_code -> blob} dict."""
+    if not SYLLABUS_FILES:
+        raise FileNotFoundError(
+            "No Syllabus xlsx files found. Expected data/LOMA*_Syllabus_*.xlsx"
+        )
+    blob: dict[str, Any] = {}
+    for path in SYLLABUS_FILES:
+        code, data = parse_one(path)
+        blob[code] = data
+    return blob
+
+
+def main() -> dict[str, Any]:
+    blob = build_syllabus_blob()
+    SYLLABUS_JSON.parent.mkdir(parents=True, exist_ok=True)
+    with open(SYLLABUS_JSON, "w", encoding="utf-8") as f:
+        json.dump(blob, f, ensure_ascii=False, indent=2)
+    print(f"✅ Wrote {len(blob)} courses → {SYLLABUS_JSON}")
+    for code, data in blob.items():
+        n_modules = len(data["modules"])
+        n_lessons = sum(len(m["lessons"]) for m in data["modules"].values())
+        print(f"   {code}: {n_modules} modules, {n_lessons} lessons")
+    return blob
+
+
+if __name__ == "__main__":
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+    except (AttributeError, OSError):
+        pass
+    main()

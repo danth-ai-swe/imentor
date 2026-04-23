@@ -1,0 +1,442 @@
+{
+  "LOMA 281": {
+    "course_code": "LOMA 281",
+    "topic_name": "Meeting Customer Needs with Insurance and Annuities - 3rd Edition",
+    "topic_code": "Meeting Customer Needs with Insurance and Annuities - 3rd Edition",
+    "version": "1.0",
+    "effective_date": "2025-06-26",
+    "document_code": "",
+    "training_method": "Selft-study",
+    "type_of_learners": "BA",
+    "prerequisites": "",
+    "objectives": [
+      "Understand Risk and Insurance Concepts",
+      "Insurance Regulation",
+      "Life Insurance Products",
+      "Annuities",
+      "Policy Provisions and Rights",
+      "Group Insurance",
+      "Retirement Plans",
+      "Supplemental Benefits and Health Insurance"
+    ],
+    "outcomes": [
+      "Understand Insurance Fundamentals",
+      "Analyze Insurance Contracts",
+      "Evaluate Life Insurance Products",
+      "Understand Annuities",
+      "Explore Health and Supplemental Insurance",
+      "Understand Ownership and Policy Rights",
+      "Group Insurance and Retirement Plans"
+    ],
+    "assessment": {
+      "scheme": [
+        "Quiz",
+        "Assignments"
+      ],
+      "passing_criteria": "80% quiz points"
+    },
+    "totals": {
+      "self_learning_hours": 28.0,
+      "quiz_hours": 7.0,
+      "review_hours": 7.0,
+      "total_hours": 42.0
+    },
+    "modules": {
+      "1": {
+        "module_num": 1,
+        "title": "Risk and Insurance",
+        "description": "In this module, we’ll start with some basics. What is life insurance? What is risk? Viewing life insurance basics through the eyes of potential insurance customers, you’ll learn about:\nRisk and risk management\nRegulation of insurance\nLife insurance as a contract\nThe value exchange in an insurance transaction",
+        "lessons": {
+          "1": {
+            "lesson_num": 1,
+            "title": "Risky Business?",
+            "objectives": "Learning Objectives \nRisky Business \nTypes of Risk \nRisk Management \nLife Insurance Terminology \nInsurable Risks \nUnderwriters and Underwriting \nRisk Classes",
+            "self_learning_hours": 2.0,
+            "quiz_hours": 0.5,
+            "review_hours": 0.5,
+            "delivery_mode": "Document self-learning",
+            "directory": "Lesson 1",
+            "remark": "Detail Lecture: LOMA281_M1L1_Risk and Insurance\nSummary: LOMA281_M1L1_Summary"
+          },
+          "2": {
+            "lesson_num": 2,
+            "title": "Organization and Regulation of Insurance Companies",
+            "objectives": "Financial Institutions and the Insurance Industry\nInsurance Company Organization\nInsurance Regulation",
+            "self_learning_hours": 2.0,
+            "quiz_hours": 0.5,
+            "review_hours": 0.5,
+            "delivery_mode": "Document self-learning",
+            "directory": "Lesson 2",
+            "remark": "Detail Lecture: LOMA281_M1L2_Organization and Regulation of Insurance Companies\nSummary: LOMA281_M1L2_Summary"
+          },
+          "3": {
+            "lesson_num": 3,
+            "title": "Life Insurance Policies as Contracts",
+            "objectives": "Insurance Contracts\nTypes of Contracts\nA Valid Contract",
+            "self_learning_hours": 2.0,
+            "quiz_hours": 0.5,
+            "review_hours": 0.5,
+            "delivery_mode": "Document self-learning",
+            "directory": "Lesson 3",
+            "remark": "Detail Lecture: LOMA281_M1L3_Life Insurance Policies as Contracts\nSummary: LOMA281_M1L3_Summary"
+          },
+          "4": {
+            "lesson_num": 4,
+            "title": "The Value Exchange in the Insurance Transaction",
+            "objectives": "Actuaries and Premium Rates\nDeveloping Premium Rates\nInvestment Earnings and Pricing Products",
+            "self_learning_hours": 2.0,
+            "quiz_hours": 0.5,
+            "review_hours": 0.5,
+            "delivery_mode": "Document self-learning",
+            "directory": "Lesson 4",
+            "remark": "Detail Lecture: LOMA281_M1L4_The Value Exchange in the Insurance Transaction\nSummary: LOMA281_M1L4_Summary"
+          }
+        }
+      },
+      "2": {
+        "module_num": 2,
+        "title": "Individual Insurance Products",
+        "description": "In this module, you’ll meet potential insurance customers Carter, Ethan, Carla, and Marissa. Follow them and you will see how insurers use various insurance and annuity products to meet customer needs. Some of the topics addressed in this module include:\nTerm life insurance\nCash value life insurance\nFixed and variable annuity products\nHealth insurance",
+        "lessons": {
+          "1": {
+            "lesson_num": 1,
+            "title": "Term Life Insurance",
+            "objectives": "Describe term life insurance (bảo hiểm tử kỳ) coverage (phạm vi bảo hiểm) and distinguish between level term (tử kỳ cố định), decreasing term (tử kỳ giảm dần), and increasing term (tử kỳ tăng dần) life insurance plans. \n\nDescribe the operation of a return of premium (ROP) term policy (cách hoạt động của bảo hiểm tử kỳ hoàn phí) \n\nExplain how the renewal (gia hạn) and conversion (chuyển đổi) features included in some term life policies increase their value to customers.",
+            "self_learning_hours": 2.0,
+            "quiz_hours": 0.5,
+            "review_hours": 0.5,
+            "delivery_mode": "Document self-learning",
+            "directory": "Lesson 1",
+            "remark": "Detail Lecture: LOMA281_M2L1_Term Life Insurance\nSummary: LOMA281_M2L1_Summary"
+          },
+          "2": {
+            "lesson_num": 2,
+            "title": "Cash Value Life Insurance",
+            "objectives": "Describe cash value life insurance coverage. \n\nDistinguish between forms of traditional whole life insurance based on premium payment frequency. \n\nDescribe the benefits that modified whole life(Bảo hiểm nhân thọ trọn đời điều chỉnh), joint whole life (Bảo hiểm nhân thọ trọn đời chung), and last survivor insurance (Bảo hiểm nhân thọ trọn đời người cuối cùng qua đời) provide policyowners. \n\nDescribe the features and benefits of universal life (Bảo hiểm nhân thọ linh hoạt), indexed universal life (Bảo hiểm nhân thọ linh hoạt liên kết chỉ số), variable life (Bảo hiểm nhân thọ biến đổi), and variable universal life insurance (Bảo hiểm nhân thọ linh hoạt biến đổi) products.",
+            "self_learning_hours": 2.0,
+            "quiz_hours": 0.5,
+            "review_hours": 0.5,
+            "delivery_mode": "Document self-learning",
+            "directory": "Lesson 2",
+            "remark": "Detail Lecture: LOMA281_M2L2_Cash Value Life Insurance\nSummary: LOMA281_M2L2_Summary"
+          },
+          "3": {
+            "lesson_num": 3,
+            "title": "Annuities",
+            "objectives": "Introduction to Annuities\nImmediate Annuities and Payout Options\nDeferred Annuities\nFixed Annuity Products\nVariable Annuities\nRILAs: The New Kid on the Block",
+            "self_learning_hours": 2.0,
+            "quiz_hours": 0.5,
+            "review_hours": 0.5,
+            "delivery_mode": "Document self-learning",
+            "directory": "Lesson 3",
+            "remark": "Detail Lecture: LOMA281_M2L3_Annuities"
+          },
+          "4": {
+            "lesson_num": 4,
+            "title": "Health Insurance",
+            "objectives": "Major Medical and Supplemental Medical Insurance\nManaged Care\nConsumer-Driven Health Care\nLong-Term Care Insurance\nDisability Income",
+            "self_learning_hours": 2.0,
+            "quiz_hours": 0.5,
+            "review_hours": 0.5,
+            "delivery_mode": "Document self-learning",
+            "directory": "Lesson 4",
+            "remark": "Detail Lecture: LOMA281_M2L4_Health Insurance\nSummary: LOMA281_M2L4_Summary"
+          }
+        }
+      },
+      "3": {
+        "module_num": 3,
+        "title": "Benefits, Provisions, and Ownership Rights",
+        "description": "What happens after a life insurance policy is in force? What information might customers need to know? In this lesson, you’ll see how Gloria, a seasoned customer service representative, helps policyowners and their loved ones understand the features of their policies, such as:\nSupplemental benefits\nPolicy provisions\nOwnership rights",
+        "lessons": {
+          "1": {
+            "lesson_num": 1,
+            "title": "Supplemental Benefits",
+            "objectives": "Supplemental Benefits\nAccidental Death Benefits\nAccelerated Death Benefit Riders\nInsurance Riders\nInsurability",
+            "self_learning_hours": 2.0,
+            "quiz_hours": 0.5,
+            "review_hours": 0.5,
+            "delivery_mode": "Document self-learning",
+            "directory": "Lesson 1",
+            "remark": "Detail Lecture: LOMA281_M3L1_Supplemental Benefits\nSummary: LOMA281_M3L1_Summary"
+          },
+          "2": {
+            "lesson_num": 2,
+            "title": "Life Insurance Policy Provisions",
+            "objectives": "Life Insurance Policy Provisions\nIncontestability Provision\nGrace Period and Reinstatement\nMisstatements\nLoans, Withdrawals, Nonforfeiture Options",
+            "self_learning_hours": 2.0,
+            "quiz_hours": 0.5,
+            "review_hours": 0.5,
+            "delivery_mode": "Document self-learning",
+            "directory": "Lesson 2",
+            "remark": "Detail Lecture: LOMA281_M3L2_Life Insurance Policy Provisions\nSummary: LOMA281_M3L2_Summary"
+          },
+          "3": {
+            "lesson_num": 3,
+            "title": "Life Insurance Policy Ownership Rights",
+            "objectives": "Policy Ownership Rights\nRevocable and Irrevocable Beneficiaries\nPremiums and Policy Dividends\nSettlement Options and Ownership Transfer\nOwnership Transfers",
+            "self_learning_hours": 2.0,
+            "quiz_hours": 0.5,
+            "review_hours": 0.5,
+            "delivery_mode": "Document self-learning",
+            "directory": "Lesson 3",
+            "remark": "Detail Lecture: LOMA281_M3L3_Life Insurance Policy Ownership Rights\nSummary: LOMA281_M3L3_Summary"
+          }
+        }
+      },
+      "4": {
+        "module_num": 4,
+        "title": "Group Products",
+        "description": "Group products are often a large part of an individual's overall financial strategy. In this module, you'll learn about the types of group products available and the important role they play in meeting customer needs. Specific topics in this module include:\nCharacteristics of group insurance\nGroup life insurance\nGroup retirement plans",
+        "lessons": {
+          "1": {
+            "lesson_num": 1,
+            "title": "Group Insurance",
+            "objectives": "The Group Insurance Contract\nOwnership and Group Insurance Plans\nGroup Insurance Characteristics\nGroup Insurance Underwriting",
+            "self_learning_hours": 2.0,
+            "quiz_hours": 0.5,
+            "review_hours": 0.5,
+            "delivery_mode": "Document self-learning",
+            "directory": "Lesson 1",
+            "remark": "Detail Lecture: LOMA281_M4L1_Group Insurance\nSummary: LOMA281_M4L1_Summary"
+          },
+          "2": {
+            "lesson_num": 2,
+            "title": "Group Life Insurance",
+            "objectives": "Group Life Insurance\nGroup Contract Provisions\nInsurance Termination and Conversion\nBenefit Amounts\nFeatures of the Group Plans",
+            "self_learning_hours": 2.0,
+            "quiz_hours": 0.5,
+            "review_hours": 0.5,
+            "delivery_mode": "Document self-learning",
+            "directory": "Lesson 2",
+            "remark": "Detail Lecture: LOMA281_M4L2_Group Life Insurance\nSummary: LOMA281_M4L2_Summary"
+          },
+          "3": {
+            "lesson_num": 3,
+            "title": "Group Retirement Plans",
+            "objectives": "Group Retirement Plans\nEmployer-sponsored Retirement Plans\nDefined Benefit and Defined Contribution Retirement Plans\nDefined Contribution (DC) Plans\nRetirement Plans for Small Business Owners and the Self-Employed",
+            "self_learning_hours": 2.0,
+            "quiz_hours": 0.5,
+            "review_hours": 0.5,
+            "delivery_mode": "Document self-learning",
+            "directory": "Lesson 3",
+            "remark": "Detail Lecture: LOMA281_M4L3_Group Retirement Plans\nSummary: LOMA281_M4L3_Summary"
+          }
+        }
+      }
+    }
+  },
+  "LOMA 291": {
+    "course_code": "LOMA 291",
+    "topic_name": "Improving the Bottom Line: Insurance Company Operations",
+    "topic_code": "Improving the Bottom Line: Insurance Company Operations",
+    "version": "1.0",
+    "effective_date": "2025-08-03",
+    "document_code": "",
+    "training_method": "Selft-study",
+    "type_of_learners": "BA",
+    "prerequisites": "",
+    "objectives": [
+      "Governance and Ethics",
+      "Insurance Company Operations and Management",
+      "Risk Management",
+      "Distribution Systems",
+      "New Business Process",
+      "Underwriting",
+      "Customer Service",
+      "Claims Administration",
+      "Marketing",
+      "Legal and Compliance",
+      "Regulatory Compliance",
+      "Accounting and Financial Reporting"
+    ],
+    "outcomes": [
+      "Understand key stakeholders in insurance companies",
+      "Identify major operational functions and their roles",
+      "Explain risk management principles",
+      "Distinguish insurance distribution systems",
+      "Describe underwriting and risk classification",
+      "Recognize effective customer service practices",
+      "Understand the claims administration process",
+      "Explain marketing strategies in insurance",
+      "Compare legal and compliance functions",
+      "Summarize financial management responsibilities",
+      "Understand financial reporting requirements"
+    ],
+    "assessment": {
+      "scheme": [
+        "Quiz",
+        "Assignments"
+      ],
+      "passing_criteria": "80% quiz points"
+    },
+    "totals": {
+      "self_learning_hours": 24.0,
+      "quiz_hours": 6.0,
+      "review_hours": 6.0,
+      "total_hours": 36.0
+    },
+    "modules": {
+      "1": {
+        "module_num": 1,
+        "title": "Managing the Company to Meet Stakeholder Needs",
+        "description": "An insurer’s overall direction is determined by its executives, with guidance from the board of directors. In this module, we explore how an insurer is organized and managed to balance the needs of a diverse set of stakeholder groups, and how an insurer manages the risk it must take in order to earn a return.\n\nIn this module, you’ll learn about\nHow an insurer’s board and executives manage the company ethically to meet the needs of various stakeholders\nThe ways an insurer can be organized for success\nHow an insurer manages the various risks it faces to earn an appropriate return",
+        "lessons": {
+          "1": {
+            "lesson_num": 1,
+            "title": "Many Stakeholders, Many Demands",
+            "objectives": "Describe various stakeholder groups connected with an insurance company.\nExplain the governance role of a company's board of directors, and describe the impact of governance on conflicting priorities.\nDefine ethics, and identify mechanisms companies employ to foster a culture of ethical behavior.",
+            "self_learning_hours": 2.0,
+            "quiz_hours": 0.5,
+            "review_hours": 0.5,
+            "delivery_mode": "Document self-learning",
+            "directory": "Lesson 1",
+            "remark": "Detail Lecture: LOMA291_M1L1_Many Stakeholders, Many Demands"
+          },
+          "2": {
+            "lesson_num": 2,
+            "title": "Insurance Company Management",
+            "objectives": "Describe the four functions of management. \nRecognize typical functional areas for insurance operations, and classify units as line or support functions. \nDescribe organizational concepts such as accountability, authority, chain of command, delegation, division of labor, and responsibility. \nCharacterize the distinct roles of executives, middle managers, and supervisors. \nDescribe how financial services companies use function, product, territory, customer, and distribution channel to structure their organization.",
+            "self_learning_hours": 2.0,
+            "quiz_hours": 0.5,
+            "review_hours": 0.5,
+            "delivery_mode": "Document self-learning",
+            "directory": "Lesson 2",
+            "remark": "Detail Lecture: LOMA291_M1L2_Insurance Company Management"
+          },
+          "3": {
+            "lesson_num": 3,
+            "title": "Risk, Return, and Risk Management",
+            "objectives": "Define risk and return, and explain the risk-return tradeoff. \nDetermine an investment's required return using the risk-free rate of return and the risk premium. \nDescribe and classify risks faced by insurance companies. \nExplain control and the control cycle. \nDescribe techniques for managing risk, including risk transfer, diversification, and risk hedging. \nExplain enterprise risk management in financial services companies. \nDescribe the three lines of defense, and explain how insurers use them to manage risk.",
+            "self_learning_hours": 2.0,
+            "quiz_hours": 0.5,
+            "review_hours": 0.5,
+            "delivery_mode": "Document self-learning",
+            "directory": "Lesson 3",
+            "remark": "Detail Lecture: LOMA291_M1L3_Risk, Return, and Risk Management"
+          }
+        }
+      },
+      "2": {
+        "module_num": 2,
+        "title": "Serving the Customer throughout the Policy Lifecycle",
+        "description": "A customer's contact with an insurer most likely begins when they are thinking about purchasing a policy, and can last until the policyowner dies and the insurer pays the policy proceeds to the beneficiary. In between, the insurer underwrites and issues the policy, and meets the customer’s service needs while the policy is in force. In this module, you’ll learn about the tasks an insurer performs at each stage of the policy lifecycle.\n\nIn this module, you’ll learn about\nHow insurers engage with potential customers and distribute products to meet customer needs\nHow insurers process insurance applications, evaluate the risk they represent, and determine the appropriate premium to charge\nHow insurers try to optimize the experience of their customers\nHow insurers balance paying legitimate claims promptly and accurately with avoiding paying illegitimate claims",
+        "lessons": {
+          "1": {
+            "lesson_num": 1,
+            "title": "Product Distribution",
+            "objectives": "Describe the various engagement methods insurers and financial professionals can use.\nDistinguish between direct distribution systems and intermediary distribution systems.\nDescribe the characteristics of a direct sales force and direct-to-consumer (D2C) distribution in insurance.\nExplain how insurers provide sales support such as recruiting, licensing, compensation, and training to different types of agents.\nList three prohibited sales practices, and describe the activities that insurers undertake to monitor the market conduct of their agents.\nDiscuss the different intermediaries through which some insurers distribute their products.\nIdentify and describe the factors an insurer considers when making decisions about which distribution systems to use.\nIdentify types of distribution problems and solutions.",
+            "self_learning_hours": 2.0,
+            "quiz_hours": 0.5,
+            "review_hours": 0.5,
+            "delivery_mode": "Document self-learning",
+            "directory": "Lesson 1",
+            "remark": "Detail Lecture: LOMA291_M2L1_Product Distribution"
+          },
+          "2": {
+            "lesson_num": 2,
+            "title": "New Business and Underwriting",
+            "objectives": "Describe the primary components of the new business process.\nExplain how insurers use technological advances to increase the efficiency of the new business and underwriting process.\nDescribe the underwriting process and the importance of sound underwriting to a company's financial viability.\nDescribe the processes of field underwriting and teleunderwriting.\nIdentify and explain the three main categories of risk factors that underwriters consider.\nIdentify and describe the various sources of information and underwriting tools that underwriters use to assess risk.\nExplain how insurers classify risks and make an underwriting decision.",
+            "self_learning_hours": 2.0,
+            "quiz_hours": 0.5,
+            "review_hours": 0.5,
+            "delivery_mode": "Document self-learning",
+            "directory": "Lesson 2",
+            "remark": "Detail Lecture: LOMA291_M2L2_New Business and Underwriting\nSummary: LOMA291_M2L2_Summary"
+          },
+          "3": {
+            "lesson_num": 3,
+            "title": "Customer Service",
+            "objectives": "Recognize the characteristics of effective customer service, and identify an insurer's various customers.\nDescribe the purpose of customer service, and describe some typical customer service transactions for individual life and annuity products.\nDescribe how managing customers' experiences benefits customers and companies.\nDescribe how insurers monitor and evaluate their customer service.",
+            "self_learning_hours": 2.0,
+            "quiz_hours": 0.5,
+            "review_hours": 0.5,
+            "delivery_mode": "Document self-learning",
+            "directory": "Lesson 3",
+            "remark": "Detail Lecture: LOMA291_M2L3_Customer Service"
+          },
+          "4": {
+            "lesson_num": 4,
+            "title": "Claim Administration",
+            "objectives": "Explain the purpose of effective claim administration, and describe the staff involved in processing claims.\nIdentify the steps in the claim process, and explain how to determine whether death benefits are payable.\nDetermine the correct amount and correct recipient of a death benefit, and describe how the benefit can be paid.\nIdentify the factors that are likely to trigger a claim investigation, and describe different types of claim fraud and measures insurers can take to prevent them.\nDescribe the Model Unfair Claims Settlement Practices Act, and give examples of unfair claim practices that would result in a violation of this act.\nExplain various ways that insurers improve and evaluate claim processing efficiency.",
+            "self_learning_hours": 2.0,
+            "quiz_hours": 0.5,
+            "review_hours": 0.5,
+            "delivery_mode": "Document self-learning",
+            "directory": "Lesson 4",
+            "remark": "Detail Lecture: LOMA291_M2L4_Claim Administration"
+          }
+        }
+      },
+      "3": {
+        "module_num": 3,
+        "title": "Key Support Functions for Insurer Success",
+        "description": "Some functions primarily provide support to other functions. In this module, we’ll discuss three of the most important support functions that are essential to an insurance company’s success.\n\nIn this module, you’ll learn about\nHow insurers use research and data to develop their marketing mix\nThe process insurers use to create successful new products\nHow the legal and compliance functions work together and separately to keep the insurer on the right side of the law",
+        "lessons": {
+          "1": {
+            "lesson_num": 1,
+            "title": "Marketing",
+            "objectives": "Identify and describe the elements of a marketing plan.\nIdentify and describe the four variables that make up the traditional marketing mix and the newer \"Four Cs\" model.\nDistinguish among three promotional tools insurers use to help them convey their messages to customers.\nDescribe how insurers use market segmentation and target marketing to identify the customers most likely to benefit from their products.\nDistinguish among three primary types of target marketing strategies.\nDescribe different sources that insurers use for obtaining market information.\nIdentify elements in the internal and external marketing environments.\nDescribe marketing controls.\nExplain the duties of the marketing department and what other functional areas contribute to marketing activities.",
+            "self_learning_hours": 2.0,
+            "quiz_hours": 0.5,
+            "review_hours": 0.5,
+            "delivery_mode": "Document self-learning",
+            "directory": "Lesson 1",
+            "remark": "Detail Lecture: LOMA291_M3L1_Marketing"
+          },
+          "2": {
+            "lesson_num": 2,
+            "title": "Product Development",
+            "objectives": "Explain the importance of product development to an insurance company's success.\nDescribe the overall product development process.\nExplain how insurance companies generate and screen ideas for new products.\nDescribe the five elements of a comprehensive business analysis, and identify the responsibilities of an insurer's functional areas in this process.\nExplain the technical product design stage of product development.\nDescribe Day 1 and Day 2 functionalities that must be put into place during product implementation.\nDescribe how insurers use transaction processing systems, expert systems, and other information systems.\nDescribe how insurers monitor, evaluate, and use feedback to improve both their product offerings and their product development process.",
+            "self_learning_hours": 2.0,
+            "quiz_hours": 0.5,
+            "review_hours": 0.5,
+            "delivery_mode": "Document self-learning",
+            "directory": "Lesson 2",
+            "remark": "Detail Lecture: LOMA291_M3L2_Product Development"
+          },
+          "3": {
+            "lesson_num": 3,
+            "title": "The Legal and Compliance Function",
+            "objectives": "Distinguish between the legal and compliance functions, and describe the roles and responsibilities of each area.\nDescribe the primary responsibilities of the legal department.\nDescribe the primary responsibilities of the compliance department.\nExplain the difference between solvency laws and market conduct laws, and explain several market conduct laws that insurers must comply with.\nDescribe the purpose of a market conduct examination and how the compliance department is involved in market conduct examinations.\nDistinguish between two types of market conduct examinations in the United States.",
+            "self_learning_hours": 2.0,
+            "quiz_hours": 0.5,
+            "review_hours": 0.5,
+            "delivery_mode": "Document self-learning",
+            "directory": "Lesson 3",
+            "remark": "Detail Lecture: LOMA291_M3L3_The Legal and Compliance Function"
+          }
+        }
+      },
+      "4": {
+        "module_num": 4,
+        "title": "Functions and Goals of Financial Management",
+        "description": "Policyowners and beneficiaries depend on their insurer to meet its obligations when they come due. The insurer’s financial area has a large part of the responsibility of ensuring the company remains strong for its customers. In this module, we’ll discuss the variety of activities that take place in the financial management area and we’ll explore the financial management goals that are common to all insurers.\n\nIn this module, you’ll learn about\nThe different aspects of an insurer’s financial operations, including accounting, financial reporting, treasury, investing, and auditing\nThe goals of an insurer’s financial operations, including maintaining solvency, achieving profitability, and managing capital",
+        "lessons": {
+          "1": {
+            "lesson_num": 1,
+            "title": "Financial Functions",
+            "objectives": "Describe how an insurance company's chief executive officer (CEO) and senior financial management direct the company's financial operations.\nDescribe the responsibilities of the accounting and financial reporting function.\nIdentify internal and external users of accounting information, and describe how financial accounting and management accounting meet their different needs.\nDescribe how insurers use budgets and cost accounting as control tools.\nDescribe the treasury operations activities of cash management and liquidity management.\nDescribe the investment management function, including the role of the investment committee and the purpose of the investment policy.\nDescribe the different types of securities, and distinguish between debt securities and equity securities.\nDistinguish between an insurer's general account and separate account portfolios.\nExplain the importance of the audit and internal control function, and describe other players in an insurer's financial operations.",
+            "self_learning_hours": 2.0,
+            "quiz_hours": 0.5,
+            "review_hours": 0.5,
+            "delivery_mode": "Document self-learning",
+            "directory": "Lesson 1",
+            "remark": "Detail Lecture: LOMA291_M4L1_Financial Functions"
+          },
+          "2": {
+            "lesson_num": 2,
+            "title": "Goals of Financial Management",
+            "objectives": "Explain insurer solvency, and describe how an insurer can become insolvent.\nDescribe tools insurance regulators use to monitor insurer solvency.\nDescribe financial reporting requirements imposed by insurance regulators and securities regulators.\nDescribe sources of information for external stakeholders other than financial reports.\nDescribe the types of information included in an insurer's income statement and balance sheet.\nShow how the balance sheet relates to the basic accounting equation.\nDifferentiate between profit and profitability, and discuss the relationship between capital management and long-term profitability.",
+            "self_learning_hours": 2.0,
+            "quiz_hours": 0.5,
+            "review_hours": 0.5,
+            "delivery_mode": "Document self-learning",
+            "directory": "Lesson 2",
+            "remark": "Detail Lecture: LOMA291_M4L2_Goals of Financial Management"
+          }
+        }
+      }
+    }
+  }
+}
