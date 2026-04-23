@@ -135,8 +135,20 @@ def _build_module_chunks(rows: list[dict], syllabus: dict) -> list[dict]:
         cat_counts = Counter(n["Category"] for n in nodes)
         cats_sorted = [c for c, _ in cat_counts.most_common()]
 
-        text = "\n".join([
-            f"{module} (Course: {course})",
+        text_lines = [f"{module} (Course: {course})"]
+
+        # Module Overview from syllabus (E1): prepend after header line
+        mod_num = _module_number(module)
+        syl = syllabus.get(_course_code(course))
+        if syl and str(mod_num) in syl["modules"]:
+            desc = syl["modules"][str(mod_num)]["description"]
+            if desc:
+                text_lines.append("")
+                text_lines.append("Module Overview (from syllabus):")
+                text_lines.append(desc)
+                text_lines.append("")
+
+        text_lines.extend([
             f"Number of lessons: {len(sorted_lessons)}",
             f"Number of nodes: {len(nodes)}",
             "Lessons:",
@@ -144,13 +156,14 @@ def _build_module_chunks(rows: list[dict], syllabus: dict) -> list[dict]:
             "",
             f"Categories covered: {', '.join(cats_sorted)}",
         ])
+
         chunks.append({
             "id": _det_id("module", course, module),
-            "text": text,
+            "text": "\n".join(text_lines),
             "payload": {
                 "chunk_type": "module",
                 "course": course,
-                "module": _module_number(module),
+                "module": mod_num,
                 "lesson_count": len(sorted_lessons),
                 "node_count": len(nodes),
             },
