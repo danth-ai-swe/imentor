@@ -23,7 +23,9 @@
       "Bash(python -c \"import ast; ast.parse\\(open\\('src/rag/ingest/pipeline.py', encoding='utf-8'\\).read\\(\\)\\); print\\('AST OK'\\)\")",
       "Bash(python -m src.rag.ingest.build_overall_chunks)",
       "Bash(python -c \"import ast; ast.parse\\(open\\('src/rag/search/pipeline.py', encoding='utf-8'\\).read\\(\\)\\); print\\('OK'\\)\")",
-      "Bash(python *)"
+      "Bash(python *)",
+      "Bash(PYTHONIOENCODING=utf-8 python -m src.rag.ingest.build_overall_chunks)",
+      "Bash(PYTHONIOENCODING=utf-8 python tmp_verify_final.py)"
     ]
   },
   "enabledPlugins": {
