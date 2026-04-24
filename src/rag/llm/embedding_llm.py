@@ -2,6 +2,7 @@ import asyncio
 import base64
 import threading
 import time
+from collections import OrderedDict
 from functools import lru_cache
 from typing import List, Dict, Any
 
@@ -78,20 +79,25 @@ def _cached_embed_single(text: str) -> tuple[float, ...]:
     return tuple(_decode_base64(raw.data[0].embedding))
 
 
-# ── Async cache (optional nâng cao) ────────────────────────────────────────────
-_async_cache: Dict[str, List[float]] = {}
+# ── Async LRU cache ───────────────────────────────────────────────────────────
+_async_cache: "OrderedDict[str, List[float]]" = OrderedDict()
 _async_cache_lock = asyncio.Lock()
 
 
 async def _aget_from_cache(text: str):
     async with _async_cache_lock:
-        return _async_cache.get(text)
+        value = _async_cache.get(text)
+        if value is not None:
+            _async_cache.move_to_end(text)
+        return value
 
 
 async def _aset_cache(text: str, value: List[float]):
     async with _async_cache_lock:
-        if len(_async_cache) < _CACHE_SIZE:
-            _async_cache[text] = value
+        _async_cache[text] = value
+        _async_cache.move_to_end(text)
+        while len(_async_cache) > _CACHE_SIZE:
+            _async_cache.popitem(last=False)
 
 
 # ── Batch config ──────────────────────────────────────────────────────────────
@@ -171,18 +177,14 @@ class AzureEmbeddingClient:
         _metrics["batch_sizes"].extend([len(b) for b in batches])
 
         async def _fetch(batch: List[str]) -> List[List[float]]:
-            @retry_policy()
-            async def _call():
-                async with _semaphore:
-                    resp = await get_async_client().embeddings.create(
-                        input=batch,
-                        model=config.OPENAI_EMBEDDING_MODEL,
-                        encoding_format="base64",
-                    )
-                    ordered = sorted(resp.data, key=lambda x: x.index)
-                    return [_decode_base64(d.embedding) for d in ordered]
-
-            return await _call()
+            async with _semaphore:
+                resp = await get_async_client().embeddings.create(
+                    input=batch,
+                    model=config.OPENAI_EMBEDDING_MODEL,
+                    encoding_format="base64",
+                )
+                ordered = sorted(resp.data, key=lambda x: x.index)
+                return [_decode_base64(d.embedding) for d in ordered]
 
         # ── fetch uncached ──────────────────────────────────────────────────
         fetched = []

@@ -1,4 +1,4 @@
-from src.utils.language_utils import translate_to_english
+from src.utils.language_utils import atranslate_to_english
 
 REFLECTION_PROMPT = """
 You are a query-rewrite assistant with expertise in conversational context resolution
@@ -75,7 +75,7 @@ class Reflection:
         latest_question = (user_query or "").strip()
 
         if not chat_history:
-            return translate_to_english(latest_question)
+            return await atranslate_to_english(latest_question)
 
         return await self.llm.ainvoke(
             prompt=REFLECTION_PROMPT.format(history=chat_history, query=latest_question)

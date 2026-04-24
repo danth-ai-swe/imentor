@@ -1,5 +1,9 @@
+import asyncio
+import hashlib
 import threading
-from typing import Dict, List
+import time
+from collections import OrderedDict
+from typing import AsyncGenerator, Dict, List, Optional
 
 from src.config.app_config import retry_policy, get_app_config
 from src.rag.llm.embedding_llm import get_async_client, get_sync_client
@@ -11,6 +15,45 @@ config = get_app_config()
 _sync_lock = threading.Lock()
 _async_lock = threading.Lock()
 _chat_lock = threading.Lock()
+
+# ── Prompt-response TTL LRU cache ─────────────────────────────────────────────
+# Safe because GPT_TEMPERATURE = 0 → deterministic output.
+_PROMPT_CACHE_SIZE = 256
+_PROMPT_CACHE_TTL = 1_800  # 30 min
+
+_prompt_cache: "OrderedDict[str, tuple[float, str]]" = OrderedDict()
+_prompt_cache_lock = asyncio.Lock()
+
+
+def _prompt_key(prompt: str) -> str:
+    return hashlib.sha1(prompt.encode("utf-8")).hexdigest()
+
+
+async def _prompt_cache_get(prompt: str) -> Optional[str]:
+    key = _prompt_key(prompt)
+    now = time.monotonic()
+    async with _prompt_cache_lock:
+        entry = _prompt_cache.get(key)
+        if entry is None:
+            return None
+        ts, value = entry
+        if now - ts > _PROMPT_CACHE_TTL:
+            _prompt_cache.pop(key, None)
+            return None
+        _prompt_cache.move_to_end(key)
+        return value
+
+
+async def _prompt_cache_put(prompt: str, value: str) -> None:
+    if not value:
+        return
+    key = _prompt_key(prompt)
+    now = time.monotonic()
+    async with _prompt_cache_lock:
+        _prompt_cache[key] = (now, value)
+        _prompt_cache.move_to_end(key)
+        while len(_prompt_cache) > _PROMPT_CACHE_SIZE:
+            _prompt_cache.popitem(last=False)
 
 
 def _client_kwargs() -> dict:
@@ -41,12 +84,17 @@ class AzureChatClient:
         ]
 
     @staticmethod
-    def _chat_params(messages: List[Dict], max_tokens: int | None = None) -> dict:
+    def _chat_params(
+            messages: List[Dict],
+            max_tokens: int | None = None,
+            temperature: float | None = None,
+            top_p: float | None = None,
+    ) -> dict:
         return dict(
             model=config.OPENAI_CHAT_MODEL,
             messages=messages,
-            temperature=config.GPT_TEMPERATURE,
-            top_p=config.GPT_TOP_P,
+            temperature=config.GPT_TEMPERATURE if temperature is None else temperature,
+            top_p=config.GPT_TOP_P if top_p is None else top_p,
             max_tokens=max_tokens or config.GPT_MAX_TOKENS,
         )
 
@@ -97,8 +145,65 @@ class AzureChatClient:
     @alog_method_call
     @retry_policy()
     async def ainvoke(self, prompt: str) -> str:
-        """Async single-turn text completion."""
-        return await self.achat([{"role": "user", "content": prompt}])
+        """Async single-turn text completion (TTL-cached, temp=0)."""
+        cached = await _prompt_cache_get(prompt)
+        if cached is not None:
+            return cached
+        result = await self.achat([{"role": "user", "content": prompt}])
+        await _prompt_cache_put(prompt, result)
+        return result
+
+    @alog_method_call
+    @retry_policy()
+    async def ainvoke_creative(
+            self,
+            prompt: str,
+            temperature: float = 0.7,
+            top_p: float = 0.95,
+            max_tokens: int | None = None,
+    ) -> str:
+        """Async single-turn completion with a higher temperature for more
+        creative / varied prose (e.g. the markdown final-answer step).
+        Bypasses the prompt cache so repeated queries don't collapse back to
+        the first sampled response.
+        """
+        response = await get_async_client().chat.completions.create(
+            **self._chat_params(
+                [{"role": "user", "content": prompt}],
+                max_tokens=max_tokens,
+                temperature=temperature,
+                top_p=top_p,
+            )
+        )
+        return response.choices[0].message.content or ""
+
+    async def astream_creative(
+            self,
+            prompt: str,
+            temperature: float = 0.7,
+            top_p: float = 0.95,
+            max_tokens: int | None = None,
+    ) -> AsyncGenerator[str, None]:
+        """Streaming variant of ainvoke_creative. Yields text deltas as Azure
+        emits them — lets callers ship tokens to the client for faster
+        perceived latency. Not cached (streams are inherently single-use).
+        """
+        response = await get_async_client().chat.completions.create(
+            **self._chat_params(
+                [{"role": "user", "content": prompt}],
+                max_tokens=max_tokens,
+                temperature=temperature,
+                top_p=top_p,
+            ),
+            stream=True,
+        )
+        async for event in response:
+            if not event.choices:
+                continue
+            delta = event.choices[0].delta
+            piece = getattr(delta, "content", None)
+            if piece:
+                yield piece
 
 
 _chat_client_instance: AzureChatClient | None = None

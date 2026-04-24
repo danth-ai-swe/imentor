@@ -88,70 +88,11 @@ async def afetch_chat_history(llm: AzureChatClient,
     return summary
 
 
-def _build_chunk_filter_payload(
-        index: int,
-        chunk,
-        max_text_chars: int = 400,
-) -> dict:
-    """
-    Build một dict mô tả chunk gồm metadata + text + node summary,
-    dùng để đưa vào prompt filter.
-    """
-    metadata = chunk.get("metadata", {}) or {}
-
-    # ── Source header ──────────────────────────────────────────────────
-    file_name = metadata.get("file_name", "unknown")
-    course = metadata.get("course", "")
-    module_num = metadata.get("module_number", "")
-    lesson_num = metadata.get("lesson_number", "")
-    page_number = metadata.get("page_number", "")
-
-    header_parts = [f"Source: {file_name}"]
-    if course:
-        header_parts.append(f"Course: {course}")
-    if module_num != "":
-        header_parts.append(f"Module: {module_num}")
-    if lesson_num != "":
-        header_parts.append(f"Lesson: {lesson_num}")
-    if page_number != "":
-        header_parts.append(f"Page: {page_number}")
-
-    # ── Node reference ─────────────────────────────────────────────────
-    node_id = metadata.get("node_id")
-    node_name = metadata.get("node_name", "")
-    category = metadata.get("category", "")
-    summary = metadata.get("summary", "")
-
-    node_label = None
-    if node_id is not None and summary:
-        label_parts = [f"Node {node_id}"]
-        if node_name:
-            label_parts.append(node_name)
-        if category:
-            label_parts.append(f"({category})")
-        node_label = (
-                " - ".join(label_parts[:2])
-                + (f" {label_parts[2]}" if len(label_parts) > 2 else "")
-        )
-
-    payload: dict = {
-        "index": index,
-        "header": " | ".join(header_parts),
-        "text": chunk.get("text", "")[:max_text_chars],
-    }
-    if node_label:
-        payload["node"] = node_label
-        payload["node_summary"] = summary[:200]
-
-    return payload
-
-
 def build_final_prompt(
         user_input: str,
         detected_language: str,
         relevant_chunks: list,
 ) -> str:
-    # ===== 1. Build context blocks từ các chunk =====
     context_blocks = []
     for chunk in relevant_chunks:
         payload = chunk.get("payload", {}) or {}
@@ -162,7 +103,6 @@ def build_final_prompt(
         lesson_num = payload.get("lesson_number", "")
         page_number = payload.get("page_number", "")
 
-        # Header mô tả nguồn gốc của chunk
         header_parts = [f"Source: {file_name}"]
         if course:
             header_parts.append(f"Course: {course}")
@@ -180,42 +120,9 @@ def build_final_prompt(
 
     context_str = "\n\n---\n\n".join(context_blocks) if context_blocks else "(no context)"
 
-    # ===== 2. Build Knowledge Node Reference (dedupe theo node_id) =====
-    seen_node_ids = set()
-    node_lines = []
-    for chunk in relevant_chunks:
-        payload = chunk.get("payload", {}) or {}
-        node_id = payload.get("node_id")
-        summary = payload.get("summary")
-
-        if node_id is None or not summary:
-            continue
-        if node_id in seen_node_ids:
-            continue
-        seen_node_ids.add(node_id)
-
-        node_name = payload.get("node_name", "")
-        category = payload.get("category", "")
-
-        label_parts = [f"Node {node_id}"]
-        if node_name:
-            label_parts.append(node_name)
-        if category:
-            label_parts.append(f"({category})")
-        label = " - ".join(label_parts[:2]) + (f" {label_parts[2]}" if len(label_parts) > 2 else "")
-
-        node_lines.append(f"- {label}\n  Summary: {summary}")
-
-    node_ref = ""
-    if node_lines:
-        node_ref = "## Knowledge Node Reference\n" + "\n".join(node_lines)
-
-    # ===== 3. Ghép prompt cuối =====
-    final_prompt = SYSTEM_PROMPT_TEMPLATE.format(
+    return SYSTEM_PROMPT_TEMPLATE.format(
         detected_language=detected_language,
         context_str=context_str,
-        node_ref=node_ref,
+        node_ref="",
         user_input=user_input,
     )
-
-    return final_prompt

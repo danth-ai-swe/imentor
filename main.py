@@ -1,3 +1,4 @@
+import asyncio
 from contextlib import asynccontextmanager
 from datetime import datetime
 
@@ -16,6 +17,7 @@ from src.rag.llm.embedding_llm import (
     get_async_client,
 )
 from src.rag.search.pipeline import INTENT_CORE_KNOWLEDGE, INTENT_OFF_TOPIC
+from src.rag.search.reranker import _get_reranker
 from src.rag.semantic_router.intent_router_registry import set_intent_router
 from src.rag.semantic_router.precomputed import (
     build_and_save_embeddings,
@@ -55,6 +57,10 @@ async def lifespan(application: FastAPI):
         precomputed_embeddings=precomputed,
     )
     set_intent_router(router)
+
+    # Warm up the cross-encoder reranker so the first core-search query
+    # doesn't pay the ONNX model download cost on the hot path.
+    asyncio.get_running_loop().run_in_executor(None, _get_reranker)
 
     yield  # ← app đang chạy
 

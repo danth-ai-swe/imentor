@@ -393,8 +393,10 @@ async def web_rag_answer(llm, embedder, user_input: str, detected_lang: str, top
 
     # Step 1: search + embed query in parallel
     logger.info("[pipeline] START — query=%r", user_input[:80])
-    raw_results = await  asearch_and_extract(user_input)
-    query_emb = await embedder.aembed_query(user_input)
+    raw_results, query_emb = await asyncio.gather(
+        asearch_and_extract(user_input),
+        embedder.aembed_query(user_input),
+    )
     if not raw_results:
         return {"answer": NO_RESULT_RESPONSE_MAP.get(detected_lang), "sources": []}
 

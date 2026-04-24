@@ -41,6 +41,10 @@ QUIZ_KEYWORDS: set[str] = {
     "quiz"
 }
 VECTOR_SEARCH_TOP_K: int = 2
+CORE_VECTOR_TOP_K: int = 5
+CORE_RERANK_TOP_K: int = 3
+PREP_CACHE_SIZE: int = 512
+PREP_CACHE_TTL_SECONDS: int = 3_600
 NEIGHBOR_PREV_INDEX: int = -1  # phần tử cuối của list "previous" = chunk liền trước
 NEIGHBOR_NEXT_INDEX: int = 0  # phần tử đầu của list "next"     = chunk liền sau
 INTENT_CORE_KNOWLEDGE: str = "core_knowledge"

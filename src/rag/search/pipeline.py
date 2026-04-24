@@ -1,29 +1,31 @@
 import asyncio
-import json
-from typing import Any, Dict, List, Optional
+from typing import Any, AsyncGenerator, Dict, List, Optional
 
 import numpy as np
 
-from src.rag.search.searxng_search import web_rag_answer
 from src.apis.app_model import ChatSourceModel
 from src.config.app_config import AppConfig, get_app_config
 from src.constants.app_constant import (
     COLLECTION_NAME,
     MAX_INPUT_CHARS,
-    INTENT_CORE_KNOWLEDGE, INTENT_OFF_TOPIC, INTENT_QUIZ, NEIGHBOR_PREV_INDEX, VECTOR_SEARCH_TOP_K,
+    INTENT_CORE_KNOWLEDGE, INTENT_OFF_TOPIC, INTENT_QUIZ, NEIGHBOR_PREV_INDEX,
+    VECTOR_SEARCH_TOP_K, CORE_VECTOR_TOP_K, CORE_RERANK_TOP_K,
     NEIGHBOR_NEXT_INDEX, UNSUPPORTED_LANGUAGE_MSG, INPUT_TOO_LONG_RESPONSE, OFF_TOPIC_RESPONSE_MAP,
-    INTENT_OVERALL_COURSE_KNOWLEDGE, OVERALL_COLLECTION_NAME,
+    INTENT_OVERALL_COURSE_KNOWLEDGE, OVERALL_COLLECTION_NAME, NO_RESULT_RESPONSE_MAP,
 )
 from src.rag.db_vector import get_qdrant_client, QdrantManager
 from src.rag.llm.chat_llm import AzureChatClient, get_openai_chat_client
 from src.rag.llm.embedding_llm import AzureEmbeddingClient, get_openai_embedding_client
 from src.rag.reflector import Reflection
-from src.rag.search.entrypoint import build_final_prompt, afetch_chat_history, _build_chunk_filter_payload
+from src.rag.search import prep_cache
+from src.rag.search.entrypoint import build_final_prompt, afetch_chat_history
 from src.rag.search.model import PipelineResult, ChunkDict
-from src.rag.search.prompt import DETECT_LANGUAGE_PROMPT, CLARITY_CHECK_PROMPT, HYDE_VARIANTS_PROMPT, \
-    CHUNK_RELEVANCE_FILTER_PROMPT
+from src.rag.search.prompt import DETECT_LANGUAGE_PROMPT, CLARITY_CHECK_PROMPT, HYDE_PROMPT
+from src.rag.search.reranker import arerank_chunks
+from src.rag.search.searxng_search import web_rag_answer
 from src.rag.semantic_router.intent_router_registry import get_intent_router
-from src.utils.app_utils import is_quiz_intent, parse_json_response, mean_pool_colbert, mean_pool_dense
+from src.utils.app_utils import is_quiz_intent, parse_json_response
+from src.utils.language_utils import atranslate_to_english
 from src.utils.logger_utils import logger, StepTimer
 
 
@@ -128,63 +130,6 @@ async def _acheck_input_clarity(
         return {"clear": True}
 
 
-async def _afilter_relevant_chunks(
-        llm: AzureChatClient,
-        standalone_query: str,
-        chunks: List[ChunkDict],
-        max_text_chars: int = 400,
-) -> List[ChunkDict]:
-    """
-    Dùng LLM lọc chunks thực sự liên quan.
-    Gửi kèm metadata (source, course, module, lesson, page, node summary)
-    lẫn nội dung text để LLM có đủ context phán xét.
-    """
-    if not chunks:
-        return []
-
-    chunks_payload = [
-        _build_chunk_filter_payload(i, chunk, max_text_chars)
-        for i, chunk in enumerate(chunks)
-    ]
-
-    chunks_json = json.dumps(chunks_payload, ensure_ascii=False, indent=2)
-
-    prompt = CHUNK_RELEVANCE_FILTER_PROMPT.format(
-        standalone_query=standalone_query,
-        chunks_json=chunks_json,
-    )
-
-    try:
-        raw = (await llm.ainvoke(prompt)).strip()
-        indices = parse_json_response(raw)
-
-        if not isinstance(indices, dict) or "relevant_indices" not in indices:
-            logger.warning("Chunk filter returned unexpected format — keeping all chunks")
-            return chunks
-
-        raw_indices = indices["relevant_indices"]
-        if not isinstance(raw_indices, list):
-            logger.warning("relevant_indices is not a list — keeping all chunks")
-            return chunks
-
-        valid_indices = [
-            i for i in raw_indices
-            if isinstance(i, int) and 0 <= i < len(chunks)
-        ]
-
-        logger.info(
-            f"Chunk relevance filter: {len(chunks)} total → "
-            f"{len(valid_indices)} relevant "
-            f"(dropped {len(chunks) - len(valid_indices)})"
-        )
-
-        return [chunks[i] for i in valid_indices]
-
-    except Exception:
-        logger.exception("Chunk relevance filter failed — keeping all chunks as fallback")
-        return chunks
-
-
 async def _avalidate_and_prepare(
         user_input: str,
         conversation_id: Optional[str],
@@ -193,35 +138,56 @@ async def _avalidate_and_prepare(
     if len(user_input) > MAX_INPUT_CHARS:
         return None, None, INPUT_TOO_LONG_RESPONSE.format(max_chars=MAX_INPUT_CHARS)
 
-    detected_language = await _adetect_language_llm(llm, user_input)
+    has_history = bool(conversation_id and conversation_id.strip())
+    if not has_history:
+        cached = prep_cache.get(user_input)
+        if cached is not None:
+            return cached
+
+    # LLM language detection runs in parallel with the reflection step
+    # (history fetch + translate/rewrite) — they share no state.
+    language_task = asyncio.create_task(_adetect_language_llm(llm, user_input))
+
+    if has_history:
+        chat_history = await afetch_chat_history(llm, conversation_id)
+        standalone_query = await Reflection(llm).areflect(chat_history, user_input)
+    else:
+        standalone_query = await Reflection(llm).areflect("", user_input)
+
+    detected_language = await language_task
     if not detected_language:
         return None, None, UNSUPPORTED_LANGUAGE_MSG
 
-    chat_history = await afetch_chat_history(llm, conversation_id)
-    standalone_query = await Reflection(llm).areflect(chat_history, user_input)
+    result = (detected_language, standalone_query, None)
+    if not has_history:
+        prep_cache.put(user_input, result)
+    return result
 
-    return detected_language, standalone_query, None
+
+async def _aensure_english_query(text: str) -> str:
+    """Guard: HyDE must see English input. If the reflected query still has
+    non-ASCII characters (VN/JP/etc.), translate it before prompting."""
+    if not text or all(ord(c) < 128 for c in text):
+        return text
+    return await atranslate_to_english(text)
 
 
-async def _ahyde_generate_variants(
+async def _ahyde_generate(
         llm: AzureChatClient,
         standalone_query: str,
-        response_language: str,
-) -> list[str]:
-    prompt = HYDE_VARIANTS_PROMPT.format(
-        standalone_query=standalone_query,
-        response_language=response_language,
-    )
+) -> str:
+    english_query = await _aensure_english_query(standalone_query)
+    prompt = HYDE_PROMPT.format(standalone_query=english_query)
     try:
         raw = (await llm.ainvoke(prompt)).strip()
         parsed = parse_json_response(raw)
-        variants = parsed.get("variants", [])
-        if isinstance(variants, list) and variants:
-            return variants
-        return [standalone_query]
+        hyde = parsed.get("hyde", "")
+        if isinstance(hyde, str) and hyde.strip():
+            return hyde
+        return english_query
     except Exception:
-        logger.exception("HyDE variant generation failed, using standalone_query")
-        return [standalone_query]
+        logger.exception("HyDE generation failed, using standalone_query")
+        return english_query
 
 
 async def _adetect_language_llm(
@@ -268,25 +234,18 @@ async def _aroute_intent(embedder: AzureEmbeddingClient, standalone_query: str) 
     return best_intent
 
 
-async def _aembed_hyde_variants(
+async def _aembed_text(
         embedder: AzureEmbeddingClient,
         qdrant: QdrantManager,
-        variants: List[str],
+        text: str,
 ) -> tuple[List[float], List[List[float]]]:
-    dense_embeds = await embedder.aembed_documents(variants)
+    dense_task = embedder.aembed_documents([text])
+    colbert_task = asyncio.to_thread(qdrant.embed_colbert_query, text)
+    dense_embeds, colbert_result = await asyncio.gather(dense_task, colbert_task)
 
-    colbert_tasks = [
-        asyncio.to_thread(qdrant.embed_colbert_query, v) for v in variants
-    ]
-    colbert_results = await asyncio.gather(*colbert_tasks)
-
-    colbert_embeds: List[List[List[float]]] = [
-        [list(map(float, token)) for token in mat] for mat in colbert_results
-    ]
-
-    mean_dense = mean_pool_dense(dense_embeds)
-    mean_colbert = mean_pool_colbert(colbert_embeds)
-    return mean_dense, mean_colbert
+    dense_vec = dense_embeds[0]
+    colbert_vec = [list(map(float, token)) for token in colbert_result]
+    return dense_vec, colbert_vec
 
 
 async def _avector_search(
@@ -294,13 +253,14 @@ async def _avector_search(
         mean_dense: List[float],
         mean_colbert: List[List[float]],
         standalone_query: str,
+        top_k: int = VECTOR_SEARCH_TOP_K,
 ) -> List[ChunkDict]:
     try:
         points = await qdrant.ahybrid_search(
             dense_query_vec=mean_dense,
             colbert_query_vec=mean_colbert,
             bm25_query=standalone_query,
-            top_k=VECTOR_SEARCH_TOP_K,
+            top_k=top_k,
         )
         return [
             ChunkDict(
@@ -388,43 +348,42 @@ async def _agenerate_answer(
         relevant_chunks=enriched_chunks,
     )
     try:
-        return (await llm.ainvoke(final_prompt)).strip()
+        return (await llm.ainvoke_creative(final_prompt)).strip()
     except Exception:
         logger.exception("Failed to generate answer from LLM")
 
 
-async def _arun_hyde_search(
+async def _arun_core_search(
         llm: AzureChatClient,
         embedder: AzureEmbeddingClient,
-        collection_name: str,
-        user_input: str,
         standalone_query: str,
         detected_language: str,
 ) -> PipelineResult:
-    timer = StepTimer(f"hyde_search:{collection_name}")
+    """Core knowledge flow: HyDE → vector top 5 → rerank top 3 → enrich → answer.
+
+    Falls back to web search when the vector store returns no candidates.
+    """
+    timer = StepTimer(f"core_search:{COLLECTION_NAME}")
     config: AppConfig = get_app_config()
 
     try:
-        qdrant = get_qdrant_client(collection_name)
+        qdrant = get_qdrant_client(COLLECTION_NAME)
 
-        # ── 5a+5b. clarity_check VÀ hyde_variants chạy song song ─────────────
         async with timer.astep("clarity_and_hyde_parallel"):
             clarity_task = _acheck_input_clarity(llm, standalone_query, detected_language)
-            hyde_task = _ahyde_generate_variants(llm, standalone_query, detected_language)
-            clarity, variants = await asyncio.gather(clarity_task, hyde_task)
+            hyde_task = _ahyde_generate(llm, standalone_query)
+            clarity, hyde = await asyncio.gather(clarity_task, hyde_task)
 
         if not clarity.get("clear", True):
             logger.info(f"Input unclear (type={clarity.get('type')}) — returning clarification")
             return _make_clarity_result(clarity, detected_language)
 
         async with timer.astep("hyde_embedding"):
-            mean_dense, mean_colbert = await _aembed_hyde_variants(
-                embedder, qdrant, variants
-            )
+            dense_vec, colbert_vec = await _aembed_text(embedder, qdrant, hyde)
 
         async with timer.astep("vector_search"):
             sorted_chunks = await _avector_search(
-                qdrant, mean_dense, mean_colbert, standalone_query
+                qdrant, dense_vec, colbert_vec, standalone_query, top_k=CORE_VECTOR_TOP_K,
             )
 
         if not sorted_chunks:
@@ -433,30 +392,83 @@ async def _arun_hyde_search(
                 rs = await web_rag_answer(llm, embedder, standalone_query, detected_language)
             return _make_web_search_result(rs["answer"], rs["sources"], detected_language)
 
+        async with timer.astep("rerank"):
+            reranked = await arerank_chunks(standalone_query, sorted_chunks, CORE_RERANK_TOP_K)
+
         async with timer.astep("enrich_chunks"):
-            neighbor_chunks = await _afetch_neighbor_chunks(qdrant, sorted_chunks)
-            enriched_chunks = _merge_chunks(sorted_chunks, neighbor_chunks)
-
-        async with timer.astep("filter_relevant_chunks"):
-            filtered_chunks = await _afilter_relevant_chunks(
-                llm, standalone_query, enriched_chunks
-            )
-
-        if not filtered_chunks:
-            logger.info("No relevant chunks after filtering — triggering web search fallback")
-            async with timer.astep("web_search_fallback_no_relevant"):
-                rs = await web_rag_answer(llm, embedder, standalone_query, detected_language)
-            return _make_web_search_result(rs["answer"], rs["sources"], detected_language)
+            neighbor_chunks = await _afetch_neighbor_chunks(qdrant, reranked)
+            enriched_chunks = _merge_chunks(reranked, neighbor_chunks)
 
         async with timer.astep("generate_answer"):
             answer = await _agenerate_answer(
-                llm, standalone_query, detected_language,
-                filtered_chunks,
+                llm, standalone_query, detected_language, enriched_chunks,
+            )
+
+        sources = extract_sources(reranked, config.APP_DOMAIN)
+        return _make_rag_result(
+            response=answer,
+            sources=sources,
+            detected_language=detected_language,
+            answer_satisfied=True,
+        )
+
+    finally:
+        timer.summary()
+
+
+async def _arun_overall_search(
+        llm: AzureChatClient,
+        embedder: AzureEmbeddingClient,
+        standalone_query: str,
+        detected_language: str,
+) -> PipelineResult:
+    """Overall-course flow: no HyDE, no web search, no LLM relevance filter.
+
+    The overall collection holds a small set of static metadata chunks, so we
+    embed the query directly and pass whatever hybrid-search returns to the
+    generator. When nothing is found we return a templated "no result" reply
+    instead of web fallback (web content hallucinates non-existent courses).
+    """
+    timer = StepTimer(f"overall_search:{OVERALL_COLLECTION_NAME}")
+
+    try:
+        qdrant = get_qdrant_client(OVERALL_COLLECTION_NAME)
+
+        async with timer.astep("clarity_check"):
+            clarity = await _acheck_input_clarity(llm, standalone_query, detected_language)
+
+        if not clarity.get("clear", True):
+            logger.info(f"Input unclear (type={clarity.get('type')}) — returning clarification")
+            return _make_clarity_result(clarity, detected_language)
+
+        async with timer.astep("query_embedding"):
+            dense_vec, colbert_vec = await _aembed_text(
+                embedder, qdrant, standalone_query,
+            )
+
+        async with timer.astep("vector_search"):
+            sorted_chunks = await _avector_search(
+                qdrant, dense_vec, colbert_vec, standalone_query, top_k=VECTOR_SEARCH_TOP_K,
+            )
+
+        if not sorted_chunks:
+            logger.info("Overall search: no vector results — returning no-result reply")
+            no_result = NO_RESULT_RESPONSE_MAP.get(detected_language) or ""
+            return _make_rag_result(
+                response=no_result,
+                sources=[],
+                detected_language=detected_language,
+                answer_satisfied=False,
+            )
+
+        async with timer.astep("generate_answer"):
+            answer = await _agenerate_answer(
+                llm, standalone_query, detected_language, sorted_chunks,
             )
 
         return _make_rag_result(
             response=answer,
-            sources=extract_sources(sorted_chunks, config.APP_DOMAIN),
+            sources=[],
             detected_language=detected_language,
             answer_satisfied=True,
         )
@@ -494,20 +506,246 @@ async def async_pipeline_dispatch(
                 OFF_TOPIC_RESPONSE_MAP.get(detected_language), detected_language
             )
 
-        # Pick collection theo intent. Mọi intent ngoài OVERALL → core collection.
-        collection_name = (
-            OVERALL_COLLECTION_NAME if intent == INTENT_OVERALL_COURSE_KNOWLEDGE
-            else COLLECTION_NAME
-        )
+        if intent == INTENT_OVERALL_COURSE_KNOWLEDGE:
+            return await _arun_overall_search(
+                llm=llm,
+                embedder=embedder,
+                standalone_query=standalone_query,
+                detected_language=detected_language,
+            )
 
-        return await _arun_hyde_search(
+        return await _arun_core_search(
             llm=llm,
             embedder=embedder,
-            collection_name=collection_name,
-            user_input=user_input,
             standalone_query=standalone_query,
             detected_language=detected_language,
         )
+
+    finally:
+        timer.summary()
+
+
+# ── Streaming pipeline ────────────────────────────────────────────────────────
+# Events yielded by `async_pipeline_dispatch_stream`:
+#   {"type": "meta",  "intent": str, "detected_language": str|None,
+#                      "sources": list, "answer_satisfied": bool,
+#                      "web_search_used": bool}
+#   {"type": "delta", "content": str}              # one or many; concat = full answer
+#   {"type": "done"}                                # terminal marker
+# Non-streaming outcomes (off-topic / quiz / clarity / no-result / input-too-long)
+# emit meta + a single delta with the full reply + done, so clients use one path.
+
+async def _astream_answer(
+        llm: AzureChatClient,
+        user_input: str,
+        detected_language: str,
+        enriched_chunks: List[ChunkDict],
+) -> AsyncGenerator[str, None]:
+    final_prompt = build_final_prompt(
+        user_input=user_input,
+        detected_language=detected_language,
+        relevant_chunks=enriched_chunks,
+    )
+    try:
+        async for piece in llm.astream_creative(final_prompt):
+            yield piece
+    except Exception:
+        logger.exception("Failed to stream answer from LLM")
+
+
+def _meta_event(result: PipelineResult) -> Dict[str, Any]:
+    raw_sources = result.get("sources") or []
+    sources = [
+        s.model_dump() if isinstance(s, ChatSourceModel) else s
+        for s in raw_sources
+    ]
+    return {
+        "type": "meta",
+        "intent": result.get("intent"),
+        "detected_language": result.get("detected_language"),
+        "sources": sources,
+        "answer_satisfied": result.get("answer_satisfied", True),
+        "web_search_used": result.get("web_search_used", False),
+    }
+
+
+def _full_reply_events(result: PipelineResult) -> List[Dict[str, Any]]:
+    """Emit a non-streaming result (clarity/off-topic/etc.) as meta+delta+done."""
+    return [
+        _meta_event(result),
+        {"type": "delta", "content": result.get("response") or ""},
+        {"type": "done"},
+    ]
+
+
+async def _astream_core_search(
+        llm: AzureChatClient,
+        embedder: AzureEmbeddingClient,
+        standalone_query: str,
+        detected_language: str,
+) -> AsyncGenerator[Dict[str, Any], None]:
+    timer = StepTimer(f"core_search_stream:{COLLECTION_NAME}")
+    config: AppConfig = get_app_config()
+
+    try:
+        qdrant = get_qdrant_client(COLLECTION_NAME)
+
+        async with timer.astep("clarity_and_hyde_parallel"):
+            clarity_task = _acheck_input_clarity(llm, standalone_query, detected_language)
+            hyde_task = _ahyde_generate(llm, standalone_query)
+            clarity, hyde = await asyncio.gather(clarity_task, hyde_task)
+
+        if not clarity.get("clear", True):
+            for ev in _full_reply_events(_make_clarity_result(clarity, detected_language)):
+                yield ev
+            return
+
+        async with timer.astep("hyde_embedding"):
+            dense_vec, colbert_vec = await _aembed_text(embedder, qdrant, hyde)
+
+        async with timer.astep("vector_search"):
+            sorted_chunks = await _avector_search(
+                qdrant, dense_vec, colbert_vec, standalone_query, top_k=CORE_VECTOR_TOP_K,
+            )
+
+        if not sorted_chunks:
+            async with timer.astep("web_search_fallback_no_chunks"):
+                rs = await web_rag_answer(llm, embedder, standalone_query, detected_language)
+            for ev in _full_reply_events(
+                _make_web_search_result(rs["answer"], rs["sources"], detected_language)
+            ):
+                yield ev
+            return
+
+        async with timer.astep("rerank"):
+            reranked = await arerank_chunks(standalone_query, sorted_chunks, CORE_RERANK_TOP_K)
+
+        async with timer.astep("enrich_chunks"):
+            neighbor_chunks = await _afetch_neighbor_chunks(qdrant, reranked)
+            enriched_chunks = _merge_chunks(reranked, neighbor_chunks)
+
+        sources = extract_sources(reranked, config.APP_DOMAIN)
+        yield _meta_event(_make_rag_result(
+            response="", sources=sources,
+            detected_language=detected_language, answer_satisfied=True,
+        ))
+
+        async with timer.astep("stream_answer"):
+            async for piece in _astream_answer(
+                llm, standalone_query, detected_language, enriched_chunks,
+            ):
+                yield {"type": "delta", "content": piece}
+
+        yield {"type": "done"}
+
+    finally:
+        timer.summary()
+
+
+async def _astream_overall_search(
+        llm: AzureChatClient,
+        embedder: AzureEmbeddingClient,
+        standalone_query: str,
+        detected_language: str,
+) -> AsyncGenerator[Dict[str, Any], None]:
+    timer = StepTimer(f"overall_search_stream:{OVERALL_COLLECTION_NAME}")
+
+    try:
+        qdrant = get_qdrant_client(OVERALL_COLLECTION_NAME)
+
+        async with timer.astep("clarity_check"):
+            clarity = await _acheck_input_clarity(llm, standalone_query, detected_language)
+
+        if not clarity.get("clear", True):
+            for ev in _full_reply_events(_make_clarity_result(clarity, detected_language)):
+                yield ev
+            return
+
+        async with timer.astep("query_embedding"):
+            dense_vec, colbert_vec = await _aembed_text(
+                embedder, qdrant, standalone_query,
+            )
+
+        async with timer.astep("vector_search"):
+            sorted_chunks = await _avector_search(
+                qdrant, dense_vec, colbert_vec, standalone_query, top_k=VECTOR_SEARCH_TOP_K,
+            )
+
+        if not sorted_chunks:
+            no_result = NO_RESULT_RESPONSE_MAP.get(detected_language) or ""
+            for ev in _full_reply_events(_make_rag_result(
+                response=no_result, sources=[],
+                detected_language=detected_language, answer_satisfied=False,
+            )):
+                yield ev
+            return
+
+        yield _meta_event(_make_rag_result(
+            response="", sources=[],
+            detected_language=detected_language, answer_satisfied=True,
+        ))
+
+        async with timer.astep("stream_answer"):
+            async for piece in _astream_answer(
+                llm, standalone_query, detected_language, sorted_chunks,
+            ):
+                yield {"type": "delta", "content": piece}
+
+        yield {"type": "done"}
+
+    finally:
+        timer.summary()
+
+
+async def async_pipeline_dispatch_stream(
+        user_input: str,
+        conversation_id: Optional[str] = None,
+) -> AsyncGenerator[Dict[str, Any], None]:
+    """Streaming dispatch. See event schema above the helpers."""
+    timer = StepTimer("dispatch_stream")
+
+    try:
+        llm = get_openai_chat_client()
+        embedder = get_openai_embedding_client()
+
+        async with timer.astep("validate_and_prepare"):
+            detected_language, standalone_query, error_response = (
+                await _avalidate_and_prepare(user_input, conversation_id, llm)
+            )
+            if error_response:
+                for ev in _full_reply_events(
+                    _make_off_topic_result(error_response, "English")
+                ):
+                    yield ev
+                return
+
+        async with timer.astep("quiz_keyword_check"):
+            if is_quiz_intent(user_input) or is_quiz_intent(standalone_query):
+                for ev in _full_reply_events(_make_quiz_result()):
+                    yield ev
+                return
+
+        async with timer.astep("intent_routing"):
+            intent = await _aroute_intent(embedder, standalone_query)
+
+        if intent == INTENT_OFF_TOPIC:
+            for ev in _full_reply_events(_make_off_topic_result(
+                OFF_TOPIC_RESPONSE_MAP.get(detected_language), detected_language,
+            )):
+                yield ev
+            return
+
+        substream = (
+            _astream_overall_search if intent == INTENT_OVERALL_COURSE_KNOWLEDGE
+            else _astream_core_search
+        )
+        async for ev in substream(
+            llm=llm,
+            embedder=embedder,
+            standalone_query=standalone_query,
+            detected_language=detected_language,
+        ):
+            yield ev
 
     finally:
         timer.summary()

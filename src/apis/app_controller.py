@@ -1,15 +1,15 @@
+import json
 import os
 from datetime import datetime, timezone
 
-from fastapi import BackgroundTasks, Depends
-from fastapi.responses import FileResponse
+from fastapi import BackgroundTasks
+from fastapi.responses import FileResponse, StreamingResponse
 
 from src.apis.app_exception import BadRequestError, NotFoundError, QdrantApiError
 from src.apis.app_model import (
     ChatRequest,
     ChatResponse,
     ChatDataModel,
-    UploadDocumentsRequest,
     QuizRequest
 )
 from src.apis.app_router import documents_router, chat_router, file_router, quiz_router
@@ -20,7 +20,7 @@ from src.constants.app_constant import (
 from src.core.quiz.quiz_generator import generate_quiz, generate_quiz_full_background, read_quiz_result
 from src.rag.db_vector import get_qdrant_client
 from src.rag.ingest.pipeline import upload_to_qdrant
-from src.rag.search.pipeline import async_pipeline_dispatch
+from src.rag.search.pipeline import async_pipeline_dispatch, async_pipeline_dispatch_stream
 from src.utils.logger_utils import logger
 
 
@@ -90,19 +90,39 @@ async def chat_ask(payload: ChatRequest) -> ChatResponse:
     )
 
 
-@documents_router.post("/upload")
-async def upload_documents(payload: UploadDocumentsRequest, manager=Depends(lambda: get_qdrant_client())) -> dict:
-    try:
-        await manager.aupload_documents(
-            documents=payload.documents,
-            batch_size=payload.batch_size,
-            parallel=payload.parallel,
-            max_retries=payload.max_retries,
-        )
-        return {"uploaded": len(payload.documents)}
-    except Exception as exc:
-        logger.exception("upload_documents failed")
-        raise QdrantApiError(f"upload_documents failed: {exc}") from exc
+@chat_router.post("/ask/stream")
+async def chat_ask_stream(payload: ChatRequest) -> StreamingResponse:
+    """SSE endpoint: streams answer tokens as they are generated.
+
+    Event format (SSE data payload is JSON):
+      event: meta  → {intent, detected_language, sources, answer_satisfied, web_search_used}
+      event: delta → {content: "<token piece>"}
+      event: done  → {}
+    """
+    logger.info(
+        "chat_ask_stream called | user_name=%s | conversation_id=%s",
+        payload.user_name, payload.conversation_id,
+    )
+
+    async def event_source():
+        try:
+            async for ev in async_pipeline_dispatch_stream(
+                user_input=payload.message,
+                conversation_id=payload.conversation_id,
+            ):
+                event_type = ev.get("type", "message")
+                data = {k: v for k, v in ev.items() if k != "type"}
+                yield f"event: {event_type}\ndata: {json.dumps(data, ensure_ascii=False)}\n\n"
+        except Exception as exc:
+            logger.exception("chat_ask_stream failed")
+            err = json.dumps({"message": str(exc)}, ensure_ascii=False)
+            yield f"event: error\ndata: {err}\n\n"
+
+    return StreamingResponse(
+        event_source(),
+        media_type="text/event-stream",
+        headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
+    )
 
 
 @file_router.get("/t")

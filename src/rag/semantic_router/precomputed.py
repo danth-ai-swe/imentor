@@ -54,13 +54,26 @@ def load_precomputed_embeddings() -> Optional[Dict[str, np.ndarray]]:
 
 
 async def build_and_save_embeddings(embedder) -> Dict[str, np.ndarray]:
+    """Batch every route's samples into a single embed call to avoid paying
+    cold-start latency per route.
+    """
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
-    embeddings: Dict[str, np.ndarray] = {}
 
+    all_texts: list[str] = []
+    offsets: Dict[str, tuple[int, int]] = {}
+    cursor = 0
     for route_name, samples in ROUTE_SAMPLES.items():
-        logger.info(f"Encoding {len(samples)} samples cho route '{route_name}'...")
-        vecs = await embedder.aembed_documents(samples)  # List[List[float]]
-        embeddings[route_name] = np.array(vecs)  # → shape: (N, dim)
+        offsets[route_name] = (cursor, cursor + len(samples))
+        all_texts.extend(samples)
+        cursor += len(samples)
+
+    logger.info(f"Encoding {len(all_texts)} samples across {len(ROUTE_SAMPLES)} routes...")
+    vecs = await embedder.aembed_documents(all_texts)
+
+    embeddings: Dict[str, np.ndarray] = {
+        route_name: np.array(vecs[start:end])
+        for route_name, (start, end) in offsets.items()
+    }
 
     np.savez_compressed(CACHE_FILE, **embeddings)
     CHECKSUM_FILE.write_text(_compute_checksum())

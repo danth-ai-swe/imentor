@@ -31,13 +31,6 @@ class ChatResponse(BaseModel):
     data: ChatDataModel
 
 
-class UploadDocumentsRequest(BaseModel):
-    documents: list[dict]
-    batch_size: int = 256
-    parallel: int = 4
-    max_retries: int = 3
-
-
 class QuizDifficulty(str, Enum):
     BEGINNER = "Beginner"
     INTERMEDIATE = "Intermediate"
