@@ -45,14 +45,16 @@ public class OpenAiChatService {
             .retrieve()
             .bodyToFlux(String.class) // each "data: {...}" SSE event arrives as a String
             .filter(line -> line != null && !line.isBlank())
-            .takeWhile(line -> !"[DONE]".equals(line.trim()))
+            .takeWhile(line -> !"data: [DONE]".equals(line.trim()) && !"[DONE]".equals(line.trim()))
             .mapNotNull(this::extractContent)
             .filter(s -> !s.isEmpty());
     }
 
     private String extractContent(String dataLine) {
+        String json = dataLine.startsWith("data:") ? dataLine.substring(5).trim() : dataLine.trim();
+        if (json.isEmpty()) return "";
         try {
-            JsonNode root = MAPPER.readTree(dataLine);
+            JsonNode root = MAPPER.readTree(json);
             JsonNode delta = root.path("choices").path(0).path("delta").path("content");
             return delta.isMissingNode() || delta.isNull() ? "" : delta.asText();
         } catch (Exception e) {
