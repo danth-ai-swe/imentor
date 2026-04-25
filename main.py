@@ -25,6 +25,7 @@ from src.rag.semantic_router.precomputed import (
 )
 from src.rag.semantic_router.router import Route, SemanticRouter
 from src.rag.semantic_router.samples import offTopicSamples, coreKnowledgeSamples, courseMetadataSamples
+from src.messaging.rabbit_consumer import start_consumer
 
 config = get_app_config()
 
@@ -62,7 +63,15 @@ async def lifespan(application: FastAPI):
     # doesn't pay the ONNX model download cost on the hot path.
     asyncio.get_running_loop().run_in_executor(None, _get_reranker)
 
+    consumer_task = start_consumer()
+
     yield  # ← app đang chạy
+
+    consumer_task.cancel()
+    try:
+        await consumer_task
+    except asyncio.CancelledError:
+        pass
 
     # Flush toàn bộ event còn trong queue trước khi tắt
     get_langfuse_client().flush()
