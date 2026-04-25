@@ -2,7 +2,7 @@
 
 Topology (matches docs/superpowers/specs/2026-04-25-langgraph-agent-search-design.md §4):
 
-    validate_input → detect_and_rewrite → quiz_check → clarity_check
+    validate_input → detect_and_rewrite → quiz_check
         → agent_decide ⇄ tool_executor (loop, max 3 tool calls)
         → post_router
               → rerank → enrich → generate → finalize    (core path)
@@ -19,7 +19,6 @@ from langgraph.prebuilt import ToolNode
 from src.constants.app_constant import INTENT_OFF_TOPIC, OFF_TOPIC_RESPONSE_MAP
 from src.rag.search.agent.agent_node import agent_decide_node
 from src.rag.search.agent.nodes import (
-    clarity_check_node,
     detect_and_rewrite_node,
     enrich_node,
     finalize_node,
@@ -46,10 +45,6 @@ def _route_after_detect(state: AgentState) -> str:
 
 
 def _route_after_quiz(state: AgentState) -> str:
-    return "finalize" if state.get("early_exit_reason") else "clarity_check"
-
-
-def _route_after_clarity(state: AgentState) -> str:
     return "finalize" if state.get("early_exit_reason") else "agent_decide"
 
 
@@ -90,7 +85,6 @@ def build_agent_graph():
     builder.add_node("validate_input", validate_input_node)
     builder.add_node("detect_and_rewrite", detect_and_rewrite_node)
     builder.add_node("quiz_check", quiz_check_node)
-    builder.add_node("clarity_check", clarity_check_node)
     builder.add_node("agent_decide", agent_decide_node)
     # handle_tool_errors=True (the default in langgraph 1.x) means a tool
     # exception or schema-validation failure becomes a ToolMessage error
@@ -112,8 +106,6 @@ def build_agent_graph():
     builder.add_conditional_edges("detect_and_rewrite", _route_after_detect,
                                   {"finalize": "finalize", "quiz_check": "quiz_check"})
     builder.add_conditional_edges("quiz_check", _route_after_quiz,
-                                  {"finalize": "finalize", "clarity_check": "clarity_check"})
-    builder.add_conditional_edges("clarity_check", _route_after_clarity,
                                   {"finalize": "finalize", "agent_decide": "agent_decide"})
     builder.add_conditional_edges("agent_decide", _route_after_agent,
                                   {"tools": "tools", "post_router": "post_router"})
