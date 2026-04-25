@@ -186,3 +186,37 @@ async def search_web(
         update["web_search_used"] = True
 
     return Command(update=update)
+
+
+@tool
+async def ask_clarification(
+    reason: Literal["off_topic", "vague"],
+    message: str,
+    state: Annotated[AgentState, InjectedState],
+    tool_call_id: Annotated[str, InjectedToolCallId],
+) -> Command:
+    """Terminate the loop with a message to the user. Use for off-topic
+    questions or for questions too vague to search effectively.
+
+    Args:
+        reason: "off_topic" (not insurance-related) or "vague" (unclear).
+        message: Text to show the user (must be in their language).
+    """
+    logger.info("[tool:ask_clarification] reason=%s", reason)
+
+    return Command(update={
+        "clarification": {"type": reason, "response": message},
+        "tool_call_count": state.get("tool_call_count", 0) + 1,
+        "messages": [ToolMessage(
+            content=f"clarification_sent: {reason}",
+            tool_call_id=tool_call_id,
+        )],
+    })
+
+
+ALL_TOOLS = [
+    search_core_collection,
+    search_overall_collection,
+    search_web,
+    ask_clarification,
+]
