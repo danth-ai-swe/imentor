@@ -84,3 +84,50 @@ async def search_core_collection(
         "tool_call_count": state.get("tool_call_count", 0) + 1,
         "messages": [ToolMessage(content=str(payload), tool_call_id=tool_call_id)],
     })
+
+
+@tool
+async def search_overall_collection(
+    query: str,
+    reasoning: str,
+    state: Annotated[AgentState, InjectedState],
+    tool_call_id: Annotated[str, InjectedToolCallId],
+) -> Command:
+    """Search course-level metadata (syllabus, module structure, lesson counts,
+    course descriptions). Use ONLY for questions like 'how many modules in
+    LOMA 281?', 'what does LOMA 291 cover?', 'list lessons in module 3'.
+
+    Args:
+        query: English search query.
+        reasoning: One short sentence explaining the choice (logged).
+    """
+    logger.info("[tool:search_overall] query=%r reasoning=%r", query, reasoning)
+
+    embedder = get_openai_embedding_client()
+    qdrant = get_qdrant_client(OVERALL_COLLECTION_NAME)
+
+    try:
+        dense_vec, colbert_vec = await _aembed_text(embedder, qdrant, query)
+        chunks = await _avector_search(
+            qdrant, dense_vec, colbert_vec, query, top_k=VECTOR_SEARCH_TOP_K,
+        )
+    except Exception as e:
+        logger.exception("[tool:search_overall] failed")
+        return Command(update={
+            "messages": [ToolMessage(
+                content=f"search_overall_collection error: {e}. Try a different tool.",
+                tool_call_id=tool_call_id,
+            )],
+            "tool_call_count": state.get("tool_call_count", 0) + 1,
+        })
+
+    found = bool(chunks)
+    preview = _chunks_preview(chunks)
+    payload = {"found": found, "chunk_count": len(chunks), "preview": preview}
+
+    return Command(update={
+        "chunks": (state.get("chunks") or []) + chunks,
+        "selected_collection": "overall",
+        "tool_call_count": state.get("tool_call_count", 0) + 1,
+        "messages": [ToolMessage(content=str(payload), tool_call_id=tool_call_id)],
+    })
