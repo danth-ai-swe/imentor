@@ -79,7 +79,16 @@ def _post_router(state: AgentState) -> str:
 
 # ── Builder ─────────────────────────────────────────────────────────────────
 
-def build_agent_graph():
+def build_agent_graph(checkpointer=None, interrupt_before=None):
+    """Compile the agent StateGraph.
+
+    Args:
+        checkpointer: Optional LangGraph checkpointer (e.g. MemorySaver).
+            Required if interrupt_before is provided.
+        interrupt_before: Optional list of node names to halt before.
+            Used by the streaming endpoint to stop before `generate` so
+            tokens can be streamed manually.
+    """
     builder = StateGraph(AgentState)
 
     builder.add_node("validate_input", validate_input_node)
@@ -118,7 +127,10 @@ def build_agent_graph():
     builder.add_edge("generate", "finalize")
     builder.add_edge("finalize", END)
 
-    return builder.compile()
+    return builder.compile(
+        checkpointer=checkpointer,
+        interrupt_before=interrupt_before or [],
+    )
 
 
 _compiled_graph = None
