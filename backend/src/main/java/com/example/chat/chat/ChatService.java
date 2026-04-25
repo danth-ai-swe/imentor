@@ -3,8 +3,11 @@ package com.example.chat.chat;
 import com.example.chat.domain.*;
 import com.example.chat.dto.*;
 import com.example.chat.repository.*;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
@@ -26,8 +29,13 @@ public class ChatService {
 
     @Transactional
     public UserDto getOrCreateUser(String username) {
-        User u = users.findByUsername(username)
-            .orElseGet(() -> users.save(User.builder().username(username).build()));
+        User u = users.findByUsername(username).orElseGet(() -> {
+            try {
+                return users.saveAndFlush(User.builder().username(username).build());
+            } catch (DataIntegrityViolationException e) {
+                return users.findByUsername(username).orElseThrow();
+            }
+        });
         return new UserDto(u.getId(), u.getUsername());
     }
 
@@ -40,7 +48,7 @@ public class ChatService {
 
     @Transactional
     public ConversationDto createConversation(Long userId, String title) {
-        User user = users.findById(userId).orElseThrow(() -> new IllegalArgumentException("user not found"));
+        User user = users.findById(userId).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "user not found"));
         Conversation c = conversations.save(Conversation.builder()
             .user(user)
             .title(title == null || title.isBlank() ? "New chat" : title)
