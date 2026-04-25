@@ -1,0 +1,25 @@
+# === Substantive insurance ===
+What is adverse selection in insurance?
+Bảo hiểm sinh kỳ là gì và khác bảo hiểm tử kỳ thế nào?
+保険における逆選択とは何ですか
+
+# === Course structure (overall collection) ===
+How many modules are in LOMA 281?
+
+# === Off-topic (should trigger ask_clarification) ===
+What's the weather in Tokyo today?
+
+# === Vague (should trigger ask_clarification rephrase) ===
+tell me the thing about that risk stuff
+
+# === Time-sensitive / outside textbook (search_web) ===
+What is the latest 2026 update to U.S. life insurance regulation?
+
+# === Quiz keyword (early-exit pre-processing) ===
+generate a quiz on annuities
+
+# === Unsupported language (early-exit pre-processing) ===
+apa kah Risiko dalam asuransi
+
+# === Input too long (early-exit pre-processing) ===
+Insurance fundamentals require a thorough understanding of risk pooling, underwriting principles, and policyholder protection. Insurance fundamentals require a thorough understanding of risk pooling, underwriting principles, and policyholder protection. Insurance fundamentals require a thorough understanding of risk pooling, underwriting principles, and policyholder protection. Insurance fundamentals require a thorough understanding of risk pooling, underwriting principles, and policyholder protection. Insurance fundamentals require a thorough understanding of risk pooling, underwriting principles, and policyholder protection. Insurance fundamentals require a thorough understanding of risk pooling, underwriting principles, and policyholder protection. Insurance fundamentals require a thorough understanding of risk pooling, underwriting principles, and policyholder protection. Insurance fundamentals require a thorough understanding of risk pooling, underwriting principles, and policyholder protection. Insurance fundamentals require a thorough understanding of risk pooling, underwriting principles, and policyholder protection. Insurance fundamentals require a thorough understanding of risk pooling, underwriting principles, and policyholder protection. Insurance fundamentals require a thorough understanding of risk pooling, underwriting principles, and policyholder protection. Insurance fundamentals require a thorough understanding of risk pooling, underwriting principles, and policyholder protection. Insurance fundamentals require a thorough understanding of risk pooling, underwriting principles, and policyholder protection. Insurance fundamentals require a thorough understanding of risk pooling, underwriting principles, and policyholder protection. Insurance fundamentals require a thorough understanding of risk pooling, underwriting principles, and policyholder protection. Insurance fundamentals require a thorough understanding of risk pooling, underwriting principles, and policyholder protection. Insurance fundamentals require a thorough understanding of risk pooling, underwriting principles, and policyholder protection. Insurance fundamentals require a thorough understanding of risk pooling, underwriting principles, and policyholder protection. Insurance fundamentals require a thorough understanding of risk pooling, underwriting principles, and policyholder protection. Insurance fundamentals require a thorough understanding of risk pooling, underwriting principles, and policyholder protection. Insurance fundamentals require a thorough understanding of risk pooling, underwriting principles, and policyholder protection. Insurance fundamentals require a thorough understanding of risk pooling, underwriting principles, and policyholder protection.

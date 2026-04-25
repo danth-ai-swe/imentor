@@ -1,3 +1,0 @@
-# Smoke-test questions for scripts/run_agent.py --questions
-# Lines starting with # are skipped.
-What is adverse selection in insurance?
