@@ -2,7 +2,8 @@
 
 Pre-processing (this file, top half):
     validate_input  → length check
-    detect_and_rewrite → asyncio.gather over LLM language-detect and history-aware rewrite
+    detect_and_rewrite → schedules LLM language-detect with asyncio.create_task
+                         and runs the history-aware rewrite concurrently
     quiz_check      → keyword shortcut
     clarity_check   → existing CLARITY_CHECK_PROMPT
 
@@ -50,13 +51,19 @@ async def validate_input_node(state: AgentState) -> Dict[str, Any]:
 
 
 async def detect_and_rewrite_node(state: AgentState) -> Dict[str, Any]:
-    """Runs language detection and standalone-query rewrite in parallel,
-    matching `_avalidate_and_prepare` in pipeline.py."""
+    """Runs language detection and standalone-query rewrite concurrently,
+    matching `_avalidate_and_prepare` in pipeline.py.
+
+    Note: pipeline.py's prep_cache short-circuit is intentionally omitted
+    — this driver is a stateless dev/test path. Add caching if/when the
+    agent pipeline is promoted to production.
+    """
     llm = get_openai_chat_client()
     user_input = state["user_input"]
     conversation_id = state.get("conversation_id")
     has_history = bool(conversation_id and conversation_id.strip())
 
+    # Schedule language detection so it runs concurrently with the rewrite.
     language_task = asyncio.create_task(_adetect_language_llm(llm, user_input))
 
     if has_history:
@@ -109,4 +116,5 @@ async def clarity_check_node(state: AgentState) -> Dict[str, Any]:
         "response": placeholder["response"],
         "intent": INTENT_CORE_KNOWLEDGE,
         "answer_satisfied": False,
+        "detected_language": state.get("detected_language"),
     }
