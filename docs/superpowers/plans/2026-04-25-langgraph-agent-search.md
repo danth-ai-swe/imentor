@@ -443,17 +443,23 @@ async def search_web(
 
     answer = rs.get("answer") or ""
     sources = rs.get("sources") or []
-    found = bool(answer)
+    # web_rag_answer returns a localized "no result" string with empty sources
+    # when SearXNG / crawl / chunking yielded nothing — treat that as not-found
+    # so the agent can decide its next step instead of seeing a stale web_answer.
+    found = bool(answer) and bool(sources)
     payload = {"found": found, "answer_preview": answer[:200]}
 
-    return Command(update={
-        "web_answer": answer,
-        "sources": sources,
-        "selected_collection": "web",
-        "web_search_used": True,
+    update = {
         "tool_call_count": state.get("tool_call_count", 0) + 1,
         "messages": [ToolMessage(content=str(payload), tool_call_id=tool_call_id)],
-    })
+    }
+    if found:
+        update["web_answer"] = answer
+        update["sources"] = sources
+        update["selected_collection"] = "web"
+        update["web_search_used"] = True
+
+    return Command(update=update)
 ```
 
 - [ ] **Step 2: Verify**
