@@ -21,10 +21,13 @@ from src.utils.logger_utils import logger
 config = get_app_config()
 
 _llm_instance: AzureChatOpenAI | None = None
+_bound_llm = None
 _llm_lock = threading.Lock()
 
 
 def get_agent_llm() -> AzureChatOpenAI:
+    """Returns the unbound base AzureChatOpenAI singleton.
+    Use _get_bound_llm() inside the agent node — it caches the bind_tools result."""
     global _llm_instance
     if _llm_instance is None:
         with _llm_lock:
@@ -39,6 +42,17 @@ def get_agent_llm() -> AzureChatOpenAI:
                     max_retries=config.GPT_MAX_RETRIES,
                 )
     return _llm_instance
+
+
+def _get_bound_llm():
+    """Cached `AzureChatOpenAI.bind_tools(ALL_TOOLS)` so the binding is built
+    once per process, not once per agent turn."""
+    global _bound_llm
+    if _bound_llm is None:
+        with _llm_lock:
+            if _bound_llm is None:
+                _bound_llm = get_agent_llm().bind_tools(ALL_TOOLS)
+    return _bound_llm
 
 
 def _summarize_tool_history(messages: list) -> str:
@@ -66,7 +80,7 @@ async def agent_decide_node(state: AgentState) -> Dict[str, Any]:
     on subsequent turns the chain has the original question for the LLM to
     anchor against. add_messages dedupes by message id, so the seed is
     persisted once."""
-    llm = get_agent_llm().bind_tools(ALL_TOOLS)
+    llm = _get_bound_llm()
 
     system = AGENT_DISPATCHER_SYSTEM_PROMPT.format(
         detected_language=state.get("detected_language") or "English",
