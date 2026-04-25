@@ -20,13 +20,23 @@ from typing import Optional
 # Ensure project root is on sys.path when invoked directly.
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from src.constants.app_constant import COLLECTION_NAME, OVERALL_COLLECTION_NAME
+from src.constants.app_constant import (
+    COLLECTION_NAME,
+    INTENT_CORE_KNOWLEDGE,
+    INTENT_OFF_TOPIC,
+    INTENT_OVERALL_COURSE_KNOWLEDGE,
+    OVERALL_COLLECTION_NAME,
+)
 from src.rag.db_vector import get_qdrant_client
 from src.rag.llm.chat_llm import get_openai_chat_client
 from src.rag.llm.embedding_llm import get_async_client, get_openai_embedding_client, get_sync_client
 from src.rag.search.agent import run_agent_pipeline
 from src.rag.search.pipeline import async_pipeline_dispatch
 from src.rag.search.reranker import _get_reranker
+from src.rag.semantic_router.intent_router_registry import set_intent_router
+from src.rag.semantic_router.precomputed import build_and_save_embeddings, load_precomputed_embeddings
+from src.rag.semantic_router.router import Route, SemanticRouter
+from src.rag.semantic_router.samples import coreKnowledgeSamples, courseMetadataSamples, offTopicSamples
 
 
 async def warm_up():
@@ -43,7 +53,25 @@ async def warm_up():
     get_sync_client()
     get_async_client()
     get_openai_chat_client()
-    get_openai_embedding_client()
+    embedder = get_openai_embedding_client()
+
+    # Build semantic router so async_pipeline_dispatch (used by --compare and
+    # --questions) can do intent routing. main.py does this in FastAPI's
+    # lifespan; the CLI driver needs the same setup.
+    precomputed = load_precomputed_embeddings()
+    if precomputed is None:
+        precomputed = await build_and_save_embeddings(embedder)
+    router = await SemanticRouter.abuild(
+        routes=[
+            Route(name=INTENT_CORE_KNOWLEDGE, samples=coreKnowledgeSamples),
+            Route(name=INTENT_OFF_TOPIC, samples=offTopicSamples),
+            Route(name=INTENT_OVERALL_COURSE_KNOWLEDGE, samples=courseMetadataSamples),
+        ],
+        embedder=embedder,
+        precomputed_embeddings=precomputed,
+    )
+    set_intent_router(router)
+
     # Warm reranker in a thread so first agent call doesn't pay model-load cost.
     await asyncio.get_running_loop().run_in_executor(None, _get_reranker)
 
