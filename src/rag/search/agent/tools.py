@@ -5,14 +5,13 @@ searxng_search and writes results back into AgentState via the Command
 return type so reducers in StateGraph pick them up.
 """
 
-from typing import Annotated, Any, Dict, List, Literal
+from typing import Annotated, List, Literal
 
 from langchain_core.messages import ToolMessage
 from langchain_core.tools import InjectedToolCallId, tool
 from langgraph.prebuilt import InjectedState
 from langgraph.types import Command
 
-from src.config.app_config import get_app_config
 from src.constants.app_constant import (
     COLLECTION_NAME,
     CORE_VECTOR_TOP_K,
@@ -24,7 +23,7 @@ from src.rag.llm.chat_llm import get_openai_chat_client
 from src.rag.llm.embedding_llm import get_openai_embedding_client
 from src.rag.search.agent.state import AgentState
 from src.rag.search.model import ChunkDict
-from src.rag.search.pipeline import _aembed_text, _ahyde_generate, _avector_search, extract_sources
+from src.rag.search.pipeline import _aembed_text, _ahyde_generate, _avector_search
 from src.rag.search.searxng_search import web_rag_answer
 from src.utils.logger_utils import logger
 
