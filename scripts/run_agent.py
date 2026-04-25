@@ -94,6 +94,46 @@ async def repl_loop(compare: bool):
             print_result("AGENT", agent_res, agent_t)
 
 
+async def run_batch(path: str):
+    """Read one question per line, run both pipelines, emit CSV to stdout."""
+    questions = [
+        line.strip()
+        for line in Path(path).read_text(encoding="utf-8").splitlines()
+        if line.strip() and not line.strip().startswith("#")
+    ]
+    if not questions:
+        print("No questions found.", file=sys.stderr)
+        return
+
+    writer = csv.writer(sys.stdout)
+    writer.writerow([
+        "question",
+        "agent_intent", "agent_satisfied", "agent_web", "agent_sources", "agent_resp_len", "agent_latency_s",
+        "old_intent",   "old_satisfied",   "old_web",   "old_sources",   "old_resp_len",   "old_latency_s",
+    ])
+
+    for q in questions:
+        (agent_res, agent_t), (old_res, old_t) = await asyncio.gather(
+            run_one_agent(q), run_one_old(q),
+        )
+        writer.writerow([
+            q,
+            agent_res.get("intent"),
+            agent_res.get("answer_satisfied"),
+            agent_res.get("web_search_used"),
+            len(agent_res.get("sources") or []),
+            len(agent_res.get("response") or ""),
+            f"{agent_t:.2f}",
+            old_res.get("intent"),
+            old_res.get("answer_satisfied"),
+            old_res.get("web_search_used"),
+            len(old_res.get("sources") or []),
+            len(old_res.get("response") or ""),
+            f"{old_t:.2f}",
+        ])
+        sys.stdout.flush()
+
+
 async def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--compare", action="store_true", help="Also run pipeline.py for side-by-side comparison.")
@@ -103,8 +143,7 @@ async def main():
     await warm_up()
 
     if args.questions:
-        # Implemented in Task 13.
-        print("--questions mode not implemented yet (Task 13).")
+        await run_batch(args.questions)
         return
 
     await repl_loop(compare=args.compare)
