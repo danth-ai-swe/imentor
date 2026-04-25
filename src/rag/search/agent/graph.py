@@ -10,11 +10,13 @@ Topology (matches docs/superpowers/specs/2026-04-25-langgraph-agent-search-desig
               → finalize                                  (web/clarification/no-result)
 """
 
+import threading
 from typing import Optional
 
 from langgraph.graph import END, START, StateGraph
 from langgraph.prebuilt import ToolNode
 
+from src.constants.app_constant import INTENT_OFF_TOPIC, OFF_TOPIC_RESPONSE_MAP
 from src.rag.search.agent.agent_node import agent_decide_node
 from src.rag.search.agent.nodes import (
     clarity_check_node,
@@ -28,6 +30,7 @@ from src.rag.search.agent.nodes import (
 )
 from src.rag.search.agent.state import AgentState, make_initial_state
 from src.rag.search.agent.tools import ALL_TOOLS
+from src.utils.logger_utils import logger
 
 MAX_TOOL_CALLS = 3
 
@@ -127,22 +130,23 @@ def build_agent_graph():
 
 
 _compiled_graph = None
+_graph_lock = threading.Lock()
 
 
 def get_compiled_graph():
     global _compiled_graph
     if _compiled_graph is None:
-        _compiled_graph = build_agent_graph()
+        with _graph_lock:
+            if _compiled_graph is None:
+                _compiled_graph = build_agent_graph()
     return _compiled_graph
 
 
 async def run_agent_pipeline(user_input: str, conversation_id: Optional[str] = None) -> dict:
     """Convenience wrapper. Returns a dict with the same fields as PipelineResult.
     Wraps the graph in a top-level try/except so unexpected errors return a
-    safe off_topic response instead of bubbling up."""
-    from src.constants.app_constant import INTENT_OFF_TOPIC, OFF_TOPIC_RESPONSE_MAP
-    from src.utils.logger_utils import logger
-
+    safe off_topic response (English fallback — detected_language is unavailable
+    when the graph fails before pre-processing completes) instead of bubbling up."""
     try:
         graph = get_compiled_graph()
         initial = make_initial_state(user_input, conversation_id)
