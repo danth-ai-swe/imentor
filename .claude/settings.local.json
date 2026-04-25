@@ -25,7 +25,23 @@
       "Bash(python -c \"import ast; ast.parse\\(open\\('src/rag/search/pipeline.py', encoding='utf-8'\\).read\\(\\)\\); print\\('OK'\\)\")",
       "Bash(python *)",
       "Bash(PYTHONIOENCODING=utf-8 python -m src.rag.ingest.build_overall_chunks)",
-      "Bash(PYTHONIOENCODING=utf-8 python tmp_verify_final.py)"
+      "Bash(PYTHONIOENCODING=utf-8 python tmp_verify_final.py)",
+      "Bash(PYTHONPATH=. python -c \"from src.rag.search.agent.state import AgentState, make_initial_state; s = make_initial_state\\('hello', None\\); print\\(s['user_input'], s['tool_call_count']\\)\")",
+      "Bash(PYTHONPATH=. python -c \"from src.rag.search.agent.prompts import AGENT_DISPATCHER_SYSTEM_PROMPT; print\\(AGENT_DISPATCHER_SYSTEM_PROMPT.format\\(detected_language='Vietnamese', standalone_query='What is endowment insurance?', tool_history='[]'\\)[:200]\\)\")",
+      "Bash(query)",
+      "Bash(PYTHONPATH=. python -c \"from src.rag.search.agent.prompts import AGENT_DISPATCHER_SYSTEM_PROMPT; out = AGENT_DISPATCHER_SYSTEM_PROMPT.format\\(detected_language='Vietnamese', standalone_query='What is endowment insurance?', tool_history='[]'\\); print\\('len:', len\\(out\\)\\); print\\('contains overall fallback rule:', 'returns `found=false`, STOP' in out\\); print\\('contains language note:', 'Tool `query` arguments must be in ENGLISH' in out\\); print\\('detected_language used count:', out.count\\('Vietnamese'\\)\\)\")",
+      "Bash(PYTHONPATH=. python)",
+      "Bash(PYTHONPATH=. python -c \"from langgraph.prebuilt import InjectedState; help\\(InjectedState\\)\")",
+      "Bash(grep -v \"^$\")",
+      "Bash(PYTHONPATH=. python -c \"from src.rag.search.agent.tools import search_core_collection; print\\('name:', search_core_collection.name\\); print\\('tool_call_schema fields:', list\\(search_core_collection.tool_call_schema.model_fields.keys\\(\\)\\)\\)\")",
+      "Bash(PYTHONPATH=. python -c \"from src.rag.search.pipeline import async_pipeline_dispatch; print\\('pipeline OK'\\)\")",
+      "Bash(PYTHONPATH=. python *)",
+      "Bash(pip show *)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(python3 *)",
+      "Bash(PYTHONPATH=. python scripts/run_agent.py --questions data/agent_smoke_questions.txt)",
+      "Read(//tmp/**)",
+      "Bash(kill 672 674)"
     ]
   },
   "enabledPlugins": {
