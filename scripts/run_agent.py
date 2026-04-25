@@ -20,6 +20,7 @@ from typing import Optional
 # Ensure project root is on sys.path when invoked directly.
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
+from src.constants.app_constant import COLLECTION_NAME, OVERALL_COLLECTION_NAME
 from src.rag.db_vector import get_qdrant_client
 from src.rag.llm.chat_llm import get_openai_chat_client
 from src.rag.llm.embedding_llm import get_async_client, get_openai_embedding_client, get_sync_client
@@ -30,11 +31,15 @@ from src.rag.search.reranker import _get_reranker
 
 async def warm_up():
     """Mirror main.py lifespan warm-up (minus FastAPI router pieces)."""
-    qdrant = get_qdrant_client()
+    # Warm both Qdrant clients so the first overall-collection search doesn't
+    # pay TCP-connection cost. The ColBERT model is module-level singleton
+    # so loading it once is enough for both clients.
+    core_qdrant = get_qdrant_client(COLLECTION_NAME)
     try:
-        qdrant.client.get_collections()
+        core_qdrant.client.get_collections()
     except Exception:
         pass
+    get_qdrant_client(OVERALL_COLLECTION_NAME)
     get_sync_client()
     get_async_client()
     get_openai_chat_client()
