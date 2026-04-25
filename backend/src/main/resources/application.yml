@@ -8,7 +8,7 @@ spring:
     password:
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: update  # dev only — use validate/none + migrations in prod
     show-sql: false
   rabbitmq:
     host: localhost
