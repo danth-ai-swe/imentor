@@ -14,8 +14,10 @@ Post-processing (this file, bottom half — added in Task 8):
 import asyncio
 from typing import Any, Dict
 
-from src.apis.app_model import ChatSourceModel
+from src.config.app_config import AppConfig, get_app_config
 from src.constants.app_constant import (
+    COLLECTION_NAME,
+    CORE_RERANK_TOP_K,
     INPUT_TOO_LONG_RESPONSE,
     INTENT_CORE_KNOWLEDGE,
     INTENT_OFF_TOPIC,
@@ -23,18 +25,22 @@ from src.constants.app_constant import (
     INTENT_QUIZ,
     MAX_INPUT_CHARS,
     NO_RESULT_RESPONSE_MAP,
-    OFF_TOPIC_RESPONSE_MAP,
     UNSUPPORTED_LANGUAGE_MSG,
 )
+from src.rag.db_vector import get_qdrant_client
 from src.rag.llm.chat_llm import get_openai_chat_client
 from src.rag.reflector import Reflection
 from src.rag.search.agent.state import AgentState
-from src.rag.search.entrypoint import afetch_chat_history
+from src.rag.search.entrypoint import afetch_chat_history, build_final_prompt
 from src.rag.search.pipeline import (
     _acheck_input_clarity,
     _adetect_language_llm,
+    _afetch_neighbor_chunks,
     _make_clarity_result,
+    _merge_chunks,
+    extract_sources,
 )
+from src.rag.search.reranker import arerank_chunks
 from src.utils.app_utils import is_quiz_intent
 from src.utils.logger_utils import logger
 
@@ -121,17 +127,6 @@ async def clarity_check_node(state: AgentState) -> Dict[str, Any]:
 
 
 # ── Post-processing ─────────────────────────────────────────────────────────
-
-from src.config.app_config import AppConfig, get_app_config
-from src.constants.app_constant import COLLECTION_NAME, CORE_RERANK_TOP_K
-from src.rag.db_vector import get_qdrant_client
-from src.rag.search.entrypoint import build_final_prompt
-from src.rag.search.pipeline import (
-    _afetch_neighbor_chunks,
-    _merge_chunks,
-    extract_sources,
-)
-from src.rag.search.reranker import arerank_chunks
 
 
 async def rerank_node(state: AgentState) -> Dict[str, Any]:
