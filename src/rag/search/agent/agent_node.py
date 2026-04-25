@@ -25,14 +25,13 @@ _bound_llm = None
 _llm_lock = threading.Lock()
 
 
-def get_agent_llm() -> AzureChatOpenAI:
-    """Returns the unbound base AzureChatOpenAI singleton.
-    Use _get_bound_llm() inside the agent node — it caches the bind_tools result."""
-    global _llm_instance
-    if _llm_instance is None:
+def _get_bound_llm():
+    global _bound_llm
+    if _bound_llm is None:
         with _llm_lock:
-            if _llm_instance is None:
-                _llm_instance = AzureChatOpenAI(
+            if _bound_llm is None:
+                # Build AzureChatOpenAI inline, không qua get_agent_llm()
+                llm = _llm_instance or AzureChatOpenAI(
                     azure_endpoint=config.OPENAI_API_BASE,
                     api_key=config.OPENAI_API_KEY,
                     api_version=config.OPENAI_API_VERSION,
@@ -41,17 +40,7 @@ def get_agent_llm() -> AzureChatOpenAI:
                     timeout=config.GPT_TIMEOUT,
                     max_retries=config.GPT_MAX_RETRIES,
                 )
-    return _llm_instance
-
-
-def _get_bound_llm():
-    """Cached `AzureChatOpenAI.bind_tools(ALL_TOOLS)` so the binding is built
-    once per process, not once per agent turn."""
-    global _bound_llm
-    if _bound_llm is None:
-        with _llm_lock:
-            if _bound_llm is None:
-                _bound_llm = get_agent_llm().bind_tools(ALL_TOOLS)
+                _bound_llm = llm.bind_tools(ALL_TOOLS)
     return _bound_llm
 
 
