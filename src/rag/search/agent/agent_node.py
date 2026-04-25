@@ -26,19 +26,25 @@ _llm_lock = threading.Lock()
 
 
 def _get_bound_llm():
+    """Cached `AzureChatOpenAI.bind_tools(ALL_TOOLS)` so the binding is built
+    once per process. Uses OPENAI_DISPATCH_MODEL if set (typically a faster
+    smaller deployment like gpt-4o-mini) and falls back to OPENAI_CHAT_MODEL
+    otherwise. max_tokens=512 caps dispatcher output — it only emits
+    tool_calls + a one-sentence reasoning string, not a full answer."""
     global _bound_llm
     if _bound_llm is None:
         with _llm_lock:
             if _bound_llm is None:
-                # Build AzureChatOpenAI inline, không qua get_agent_llm()
-                llm = _llm_instance or AzureChatOpenAI(
+                deployment = config.OPENAI_DISPATCH_MODEL or config.OPENAI_CHAT_MODEL
+                llm = AzureChatOpenAI(
                     azure_endpoint=config.OPENAI_API_BASE,
                     api_key=config.OPENAI_API_KEY,
                     api_version=config.OPENAI_API_VERSION,
-                    azure_deployment=config.OPENAI_CHAT_MODEL,
+                    azure_deployment=deployment,
                     temperature=0.0,
                     timeout=config.GPT_TIMEOUT,
                     max_retries=config.GPT_MAX_RETRIES,
+                    max_tokens=512,
                 )
                 _bound_llm = llm.bind_tools(ALL_TOOLS)
     return _bound_llm

@@ -23,6 +23,7 @@ class AppConfig(BaseSettings):
     DEBUG: bool = False
 
     OPENAI_CHAT_MODEL: str = "gpt-4o-mini"
+    OPENAI_DISPATCH_MODEL: Optional[str] = None
     OPENAI_API_VERSION: Optional[str] = None
     OPENAI_API_BASE: Optional[str] = None
     OPENAI_API_KEY: Optional[str] = None
