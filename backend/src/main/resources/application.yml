@@ -20,10 +20,10 @@ spring:
       enabled: true
       path: /h2-console
 openai:
-  api-base: ${OPENAI_API_BASE:https://api.openai.com}
-  api-key: ${OPENAI_API_KEY:}
-  api-version: ${OPENAI_API_VERSION:}
-  chat-model: ${OPENAI_CHAT_MODEL:gpt-4o-mini}
+  api-base: ${OPENAI_API_BASE:https://apim-maya-gpt-fnt-dev.azure-api.net/}
+  api-key: ${OPENAI_API_KEY:f1b45e89bb97442fa34258c2310fac10}
+  api-version: ${OPENAI_API_VERSION:2025-01-01-preview}
+  chat-model: ${OPENAI_CHAT_MODEL:gpt-4o}
   temperature: ${GPT_TEMPERATURE:0.7}
   top-p: ${GPT_TOP_P:0.95}
   max-tokens: ${GPT_MAX_TOKENS:3500}
