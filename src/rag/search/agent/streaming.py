@@ -21,6 +21,7 @@ from typing import Any, AsyncGenerator, Dict, Optional
 
 from langgraph.checkpoint.memory import MemorySaver
 
+from src.apis.app_model import ChatSourceModel
 from src.config.app_config import get_app_config
 from src.constants.app_constant import (
     INTENT_CORE_KNOWLEDGE,
@@ -62,11 +63,15 @@ def _meta_event(
     answer_satisfied: bool,
     web_search_used: bool,
 ) -> Dict[str, Any]:
+    serialized_sources = [
+        s.model_dump() if isinstance(s, ChatSourceModel) else s
+        for s in sources
+    ]
     return {
         "type": "meta",
         "intent": intent,
         "detected_language": state.get("detected_language"),
-        "sources": sources,
+        "sources": serialized_sources,
         "answer_satisfied": answer_satisfied,
         "web_search_used": web_search_used,
         "tool_call_count": state.get("tool_call_count", 0),
