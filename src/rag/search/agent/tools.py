@@ -7,10 +7,12 @@ return type so reducers in StateGraph pick them up.
 
 from typing import Annotated, Any, Dict, List, Literal
 
-from langchain_core.tools import tool
+from langchain_core.messages import ToolMessage
+from langchain_core.tools import InjectedToolCallId, tool
 from langgraph.prebuilt import InjectedState
 from langgraph.types import Command
 
+from src.config.app_config import get_app_config
 from src.constants.app_constant import (
     COLLECTION_NAME,
     CORE_VECTOR_TOP_K,
@@ -24,7 +26,6 @@ from src.rag.search.agent.state import AgentState
 from src.rag.search.model import ChunkDict
 from src.rag.search.pipeline import _aembed_text, _ahyde_generate, _avector_search, extract_sources
 from src.rag.search.searxng_search import web_rag_answer
-from src.config.app_config import get_app_config
 from src.utils.logger_utils import logger
 
 
@@ -41,6 +42,7 @@ async def search_core_collection(
     query: str,
     reasoning: str,
     state: Annotated[AgentState, InjectedState],
+    tool_call_id: Annotated[str, InjectedToolCallId],
 ) -> Command:
     """Search the LOMA281/LOMA291 textbook chunks (core knowledge collection).
     Use for substantive insurance questions: concepts, definitions, formulas,
@@ -65,10 +67,11 @@ async def search_core_collection(
     except Exception as e:
         logger.exception("[tool:search_core] failed")
         return Command(update={
-            "messages": [{
-                "role": "tool",
-                "content": f"search_core_collection error: {e}. Try a different tool.",
-            }],
+            "messages": [ToolMessage(
+                content=f"search_core_collection error: {e}. Try a different tool.",
+                tool_call_id=tool_call_id,
+            )],
+            "tool_call_count": state.get("tool_call_count", 0) + 1,
         })
 
     found = bool(chunks)
@@ -79,5 +82,5 @@ async def search_core_collection(
         "chunks": (state.get("chunks") or []) + chunks,
         "selected_collection": "core",
         "tool_call_count": state.get("tool_call_count", 0) + 1,
-        "messages": [{"role": "tool", "content": str(payload)}],
+        "messages": [ToolMessage(content=str(payload), tool_call_id=tool_call_id)],
     })
