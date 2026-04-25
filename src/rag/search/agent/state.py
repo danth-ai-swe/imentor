@@ -20,14 +20,14 @@ class AgentState(TypedDict, total=False):
     sources: List[Any]
     web_answer: Optional[str]
     selected_collection: Optional[str]   # "core" | "overall" | "web"
-    clarification: Optional[dict]
+    clarification: Optional[dict]        # {"type": "off_topic"|"vague", "response": str}
 
     response: Optional[str]
     answer_satisfied: bool
     web_search_used: bool
     intent: Optional[str]
 
-    early_exit_reason: Optional[str]
+    early_exit_reason: Optional[str]     # "input_too_long" | "unsupported_language" | "quiz" | "clarification"
 
 
 def make_initial_state(user_input: str, conversation_id: Optional[str] = None) -> AgentState:
