@@ -67,9 +67,22 @@ async def run_one_agent(question: str) -> tuple[dict, float]:
 
 
 async def run_one_old(question: str) -> tuple[dict, float]:
+    """Wrapped in try/except because async_pipeline_dispatch doesn't have a
+    top-level error boundary (unlike run_agent_pipeline). A transient Qdrant
+    or LLM failure would otherwise crash the whole --questions batch."""
     t0 = time.perf_counter()
-    result = await async_pipeline_dispatch(question)
-    return dict(result), time.perf_counter() - t0
+    try:
+        result = await async_pipeline_dispatch(question)
+        return dict(result), time.perf_counter() - t0
+    except Exception as e:
+        return {
+            "intent": "error",
+            "response": f"pipeline error: {e}",
+            "detected_language": None,
+            "answer_satisfied": False,
+            "web_search_used": False,
+            "sources": [],
+        }, time.perf_counter() - t0
 
 
 async def repl_loop(compare: bool):
@@ -105,10 +118,13 @@ async def run_batch(path: str):
         print("No questions found.", file=sys.stderr)
         return
 
-    writer = csv.writer(sys.stdout)
+    # lineterminator="\n" prevents Excel-style CRLF; on Windows stdout
+    # redirection the OS would otherwise translate \n -> \r\n giving \r\r\n
+    # (visible as blank rows in Excel).
+    writer = csv.writer(sys.stdout, lineterminator="\n")
     writer.writerow([
         "question",
-        "agent_intent", "agent_satisfied", "agent_web", "agent_sources", "agent_resp_len", "agent_latency_s",
+        "agent_intent", "agent_satisfied", "agent_web", "agent_sources", "agent_resp_len", "agent_tool_calls", "agent_latency_s",
         "old_intent",   "old_satisfied",   "old_web",   "old_sources",   "old_resp_len",   "old_latency_s",
     ])
 
@@ -123,6 +139,7 @@ async def run_batch(path: str):
             agent_res.get("web_search_used"),
             len(agent_res.get("sources") or []),
             len(agent_res.get("response") or ""),
+            agent_res.get("tool_call_count", 0),
             f"{agent_t:.2f}",
             old_res.get("intent"),
             old_res.get("answer_satisfied"),

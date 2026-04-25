@@ -158,6 +158,7 @@ async def run_agent_pipeline(user_input: str, conversation_id: Optional[str] = N
             "answer_satisfied": final_state.get("answer_satisfied", False),
             "web_search_used": final_state.get("web_search_used", False),
             "sources": final_state.get("sources") or [],
+            "tool_call_count": final_state.get("tool_call_count", 0),
         }
     except Exception:
         logger.exception("[agent_pipeline] top-level failure")
@@ -168,4 +169,5 @@ async def run_agent_pipeline(user_input: str, conversation_id: Optional[str] = N
             "answer_satisfied": False,
             "web_search_used": False,
             "sources": [],
+            "tool_call_count": 0,
         }
