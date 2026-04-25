@@ -49,10 +49,26 @@ from src.utils.logger_utils import StepTimer
 
 
 def _serialize_sources(sources: List[Any]) -> List[Dict[str, Any]]:
-    return [
-        s.model_dump(by_alias=False) if isinstance(s, ChatSourceModel) else dict(s)
-        for s in (sources or [])
-    ]
+    out: List[Dict[str, Any]] = []
+    for s in (sources or []):
+        if isinstance(s, ChatSourceModel):
+            out.append({
+                "name": s.name,
+                "url": s.url,
+                "pageNumber": s.page_number,
+                "totalPages": s.total_pages,
+            })
+        elif isinstance(s, dict):
+            # Already a dict — coerce snake_case keys to camelCase if present.
+            out.append({
+                "name": s.get("name"),
+                "url": s.get("url"),
+                "pageNumber": s.get("pageNumber", s.get("page_number")),
+                "totalPages": s.get("totalPages", s.get("total_pages")),
+            })
+        else:
+            out.append(dict(s))
+    return out
 
 
 def _serialize_chunks(chunks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:

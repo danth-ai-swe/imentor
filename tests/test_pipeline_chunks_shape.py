@@ -28,3 +28,17 @@ def test_off_topic_returns_static_mode():
         assert result["sources"] == []
 
     asyncio.run(run())
+
+
+def test_serialize_sources_emits_camelcase():
+    from src.apis.app_model import ChatSourceModel
+    from src.rag.search.pipeline_chunks import _serialize_sources
+
+    src = ChatSourceModel(name="loma.pdf", url="http://x/loma.pdf", page_number=12, total_pages=120)
+    out = _serialize_sources([src])
+    assert out == [{
+        "name": "loma.pdf",
+        "url": "http://x/loma.pdf",
+        "pageNumber": 12,
+        "totalPages": 120,
+    }]
