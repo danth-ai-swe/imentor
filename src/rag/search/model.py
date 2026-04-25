@@ -1,4 +1,6 @@
-from typing import TypedDict, Dict, Any, Optional, List
+from typing import Dict, Any, Optional, List
+
+from typing_extensions import TypedDict
 
 
 class ChunkDict(TypedDict):
