@@ -10,6 +10,7 @@ Mirrors `async_pipeline_dispatch` from pipeline.py but skips the final
 Reuses the helpers in pipeline.py (validate, intent routing, clarity, HyDE,
 embed, vector search, rerank, neighbor enrich) — does NOT duplicate them.
 """
+import asyncio
 from typing import Any, Dict, List, Optional
 
 from src.apis.app_model import ChatSourceModel
@@ -44,7 +45,7 @@ from src.rag.search.pipeline import (
 from src.rag.search.reranker import arerank_chunks
 from src.rag.search.searxng_search import web_rag_answer
 from src.utils.app_utils import is_quiz_intent
-from src.utils.logger_utils import logger, StepTimer
+from src.utils.logger_utils import StepTimer
 
 
 def _serialize_sources(sources: List[Any]) -> List[Dict[str, Any]]:
@@ -111,8 +112,11 @@ async def _arun_core_search_chunks(
     try:
         qdrant = get_qdrant_client(COLLECTION_NAME)
 
-        async with timer.astep("clarity_check"):
-            clarity = await _acheck_input_clarity(llm, standalone_query, detected_language)
+        async with timer.astep("clarity_and_hyde_parallel"):
+            clarity_task = _acheck_input_clarity(llm, standalone_query, detected_language)
+            hyde_task = _ahyde_generate(llm, standalone_query)
+            clarity, hyde = await asyncio.gather(clarity_task, hyde_task)
+
         if not clarity.get("clear", True):
             response_parts = clarity.get("response", [])
             response_str = (
@@ -125,9 +129,6 @@ async def _arun_core_search_chunks(
                 detected_language=detected_language, answer_satisfied=False,
                 standalone_query=standalone_query,
             )
-
-        async with timer.astep("hyde"):
-            hyde = await _ahyde_generate(llm, standalone_query)
         async with timer.astep("hyde_embedding"):
             dense_vec, colbert_vec = await _aembed_text(embedder, qdrant, hyde)
         async with timer.astep("vector_search"):
