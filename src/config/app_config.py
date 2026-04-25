@@ -41,6 +41,7 @@ class AppConfig(BaseSettings):
     QDRANT_URL: str = "http://localhost:6333"
     QDRANT_APIKEY: str
     SEARX_HOST: str
+    RABBITMQ_URL: str = "amqp://guest:guest@localhost:5672/"
     CF_ACCESS_CLIENT_ID: str
     CF_ACCESS_CLIENT_SECRET: str
     model_config = SettingsConfigDict(
