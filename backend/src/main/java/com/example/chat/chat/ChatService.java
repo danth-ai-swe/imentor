@@ -20,7 +20,6 @@ import reactor.core.Disposable;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.atomic.AtomicReference;
 
 @Service
 public class ChatService {
@@ -108,8 +107,10 @@ public class ChatService {
         Conversation conv = conversations.findById(conversationId)
             .orElseThrow(() -> new IllegalArgumentException("conversation not found"));
 
-        // 1) Persist the user message
-        Message userMsg = messages.save(Message.builder()
+        // 1) Persist the user message (committed before RPC — on RPC failure the user
+        // message remains; assistant shell is not created. Frontend reload will show
+        // an orphan user msg in that branch — accepted tradeoff for demo scope.)
+        messages.save(Message.builder()
             .conversation(conv).role("user").content(userMessage).build());
         conversations.save(conv); // touches updatedAt
 
@@ -118,7 +119,7 @@ public class ChatService {
         try {
             reply = rpc.requestSearch(userMessage, String.valueOf(conversationId));
         } catch (Exception ex) {
-            sendEvent(emitter, "error", Map.of("message", ex.getMessage()));
+            sendEvent(emitter, "error", Map.of("message", nullSafe(ex.getMessage())));
             emitter.complete();
             return emitter;
         }
@@ -166,7 +167,6 @@ public class ChatService {
         StringBuilder buffer = new StringBuilder();
         String prompt = promptBuilder.build(reply.chunks(), reply.standaloneQuery(), reply.detectedLanguage());
 
-        AtomicReference<Disposable> subRef = new AtomicReference<>();
         Disposable sub = openai.streamChat(prompt).subscribe(
             token -> {
                 buffer.append(token);
@@ -184,7 +184,6 @@ public class ChatService {
                 emitter.complete();
             }
         );
-        subRef.set(sub);
 
         emitter.onTimeout(() -> { sub.dispose(); persistAssistant(assistantMsg, buffer.toString(), buffer.length() > 0); });
         emitter.onError(e -> {
@@ -198,7 +197,9 @@ public class ChatService {
         return emitter;
     }
 
-    @Transactional
+    // Note: not @Transactional — called from Reactor scheduler threads where
+    // Spring's ThreadLocal-based tx propagation does not apply. messages.save()
+    // wraps each call in its own tx via SimpleJpaRepository.
     void persistAssistant(Message m, String content, boolean stopped) {
         m.setContent(content);
         m.setStopped(stopped);
