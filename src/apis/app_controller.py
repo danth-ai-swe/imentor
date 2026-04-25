@@ -21,6 +21,7 @@ from src.core.quiz.quiz_generator import generate_quiz, generate_quiz_full_backg
 from src.rag.db_vector import get_qdrant_client
 from src.rag.ingest.pipeline import upload_to_qdrant
 from src.rag.search.pipeline import async_pipeline_dispatch, async_pipeline_dispatch_stream
+from src.rag.search.agent.streaming import agent_stream_events
 from src.utils.logger_utils import logger
 
 
@@ -115,6 +116,43 @@ async def chat_ask_stream(payload: ChatRequest) -> StreamingResponse:
                 yield f"event: {event_type}\ndata: {json.dumps(data, ensure_ascii=False)}\n\n"
         except Exception as exc:
             logger.exception("chat_ask_stream failed")
+            err = json.dumps({"message": str(exc)}, ensure_ascii=False)
+            yield f"event: error\ndata: {err}\n\n"
+
+    return StreamingResponse(
+        event_source(),
+        media_type="text/event-stream",
+        headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
+    )
+
+
+@chat_router.post("/ask/stream/agent")
+async def chat_ask_stream_agent(payload: ChatRequest) -> StreamingResponse:
+    """SSE endpoint for the LangGraph hybrid agent.
+
+    Same event shape as /ask/stream:
+      event: meta  → {intent, detected_language, sources, answer_satisfied,
+                      web_search_used, tool_call_count}
+      event: delta → {content: "<token piece>"}
+      event: done  → {}
+      event: error → {message: "<exc str>"}  (on uncaught failure)
+    """
+    logger.info(
+        "chat_ask_stream_agent called | user_name=%s | conversation_id=%s",
+        payload.user_name, payload.conversation_id,
+    )
+
+    async def event_source():
+        try:
+            async for ev in agent_stream_events(
+                user_input=payload.message,
+                conversation_id=payload.conversation_id,
+            ):
+                event_type = ev.get("type", "message")
+                data = {k: v for k, v in ev.items() if k != "type"}
+                yield f"event: {event_type}\ndata: {json.dumps(data, ensure_ascii=False)}\n\n"
+        except Exception as exc:
+            logger.exception("chat_ask_stream_agent failed")
             err = json.dumps({"message": str(exc)}, ensure_ascii=False)
             yield f"event: error\ndata: {err}\n\n"
 
