@@ -16,13 +16,13 @@ public class OpenAiConfig {
 
     @Bean(name = "openAiWebClient")
     public WebClient openAiWebClient(
-        @Value("${openai.base-url}") String baseUrl,
+        @Value("${openai.api-base}") String apiBase,
         @Value("${openai.api-key}") String apiKey
     ) {
         HttpClient httpClient = HttpClient.create().responseTimeout(Duration.ofSeconds(120));
         return WebClient.builder()
-            .baseUrl(baseUrl)
-            .defaultHeader(HttpHeaders.AUTHORIZATION, "Bearer " + apiKey)
+            .baseUrl(apiBase)
+            .defaultHeader("api-key", apiKey)
             .defaultHeader(HttpHeaders.ACCEPT, MediaType.TEXT_EVENT_STREAM_VALUE)
             .clientConnector(new ReactorClientHttpConnector(httpClient))
             .build();

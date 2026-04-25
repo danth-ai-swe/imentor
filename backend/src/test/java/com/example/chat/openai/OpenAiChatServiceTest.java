@@ -9,7 +9,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 class OpenAiChatServiceTest {
 
     private String invokeExtractContent(String line) throws Exception {
-        OpenAiChatService svc = new OpenAiChatService(null, "gpt-4o-mini");
+        OpenAiChatService svc = new OpenAiChatService(null, "gpt-4o", "2025-01-01-preview", 0.7, 0.95, 3500);
         Method m = OpenAiChatService.class.getDeclaredMethod("extractContent", String.class);
         m.setAccessible(true);
         return (String) m.invoke(svc, line);
