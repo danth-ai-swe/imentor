@@ -118,3 +118,146 @@ async def clarity_check_node(state: AgentState) -> Dict[str, Any]:
         "answer_satisfied": False,
         "detected_language": state.get("detected_language"),
     }
+
+
+# ── Post-processing ─────────────────────────────────────────────────────────
+
+from src.config.app_config import AppConfig, get_app_config
+from src.constants.app_constant import COLLECTION_NAME, CORE_RERANK_TOP_K
+from src.rag.db_vector import get_qdrant_client
+from src.rag.search.entrypoint import build_final_prompt
+from src.rag.search.pipeline import (
+    _afetch_neighbor_chunks,
+    _merge_chunks,
+    extract_sources,
+)
+from src.rag.search.reranker import arerank_chunks
+
+
+async def rerank_node(state: AgentState) -> Dict[str, Any]:
+    chunks = state.get("chunks") or []
+    if not chunks:
+        return {}
+    reranked = await arerank_chunks(state["standalone_query"], chunks, CORE_RERANK_TOP_K)
+    return {"chunks": reranked}
+
+
+async def enrich_node(state: AgentState) -> Dict[str, Any]:
+    chunks = state.get("chunks") or []
+    if not chunks:
+        return {}
+    qdrant = get_qdrant_client(COLLECTION_NAME)
+    neighbors = await _afetch_neighbor_chunks(qdrant, chunks)
+    merged = _merge_chunks(chunks, neighbors)
+    return {"chunks": merged}
+
+
+async def generate_node(state: AgentState) -> Dict[str, Any]:
+    llm = get_openai_chat_client()
+    config: AppConfig = get_app_config()
+    final_prompt = build_final_prompt(
+        user_input=state["standalone_query"],
+        detected_language=state.get("detected_language") or "English",
+        relevant_chunks=state.get("chunks") or [],
+    )
+    try:
+        answer = (await llm.ainvoke_creative(final_prompt)).strip()
+    except Exception:
+        logger.exception("[generate_node] LLM failed")
+        answer = ""
+
+    sources = []
+    if state.get("selected_collection") == "core":
+        sources = extract_sources(state.get("chunks") or [], config.APP_DOMAIN)
+
+    return {
+        "response": answer,
+        "sources": sources,
+        "answer_satisfied": bool(answer),
+    }
+
+
+def finalize_node(state: AgentState) -> Dict[str, Any]:
+    """Map AgentState to PipelineResult-shaped fields. Pure function — no I/O."""
+    early = state.get("early_exit_reason")
+    detected_language = state.get("detected_language") or "English"
+
+    # Early-exit branches set their own response/intent already; just pass through.
+    if early in ("input_too_long", "unsupported_language", "quiz", "clarification"):
+        return {
+            "intent": state.get("intent"),
+            "response": state.get("response"),
+            "detected_language": detected_language,
+            "answer_satisfied": False,
+            "web_search_used": False,
+            "sources": state.get("sources") or [],
+        }
+
+    # Tool-driven outcomes:
+    clarification = state.get("clarification")
+    if clarification:
+        intent = INTENT_OFF_TOPIC if clarification.get("type") == "off_topic" else INTENT_CORE_KNOWLEDGE
+        return {
+            "intent": intent,
+            "response": clarification.get("response"),
+            "detected_language": detected_language,
+            "answer_satisfied": False,
+            "web_search_used": False,
+            "sources": [],
+        }
+
+    web_answer = state.get("web_answer")
+    if web_answer:
+        return {
+            "intent": INTENT_CORE_KNOWLEDGE,
+            "response": web_answer,
+            "detected_language": detected_language,
+            "answer_satisfied": True,
+            "web_search_used": True,
+            "sources": state.get("sources") or [],
+        }
+
+    selected = state.get("selected_collection")
+    response = state.get("response")
+    chunks = state.get("chunks") or []
+
+    if selected == "overall":
+        if response:
+            return {
+                "intent": INTENT_OVERALL_COURSE_KNOWLEDGE,
+                "response": response,
+                "detected_language": detected_language,
+                "answer_satisfied": True,
+                "web_search_used": False,
+                "sources": [],
+            }
+        # No chunks found — return templated no-result.
+        return {
+            "intent": INTENT_OVERALL_COURSE_KNOWLEDGE,
+            "response": NO_RESULT_RESPONSE_MAP.get(detected_language) or "",
+            "detected_language": detected_language,
+            "answer_satisfied": False,
+            "web_search_used": False,
+            "sources": [],
+        }
+
+    if selected == "core":
+        if response and chunks:
+            return {
+                "intent": INTENT_CORE_KNOWLEDGE,
+                "response": response,
+                "detected_language": detected_language,
+                "answer_satisfied": True,
+                "web_search_used": False,
+                "sources": state.get("sources") or [],
+            }
+
+    # Fallback: agent stopped without producing usable output.
+    return {
+        "intent": INTENT_CORE_KNOWLEDGE,
+        "response": NO_RESULT_RESPONSE_MAP.get(detected_language) or "",
+        "detected_language": detected_language,
+        "answer_satisfied": False,
+        "web_search_used": False,
+        "sources": [],
+    }
