@@ -1,5 +1,6 @@
 package com.example.chat.messaging;
 
+import com.example.chat.config.RabbitConfig;
 import com.example.chat.dto.SearchReplyMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,7 +16,7 @@ public class SearchReplyListener {
         this.client = client;
     }
 
-    @RabbitListener(queues = "chat.search.reply")
+    @RabbitListener(queues = RabbitConfig.REPLY_QUEUE)
     public void onReply(SearchReplyMessage reply) {
         if (reply == null || reply.correlationId() == null) {
             log.warn("Reply with no correlationId, dropping");

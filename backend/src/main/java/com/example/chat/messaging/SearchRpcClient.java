@@ -32,18 +32,27 @@ public class SearchRpcClient {
         pending.put(correlationId, future);
 
         SearchRequestMessage payload = new SearchRequestMessage(correlationId, userMessage, conversationId);
-        rabbit.convertAndSend(RabbitConfig.EXCHANGE, RabbitConfig.REQUEST_RK, payload, m -> {
-            m.getMessageProperties().setCorrelationId(correlationId);
-            m.getMessageProperties().setContentType(MessageProperties.CONTENT_TYPE_JSON);
-            return m;
-        });
+        try {
+            rabbit.convertAndSend(RabbitConfig.EXCHANGE, RabbitConfig.REQUEST_RK, payload, m -> {
+                m.getMessageProperties().setCorrelationId(correlationId);
+                m.getMessageProperties().setContentType(MessageProperties.CONTENT_TYPE_JSON);
+                return m;
+            });
+        } catch (Exception e) {
+            pending.remove(correlationId);
+            throw new RuntimeException("Search request publish failed", e);
+        }
 
         try {
             return future.get(timeoutSeconds, TimeUnit.SECONDS);
         } catch (TimeoutException e) {
             pending.remove(correlationId);
             throw new RuntimeException("Search request timed out after " + timeoutSeconds + "s", e);
-        } catch (InterruptedException | ExecutionException e) {
+        } catch (InterruptedException e) {
+            pending.remove(correlationId);
+            Thread.currentThread().interrupt();
+            throw new RuntimeException("Search request interrupted", e);
+        } catch (ExecutionException e) {
             pending.remove(correlationId);
             throw new RuntimeException("Search request failed", e);
         }
