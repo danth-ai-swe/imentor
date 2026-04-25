@@ -67,11 +67,14 @@ async def lifespan(application: FastAPI):
 
     yield  # ← app đang chạy
 
+    from src.messaging.rabbit_consumer import _INFLIGHT
     consumer_task.cancel()
     try:
         await consumer_task
     except asyncio.CancelledError:
         pass
+    if _INFLIGHT:
+        await asyncio.gather(*_INFLIGHT, return_exceptions=True)
 
     # Flush toàn bộ event còn trong queue trước khi tắt
     get_langfuse_client().flush()

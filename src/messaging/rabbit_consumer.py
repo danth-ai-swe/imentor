@@ -25,6 +25,8 @@ REQUEST_RK = "search.request"
 REPLY_RK = "search.reply"
 PREFETCH = 10
 
+_INFLIGHT: set[asyncio.Task] = set()
+
 # Suppress noisy aio_pika INFO logs
 logging.getLogger("aio_pika").setLevel(logging.WARNING)
 logging.getLogger("aiormq").setLevel(logging.WARNING)
@@ -63,7 +65,7 @@ async def _handle_message(
                 "webSearchUsed": False,
                 "sources": [],
                 "chunks": [],
-                "response": f"Internal error: {exc}",
+                "response": "Internal error: the search service encountered an unexpected failure.",
             }
 
         reply["correlationId"] = correlation_id
@@ -98,7 +100,9 @@ async def _consumer_loop() -> None:
 
                 async with request_queue.iterator() as it:
                     async for message in it:
-                        asyncio.create_task(_handle_message(message, exchange))
+                        task = asyncio.create_task(_handle_message(message, exchange))
+                        _INFLIGHT.add(task)
+                        task.add_done_callback(_INFLIGHT.discard)
         except asyncio.CancelledError:
             logger.info("RabbitMQ consumer cancelled")
             raise
