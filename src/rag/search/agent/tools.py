@@ -131,3 +131,52 @@ async def search_overall_collection(
         "tool_call_count": state.get("tool_call_count", 0) + 1,
         "messages": [ToolMessage(content=str(payload), tool_call_id=tool_call_id)],
     })
+
+
+@tool
+async def search_web(
+    query: str,
+    reasoning: str,
+    state: Annotated[AgentState, InjectedState],
+    tool_call_id: Annotated[str, InjectedToolCallId],
+) -> Command:
+    """Search the public web (SearXNG). Use only when:
+    (1) you already searched the textbook collection and `found` was false, OR
+    (2) the question is clearly time-sensitive (recent events, dates, news)
+        and outside the LOMA textbook scope.
+
+    Args:
+        query: English search query.
+        reasoning: One short sentence explaining the choice (logged).
+    """
+    logger.info("[tool:search_web] query=%r reasoning=%r", query, reasoning)
+
+    llm = get_openai_chat_client()
+    embedder = get_openai_embedding_client()
+    detected_language = state.get("detected_language") or "English"
+
+    try:
+        rs = await web_rag_answer(llm, embedder, query, detected_language)
+    except Exception as e:
+        logger.exception("[tool:search_web] failed")
+        return Command(update={
+            "messages": [ToolMessage(
+                content=f"search_web error: {e}",
+                tool_call_id=tool_call_id,
+            )],
+            "tool_call_count": state.get("tool_call_count", 0) + 1,
+        })
+
+    answer = rs.get("answer") or ""
+    sources = rs.get("sources") or []
+    found = bool(answer)
+    payload = {"found": found, "answer_preview": answer[:200]}
+
+    return Command(update={
+        "web_answer": answer,
+        "sources": sources,
+        "selected_collection": "web",
+        "web_search_used": True,
+        "tool_call_count": state.get("tool_call_count", 0) + 1,
+        "messages": [ToolMessage(content=str(payload), tool_call_id=tool_call_id)],
+    })
