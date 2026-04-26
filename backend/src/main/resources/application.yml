@@ -15,6 +15,12 @@ spring:
     port: 5672
     username: admin
     password: admin123
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      password: ${REDIS_PASSWORD:}
+      timeout: 2000ms
   h2:
     console:
       enabled: true
@@ -29,6 +35,16 @@ openai:
   max-tokens: ${GPT_MAX_TOKENS:3500}
 chat:
   search-timeout-seconds: 30
+  history:
+    redis-ttl-seconds: 1800
+    redis-max-entries: 50
+    default-limit: 20
+    max-limit: 50
+  stream:
+    redis-ttl-seconds: 300
+  rate-limit:
+    per-user-per-minute: 15
+    active-stream-lock-seconds: 60
 logging:
   level:
     com.example.chat: INFO
