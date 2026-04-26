@@ -12,4 +12,9 @@ public class RedisConfig {
     public StringRedisTemplate stringRedisTemplate(RedisConnectionFactory cf) {
         return new StringRedisTemplate(cf);
     }
+
+    @Bean
+    public com.fasterxml.jackson.databind.Module javaTimeModule() {
+        return new com.fasterxml.jackson.datatype.jsr310.JavaTimeModule();
+    }
 }
