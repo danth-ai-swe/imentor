@@ -10,14 +10,12 @@ async def fetch_raw_chat_history(
         conversation_id: str,
 ) -> list[dict] | None:
     config = get_app_config()
-    url = f"{config.CHAT_HISTORY_API_BASE}/api/chats/history-for-ai"
-    headers = {"X-Api-Key": "9gzILl3s3DxYGbqGC6xPed2wqa2uWUFRASqkmpoSuv0="}
+    url = f"{config.CHAT_HISTORY_API_BASE}/api/conversations/{conversation_id}/history-for-ai"
+    params = {"limit": 20}
 
     try:
         async with httpx.AsyncClient(timeout=CHAT_HISTORY_TIMEOUT) as client:
-            resp = await client.get(
-                url, params={"conversation_id": conversation_id}, headers=headers
-            )
+            resp = await client.get(url, params=params)
             resp.raise_for_status()
             body = resp.json()
     except httpx.HTTPError:

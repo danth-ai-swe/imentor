@@ -19,15 +19,18 @@ def _filter_core_knowledge_pairs(
         ai_msg = messages[i + 1]
 
         if (
-                user_msg.get("sender") == "user"
-                and ai_msg.get("sender") == "ai"
+                user_msg.get("role") == "user"
+                and ai_msg.get("role") == "assistant"
                 and ai_msg.get("intent") == "core_knowledge"
         ):
             history.append({
                 "role": "user",
-                "content": user_msg.get("content", {}).get("text", ""),
+                "content": user_msg.get("content", ""),
             })
-            history.append({"role": "assistant", "content": ai_msg.get("content", {}).get("text", "")})
+            history.append({
+                "role": "assistant",
+                "content": ai_msg.get("content", ""),
+            })
             i += 2
         else:
             i += 1
