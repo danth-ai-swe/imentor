@@ -37,7 +37,7 @@ class ChatRedisServiceChunksTest {
     @Test
     void cacheChunks_writesJsonWithTtl() throws Exception {
         ChunkDto c = new ChunkDto("hello", Map.of("file_name", "doc.pdf"));
-        ChunkContext ctx = new ChunkContext(List.of(c), "what is hello");
+        ChunkContext ctx = new ChunkContext(List.of(c), "what is hello", List.of());
 
         service.cacheChunks(42L, ctx);
 
@@ -53,7 +53,7 @@ class ChatRedisServiceChunksTest {
     @Test
     void readChunks_roundTripsContext() throws Exception {
         ChunkDto c = new ChunkDto("body", Map.of("page_number", 7));
-        ChunkContext ctx = new ChunkContext(List.of(c), "q");
+        ChunkContext ctx = new ChunkContext(List.of(c), "q", List.of());
         when(ops.get("chat:chunks:7")).thenReturn(mapper.writeValueAsString(ctx));
 
         ChunkContext out = service.readChunks(7L);

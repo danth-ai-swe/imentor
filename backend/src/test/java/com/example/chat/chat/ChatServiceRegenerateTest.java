@@ -102,7 +102,11 @@ class ChatServiceRegenerateTest {
         when(rateLimiter.tryAcquire(100L)).thenReturn(true);
         when(streamLock.acquire(100L)).thenReturn(true);
         when(redis.readChunks(20L)).thenReturn(
-            new ChunkContext(List.of(new ChunkDto("body", Map.of("file_name", "doc"))), "standalone q"));
+            new ChunkContext(
+                List.of(new ChunkDto("body", Map.of())),
+                "standalone q",
+                List.of(new SourceDto("doc.pdf", "http://x", 5, 100))
+            ));
         when(messages.save(any(Message.class))).thenAnswer(inv -> {
             Message m = inv.getArgument(0);
             if (m.getId() == null) m.setId(21L);
@@ -135,7 +139,8 @@ class ChatServiceRegenerateTest {
         when(redis.readChunks(20L)).thenReturn(null);
         when(rpc.requestSearch(eq("question"), eq("1"))).thenReturn(
             new SearchReplyMessage("cid", "chunks", "core_knowledge", "English",
-                "rewritten q", false, false, List.of(),
+                "rewritten q", false, false,
+                List.of(new SourceDto("doc.pdf", "http://x", 5, 100)),
                 List.of(new ChunkDto("body", Map.of())), null));
         when(messages.save(any(Message.class))).thenAnswer(inv -> {
             Message m = inv.getArgument(0);
@@ -254,7 +259,11 @@ class ChatServiceRegenerateTest {
         when(rateLimiter.tryAcquire(100L)).thenReturn(true);
         when(streamLock.acquire(100L)).thenReturn(true);
         when(redis.readChunks(20L)).thenReturn(
-            new ChunkContext(List.of(new ChunkDto("body", Map.of("file_name", "doc"))), "q"));
+            new ChunkContext(
+                List.of(new ChunkDto("body", Map.of())),
+                "q",
+                List.of(new SourceDto("doc.pdf", "http://x", 5, 100))
+            ));
         when(messages.save(any(Message.class))).thenAnswer(inv -> {
             Message m = inv.getArgument(0);
             if (m.getId() == null) m.setId(21L);
@@ -274,5 +283,46 @@ class ChatServiceRegenerateTest {
         verify(messages, org.mockito.Mockito.atLeastOnce()).save(savedCaptor.capture());
         org.assertj.core.api.Assertions.assertThat(savedCaptor.getAllValues())
             .anyMatch(m -> "assistant".equals(m.getRole()) && "Hello world".equals(m.getContent()));
+    }
+
+    @Test
+    void regenerate_persistsCachedSourcesNotDerivedFromChunks() {
+        User u = buildUser(100L);
+        Conversation conv = buildConv(1L, u);
+        Message assistant = buildAssistant(20L, conv);
+        Message userMsg = Message.builder().role("user").content("q").conversation(conv).build();
+        userMsg.setId(19L);
+
+        when(messages.findById(20L)).thenReturn(Optional.of(assistant));
+        when(messages.findLatestUserBefore(1L, 20L)).thenReturn(Optional.of(userMsg));
+        when(rateLimiter.tryAcquire(100L)).thenReturn(true);
+        when(streamLock.acquire(100L)).thenReturn(true);
+        // 5 chunks (would yield 5 derived sources), but only 2 deduped sources cached
+        List<ChunkDto> manyChunks = List.of(
+            new ChunkDto("a", Map.of("file_name", "doc.pdf")),
+            new ChunkDto("b", Map.of("file_name", "doc.pdf")),
+            new ChunkDto("c", Map.of("file_name", "doc.pdf")),
+            new ChunkDto("d", Map.of("file_name", "other.pdf")),
+            new ChunkDto("e", Map.of("file_name", "other.pdf"))
+        );
+        List<SourceDto> dedupedSources = List.of(
+            new SourceDto("doc.pdf", "http://x", 5, 100),
+            new SourceDto("other.pdf", "http://y", 1, 50)
+        );
+        when(redis.readChunks(20L)).thenReturn(
+            new ChunkContext(manyChunks, "q", dedupedSources));
+        when(messages.save(any(Message.class))).thenAnswer(inv -> {
+            Message m = inv.getArgument(0);
+            if (m.getId() == null) m.setId(21L);
+            return m;
+        });
+        when(promptBuilder.build(any(), anyString(), anyString())).thenReturn("PROMPT");
+        when(openai.streamChat(anyString(), anyDouble())).thenReturn(Flux.empty());
+
+        service.regenerate(1L, 20L);
+
+        // Exactly 2 ChunkSource rows persisted (deduped), not 5 (one per chunk)
+        verify(chunkSources, org.mockito.Mockito.times(2))
+            .save(any(com.example.chat.domain.ChunkSource.class));
     }
 }

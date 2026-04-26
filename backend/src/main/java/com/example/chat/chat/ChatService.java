@@ -207,11 +207,15 @@ public class ChatService {
             }
         }
 
-        // Cache full chunk payload + standalone query for potential regenerate.
+        // Cache full chunk payload + standalone query + dedup'd sources for potential regenerate.
         if (reply.chunks() != null && !reply.chunks().isEmpty()) {
             redis.cacheChunks(
                 assistantMsg.getId(),
-                new com.example.chat.dto.ChunkContext(reply.chunks(), reply.standaloneQuery())
+                new com.example.chat.dto.ChunkContext(
+                    reply.chunks(),
+                    reply.standaloneQuery(),
+                    reply.sources() == null ? java.util.List.of() : reply.sources()
+                )
             );
         }
 
@@ -331,7 +335,11 @@ public class ChatService {
                 emitter.complete();
                 return emitter;
             }
-            ctx = new com.example.chat.dto.ChunkContext(reply.chunks(), reply.standaloneQuery());
+            ctx = new com.example.chat.dto.ChunkContext(
+                reply.chunks(),
+                reply.standaloneQuery(),
+                reply.sources() == null ? java.util.List.of() : reply.sources()
+            );
             detectedLanguage = reply.detectedLanguage();
             intent = reply.intent();
             webSearchUsed = reply.webSearchUsed();
@@ -347,7 +355,14 @@ public class ChatService {
             .intent(intent).detectedLanguage(detectedLanguage)
             .webSearchUsed(webSearchUsed).build());
 
-        persistChunkSourcesFromPayload(newA, ctx.chunks());
+        List<SourceDto> ctxSources = ctx.sources() == null ? java.util.List.of() : ctx.sources();
+        for (SourceDto s : ctxSources) {
+            chunkSources.save(ChunkSource.builder()
+                .message(newA)
+                .name(s.name()).url(s.url())
+                .pageNumber(s.pageNumber()).totalPages(s.totalPages())
+                .build());
+        }
         if (ctx.chunks() != null && !ctx.chunks().isEmpty()) {
             redis.cacheChunks(newA.getId(), ctx);
         }
@@ -355,7 +370,7 @@ public class ChatService {
         sendEvent(emitter, "meta", Map.of(
             "intent", nullSafe(intent),
             "detectedLanguage", nullSafe(detectedLanguage),
-            "sources", extractSourceDtos(ctx.chunks()),
+            "sources", ctxSources,
             "webSearchUsed", webSearchUsed,
             "assistantMessageId", newA.getId(),
             "regenerated", true,
@@ -408,41 +423,6 @@ public class ChatService {
         emitter.onCompletion(() -> { if (!sub.isDisposed()) sub.dispose(); });
 
         return emitter;
-    }
-
-    private void persistChunkSourcesFromPayload(Message newA, List<ChunkDto> chunks) {
-        if (chunks == null) return;
-        for (ChunkDto c : chunks) {
-            Map<String, Object> meta = c.metadata() == null ? Map.of() : c.metadata();
-            String name = String.valueOf(meta.getOrDefault("file_name", ""));
-            String url  = String.valueOf(meta.getOrDefault("url", ""));
-            Integer pageNumber = toInt(meta.get("page_number"));
-            Integer totalPages = toInt(meta.get("total_pages"));
-            chunkSources.save(ChunkSource.builder()
-                .message(newA)
-                .name(name).url(url)
-                .pageNumber(pageNumber).totalPages(totalPages)
-                .build());
-        }
-    }
-
-    private List<SourceDto> extractSourceDtos(List<ChunkDto> chunks) {
-        if (chunks == null) return List.of();
-        return chunks.stream().map(c -> {
-            Map<String, Object> meta = c.metadata() == null ? Map.of() : c.metadata();
-            return new SourceDto(
-                String.valueOf(meta.getOrDefault("file_name", "")),
-                String.valueOf(meta.getOrDefault("url", "")),
-                toInt(meta.get("page_number")),
-                toInt(meta.get("total_pages"))
-            );
-        }).toList();
-    }
-
-    private static Integer toInt(Object v) {
-        if (v == null) return null;
-        if (v instanceof Number n) return n.intValue();
-        try { return Integer.parseInt(String.valueOf(v)); } catch (NumberFormatException e) { return null; }
     }
 
     // Note: not @Transactional — called from Reactor scheduler threads where
