@@ -348,7 +348,9 @@ public class ChatService {
             .webSearchUsed(webSearchUsed).build());
 
         persistChunkSourcesFromPayload(newA, ctx.chunks());
-        redis.cacheChunks(newA.getId(), ctx);
+        if (ctx.chunks() != null && !ctx.chunks().isEmpty()) {
+            redis.cacheChunks(newA.getId(), ctx);
+        }
 
         sendEvent(emitter, "meta", Map.of(
             "intent", nullSafe(intent),

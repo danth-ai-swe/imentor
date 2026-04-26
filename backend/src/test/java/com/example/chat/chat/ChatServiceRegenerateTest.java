@@ -150,4 +150,129 @@ class ChatServiceRegenerateTest {
         verify(rpc, times(1)).requestSearch("question", "1");
         verify(openai).streamChat(eq("PROMPT"), eq(0.7));
     }
+
+    @Test
+    void regenerate_assistantNotFound_throwsNotFound() {
+        when(messages.findById(999L)).thenReturn(Optional.empty());
+
+        org.springframework.web.server.ResponseStatusException ex =
+            org.junit.jupiter.api.Assertions.assertThrows(
+                org.springframework.web.server.ResponseStatusException.class,
+                () -> service.regenerate(1L, 999L));
+        org.assertj.core.api.Assertions.assertThat(ex.getStatusCode().value()).isEqualTo(404);
+    }
+
+    @Test
+    void regenerate_messageIsUserNotAssistant_throwsBadRequest() {
+        User u = buildUser(100L);
+        Conversation conv = buildConv(1L, u);
+        Message userMsg = Message.builder().role("user").content("q").conversation(conv).build();
+        userMsg.setId(20L);
+        when(messages.findById(20L)).thenReturn(Optional.of(userMsg));
+
+        org.springframework.web.server.ResponseStatusException ex =
+            org.junit.jupiter.api.Assertions.assertThrows(
+                org.springframework.web.server.ResponseStatusException.class,
+                () -> service.regenerate(1L, 20L));
+        org.assertj.core.api.Assertions.assertThat(ex.getStatusCode().value()).isEqualTo(400);
+    }
+
+    @Test
+    void regenerate_conversationMismatch_throwsBadRequest() {
+        User u = buildUser(100L);
+        Conversation conv = buildConv(1L, u);
+        Message assistant = buildAssistant(20L, conv);
+        when(messages.findById(20L)).thenReturn(Optional.of(assistant));
+
+        org.springframework.web.server.ResponseStatusException ex =
+            org.junit.jupiter.api.Assertions.assertThrows(
+                org.springframework.web.server.ResponseStatusException.class,
+                () -> service.regenerate(/*wrong conv*/ 999L, 20L));
+        org.assertj.core.api.Assertions.assertThat(ex.getStatusCode().value()).isEqualTo(400);
+    }
+
+    @Test
+    void regenerate_noPriorUserMessage_throwsBadRequest() {
+        User u = buildUser(100L);
+        Conversation conv = buildConv(1L, u);
+        Message assistant = buildAssistant(20L, conv);
+        when(messages.findById(20L)).thenReturn(Optional.of(assistant));
+        when(messages.findLatestUserBefore(1L, 20L)).thenReturn(Optional.empty());
+
+        org.springframework.web.server.ResponseStatusException ex =
+            org.junit.jupiter.api.Assertions.assertThrows(
+                org.springframework.web.server.ResponseStatusException.class,
+                () -> service.regenerate(1L, 20L));
+        org.assertj.core.api.Assertions.assertThat(ex.getStatusCode().value()).isEqualTo(400);
+    }
+
+    @Test
+    void regenerate_rateLimitDenied_emitsErrorEvent() {
+        User u = buildUser(100L);
+        Conversation conv = buildConv(1L, u);
+        Message assistant = buildAssistant(20L, conv);
+        Message userMsg = Message.builder().role("user").content("q").conversation(conv).build();
+        userMsg.setId(19L);
+        when(messages.findById(20L)).thenReturn(Optional.of(assistant));
+        when(messages.findLatestUserBefore(1L, 20L)).thenReturn(Optional.of(userMsg));
+        when(rateLimiter.tryAcquire(100L)).thenReturn(false);
+
+        service.regenerate(1L, 20L);
+
+        verify(streamLock, never()).acquire(anyLong());
+        verify(openai, never()).streamChat(anyString(), anyDouble());
+    }
+
+    @Test
+    void regenerate_streamLockDenied_emitsErrorAndDoesNotStream() {
+        User u = buildUser(100L);
+        Conversation conv = buildConv(1L, u);
+        Message assistant = buildAssistant(20L, conv);
+        Message userMsg = Message.builder().role("user").content("q").conversation(conv).build();
+        userMsg.setId(19L);
+        when(messages.findById(20L)).thenReturn(Optional.of(assistant));
+        when(messages.findLatestUserBefore(1L, 20L)).thenReturn(Optional.of(userMsg));
+        when(rateLimiter.tryAcquire(100L)).thenReturn(true);
+        when(streamLock.acquire(100L)).thenReturn(false);
+
+        service.regenerate(1L, 20L);
+
+        verify(openai, never()).streamChat(anyString(), anyDouble());
+        verify(messages, never()).deleteById(anyLong());
+    }
+
+    @Test
+    void regenerate_streamCompletes_persistsContentAndReleasesLock() {
+        User u = buildUser(100L);
+        Conversation conv = buildConv(1L, u);
+        Message assistant = buildAssistant(20L, conv);
+        Message userMsg = Message.builder().role("user").content("question").conversation(conv).build();
+        userMsg.setId(19L);
+
+        when(messages.findById(20L)).thenReturn(Optional.of(assistant));
+        when(messages.findLatestUserBefore(1L, 20L)).thenReturn(Optional.of(userMsg));
+        when(rateLimiter.tryAcquire(100L)).thenReturn(true);
+        when(streamLock.acquire(100L)).thenReturn(true);
+        when(redis.readChunks(20L)).thenReturn(
+            new ChunkContext(List.of(new ChunkDto("body", Map.of("file_name", "doc"))), "q"));
+        when(messages.save(any(Message.class))).thenAnswer(inv -> {
+            Message m = inv.getArgument(0);
+            if (m.getId() == null) m.setId(21L);
+            return m;
+        });
+        when(promptBuilder.build(any(), anyString(), anyString())).thenReturn("PROMPT");
+        when(openai.streamChat(anyString(), anyDouble())).thenReturn(Flux.just("Hello", " world"));
+
+        service.regenerate(1L, 20L);
+
+        verify(redis).appendStreamToken(eq(1L), eq("Hello"));
+        verify(redis).appendStreamToken(eq(1L), eq(" world"));
+        verify(streamLock).release(100L);
+        verify(redis).deleteStream(1L);
+        // The new assistant message gets re-saved via persistAssistantAndCache with the buffered content
+        org.mockito.ArgumentCaptor<Message> savedCaptor = org.mockito.ArgumentCaptor.forClass(Message.class);
+        verify(messages, org.mockito.Mockito.atLeastOnce()).save(savedCaptor.capture());
+        org.assertj.core.api.Assertions.assertThat(savedCaptor.getAllValues())
+            .anyMatch(m -> "assistant".equals(m.getRole()) && "Hello world".equals(m.getContent()));
+    }
 }
