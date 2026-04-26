@@ -45,6 +45,13 @@ public class ChatController {
         return ResponseEntity.noContent().build();
     }
 
+    @GetMapping("/conversations/{id}/history-for-ai")
+    public ApiResponse<HistoryForAiResponse> historyForAi(
+        @PathVariable Long id,
+        @RequestParam(value = "limit", required = false) Integer limit) {
+        return ApiResponse.ok(service.historyForAi(id, limit));
+    }
+
     @PostMapping(path = "/conversations/{id}/ask/stream", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     public SseEmitter ask(@PathVariable Long id, @Valid @RequestBody AskRequest req) {
         return service.ask(id, req.message());

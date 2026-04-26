@@ -5,10 +5,14 @@ import com.example.chat.dto.*;
 import com.example.chat.messaging.SearchRpcClient;
 import com.example.chat.openai.OpenAiChatService;
 import com.example.chat.openai.PromptBuilder;
+import com.example.chat.redis.ChatRedisService;
+import com.example.chat.redis.RateLimiter;
+import com.example.chat.redis.StreamLock;
 import com.example.chat.repository.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
@@ -35,10 +39,17 @@ public class ChatService {
     private final SearchRpcClient rpc;
     private final OpenAiChatService openai;
     private final PromptBuilder promptBuilder;
+    private final ChatRedisService redis;
+    private final RateLimiter rateLimiter;
+    private final StreamLock streamLock;
+
+    @Value("${chat.history.default-limit:20}") int defaultHistoryLimit = 20;
+    @Value("${chat.history.max-limit:50}")     int maxHistoryLimit = 50;
 
     public ChatService(UserRepository users, ConversationRepository conversations,
                        MessageRepository messages, ChunkSourceRepository chunkSources,
-                       SearchRpcClient rpc, OpenAiChatService openai, PromptBuilder promptBuilder) {
+                       SearchRpcClient rpc, OpenAiChatService openai, PromptBuilder promptBuilder,
+                       ChatRedisService redis, RateLimiter rateLimiter, StreamLock streamLock) {
         this.users = users;
         this.conversations = conversations;
         this.messages = messages;
@@ -46,6 +57,9 @@ public class ChatService {
         this.rpc = rpc;
         this.openai = openai;
         this.promptBuilder = promptBuilder;
+        this.redis = redis;
+        this.rateLimiter = rateLimiter;
+        this.streamLock = streamLock;
     }
 
     @Transactional
@@ -100,6 +114,37 @@ public class ChatService {
         List<Long> ids = toDelete.stream().map(Message::getId).toList();
         chunkSources.deleteByMessageIdIn(ids);
         messages.deleteAll(toDelete);
+    }
+
+    @Transactional(readOnly = true)
+    public HistoryForAiResponse historyForAi(Long conversationId, Integer limit) {
+        int effective = limit == null ? defaultHistoryLimit : Math.min(Math.max(limit, 1), maxHistoryLimit);
+
+        List<HistoryMessageDto> cached = redis.readHistoryTail(conversationId, effective);
+        if (!cached.isEmpty()) {
+            return new HistoryForAiResponse(conversationId, cached);
+        }
+
+        Conversation conv = conversations.findById(conversationId).orElse(null);
+        if (conv == null) {
+            return new HistoryForAiResponse(conversationId, List.of());
+        }
+
+        List<Message> all = messages.findByConversationIdOrderByCreatedAtAsc(conversationId);
+        if (all.isEmpty()) {
+            return new HistoryForAiResponse(conversationId, List.of());
+        }
+
+        List<HistoryMessageDto> warmed = all.stream()
+            .map(m -> new HistoryMessageDto(m.getRole(), m.getContent(), m.getIntent(), m.getCreatedAt()))
+            .toList();
+
+        // Warm Redis with the entire conversation (capped server-side via LTRIM in appendHistory).
+        warmed.forEach(dto -> redis.appendHistory(conversationId, dto));
+
+        // Return only the requested tail length.
+        int from = Math.max(0, warmed.size() - effective);
+        return new HistoryForAiResponse(conversationId, warmed.subList(from, warmed.size()));
     }
 
     public SseEmitter ask(Long conversationId, String userMessage) {
