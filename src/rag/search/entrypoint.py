@@ -50,44 +50,42 @@ def _format_history(history: list[dict]) -> str:
     return "\n".join(lines)
 
 
-async def _summarize_history(llm: AzureChatClient, history_string: str) -> str:
-    """Gọi Azure OpenAI để tóm tắt history string, trả về summary string dạng JSON."""
+async def _summarize_history(llm: AzureChatClient, history_string: str, query: str) -> str:
+    """Recomp-style query-focused summary. Returns plain string (possibly empty)."""
     prompt = SUMMARIZE_PROMPT_TEMPLATE.format(
-        conversation_history=history_string
+        conversation_history=history_string,
+        query=query,
     )
-
     raw = (await llm.ainvoke(prompt)).strip()
-
     try:
-        return parse_json_response(raw).get("summary", "")
+        result = parse_json_response(raw).get("summary", "")
+        return result if isinstance(result, str) else ""
     except Exception:
-        logger.warning("Failed to parse summary response as JSON, returning raw text. Response: %s", raw)
-    return raw
+        logger.warning("Failed to parse summary response, returning empty. Raw: %s", raw)
+        return ""
 
 
 @alog_function_call
-async def afetch_chat_history(llm: AzureChatClient,
-                              conversation_id: str | None = None,
-                              ) -> str:
+async def afetch_chat_history(
+    llm: AzureChatClient,
+    conversation_id: str | None = None,
+    query: str = "",
+) -> str:
     if not conversation_id or not conversation_id.strip():
         return ""
+    if not query or not query.strip():
+        return ""
 
-    # Bước 1: Call API
     messages = await fetch_raw_chat_history(conversation_id)
     if not messages:
         return ""
 
-    # Bước 2: Lọc intent
     filtered = _filter_core_knowledge_pairs(messages)
     if not filtered:
         return ""
 
-    # Bước 3: Lấy 6 phần tử cuối → build string
     history_string = _format_history(filtered)
-
-    # Bước 4: Tóm tắt bằng Claude → summary string
-    summary = await _summarize_history(llm, history_string)
-
+    summary = await _summarize_history(llm, history_string, query)
     return summary
 
 
