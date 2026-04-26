@@ -7,39 +7,44 @@ import type { Message } from '../types';
 interface Props {
   message: Message;
   streaming: boolean;
+  streamingMode?: 'ask' | 'regenerate';
   isLastAssistant: boolean;
   onEdit?: () => void;
   onRegenerate?: () => void;
 }
 
-export function MessageBubble({ message, streaming, isLastAssistant, onEdit, onRegenerate }: Props) {
+export function MessageBubble({ message, streaming, streamingMode, isLastAssistant, onEdit, onRegenerate }: Props) {
   const isUser = message.role === 'user';
+  const placeholderLabel = streamingMode === 'regenerate' ? 'regenerating…' : 'thinking…';
+  const showPlaceholderLabel = streaming && !isUser && !message.content;
   return (
     <div className={`bubble ${isUser ? 'user' : 'assistant'}`}>
       <div className="bubble-body">
-        <ReactMarkdown
-          remarkPlugins={[remarkGfm]}
-          components={{
-            code({ inline, className, children, ...props }: any) {
-              const match = /language-(\w+)/.exec(className || '');
-              if (!inline && match) {
-                return (
-                  <SyntaxHighlighter
-                    style={oneDark as any}
-                    language={match[1]}
-                    PreTag="div"
-                  >
-                    {String(children).replace(/\n$/, '')}
-                  </SyntaxHighlighter>
-                );
-              }
-              return <code className={className} {...props}>{children}</code>;
-            },
-          }}
-        >
-          {message.content || ''}
-        </ReactMarkdown>
-        {streaming && !isUser && <span className="cursor">▋</span>}
+        {showPlaceholderLabel
+          ? <span className="placeholder-label">{placeholderLabel}</span>
+          : <ReactMarkdown
+              remarkPlugins={[remarkGfm]}
+              components={{
+                code({ inline, className, children, ...props }: any) {
+                  const match = /language-(\w+)/.exec(className || '');
+                  if (!inline && match) {
+                    return (
+                      <SyntaxHighlighter
+                        style={oneDark as any}
+                        language={match[1]}
+                        PreTag="div"
+                      >
+                        {String(children).replace(/\n$/, '')}
+                      </SyntaxHighlighter>
+                    );
+                  }
+                  return <code className={className} {...props}>{children}</code>;
+                },
+              }}
+            >
+              {message.content || ''}
+            </ReactMarkdown>}
+        {streaming && !isUser && message.content && <span className="cursor">▋</span>}
       </div>
       {!isUser && message.sources && message.sources.length > 0 && (
         <div className="sources">
