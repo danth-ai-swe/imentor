@@ -149,7 +149,7 @@ async def _avalidate_and_prepare(
     language_task = asyncio.create_task(_adetect_language_llm(llm, user_input))
 
     if has_history:
-        chat_history = await afetch_chat_history(llm, conversation_id)
+        chat_history = await afetch_chat_history(llm, conversation_id, query=user_input)
         standalone_query = await Reflection(llm).areflect(chat_history, user_input)
     else:
         standalone_query = await Reflection(llm).areflect("", user_input)
