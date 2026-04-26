@@ -13,7 +13,7 @@ export function ChatWindow({ conversation }: Props) {
   const [editingId, setEditingId] = useState<number | null>(null);
   const [editValue, setEditValue] = useState('');
   const [error, setError] = useState<string | null>(null);
-  const { streaming, start, stop } = useChatStream();
+  const { streaming, regenerating, start, regenerate: regenerateStream, stop } = useChatStream();
   const listRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -46,11 +46,17 @@ export function ChatWindow({ conversation }: Props) {
   async function regenerate(assistantMsg: Message) {
     const idx = messages.findIndex((m) => m.id === assistantMsg.id);
     if (idx < 1) return;
-    const previousUser = messages[idx - 1];
-    if (previousUser.role !== 'user') return;
-    await deleteFromMessage(conversation.id, assistantMsg.id);
+    if (messages[idx - 1].role !== 'user') return;
     setMessages((m) => m.filter((x) => x.id !== assistantMsg.id));
-    await send(previousUser.content);
+    await regenerateStream(
+      conversation.id,
+      assistantMsg.id,
+      appendPlaceholder,
+      patchPlaceholder,
+      setError,
+    );
+    const fresh = await loadMessages(conversation.id);
+    setMessages(fresh);
   }
 
   async function commitEdit(userMsg: Message, newContent: string) {
@@ -84,10 +90,11 @@ export function ChatWindow({ conversation }: Props) {
             <MessageBubble
               key={m.id}
               message={m}
-              streaming={streaming && isPlaceholder}
-              isLastAssistant={m.id === lastAssistantId && !streaming}
+              streaming={(streaming || regenerating) && isPlaceholder}
+              streamingMode={m.streamingMode}
+              isLastAssistant={m.id === lastAssistantId && !streaming && !regenerating}
               onEdit={m.role === 'user' ? () => { setEditingId(m.id); setEditValue(m.content); } : undefined}
-              onRegenerate={m.role === 'assistant' ? () => regenerate(m) : undefined}
+              onRegenerate={m.role === 'assistant' && !streaming && !regenerating ? () => regenerate(m) : undefined}
             />
           );
         })}
@@ -99,11 +106,12 @@ export function ChatWindow({ conversation }: Props) {
           onChange={(e) => setInput(e.target.value)}
           placeholder="Ask anything…"
           rows={2}
+          disabled={streaming || regenerating}
           onKeyDown={(e) => {
             if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); if (input.trim()) send(input.trim()); }
           }}
         />
-        {streaming
+        {(streaming || regenerating)
           ? <button type="button" className="stop-btn" onClick={stop}>■ Stop</button>
           : <button type="submit" disabled={!input.trim()}>Send</button>}
       </form>
