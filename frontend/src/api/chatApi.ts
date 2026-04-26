@@ -2,18 +2,26 @@ import type { Conversation, Message, SseHandler, User } from '../types';
 
 const BASE = '/api';
 
+interface ApiResponse<T> { success: boolean; data: T; error?: string; }
+
+async function unwrap<T>(res: Response): Promise<T> {
+  const body = (await res.json()) as ApiResponse<T>;
+  if (!body.success) throw new Error(body.error ?? `${res.status}`);
+  return body.data;
+}
+
 export async function createUser(username: string): Promise<User> {
   const res = await fetch(`${BASE}/users`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ username }),
   });
-  return res.json();
+  return unwrap<User>(res);
 }
 
 export async function listConversations(username: string): Promise<Conversation[]> {
   const res = await fetch(`${BASE}/users/${encodeURIComponent(username)}/conversations`);
-  return res.json();
+  return unwrap<Conversation[]>(res);
 }
 
 export async function createConversation(userId: number, title?: string): Promise<Conversation> {
@@ -22,12 +30,13 @@ export async function createConversation(userId: number, title?: string): Promis
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ userId, title }),
   });
-  return res.json();
+  return unwrap<Conversation>(res);
 }
 
 export async function loadMessages(conversationId: number): Promise<Message[]> {
   const res = await fetch(`${BASE}/conversations/${conversationId}/messages`);
-  return res.json();
+  const wrapper = await unwrap<{ conversationId: number; messages: Message[] }>(res);
+  return wrapper.messages;
 }
 
 export async function deleteFromMessage(conversationId: number, messageId: number): Promise<void> {

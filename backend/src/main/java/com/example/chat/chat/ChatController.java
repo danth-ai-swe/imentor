@@ -20,23 +20,23 @@ public class ChatController {
     }
 
     @PostMapping("/users")
-    public UserDto createUser(@Valid @RequestBody CreateUserRequest req) {
-        return service.getOrCreateUser(req.username());
+    public ApiResponse<UserDto> createUser(@Valid @RequestBody CreateUserRequest req) {
+        return ApiResponse.ok(service.getOrCreateUser(req.username()));
     }
 
     @GetMapping("/users/{username}/conversations")
-    public List<ConversationDto> listConversations(@PathVariable String username) {
-        return service.listConversations(username);
+    public ApiResponse<List<ConversationDto>> listConversations(@PathVariable String username) {
+        return ApiResponse.ok(service.listConversations(username));
     }
 
     @PostMapping("/conversations")
-    public ConversationDto createConversation(@Valid @RequestBody CreateConversationRequest req) {
-        return service.createConversation(req.userId(), req.title());
+    public ApiResponse<ConversationDto> createConversation(@Valid @RequestBody CreateConversationRequest req) {
+        return ApiResponse.ok(service.createConversation(req.userId(), req.title()));
     }
 
     @GetMapping("/conversations/{id}/messages")
-    public List<MessageDto> listMessages(@PathVariable Long id) {
-        return service.listMessages(id);
+    public ApiResponse<MessagesResponse> listMessages(@PathVariable Long id) {
+        return ApiResponse.ok(service.listMessages(id));
     }
 
     @DeleteMapping("/conversations/{convId}/messages/from/{messageId}")

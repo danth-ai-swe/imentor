@@ -78,8 +78,8 @@ public class ChatService {
     }
 
     @Transactional(readOnly = true)
-    public List<MessageDto> listMessages(Long conversationId) {
-        return messages.findByConversationIdOrderByCreatedAtAsc(conversationId).stream()
+    public MessagesResponse listMessages(Long conversationId) {
+        List<MessageDto> messageDtos = messages.findByConversationIdOrderByCreatedAtAsc(conversationId).stream()
             .map(m -> {
                 List<SourceDto> sources = chunkSources.findByMessageId(m.getId()).stream()
                     .map(s -> new SourceDto(s.getName(), s.getUrl(), s.getPageNumber(), s.getTotalPages()))
@@ -90,6 +90,7 @@ public class ChatService {
                     m.getCreatedAt(), sources
                 );
             }).toList();
+        return new MessagesResponse(conversationId, messageDtos);
     }
 
     @Transactional
