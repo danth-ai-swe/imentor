@@ -44,10 +44,14 @@ public class OpenAiChatService {
     }
 
     public Flux<String> streamChat(String prompt) {
+        return streamChat(prompt, this.temperature);
+    }
+
+    public Flux<String> streamChat(String prompt, double temperatureOverride) {
         Map<String, Object> body = Map.of(
             "messages", List.of(Map.of("role", "user", "content", prompt)),
             "stream", true,
-            "temperature", temperature,
+            "temperature", temperatureOverride,
             "top_p", topP,
             "max_tokens", maxTokens
         );
