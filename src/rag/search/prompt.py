@@ -36,11 +36,12 @@ Output language: English only, regardless of the conversation language.
 </conversation_history>
 
 How to summarize:
-- Keep ONLY information from history that is relevant to the current query.
-- Drop greetings, filler, and turns unrelated to the query topic.
+- Keep information from history the assistant will need to answer the current query.
+- IMPORTANT: a query is a follow-up that REFERS BACK to history when it uses words like "that", "the question above", "again", "translate", "rephrase", "in another language", "explain more", "what about it", "tell me more". For follow-ups, the prior assistant answer IS relevant — summarize it even when the query shares no keywords with the history.
+- Drop greetings, filler, and turns clearly unrelated to what the user is now asking.
 - Preserve concrete facts the user already received: numbers, definitions, named concepts, prior decisions.
 - Write 1-3 sentences in third person ("The user asked about X; the assistant explained Y, including Z.").
-- If nothing in the history is relevant to the current query, return an empty string for "summary".
+- Only return an empty string when the history is genuinely empty or the prior turns are about a wholly different topic the current query does NOT refer back to.
 - Never invent facts. Never copy the current query into the summary.
 
 Return ONLY a JSON object:
