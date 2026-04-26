@@ -23,19 +23,22 @@ public class ChatRedisService {
     private final long historyTtlSeconds;
     private final int historyMaxEntries;
     private final long streamTtlSeconds;
+    private final long chunksTtlSeconds;
 
     public ChatRedisService(
         StringRedisTemplate template,
         ObjectMapper mapper,
         @Value("${chat.history.redis-ttl-seconds:1800}") long historyTtlSeconds,
         @Value("${chat.history.redis-max-entries:50}") int historyMaxEntries,
-        @Value("${chat.stream.redis-ttl-seconds:300}") long streamTtlSeconds
+        @Value("${chat.stream.redis-ttl-seconds:300}") long streamTtlSeconds,
+        @Value("${chat.chunks.ttl-seconds:3600}") long chunksTtlSeconds
     ) {
         this.template = template;
         this.mapper = mapper;
         this.historyTtlSeconds = historyTtlSeconds;
         this.historyMaxEntries = historyMaxEntries;
         this.streamTtlSeconds = streamTtlSeconds;
+        this.chunksTtlSeconds = chunksTtlSeconds;
     }
 
     public void appendHistory(Long conversationId, HistoryMessageDto msg) {
@@ -91,6 +94,41 @@ public class ChatRedisService {
         }
     }
 
+    public void cacheChunks(Long assistantMessageId, com.example.chat.dto.ChunkContext ctx) {
+        String key = chunksKey(assistantMessageId);
+        try {
+            String json = mapper.writeValueAsString(ctx);
+            template.opsForValue().set(key, json, Duration.ofSeconds(chunksTtlSeconds));
+        } catch (JsonProcessingException e) {
+            log.warn("Failed to serialize ChunkContext for msg={}: {}", assistantMessageId, e.getMessage());
+        } catch (DataAccessException e) {
+            log.warn("Redis cacheChunks failed for msg={}: {}", assistantMessageId, e.getMessage());
+        }
+    }
+
+    public com.example.chat.dto.ChunkContext readChunks(Long assistantMessageId) {
+        String key = chunksKey(assistantMessageId);
+        try {
+            String json = template.opsForValue().get(key);
+            if (json == null) return null;
+            return mapper.readValue(json, com.example.chat.dto.ChunkContext.class);
+        } catch (JsonProcessingException e) {
+            log.warn("Failed to parse ChunkContext for msg={}: {}", assistantMessageId, e.getMessage());
+            return null;
+        } catch (DataAccessException e) {
+            log.warn("Redis readChunks failed for msg={}: {}", assistantMessageId, e.getMessage());
+            return null;
+        }
+    }
+
+    public void deleteChunks(Long assistantMessageId) {
+        try {
+            template.delete(chunksKey(assistantMessageId));
+        } catch (DataAccessException e) {
+            log.warn("Redis deleteChunks failed for msg={}: {}", assistantMessageId, e.getMessage());
+        }
+    }
+
     private HistoryMessageDto parseSafe(String json) {
         try { return mapper.readValue(json, HistoryMessageDto.class); }
         catch (JsonProcessingException e) {
@@ -101,4 +139,5 @@ public class ChatRedisService {
 
     private static String historyKey(Long convId) { return "chat:history:" + convId; }
     private static String streamKey(Long convId)  { return "chat:stream:"  + convId; }
+    private static String chunksKey(Long convOrMsgId) { return "chat:chunks:" + convOrMsgId; }
 }

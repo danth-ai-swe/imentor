@@ -34,7 +34,7 @@ class ChatRedisServiceTest {
         when(template.opsForList()).thenReturn(listOps);
         when(template.opsForValue()).thenReturn(valueOps);
         mapper = new ObjectMapper().registerModule(new JavaTimeModule());
-        service = new ChatRedisService(template, mapper, 1800, 50, 300);
+        service = new ChatRedisService(template, mapper, 1800, 50, 300, 3600);
     }
 
     @Test
