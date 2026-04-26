@@ -47,6 +47,7 @@ public class ChatService {
     // context) get sane defaults. In production @Value overrides them post-construction.
     @Value("${chat.history.default-limit:20}") int defaultHistoryLimit = 20;
     @Value("${chat.history.max-limit:50}")     int maxHistoryLimit = 50;
+    @Value("${chat.regenerate.temperature:0.7}") double regenerateTemperature = 0.7;
 
     public ChatService(UserRepository users, ConversationRepository conversations,
                        MessageRepository messages, ChunkSourceRepository chunkSources,
@@ -285,6 +286,161 @@ public class ChatService {
         });
 
         return emitter;
+    }
+
+    public SseEmitter regenerate(Long conversationId, Long oldAssistantId) {
+        SseEmitter emitter = new SseEmitter(60_000L);
+
+        Message oldA = messages.findById(oldAssistantId)
+            .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "assistant message not found"));
+        if (!"assistant".equals(oldA.getRole())) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "messageId is not an assistant message");
+        }
+        Conversation conv = oldA.getConversation();
+        if (!conversationId.equals(conv.getId())) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "message does not belong to conversation");
+        }
+        Long userId = conv.getUser().getId();
+
+        Message userMsg = messages.findLatestUserBefore(conversationId, oldAssistantId)
+            .orElseThrow(() -> new ResponseStatusException(HttpStatus.BAD_REQUEST, "no user message precedes the assistant"));
+
+        if (!rateLimiter.tryAcquire(userId)) {
+            sendEvent(emitter, "error", Map.of("message", "rate limit exceeded"));
+            emitter.complete();
+            return emitter;
+        }
+        if (!streamLock.acquire(userId)) {
+            sendEvent(emitter, "error", Map.of("message", "a response is already streaming"));
+            emitter.complete();
+            return emitter;
+        }
+
+        com.example.chat.dto.ChunkContext ctx = redis.readChunks(oldAssistantId);
+        boolean chunksReused = (ctx != null);
+        String detectedLanguage = oldA.getDetectedLanguage();
+        String intent = oldA.getIntent();
+        boolean webSearchUsed = oldA.isWebSearchUsed();
+        if (ctx == null) {
+            SearchReplyMessage reply;
+            try {
+                reply = rpc.requestSearch(userMsg.getContent(), String.valueOf(conversationId));
+            } catch (Exception ex) {
+                sendEvent(emitter, "error", Map.of("message", nullSafe(ex.getMessage())));
+                streamLock.release(userId);
+                emitter.complete();
+                return emitter;
+            }
+            ctx = new com.example.chat.dto.ChunkContext(reply.chunks(), reply.standaloneQuery());
+            detectedLanguage = reply.detectedLanguage();
+            intent = reply.intent();
+            webSearchUsed = reply.webSearchUsed();
+        }
+
+        chunkSources.deleteByMessageIdIn(List.of(oldAssistantId));
+        messages.deleteById(oldAssistantId);
+        redis.deleteChunks(oldAssistantId);
+        redis.invalidateHistory(conversationId);
+
+        Message newA = messages.save(Message.builder()
+            .conversation(conv).role("assistant").content("")
+            .intent(intent).detectedLanguage(detectedLanguage)
+            .webSearchUsed(webSearchUsed).build());
+
+        persistChunkSourcesFromPayload(newA, ctx.chunks());
+        redis.cacheChunks(newA.getId(), ctx);
+
+        sendEvent(emitter, "meta", Map.of(
+            "intent", nullSafe(intent),
+            "detectedLanguage", nullSafe(detectedLanguage),
+            "sources", extractSourceDtos(ctx.chunks()),
+            "webSearchUsed", webSearchUsed,
+            "assistantMessageId", newA.getId(),
+            "regenerated", true,
+            "chunksReused", chunksReused
+        ));
+
+        StringBuilder buffer = new StringBuilder();
+        String prompt = promptBuilder.build(ctx.chunks(), ctx.standaloneQuery(), detectedLanguage);
+        final String intentFinal = intent;
+
+        Disposable sub = openai.streamChat(prompt, regenerateTemperature).subscribe(
+            token -> {
+                buffer.append(token);
+                redis.appendStreamToken(conversationId, token);
+                sendEvent(emitter, "delta", Map.of("content", token));
+            },
+            error -> {
+                log.warn("OpenAI stream error during regenerate", error);
+                sendEvent(emitter, "error", Map.of("message", error.getMessage()));
+                persistAssistantAndCache(newA, buffer.toString(), buffer.length() > 0,
+                                         conversationId, intentFinal);
+                redis.deleteStream(conversationId);
+                streamLock.release(userId);
+                emitter.complete();
+            },
+            () -> {
+                persistAssistantAndCache(newA, buffer.toString(), false,
+                                         conversationId, intentFinal);
+                redis.deleteStream(conversationId);
+                sendEvent(emitter, "done", Map.of());
+                streamLock.release(userId);
+                emitter.complete();
+            }
+        );
+
+        emitter.onTimeout(() -> {
+            sub.dispose();
+            persistAssistantAndCache(newA, buffer.toString(), buffer.length() > 0,
+                                     conversationId, intentFinal);
+            redis.deleteStream(conversationId);
+            streamLock.release(userId);
+        });
+        emitter.onError(e -> {
+            sub.dispose();
+            persistAssistantAndCache(newA, buffer.toString(), buffer.length() > 0,
+                                     conversationId, intentFinal);
+            redis.deleteStream(conversationId);
+            streamLock.release(userId);
+        });
+        emitter.onCompletion(() -> { if (!sub.isDisposed()) sub.dispose(); });
+
+        return emitter;
+    }
+
+    private void persistChunkSourcesFromPayload(Message newA, List<ChunkDto> chunks) {
+        if (chunks == null) return;
+        for (ChunkDto c : chunks) {
+            Map<String, Object> meta = c.metadata() == null ? Map.of() : c.metadata();
+            String name = String.valueOf(meta.getOrDefault("file_name", ""));
+            String url  = String.valueOf(meta.getOrDefault("url", ""));
+            Integer pageNumber = toInt(meta.get("page_number"));
+            Integer totalPages = toInt(meta.get("total_pages"));
+            chunkSources.save(ChunkSource.builder()
+                .message(newA)
+                .name(name).url(url)
+                .pageNumber(pageNumber).totalPages(totalPages)
+                .build());
+        }
+    }
+
+    private List<SourceDto> extractSourceDtos(List<ChunkDto> chunks) {
+        if (chunks == null) return List.of();
+        return chunks.stream().map(c -> {
+            Map<String, Object> meta = c.metadata() == null ? Map.of() : c.metadata();
+            return new SourceDto(
+                String.valueOf(meta.getOrDefault("file_name", "")),
+                String.valueOf(meta.getOrDefault("url", "")),
+                toInt(meta.get("page_number")),
+                toInt(meta.get("total_pages"))
+            );
+        }).toList();
+    }
+
+    private static Integer toInt(Object v) {
+        if (v == null) return null;
+        if (v instanceof Number n) return n.intValue();
+        try { return Integer.parseInt(String.valueOf(v)); } catch (NumberFormatException e) { return null; }
     }
 
     // Note: not @Transactional — called from Reactor scheduler threads where
