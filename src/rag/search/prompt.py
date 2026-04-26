@@ -21,43 +21,32 @@ Answer using ONLY the Retrieved Context. Reply in **{detected_language}**. Never
 {user_input}
 """
 SUMMARIZE_PROMPT_TEMPLATE = """
-You are a conversation analyst with expertise in dialogue summarization and information extraction.
-Your tone should be precise and neutral.
-Your audience is an AI assistant that will use this summary as memory context for a RAG pipeline.
+You are a Recomp-style abstractive summarizer for a RAG pipeline.
+Your job: read the prior conversation and produce a SHORT, query-focused summary
+that an AI assistant can use as memory context to answer the user's CURRENT query.
 
-I need you to summarize the conversation history below so that the core meaning, intent, and key information
-of each exchange is preserved — while reducing token length.
-Be direct. No preamble. No fluff.
+Output language: English only, regardless of the conversation language.
 
-Here is the conversation to summarize:
-<context>
+<current_query>
+{query}
+</current_query>
+
+<conversation_history>
 {conversation_history}
-</context>
+</conversation_history>
 
-Before summarizing, think through this step by step:
-- Identify each User turn: what is the core intent or question?
-- Identify each Assistant turn: what key information or action was provided?
-- Remove filler words, greetings, and redundant phrases.
-- Preserve named entities, numbers, dates, and decisions.
-- Keep the role sequence strictly alternating.
+How to summarize:
+- Keep ONLY information from history that is relevant to the current query.
+- Drop greetings, filler, and turns unrelated to the query topic.
+- Preserve concrete facts the user already received: numbers, definitions, named concepts, prior decisions.
+- Write 1-3 sentences in third person ("The user asked about X; the assistant explained Y, including Z.").
+- If nothing in the history is relevant to the current query, return an empty string for "summary".
+- Never invent facts. Never copy the current query into the summary.
 
-Rules you must follow:
-- Never merge a User turn with an Assistant turn.
-- Always preserve the alternating user/assistant sequence without skipping any turn.
-- Never omit a turn — if a turn has no key info, write "[no significant content]".
-- Never add information not present in the original conversation.
-- If you are about to lose a key fact (number, date, name, decision), stop and include it.
-- Never output markdown fences, preamble, or extra keys.
+Return ONLY a JSON object:
+{{"summary": "<concise query-focused summary, or empty string>"}}
 
-Return a single valid JSON object using this exact schema:
-{{
-  "summary": [
-    {{"role": "user" | "assistant", "content": "<summarized turn>"}},
-    ...
-  ]
-}}
-
-Start your response with exactly: {{"summary":
+Start with exactly: {{"summary":
 """
 CLARITY_CHECK_PROMPT = """
 You are **Insuripedia**, an insurance education assistant with expertise in LOMA281/LOMA291.
