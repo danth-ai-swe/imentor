@@ -11,11 +11,21 @@ export interface Message {
   stopped?: boolean;
   createdAt: string;
   sources: Source[];
+  streamingMode?: 'ask' | 'regenerate';
 }
 
+export type SseMeta = {
+  intent: string;
+  detectedLanguage: string;
+  sources: Source[];
+  webSearchUsed: boolean;
+  assistantMessageId: number;
+  regenerated?: boolean;
+  chunksReused?: boolean;
+};
+
 export type SseHandler = {
-  onMeta: (meta: { intent: string; detectedLanguage: string; sources: Source[];
-                   webSearchUsed: boolean; assistantMessageId: number }) => void;
+  onMeta: (meta: SseMeta) => void;
   onDelta: (token: string) => void;
   onDone: () => void;
   onError: (err: string) => void;
