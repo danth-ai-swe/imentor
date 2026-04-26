@@ -92,3 +92,53 @@ export async function askStream(
     if (e.name !== 'AbortError') handlers.onError(String(e.message ?? e));
   }
 }
+
+export async function regenerateStream(
+  conversationId: number,
+  assistantMessageId: number,
+  handlers: SseHandler,
+  signal: AbortSignal,
+): Promise<void> {
+  const res = await fetch(
+    `${BASE}/conversations/${conversationId}/messages/${assistantMessageId}/regenerate/stream`,
+    {
+      method: 'POST',
+      headers: { Accept: 'text/event-stream' },
+      signal,
+    },
+  );
+  if (!res.body) throw new Error('No response body');
+
+  const reader = res.body.getReader();
+  const decoder = new TextDecoder();
+  let buffer = '';
+  let currentEvent = 'message';
+
+  try {
+    while (true) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, { stream: true });
+      let nl;
+      while ((nl = buffer.indexOf('\n')) !== -1) {
+        const rawLine = buffer.slice(0, nl).replace(/\r$/, '');
+        buffer = buffer.slice(nl + 1);
+        if (rawLine === '') { currentEvent = 'message'; continue; }
+        if (rawLine.startsWith('event:')) { currentEvent = rawLine.slice(6).trim(); continue; }
+        if (rawLine.startsWith('data:')) {
+          const data = rawLine.slice(5).trim();
+          if (!data) continue;
+          try {
+            const parsed = JSON.parse(data);
+            if (currentEvent === 'meta') handlers.onMeta(parsed);
+            else if (currentEvent === 'delta') handlers.onDelta(parsed.content ?? '');
+            else if (currentEvent === 'done') handlers.onDone();
+            else if (currentEvent === 'error') handlers.onError(parsed.message ?? 'unknown error');
+          } catch { /* skip */ }
+        }
+      }
+    }
+  } catch (e: any) {
+    if (e.name !== 'AbortError') handlers.onError(String(e.message ?? e));
+  }
+}
