@@ -250,7 +250,15 @@ public class ChatService {
             token -> {
                 buffer.append(token);
                 redis.appendStreamToken(conversationId, token);
-                sendEvent(emitter, "delta", Map.of("content", token));
+                try {
+                    emitter.send(SseEmitter.event().name("delta")
+                        .data(JSON.writeValueAsString(Map.of("content", token))));
+                } catch (java.io.IOException e) {
+                    log.debug("SSE delta send failed (client disconnected): {}", e.getMessage());
+                    try { emitter.completeWithError(e); } catch (Exception ignored) {}
+                } catch (IllegalStateException e) {
+                    // Emitter already completed (e.g., earlier IOException) — silently drop late tokens
+                }
             },
             error -> {
                 log.warn("OpenAI stream error", error);
@@ -385,7 +393,15 @@ public class ChatService {
             token -> {
                 buffer.append(token);
                 redis.appendStreamToken(conversationId, token);
-                sendEvent(emitter, "delta", Map.of("content", token));
+                try {
+                    emitter.send(SseEmitter.event().name("delta")
+                        .data(JSON.writeValueAsString(Map.of("content", token))));
+                } catch (java.io.IOException e) {
+                    log.debug("SSE delta send failed (client disconnected): {}", e.getMessage());
+                    try { emitter.completeWithError(e); } catch (Exception ignored) {}
+                } catch (IllegalStateException e) {
+                    // Emitter already completed (e.g., earlier IOException) — silently drop late tokens
+                }
             },
             error -> {
                 log.warn("OpenAI stream error during regenerate", error);
