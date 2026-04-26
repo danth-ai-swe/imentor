@@ -206,6 +206,14 @@ public class ChatService {
             }
         }
 
+        // Cache full chunk payload + standalone query for potential regenerate.
+        if (reply.chunks() != null && !reply.chunks().isEmpty()) {
+            redis.cacheChunks(
+                assistantMsg.getId(),
+                new com.example.chat.dto.ChunkContext(reply.chunks(), reply.standaloneQuery())
+            );
+        }
+
         // 6) Meta event
         sendEvent(emitter, "meta", Map.of(
             "intent", nullSafe(reply.intent()),
