@@ -43,6 +43,8 @@ public class ChatService {
     private final RateLimiter rateLimiter;
     private final StreamLock streamLock;
 
+    // Initializers exist so unit tests that build ChatService via plain `new` (no Spring
+    // context) get sane defaults. In production @Value overrides them post-construction.
     @Value("${chat.history.default-limit:20}") int defaultHistoryLimit = 20;
     @Value("${chat.history.max-limit:50}")     int maxHistoryLimit = 50;
 
