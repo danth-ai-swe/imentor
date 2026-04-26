@@ -114,6 +114,7 @@ public class ChatService {
         List<Long> ids = toDelete.stream().map(Message::getId).toList();
         chunkSources.deleteByMessageIdIn(ids);
         messages.deleteAll(toDelete);
+        redis.invalidateHistory(conversationId);
     }
 
     @Transactional(readOnly = true)
