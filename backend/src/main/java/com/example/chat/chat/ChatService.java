@@ -152,33 +152,47 @@ public class ChatService {
 
         Conversation conv = conversations.findById(conversationId)
             .orElseThrow(() -> new IllegalArgumentException("conversation not found"));
+        Long userId = conv.getUser().getId();
 
-        // 1) Persist the user message (committed before RPC — on RPC failure the user
-        // message remains; assistant shell is not created. Frontend reload will show
-        // an orphan user msg in that branch — accepted tradeoff for demo scope.)
-        messages.save(Message.builder()
+        // 1) Rate limit
+        if (!rateLimiter.tryAcquire(userId)) {
+            sendEvent(emitter, "error", Map.of("message", "rate limit exceeded"));
+            emitter.complete();
+            return emitter;
+        }
+
+        // 2) Active-stream lock
+        if (!streamLock.acquire(userId)) {
+            sendEvent(emitter, "error", Map.of("message", "a response is already streaming"));
+            emitter.complete();
+            return emitter;
+        }
+
+        // 3) Persist user message + push to Redis history
+        Message savedUserMsg = messages.save(Message.builder()
             .conversation(conv).role("user").content(userMessage).build());
-        conversations.save(conv); // touches updatedAt
+        conversations.save(conv);
+        redis.appendHistory(conversationId, new HistoryMessageDto(
+            "user", userMessage, null, savedUserMsg.getCreatedAt()));
 
-        // 2) RPC → Python
+        // 4) RPC → Python
         SearchReplyMessage reply;
         try {
             reply = rpc.requestSearch(userMessage, String.valueOf(conversationId));
         } catch (Exception ex) {
             sendEvent(emitter, "error", Map.of("message", nullSafe(ex.getMessage())));
+            streamLock.release(userId);
             emitter.complete();
             return emitter;
         }
 
-        // 3) Persist empty assistant message
+        // 5) Persist empty assistant message + chunk sources
         Message assistantMsg = messages.save(Message.builder()
             .conversation(conv).role("assistant").content("")
             .intent(reply.intent())
             .detectedLanguage(reply.detectedLanguage())
             .webSearchUsed(reply.webSearchUsed())
             .build());
-
-        // 4) Persist chunk sources (if any)
         if (reply.sources() != null) {
             for (SourceDto s : reply.sources()) {
                 chunkSources.save(ChunkSource.builder()
@@ -189,52 +203,71 @@ public class ChatService {
             }
         }
 
-        // 5) Emit meta event
+        // 6) Meta event
         sendEvent(emitter, "meta", Map.of(
             "intent", nullSafe(reply.intent()),
             "detectedLanguage", nullSafe(reply.detectedLanguage()),
-            "sources", reply.sources() == null ? java.util.List.of() : reply.sources(),
+            "sources", reply.sources() == null ? List.of() : reply.sources(),
             "webSearchUsed", reply.webSearchUsed(),
             "assistantMessageId", assistantMsg.getId()
         ));
 
-        // 6) Branch on mode
+        // 7) Static branch
         if ("static".equals(reply.mode())) {
             String text = reply.response() == null ? "" : reply.response();
             sendEvent(emitter, "delta", Map.of("content", text));
             assistantMsg.setContent(text);
             messages.save(assistantMsg);
+            redis.appendHistory(conversationId, new HistoryMessageDto(
+                "assistant", text, reply.intent(), assistantMsg.getCreatedAt()));
             sendEvent(emitter, "done", Map.of());
+            streamLock.release(userId);
             emitter.complete();
             return emitter;
         }
 
-        // mode == "chunks": stream from OpenAI
+        // 8) Stream branch
         StringBuilder buffer = new StringBuilder();
         String prompt = promptBuilder.build(reply.chunks(), reply.standaloneQuery(), reply.detectedLanguage());
 
         Disposable sub = openai.streamChat(prompt).subscribe(
             token -> {
                 buffer.append(token);
+                redis.appendStreamToken(conversationId, token);
                 sendEvent(emitter, "delta", Map.of("content", token));
             },
             error -> {
                 log.warn("OpenAI stream error", error);
                 sendEvent(emitter, "error", Map.of("message", error.getMessage()));
-                persistAssistant(assistantMsg, buffer.toString(), buffer.length() > 0);
+                persistAssistantAndCache(assistantMsg, buffer.toString(), buffer.length() > 0,
+                                         conversationId, reply.intent());
+                redis.deleteStream(conversationId);
+                streamLock.release(userId);
                 emitter.complete();
             },
             () -> {
-                persistAssistant(assistantMsg, buffer.toString(), false);
+                persistAssistantAndCache(assistantMsg, buffer.toString(), false,
+                                         conversationId, reply.intent());
+                redis.deleteStream(conversationId);
                 sendEvent(emitter, "done", Map.of());
+                streamLock.release(userId);
                 emitter.complete();
             }
         );
 
-        emitter.onTimeout(() -> { sub.dispose(); persistAssistant(assistantMsg, buffer.toString(), buffer.length() > 0); });
+        emitter.onTimeout(() -> {
+            sub.dispose();
+            persistAssistantAndCache(assistantMsg, buffer.toString(), buffer.length() > 0,
+                                     conversationId, reply.intent());
+            redis.deleteStream(conversationId);
+            streamLock.release(userId);
+        });
         emitter.onError(e -> {
             sub.dispose();
-            persistAssistant(assistantMsg, buffer.toString(), buffer.length() > 0);
+            persistAssistantAndCache(assistantMsg, buffer.toString(), buffer.length() > 0,
+                                     conversationId, reply.intent());
+            redis.deleteStream(conversationId);
+            streamLock.release(userId);
         });
         emitter.onCompletion(() -> {
             if (!sub.isDisposed()) sub.dispose();
@@ -246,10 +279,13 @@ public class ChatService {
     // Note: not @Transactional — called from Reactor scheduler threads where
     // Spring's ThreadLocal-based tx propagation does not apply. messages.save()
     // wraps each call in its own tx via SimpleJpaRepository.
-    void persistAssistant(Message m, String content, boolean stopped) {
+    void persistAssistantAndCache(Message m, String content, boolean stopped,
+                                  Long conversationId, String intent) {
         m.setContent(content);
         m.setStopped(stopped);
-        messages.save(m);
+        Message saved = messages.save(m);
+        redis.appendHistory(conversationId, new HistoryMessageDto(
+            "assistant", content, intent, saved.getCreatedAt()));
     }
 
     private static String nullSafe(String s) { return s == null ? "" : s; }
