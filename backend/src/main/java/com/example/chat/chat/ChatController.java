@@ -56,4 +56,12 @@ public class ChatController {
     public SseEmitter ask(@PathVariable Long id, @Valid @RequestBody AskRequest req) {
         return service.ask(id, req.message());
     }
+
+    @PostMapping(
+        path = "/conversations/{convId}/messages/{assistantMsgId}/regenerate/stream",
+        produces = MediaType.TEXT_EVENT_STREAM_VALUE
+    )
+    public SseEmitter regenerate(@PathVariable Long convId, @PathVariable Long assistantMsgId) {
+        return service.regenerate(convId, assistantMsgId);
+    }
 }

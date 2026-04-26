@@ -19,7 +19,7 @@ spring:
     redis:
       host: ${REDIS_HOST:localhost}
       port: ${REDIS_PORT:6379}
-      password: ${REDIS_PASSWORD:}
+      password: ${REDIS_PASSWORD:admin123}
       timeout: 2000ms
   h2:
     console:
@@ -45,6 +45,10 @@ chat:
   rate-limit:
     per-user-per-minute: 15
     active-stream-lock-seconds: 60
+  chunks:
+    ttl-seconds: ${CHAT_CHUNKS_TTL_SECONDS:3600}
+  regenerate:
+    temperature: ${CHAT_REGENERATE_TEMPERATURE:0.7}
 logging:
   level:
     com.example.chat: INFO
