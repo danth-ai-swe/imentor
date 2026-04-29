@@ -2,6 +2,7 @@ package com.example.chat.redis;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.dao.DataAccessException;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -19,6 +20,7 @@ public class RateLimiter {
     private final int perUserPerMinute;
     private final Clock clock;
 
+    @Autowired
     public RateLimiter(StringRedisTemplate template,
                        @Value("${chat.rate-limit.per-user-per-minute:15}") int perUserPerMinute) {
         this(template, perUserPerMinute, Clock.systemUTC());
