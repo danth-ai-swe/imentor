@@ -292,3 +292,165 @@ def test_aquiz_generate_answer_returns_empty_on_llm_failure():
         current_question=_payload().current_question,
     ))
     assert answer == ""
+
+
+def test_question_intent_core_route_clarity_not_clear_returns_clarification():
+    """I-3 + I-5: when clarity is not clear, content matches the existing
+    pipeline's _make_clarity_result formatting."""
+    with patch(
+        "src.core.quiz.quiz_chat.pipeline.aclassify_intent",
+        new=AsyncMock(return_value=IntentResult(intent="question")),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline._avalidate_and_prepare",
+        new=AsyncMock(return_value=("English", "what is risk", None)),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline._aroute_intent",
+        new=AsyncMock(return_value="core_knowledge"),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline.get_qdrant_client", return_value=object(),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline._acheck_input_clarity",
+        new=AsyncMock(return_value={
+            "clear": False,
+            "type": "ambiguous",
+            "response": ["Could you clarify?", "What do you mean by risk?"],
+        }),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline._ahyde_generate",
+        new=AsyncMock(return_value="hyde"),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline.get_openai_chat_client", return_value=object(),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline.get_openai_embedding_client", return_value=object(),
+    ):
+        result = asyncio.run(async_quiz_chat_dispatch(_payload("what is risk?")))
+
+    assert result.intent == "question"
+    assert result.content == "Could you clarify?\nWhat do you mean by risk?"
+    assert result.sources == []
+
+
+def test_question_intent_core_route_no_chunks_falls_back_to_web_search():
+    """I-3: covers the web_rag_answer fallback when vector search finds nothing."""
+    web_source = {"name": "web.html", "url": "http://x", "page_number": 1, "total_pages": 1}
+
+    async def fake_web(llm, embedder, query, lang):
+        return {"answer": "Web fallback answer", "sources": [web_source]}
+
+    with patch(
+        "src.core.quiz.quiz_chat.pipeline.aclassify_intent",
+        new=AsyncMock(return_value=IntentResult(intent="question")),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline._avalidate_and_prepare",
+        new=AsyncMock(return_value=("English", "what is risk", None)),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline._aroute_intent",
+        new=AsyncMock(return_value="core_knowledge"),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline.get_qdrant_client", return_value=object(),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline._acheck_input_clarity",
+        new=AsyncMock(return_value={"clear": True}),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline._ahyde_generate",
+        new=AsyncMock(return_value="hyde"),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline._aembed_text",
+        new=AsyncMock(return_value=([0.0], [[0.0]])),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline._avector_search",
+        new=AsyncMock(return_value=[]),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline.web_rag_answer",
+        new=AsyncMock(side_effect=fake_web),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline.get_openai_chat_client", return_value=object(),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline.get_openai_embedding_client", return_value=object(),
+    ):
+        result = asyncio.run(async_quiz_chat_dispatch(_payload("obscure query")))
+
+    assert result.intent == "question"
+    assert result.content == "Web fallback answer"
+    assert result.sources == [ChatSourceModel(**web_source)]
+
+
+def test_question_intent_overall_route_happy_path():
+    """I-3: covers the overall-knowledge route's happy path."""
+    captured = {}
+
+    async def fake_quiz_generate(llm, q, lang, chunks, current_question):
+        captured["chunks"] = chunks
+        return "Overall course answer."
+
+    with patch(
+        "src.core.quiz.quiz_chat.pipeline.aclassify_intent",
+        new=AsyncMock(return_value=IntentResult(intent="question")),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline._avalidate_and_prepare",
+        new=AsyncMock(return_value=("English", "tell me about course", None)),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline._aroute_intent",
+        new=AsyncMock(return_value="overall_course_knowledge"),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline.get_qdrant_client", return_value=object(),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline._acheck_input_clarity",
+        new=AsyncMock(return_value={"clear": True}),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline._aembed_text",
+        new=AsyncMock(return_value=([0.0], [[0.0]])),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline._avector_search",
+        new=AsyncMock(return_value=[{"id": "1", "metadata": {}, "text": "syllabus", "score": 1.0}]),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline._aquiz_generate_answer",
+        new=AsyncMock(side_effect=fake_quiz_generate),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline.get_openai_chat_client", return_value=object(),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline.get_openai_embedding_client", return_value=object(),
+    ):
+        result = asyncio.run(async_quiz_chat_dispatch(_payload("tell me about course")))
+
+    assert result.intent == "question"
+    assert result.content == "Overall course answer."
+    assert result.sources == []
+    assert len(captured["chunks"]) == 1
+
+
+def test_question_intent_overall_route_no_chunks_returns_no_result_message():
+    """I-3: covers the no-result branch for the overall route."""
+    with patch(
+        "src.core.quiz.quiz_chat.pipeline.aclassify_intent",
+        new=AsyncMock(return_value=IntentResult(intent="question")),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline._avalidate_and_prepare",
+        new=AsyncMock(return_value=("English", "obscure", None)),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline._aroute_intent",
+        new=AsyncMock(return_value="overall_course_knowledge"),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline.get_qdrant_client", return_value=object(),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline._acheck_input_clarity",
+        new=AsyncMock(return_value={"clear": True}),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline._aembed_text",
+        new=AsyncMock(return_value=([0.0], [[0.0]])),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline._avector_search",
+        new=AsyncMock(return_value=[]),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline.NO_RESULT_RESPONSE_MAP",
+        {"English": "No matching course found."},
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline.get_openai_chat_client", return_value=object(),
+    ), patch(
+        "src.core.quiz.quiz_chat.pipeline.get_openai_embedding_client", return_value=object(),
+    ):
+        result = asyncio.run(async_quiz_chat_dispatch(_payload("obscure")))
+
+    assert result.intent == "question"
+    assert result.content == "No matching course found."
+    assert result.sources == []

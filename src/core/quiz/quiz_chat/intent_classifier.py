@@ -22,6 +22,10 @@ Intent = Literal["hint", "finish", "answer", "question"]
 AnswerIndex = Literal["A", "B", "C", "D"]
 
 FUZZY_THRESHOLD = 85
+# Below this length, a keyword can only match exactly. Short keywords
+# (e.g. "hin", "dum") would otherwise fuzzy-match unrelated tokens with
+# only one different letter and trip false positives.
+MIN_FUZZY_LEN = 5
 DIGIT_TO_INDEX: dict[str, AnswerIndex] = {"1": "A", "2": "B", "3": "C", "4": "D"}
 
 _LETTER_RE = re.compile(r"^[abcd]$")
@@ -37,6 +41,8 @@ class IntentResult:
 def _fuzzy_in(text: str, choices: frozenset[str]) -> bool:
     if text in choices:
         return True
+    if len(text) < MIN_FUZZY_LEN:
+        return False
     match = process.extractOne(text, choices, scorer=fuzz.ratio)
     return match is not None and match[1] >= FUZZY_THRESHOLD
 
@@ -98,6 +104,11 @@ async def aclassify_intent(
     if intent == "answer":
         if answer_index in ("A", "B", "C", "D"):
             return IntentResult(intent="answer", answer_index=answer_index)
+        if answer_index is not None:
+            logger.warning(
+                "Quiz-chat LLM returned invalid answer_index=%r; coercing to null",
+                answer_index,
+            )
         return IntentResult(intent="answer", answer_index=None)
 
     return IntentResult(intent="question")

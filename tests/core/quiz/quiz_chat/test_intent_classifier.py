@@ -74,6 +74,17 @@ def test_letter_takes_priority_over_other_rules():
     assert classify_intent_rules("a").intent == "answer"
 
 
+@pytest.mark.parametrize("text", [
+    "dum",   # 3 chars; ratio("dum","dung")~86 — must NOT trigger finish
+    "hi",    # 2 chars; would otherwise fuzzy-match "hint" weakly
+    "duc",   # 3 chars; close to "ket thuc" tail but irrelevant
+])
+def test_short_typos_do_not_fuzzy_match(text):
+    """Regression for M-4: tokens shorter than MIN_FUZZY_LEN must require
+    exact match, not fuzzy."""
+    assert classify_intent_rules(text) is None
+
+
 def _question() -> CurrentQuestion:
     return CurrentQuestion(
         question_type="Definition / Concept",

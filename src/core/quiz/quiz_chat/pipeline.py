@@ -44,6 +44,7 @@ from src.rag.search.pipeline import (
     _aroute_intent,
     _avalidate_and_prepare,
     _avector_search,
+    _make_clarity_result,
     _merge_chunks,
     extract_sources,
 )
@@ -55,6 +56,12 @@ from src.utils.logger_utils import StepTimer, logger
 _AMBIGUOUS_ANSWER_MSG = (
     "Could not match your answer to any option. Please try again."
 )
+
+
+def _clarity_content(clarity: dict, detected_language: str) -> str:
+    """Reuse the existing clarity-formatter so rephrase/non-rephrase types
+    render the same way as the legacy /chat/ask path."""
+    return _make_clarity_result(clarity, detected_language).get("response") or ""
 
 
 async def _aquiz_generate_answer(
@@ -112,13 +119,9 @@ async def _arun_core_quiz_question(
             clarity, hyde = await asyncio.gather(clarity_task, hyde_task)
 
         if not clarity.get("clear", True):
-            response_parts = clarity.get("response", [])
-            response_str = (
-                response_parts if isinstance(response_parts, str)
-                else "\n".join(r.strip() for r in response_parts if r) if isinstance(response_parts, list)
-                else str(response_parts)
+            return _question_response(
+                content=_clarity_content(clarity, detected_language), sources=[],
             )
-            return _question_response(content=response_str, sources=[])
 
         async with timer.astep("hyde_embedding"):
             dense_vec, colbert_vec = await _aembed_text(embedder, qdrant, hyde)
@@ -166,13 +169,9 @@ async def _arun_overall_quiz_question(
         async with timer.astep("clarity_check"):
             clarity = await _acheck_input_clarity(llm, standalone_query, detected_language)
         if not clarity.get("clear", True):
-            response_parts = clarity.get("response", [])
-            response_str = (
-                response_parts if isinstance(response_parts, str)
-                else "\n".join(r.strip() for r in response_parts if r) if isinstance(response_parts, list)
-                else str(response_parts)
+            return _question_response(
+                content=_clarity_content(clarity, detected_language), sources=[],
             )
-            return _question_response(content=response_str, sources=[])
 
         async with timer.astep("query_embedding"):
             dense_vec, colbert_vec = await _aembed_text(embedder, qdrant, standalone_query)
