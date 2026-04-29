@@ -25,6 +25,7 @@ from src.rag.search.agent.streaming import agent_stream_events
 from src.utils.logger_utils import logger
 
 
+
 @documents_router.get("/ingest")
 async def ingest_documents(force_restart: bool = False, collection_name: str | None = None,
                            background_tasks: BackgroundTasks = None):
@@ -250,3 +251,20 @@ async def get_generate_full_result(
     except Exception as exc:
         logger.exception("read_quiz_result failed")
         raise QdrantApiError(f"read_quiz_result failed: {exc}") from exc
+
+
+from src.core.quiz.quiz_chat.model import QuizChatRequest, QuizChatResponse
+from src.core.quiz.quiz_chat.pipeline import async_quiz_chat_dispatch
+
+
+@quiz_router.post("/chat", response_model=QuizChatResponse)
+async def quiz_chat(payload: QuizChatRequest) -> QuizChatResponse:
+    logger.info(
+        "quiz_chat called | node_name=%s | message_len=%d",
+        payload.current_question.node_name, len(payload.message),
+    )
+    try:
+        return await async_quiz_chat_dispatch(payload)
+    except Exception as exc:
+        logger.exception("quiz_chat failed")
+        raise QdrantApiError(f"quiz_chat failed: {exc}") from exc
