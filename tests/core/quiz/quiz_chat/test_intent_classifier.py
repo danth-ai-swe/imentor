@@ -1,9 +1,15 @@
+import asyncio
+import json
+from unittest.mock import AsyncMock
+
 import pytest
 
 from src.core.quiz.quiz_chat.intent_classifier import (
     IntentResult,
+    aclassify_intent,
     classify_intent_rules,
 )
+from src.core.quiz.quiz_chat.model import CurrentQuestion, OptionItem
 
 
 @pytest.mark.parametrize("text,expected", [
@@ -66,3 +72,75 @@ def test_empty_input_returns_none():
 
 def test_letter_takes_priority_over_other_rules():
     assert classify_intent_rules("a").intent == "answer"
+
+
+def _question() -> CurrentQuestion:
+    return CurrentQuestion(
+        question_type="Definition / Concept",
+        difficulty="Beginner",
+        question="What is the definition of risk?",
+        options=[
+            OptionItem(index="A", text="The possibility of gain or profit."),
+            OptionItem(index="B", text="The possibility of loss or an undesirable outcome."),
+            OptionItem(index="C", text="The certainty of a favorable outcome."),
+            OptionItem(index="D", text="The assessment of financial investments."),
+        ],
+        category="Risk Concepts",
+        node_name="Risk",
+    )
+
+
+def test_aclassify_uses_rules_first_and_skips_llm():
+    llm = AsyncMock()
+    llm.ainvoke = AsyncMock(side_effect=AssertionError("LLM should not be called"))
+    result = asyncio.run(aclassify_intent("A", _question(), llm))
+    assert result.intent == "answer"
+    assert result.answer_index == "A"
+    llm.ainvoke.assert_not_called()
+
+
+def test_aclassify_llm_returns_answer_with_index():
+    llm = AsyncMock()
+    llm.ainvoke = AsyncMock(return_value=json.dumps({
+        "intent": "answer", "answer_index": "B", "language_match": True,
+    }))
+    result = asyncio.run(aclassify_intent("loss or undesirable", _question(), llm))
+    assert result.intent == "answer"
+    assert result.answer_index == "B"
+
+
+def test_aclassify_language_mismatch_forces_question():
+    llm = AsyncMock()
+    llm.ainvoke = AsyncMock(return_value=json.dumps({
+        "intent": "answer", "answer_index": "B", "language_match": False,
+    }))
+    result = asyncio.run(aclassify_intent("đáp án là loss", _question(), llm))
+    assert result.intent == "question"
+    assert result.answer_index is None
+
+
+def test_aclassify_llm_returns_question():
+    llm = AsyncMock()
+    llm.ainvoke = AsyncMock(return_value=json.dumps({
+        "intent": "question", "answer_index": None, "language_match": True,
+    }))
+    result = asyncio.run(aclassify_intent("can you explain risk?", _question(), llm))
+    assert result.intent == "question"
+    assert result.answer_index is None
+
+
+def test_aclassify_llm_returns_answer_with_null_index():
+    llm = AsyncMock()
+    llm.ainvoke = AsyncMock(return_value=json.dumps({
+        "intent": "answer", "answer_index": None, "language_match": True,
+    }))
+    result = asyncio.run(aclassify_intent("hmm not sure", _question(), llm))
+    assert result.intent == "answer"
+    assert result.answer_index is None
+
+
+def test_aclassify_llm_failure_falls_back_to_question():
+    llm = AsyncMock()
+    llm.ainvoke = AsyncMock(side_effect=RuntimeError("LLM down"))
+    result = asyncio.run(aclassify_intent("random text", _question(), llm))
+    assert result.intent == "question"

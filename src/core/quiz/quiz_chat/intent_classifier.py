@@ -12,6 +12,11 @@ from src.core.quiz.quiz_chat.keywords import (
     HINT_KEYWORDS,
     normalise,
 )
+from src.core.quiz.quiz_chat.model import CurrentQuestion
+from src.core.quiz.quiz_chat.prompts import CLASSIFY_INTENT_PROMPT
+from src.rag.llm.chat_llm import AzureChatClient
+from src.utils.app_utils import parse_json_response
+from src.utils.logger_utils import logger
 
 Intent = Literal["hint", "finish", "answer", "question"]
 AnswerIndex = Literal["A", "B", "C", "D"]
@@ -55,3 +60,44 @@ def classify_intent_rules(message: str) -> Optional[IntentResult]:
         return IntentResult(intent="hint")
 
     return None
+
+
+def _format_options_block(question: CurrentQuestion) -> str:
+    return "\n".join(f"{opt.index}. {opt.text}" for opt in question.options)
+
+
+async def aclassify_intent(
+    message: str,
+    current_question: CurrentQuestion,
+    llm: AzureChatClient,
+) -> IntentResult:
+    """Classify intent: rule-based first, LLM fallback. Always returns an IntentResult."""
+    rule_hit = classify_intent_rules(message)
+    if rule_hit is not None:
+        return rule_hit
+
+    prompt = CLASSIFY_INTENT_PROMPT.format(
+        question_text=current_question.question,
+        options_block=_format_options_block(current_question),
+        message=message,
+    )
+    try:
+        raw = (await llm.ainvoke(prompt)).strip()
+        parsed = parse_json_response(raw)
+    except Exception:
+        logger.exception("Quiz-chat LLM classification failed; defaulting to question intent")
+        return IntentResult(intent="question")
+
+    intent = parsed.get("intent", "question")
+    answer_index = parsed.get("answer_index")
+    language_match = parsed.get("language_match", True)
+
+    if intent == "answer" and not language_match:
+        return IntentResult(intent="question")
+
+    if intent == "answer":
+        if answer_index in ("A", "B", "C", "D"):
+            return IntentResult(intent="answer", answer_index=answer_index)
+        return IntentResult(intent="answer", answer_index=None)
+
+    return IntentResult(intent="question")
