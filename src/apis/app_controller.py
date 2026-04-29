@@ -25,7 +25,6 @@ from src.rag.search.agent.streaming import agent_stream_events
 from src.utils.logger_utils import logger
 
 
-
 @documents_router.get("/ingest")
 async def ingest_documents(force_restart: bool = False, collection_name: str | None = None,
                            background_tasks: BackgroundTasks = None):

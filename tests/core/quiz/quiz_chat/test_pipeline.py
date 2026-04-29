@@ -8,7 +8,10 @@ from src.core.quiz.quiz_chat.model import (
     OptionItem,
     QuizChatRequest,
 )
-from src.core.quiz.quiz_chat.pipeline import async_quiz_chat_dispatch
+from src.core.quiz.quiz_chat.pipeline import (
+    _aquiz_generate_answer,
+    async_quiz_chat_dispatch,
+)
 
 
 def _payload(message: str = "A") -> QuizChatRequest:
@@ -100,8 +103,6 @@ def test_question_intent_off_topic_route_uses_off_topic_response():
         "src.core.quiz.quiz_chat.pipeline._avalidate_and_prepare",
         new=AsyncMock(return_value=("English", "what is risk", None)),
     ), patch(
-        "src.core.quiz.quiz_chat.pipeline.is_quiz_intent", return_value=False,
-    ), patch(
         "src.core.quiz.quiz_chat.pipeline._aroute_intent",
         new=AsyncMock(return_value="off_topic"),
     ), patch(
@@ -155,8 +156,6 @@ def test_question_intent_core_route_invokes_quiz_aware_generator():
     ), patch(
         "src.core.quiz.quiz_chat.pipeline._avalidate_and_prepare",
         new=AsyncMock(return_value=("English", "what is risk", None)),
-    ), patch(
-        "src.core.quiz.quiz_chat.pipeline.is_quiz_intent", return_value=False,
     ), patch(
         "src.core.quiz.quiz_chat.pipeline._aroute_intent",
         new=AsyncMock(return_value="core_knowledge"),
@@ -216,8 +215,6 @@ def test_question_intent_validates_with_no_history():
         "src.core.quiz.quiz_chat.pipeline._avalidate_and_prepare",
         new=AsyncMock(side_effect=fake_validate),
     ), patch(
-        "src.core.quiz.quiz_chat.pipeline.is_quiz_intent", return_value=False,
-    ), patch(
         "src.core.quiz.quiz_chat.pipeline._aroute_intent",
         new=AsyncMock(return_value="off_topic"),
     ), patch(
@@ -230,3 +227,68 @@ def test_question_intent_validates_with_no_history():
         asyncio.run(async_quiz_chat_dispatch(_payload("what is risk?")))
 
     assert captured == {"conversation_id": None}
+
+
+def test_aquiz_generate_answer_injects_guard_instruction_into_prompt():
+    """Verifies the no-spoiler guarantee: the prompt sent to the LLM must
+    contain the QUESTION_GUARD_INSTRUCTION text, the node_name, and every
+    option, so the model is told not to reveal the correct answer.
+    """
+    captured_prompts: list[str] = []
+
+    class FakeLLM:
+        async def ainvoke_creative(self, prompt: str) -> str:
+            captured_prompts.append(prompt)
+            return "Risk is the chance of an undesirable event."
+
+    payload = _payload("what is risk?")
+    chunks = [
+        {
+            "id": "1",
+            "metadata": {"file_name": "loma.pdf", "page_number": 1, "total_pages": 31},
+            "text": "Risk in insurance refers to the possibility of loss.",
+            "score": 1.0,
+            "payload": {"file_name": "loma.pdf", "page_number": 1},
+        }
+    ]
+
+    answer = asyncio.run(_aquiz_generate_answer(
+        FakeLLM(),
+        standalone_query="what is risk",
+        detected_language="English",
+        enriched_chunks=chunks,
+        current_question=payload.current_question,
+    ))
+
+    assert answer == "Risk is the chance of an undesirable event."
+    assert len(captured_prompts) == 1
+    prompt = captured_prompts[0]
+
+    # Guard instruction body present
+    assert "QUIZ CONTEXT" in prompt
+    assert "Do NOT state which option" in prompt
+    assert "Do NOT echo any single option verbatim" in prompt
+    # Question metadata present
+    assert payload.current_question.node_name in prompt
+    assert payload.current_question.category in prompt
+    assert payload.current_question.question in prompt
+    # Every option text present so the LLM can recognise what NOT to reveal
+    for opt in payload.current_question.options:
+        assert opt.text in prompt
+
+
+def test_aquiz_generate_answer_returns_empty_on_llm_failure():
+    """Reviewer I-3: covers the previously-untested exception fallback."""
+
+    class BrokenLLM:
+        async def ainvoke_creative(self, prompt: str) -> str:
+            raise RuntimeError("LLM down")
+
+    answer = asyncio.run(_aquiz_generate_answer(
+        BrokenLLM(),
+        standalone_query="what is risk",
+        detected_language="English",
+        enriched_chunks=[],
+        current_question=_payload().current_question,
+    ))
+    assert answer == ""

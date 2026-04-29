@@ -49,7 +49,6 @@ from src.rag.search.pipeline import (
 )
 from src.rag.search.reranker import arerank_chunks
 from src.rag.search.searxng_search import web_rag_answer
-from src.utils.app_utils import is_quiz_intent
 from src.utils.logger_utils import StepTimer, logger
 
 
@@ -208,9 +207,6 @@ async def _arun_question_intent(
     )
     if error_response:
         return _question_response(content=error_response, sources=[])
-
-    if is_quiz_intent(message) or is_quiz_intent(standalone_query):
-        return _question_response(content="", sources=[])
 
     intent = await _aroute_intent(embedder, standalone_query)
 
