@@ -2,17 +2,12 @@ import os
 from contextlib import asynccontextmanager
 from datetime import datetime
 
-from src.constants.app_constant import FASTEMBED_CACHE_DIR, INTENT_OVERALL_COURSE_KNOWLEDGE
-
-# Route fastembed downloads (incl. those triggered indirectly via qdrant-client)
-# to a project-local folder. Must be set before any fastembed model is constructed.
-os.environ.setdefault("FASTEMBED_CACHE_PATH", str(FASTEMBED_CACHE_DIR))
-
 import uvicorn
 from fastapi import FastAPI
 
 from src.apis.app_router import api_router
 from src.config.app_config import get_app_config
+from src.constants.app_constant import FASTEMBED_CACHE_DIR, INTENT_OVERALL_COURSE_KNOWLEDGE
 from src.rag.db_vector import get_qdrant_client
 from src.rag.llm.chat_llm import get_openai_chat_client
 from src.rag.llm.embedding_llm import (
@@ -31,6 +26,8 @@ from src.rag.semantic_router.router import Route, SemanticRouter
 from src.rag.semantic_router.samples import offTopicSamples, coreKnowledgeSamples, courseMetadataSamples
 
 config = get_app_config()
+
+os.environ.setdefault("FASTEMBED_CACHE_PATH", str(FASTEMBED_CACHE_DIR))
 
 
 @asynccontextmanager
