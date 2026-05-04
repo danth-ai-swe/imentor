@@ -12,6 +12,7 @@ from src.constants.app_constant import (
     BM25_OPTIONS,
     COLLECTION_NAME,
     DENSE_EMBEDDING_DIM,
+    FASTEMBED_CACHE_DIR,
 )
 from src.rag.llm.embedding_llm import get_openai_embedding_client
 from src.utils.logger_utils import alog_method_call
@@ -31,7 +32,10 @@ def _get_colbert() -> LateInteractionTextEmbedding:
     """
     global _colbert_singleton
     if _colbert_singleton is None:
-        _colbert_singleton = LateInteractionTextEmbedding(_COLBERT_MODEL)
+        _colbert_singleton = LateInteractionTextEmbedding(
+            _COLBERT_MODEL,
+            cache_dir=str(FASTEMBED_CACHE_DIR),
+        )
     return _colbert_singleton
 
 

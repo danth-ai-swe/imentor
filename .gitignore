@@ -214,3 +214,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Fastembed model cache (downloaded ONNX/HF snapshots, hundreds of MB)
+models/

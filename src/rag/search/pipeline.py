@@ -9,7 +9,7 @@ from src.constants.app_constant import (
     COLLECTION_NAME,
     MAX_INPUT_CHARS,
     INTENT_CORE_KNOWLEDGE, INTENT_OFF_TOPIC, INTENT_QUIZ, NEIGHBOR_PREV_INDEX,
-    VECTOR_SEARCH_TOP_K, CORE_VECTOR_TOP_K, CORE_RERANK_TOP_K,
+    VECTOR_SEARCH_TOP_K, CORE_VECTOR_TOP_K, CORE_RERANK_TOP_K, CORE_RERANK_MIN_SCORE,
     NEIGHBOR_NEXT_INDEX, UNSUPPORTED_LANGUAGE_MSG, INPUT_TOO_LONG_RESPONSE, OFF_TOPIC_RESPONSE_MAP,
     INTENT_OVERALL_COURSE_KNOWLEDGE, OVERALL_COLLECTION_NAME, NO_RESULT_RESPONSE_MAP,
 )
@@ -395,6 +395,16 @@ async def _arun_core_search(
         async with timer.astep("rerank"):
             reranked = await arerank_chunks(standalone_query, sorted_chunks, CORE_RERANK_TOP_K)
 
+        top_score = reranked[0].get("score", 0.0) if reranked else float("-inf")
+        if top_score < CORE_RERANK_MIN_SCORE:
+            logger.info(
+                "Rerank top score %.4f < %.4f — chunks not relevant, falling back to web search",
+                top_score, CORE_RERANK_MIN_SCORE,
+            )
+            async with timer.astep("web_search_fallback_low_relevance"):
+                rs = await web_rag_answer(llm, embedder, standalone_query, detected_language)
+            return _make_web_search_result(rs["answer"], rs["sources"], detected_language)
+
         async with timer.astep("enrich_chunks"):
             neighbor_chunks = await _afetch_neighbor_chunks(qdrant, reranked)
             enriched_chunks = _merge_chunks(reranked, neighbor_chunks)
@@ -619,6 +629,20 @@ async def _astream_core_search(
 
         async with timer.astep("rerank"):
             reranked = await arerank_chunks(standalone_query, sorted_chunks, CORE_RERANK_TOP_K)
+
+        top_score = reranked[0].get("score", 0.0) if reranked else float("-inf")
+        if top_score < CORE_RERANK_MIN_SCORE:
+            logger.info(
+                "Rerank top score %.4f < %.4f — chunks not relevant, falling back to web search",
+                top_score, CORE_RERANK_MIN_SCORE,
+            )
+            async with timer.astep("web_search_fallback_low_relevance"):
+                rs = await web_rag_answer(llm, embedder, standalone_query, detected_language)
+            for ev in _full_reply_events(
+                _make_web_search_result(rs["answer"], rs["sources"], detected_language)
+            ):
+                yield ev
+            return
 
         async with timer.astep("enrich_chunks"):
             neighbor_chunks = await _afetch_neighbor_chunks(qdrant, reranked)

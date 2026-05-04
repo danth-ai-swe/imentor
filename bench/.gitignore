@@ -1,3 +1,0 @@
-# Benchmark CSV outputs are local-only; the questions fixture is
-# committed in data/agent_test_questions.txt.
-*.csv

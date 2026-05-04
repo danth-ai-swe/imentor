@@ -96,13 +96,13 @@ def build_final_prompt(
 ) -> str:
     context_blocks = []
     for chunk in relevant_chunks:
-        payload = chunk.get("payload", {}) or {}
+        metadata = chunk.get("metadata", {}) or {}
 
-        file_name = payload.get("file_name", "unknown")
-        course = payload.get("course", "")
-        module_num = payload.get("module_number", "")
-        lesson_num = payload.get("lesson_number", "")
-        page_number = payload.get("page_number", "")
+        file_name = metadata.get("file_name", "unknown")
+        course = metadata.get("course", "")
+        module_num = metadata.get("module_number", "")
+        lesson_num = metadata.get("lesson_number", "")
+        page_number = metadata.get("page_number", "")
 
         header_parts = [f"Source: {file_name}"]
         if course:

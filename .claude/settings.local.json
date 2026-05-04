@@ -99,7 +99,10 @@
       "PowerShell(Get-Item *)",
       "PowerShell($j=Get-Content 'D:\\\\Deverlopment\\\\huudan.com\\\\PythonProject\\\\pages_extracted.json' -Raw | ConvertFrom-Json; \"topics=$\\(\\($j | Select-Object -ExpandProperty topic -Unique\\).Count\\)\"; \"missing_word=$\\(\\($j | Where-Object {-not $_.word}\\).Count\\)\"; \"missing_phonetic=$\\(\\($j | Where-Object {-not $_.phonetic}\\).Count\\)\"; \"missing_meaning_vi=$\\(\\($j | Where-Object {-not $_.meaning_vi}\\).Count\\)\"; \"missing_definition_en=$\\(\\($j | Where-Object {-not $_.definition_en}\\).Count\\)\"; \"no_examples=$\\(\\($j | Where-Object {-not $_.examples -or $_.examples.Count -eq 0}\\).Count\\)\")",
       "PowerShell($j=Get-Content 'D:\\\\Deverlopment\\\\huudan.com\\\\PythonProject\\\\pages_extracted.json' -Raw | ConvertFrom-Json; $j | Where-Object {-not $_.word} | ForEach-Object { \"topic='$\\($_.topic\\)' part='$\\($_.part\\)' image='$\\($_.image_description\\)'\" } | Select-Object -First 12)",
-      "PowerShell($log = Get-Content 'D:\\\\Deverlopment\\\\huudan.com\\\\PythonProject\\\\extract_run.log'; $fails = $log | Select-String -Pattern '^\\\\[\\\\d+/\\\\d+\\\\] FAIL'; \"fail_count=$\\($fails.Count\\)\"; $log | Select-String -Pattern 'Đã ghi|ảnh lỗi|Tổng' -Encoding utf8)"
+      "PowerShell($log = Get-Content 'D:\\\\Deverlopment\\\\huudan.com\\\\PythonProject\\\\extract_run.log'; $fails = $log | Select-String -Pattern '^\\\\[\\\\d+/\\\\d+\\\\] FAIL'; \"fail_count=$\\($fails.Count\\)\"; $log | Select-String -Pattern 'Đã ghi|ảnh lỗi|Tổng' -Encoding utf8)",
+      "Bash(D:\\\\Deverlopment\\\\huudan.com\\\\PythonProject)",
+      "PowerShell(conda run *)",
+      "Bash(awk '{print $NF}')"
     ]
   },
   "enabledPlugins": {

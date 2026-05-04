@@ -25,6 +25,8 @@ DEFAULT_CATEGORIES = ["general"]
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = PROJECT_ROOT / "data"
+FASTEMBED_CACHE_DIR = PROJECT_ROOT / "models" / "fastembed"
+FASTEMBED_CACHE_DIR.mkdir(parents=True, exist_ok=True)
 INGEST_DIR = DATA_DIR / "ingest"
 T_ZIP = DATA_DIR / "t.7z"
 TT_ZIP = DATA_DIR / "tt.7z"
@@ -43,6 +45,10 @@ QUIZ_KEYWORDS: set[str] = {
 VECTOR_SEARCH_TOP_K: int = 2
 CORE_VECTOR_TOP_K: int = 5
 CORE_RERANK_TOP_K: int = 3
+# Cross-encoder logit. Top reranked chunk below this means chunks are
+# not relevant to the query → trigger web search fallback instead of
+# letting the LLM hallucinate from tangential chunks.
+CORE_RERANK_MIN_SCORE: float = 0.0
 PREP_CACHE_SIZE: int = 512
 PREP_CACHE_TTL_SECONDS: int = 3_600
 NEIGHBOR_PREV_INDEX: int = -1  # phần tử cuối của list "previous" = chunk liền trước

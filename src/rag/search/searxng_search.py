@@ -14,12 +14,15 @@ Changes vs v2:
 """
 
 import asyncio
+import html as _html_mod
 import os
 import pickle
+import re
 import time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlparse
 
 import aiohttp
 import faiss
@@ -256,6 +259,33 @@ async def get_faiss_store() -> FaissStore:
     return _faiss_store
 
 
+# Cache the real <title> we extract during crawling so source formatting can
+# prefer it over the truncated title Searx returns.
+_url_titles: dict[str, str] = {}
+_TITLE_RE = re.compile(r"<title[^>]*>(.*?)</title>", re.IGNORECASE | re.DOTALL)
+
+
+def _extract_html_title(html: str) -> str | None:
+    if not html:
+        return None
+    m = _TITLE_RE.search(html)
+    if not m:
+        return None
+    title = re.sub(r"\s+", " ", m.group(1)).strip()
+    title = _html_mod.unescape(title)
+    return title or None
+
+
+def format_source_name(url: str, fallback_title: str) -> str:
+    """`[hostname] full_title` — prefer crawled HTML title, strip ellipsis from Searx fallback."""
+    host = urlparse(url).hostname or ""
+    title = _url_titles.get(url) or (fallback_title or "")
+    title = title.strip()
+    while title.endswith("...") or title.endswith("…"):
+        title = title.rstrip("…").rstrip(".").rstrip()
+    return f"[{host}] {title}".strip() if host else title
+
+
 # ── Crawler — httpx only, no fallback, no semaphore ──────────────────────────
 async def _crawl_single(url: str) -> tuple[str, str | None]:
     t0 = time.perf_counter()
@@ -270,6 +300,10 @@ async def _crawl_single(url: str) -> tuple[str, str | None]:
         return url, None
 
     logger.info("[crawl] fetch %.2fs — %s", time.perf_counter() - t0, url)
+
+    page_title = _extract_html_title(html)
+    if page_title:
+        _url_titles[url] = page_title
 
     loop = asyncio.get_running_loop()
     t1 = time.perf_counter()
@@ -434,7 +468,7 @@ async def web_rag_answer(llm, embedder, user_input: str, detected_lang: str, top
         "sources": [
             {
                 "url": r["url"],
-                "name": r.get("title", ""),
+                "name": format_source_name(r["url"], r.get("title", "")),
                 "page_number": 1,
                 "total_pages": 1,
             }
